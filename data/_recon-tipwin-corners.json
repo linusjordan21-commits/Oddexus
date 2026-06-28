@@ -1,6 +1,6 @@
 {
-  "ranAt": "2026-06-26T16:52:26.575Z",
-  "hasKey": true,
+  "ranAt": "2026-06-28T21:55:58.233Z",
+  "hasKey": false,
   "candidates": [
     "total-corners",
     "corners-total",
@@ -29,24 +29,5 @@
     "match-corners",
     "corners"
   ],
-  "http": 200,
-  "scrapflyMessage": null,
-  "read": {
-    "done": true,
-    "probe": {
-      "status": 200,
-      "len": 44713,
-      "nEvents": 40,
-      "nMarkets": 0,
-      "abrvHits": {},
-      "firstMarket": null,
-      "lookupKeys": [
-        "categories",
-        "sports",
-        "teams",
-        "tournamentGroups",
-        "tournaments"
-      ]
-    }
-  }
+  "error": "SCRAPER_API_KEY saknas"
 }
