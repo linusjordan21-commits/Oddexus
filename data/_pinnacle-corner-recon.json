@@ -1,28 +1,24 @@
 {
-  "ranAt": "2026-06-26T22:52:12.415Z",
-  "matchupsCount": 3604,
-  "marketsCount": 17989,
-  "specialCount": 3159,
+  "ranAt": "2026-06-28T21:55:58.128Z",
+  "matchupsCount": 1715,
+  "marketsCount": 9329,
+  "specialCount": 1505,
   "specialCategories": {
-    "Team Props": 2869,
-    "To Reach Last 16": 23,
-    "To Reach Quarter Final": 35,
-    "Corners": 69,
-    "Player Props": 70,
+    "Team Props": 1306,
+    "Regular": 30,
     "Player Goal Matchups": 5,
+    "To Reach Quarter Final": 31,
+    "Player Props": 31,
     "To Reach The Final": 20,
-    "To Reach Semi Final": 30,
-    "Bookings": 10,
-    "Regular": 10,
-    "Team to Progress Further": 6,
-    "Group G": 3,
-    "Group K": 2,
+    "Corners": 25,
+    "To Reach Semi Final": 29,
     "Futures": 3,
-    "Group H": 2,
-    "Tournament Totals": 1,
-    "Group L": 1
+    "Team to Progress Further": 6,
+    "To Reach Last 16": 15,
+    "Bookings": 3,
+    "Tournament Totals": 1
   },
-  "cornerMatchupCount": 69,
+  "cornerMatchupCount": 25,
   "cornerMatchupSamples": [
     {
       "ageLimit": 0,
@@ -33,7 +29,7 @@
       "hasBetshare": false,
       "hasLive": true,
       "hasMarkets": true,
-      "id": 1632095796,
+      "id": 1632124246,
       "isBetshareEnabled": false,
       "isFeatured": false,
       "isHighlighted": false,
@@ -42,15 +38,160 @@
       "league": {
         "ageLimit": 0,
         "featureOrder": -1,
-        "group": "Finland",
-        "id": 196769,
+        "group": "Brazil",
+        "id": 185632,
+        "isFeatured": false,
+        "isHidden": false,
+        "isPromoted": false,
+        "isSticky": false,
+        "matchupCount": 2,
+        "matchupCountSE": 2,
+        "name": "Brazil - Serie B Corners",
+        "sequence": 6,
+        "sport": {
+          "featureOrder": 0,
+          "id": 29,
+          "isFeatured": true,
+          "isHidden": false,
+          "isSticky": false,
+          "matchupCount": 403,
+          "matchupCountSE": 402,
+          "name": "Soccer",
+          "primaryMarketType": "moneyline"
+        }
+      },
+      "liveMode": null,
+      "parent": {
+        "hasMarkets": false,
+        "id": 1632071057,
+        "isLive": false,
+        "participants": [
+          {
+            "alignment": "home",
+            "name": "Fortaleza",
+            "order": 0,
+            "state": {
+              "corners": 1,
+              "score": 0,
+              "yellowCards": 0
+            },
+            "stats": [
+              {
+                "period": 0
+              },
+              {
+                "period": 1
+              }
+            ]
+          },
+          {
+            "alignment": "away",
+            "name": "Sport Recife",
+            "order": 1,
+            "state": {
+              "corners": 0,
+              "score": 0,
+              "yellowCards": 0
+            },
+            "stats": [
+              {
+                "period": 0
+              },
+              {
+                "period": 1
+              }
+            ]
+          }
+        ],
+        "startTime": "2026-06-28T21:30:00Z",
+        "state": {}
+      },
+      "parentId": 1632071057,
+      "parlayRestriction": "unique_matchups",
+      "participants": [
+        {
+          "alignment": "home",
+          "name": "Fortaleza (Corners)",
+          "order": 0,
+          "stats": [
+            {
+              "period": 1
+            },
+            {
+              "period": 0
+            }
+          ]
+        },
+        {
+          "alignment": "away",
+          "name": "Sport Recife (Corners)",
+          "order": 1,
+          "stats": [
+            {
+              "period": 1
+            },
+            {
+              "period": 0
+            }
+          ]
+        }
+      ],
+      "periods": [
+        {
+          "cutoffAt": "2026-06-28T21:30:00Z",
+          "hasMoneyline": false,
+          "hasSpread": true,
+          "hasTeamTotal": false,
+          "hasTotal": true,
+          "period": 1,
+          "status": "open"
+        },
+        {
+          "cutoffAt": "2026-06-28T21:30:00Z",
+          "hasMoneyline": false,
+          "hasSpread": true,
+          "hasTeamTotal": true,
+          "hasTotal": true,
+          "period": 0,
+          "status": "open"
+        }
+      ],
+      "rotation": 32440,
+      "startTime": "2026-06-28T21:30:00Z",
+      "state": {},
+      "status": "pending",
+      "totalMarketCount": 6,
+      "type": "matchup",
+      "units": "Corners",
+      "version": 673517015
+    },
+    {
+      "ageLimit": 0,
+      "altTeaser": false,
+      "featureOrder": -1,
+      "hasAltSpread": true,
+      "hasAltTotal": true,
+      "hasBetshare": false,
+      "hasLive": true,
+      "hasMarkets": true,
+      "id": 1632138081,
+      "isBetshareEnabled": false,
+      "isFeatured": false,
+      "isHighlighted": false,
+      "isLive": false,
+      "isPromoted": false,
+      "league": {
+        "ageLimit": 0,
+        "featureOrder": -1,
+        "group": "Iceland",
+        "id": 187705,
         "isFeatured": false,
         "isHidden": false,
         "isPromoted": false,
         "isSticky": false,
         "matchupCount": 0,
         "matchupCountSE": 0,
-        "name": "Finland - Ykkosliiga Corners",
+        "name": "Iceland - Premier League Corners",
         "sequence": 8,
         "sport": {
           "featureOrder": 0,
@@ -58,8 +199,8 @@
           "isFeatured": true,
           "isHidden": false,
           "isSticky": false,
-          "matchupCount": 599,
-          "matchupCountSE": 588,
+          "matchupCount": 403,
+          "matchupCountSE": 402,
           "name": "Soccer",
           "primaryMarketType": "moneyline"
         }
@@ -67,12 +208,12 @@
       "liveMode": null,
       "parent": {
         "hasMarkets": true,
-        "id": 1632035566,
+        "id": 1631935466,
         "isLive": false,
         "participants": [
           {
             "alignment": "home",
-            "name": "FC Haka",
+            "name": "IA Akranes",
             "order": 0,
             "stats": [
               {
@@ -85,7 +226,7 @@
           },
           {
             "alignment": "away",
-            "name": "KTP",
+            "name": "Fram Reykjavik",
             "order": 1,
             "stats": [
               {
@@ -97,61 +238,61 @@
             ]
           }
         ],
-        "startTime": "2026-06-27T13:00:00Z",
+        "startTime": "2026-06-29T19:15:00Z",
         "state": {}
       },
-      "parentId": 1632035566,
+      "parentId": 1631935466,
       "parlayRestriction": "unique_matchups",
       "participants": [
         {
           "alignment": "home",
-          "name": "FC Haka (Corners)",
+          "name": "IA Akranes (Corners)",
           "order": 0,
           "stats": [
             {
-              "period": 0
+              "period": 1
             },
             {
-              "period": 1
+              "period": 0
             }
           ]
         },
         {
           "alignment": "away",
-          "name": "KTP (Corners)",
+          "name": "Fram Reykjavik (Corners)",
           "order": 1,
           "stats": [
             {
-              "period": 0
+              "period": 1
             },
             {
-              "period": 1
+              "period": 0
             }
           ]
         }
       ],
       "periods": [
         {
-          "cutoffAt": "2026-06-27T13:00:00Z",
-          "hasMoneyline": false,
-          "hasSpread": true,
-          "hasTeamTotal": true,
-          "hasTotal": true,
-          "period": 0,
-          "status": "open"
-        },
-        {
-          "cutoffAt": "2026-06-27T13:00:00Z",
+          "cutoffAt": "2026-06-29T19:15:00Z",
           "hasMoneyline": false,
           "hasSpread": true,
           "hasTeamTotal": false,
           "hasTotal": true,
           "period": 1,
           "status": "open"
+        },
+        {
+          "cutoffAt": "2026-06-29T19:15:00Z",
+          "hasMoneyline": false,
+          "hasSpread": true,
+          "hasTeamTotal": true,
+          "hasTotal": true,
+          "period": 0,
+          "status": "open"
         }
       ],
-      "rotation": 55710,
-      "startTime": "2026-06-27T13:00:00Z",
+      "rotation": 41378,
+      "startTime": "2026-06-29T19:15:00Z",
       "state": {},
       "status": "pending",
       "totalMarketCount": 6,
@@ -168,7 +309,7 @@
       "hasBetshare": false,
       "hasLive": true,
       "hasMarkets": true,
-      "id": 1632115065,
+      "id": 1632203995,
       "isBetshareEnabled": false,
       "isFeatured": false,
       "isHighlighted": false,
@@ -177,24 +318,24 @@
       "league": {
         "ageLimit": 0,
         "featureOrder": -1,
-        "group": "China",
-        "id": 11670,
+        "group": "FIFA World Cup 2018",
+        "id": 8581,
         "isFeatured": false,
         "isHidden": false,
         "isPromoted": false,
         "isSticky": false,
         "matchupCount": 0,
         "matchupCountSE": 0,
-        "name": "China - Super League Corners",
-        "sequence": 4,
+        "name": "FIFA - World Cup Corners",
+        "sequence": 1,
         "sport": {
           "featureOrder": 0,
           "id": 29,
           "isFeatured": true,
           "isHidden": false,
           "isSticky": false,
-          "matchupCount": 599,
-          "matchupCountSE": 588,
+          "matchupCount": 403,
+          "matchupCountSE": 402,
           "name": "Soccer",
           "primaryMarketType": "moneyline"
         }
@@ -202,12 +343,12 @@
       "liveMode": null,
       "parent": {
         "hasMarkets": true,
-        "id": 1632042011,
+        "id": 1632183796,
         "isLive": false,
         "participants": [
           {
             "alignment": "home",
-            "name": "Dalian Yingbo",
+            "name": "Colombia",
             "order": 0,
             "stats": [
               {
@@ -215,12 +356,15 @@
               },
               {
                 "period": 1
+              },
+              {
+                "period": 8
               }
             ]
           },
           {
             "alignment": "away",
-            "name": "Shanghai Shenhua",
+            "name": "Ghana",
             "order": 1,
             "stats": [
               {
@@ -228,19 +372,22 @@
               },
               {
                 "period": 1
+              },
+              {
+                "period": 8
               }
             ]
           }
         ],
-        "startTime": "2026-06-28T11:00:00Z",
+        "startTime": "2026-07-04T01:30:00Z",
         "state": {}
       },
-      "parentId": 1632042011,
+      "parentId": 1632183796,
       "parlayRestriction": "unique_matchups",
       "participants": [
         {
           "alignment": "home",
-          "name": "Dalian Yingbo (Corners)",
+          "name": "Colombia (Corners)",
           "order": 0,
           "stats": [
             {
@@ -253,7 +400,7 @@
         },
         {
           "alignment": "away",
-          "name": "Shanghai Shenhua (Corners)",
+          "name": "Ghana (Corners)",
           "order": 1,
           "stats": [
             {
@@ -267,8 +414,8 @@
       ],
       "periods": [
         {
-          "cutoffAt": "2026-06-28T11:00:00Z",
-          "hasMoneyline": false,
+          "cutoffAt": "2026-07-04T01:30:00Z",
+          "hasMoneyline": true,
           "hasSpread": true,
           "hasTeamTotal": true,
           "hasTotal": true,
@@ -276,7 +423,7 @@
           "status": "open"
         },
         {
-          "cutoffAt": "2026-06-28T11:00:00Z",
+          "cutoffAt": "2026-07-04T01:30:00Z",
           "hasMoneyline": false,
           "hasSpread": true,
           "hasTeamTotal": false,
@@ -285,149 +432,14 @@
           "status": "open"
         }
       ],
-      "rotation": 38648,
-      "startTime": "2026-06-28T11:00:00Z",
+      "rotation": 53518,
+      "startTime": "2026-07-04T01:30:00Z",
       "state": {},
       "status": "pending",
-      "totalMarketCount": 6,
+      "totalMarketCount": 7,
       "type": "matchup",
       "units": "Corners",
-      "version": 673517015
-    },
-    {
-      "ageLimit": 0,
-      "altTeaser": false,
-      "featureOrder": -1,
-      "hasAltSpread": true,
-      "hasAltTotal": true,
-      "hasBetshare": false,
-      "hasLive": true,
-      "hasMarkets": true,
-      "id": 1632114770,
-      "isBetshareEnabled": false,
-      "isFeatured": false,
-      "isHighlighted": false,
-      "isLive": false,
-      "isPromoted": false,
-      "league": {
-        "ageLimit": 0,
-        "featureOrder": -1,
-        "group": "China",
-        "id": 11670,
-        "isFeatured": false,
-        "isHidden": false,
-        "isPromoted": false,
-        "isSticky": false,
-        "matchupCount": 0,
-        "matchupCountSE": 0,
-        "name": "China - Super League Corners",
-        "sequence": 4,
-        "sport": {
-          "featureOrder": 0,
-          "id": 29,
-          "isFeatured": true,
-          "isHidden": false,
-          "isSticky": false,
-          "matchupCount": 599,
-          "matchupCountSE": 588,
-          "name": "Soccer",
-          "primaryMarketType": "moneyline"
-        }
-      },
-      "liveMode": null,
-      "parent": {
-        "hasMarkets": true,
-        "id": 1632042010,
-        "isLive": false,
-        "participants": [
-          {
-            "alignment": "home",
-            "name": "Qingdao West Coast",
-            "order": 0,
-            "stats": [
-              {
-                "period": 0
-              },
-              {
-                "period": 1
-              }
-            ]
-          },
-          {
-            "alignment": "away",
-            "name": "Zhejiang",
-            "order": 1,
-            "stats": [
-              {
-                "period": 0
-              },
-              {
-                "period": 1
-              }
-            ]
-          }
-        ],
-        "startTime": "2026-06-28T10:00:00Z",
-        "state": {}
-      },
-      "parentId": 1632042010,
-      "parlayRestriction": "unique_matchups",
-      "participants": [
-        {
-          "alignment": "home",
-          "name": "Qingdao West Coast (Corners)",
-          "order": 0,
-          "stats": [
-            {
-              "period": 0
-            },
-            {
-              "period": 1
-            }
-          ]
-        },
-        {
-          "alignment": "away",
-          "name": "Zhejiang (Corners)",
-          "order": 1,
-          "stats": [
-            {
-              "period": 0
-            },
-            {
-              "period": 1
-            }
-          ]
-        }
-      ],
-      "periods": [
-        {
-          "cutoffAt": "2026-06-28T10:00:00Z",
-          "hasMoneyline": false,
-          "hasSpread": true,
-          "hasTeamTotal": true,
-          "hasTotal": true,
-          "period": 0,
-          "status": "open"
-        },
-        {
-          "cutoffAt": "2026-06-28T10:00:00Z",
-          "hasMoneyline": false,
-          "hasSpread": true,
-          "hasTeamTotal": false,
-          "hasTotal": true,
-          "period": 1,
-          "status": "open"
-        }
-      ],
-      "rotation": 38646,
-      "startTime": "2026-06-28T10:00:00Z",
-      "state": {},
-      "status": "pending",
-      "totalMarketCount": 6,
-      "type": "matchup",
-      "units": "Corners",
-      "version": 673517015
+      "version": 673854699
     }
   ],
   "anySpecialSample": [
@@ -440,7 +452,7 @@
       "hasBetshare": false,
       "hasLive": true,
       "hasMarkets": true,
-      "id": 1632105535,
+      "id": 1632203551,
       "isBetshareEnabled": false,
       "isFeatured": false,
       "isHighlighted": false,
@@ -448,25 +460,25 @@
       "isPromoted": false,
       "league": {
         "ageLimit": 0,
-        "featureOrder": -1,
-        "group": "Finland",
-        "id": 2024,
-        "isFeatured": false,
+        "featureOrder": 0,
+        "group": "World",
+        "id": 2686,
+        "isFeatured": true,
         "isHidden": false,
         "isPromoted": false,
         "isSticky": false,
-        "matchupCount": 6,
-        "matchupCountSE": 6,
-        "name": "Finland - Veikkausliiga",
-        "sequence": 4,
+        "matchupCount": 127,
+        "matchupCountSE": 127,
+        "name": "FIFA - World Cup",
+        "sequence": 1,
         "sport": {
           "featureOrder": 0,
           "id": 29,
           "isFeatured": true,
           "isHidden": false,
           "isSticky": false,
-          "matchupCount": 599,
-          "matchupCountSE": 588,
+          "matchupCount": 403,
+          "matchupCountSE": 402,
           "name": "Soccer",
           "primaryMarketType": "moneyline"
         }
@@ -474,12 +486,12 @@
       "liveMode": null,
       "parent": {
         "hasMarkets": true,
-        "id": 1631903001,
+        "id": 1632183795,
         "isLive": false,
         "participants": [
           {
             "alignment": "home",
-            "name": "TPS",
+            "name": "Portugal",
             "order": 0,
             "stats": [
               {
@@ -487,12 +499,15 @@
               },
               {
                 "period": 1
+              },
+              {
+                "period": 8
               }
             ]
           },
           {
             "alignment": "away",
-            "name": "Jaro",
+            "name": "Croatia",
             "order": 1,
             "stats": [
               {
@@ -500,57 +515,53 @@
               },
               {
                 "period": 1
+              },
+              {
+                "period": 8
               }
             ]
           }
         ],
-        "startTime": "2026-06-27T16:00:00Z",
+        "startTime": "2026-07-02T23:00:00Z",
         "state": {}
       },
-      "parentId": 1631903001,
+      "parentId": 1632183795,
       "parlayRestriction": null,
       "participants": [
         {
           "alignment": "neutral",
-          "id": 1632105536,
-          "name": "0 - 1",
+          "id": 1632203552,
+          "name": "Yes",
           "order": 0,
-          "rotation": 23364
+          "rotation": 53514
         },
         {
           "alignment": "neutral",
-          "id": 1632105537,
-          "name": "2 - 3",
+          "id": 1632203553,
+          "name": "No",
           "order": 0,
-          "rotation": 23365
-        },
-        {
-          "alignment": "neutral",
-          "id": 1632105538,
-          "name": "4+",
-          "order": 0,
-          "rotation": 23366
+          "rotation": 53515
         }
       ],
       "periods": [
         {
-          "cutoffAt": "2026-06-27T16:00:00Z",
+          "cutoffAt": "2026-07-02T23:00:00Z",
           "period": 1,
           "status": "open"
         }
       ],
-      "rotation": 23364,
+      "rotation": 53514,
       "special": {
         "category": "Team Props",
-        "description": "Total Goals Range 1st Half"
+        "description": "Both Teams To Score? 1st Half"
       },
-      "startTime": "2026-06-27T16:00:00Z",
+      "startTime": "2026-07-02T23:00:00Z",
       "state": {},
       "status": "pending",
       "totalMarketCount": 1,
       "type": "special",
       "units": "Regular",
-      "version": 616895050
+      "version": 617221174
     },
     {
       "ageLimit": 0,
@@ -561,7 +572,7 @@
       "hasBetshare": false,
       "hasLive": true,
       "hasMarkets": true,
-      "id": 1632152247,
+      "id": 1632186622,
       "isBetshareEnabled": false,
       "isFeatured": false,
       "isHighlighted": false,
@@ -570,287 +581,299 @@
       "league": {
         "ageLimit": 0,
         "featureOrder": -1,
-        "group": "South Korea",
-        "id": 207553,
+        "group": "Argentina",
+        "id": 208258,
         "isFeatured": false,
         "isHidden": false,
         "isPromoted": false,
         "isSticky": false,
-        "matchupCount": 7,
-        "matchupCountSE": 7,
-        "name": "Korea Republic - K3 League",
-        "sequence": 9,
+        "matchupCount": 2,
+        "matchupCountSE": 2,
+        "name": "Argentina - Primera Division Women",
+        "sequence": 10,
         "sport": {
           "featureOrder": 0,
           "id": 29,
           "isFeatured": true,
           "isHidden": false,
           "isSticky": false,
-          "matchupCount": 599,
-          "matchupCountSE": 588,
+          "matchupCount": 403,
+          "matchupCountSE": 402,
           "name": "Soccer",
           "primaryMarketType": "moneyline"
         }
       },
       "liveMode": null,
       "parent": {
-        "hasMarkets": true,
-        "id": 1632035535,
+        "hasMarkets": false,
+        "id": 1632066330,
         "isLive": false,
         "participants": [
           {
             "alignment": "home",
-            "name": "Chuncheon",
+            "name": "San Luis FC",
             "order": 0,
+            "state": {
+              "corners": 2,
+              "score": 0,
+              "yellowCards": 1
+            },
             "stats": [
               {
-                "period": 1
+                "period": 0
               },
               {
-                "period": 0
+                "period": 1
               }
             ]
           },
           {
             "alignment": "away",
-            "name": "Yangpyeong",
+            "name": "Boca Juniors",
             "order": 1,
+            "state": {
+              "corners": 4,
+              "score": 0,
+              "yellowCards": 0
+            },
             "stats": [
               {
-                "period": 1
+                "period": 0
               },
               {
-                "period": 0
+                "period": 1
               }
             ]
           }
         ],
-        "startTime": "2026-06-27T10:00:00Z",
+        "startTime": "2026-06-28T21:00:00Z",
         "state": {}
       },
-      "parentId": 1632035535,
+      "parentId": 1632066330,
       "parlayRestriction": null,
       "participants": [
         {
           "alignment": "neutral",
-          "id": 1632152249,
+          "id": 1632186627,
           "name": "Yes",
           "order": 0,
-          "rotation": 25662
+          "rotation": 21008
         },
         {
           "alignment": "neutral",
-          "id": 1632152250,
+          "id": 1632186628,
           "name": "No",
           "order": 0,
-          "rotation": 25663
+          "rotation": 21009
         }
       ],
       "periods": [
         {
-          "cutoffAt": "2026-06-27T10:00:00Z",
+          "cutoffAt": "2026-06-28T21:00:00Z",
           "period": 0,
           "status": "open"
         }
       ],
-      "rotation": 25662,
+      "rotation": 21008,
       "special": {
         "category": "Team Props",
-        "description": "Either Team To Score?"
+        "description": "San Luis FC To Score?"
       },
-      "startTime": "2026-06-27T10:00:00Z",
+      "startTime": "2026-06-28T21:00:00Z",
       "state": {},
       "status": "pending",
       "totalMarketCount": 1,
       "type": "special",
       "units": "Regular",
-      "version": 616982740
+      "version": 617128542
     }
   ],
-  "cornerMarketCount": 1205,
+  "cornerMarketCount": 514,
   "cornerMarketSamples": [
     {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
+      "isAlternate": false,
+      "key": "s;0;m",
+      "limits": [
+        {
+          "amount": 2500,
+          "type": "maxRiskStake"
+        }
+      ],
+      "matchupId": 1632153057,
+      "period": 0,
+      "prices": [
+        {
+          "designation": "home",
+          "price": -185
+        },
+        {
+          "designation": "away",
+          "price": 208
+        },
+        {
+          "designation": "draw",
+          "price": 720
+        }
+      ],
+      "status": "open",
+      "type": "moneyline",
+      "version": 3650798749
+    },
+    {
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
       "isAlternate": false,
       "key": "s;0;tt;5.5;home",
       "limits": [
         {
-          "amount": 100,
+          "amount": 1250,
           "type": "maxRiskStake"
         }
       ],
-      "matchupId": 1632104678,
+      "matchupId": 1632153057,
       "period": 0,
       "prices": [
         {
           "designation": "over",
           "points": 5.5,
-          "price": 107
+          "price": 105
         },
         {
           "designation": "under",
           "points": 5.5,
-          "price": -141
+          "price": -138
         }
       ],
       "side": "home",
       "status": "open",
       "type": "team_total",
-      "version": 3648745193
+      "version": 3650798749
     },
     {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
       "isAlternate": false,
-      "key": "s;0;tt;4.5;away",
+      "key": "s;0;tt;3.5;away",
       "limits": [
         {
-          "amount": 100,
+          "amount": 1250,
           "type": "maxRiskStake"
         }
       ],
-      "matchupId": 1632104678,
+      "matchupId": 1632153057,
       "period": 0,
       "prices": [
         {
           "designation": "over",
-          "points": 4.5,
-          "price": 110
+          "points": 3.5,
+          "price": -120
         },
         {
           "designation": "under",
-          "points": 4.5,
-          "price": -146
+          "points": 3.5,
+          "price": -108
         }
       ],
       "side": "away",
       "status": "open",
       "type": "team_total",
-      "version": 3648745193
+      "version": 3650798749
     },
     {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
       "isAlternate": false,
-      "key": "s;0;s;-1.0",
-      "limits": [
-        {
-          "amount": 100,
-          "type": "maxRiskStake"
-        }
-      ],
-      "matchupId": 1632104678,
-      "period": 0,
-      "prices": [
-        {
-          "designation": "home",
-          "points": -1,
-          "price": -114
-        },
-        {
-          "designation": "away",
-          "points": 1,
-          "price": -113
-        }
-      ],
-      "status": "open",
-      "type": "spread",
-      "version": 3648745193
-    },
-    {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
-      "isAlternate": true,
-      "key": "s;0;s;-2.0",
-      "limits": [
-        {
-          "amount": 100,
-          "type": "maxRiskStake"
-        }
-      ],
-      "matchupId": 1632104678,
-      "period": 0,
-      "prices": [
-        {
-          "designation": "home",
-          "points": -2,
-          "price": 134
-        },
-        {
-          "designation": "away",
-          "points": 2,
-          "price": -190
-        }
-      ],
-      "status": "open",
-      "type": "spread",
-      "version": 3648745193
-    },
-    {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
-      "isAlternate": true,
       "key": "s;0;s;-1.5",
       "limits": [
         {
-          "amount": 100,
+          "amount": 2500,
           "type": "maxRiskStake"
         }
       ],
-      "matchupId": 1632104678,
+      "matchupId": 1632153057,
       "period": 0,
       "prices": [
         {
           "designation": "home",
           "points": -1.5,
-          "price": 106
+          "price": -112
         },
         {
           "designation": "away",
           "points": 1.5,
-          "price": -143
+          "price": -110
         }
       ],
       "status": "open",
       "type": "spread",
-      "version": 3648745193
+      "version": 3650798749
     },
     {
-      "cutoffAt": "2026-06-27T16:00:00+00:00",
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
       "isAlternate": true,
-      "key": "s;0;s;-0.5",
+      "key": "s;0;s;-2.5",
       "limits": [
         {
-          "amount": 100,
+          "amount": 2500,
           "type": "maxRiskStake"
         }
       ],
-      "matchupId": 1632104678,
+      "matchupId": 1632153057,
       "period": 0,
       "prices": [
         {
           "designation": "home",
-          "points": -0.5,
-          "price": -144
+          "points": -2.5,
+          "price": 129
         },
         {
           "designation": "away",
-          "points": 0.5,
-          "price": 107
+          "points": 2.5,
+          "price": -183
         }
       ],
       "status": "open",
       "type": "spread",
-      "version": 3648745193
+      "version": 3650798749
+    },
+    {
+      "cutoffAt": "2026-06-29T17:00:00+00:00",
+      "isAlternate": true,
+      "key": "s;0;s;-2.0",
+      "limits": [
+        {
+          "amount": 2500,
+          "type": "maxRiskStake"
+        }
+      ],
+      "matchupId": 1632153057,
+      "period": 0,
+      "prices": [
+        {
+          "designation": "home",
+          "points": -2,
+          "price": 109
+        },
+        {
+          "designation": "away",
+          "points": 2,
+          "price": -144
+        }
+      ],
+      "status": "open",
+      "type": "spread",
+      "version": 3650798749
     }
   ],
   "cornerMarketTypes": {
-    "team_total/p0": 116,
-    "spread/p0": 69,
-    "spread/p0/alt": 276,
-    "total/p0": 69,
-    "total/p0/alt": 298,
-    "spread/p1": 58,
-    "spread/p1/alt": 116,
-    "total/p1": 69,
-    "total/p1/alt": 120,
-    "moneyline/p0": 12,
-    "team_total/p1": 2
+    "moneyline/p0": 15,
+    "team_total/p0": 46,
+    "spread/p0": 25,
+    "spread/p0/alt": 96,
+    "total/p0": 24,
+    "total/p0/alt": 154,
+    "spread/p1": 23,
+    "spread/p1/alt": 50,
+    "total/p1": 25,
+    "total/p1/alt": 52,
+    "team_total/p1": 4
   }
 }
