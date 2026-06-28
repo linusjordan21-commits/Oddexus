@@ -1,0 +1,161 @@
+name: SBOBET Fetch (DOM-skrapa)
+
+# SBOBET-DOM-skrapa — andra GRATIS sharp-källan efter Pinnacle (komplement, lägre
+# tillit än Pinnacle). Stealth-Chromium från Actions (ingen VPN — Actions-IP når
+# de publika prematch-vyerna). Extraherar onPrice-odds (1X2 + Asian Handicap) →
+# data/sbobet-rows.json. Självdrivande loop (scrape→commit var ~15:e min i ~5h)
+# + schedule-reseed, samma mönster som betsson/vbet (GitHub-schemat throttlas på
+# publika repos → vi förlitar oss inte enbart på det).
+#
+# Manuell kalibrering: workflow_dispatch med diagnose=1 dumpar DOM-strukturprov.
+
+on:
+  schedule:
+    - cron: "*/20 * * * *" # reseed (ojämnt → mindre throttle); loopen självdriver
+  workflow_dispatch:
+    inputs:
+      diagnose:
+        description: "Dumpa DOM-strukturprov för kalibrering (1/0)"
+        required: false
+        default: "0"
+
+concurrency:
+  group: sbobet-fetch
+  # false → körningar avbryter INTE varandra (annars cancellar push/schema/manuell-
+  # triggers varandra innan iteration 1 hinner committa). En köad omstart tar över
+  # sömlöst när nuvarande pass slutar.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 317 # ~5h17m self-loop (marginal till 6h job-max)
+    permissions:
+      contents: write
+      actions: write # self-redispatch via workflow_dispatch (bulletproof anti-stale)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch SBOBET (självunderhållande loop, ~15 min cadens i ~5h)
+        env:
+          SBOBET_DIAGNOSE: ${{ inputs.diagnose || '0' }}
+          SBOBET_DEADLINE_MS: "300000" # 5 min hård intern deadline per scrape
+          SBOBET_SETTLE_MS: "5000" # kortare render-vänte → snabbare cadens (2 vyer × settle = bottnen)
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # self-redispatch (workflow_dispatch via API)
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000   # ~5h pass
+          # SHARP-KÄLLA: måste vara mycket färsk. FETCH var ~20s (≈ Pinnacle) → DB speglas
+          # varje scrape (admin/valuebets läser DB). GIT-commit bara var COMMIT_INTERVAL
+          # för att inte flooda main (per-iter-commit → contention → stale-kaskad). DOM-
+          # skrapan (~20-30s) är den verkliga bottnen. Pinnacle-mönstret.
+          CADENCE_SECONDS=20          # ~20s fetch-cadens (≈ Pinnacle)
+          # ADMIN/VALUEBETS LÄSER DB (loadSbobetPayloadWithMeta föredrar DB när dbAge<45min,
+          # vilket alltid gäller — DB speglas VARJE scrape). Git-filen är bara fallback →
+          # commit-takten påverkar INTE färskheten. Per-iter-commit (=0) gav bara push-
+          # contention på main (alla scrapers samtidigt) → långsammare scrape-loop → STALARE
+          # DB. 75s commit = minimal contention, DB-spegeln driver färskheten.
+          COMMIT_INTERVAL_SECONDS=75  # gles git-commit (DB driver färskhet, git är fallback)
+          LAST_COMMIT_EPOCH=0
+          START_EPOCH=$(date +%s)
+          iter=0
+          SUCCESSOR_QUEUED=0   # self-redispatch: köa efterföljare EN gång (iter≥2)
+          # NO-PROGRESS-BREAKER: 4 raka iterationer utan publicerad data (geo-block/
+          # DOM-ändring/render-fel) → avsluta rent så köad omstart tar över färsk.
+          NO_PROGRESS_STREAK=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd efter $iter iter — avslutar rent."; break; }
+            iter_start=$(date +%s)
+            echo "::group::SBOBET iteration $iter (elapsed $((now - START_EPOCH))s)"
+
+            # BULLETPROOF SELF-REDISPATCH: köa EN efterföljare tidigt (iter≥2). Med
+            # concurrency cancel-in-progress:false sitter den PENDING tills denna körning
+            # slutar — oavsett 5h-budget, no-progress-breaker, KRASCH eller preemption tar
+            # efterföljaren omedelbart över. Oberoende av den throttlade schedule-cronen →
+            # sbobet kan aldrig dö i tysthet i timmar (grundorsaken till återkommande stale).
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/sbobet-fetch.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad (pending) — tar över när denna run slutar."
+                SUCCESSOR_QUEUED=1
+              else
+                echo "::warning::self-redispatch misslyckades (försöker igen nästa iteration)"
+              fi
+            fi
+
+            # Hängvakt: 6 min (intern deadline 5 min + marginal). DB speglas i scrapen.
+            before_up=$(jq -r '.updatedAt // empty' data/sbobet-rows.json 2>/dev/null)
+            timeout -k 30 360 npx vite-node scripts/fetch-sbobet-github-action.mjs || echo "::warning::iter $iter scrape exit!=0/timeout — cache bevarad, loopen fortsätter"
+            after_up=$(jq -r '.updatedAt // empty' data/sbobet-rows.json 2>/dev/null)
+
+            # BLIND-DETEKTERING via updatedAt (git-oberoende): ny tidsstämpel = källan lever.
+            # Oförändrad = fetch gav inget nytt → mot breakern. Push-contention räknas aldrig.
+            if [ -n "$after_up" ] && [ "$after_up" != "$before_up" ]; then
+              NO_PROGRESS_STREAK=0
+            else
+              echo "iter $iter: ingen ny data (blind?)"
+              NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1))
+            fi
+
+            # GIT-publicering bara var COMMIT_INTERVAL (DB är redan färsk). Conflict-free
+            # reset-reapply så vi aldrig konfliktar/svälts av andra committers på main.
+            if [ $(( $(date +%s) - LAST_COMMIT_EPOCH )) -ge "$COMMIT_INTERVAL_SECONDS" ]; then
+              cp -f data/sbobet-rows.json /tmp/sb-fresh.json 2>/dev/null || true
+              cp -f data/_sbobet-diag.json /tmp/sb-diag.json 2>/dev/null || true
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
+                cp -f /tmp/sb-fresh.json data/sbobet-rows.json 2>/dev/null || true
+                cp -f /tmp/sb-diag.json data/_sbobet-diag.json 2>/dev/null || true
+                git add data/sbobet-rows.json data/_sbobet-diag.json 2>/dev/null || git add data/sbobet-rows.json 2>/dev/null || true
+                if git diff --staged --quiet; then LAST_COMMIT_EPOCH=$(date +%s); break; fi
+                git commit -m "data: uppdatera sbobet-rows (DOM-skrapa, $(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "iter $iter: push OK (försök $attempt)"; LAST_COMMIT_EPOCH=$(date +%s); break; fi
+                sleep $(( attempt * 2 + (RANDOM % 4) ))
+              done
+            fi
+            echo "::endgroup::"
+            # Bryt BARA på genuint blind källa (ingen NY DATA på länge).
+            if [ "$NO_PROGRESS_STREAK" -ge 8 ]; then
+              echo "::warning::$NO_PROGRESS_STREAK iterationer utan NY DATA (blind källa) — avslutar så köad omstart tar över."
+              break
+            fi
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done

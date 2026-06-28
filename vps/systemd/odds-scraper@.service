@@ -1,0 +1,24 @@
+[Unit]
+Description=Odds scraper (%i)
+After=network.target
+# Vänta på Mullvad-namespacet så VPN-källorna (VBET/Bet7/Betsson/ComeOn/Pinnacle)
+# inte startar före tunneln vid boot. After= ordnar bara — körs ändå om netns
+# saknas (run-scraper.sh faller då tillbaka på direkt-IP).
+After=mullvad-netns.service
+
+[Service]
+Type=oneshot
+User=root
+Environment=INSTALL_DIR=__INSTALL_DIR__
+# Hemligheter (t.ex. BETSAPI_TOKEN för bet365). Filen är optional (-) så övriga
+# scrapers påverkas inte om den saknas. Skapas manuellt på VPS:en, ej i repot.
+EnvironmentFile=-/etc/odds-scraper.env
+WorkingDirectory=__INSTALL_DIR__
+ExecStart=/usr/bin/env bash __INSTALL_DIR__/vps/run-scraper.sh %i
+# 1200s (20 min): ComeOn/Betsson gör nu fotboll+basket+tennis × flera brands
+# (tyngst). Höjt 600→1200 efter att ComeOn timeoutade och blev stale. Taket är
+# ofarligt för de snabba källorna — de blir klara på sekunder ändå.
+TimeoutSec=1200
+# Tysta normal output, behåll fel i journalctl
+StandardOutput=journal
+StandardError=journal

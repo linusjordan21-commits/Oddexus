@@ -1,0 +1,87 @@
+name: Paf-brand Group Prewarm Cache
+
+# Prewarm-cache för Paf-brand-gruppen (X3000, Golden Bull, 1x2, Speedybet).
+# Sökendpoint /api/betting/search?q=<query> (samma Kambi-mirror per brand med
+# olika marginal). Vi kör ~47 strategiska queries per brand och dedupe:ar
+# events på eventId.
+#
+# Inte en "full cache" — search-based. Cache-miss → live-fallback i
+# scrapePafBrandBookmaker (samma endpoint men per-match smart-search).
+#
+# Pipeline-tid: ~25s lokalt (4 brands × 47 queries × 3-concurrency, brands
+# sekventiella). cron */20 räcker — odds rör sig långsammare och vi vill
+# inte hamra upstream search-API:n.
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: paf-brand-fetch
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Paf-brand prewarm cache (4 brands × strategic queries)
+        env:
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          set -e
+          node scripts/fetch-paf-brand-github-action.mjs
+
+      - name: Commit & push data
+        run: |
+          set -e
+          git add data/paf-brand-rows.json
+          if git diff --staged --quiet; then
+            echo "No change in data/paf-brand-rows.json — skipping commit"
+            exit 0
+          fi
+          git commit -m "chore(paf-brand): refresh prewarm cache ($(date -u +%FT%TZ))"
+          # Race-säker push (se altenar-fetch.yml för rationale).
+          push_ok=0
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; }
+            if git push origin HEAD:main; then
+              echo "Push OK på försök $attempt"
+              push_ok=1
+              break
+            fi
+            backoff=$((attempt * 10 + RANDOM % 15 + 5))
+            echo "Push avvisad på försök $attempt — väntar ${backoff}s och retry..."
+            sleep "$backoff"
+          done
+          if [ $push_ok -eq 0 ]; then
+            echo "::warning::Push misslyckades efter 10 försök — nästa workflow-körning fortsätter försöket"
+            exit 1
+          fi

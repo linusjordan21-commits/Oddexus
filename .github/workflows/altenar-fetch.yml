@@ -1,0 +1,92 @@
+name: Altenar Group Odds Fetch
+
+# Fetchar 1X2-odds för Altenar-syskonen DBET / MrVegas / MegaRiches via
+# Altenars SB2 frontend-API (public REST, ingen Cloudflare-block). Ett enda
+# bulk-call per integration returnerar ~500 fotbollsevents. Vi gör alla 3
+# parallellt i scriptet.
+#
+# Pipeline-tid: ~1-2s/körning (3 bulk-fetches parallellt + parse). cron */15
+# räcker — Altenar-odds rör sig långsamt och cron *<15min är slöseri.
+#
+# Cache delas av tre källor i SOURCE_REGISTRY:
+#   foreign_bookmaker_group: dbet, mrvegasse, megarichesse
+# Backend cache-first-vägen scrapeAltenarBookmaker → tryAltenarFromGithubCache
+# läser brand-specifik del från byIntegration.{key}.events.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: altenar-fetch
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Altenar group odds (3 integrations parallel)
+        env:
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          set -e
+          node scripts/fetch-altenar-github-action.mjs
+
+      - name: Commit & push data
+        run: |
+          set -e
+          git add data/altenar-rows.json
+          if git diff --staged --quiet; then
+            echo "No change in data/altenar-rows.json — skipping commit"
+            exit 0
+          fi
+          git commit -m "chore(altenar): refresh odds data ($(date -u +%FT%TZ))"
+          # Race-säker push: Pinnacle pushar var ~90s vilket gör att andra
+          # workflows ofta förlorar rebase-race:n. Fix: 10 retries (var 5),
+          # längre backoff (10-60s exponential), random jitter så workflows
+          # inte alla landar i samma 60-sekunds-fönster.
+          push_ok=0
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; }
+            if git push origin HEAD:main; then
+              echo "Push OK på försök $attempt"
+              push_ok=1
+              break
+            fi
+            # Exponential backoff with jitter: 10-25s, 20-40s, 30-55s, ..., 70-100s
+            backoff=$((attempt * 10 + RANDOM % 15 + 5))
+            echo "Push avvisad på försök $attempt — väntar ${backoff}s och retry..."
+            sleep "$backoff"
+          done
+          if [ $push_ok -eq 0 ]; then
+            echo "::warning::Push misslyckades efter 10 försök — nästa workflow-körning fortsätter försöket"
+            exit 1
+          fi

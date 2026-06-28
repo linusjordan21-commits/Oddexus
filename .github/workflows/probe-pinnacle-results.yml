@@ -1,0 +1,60 @@
+name: Probe Pinnacle Results
+
+# Engångs-utforskning (manuell): finns slutresultat i Pinnacles gäst-API?
+# Avgör om "Pinnacle settled results"-vägen (inkl. tennis) är hållbar innan
+# vi bygger den. Skriver ingen data — all output i Action-loggen.
+# Mullvad-VPN: GitHub Azure-IP är Cloudflare-blockad mot Pinnacle.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: probe-pinnacle-results
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2
+
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set -e
+          set +x
+          if [ -z "$WG_CONF" ]; then
+            echo "::error::MULLVAD_WG_CONF secret saknas"
+            exit 1
+          fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo timeout 90 wg-quick up wg0
+          curl -sS -m 10 https://am.i.mullvad.net/json | jq '{ip, country}' 2>/dev/null || true
+          echo "WireGuard up"
+
+      - name: Run probe
+        run: timeout -k 30 300 node scripts/probe-pinnacle-results.mjs
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf

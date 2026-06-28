@@ -1,0 +1,212 @@
+name: Betfair Fetch (börs via UK VPN)
+
+# Betfair Exchange-skrapa — börs-källa (back/lay + djup + matchad volym) via den
+# PUBLIKA readonly/bymarket-feeden, oautentiserat. Skriver data/betfair-rows.json
+# + speglar till Supabase (odds_cache:betfair-rows). Självdrivande loop
+# (scrape→commit var ~10:e min i ~5h) + */20-schedule-reseed, samma mönster som
+# sbobet/betsson — GitHub-schemat throttlas på publika repos → vi förlitar oss
+# inte enbart på det.
+#
+# VARFÖR VPN: Betfair Exchange har full tjänst i UK/Irland/Malta men är blockerat
+# i USA (= GitHub Actions Azure-IP) OCH i Sverige. Utan en UK/IE-relay laddar
+# sidan aldrig riktiga odds. PUBLIK odds-skrapning utan konto/login/insättning →
+# ingen kontorisk (det finns inget konto att stänga). Tunneln sätts upp EN gång
+# före loopen och rivs i teardown.
+#
+# KRÄVER SECRET: WG_CONF_BETFAIR_UK = hela innehållet i en Mullvad .conf-fil för
+# en UK- (eller IE-) server. PrivateKey loggas aldrig (printf|tee + set +x).
+
+on:
+  schedule:
+    - cron: "*/20 * * * *" # reseed; loopen självdriver mellan reseeds
+  workflow_dispatch:
+    inputs:
+      dump_xhr:
+        description: "Recon: dumpa alla JSON/odds-anrop (1/0)"
+        required: false
+        default: "0"
+
+concurrency:
+  group: betfair-fetch
+  # false → en köad omstart tar sömlöst över när nuvarande ~5h-pass slutar.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 317 # ~5h17m self-loop (marginal till 6h job-max)
+    permissions:
+      contents: write
+      actions: write # self-redispatch via workflow_dispatch (bulletproof anti-stale)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Start Mullvad WireGuard tunnel (UK/IE relay)
+        env:
+          WG_CONF: ${{ secrets.WG_CONF_BETFAIR_UK }}
+        run: |
+          set -e
+          set +x # skydda PrivateKey från trace-output
+          if [ -z "$WG_CONF" ]; then
+            echo "::error::WG_CONF_BETFAIR_UK secret saknas — lägg till en UK/IE Mullvad .conf som secret."
+            exit 1
+          fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
+          echo "WireGuard tunnel up"
+
+      - name: Verify UK/IE IP
+        run: |
+          set -e
+          IP_INFO=$(curl -sS -m 10 https://am.i.mullvad.net/json || true)
+          echo "$IP_INFO" | jq '{ip, country, city, mullvad_exit_ip_hostname}' || echo "$IP_INFO"
+          COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty')
+          # am.i.mullvad.net returnerar "UK" (inte "United Kingdom") — acceptera
+          # båda + IE/Malta-varianter (Betfair-permitterade geografier).
+          case "$COUNTRY" in
+            "UK"|"United Kingdom"|"Great Britain"|"Ireland"|"IE"|"Malta")
+              echo "OK: exit-land $COUNTRY (Betfair-permitterat)";;
+            *)
+              echo "::error::Förväntade UK/Ireland/Malta, fick country=$COUNTRY — Betfair blockerar denna geo. Byt Mullvad-server."
+              exit 1
+              ;;
+          esac
+
+      - name: Fetch Betfair (självunderhållande loop, ~10 min cadens i ~5h)
+        env:
+          BETFAIR_DUMP_XHR: ${{ inputs.dump_xhr || '0' }}
+          BETFAIR_DEADLINE_MS: "300000" # 5 min hård intern deadline per scrape
+          BETFAIR_SETTLE_MS: "5000" # enum gör egna fetchar → behöver bara sid-load + _ak
+          BETFAIR_CONC: "10" # parallella bymarket-hämtningar (6→10 = färre seriella rundor, under DSC-0018-tröskeln)
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # self-redispatch (workflow_dispatch via API)
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000   # ~5h pass
+          # SHARP-KÄLLA: måste vara mycket färsk. FETCH var ~20s (≈ Pinnacle) → DB speglas
+          # varje scrape (admin/valuebets läser DB, inte git-filen). GIT-commit bara var
+          # COMMIT_INTERVAL för att inte flooda main (per-iter-commit → contention → stale-
+          # kaskad). Exakt Pinnacle-mönstret. Scrape ~20-25s är den verkliga bottnen.
+          CADENCE_SECONDS=20          # ~20s fetch-cadens (≈ Pinnacle)
+          # ADMIN/VALUEBETS LÄSER DB (loadBetfairPayloadWithMeta föredrar DB när dbAge<60min,
+          # vilket alltid gäller — DB speglas VARJE scrape). Git-filen är bara fallback →
+          # commit-takten påverkar INTE färskheten. Per-iter-commit (=0) gav bara push-
+          # contention på main (alla scrapers samtidigt) → långsammare scrape-loop → STALARE
+          # DB. 75s commit = minimal contention, DB-spegeln driver färskheten.
+          COMMIT_INTERVAL_SECONDS=75  # gles git-commit (DB driver färskhet, git är fallback)
+          LAST_COMMIT_EPOCH=0
+          START_EPOCH=$(date +%s)
+          iter=0
+          SUCCESSOR_QUEUED=0   # self-redispatch: köa efterföljare EN gång (iter≥2)
+          # NO-PROGRESS-BREAKER: 4 raka iterationer utan publicerad data (geo-block/
+          # feed-ändring/render-fel) → avsluta rent så köad omstart tar över färsk.
+          NO_PROGRESS_STREAK=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd efter $iter iter — avslutar rent."; break; }
+            iter_start=$(date +%s)
+            echo "::group::Betfair iteration $iter (elapsed $((now - START_EPOCH))s)"
+
+            # BULLETPROOF SELF-REDISPATCH: köa EN efterföljare tidigt (iter≥2). Med
+            # concurrency cancel-in-progress:false sitter den PENDING tills denna körning
+            # slutar — oavsett 5h-budget, no-progress-breaker, KRASCH eller preemption tar
+            # efterföljaren omedelbart över. Oberoende av den throttlade schedule-cronen →
+            # betfair kan aldrig dö i tysthet i timmar (grundorsaken till återkommande stale).
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/betfair-fetch.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad (pending) — tar över när denna run slutar."
+                SUCCESSOR_QUEUED=1
+              else
+                echo "::warning::self-redispatch misslyckades (försöker igen nästa iteration)"
+              fi
+            fi
+
+            # Hängvakt: 6 min (intern deadline 5 min + marginal). DB speglas i scrapen.
+            before_up=$(jq -r '.updatedAt // empty' data/betfair-rows.json 2>/dev/null)
+            timeout -k 30 360 npx vite-node scripts/fetch-betfair-github-action.mjs || echo "::warning::iter $iter scrape exit!=0/timeout — cache bevarad, loopen fortsätter"
+            after_up=$(jq -r '.updatedAt // empty' data/betfair-rows.json 2>/dev/null)
+
+            # BLIND-DETEKTERING via updatedAt (git-oberoende): ny tidsstämpel = källan lever
+            # (DB speglad). Oförändrad = fetch gav inget nytt (geo-block/feed-fel) → räkna mot
+            # breakern. Push-contention räknas ALDRIG som blind (frikopplat från git nu).
+            if [ -n "$after_up" ] && [ "$after_up" != "$before_up" ]; then
+              NO_PROGRESS_STREAK=0
+            else
+              echo "iter $iter: ingen ny data (blind?)"
+              NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1))
+            fi
+
+            # GIT-publicering bara var COMMIT_INTERVAL (DB är redan färsk varje fetch).
+            # Conflict-free reset-reapply → konfliktar/svälts aldrig av andra committers.
+            if [ $(( $(date +%s) - LAST_COMMIT_EPOCH )) -ge "$COMMIT_INTERVAL_SECONDS" ]; then
+              cp -f data/betfair-rows.json /tmp/bf-fresh.json 2>/dev/null || true
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
+                cp -f /tmp/bf-fresh.json data/betfair-rows.json 2>/dev/null || true
+                git add data/betfair-rows.json 2>/dev/null || true
+                if git diff --staged --quiet; then LAST_COMMIT_EPOCH=$(date +%s); break; fi
+                git commit -m "data: uppdatera betfair-rows (börs via UK-VPN, $(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "iter $iter: push OK (försök $attempt)"; LAST_COMMIT_EPOCH=$(date +%s); break; fi
+                sleep $(( attempt * 2 + (RANDOM % 4) ))
+              done
+            fi
+            echo "::endgroup::"
+            # Bryt BARA på genuint blind källa (ingen NY DATA på länge).
+            if [ "$NO_PROGRESS_STREAK" -ge 8 ]; then
+              echo "::warning::$NO_PROGRESS_STREAK iterationer utan NY DATA (blind källa) — avslutar så köad omstart tar över."
+              break
+            fi
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+          echo "WireGuard tunnel down + config raderad"

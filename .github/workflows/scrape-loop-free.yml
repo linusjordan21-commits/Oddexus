@@ -1,0 +1,104 @@
+name: Scrape-loop FREE (atg + svenskaspel)
+
+# SJÄLVDRIVEN LOOP för de två STÖRSTA odds-källorna (atg ~1276 linjer, svenskaspel
+# ~1083 linjer) — båda via Kambi-CDN-API, HELT GRATIS (ingen Scrapfly-credit, ingen
+# Mullvad). De ger flest valuebets → vi pollar dem så ofta som möjligt.
+#
+# VARFÖR LOOP, INTE CRON: GitHub:s schedule throttlas till ~var 2:a timme på publika
+# repos → cron ger inte färskhet. En long-running loop (samma mönster som pinnacle-
+# fetch) kör var ~2,5:e min i ~5h och re-dispatchar sig själv → äkta hög frekvens.
+#
+# Secrets: SUPABASE_URL/SUPABASE_SERVICE_KEY (DB-spegling, valfritt), GITHUB_TOKEN.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # RESTART-trigger (throttlad) — ej den primära kadensen
+  workflow_dispatch: {}
+
+concurrency:
+  group: scrape-loop-free
+  # cancel-in-progress: FALSE — en redispatchad efterföljare väntar PENDING tills
+  # denna run slutar (krasch/timeout/budget) och tar då omedelbart över.
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 317   # < 6h GHA-tak, marginal för städning
+    permissions:
+      contents: write
+      actions: write       # self-redispatch (workflow_dispatch av sig själv)
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        run: npm install --include=dev
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Loop (atg + svenskaspel)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000     # ~5h
+          CYCLE_SECONDS=150          # mål: ~2,5 min/cykel (atg+svenskaspel)
+          START_EPOCH=$(date +%s)
+          iter=0
+          SUCCESSOR_QUEUED=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd — avslutar rent."; break; }
+            cycle_start=$(date +%s)
+
+            # Hämta båda källorna (hängvakt: per-script timeout så loopen aldrig fastnar).
+            timeout -k 30 200 node scripts/fetch-atg-github-action.mjs || echo "::warning::atg iter $iter exit!=0/timeout — cache bevarad"
+            timeout -k 30 200 node scripts/fetch-svenskaspel-github-action.mjs || echo "::warning::svenskaspel iter $iter exit!=0/timeout — cache bevarad"
+
+            # Conflict-free publicering (reset-reapply per fil): spara fresh, reset till
+            # origin/main, lägg tillbaka fresh, pusha. Aldrig konflikt med pinnacle m.fl.
+            cp -f data/atg-rows.json /tmp/atg-fresh.json 2>/dev/null || true
+            cp -f data/svenskaspel-rows.json /tmp/svs-fresh.json 2>/dev/null || true
+            for attempt in 1 2 3 4 5; do
+              timeout 60 git fetch origin main >/dev/null 2>&1 || true
+              timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
+              cp -f /tmp/atg-fresh.json data/atg-rows.json 2>/dev/null || true
+              cp -f /tmp/svs-fresh.json data/svenskaspel-rows.json 2>/dev/null || true
+              git add data/atg-rows.json data/svenskaspel-rows.json 2>/dev/null || true
+              if git diff --staged --quiet; then echo "Iter $iter: ingen förändring"; break; fi
+              git commit -m "chore(loop-free): atg+svenskaspel ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+              if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "Iter $iter: push OK (försök $attempt)"; break; fi
+              sleep $((attempt))
+            done
+
+            # BULLETPROOF SELF-REDISPATCH: köa EN efterföljare tidigt (idempotent). Med
+            # cancel-in-progress:false sitter den PENDING tills denna run slutar.
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/scrape-loop-free.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad (pending)."
+                SUCCESSOR_QUEUED=1
+              else
+                echo "::warning::self-redispatch misslyckades (försöker igen)"
+              fi
+            fi
+
+            cycle_elapsed=$(( $(date +%s) - cycle_start ))
+            sleep_for=$(( CYCLE_SECONDS - cycle_elapsed ))
+            [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+          done

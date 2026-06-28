@@ -1,0 +1,45 @@
+name: DB Migrate (Supabase)
+
+# Applicerar supabase/migrations/*.sql mot Supabase via scripts/db/apply-migrations.mjs.
+# Körs när en migrationsfil ändras på main, eller manuellt. Idempotent + bokför i
+# schema_migrations → säkert att köra om. Kräver att 0000_bootstrap.sql körts en
+# gång manuellt (se supabase/README.md).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "supabase/migrations/**"
+      - "scripts/db/apply-migrations.mjs"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Lista bara pending migrationer (1/0)"
+        required: false
+        default: "0"
+
+concurrency:
+  group: db-migrate
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Apply migrations
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          DRY_RUN: ${{ inputs.dry_run || '0' }}
+        run: node scripts/db/apply-migrations.mjs

@@ -1,0 +1,134 @@
+name: Scrape-loop PAID (tipwin + coolbet + 10bet)
+
+# SJÄLVDRIVEN, VIKTAD & BUDGET-PACAD loop för Scrapfly-böckerna. GitHub-cron throttlas
+# till ~2h → ger ingen färskhet; loopen (pinnacle-mönstret) kör kontinuerligt i ~5h och
+# re-dispatchar sig själv.
+#
+# VIKTNING efter marknadsstorlek / kostnad (recon 2026-06-26):
+#   - tipwin  (1 render,  ~321 linjer): VARJE cykel  (billig, bra djup)
+#   - coolbet (≤5 renders, ~796 linjer): VAR 2:a cykel
+#   - 10bet   (3 renders,  ~64 linjer):  VAR 3:e cykel (tunnast/render → minst)
+# Snitt ≈ 30 + 150/2 + 90/3 = 135 credits/cykel. Cykelgolv 7 min → ~6 170 cykler/mån
+# ≈ 833k credits < 1,19M (delas ej med gratis-loopen). BUDGETVAKT: var 20:e cykel
+# kollas Scrapfly-saldot; < SAFETY_FLOOR → slow-mode (lång sleep) resten av perioden.
+#
+# Secrets: SCRAPER_API_KEY (Scrapfly), SUPABASE_* (valfri DB-spegling), GITHUB_TOKEN.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # RESTART-trigger (throttlad) — ej primär kadens
+  workflow_dispatch: {}
+
+concurrency:
+  group: scrape-loop-paid
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 317
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        run: npm install --include=dev
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Loop (viktad + budget-pacad)
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000     # ~5h
+          CYCLE_MIN_SECONDS=420      # golv 7 min/cykel (budget-pacing)
+          SAFETY_FLOOR=40000         # < så många credits kvar → slow-mode
+          SLOW_SLEEP=1800            # slow-mode: 30 min/cykel
+          START_EPOCH=$(date +%s)
+          iter=0
+          SUCCESSOR_QUEUED=0
+          SLOW_MODE=0
+
+          publish() {  # publish <file>  — conflict-free reset-reapply push
+            local file="$1"
+            cp -f "$file" "/tmp/$(basename $file).fresh" 2>/dev/null || return 0
+            for attempt in 1 2 3 4 5; do
+              timeout 60 git fetch origin main >/dev/null 2>&1 || true
+              timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
+              cp -f "/tmp/$(basename $file).fresh" "$file" 2>/dev/null || true
+              git add "$file" 2>/dev/null || true
+              if git diff --staged --quiet; then break; fi
+              git commit -m "chore(loop-paid): $(basename $file .json) ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+              if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then break; fi
+              sleep $((attempt))
+            done
+          }
+
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd — avslutar rent."; break; }
+            cycle_start=$(date +%s)
+
+            # BUDGETVAKT: var 20:e cykel — kolla Scrapfly-saldo, gå i slow-mode om lågt.
+            if [ $(( iter % 20 )) -eq 1 ] && [ -n "$SCRAPER_API_KEY" ]; then
+              acct=$(timeout 20 curl -fsS "https://api.scrapfly.io/account?key=${SCRAPER_API_KEY}" 2>/dev/null || echo '{}')
+              rem=$(echo "$acct" | jq -r '((.subscription.usage.scrape.limit // 0) - (.subscription.usage.scrape.current // 0))' 2>/dev/null || echo "")
+              if [ -n "$rem" ] && [ "$rem" != "null" ]; then
+                echo "Budgetvakt iter $iter: ~$rem credits kvar."
+                if [ "$rem" -lt "$SAFETY_FLOOR" ]; then SLOW_MODE=1; echo "::warning::Lågt saldo ($rem < $SAFETY_FLOOR) — SLOW-MODE."; else SLOW_MODE=0; fi
+              fi
+            fi
+
+            # tipwin VARJE cykel (billig, 1 render)
+            timeout -k 30 480 node scripts/fetch-tipwin-github-action.mjs || echo "::warning::tipwin iter $iter exit!=0/timeout"
+            publish data/tipwin-rows.json
+
+            # coolbet VAR 2:a cykel (5 renders)
+            if [ $(( iter % 2 )) -eq 0 ]; then
+              timeout -k 30 420 node scripts/fetch-coolbet-github-action.mjs || echo "::warning::coolbet iter $iter exit!=0/timeout"
+              publish data/coolbet-rows.json
+            fi
+
+            # 10bet VAR 3:e cykel (3 renders, tunnast marknad)
+            if [ $(( iter % 3 )) -eq 0 ]; then
+              timeout -k 30 540 node scripts/fetch-10bet-github-action.mjs || echo "::warning::10bet iter $iter exit!=0/timeout"
+              publish data/10bet-rows.json
+            fi
+
+            # BULLETPROOF SELF-REDISPATCH (idempotent)
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/scrape-loop-paid.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad (pending)."
+                SUCCESSOR_QUEUED=1
+              else
+                echo "::warning::self-redispatch misslyckades (försöker igen)"
+              fi
+            fi
+
+            # Pacing: slow-mode vid lågt saldo, annars cykelgolv.
+            floor=$CYCLE_MIN_SECONDS
+            [ "$SLOW_MODE" = "1" ] && floor=$SLOW_SLEEP
+            cycle_elapsed=$(( $(date +%s) - cycle_start ))
+            sleep_for=$(( floor - cycle_elapsed ))
+            [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+          done

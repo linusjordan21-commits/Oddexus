@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer för Coolbet scraper (var 3min)
+
+[Timer]
+OnBootSec=90s
+OnUnitActiveSec=3min
+AccuracySec=5s
+Unit=odds-scraper@coolbet.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,80 @@
+name: CLV Calibrate (mätt källtrust → vikter)
+
+# Gör "hur mycket vi litar på var källa" MÄTT: läser shadow-CLV-loggen, mäter per
+# källa hur väl dess öppningspris förutspår stängningslinjen, och skriver empiriska
+# clvMultipliers till data/clv-multipliers.json (committas till main). Consensus +
+# live-sharpBlend läser filen och skalar källvikterna därefter.
+#
+# Långsam signal → körs en gång om dygnet (+ manuellt). Multiplikatorerna är
+# clampade [0.7,1.3] och kräver min-urval, så en brusig dag kan inte svänga vikterna.
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # dagligen 04:17 UTC (ojämn minut → mindre throttle)
+  workflow_dispatch:
+    inputs:
+      min_samples:
+        description: "Min settled-samples per källa för att justera vikten"
+        required: false
+        default: "40"
+
+concurrency:
+  group: clv-calibrate
+  cancel-in-progress: true
+
+jobs:
+  calibrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      # READ-ONLY restore av senaste shadow-CLV-staten (samma cache som clv-report).
+      - name: Restore CLV state (read-only)
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/clv-log.jsonl
+            data/pinnacle-closing.json
+          key: clv-calibrate-noop-${{ github.run_id }}
+          restore-keys: |
+            shadow-clv-state-
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Kör kalibrering → data/clv-multipliers.json
+        run: npx vite-node scripts/clv-calibrate.ts --min "${{ inputs.min_samples || '40' }}" || echo "[ci] clv-calibrate-fel ignorerat"
+
+      - name: Committa multiplikatorer (om ändrade)
+        run: |
+          git add data/clv-multipliers.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "ingen ändring i clv-multipliers.json (för lite data eller oförändrat)"
+          else
+            git commit -m "data: kalibrera clv-multipliers (mätt källtrust, $(date -u +%FT%TZ))" || true
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main >/dev/null 2>&1 || true
+              git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+              if git push origin HEAD:main >/dev/null 2>&1; then echo "push OK (försök $attempt)"; break; fi
+              sleep $((attempt * 4))
+            done
+          fi

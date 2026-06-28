@@ -1,0 +1,15 @@
+[Unit]
+Description=Mullvad WireGuard network namespace (mv) för Pinnacle-scrapern
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/env bash __INSTALL_DIR__/vps/mullvad-netns.sh
+ExecStop=/usr/sbin/ip netns del mv
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

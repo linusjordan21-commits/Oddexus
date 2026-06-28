@@ -1,0 +1,223 @@
+name: VBET Odds Fetch
+
+# Fetchar 1X2-odds från VBET via swarm-WebSocket-protokollet. Render-IP
+# OCH GitHub Actions Azure-IPs är båda blockerade av Cloudflare WAF för
+# www.vbet.se (verifierat 2026-05-07: HTTP 403 på conf.json + swarm-WS).
+#
+# Lösning (samma pattern som betsson-fetch.yml): tunnla utgående trafik
+# genom Mullvad WireGuard (svensk relay) — Mullvad-IPs blockar Cloudflare
+# inte. Bekräftat lokalt 2026-05-25 att vanlig svensk IP får 200 OK på
+# conf.json + WS-anslutning till eu-swarm-newm.vbet.se.
+#
+# Statisk siteId-strategi: scriptet skippar conf.json-fetch (cache:s
+# månadsvis) och använder VBET_STATIC_SITE_ID. Det betyder att även om
+# Cloudflare återblockar conf.json från Mullvad-IPs senare, kan swarm
+# fortsätta så länge VBET_SITE_ID är aktuell. Uppdatera via secret.
+#
+# Pipeline-tid: ~5-8 min (~30s WG-setup + swarm-search 250 queries + detail-
+# RPC). cron */15 — VBET-odds rör sig långsamt.
+
+on:
+  # GitHub Actions PRIMÄR igen (active-active återställt 2026-06-08): VPS:en
+  # committade aldrig pålitligt, så att stänga av schemat gjorde källan stale.
+  # VPS:en kvar som hot-standby — gör den inte primär igen förrän den bevisat
+  # committar (vps-scraper-commits syns på main).
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: vbet-fetch
+  # cancel-in-progress: FALSE — VBET-pipelinen tar ~5-8 min (Mullvad-setup +
+  # swarm-fetch). Med 'true' avbröts pågående körningar av nästa trigger innan
+  # de hann committa (audit 2026-06-07: cancelled i rad). Låt slow scrapes köra
+  # klart; överskott köas/droppas. Samma princip som Pinnacle/Bet7/Bet9ja.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # ~5h17m: self-sustaining loop. VBET är LÅNGSAM (~8 min swarm-scrape + ~4 min
+    # WireGuard/setup = ~12-15 min/jobb). Med keepalive-dispatch + cancel-in-
+    # progress:false köade dispatch:arna bakom varandra och vbet hann bara
+    # committa ~var 30:e min (= sin tröskel → stale). En intern loop som håller
+    # Mullvad-tunneln uppe och kör scrapen back-to-back ger ~9 min cadens i stället.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2
+
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          # Egen VPN-ingång för vbet (MULLVAD_WG_CONF_VBET) provas FÖRST; är den
+          # trasig/ogiltig (t.ex. felklistrad) faller vi automatiskt tillbaka på
+          # den delade MULLVAD_WG_CONF. En dålig vbet-secret kan alltså aldrig
+          # fälla källan — bara missa isolerings-bonusen.
+          WG_CONF_VBET: ${{ secrets.MULLVAD_WG_CONF_VBET }}
+          WG_CONF_SHARED: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set +x
+          try_conf() {
+            printf '%s' "$1" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+            sudo chmod 600 /etc/wireguard/wg0.conf
+            if sudo wg-quick up wg0 2>&1; then return 0; fi
+            sudo wg-quick down wg0 2>/dev/null || true
+            return 1
+          }
+          if [ -n "$WG_CONF_VBET" ] && try_conf "$WG_CONF_VBET"; then
+            echo "WireGuard tunnel up (vbet-dedikerad relay)"
+          elif [ -n "$WG_CONF_SHARED" ] && try_conf "$WG_CONF_SHARED"; then
+            echo "::warning::vbet-dedikerad config ogiltig/saknas — kör på delad relay"
+            echo "WireGuard tunnel up (delad relay, fallback)"
+          else
+            echo "::error::Ingen fungerande WireGuard-config (varken VBET-dedikerad eller delad)"
+            exit 1
+          fi
+
+      - name: Verify Swedish IP + VBET reachability
+        run: |
+          set -e
+          IP_INFO=$(curl -sS -m 10 https://am.i.mullvad.net/json || true)
+          echo "IP-info via Mullvad:"
+          echo "$IP_INFO" | jq '{ip, country, city, mullvad_exit_ip, mullvad_exit_ip_hostname}' || echo "$IP_INFO"
+          COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty')
+          if [ "$COUNTRY" != "Sweden" ]; then
+            echo "::error::Förväntade country=Sweden, fick country=$COUNTRY"
+            exit 1
+          fi
+          # conf.json-probe är BARA en hälsosignal — scrapern använder statiskt
+          # VBET_STATIC_SITE_ID och behöver inte conf.json. Tidigare dödade ett
+          # timeout/block här (curl exit 28 → set -e) hela jobbet INNAN scrapingen,
+          # vilket gjorde VBET stale vid varje transient nätverkshicka. Nu varnar
+          # vi bara och kör vidare; scrapern bevarar gammal cache om swarm failar.
+          VBET_HTTP=$(curl -sS -m 15 -o /dev/null -w "%{http_code}" \
+            -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
+            "https://www.vbet.se/desktop/conf.json" || echo "000")
+          echo "VBET conf.json HTTP: $VBET_HTTP"
+          if [ "$VBET_HTTP" != "200" ]; then
+            echo "::warning::VBET conf.json returnerade $VBET_HTTP (timeout/block) — kör scrape ändå via statiskt siteId; scrapern bevarar tidigare cache vid fel."
+          fi
+          echo "Verify klar — kör scrape-steget"
+
+      - name: Fetch VBET (självunderhållande loop, ~9 min cadens i ~5h)
+        # Kontinuerlig intern loop: fetch + commit var ~9:e min i upp till ~5h.
+        # Mullvad-tunneln hålls uppe hela loopen men VERIFIERAS + återställs per
+        # iteration (en tunnel som droppar mitt i 5h skulle annars ge tomma
+        # fetches). Resilient: failad fetch bevarar cache, loopen fortsätter.
+        env:
+          VBET_QUERY_LIMIT: "120"
+          VBET_MAX_EVENTS: "800"
+          VBET_LOOKAHEAD_HOURS: "72"
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          # VBET_QUERY_LIMIT sänkt 250->120: färre swarm-anslutningar per körning
+          # → mindre burst mot den delade Mullvad-relay-IP:n → Cloudflare blockar
+          # mer sällan. Färre events men FÄRSK data slår fler men stale.
+          CADENCE_SECONDS=900      # ~15 min cadens. VBET:s swarm bakom Cloudflare blockerar
+                                   # vår Mullvad-relay-IP om vi ansluter för tätt (9 min var för
+                                   # aggressivt → 0 events). 15 min är skonsammare men << 30-min-tröskel.
+          START_EPOCH=$(date +%s)
+
+          ensure_tunnel() {
+            set +x
+            local country
+            country=$(curl -sS -m 10 https://am.i.mullvad.net/json 2>/dev/null | jq -r '.country // empty' 2>/dev/null)
+            if [ "$country" != "Sweden" ]; then
+              echo "Tunnel ej svensk (country='$country') — återställer WireGuard"
+              # Återanvänd den config som BEVISAT fungerade i tunnel-steget
+              # (ligger kvar på /etc/wireguard/wg0.conf) — ingen env behövs.
+              sudo timeout 90 wg-quick down wg0 2>/dev/null || true
+              sudo timeout 90 wg-quick up wg0 2>/dev/null || true
+            fi
+          }
+
+          iter=0
+          # NO-PROGRESS-BREAKER (2026-06-12): lyckad fetch stämplar alltid ny
+          # updatedAt ⇒ commit. 3 raka iterationer utan publicerad data = blind
+          # loop (död tunnel/Cloudflare-block) → avsluta rent så köad restart
+          # tar över med färsk runner + tunnel.
+          NO_PROGRESS_STREAK=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd efter $iter iter — avslutar rent."; break; }
+            iter_start=$(date +%s)
+            echo "::group::VBET iteration $iter (elapsed $((now - START_EPOCH))s)"
+
+            ensure_tunnel
+            # HÄNGVAKT (2026-06-12): all trafik går genom WireGuard-tunneln. Dör
+            # tunneln mitt i ett anrop BLACKHOLAS trafiken → node/git hänger för
+            # evigt och körningen blir en zombie som håller concurrency-gruppen
+            # låst i timmar (alla omstarter köas+avbryts → källan stale). timeout
+            # gör varje kommando tidsbegränsat; nästa iteration lagar tunneln.
+            # 1380s (23 min): rymmer 3-sports-scrapen (soccer+basket+tennis,
+            # intern hard-deadline 17 min) med marginal för deadline-write.
+            timeout -k 30 1380 node scripts/fetch-vbet-github-action.mjs || echo "::warning::iter $iter fetch exit!=0/timeout — cache bevarad, loopen fortsätter"
+
+            git add data/vbet-rows.json
+            if git diff --staged --quiet; then
+              echo "iter $iter: ingen förändring"
+              NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1))
+            else
+              git commit -m "chore(vbet): refresh odds data ($(date -u +%FT%TZ))" || true
+              PUSHED=0
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "iter $iter: push OK (försök $attempt)"; PUSHED=1; break; fi
+                sleep $((attempt * 5))
+              done
+              if [ "$PUSHED" = "1" ]; then NO_PROGRESS_STREAK=0; else NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1)); fi
+            fi
+            echo "::endgroup::"
+            if [ "$NO_PROGRESS_STREAK" -ge 3 ]; then
+              echo "::warning::$NO_PROGRESS_STREAK iterationer utan publicerad data — avslutar så köad restart tar över med färsk tunnel."
+              break
+            fi
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+          echo "WireGuard tunnel down + config raderad"

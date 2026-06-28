@@ -1,0 +1,18 @@
+name: Probe Paf Detail (recon)
+on:
+  workflow_dispatch: {}
+concurrency:
+  group: probe-paf-detail
+  cancel-in-progress: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/probe-paf-detail.mjs || echo "[ci] probe-fel ignorerat"

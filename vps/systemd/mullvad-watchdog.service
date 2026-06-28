@@ -1,0 +1,12 @@
+[Unit]
+Description=Mullvad namespace watchdog (självläkande tunnel)
+After=mullvad-netns.service
+
+[Service]
+Type=oneshot
+User=root
+Environment=INSTALL_DIR=__INSTALL_DIR__
+WorkingDirectory=__INSTALL_DIR__
+ExecStart=/usr/bin/env bash __INSTALL_DIR__/vps/mullvad-watchdog.sh
+StandardOutput=journal
+StandardError=journal

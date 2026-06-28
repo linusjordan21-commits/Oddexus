@@ -1,0 +1,31 @@
+name: Probe Smarkets
+
+# Engångs-utforskning (manuell): hitta riktiga matcher + odds-format i Smarkets
+# API. Smarkets API är öppet och funkar från datacenter-IP (verifierat) → ingen
+# VPN. Ingen data skrivs — allt i Action-loggen.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: probe-smarkets
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run probe
+        run: |
+          timeout -k 30 90 node scripts/probe-smarkets.mjs football count || true
+          timeout -k 30 90 node scripts/probe-smarkets.mjs basketball count || true
+          timeout -k 30 90 node scripts/probe-smarkets.mjs tennis count || true

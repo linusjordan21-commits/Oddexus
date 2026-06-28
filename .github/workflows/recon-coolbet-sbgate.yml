@@ -1,0 +1,51 @@
+name: Recon Coolbet sbgate-API (engångs)
+
+# Hämtar Coolbets riktiga sportsbook-API (/s/sbgate/...) via scrape.do och dumpar
+# JSON → vi ser odds-form + market-type-ids. ENDAST dispatch. Secrets:
+# SCRAPER_PROVIDER + SCRAPER_API_KEY. Resultat → data/_coolbet-sbgate-recon.json.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-coolbet-sbgate
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run sbgate recon
+        env:
+          SCRAPER_PROVIDER: ${{ secrets.SCRAPER_PROVIDER }}
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: node scripts/recon-coolbet-sbgate.mjs
+      - name: Commit recon output
+        if: always()
+        run: |
+          set -e
+          git add data/_coolbet-sbgate-recon.json data/_coolbet-hydrated.html || true
+          if git diff --staged --quiet; then echo "No change"; exit 0; fi
+          git commit -m "chore(recon): coolbet sbgate-API-rekon ($(date -u +%FT%TZ))"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase --autostash "origin/$GITHUB_REF_NAME" || { git rebase --abort || true; }
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then echo "Push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

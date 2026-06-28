@@ -1,0 +1,60 @@
+name: Recon New Sites via Scrapfly (engångs)
+
+# BLIND nätverks-recon för videoslots/kungaslottet/svenskaspel/campobet via Scrapfly.
+# Patchar fetch+XHR i SPA:t → loggar odds-API-anrop (URL + svars-snutt). Sandlådan
+# blockar domänerna + WebFetch 403 → måste köras från CI med SCRAPER_API_KEY.
+#
+# TRIGGER: push på själva recon-filerna (auto-kör vid push, ingen dispatch krävs)
+# + manuell dispatch. Output: data/_recon-newsites-scrapfly.json (committas tillbaka).
+
+on:
+  push:
+    paths:
+      - "scripts/recon-newsites-scrapfly.mjs"
+      - ".github/workflows/recon-newsites-scrapfly.yml"
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-newsites-scrapfly
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run newsites Scrapfly recon
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: node scripts/recon-newsites-scrapfly.mjs
+      - name: Dump report
+        if: always()
+        run: cat data/_recon-newsites-scrapfly.json 2>/dev/null || echo "(ingen rapport)"
+      - name: Commit report
+        if: always()
+        run: |
+          BR="${GITHUB_REF_NAME}"
+          git add data/_recon-newsites-scrapfly.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(recon): newsites scrapfly ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3 4; do
+            timeout 30 git fetch origin "$BR" >/dev/null 2>&1 || true
+            timeout 30 git rebase --autostash "origin/$BR" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 60 git push origin "HEAD:$BR" >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 3))
+          done

@@ -1,0 +1,52 @@
+name: Recon New Bookmakers (engångs)
+
+# Provar kandidat integrations-koder (Kambi offering / Altenar integration) för
+# LeoVegas, Expekt, 888sport, BetMGM, MegaFortune från GitHub:s nätverk (når
+# kambicdn + Altenar — vår sandlåda gör det inte). ENDAST dispatch.
+# Output: data/_recon-new-bookmakers.json.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-new-bookmakers
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run recon
+        run: node scripts/recon-new-bookmakers.mjs
+      - name: Dump report
+        if: always()
+        run: cat data/_recon-new-bookmakers.json 2>/dev/null || echo "(ingen rapport)"
+      - name: Commit report
+        if: always()
+        run: |
+          BR="${GITHUB_REF_NAME}"
+          git add data/_recon-new-bookmakers.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(recon): nya bookmakers integrations-koder ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3; do
+            timeout 30 git fetch origin "$BR" >/dev/null 2>&1 || true
+            timeout 30 git rebase --autostash "origin/$BR" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 60 git push origin "HEAD:$BR" >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 3))
+          done

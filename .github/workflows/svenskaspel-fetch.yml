@@ -1,0 +1,79 @@
+name: Svenska Spel (Oddset) Odds Fetch
+
+# Oddset (Svenska Spel) drivs av Kambi → samma publika CDN-feed som Unibet, offering "svenskaspel".
+# https://eu-offering-api.kambicdn.com/offering/v2018/svenskaspel/listView/football/{region}.json
+# 1X2 i listView + totals/AH via per-event detalj-anrop. Lätt-vikt, ingen Cloudflare.
+# NOTE: svenskaspel pollas nu i scrape-loop-free.yml (självdriven loop, ~var 2,5:e min)
+# eftersom det är en av de största/viktigaste källorna. Egen cron AVAKTIVERAD för att
+# undvika dubbelkörning; workflow_dispatch kvar som manuell reserv.
+
+on:
+  # schedule avaktiverad — hanteras av scrape-loop-free.yml
+  workflow_dispatch: {}
+concurrency:
+  group: svenskaspel-fetch
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Svenska Spel/Oddset (Kambi offering=svenskaspel) odds
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          set -e
+          node scripts/fetch-svenskaspel-github-action.mjs
+
+      - name: Commit & push data
+        run: |
+          set -e
+          git add data/svenskaspel-rows.json
+          if git diff --staged --quiet; then
+            echo "No change in data/svenskaspel-rows.json — skipping commit"
+            exit 0
+          fi
+          git commit -m "chore(svenskaspel): refresh odds data ($(date -u +%FT%TZ))"
+          push_ok=0
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; }
+            if git push origin HEAD:main; then
+              echo "Push OK på försök $attempt"
+              push_ok=1
+              break
+            fi
+            backoff=$((attempt * 10 + RANDOM % 15 + 5))
+            echo "Push avvisad på försök $attempt — väntar ${backoff}s och retry..."
+            sleep "$backoff"
+          done
+          if [ $push_ok -eq 0 ]; then
+            echo "::warning::Push misslyckades efter 10 försök — nästa körning fortsätter"
+            exit 1
+          fi

@@ -1,0 +1,42 @@
+name: Recon 10bet URLs (flest matcher)
+
+on:
+  push:
+    paths:
+      - "scripts/recon-10bet-urls.mjs"
+      - ".github/workflows/recon-10bet-urls.yml"
+  workflow_dispatch: {}
+concurrency:
+  group: recon-10bet-urls
+  cancel-in-progress: true
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1, token: "${{ secrets.GITHUB_TOKEN }}" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: git config user.name "github-actions[bot]" && git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run recon
+        env: { SCRAPER_API_KEY: "${{ secrets.SCRAPER_API_KEY }}" }
+        run: node scripts/recon-10bet-urls.mjs
+      - name: Dump
+        if: always()
+        run: cat data/_recon-10bet-urls.json 2>/dev/null || echo "(ingen)"
+      - name: Commit
+        if: always()
+        run: |
+          BR="${GITHUB_REF_NAME}"
+          git add data/_recon-10bet-urls.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen ändring"; exit 0; fi
+          git commit -m "chore(recon): 10bet urls ($(date -u +%FT%TZ))" || exit 0
+          for a in 1 2 3 4; do
+            timeout 30 git fetch origin "$BR" >/dev/null 2>&1 || true
+            timeout 30 git rebase --autostash "origin/$BR" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 60 git push origin "HEAD:$BR" >/dev/null 2>&1; then break; fi
+            sleep $((a * 3))
+          done

@@ -1,0 +1,112 @@
+name: Shadow CLV Loop
+
+# Självdrivande shadow-CLV-loop. GitHubs schedule är opålitlig på publika repos
+# (kan throttlas i timmar), så vi förlitar oss INTE på den: varje körning loopar
+# internt (capture -> settle -> shadow var ~5:e min i ~45 min) OCH köar en
+# efterföljare (self-redispatch) → en kontinuerlig kedja oberoende av cron.
+# schedule + workflow_dispatch finns kvar som RE-SEED ifall kedjan dör.
+#
+# PÅVERKAR INGA live-beslut: läser committade *-rows.json, skriver bara CLV-
+# state via actions/cache (ingen repo-churn). Inga secrets utöver GITHUB_TOKEN
+# (self-redispatch). Inget auto-bet.
+
+on:
+  schedule:
+    - cron: "7,27,47 * * * *" # backup re-seed (ojämn minut = mindre throttle)
+  workflow_dispatch: {}
+
+concurrency:
+  group: shadow-clv
+  # false → en köad efterföljare tar sömlöst över när nuvarande pass slutar.
+  cancel-in-progress: false
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60 # > loop-budget (45 min) så jobbet hinner spara cache
+    permissions:
+      contents: read
+      actions: write # self-redispatch (kontinuerlig kedja oberoende av schedule)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Restore CLV state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/clv-log.jsonl
+            data/pinnacle-closing.json
+          key: shadow-clv-state-${{ github.run_id }}
+          restore-keys: |
+            shadow-clv-state-
+
+      # Köa EN efterföljare TIDIGT så kedjan överlever även om denna run dör.
+      # concurrency (1 running + 1 pending) gör att den väntar och tar över när
+      # detta pass slutar. workflow_dispatch via GITHUB_TOKEN skapar nya runs
+      # (samma mönster som pinnacle-fetch.yml).
+      - name: Queue successor (self-redispatch)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if curl -sf -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/shadow-clv.yml/dispatches" \
+            -d '{"ref":"main"}'; then
+            echo "efterföljare köad — kontinuerlig kedja"
+          else
+            echo "self-redispatch misslyckades (schedule-backup kvarstår)"
+          fi
+
+      - name: Self-perpetuating loop (capture → settle → shadow)
+        env:
+          SHADOW_LOOP_MAX: "2700" # ~45 min pass
+          SHADOW_CADENCE: "300" # 5 min mellan cykler
+          # Tracking-CLV: läser closing på disk + skriver CLV till spårade signaler.
+          # Påverkar ingen prissättning. No-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # Medvetet INTE 'set -e' — en enskild cykel får aldrig döda passet.
+          START=$(date +%s)
+          iter=0
+          while :; do
+            now=$(date +%s); elapsed=$((now - START))
+            if [ "$elapsed" -ge "$SHADOW_LOOP_MAX" ]; then
+              echo "loop-budget nådd (${elapsed}s, $iter cykler) — avslutar, efterföljare tar över"
+              break
+            fi
+            iter=$((iter + 1))
+            echo "::group::cykel $iter (elapsed ${elapsed}s)"
+            npx vite-node scripts/capture-pinnacle-closing.ts 15 2 || echo "[ci] capture-fel ignorerat"
+            npx vite-node scripts/settle-clv.ts || echo "[ci] settle-fel ignorerat"
+            npx vite-node scripts/settle-tracking-clv.mjs || echo "[ci] tracking-clv-fel ignorerat"
+            npx vite-node scripts/shadow-consensus.ts all || echo "[ci] shadow-fel ignorerat"
+            if [ -f data/clv-log.jsonl ]; then echo "clv-log rader: $(wc -l < data/clv-log.jsonl)"; fi
+            echo "::endgroup::"
+            now=$(date +%s); elapsed=$((now - START))
+            [ "$elapsed" -ge "$SHADOW_LOOP_MAX" ] && break
+            sleep "$SHADOW_CADENCE"
+          done
+
+      - name: Save CLV state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/clv-log.jsonl
+            data/pinnacle-closing.json
+          key: shadow-clv-state-${{ github.run_id }}

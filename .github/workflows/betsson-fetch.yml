@@ -1,0 +1,263 @@
+name: Betsson + 888sport Mullvad-loop
+
+# Självdriven Mullvad-loop som håller TVÅ gratis svensk-IP-källor färska: Betsson-
+# gruppen (Bethard + Spelklubben) OCH 888sport (Spectate). Båda kräver svensk exit-
+# IP via Mullvad WireGuard → vi delar EN tunnel (uppe hela ~5h-passet) och kör båda
+# fetcherna per iteration (~var 12:e min) i st f throttlad cron (~2h → stale, och
+# 888sport föll bort pga 1h max-age). 888sport körs FÖRST (snabb) så den aldrig
+# fördröjs av den långsammare betsson-fetchen.
+#
+# Fetchar 1X2-odds via stealth-Chromium. Render-/GitHub-Azure-IP visar geo-block
+# ("Restricted access") för dessa domäner — krävs svensk IP. All utgående trafik
+# tunnlas genom Mullvad WireGuard (svensk relay) under loopen.
+#
+# WireGuard-config laddas från GitHub Secret `MULLVAD_WG_CONF` — hela
+# innehållet av .conf-filen från Mullvad-appen. PrivateKey loggas aldrig:
+# secret skrivs direkt till /etc/wireguard/wg0.conf med `printf | sudo tee`,
+# och `set +x` används för att skydda mot trace-output.
+#
+# En enda cache-fil (data/betsson-rows.json) eftersom Bethard och Spelklubben
+# delar Betsson-grupp-API och returnerar identiska odds. Backend slår upp
+# samma events för båda spec.id.
+#
+# Pipeline-tid: ~3-3.5 min/körning (~30s WG-setup + 143s lokal scrape-tid +
+# overhead). Cron */15 är konservativt — Betsson-odds rör sig långsamt.
+
+on:
+  # GitHub Actions PRIMÄR igen (active-active återställt 2026-06-08): VPS:en
+  # committade aldrig pålitligt, så att stänga av schemat gjorde källan stale.
+  # VPS:en kvar som hot-standby.
+  # Betsson totals/AH (löst 2026-06-22): event/v2 ger HELA marknadskatalogen
+  # inline för riktiga matcher; odds hämtas via accordion/v1?groupableId=MTG2W
+  # (totals) resp MAHCP (asiatiskt handikapp). Tidigare "tomt" berodde på att
+  # recon-eventet var esports (få marknader) + fel gissade koder. Hämtas bundet
+  # + throttlat (BETSSON_LINES_MAX närmast-matcher) som bäst-ansträngning.
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: betsson-fetch
+  # cancel-in-progress: FALSE — Betsson-pipelinen tar ~3-3.5 min (Mullvad-setup +
+  # Playwright-scrape). Med 'true' avbröts pågående körningar av nästa trigger
+  # innan de hann committa. Låt slow scrapes köra klart; överskott köas/droppas.
+  # Samma princip som Pinnacle/Bet7/Bet9ja.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # ~5h17m: self-sustaining loop kör ~5h och avslutar rent med marginal till
+    # 6h job-max. En köad restart (schedule/push) tar över → kontinuerlig
+    # täckning oberoende av GitHub:s throttlade schedule.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2 xvfb
+
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          # DEDIKERAD nyckel för den kontinuerliga betsson+888sport-loopen provas FÖRST
+          # (MULLVAD_WG_CONF_BETSSON). Saknas/trasig → fallback på delad MULLVAD_WG_CONF.
+          # Egen nyckel isolerar loopen från engångsjobben (prontosport/results/recon)
+          # som delar MULLVAD_WG_CONF: samma WG-nyckel från två runners samtidigt
+          # studsar tunneln. En dålig dedikerad secret kan aldrig fälla källan.
+          WG_CONF_DED: ${{ secrets.MULLVAD_WG_CONF_BETSSON }}
+          WG_CONF_SHARED: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set +x
+          try_conf() {
+            printf '%s' "$1" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+            sudo chmod 600 /etc/wireguard/wg0.conf
+            if sudo wg-quick up wg0 2>&1; then return 0; fi
+            sudo wg-quick down wg0 2>/dev/null || true
+            return 1
+          }
+          if [ -n "$WG_CONF_DED" ] && try_conf "$WG_CONF_DED"; then
+            echo "WireGuard tunnel up (betsson-dedikerad relay)"
+          elif [ -n "$WG_CONF_SHARED" ] && try_conf "$WG_CONF_SHARED"; then
+            echo "::warning::betsson-dedikerad config saknas/ogiltig — kör på delad relay (kan krocka med engångsjobb)"
+            echo "WireGuard tunnel up (delad relay, fallback)"
+          else
+            echo "::error::Ingen fungerande WireGuard-config (varken dedikerad eller delad)"
+            exit 1
+          fi
+
+      - name: Verify Swedish IP + Bethard reachability
+        run: |
+          set -e
+          # Kolla utgående IP via Mullvad:s egen check-tjänst (publikt JSON).
+          IP_INFO=$(curl -sS -m 10 https://am.i.mullvad.net/json || true)
+          echo "IP-info via Mullvad:"
+          echo "$IP_INFO" | jq '{ip, country, city, mullvad_exit_ip, mullvad_exit_ip_hostname}' || echo "$IP_INFO"
+          COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty')
+          if [ "$COUNTRY" != "Sweden" ]; then
+            echo "::error::Förväntade country=Sweden, fick country=$COUNTRY"
+            exit 1
+          fi
+          # Verify Bethard inte längre returnerar "Restricted access"-page.
+          BETHARD_TITLE=$(curl -sS -m 15 \
+            -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" \
+            "https://www.bethard.com/sv/sports/sok" \
+            | grep -oE "<title>[^<]+</title>" | head -1 || true)
+          echo "Bethard title: $BETHARD_TITLE"
+          if echo "$BETHARD_TITLE" | grep -qi "restricted"; then
+            echo "::error::Bethard returnerar fortfarande Restricted access — VPN-IP räcker inte"
+            exit 1
+          fi
+          echo "Verify OK — kör scrape-steget"
+
+      - name: Fetch 888sport + Betsson (självunderhållande loop, ~12 min cadens i ~5h)
+        # Kontinuerlig intern loop: fetch + commit + push var ~10:e min i upp till
+        # ~5h, sedan ren exit. EN körning håller betsson färsk i timmar utan att
+        # vara beroende av GitHub:s throttlade */15-schema (som i steady-state ger
+        # ~2h-glapp → stale). Mullvad-tunneln hålls uppe hela loopen men VERIFIERAS
+        # + återställs per iteration (en tunnel som droppar mitt i 5h skulle annars
+        # göra alla fetches tomma). Resilient: en failad fetch bevarar cache och
+        # loopen fortsätter.
+        env:
+          # Dedikerad nyckel först (samma som start-steget), fallback delad.
+          WG_CONF_DED: ${{ secrets.MULLVAD_WG_CONF_BETSSON }}
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+          # Bäst-ansträngning totals/AH för de N närmast avsparkade matcherna
+          # (bundet + throttlat → skonsamt mot Cloudflare; rör aldrig 1X2).
+          BETSSON_LINES_MAX: "30"
+          # Intern deadline höjd 7→11 min: 1X2-loopen tar ~6.5 min, så default-7-min
+          # svalt totals/AH-steget (Steg B2 ligger efter). Per-iteration job-timeout
+          # är 900s (15 min) → 11 min lämnar marginal och ger B2 ~4 min.
+          BETSSON_DEADLINE_MS: "660000"
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          CADENCE_SECONDS=600      # EXPERIMENT 2026-06-11: 15→10 min. Run tar ~6.5 min så det
+                                   # ryms. Bevaka Cloudflare-signaler (context-failure / 0 events)
+                                   # — vid block: backa till 900.
+          START_EPOCH=$(date +%s)
+
+          # Vid återställning: prova dedikerad nyckel först, fallback delad (samma som start).
+          up_conf() {
+            printf '%s' "$1" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+            sudo chmod 600 /etc/wireguard/wg0.conf
+            sudo timeout 90 wg-quick up wg0 2>/dev/null
+          }
+          ensure_tunnel() {
+            set +x
+            local country
+            country=$(curl -sS -m 10 https://am.i.mullvad.net/json 2>/dev/null | jq -r '.country // empty' 2>/dev/null)
+            if [ "$country" != "Sweden" ]; then
+              echo "Tunnel ej svensk (country='$country') — återställer WireGuard"
+              sudo timeout 90 wg-quick down wg0 2>/dev/null || true
+              if [ -n "$WG_CONF_DED" ] && up_conf "$WG_CONF_DED"; then return 0; fi
+              sudo timeout 90 wg-quick down wg0 2>/dev/null || true
+              [ -n "$WG_CONF" ] && up_conf "$WG_CONF" || true
+            fi
+          }
+
+          iter=0
+          # NO-PROGRESS-BREAKER (2026-06-12): en lyckad fetch stämplar alltid ny
+          # updatedAt ⇒ ger alltid en commit. "Ingen förändring"/failad push i
+          # 3 raka iterationer (~30 min) betyder att loopen är BLIND (död tunnel/
+          # Cloudflare-block som ensure_tunnel inte kan laga) — avsluta då rent
+          # så den köade omstarten tar över med färsk runner + färsk tunnel,
+          # istället för att källan står stale tills 5h-budgeten tar slut.
+          NO_PROGRESS_STREAK=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd efter $iter iter — avslutar rent."; break; }
+            iter_start=$(date +%s)
+            echo "::group::Betsson iteration $iter (elapsed $((now - START_EPOCH))s)"
+
+            ensure_tunnel
+            # HÄNGVAKT (2026-06-12): all trafik går genom WireGuard-tunneln. Dör
+            # tunneln mitt i ett anrop BLACKHOLAS trafiken → node/git hänger för
+            # evigt och körningen blir en zombie som håller concurrency-gruppen
+            # låst i timmar (alla omstarter köas+avbryts → källan stale). timeout
+            # gör varje kommando tidsbegränsat; nästa iteration lagar tunneln.
+            ITER_PUBLISHED=0
+            # publish_file <fil...> <commit-msg> — committar + pushar (rebase-retry),
+            # sätter ITER_PUBLISHED=1 vid lyckad push.
+            publish_file() {
+              local msg="$1"; shift
+              git add "$@" 2>/dev/null || true
+              if git diff --staged --quiet; then return 0; fi
+              git commit -m "$msg ($(date -u +%FT%TZ))" || true
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then ITER_PUBLISHED=1; return 0; fi
+                sleep $((attempt * 5))
+              done
+            }
+
+            # ── 888sport FÖRST (snabb, samma Mullvad-tunnel, headless Chromium via xvfb).
+            # Körs före den långsamma betsson-fetchen så 888sport aldrig fördröjs/svälts.
+            timeout -k 30 240 xvfb-run -a node scripts/fetch-888sport-github-action.mjs || echo "::warning::iter $iter 888sport exit!=0/timeout — cache bevarad"
+            publish_file "chore(888sport): odds via Spectate" data/888sport-rows.json data/_888sport-scraper-diag.json
+
+            # ── ProntoSport (samma Mullvad-tunnel + xvfb, snabb DOM-skrapa). Tidigare på
+            # throttlad */15-cron (~2h glapp → stale); nu loop-managed (~var 12:e min).
+            timeout -k 30 240 xvfb-run -a node scripts/fetch-prontosport-github-action.mjs || echo "::warning::iter $iter prontosport exit!=0/timeout — cache bevarad"
+            publish_file "chore(prontosport): odds via ABM/Euro" data/prontosport-rows.json data/_prontosport-scraper-diag.json
+
+            # ── Betsson (kan ta upp till ~11 min internt) ──
+            timeout -k 30 900 node scripts/fetch-betsson-github-action.mjs || echo "::warning::iter $iter betsson exit!=0/timeout — cache bevarad, loopen fortsätter"
+            publish_file "chore(betsson): refresh odds data" data/betsson-rows.json
+
+            # Kombinerad no-progress: nollställ om NÅGON bok publicerade (annars skulle
+            # en blockerad betsson döda loopen och stoppa även 888sport).
+            if [ "$ITER_PUBLISHED" = "1" ]; then NO_PROGRESS_STREAK=0; else NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1)); fi
+            echo "::endgroup::"
+            if [ "$NO_PROGRESS_STREAK" -ge 3 ]; then
+              echo "::warning::$NO_PROGRESS_STREAK iterationer utan publicerad data (betsson+888sport) — avslutar så köad restart tar över med färsk tunnel."
+              break
+            fi
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+          echo "WireGuard tunnel down + config raderad"

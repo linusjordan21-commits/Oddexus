@@ -1,0 +1,27 @@
+name: Probe Kambi Detail (recon)
+
+# Isolerad recon av Kambis per-event detalj-endpoint för att kalibrera
+# totals/AH-parsning. Rör ej live-fetchern. Skriver inget. Manuell trigger.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: probe-kambi-detail
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Proba Kambi-detalj
+        run: node scripts/probe-kambi-detail.mjs || echo "[ci] probe-fel ignorerat"

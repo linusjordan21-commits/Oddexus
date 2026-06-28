@@ -1,0 +1,60 @@
+name: Recon Pinnacle Corners (engångs)
+
+# Kartlägger Pinnacles hörn-marknader (special-matchups) så vi kan bygga en korrekt
+# sharp corner-referens utan att gissa fältstrukturen. Stealth-Chromium (förbi CF).
+# TRIGGER: push av recon-filerna (auto-kör) + dispatch. Output: data/_pinnacle-corner-recon.json.
+
+on:
+  push:
+    paths:
+      - "scripts/recon-pinnacle-corners.mjs"
+      - ".github/workflows/recon-pinnacle-corners.yml"
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-pinnacle-corners
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run Pinnacle corner recon
+        run: node scripts/recon-pinnacle-corners.mjs
+      - name: Dump report
+        if: always()
+        run: cat data/_pinnacle-corner-recon.json 2>/dev/null || echo "(ingen rapport)"
+      - name: Commit report
+        if: always()
+        run: |
+          BR="${GITHUB_REF_NAME}"
+          git add data/_pinnacle-corner-recon.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(recon): pinnacle corners ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3 4; do
+            timeout 30 git fetch origin "$BR" >/dev/null 2>&1 || true
+            timeout 30 git rebase --autostash "origin/$BR" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 60 git push origin "HEAD:$BR" >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 3))
+          done

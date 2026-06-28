@@ -1,0 +1,112 @@
+name: Smarkets Odds Fetch
+
+# Hämtar back+lay-odds från Smarkets-börsen (fotboll/tennis/basket/baseball/
+# hockey/m.fl.) och speglar till Supabase + committar data/smarkets-rows.json.
+# Smarkets API är öppet och funkar från datacenter-IP (verifierat) → ingen
+# VPN/Cloudflare, beroendefritt (node builtins, ingen npm install).
+#
+# FÄRSKHET (2026-06-15): GitHubs */-cron throttlas hårt på publika repos — vi
+# såg 5,5h glapp i smarkets-datan nattetid och 1,5h dagtid. Dessutom triggar
+# INTE andra workflows pushar (de pushar med GITHUB_TOKEN, som per GitHubs regler
+# aldrig startar nya workflow-runs) → "piggyback på push" fungerar inte.
+# Lösning = samma SJÄLVUNDERHÅLLANDE loop som Pinnacle: EN körning loopar i ~5h
+# och fetchar + speglar till Supabase var ~60:e s, helt utan att förlita sig på
+# att schedule/extern cron triggar i tid. schedule/push/dispatch finns kvar som
+# RESTART-triggers; cancel-in-progress:false gör att en köad restart sömlöst tar
+# över när loopen tar slut → kontinuerlig täckning.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: smarkets-fetch
+  # false: låt pågående loop köra klart; GitHub tillåter 1 pending + 1 running
+  # per grupp → en köad restart väntar och tar över direkt när 5h-loopen slutar.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # ~5h17m aktiv loop med marginal till GitHub:s 6h job-max. En köad restart-
+    # trigger tar över direkt efteråt → ingen lucka.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Smarkets (självunderhållande loop, ~60s cadens i ~5h)
+        env:
+          # Bäst-ansträngning O/U + Asian handicap för de N närmast avsparkade
+          # matcherna (bundet → extra contracts/quotes-anrop stallar inte loopen).
+          SMARKETS_LINES_MAX: "20"
+          # Databas-spegling (docs/database-plan.md) — appens färskhetskälla.
+          # Varje fetch speglar till Supabase (scrape-guard → odds-db). No-op om
+          # secrets saknas → faller då tillbaka på GitHub-commit-vägen.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # OBS: medvetet INTE 'set -e' — en enskild iteration får aldrig döda
+          # hela loopen. Varje steg är individuellt feltolerant.
+          LOOP_MAX_SECONDS=18000           # ~5h aktiv loop
+          CADENCE_SECONDS=60               # fetch + DB-spegling var ~60:e s
+          COMMIT_INTERVAL_SECONDS=300      # GitHub-commit (reserv-väg) var 5:e min
+          START_EPOCH=$(date +%s)
+          LAST_COMMIT_EPOCH=0              # 0 → första iterationen committar direkt
+          iter=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s); elapsed=$((now - START_EPOCH))
+            if [ "$elapsed" -ge "$LOOP_MAX_SECONDS" ]; then
+              echo "Loop-budget ($LOOP_MAX_SECONDS s) nådd efter $iter iter — avslutar rent (köad restart tar över)."
+              break
+            fi
+            iter_start=$(date +%s)
+            echo "::group::Iteration $iter (elapsed ${elapsed}s)"
+
+            # Fetch → skriver datafilen + speglar till Supabase i samma anrop.
+            # Hängvakt: en hängd fetch avbryts efter 4 min (föregående data
+            # bevaras) så loopen aldrig fastnar.
+            timeout -k 30 240 node scripts/fetch-smarkets-github-action.mjs || echo "::warning::fetch iter $iter fel/timeout — föregående data bevarad, loopen fortsätter"
+
+            # GitHub-publicering (reserv-väg) bara var COMMIT_INTERVAL_SECONDS.
+            if [ $(( $(date +%s) - LAST_COMMIT_EPOCH )) -ge "$COMMIT_INTERVAL_SECONDS" ]; then
+              git add data/smarkets-rows.json
+              if git diff --staged --quiet; then
+                LAST_COMMIT_EPOCH=$(date +%s)   # inget nytt att committa — räkna fönstret ändå
+              else
+                git commit -m "chore(smarkets): refresh odds data ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+                pushed=0
+                for attempt in 1 2 3 4 5 6; do
+                  timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                  timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+                  if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "push OK (iter $iter, försök $attempt)"; pushed=1; break; fi
+                  sleep $((attempt * 3))
+                done
+                if [ "$pushed" = "1" ]; then LAST_COMMIT_EPOCH=$(date +%s); else echo "::warning::push misslyckades iter $iter — DB redan färsk, försöker igen nästa fönster"; fi
+              fi
+            fi
+            echo "::endgroup::"
+
+            # Sov resten av cadensen (fetch tar ofta ~30-60s redan).
+            iter_dur=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_dur ))
+            [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+          done

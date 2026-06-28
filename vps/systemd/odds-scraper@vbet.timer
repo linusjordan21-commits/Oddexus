@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer för VBET scraper (var 5min)
+
+[Timer]
+OnBootSec=60s
+OnUnitActiveSec=5min
+AccuracySec=5s
+Unit=odds-scraper@vbet.service
+
+[Install]
+WantedBy=timers.target

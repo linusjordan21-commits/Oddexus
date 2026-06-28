@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer för Bet365 scraper (var 5min, via BetsAPI)
+
+[Timer]
+OnBootSec=90s
+OnUnitActiveSec=5min
+AccuracySec=10s
+Unit=odds-scraper@bet365.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,107 @@
+name: Recon Tier2 Backends (engångs)
+
+# Fångar sportsbook-API-endpoints för 888sport/10bet/prontosport/tipwin via
+# stealth-Chromium BAKOM Mullvad-WireGuard (svensk exit-IP) — samma infra som
+# betsson-fetch.yml. ENDAST dispatch. Output: data/_recon-tier2-backends.json.
+# Secret: MULLVAD_WG_CONF.
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Recon-script att köra"
+        required: false
+        default: "scripts/recon-tier2-backends.mjs"
+
+concurrency:
+  group: recon-tier2-backends
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2 xvfb
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set -e
+          set +x
+          if [ -z "$WG_CONF" ]; then echo "::error::MULLVAD_WG_CONF saknas"; exit 1; fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
+          echo "WireGuard up"
+      - name: Verify Swedish IP
+        run: |
+          # Tolerant sanity-check: tunneln är redan uppe (wg-quick up lyckades). Mullvads
+          # check-tjänst är ibland trög → retry, och om den aldrig svarar VARNA men fortsätt
+          # (hellre köra reconen än faila på en flaky verifierings-curl). Faila bara om vi
+          # FÅR ett land och det inte är Sweden.
+          COUNTRY=""
+          for i in 1 2 3 4; do
+            IP_INFO=$(curl -sS -m 12 https://am.i.mullvad.net/json 2>/dev/null || true)
+            COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty' 2>/dev/null)
+            if [ -n "$COUNTRY" ]; then echo "$IP_INFO" | jq '{ip, country, city}' || true; break; fi
+            echo "verify-försök $i: inget svar — väntar"; sleep $((i * 3))
+          done
+          if [ -z "$COUNTRY" ]; then
+            echo "::warning::Kunde ej verifiera exit-IP (check-tjänst nere) — tunneln är uppe, fortsätter ändå"
+          elif [ "$COUNTRY" != "Sweden" ]; then
+            echo "::error::Exit-IP är $COUNTRY, inte Sweden — avbryter"; exit 1
+          fi
+      - name: Run recon
+        run: xvfb-run -a node "${{ github.event.inputs.script || 'scripts/recon-tier2-backends.mjs' }}"
+      - name: Dump report
+        if: always()
+        run: |
+          # Skriv ALLA recon-json till loggen (oberoende av om push landar mot snabb main).
+          for f in data/_recon-tipwin-dom.json data/_recon-prontosport-dom.json data/_prontosport-dom-sample.html data/_recon-10bet-dom.json data/_recon-10bet-slice.json data/_10bet-slice-sample.json data/_recon-10bet.json data/_10bet-sample.json data/_recon-888sport.json data/_888sport-sample.json data/_recon-prontosport.json data/_prontosport-events-sample.json data/_recon-tier2-backends.json; do
+            echo "===== $f ====="
+            cat "$f" 2>/dev/null | head -c 16000 || echo "(saknas)"
+            echo ""
+          done
+      - name: Stop WireGuard
+        if: always()
+        run: |
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+      - name: Commit report
+        if: always()
+        run: |
+          BR="${GITHUB_REF_NAME}"
+          git add data/_recon-tipwin-dom.json data/_recon-prontosport-dom.json data/_prontosport-dom-sample.html data/_recon-10bet-dom.json data/_recon-10bet-slice.json data/_10bet-slice-sample.json data/_recon-10bet.json data/_10bet-sample.json data/_recon-888sport.json data/_888sport-sample.json data/_recon-prontosport.json data/_prontosport-events-sample.json data/_recon-tier2-backends.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(recon): tier2-backends ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3; do
+            timeout 30 git fetch origin "$BR" >/dev/null 2>&1 || true
+            timeout 30 git rebase --autostash "origin/$BR" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 60 git push origin "HEAD:$BR" >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 3))
+          done

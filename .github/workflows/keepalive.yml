@@ -1,0 +1,63 @@
+name: Fleet Keepalive (proaktiv dispatch)
+
+# Håller HELA odds-flottan färsk med EN runner. GitHub:s schedule throttlas till
+# ~2h på publika repos, så schemalagda källor glider förbi sina trösklar i
+# steady-state. Den här loopen kollar var ~90:e sekund varje källas ålder och
+# PROAKTIVT workflow_dispatch:ar den som närmar sig sin tröskel — innan den blir
+# stale. workflow_dispatch är undantaget från GITHUB_TOKEN-rekursionsspärren, så
+# det skapar riktiga runs. hasActiveRun-guarden gör att källor som redan kör
+# (pinnacle/betsson med egna loopar) hoppas över automatiskt.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/**"
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+permissions:
+  actions: write # workflow_dispatch av fetch-workflows
+  contents: write # commit:a data/source-tolerance.json (inlärda polling-gränser)
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    # ~5h17m: keepalive.mjs loopar ~5h och avslutar rent; köad restart tar över.
+    timeout-minutes: 317
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup git (för fetch/reset i loopen)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run keepalive loop (proaktiv dispatch, ~5h)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          # Render kallstart-skydd: pingar webbtjänsten varje varv så den inte
+          # somnar. Osatt → default-URL (matched-betting.onrender.com). Sätt repo-
+          # variabeln RENDER_PING_URL till en annan URL om domänen skiljer, eller
+          # till "off" för att stänga av.
+          RENDER_PING_URL: ${{ vars.RENDER_PING_URL }}
+          # B2 adaptiv polling-ramp. PÅ som default. Sätt repo-variabeln
+          # POLLING_RAMP_ENABLED=0 för att stänga av (tillbaka till statiska mål).
+          POLLING_RAMP_ENABLED: ${{ vars.POLLING_RAMP_ENABLED }}
+        run: node scripts/keepalive.mjs

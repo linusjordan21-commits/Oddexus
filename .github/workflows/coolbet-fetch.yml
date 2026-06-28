@@ -1,0 +1,73 @@
+name: Coolbet Odds Fetch
+
+# Coolbet via Scrapfly: ETT Scrapfly-render passerar Imperva (asp+residential,
+# tillåter spel) och besöker FLERA ligor i samma render via client-side-navigering
+# (history.pushState + PopStateEvent → ingen reload → store + Pusher-prenumerationer
+# bevaras), så window.stores.sports.oddsByOutcomeId ackumuleras. Joinas mot katalogen
+# (coming-soon + fo-match-detalj) → coolbet-rows.json (1X2 + totals + AH).
+#
+# KOSTNAD: ASP+render+residential = 30 credits/render. Full katalog via fo-category
+# (alla ligor) + 24h-filter → vi navigerar bara ligor med 24h-matcher, 4 ligor/render,
+# tak 20 ligor (hard-deadline 6 min kapar tidigare). Typiskt ~3-4 renders = 90-120 cr/körn.
+# Vid var-12:e-min (3 600 körn/mån) ≈ 324-432k credits < 1M (delar budget m. tipwin/10bet).
+# Budget uppgraderad till 1M/mån — extra budget på FÄRSKHET + 24h-fokus. Single-pass per
+# cron-träff, INGEN självdrivande loop. Secret: SCRAPER_API_KEY.
+
+on:
+  # schedule avaktiverad — coolbet pollas nu i scrape-loop-paid.yml (viktad loop, var 2:a cykel)
+  workflow_dispatch: {}
+
+concurrency:
+  group: coolbet-fetch
+  # cancel-in-progress: FALSE — låt en pågående fetch köra klart (Scrapfly-anropen
+  # tar ~1.5 min); överskott köas/droppas hellre än avbryts mitt i.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Coolbet (Scrapfly)
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: node scripts/fetch-coolbet-github-action.mjs || echo "::warning::fetch exit!=0 — cache bevarad"
+
+      - name: Dump diag to log
+        if: always()
+        run: |
+          echo "===== _coolbet-scraper-diag.json ====="
+          cat data/_coolbet-scraper-diag.json 2>/dev/null || echo "(ingen diag)"
+          echo "===== coolbet-rows.json (sammanfattning) ====="
+          node -e "const d=require('./data/coolbet-rows.json');console.log('events:',d.events?.length??0);console.log('sample:',JSON.stringify((d.events||[])[0]||null))" 2>/dev/null || echo "(ingen rows-fil)"
+
+      - name: Commit + push (main)
+        if: always()
+        run: |
+          git add data/coolbet-rows.json data/_coolbet-scraper-diag.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "Ingen förändring"; exit 0; fi
+          git commit -m "chore(coolbet): odds via Scrapfly ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3 4 5; do
+            timeout 60 git fetch origin main >/dev/null 2>&1 || true
+            timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            echo "push miss $attempt"; sleep $((attempt * 5))
+          done

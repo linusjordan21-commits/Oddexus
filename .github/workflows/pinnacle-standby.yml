@@ -1,0 +1,147 @@
+name: Pinnacle Odds Fetch (hot-standby)
+
+# REDUNDANS för den viktigaste källan. pinnacle-fetch.yml kör en
+# självunderhållande loop som primär refresh. Den här standby-loopen är en
+# ANDRA, oberoende runner som skyddar mot att den enda primära körningen dör
+# (runner-krasch) innan GitHub:s throttlade schedule hinner starta om den.
+#
+# Smart design → noll commit-brus i normalfallet: standbyn fetchar och committar
+# BARA om den committade pinnacle-datan blivit för gammal (primären sviker).
+# Är primären frisk (data < STALE_THRESHOLD) vilar standbyn helt. Dör primären
+# tar standbyn över inom några minuter — långt före valuebets-gatens 10-min-gräns.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/**"
+
+concurrency:
+  # Egen grupp (skild från pinnacle-fetch) så primär + standby kör parallellt.
+  group: pinnacle-standby
+  cancel-in-progress: false
+
+jobs:
+  standby:
+    runs-on: ubuntu-latest
+    # ~5h17m aktiv loop, ren exit med marginal till 6h job-max. Köad restart
+    # (schedule/push) tar över → kontinuerlig redundans.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Get Playwright version
+        id: pw-version
+        run: |
+          PW_VERSION=$(npm ls playwright-extra --json 2>/dev/null | jq -r '.. | .playwright?.version // empty' | head -n1)
+          if [ -z "$PW_VERSION" ]; then
+            PW_VERSION=$(node -e "const pkg=require('playwright/package.json'); console.log(pkg.version);" 2>/dev/null || echo "unknown")
+          fi
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw-version.outputs.version }}-chromium
+
+      - name: Install Playwright Chromium (browser-only if cache hit)
+        run: |
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            npx playwright install-deps chromium
+          else
+            npx playwright install chromium --with-deps
+          fi
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Hot-standby loop (tar bara över om primären sviker)
+        env:
+          PINNACLE_DEADLINE_MS: "240000"
+          # Databas-spegling (se docs/database-plan.md) — no-op tills secrets finns.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000     # ~5h
+          CHECK_SECONDS=45           # kolla färskhet ~var 45:e sekund
+          STALE_THRESHOLD=480        # Primären DB-speglar var ~30:e s men COMMITTAR bara var
+                                     # 5:e min (steg 4) — standbyn mäter COMMIT-åldern, så
+                                     # tröskeln måste vara > 300s+marginal. 480s = failover
+                                     # inom ~8 min om primären verkligen dör (< 10-min-gaten).
+                                     # Standbyn speglar OCKSÅ till DB när den tar över.
+          START_EPOCH=$(date +%s)
+          iter=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd — avslutar rent."; break; }
+            loop_start=$(date +%s)
+
+            # Hämta senaste committade datan för att läsa dess ålder.
+            # HÄNGVAKT (2026-06-12): timeout på alla nätverkskommandon så en hängd
+            # git/node aldrig gör körningen till en zombie som låser gruppen.
+            timeout 60 git fetch origin main >/dev/null 2>&1 || true
+            git reset --hard origin/main >/dev/null 2>&1 || true
+
+            updated=$(jq -r '.updatedAt // empty' data/pinnacle-rows.json 2>/dev/null)
+            age=999999
+            if [ -n "$updated" ]; then
+              up_epoch=$(date -u -d "$updated" +%s 2>/dev/null || echo 0)
+              [ "$up_epoch" -gt 0 ] && age=$((now - up_epoch))
+            fi
+
+            if [ "$age" -lt "$STALE_THRESHOLD" ]; then
+              echo "Iter $iter: primär färsk (pinnacle ${age}s gammal < ${STALE_THRESHOLD}s) — standby vilar."
+            else
+              echo "::warning::Iter $iter: pinnacle ${age}s gammal (>= ${STALE_THRESHOLD}s) — PRIMÄREN SVIKER, standby tar över."
+              timeout -k 30 300 node scripts/fetch-pinnacle-github-action.mjs || echo "::warning::standby fetch iter $iter exit!=0/timeout — cache bevarad"
+              # Conflict-free publicering (reset-reapply) — samma som primär-loopen,
+              # så standby + primär aldrig konfliktar på pinnacle-rows.json.
+              cp -f data/pinnacle-rows.json /tmp/pin-fresh.json
+              for attempt in 1 2 3 4 5; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                git reset --hard origin/main >/dev/null 2>&1 || true
+                cp -f /tmp/pin-fresh.json data/pinnacle-rows.json
+                if git diff --quiet -- data/pinnacle-rows.json; then
+                  echo "Iter $iter: ingen förändring (origin redan aktuell)"
+                  break
+                fi
+                git add data/pinnacle-rows.json
+                git commit -m "chore(pinnacle): standby refresh ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then
+                  echo "Iter $iter: standby push OK (försök $attempt)"
+                  break
+                fi
+                sleep $((attempt))
+              done
+            fi
+
+            loop_elapsed=$(( $(date +%s) - loop_start ))
+            sleep_for=$(( CHECK_SECONDS - loop_elapsed ))
+            [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+          done

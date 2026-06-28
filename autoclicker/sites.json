@@ -1,0 +1,42 @@
+{
+  "license_server": "https://oddexus.com/api/bot-license",
+  "bot_version": "2.0.0",
+  "_comment_buttons": "continue_buttons klickas utan omladdning (free spins som 'STARTA GRATISSPIN', samt 1h-rutans 'Fortsätt'). ack_buttons är 'förstår'-rutan i 1h-kontrollen som måste kryssas i FÖRST. reload_buttons klickas + sidan laddas om (fel-popups som 'wifi har slutat'). Texterna matchas exakt (skiftlägesokänsligt) — lägg till exakt det som står på knappen om något saknas.",
+  "continue_buttons": [
+    "starta gratisspin", "starta gratis spin", "gratisspin", "starta free spins",
+    "fortsätt spela", "fortsätt", "spela vidare", "ja, fortsätt", "ja tack", "ja",
+    "fortsätt session", "continue", "start", "starta", "samla in", "samla",
+    "collect", "stäng", "close"
+  ],
+  "ack_buttons": [
+    "jag förstår", "förstår", "jag har förstått", "förstått",
+    "jag är medveten", "i understand", "understood"
+  ],
+  "reload_buttons": ["ok", "okej", "ok!", "ok."],
+  "sites": [
+    {
+      "key": "gogo",
+      "label": "GoGo Casino",
+      "url": "https://www.gogocasino.com/sv-se/game/big-bad-wolf",
+      "target": 60000
+    },
+    {
+      "key": "betmgm",
+      "label": "BetMGM",
+      "url": "https://www.betmgm.se/casino/slots/big-bad-wolf",
+      "target": 80000
+    },
+    {
+      "key": "leovegas",
+      "label": "LeoVegas",
+      "url": "https://www.leovegas.com/sv-se/spel/big-bad-wolf",
+      "target": 80000
+    },
+    {
+      "key": "expekt",
+      "label": "Expekt",
+      "url": "https://www.expekt.se/game/big-bad-wolf",
+      "target": 40000
+    }
+  ]
+}

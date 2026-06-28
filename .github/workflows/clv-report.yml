@@ -1,0 +1,50 @@
+name: CLV Report
+
+# On-demand: återställ den ackumulerade CLV-staten ur actions/cache och skriv
+# ut en omfattande, DEDUPAD CLV-rapport. READ-ONLY — sparar INTE cachen, kör
+# inte capture/settle/shadow, rör inte den självdrivande loopen eller live-
+# beslut. Trigga manuellt när du vill läsa datan.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: clv-report
+  cancel-in-progress: true
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      # READ-ONLY restore av senaste shadow-CLV-staten. Sparar aldrig tillbaka
+      # → stör inte loopens cache-kedja.
+      - name: Restore CLV state (read-only)
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/clv-log.jsonl
+            data/pinnacle-closing.json
+          key: clv-report-noop-${{ github.run_id }}
+          restore-keys: |
+            shadow-clv-state-
+
+      - name: CLV-rapport
+        run: npx vite-node scripts/clv-report.ts || echo "[ci] clv-report-fel ignorerat"

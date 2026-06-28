@@ -1,0 +1,268 @@
+name: Pinnacle Odds Fetch
+
+on:
+  # Pinnacle är den VIKTIGASTE källan och får ALDRIG vara stale. Tidigare
+  # förlitade sig refreshen på en extern cron-job.org-ping (~60s) + GitHub:s
+  # schedule. Båda visade sig opålitliga: schedule throttlas till ~2h på publika
+  # repos, och den externa cronen dog (2026-06-09: 56-min glapp). Lösning: en
+  # SJÄLVUNDERHÅLLANDE intern loop — en enda körning håller datan färsk i ~5h
+  # genom att fetcha+committa var ~2:e min, helt utan externa beroenden.
+  # schedule/push/dispatch finns kvar som RESTART-triggers; cancel-in-progress:
+  # false gör att en köad restart sömlöst tar över när loopen tar slut.
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: pinnacle-fetch
+  # Ändrad 2026-05-13: true → false. Med externt cron-job.org som triggar var
+  # 60s + faktisk run-tid ~90-130s blev resultatet att VARJE pågående run
+  # blev cancellerad av nästa cron-trigger INNAN den hann committa. Audit
+  # 2026-05-13 visade 10 cancelled runs i rad → Pinnacle data 17 min gammal
+  # → valuebets-gate triggade på Render (>300s stale).
+  #
+  # Med 'false' låter vi pågående runs köra klart. GitHub Actions tillåter 1
+  # pending + 1 running per concurrency-group, så vid 60s extern cron stoppar
+  # max 1 queued run i taget (resten droppar tyst). Resultat: ~30s scrape +
+  # ~60s setup = ny commit ungefär var 90-120s i steady state.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # ~62 min: kortare pass (LOOP_MAX 55 min) → den förköade efterföljaren tar
+    # över rent var ~55:e min, OCH en LOST-RUNNER-zombie (in_progress men gör
+    # inget) reklameras av jobb-timeouten inom ~62 min i stället för 5h17m.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+      actions: write # workflow_dispatch av sig själv (bulletproof self-redispatch)
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Vi pushar tillbaka data-filen — fetch-depth 1 räcker.
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      # Cache Playwright Chromium binary (~140 MB). Utan cache tar
+      # `npx playwright install chromium --with-deps` 60-90s per körning
+      # och dominerar total workflow-tid (vilket flaskhalsar effektiv
+      # refresh-cadens till ~2 min). Med cache: ~5s när cache hit.
+      # Key:n inkluderar playwright-paket-version så browser-binär byts
+      # automatiskt vid uppdatering.
+      - name: Get Playwright version
+        id: pw-version
+        run: |
+          PW_VERSION=$(npm ls playwright-extra --json 2>/dev/null | jq -r '.. | .playwright?.version // empty' | head -n1)
+          if [ -z "$PW_VERSION" ]; then
+            PW_VERSION=$(node -e "const pkg=require('playwright/package.json'); console.log(pkg.version);" 2>/dev/null || echo "unknown")
+          fi
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+          echo "Playwright version: $PW_VERSION"
+
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw-version.outputs.version }}-chromium
+
+      - name: Install Playwright Chromium (browser-only if cache hit)
+        run: |
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            # Cache hit: bara installera OS-deps (apt-libs) som inte cachas
+            echo "Cache hit — installing OS deps only"
+            npx playwright install-deps chromium
+          else
+            # Cache miss: full install (browser + deps)
+            echo "Cache miss — full install"
+            npx playwright install chromium --with-deps
+          fi
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Pinnacle data (självunderhållande loop, ~2 min cadens i ~5h)
+        # Kontinuerlig intern loop: fetch + commit + push var ~2:e min i upp till
+        # ~5h, sedan ren exit. EN körning håller alltså pinnacle färsk i timmar
+        # utan att vara beroende av att GitHub:s throttlade schedule eller någon
+        # extern cron triggar i tid. Resilient: en enskild fetch som failar/hänger
+        # bevarar tidigare cache (scriptets writeJsonPreservingCache) och loopen
+        # fortsätter — ALDRIG ett avbrott som gör pinnacle stale.
+        env:
+          # För self-redispatch (workflow_dispatch via API).
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Per-iteration hard-deadline: en hängd fetch avbryts efter 4 min
+          # (bevarar cache) så loopen aldrig fastnar. Klart under 2-min-cadensen
+          # i normalfallet (~30-40s/fetch).
+          PINNACLE_DEADLINE_MS: "240000"
+          # Redundant Render keep-awake: pinnacle-loopen kör var ~30:e s i ~5h och
+          # är den mest kontinuerliga loopen → starkaste livlinan för att hålla
+          # instansen vaken (utöver keepalive.yml + watchdog.yml). Osatt → default-
+          # URL; sätt repo-variabeln RENDER_PING_URL till din .onrender.com-origin,
+          # eller "off" för att stänga av.
+          RENDER_PING_URL: ${{ vars.RENDER_PING_URL }}
+          # Databas-spegling (steg 2 i docs/database-plan.md). Tomma tills
+          # secrets läggs in → speglingen är då en tyst no-op. När secrets finns
+          # börjar varje pinnacle-write automatiskt speglas till Supabase.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # OBS: medvetet INTE 'set -e' — en enskild iteration får aldrig döda
+          # hela loopen. Varje steg är individuellt feltolerant.
+          #
+          # STEG 4-ARKITEKTUR (docs/database-plan.md): hämtning och publicering
+          # är nu SEPARERADE. Varje fetch speglas till Supabase direkt (det är
+          # vad appen läser) → ~30-40s färskhet. GitHub-commit (reserv-vägen)
+          # sker bara var 5:e min → FÄRRE commits än förr = stabilare, inte
+          # mindre. Failar databasen faller appen automatiskt tillbaka på
+          # GitHub-vägen (5 min färsk, under 10-min-gaten).
+          LOOP_MAX_SECONDS=18000           # ~5h pass (stabilt, få omstarter — reapern städar ev. zombie inom ~25 min)
+          # ── PINNACLE-CADENS-EXPERIMENT ──────────────────────────────────────
+          # Adaptiv fetch-cadens: startar på 25s och trappar ned (25→20→15→10)
+          # efter en frisk svit, backar UPP ett steg vid block-/degraderings-
+          # signal (fetch exit!=0 ELLER <8/8 sporter OK = trolig Cloudflare-
+          # rate-limit). Hittar pinnacles snabbaste säkra pollningstakt automatiskt
+          # utan att fastna utblockerad. Golv 10s, tak 30s.
+          CADENCE_SECONDS=20               # starttakt (trappar ned till det bevisat säkra golvet)
+          CADENCE_MIN=15                   # GOLV 15s — bevisat säkert. Experimentet visade
+                                           # att pinnacle är frisk ned till ~10-12s men att gå
+                                           # mot 6s destabiliserade (Cloudflare/rate-limit). 15s
+                                           # = ~3x snabbare än ursprungliga 45s, med marginal.
+          CADENCE_MAX=30                   # backa aldrig långsammare än 30s
+          CADENCE_STEP=5                   # 25→20→15→10
+          CADENCE_STEP_AFTER=12            # så många friska iterationer i rad → ett steg ned
+          healthy_streak=0
+          COMMIT_INTERVAL_SECONDS=120      # GitHub-commit var 2:e min → filen är ALLTID
+                                           # < 3-min-gaten (appen läser GitHub när DB ej satt)
+          START_EPOCH=$(date +%s)
+          LAST_COMMIT_EPOCH=0              # 0 → första iterationen committar direkt
+          SUCCESSOR_QUEUED=0              # köa EN efterföljare tidigt (bulletproof restart)
+          iter=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            elapsed=$((now - START_EPOCH))
+            if [ "$elapsed" -ge "$LOOP_MAX_SECONDS" ]; then
+              echo "Loop-budget ($LOOP_MAX_SECONDS s) nådd efter $iter iterationer — avslutar rent (köad restart tar över)."
+              break
+            fi
+            iter_start=$(date +%s)
+            echo "::group::Iteration $iter (elapsed ${elapsed}s)"
+
+            # Fetch → skriver datafilen + speglar till Supabase (scrape-guard →
+            # odds-db) i samma anrop. Detta är appens färskhetskälla.
+            # HÄNGVAKT (2026-06-12): timeout som yttre skydd utöver scriptets
+            # interna PINNACLE_DEADLINE_MS — en hängd process får aldrig göra
+            # körningen till en zombie som låser concurrency-gruppen.
+            # Fånga output + exit-kod för att läsa health-signalen (8/8 sporter OK).
+            fetch_out=$(timeout -k 30 300 node scripts/fetch-pinnacle-github-action.mjs 2>&1); fetch_rc=$?
+            printf '%s\n' "$fetch_out"
+            [ "$fetch_rc" -ne 0 ] && echo "::warning::fetch iter $iter exit!=0/timeout — cache bevarad, loopen fortsätter"
+
+            # ── Adaptiv cadens-ramp ────────────────────────────────────────────
+            # Friskt = fetch lyckades OCH alla 8 sport-API:er svarade (ingen
+            # Cloudflare-strypning). Då räknas en frisk iteration; efter
+            # CADENCE_STEP_AFTER i rad trappas takten ned ett steg. Misslyckad
+            # fetch eller <8/8 sporter = block-signal → backa upp ett steg direkt.
+            if [ "$fetch_rc" -eq 0 ] && printf '%s' "$fetch_out" | grep -q "8/8 sporter OK" && ! printf '%s' "$fetch_out" | grep -q "KVALITETSSKYDD"; then
+              healthy_streak=$((healthy_streak + 1))
+              if [ "$healthy_streak" -ge "$CADENCE_STEP_AFTER" ] && [ "$CADENCE_SECONDS" -gt "$CADENCE_MIN" ]; then
+                CADENCE_SECONDS=$((CADENCE_SECONDS - CADENCE_STEP))
+                [ "$CADENCE_SECONDS" -lt "$CADENCE_MIN" ] && CADENCE_SECONDS="$CADENCE_MIN"
+                healthy_streak=0
+                echo "::notice::pinnacle-cadens NED → ${CADENCE_SECONDS}s (frisk svit, testar snabbare)"
+              fi
+            else
+              if [ "$CADENCE_SECONDS" -lt "$CADENCE_MAX" ]; then
+                CADENCE_SECONDS=$((CADENCE_SECONDS + CADENCE_STEP))
+                [ "$CADENCE_SECONDS" -gt "$CADENCE_MAX" ] && CADENCE_SECONDS="$CADENCE_MAX"
+                echo "::warning::pinnacle-cadens UPP → ${CADENCE_SECONDS}s (block/degraderingssignal — backar från gränsen)"
+              fi
+              healthy_streak=0
+            fi
+
+            # Render keep-awake (redundant med keepalive.yml + watchdog.yml).
+            # Pingar varje iteration (~30s) så instansen aldrig hinner somna så
+            # länge pinnacle-loopen lever. Tyst no-op vid RENDER_PING_URL=off.
+            PING_URL="${RENDER_PING_URL:-https://matched-betting.onrender.com/api/autoclicker/health}"
+            if [ "$(printf '%s' "$PING_URL" | tr '[:upper:]' '[:lower:]')" != "off" ] && [ -n "$PING_URL" ]; then
+              if curl -fsS -m 20 -o /dev/null "$PING_URL" 2>/dev/null; then
+                echo "Iter $iter: render keep-awake ping OK"
+              else
+                echo "Iter $iter: render keep-awake ping fail (ignoreras)"
+              fi
+            fi
+
+            # BULLETPROOF SELF-REDISPATCH: köa EN efterföljare tidigt. Med
+            # concurrency cancel-in-progress:false sitter den PENDING tills denna
+            # körning tar slut — oavsett om vi når 5h-budgeten, KRASCHAR eller blir
+            # preempterade tar efterföljaren omedelbart över. Helt oberoende av
+            # keepalive/schedule → pinnacle kan aldrig dö i tysthet i timmar.
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/pinnacle-fetch.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad (pending) — tar över när denna run slutar."
+                SUCCESSOR_QUEUED=1
+              else
+                echo "::warning::self-redispatch misslyckades (försöker igen nästa iteration)"
+              fi
+            fi
+
+            # GitHub-publicering (reserv-vägen) bara var COMMIT_INTERVAL_SECONDS.
+            if [ $(( $(date +%s) - LAST_COMMIT_EPOCH )) -ge "$COMMIT_INTERVAL_SECONDS" ]; then
+              # Conflict-free publicering (reset-reapply): pinnacle-rows.json har
+              # TVÅ skribenter (primär loop + standby). git rebase KONFLIKTAR när
+              # båda ändrat samma JSON → primären svältes. I stället: spara fresh,
+              # reset till senaste origin/main, lägg tillbaka fresh, fast-forward-
+              # pusha. Aldrig konflikt. Samma mönster som VPS:ens run-scraper.sh.
+              cp -f data/pinnacle-rows.json /tmp/pin-fresh.json
+              for attempt in 1 2 3 4 5; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
+                cp -f /tmp/pin-fresh.json data/pinnacle-rows.json
+                if git diff --quiet -- data/pinnacle-rows.json; then
+                  echo "Iter $iter: ingen förändring (origin redan aktuell)"
+                  break
+                fi
+                git add data/pinnacle-rows.json
+                git commit -m "chore(pinnacle): refresh odds data iter $iter ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then
+                  echo "Iter $iter: push OK (försök $attempt)"
+                  break
+                fi
+                sleep $((attempt))
+              done
+              LAST_COMMIT_EPOCH=$(date +%s)
+            else
+              echo "Iter $iter: DB-speglad — nästa GitHub-commit om $(( COMMIT_INTERVAL_SECONDS - ($(date +%s) - LAST_COMMIT_EPOCH) ))s"
+            fi
+            echo "::endgroup::"
+
+            # Padda till cadensen (fetch-tiden räknas av).
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              # Sov inte förbi loop-budgeten.
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done

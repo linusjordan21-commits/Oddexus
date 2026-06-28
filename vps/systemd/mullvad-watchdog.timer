@@ -1,0 +1,11 @@
+[Unit]
+Description=Kör Mullvad-watchdog var 60:e sekund
+
+[Timer]
+OnBootSec=120s
+OnUnitActiveSec=60s
+AccuracySec=10s
+Unit=mullvad-watchdog.service
+
+[Install]
+WantedBy=timers.target

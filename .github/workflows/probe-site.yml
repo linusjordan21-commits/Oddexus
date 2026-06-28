@@ -1,0 +1,44 @@
+name: Probe Site JSON (recon)
+
+# Rekognosering: laddar en URL i stealth-Chromium fran Actions och loggar vilka
+# JSON/odds-endpoints sidan hamtar — for att se om en sajt (t.ex. sbobet.com)
+# gar att intercepta oautentiserat eller om den geo-blockar/kraver login.
+# Skriver INGET till repot. Manuell trigger med URL-input.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL att proba (t.ex. https://www.sbobet.com/en/euro)"
+        required: true
+        default: "https://www.sbobet.com/en/euro"
+      settle_ms:
+        description: "ms att vanta pa XHR efter load"
+        required: false
+        default: "20000"
+
+concurrency:
+  group: probe-site
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm install --include=dev
+      - run: npx playwright install chromium --with-deps
+      - name: Proba
+        env:
+          PROBE_URL: ${{ inputs.url }}
+          PROBE_SETTLE_MS: ${{ inputs.settle_ms }}
+        run: node scripts/probe-site-json.mjs || echo "[ci] probe-fel ignorerat"

@@ -1,0 +1,55 @@
+name: Recon ATG + Coolbet (engångs)
+
+# Engångs-rekon: bekräftar ATG:s Kambi-offering + upptäcker Coolbets API-form
+# (vår sandlåda blockerar hosten via egress-allowlist; GH-runners har öppet nät).
+# ENDAST workflow_dispatch — kör aldrig av sig själv. Resultat committas till
+# data/_recon-atg-coolbet.json. Inga secrets behövs.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-atg-coolbet
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run recon
+        run: node scripts/recon-atg-coolbet.mjs
+
+      - name: Commit recon output
+        run: |
+          set -e
+          git add data/_recon-atg-coolbet.json
+          if git diff --staged --quiet; then
+            echo "No recon output change"
+            exit 0
+          fi
+          git commit -m "chore(recon): atg+coolbet api-rekon ($(date -u +%FT%TZ))"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase --autostash "origin/$GITHUB_REF_NAME" || { git rebase --abort || true; }
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then echo "Push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

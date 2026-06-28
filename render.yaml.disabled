@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: matched-betting
+    runtime: node
+    # 'plan' och 'buildFilter' anges INTE här — Render-Blueprint kunde inte
+    # tillämpa dem på en existerande service med persistent disk och svarade
+    # med "Blueprint sync failed". Render dashboard styr istället:
+    #   - Plan: manuellt uppgraderad till Standard (2 GB RAM)
+    #   - Auto-Deploy: AV (förhindrar redeploy på Pinnacle-data-commits)
+    # Backend hämtar färska Pinnacle-data via raw.githubusercontent.com
+    # fallback, så Render-instansen behöver inte bygga om för att se ny data.
+    autoDeploy: true
+    region: frankfurt
+    branch: main
+    buildCommand: npm run render-build
+    startCommand: npm run start:cloud
+    # Production API: scripts/production-server.mjs → vite preview + configurePreviewServer
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NPM_CONFIG_PRODUCTION
+        value: "false"
+      - key: BASE_PATH
+        value: /
+      # Under projektroten så binärerna följer med deploy-sluggen (inte bara build-containern).
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: /opt/render/project/src/.ms-playwright
+      - key: STAKE_BETONLINE_HEADLESS
+        value: "1"
+      - key: STAKE_BETONLINE_INTERVAL_MS
+        value: "300000"
+      - key: STAKE_BETONLINE_STAKE_LIMIT
+        value: "60"
+      # Autoclicker — peka på persistent disk (skapa undermappar licenses/ + downloads/)
+      - key: AUTOCLICKER_DATA_DIR
+        value: /opt/render/project/src/.matched-betting-cache/autoclicker-data/licenses
+      - key: AUTOCLICKER_DOWNLOAD_DIR
+        value: /opt/render/project/src/.matched-betting-cache/autoclicker-data/downloads
+    disk:
+      name: bonus-cache
+      mountPath: /opt/render/project/src/.matched-betting-cache
+      sizeGB: 1

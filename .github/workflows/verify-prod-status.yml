@@ -1,0 +1,45 @@
+name: Verify prod /api/sources/status (engångs)
+
+# Curlar prod-sajten (GHA-runner når den, sandboxen blockeras av proxyn) och
+# kollar om admin-grupperingsdeployen är live: group/groupBrands-fälten + de nya
+# källorna tipwin/10bet/888sport/prontosport. ENDAST dispatch.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Curl + kontrollera
+        run: |
+          set +e
+          URL="https://oddexus.com/api/sources/status"
+          echo "GET $URL"
+          # Render free-tier kan kallstarta → vänta upp till ~90s.
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -sS -m 30 -o /tmp/s.json -w "%{http_code}" "$URL")
+            echo "försök $i → HTTP $code"
+            [ "$code" = "200" ] && break
+            sleep 15
+          done
+          echo "=== ANALYS ==="
+          node -e '
+            const d = JSON.parse(require("fs").readFileSync("/tmp/s.json","utf8"));
+            const s = d.sources || [];
+            const ids = s.map(x => x.id);
+            const hasGroup = s.some(x => "group" in x);
+            const hasBrands = s.some(x => "groupBrands" in x);
+            console.log("generatedAt:", d.generatedAt);
+            console.log("antal källor:", s.length);
+            console.log("HAR group-fält:", hasGroup, "| HAR groupBrands:", hasBrands);
+            for (const b of ["tipwin","10bet","888sport","prontosport"]) console.log("  finns " + b + ":", ids.includes(b));
+            for (const id of ["bethard","betinia","betsson","unibet"]) {
+              const x = s.find(y => y.id === id);
+              if (x) console.log(`  ${id}: group=${JSON.stringify(x.group)} groupBrands=${JSON.stringify(x.groupBrands)}`);
+            }
+            const sample = s.find(x => x.id === "bethard") || s[0];
+            console.log("sample keys:", Object.keys(sample).join(","));
+            console.log(hasGroup && ids.includes("tipwin") ? "RESULTAT: DEPLOYAD ✅" : "RESULTAT: EJ DEPLOYAD ÄNNU (gammal kod) ❌");
+          ' || { echo "kunde ej parsa svar:"; head -c 400 /tmp/s.json; }

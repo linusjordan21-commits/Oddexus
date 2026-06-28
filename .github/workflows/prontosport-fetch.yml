@@ -1,0 +1,95 @@
+name: Prontosport Odds Fetch
+
+# prontosport (Spectate) prematch-1X2 via stealth-Chromium BAKOM Mullvad-WireGuard
+# (svensk exit-IP, gratis — samma infra som betsson). Hämtar Spectate-katalogen
+# DOM-skrapa /sv/euro/sport/soccer → prontosport-rows.json. Single-pass per cron-träff.
+# Secret: MULLVAD_WG_CONF.
+
+on:
+  # schedule avaktiverad — prontosport pollas nu i betsson-fetch.yml (delad Mullvad-loop,
+  # ~var 12:e min) i st f throttlad cron (~2h → stale). workflow_dispatch kvar som reserv.
+  workflow_dispatch: {}
+
+concurrency:
+  group: prontosport-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2 xvfb
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set -e
+          set +x
+          if [ -z "$WG_CONF" ]; then echo "::error::MULLVAD_WG_CONF saknas"; exit 1; fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
+          echo "WireGuard up"
+      - name: Verify Swedish IP (tolerant)
+        run: |
+          COUNTRY=""
+          for i in 1 2 3 4; do
+            IP_INFO=$(curl -sS -m 12 https://am.i.mullvad.net/json 2>/dev/null || true)
+            COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty' 2>/dev/null)
+            if [ -n "$COUNTRY" ]; then echo "$IP_INFO" | jq '{ip, country, city}' || true; break; fi
+            sleep $((i * 3))
+          done
+          if [ -z "$COUNTRY" ]; then
+            echo "::warning::kunde ej verifiera IP — tunneln uppe, fortsätter"
+          elif [ "$COUNTRY" != "Sweden" ]; then
+            echo "::error::Exit-IP $COUNTRY ≠ Sweden"; exit 1
+          fi
+      - name: Fetch prontosport
+        run: xvfb-run -a node scripts/fetch-prontosport-github-action.mjs || echo "::warning::fetch exit!=0 — cache bevarad"
+      - name: Dump diag
+        if: always()
+        run: |
+          cat data/_prontosport-scraper-diag.json 2>/dev/null || echo "(ingen diag)"
+          node -e "const d=require('./data/prontosport-rows.json');console.log('events:',d.events?.length??0);console.log('sample:',JSON.stringify((d.events||[])[0]||null))" 2>/dev/null || echo "(ingen rows-fil)"
+      - name: Stop WireGuard
+        if: always()
+        run: |
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+      - name: Commit + push (main)
+        if: always()
+        run: |
+          git add data/prontosport-rows.json data/_prontosport-scraper-diag.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(prontosport): odds via Spectate ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3 4 5; do
+            timeout 60 git fetch origin main >/dev/null 2>&1 || true
+            timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

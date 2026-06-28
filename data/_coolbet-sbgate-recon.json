@@ -1,0 +1,62 @@
+{
+  "ranAt": "2026-06-24T22:55:45.490Z",
+  "provider": "scrapedo",
+  "hasKey": true,
+  "calls": [
+    {
+      "label": "coming-soon football",
+      "target": "https://www.coolbet.com/s/sbgate/sports/fo-match/v2/coming-soon?sportCategoryId=62&language=en&country=SE&locale=en&layout=EUROPEAN&offset=0&from=2026-06-24T22%3A55%3A45.490Z&until=2026-06-27T22%3A55%3A45.490Z&timeFrame=24",
+      "status": null,
+      "isJson": false,
+      "imperva": false,
+      "mode": null,
+      "sample": null,
+      "keys": null,
+      "error": null,
+      "attempts": [
+        {
+          "mode": "pagefetch",
+          "status": 502,
+          "providerErr": true,
+          "imperva": false,
+          "len": 446
+        },
+        {
+          "mode": "pagefetch",
+          "status": 502,
+          "providerErr": true,
+          "imperva": false,
+          "len": 446
+        },
+        {
+          "mode": "pagefetch",
+          "status": 502,
+          "providerErr": true,
+          "imperva": false,
+          "len": 446
+        },
+        {
+          "mode": "render",
+          "status": 502,
+          "providerErr": true,
+          "imperva": false,
+          "len": 669
+        }
+      ],
+      "providerErrBody": "{\"URL\":\"https://www.coolbet.com/sv/odds/fotboll\",\"StatusCode\":502,\"ErrorCode\":90,\"ErrorType\":\"ROTATION_FAILED\",\"Message\":[\"Error: cannot handle browser network\",\"You're already using super=true and render=true. Occasional failures on protected domains are expected.\",\"Request failed and not charged. Please try again.\"],\"Contact\":\"If this error keeps repeating and your success rate on this domain stays low over time, contact support@scrape.do\"}"
+    }
+  ],
+  "longRenders": [
+    {
+      "wait": 45000,
+      "status": 400,
+      "len": 271,
+      "providerErr": false,
+      "oddsLike": 0,
+      "hasMatchDom": false,
+      "hydrated": false
+    }
+  ],
+  "firstMatchId": null,
+  "firstMarketId": null
+}

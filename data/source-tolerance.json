@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-06-28T19:16:04.657Z",
+  "sources": {
+    "altenar": {
+      "currentIntervalSec": 30,
+      "toleranceFloorSec": 30,
+      "hardFloorSec": 30,
+      "ceilingSec": 600,
+      "backoffCount": 8,
+      "lastBackoffAt": "2026-06-28T08:09:11.012Z",
+      "lastStatus": "FRESH"
+    },
+    "unibet": {
+      "currentIntervalSec": 600,
+      "toleranceFloorSec": 246,
+      "hardFloorSec": 60,
+      "ceilingSec": 600,
+      "backoffCount": 99,
+      "lastBackoffAt": "2026-06-28T19:05:38.009Z",
+      "lastStatus": "FRESH"
+    },
+    "paf-brand": {
+      "currentIntervalSec": 431,
+      "toleranceFloorSec": 431,
+      "hardFloorSec": 240,
+      "ceilingSec": 2400,
+      "backoffCount": 182,
+      "lastBackoffAt": "2026-06-28T12:42:11.140Z",
+      "lastStatus": "FRESH"
+    }
+  }
+}

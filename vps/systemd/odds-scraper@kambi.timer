@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer för Kambi/Unibet scraper (var 3min)
+
+[Timer]
+OnBootSec=60s
+OnUnitActiveSec=3min
+AccuracySec=5s
+Unit=odds-scraper@kambi.service
+
+[Install]
+WantedBy=timers.target

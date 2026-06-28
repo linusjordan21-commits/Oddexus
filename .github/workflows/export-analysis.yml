@@ -1,0 +1,52 @@
+name: Export Analysis Package
+
+# Genererar Claude Analysis Package (CSV + summary + full_history.json + prompt) ur
+# Supabase och laddar upp som artifact. Manuell (kör när du vill analysera, t.ex.
+# efter 1–2 veckor). Ingen auto-radering, ingen påverkan på driften.
+
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "Från-datum ISO (default 30 dagar bakåt)"
+        required: false
+        default: ""
+      to:
+        description: "Till-datum ISO (default nu)"
+        required: false
+        default: ""
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Generate package
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          EXPORT_FROM: ${{ inputs.from }}
+          EXPORT_TO: ${{ inputs.to }}
+          EXPORT_DIR: ./export-out
+        run: npx vite-node scripts/export-analysis-package.mjs
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-analysis-package
+          path: export-out/
+          retention-days: 30

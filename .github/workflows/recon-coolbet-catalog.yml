@@ -1,0 +1,52 @@
+name: Recon Coolbet katalog-enumerering (engångs)
+
+# Resolver: hur listar vi ALLA 24h-fotbollsmatcher billigt (EN render)? Provar
+# kandidat-endpoints för per-liga-matchlistor + coming-soon-paginering.
+# Resultat → data/_coolbet-catalog-recon.json. ENDAST dispatch. Secret: SCRAPER_API_KEY.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: recon-coolbet-catalog
+  cancel-in-progress: true
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Run catalog recon
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: node scripts/recon-coolbet-catalog.mjs
+      - name: Dump to log
+        if: always()
+        run: cat data/_coolbet-catalog-recon.json 2>/dev/null || echo "(ingen output)"
+      - name: Commit recon output
+        if: always()
+        run: |
+          git add data/_coolbet-catalog-recon.json || true
+          if git diff --staged --quiet; then echo "No change"; exit 0; fi
+          git commit -m "chore(recon): coolbet katalog-enumerering ($(date -u +%FT%TZ))"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase --autostash "origin/$GITHUB_REF_NAME" || { git rebase --abort || true; }
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then echo "Push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

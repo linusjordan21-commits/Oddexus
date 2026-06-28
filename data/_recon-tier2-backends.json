@@ -1,0 +1,273 @@
+{
+  "ranAt": "2026-06-25T12:53:04.944Z",
+  "sites": [
+    {
+      "name": "888sport",
+      "loaded": true,
+      "usedUrl": "https://www.888sport.se/fotboll/",
+      "backend": "Spectate (888)",
+      "topHosts": [
+        "unifiedclientstatic.safe-iplay.com(127)",
+        "cdn.spectateprod.com(90)",
+        "www.888sport.se(23)",
+        "dmzls-dub.safe-installation.com(21)",
+        "analytics.888sport.se(16)",
+        "images.images4us.com(13)",
+        "js-agent.newrelic.com(12)",
+        "mirage-webassets.images4us.com(11)"
+      ],
+      "api": [
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/entry/api/api-vendors.81a9f3b7485c75127447.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "/*! For license information please see api-vendors.81a9f3b7485c75127447.js.LICENSE.txt */\n(self.webpackChunkpf_web_ucf_sdk=self.webpackChunkpf_web_ucf_sdk||[]).push([[\"api-vendors\"],{\"./node_modules/@sparkware/uc-sdk-core/lib/apps/app-enums.js\"(e,t){\"use strict\";var n,o,r,i,s,a,c,l,u,p,d,g,h,f,m,_,b,y,w,T,C,v,A,P,O,S,E,k,R,I,j,N,M,D,L,U,F,B,x,H,G;Object.defineProperty(t,\"__esModule\",{value:!0}),t."
+        },
+        {
+          "url": "https://images.images4us.com/e0dd45d4561f6a277cf6813524129149a0976d0c30f18318b054a29474dbc68c/aem-static/js/sport-vendors.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript; charset=utf-8",
+          "sample": "\"use strict\";(self.webpackChunk=self.webpackChunk||[]).push([[565],{945:function(e,t,s){function i(e){return null!==e&&\"object\"==typeof e&&\"constructor\"in e&&e.constructor===Object}function n(e={},t={}){Object.keys(t).forEach((s=>{void 0===e[s]?e[s]=t[s]:i(t[s])&&i(e[s])&&Object.keys(t[s]).length>0&&n(e[s],t[s])}))}s.d(t,{Ij:function(){return ae},_R:function(){return le},Vx:function(){return se},d"
+        },
+        {
+          "url": "https://images.images4us.com/e0dd45d4561f6a277cf6813524129149a0976d0c30f18318b054a29474dbc68c/aem-static/js/sport-top-section.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript; charset=utf-8",
+          "sample": "!function(){var t={101:function(){ConstantsSport={breakpoints:{mobile:640,tablet:1024,desktop:1200},isDevice:/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}},74:function(){document.addEventListener(\"DOMContentLoaded\",(function(){if(document.querySelector('meta[name=\"template\"][content=\"sport--taboola-lp-template\"]')){document.querySelectorAll(\".container"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/entry/api/api.9f925f8d006c3d043da5.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "/*! For license information please see api.9f925f8d006c3d043da5.js.LICENSE.txt */\nvar api;(()=>{\"use strict\";var e,t,n,o={\"./Modules/Storage/implementations/index.ts\"(e,t,n){n.r(t),n.d(t,{WebObjectStorageService:()=>o,WebSimpleStorageService:()=>i,WebWindowObjectStorageService:()=>a,WebWindowSimpleStorageService:()=>r});class o{constructor(e){this._storage=e,this.upsert=(e,t)=>{const n=this.select"
+        },
+        {
+          "url": "https://images.images4us.com/e0dd45d4561f6a277cf6813524129149a0976d0c30f18318b054a29474dbc68c/aem-static/js/sport.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript; charset=utf-8",
+          "sample": "!function(){var e,t={145:function(e,t,n){\"use strict\";n(712),n(696),n(984),n(934);var o=n(945);document.querySelectorAll(\".banner-slider\").forEach((function(e){!function(e){let t={swiper:\".swiper\",slide:\".swiper-slide\"},n=e.querySelector(t.swiper).querySelectorAll(t.slide);function i(){let e=n.length;new o.Ay(\".swiper\",{modules:[o.Vx,o.dK,o._R,o.Ij],autoplay:{delay:4e3},spaceBetween:30,effect:\"fad"
+        },
+        {
+          "url": "https://sport-staticcontent.safe-iplay.com/shared/js/sgp-aem.min.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "var callBack=null,pathCallback=null,sgp={id:\"3.0.0\",run:function(){sgp.main.clientInfoData(),document.addEventListener(\"DOMContentLoaded\",function(){runPromise(sgp.main.init(function(){sgp.main.ready()}))})},publishAction:function(e,t,n,o,s={},i=\"B2C_SPORT\"){try{uc.channels.navigation.topics.performAction.publish({publisher:i},{actionID:e,launchInfo:{channel:{area:t,source:n,element:o}},actionData"
+        },
+        {
+          "url": "https://www.888sport.se/api/content?templateId=422059&publicationId=1893&pagePlaceHoldersXML=null&componentId=475889",
+          "method": "GET",
+          "status": 200,
+          "ct": "application/json; charset=utf-8",
+          "sample": "[{\"ComponentId\":475889,\"TemplateId\":422059,\"Id\":\"/footer/master/\",\"Content\":\"\\n\\n<div class=\\\"container\\\">\\n    <!-- Add Back Top-Section ClientLib XF -->\\n    \\n    \\n    \\n    \\n        <link as=\\\"style\\\" href=\\\"https://images.images4us.com/e0dd45d4561f6a277cf6813524129149a0976d0c30f18318b054a29474dbc68c/aem-static/css/sport-top-section.css\\\" rel=\\\"preload stylesheet\\\" type=\\\"text/css\\\">\\n    \\n"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/userarea/chunks/odds/pc/odds.c0f6193f3493a50565b4.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "\"use strict\";(self.userareaFn=self.userareaFn||[]).push([[9708],{25774(e,a,t){t.d(a,{A:()=>C});var n=t(41594),c=t.n(n),s=t(80213),o=t(45135),d=t(54130),l=t(5556),r=t.n(l),i=t(95328),m=t(41536),u=t(32485),g=t.n(u),p=t(76728),b=t(9078);const f=e=>{const a=e.handleClick,t=(0,o.d4)(m.Xn.oddsFormat),l=(0,o.d4)(m.Xn.oddsFormatSettings),r=(0,o.d4)(m.Xn.isMobile),u=(0,o.wA)(),p=(0,n.useCallback)(e=>{u(i.Q"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/userarea/chunks/provider-spectate/search/pc/searchpcheadersection-js.182886e9de2ebe802df0.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "\"use strict\";(self.userareaFn=self.userareaFn||[]).push([[5871],{38336(e,t,a){a.r(t),a.d(t,{default:()=>f});var n=a(22834),c=a(5556),r=a.n(c),i=a(41594),o=a.n(i),s=a(88472),l=a(41536),d=a(32485),m=a.n(d),u=a(45135);const g=e=>{let t=e.trackingInfo;const a=(0,u.d4)(l.bB.settings),c=m()(\"aChelpLink\",\"circleIcon\"),r=new n.q({termKey:a.termKey,title:a.title,iconKey:a.iconKey,iconURL:a.iconUrl,URL:a.ur"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/userarea/chunks/widget/modal.0406910bf538c2ec0a3a.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "\"use strict\";(self.userareaFn=self.userareaFn||[]).push([[1021],{99375(e,t,s){s.r(t),s.d(t,{default:()=>u});var n=s(69352),a=s(41594),i=s.n(a),o=s(80213),r=s(54130),d=s(63308),c=s(45135),l=s(41536);const h=d.Ay.div.withConfig({componentId:\"uc__sc-1yg1q67-0\"})`position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;display:${e=>e.show?\"block\":\"none\"};`,u=()=>{const e=(0,c.d4)(l.N$.modalWid"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/chunks/web/bi/event-handler.588e3426f66c3ef37200.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "/*! For license information please see event-handler.588e3426f66c3ef37200.js.LICENSE.txt */\n\"use strict\";(self.webpackChunkucModule=self.webpackChunkucModule||[]).push([[\"bi/event-handler\"],{\"./src/modules/bi/bi-event-handler.ts\"(e,t,n){n.r(t),n.d(t,{BIEventHandler:()=>h});var a=n(\"./node_modules/@sparkware/uc-sdk-core/lib/index.js\"),i=n(\"./src/injection-tokens.ts\"),s=n(\"./node_modules/typedi/esm5"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/userarea/chunks/provider-spectate/search/css-search-header-scss.922cfc41bd1eb7f75aee.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "\"use strict\";(self.userareaFn=self.userareaFn||[]).push([[6497],{35185(e,s,r){r.r(s)}}]);"
+        },
+        {
+          "url": "https://unifiedclient.safe-iplay.com/api/user/abtest-active-features-anonymous/",
+          "method": "GET",
+          "status": 200,
+          "ct": "application/json; charset=utf-8",
+          "sample": "{\"AnonymousPlayerID\":\"0886a6cd-9401-4d15-92d7-bc1796f653fc\",\"aBFeatureTests\":[{\"TestID\":442,\"TestName\":\"Sport Banners AB Testing - Anonymous \",\"TestGroup\":\"Group B\",\"Id\":951,\"Name\":\"banners ab testing\",\"Properties\":[{\"Key\":\"group\",\"Value\":\"B\"}]}]}"
+        },
+        {
+          "url": "https://images.images4us.com/e0dd45d4561f6a277cf6813524129149a0976d0c30f18318b054a29474dbc68c/aem-static/js/sport-footer-v2.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript; charset=utf-8",
+          "sample": "!function(){var e={169:function(){document.querySelectorAll(\".footer-top-component\").forEach((function(e){e.classList.contains(\"edit-mode\")||function(e){let n=\".footer-top-links\",t=\".footer-top-links-component\",o=\".section-link\",i=\".accordion-heading\",r=\".accordion-content\";e.querySelector(o).querySelectorAll(n).forEach((e=>{if(!e.querySelector(t)?.classList.contains(\"icons\")){let n=e.querySelecto"
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/chunks/web/sport/sport.b2ee62ac45bd88faf21c.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "/*! For license information please see sport.b2ee62ac45bd88faf21c.js.LICENSE.txt */\n\"use strict\";(self.webpackChunkucModule=self.webpackChunkucModule||[]).push([[\"sport/sport\"],{\"./src/modules/sport/sport.ts\"(e,t,s){s.r(t),s.d(t,{Sport:()=>d});var r=s(\"./node_modules/typedi/esm5/container.class.js\"),o=s(\"./src/modules/logger/index.ts\"),i=s(\"./node_modules/@sparkware/uc-sdk-core/lib/index.js\"),n=s("
+        },
+        {
+          "url": "https://unifiedclientstatic.safe-iplay.com/Scripts/userarea/chunks/settings/odds.6a17d5336073f2ddd5d2.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "\"use strict\";(self.userareaFn=self.userareaFn||[]).push([[1061],{43334(e,t,d){d.r(t),d.d(t,{default:()=>y});var s=d(41594),a=d.n(s),o=d(45135),n=d(5556),r=d.n(n),c=d(6442),i=d(41536),l=d(73585),m=d(95328),u=d(54130),p=d(80213),g=d(90235),f=d(66631),I=d(59663);const E=e=>{const t=e.expanded,d=e.onExpand,n=(0,c.A)().formatMessage,r=(0,o.wA)(),E=(0,o.d4)(i.Xn.brandId),y=(0,o.d4)(i.ij.odds.current),S="
+        },
+        {
+          "url": "https://login-lln.safe-iplay.com/api/isIPWhiteListed",
+          "method": "GET",
+          "status": 200,
+          "ct": "application/json; charset=utf-8",
+          "sample": "false"
+        }
+      ],
+      "ws": [
+        {
+          "url": "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-3a9d3e3e-8157-40c6-94da-223616e8443f",
+          "frames": [
+            "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-25 12:53:13\",\"guid\":\"d3794106-7094-11f1-8d39-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7829040}]}",
+            "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-25 12:53:15\",\"guid\":\"d4ffe138-7094-11f1-9016-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7829042}]}",
+            "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-25 12:53:15\",\"guid\":\"d503587c-7094-11f1-9fcd-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7829042}]}"
+          ]
+        },
+        {
+          "url": "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-3a9d3e3e-8157-40c6-94da-223616e8443f",
+          "frames": [
+            "{\"action\":\"pong\",\"data\":null}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "10bet",
+      "loaded": true,
+      "usedUrl": "https://www.10bet.se/sports/football",
+      "backend": "Sportradar",
+      "topHosts": [
+        "sportswidget-cdn.10bet.se(87)",
+        "www.10bet.se(84)",
+        "sportswidget.10bet.se(5)",
+        "www.googletagmanager.com(4)",
+        "d27213kkqkh5q0.cloudfront.net(4)",
+        "fonts.googleapis.com(3)",
+        "region1.google-analytics.com(3)",
+        "www.facebook.com(3)"
+      ],
+      "api": [],
+      "ws": [
+        {
+          "url": "wss://openapi.framegas3.com/socket.io/1/websocket/27f766e3-a571-4251-9e30-3cdc2a0048dc",
+          "frames": [
+            "3:::{\"data\":{\"clientIp\":\"185.213.154.229\",\"correlationId\":\"correlationId_f70e4fea-043d-4085-8064-9adf8ee4158a\"},\"ID\":81406}",
+            "3:::{\"data\":{\"country\":\"SE\",\"resolvedProperties\":[{\"key\":\"state\",\"value\":\"O\"},{\"key\":\"city\",\"value\":\"Gothenburg\"},{\"key\":\"latitude\",\"value\":\"57.7065\"},{\"key\":\"longitude\",\"value\":\"11.967\"},{\"key\":\"accuracyRadius\",\"value\":\"20\"}],\"correlationId\":\"correlationId_8f0c85c5-c6be-49b1-b374-52961a18b19d\"},\"ID"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prontosport",
+      "loaded": true,
+      "usedUrl": "https://sb.prontosport.se/sv/euro/sport/1",
+      "backend": "okänd",
+      "topHosts": [
+        "sb.prontosport.se(13)",
+        "cdn.abmbet.com(1)"
+      ],
+      "api": [
+        {
+          "url": "https://sb.prontosport.se/sv/euro/sport/1",
+          "method": "GET",
+          "status": 302,
+          "ct": "text/html; charset=UTF-8",
+          "sample": ""
+        },
+        {
+          "url": "https://sb.prontosport.se/sv/index/error",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/html; charset=UTF-8",
+          "sample": "\n<!DOCTYPE html>\n<!--[if IE 8]> <html lang=\"sv\" class=\"ie8 no-js\"> <![endif]-->\n<!--[if IE 9]> <html lang=\"sv\" class=\"ie9 no-js\"> <![endif]-->\n<!--[if !IE]><!-->\n    <html\n\tlang=\"sv\"\n\tdir=\"ltr\"\n\tclass=\"view-desktop layout-scroll plugin-content\"\n>\n<!--<![endif]-->\n<!-- BEGIN HEAD -->\n<head>\n        <script data-cookieconsent=\"ignore\">\n        window.__GENERAL_INFO__ = ['5066', '76f05e2dbf9ec1ff71f6"
+        },
+        {
+          "url": "https://sb.prontosport.se/cdn/5066/themes/_default/vue/dist/assets/js/vendor.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "var cE=Object.defineProperty,lE=Object.defineProperties;var fE=Object.getOwnPropertyDescriptors;var Oo=Object.getOwnPropertySymbols;var kh=Object.prototype.hasOwnProperty,Ph=Object.prototype.propertyIsEnumerable;var Zr=(e,t)=>(t=Symbol[e])?t:Symbol.for(\"Symbol.\"+e),dE=e=>{throw TypeError(e)},Dh=Math.pow,Ah=(e,t,n)=>t in e?cE(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n,_e=(e,t)="
+        },
+        {
+          "url": "https://sb.prontosport.se/cdn/5066/media/common_desktop_partials.js?-1",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "function PARTIALS() {return {\"common\\/modals\\/base_modal\":\"<div\\n    id=\\\"{{ id }}\\\"\\n    class=\\\"modal {{ classes }}\\\"\\n    tabindex=\\\"-1\\\"\\n    role=\\\"dialog\\\"\\n    data-backdrop=\\\"static\\\"\\n    data-keyboard=\\\"false\\\"\\n    aria-label=\\\"Modal dialog\\\"\\n>\\n\\t<div class=\\\"modal-dialog modal-{{ modalSize ? modalSize : 'lg' }} modal-dialog-centered\\\" role=\\\"document\\\">\\n\\t\\t<div class=\\\"modal-conten"
+        },
+        {
+          "url": "https://cdn.abmbet.com/live-center-v3/prod/main.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "const i={componentList:[],add:(e,t,n,o)=>{i.componentList.push({id:e,component:t,rootComponent:n,componentConfiguration:o})},remove:e=>{i.componentList=i.componentList.filter(t=>t.id!==e)},removeAll:()=>{i.componentList.forEach(e=>{i.remove(e.id)})},getComponent:e=>i.componentList.find(t=>t.id===e),getComponentList:()=>i.componentList.map(e=>e.id)};var T={VITE_ENV:\"prod\",VITE_PUBLIC_URL:\"https://s"
+        },
+        {
+          "url": "https://sb.prontosport.se/cdn/5066/media/common_desktop.js?-1",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "/*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */\nfunction betSlipConfig(){var e=window.BaseConfig.get(\"IS_NEW_LAYOUT\")&&(window.BaseConfig.get(\"IS_CASINO_HOME_SPORT_LAYOUT_ENABLED\")||window.BaseConfig.get(\"IS_FEATURED_SPORTS_EVENTS_ENABLED\")||window.BaseConfig.get(\"FEATURED_SPORTS_HOMEPAGE\"));if(Config.IS_MOBILE||\"euro\"===Config.CONTROLLER||\"sport\"===Config.CONTROLLER||e){var t=\"a"
+        },
+        {
+          "url": "https://sb.prontosport.se/cdn/5066/themes/_default/vue/dist/static/js/app.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=[\"../../assets/js/chunk-CaeR7WT0.js\",\"../../assets/js/vendor.js\",\"../../assets/js/chunk-D15ghsaO.js\",\"../css/chunk-DJaHBT7u.css\",\"../../assets/js/chunk-BtG8hX0_.js\",\"../../assets/js/chunk-AKXiPQxl.js\",\"../../assets/js/chunk-mH83u1Oa.js\",\"../css/chunk-BuxR_L7s.css\",\"../../assets/js/chunk-Cl200JM-.js\",\"../../assets/js/chunk-DxbHLxIK.js\",\"../css"
+        },
+        {
+          "url": "https://sb.prontosport.se/cdn/5066/wl_common_assets/date_locales/sv.js",
+          "method": "GET",
+          "status": 200,
+          "ct": "text/javascript",
+          "sample": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t(require(\"dayjs\")):\"function\"==typeof define&&define.amd?define([\"dayjs\"],t):(e=\"undefined\"!=typeof globalThis?globalThis:e||self).dayjs_locale_sv=t(e.dayjs)}(this,(function(e){\"use strict\";function t(e){return e&&\"object\"==typeof e&&\"default\"in e?e:{default:e}}var a=t(e),d={name:\"sv\",weekdays:\"söndag_måndag_tisdag"
+        },
+        {
+          "url": "https://sb.prontosport.se/sv/index/operation/updateHeaderIndicatorsV2",
+          "method": "POST",
+          "status": 200,
+          "ct": "text/html; charset=UTF-8",
+          "sample": "{\"status\":\"success\",\"data\":{\"messages\":{\"info\":{\"count\":\"\"},\"action\":\"insert\"},\"tickers\":{\"info\":{\"count\":\"\"},\"action\":\"insert\"}}}"
+        }
+      ],
+      "ws": []
+    },
+    {
+      "name": "tipwin",
+      "loaded": true,
+      "usedUrl": "https://tipwin.se/sv/sports/highlights",
+      "backend": "okänd",
+      "topHosts": [
+        "tipwin.se(2)",
+        "fonts.googleapis.com(1)",
+        "fonts.gstatic.com(1)"
+      ],
+      "api": [],
+      "ws": []
+    }
+  ]
+}

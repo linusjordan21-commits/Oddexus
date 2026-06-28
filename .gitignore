@@ -1,0 +1,76 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Lokala sparade spel (dev-server API — delas mellan localhost / 127.0.0.1 / etc.)
+.matched-betting-logs.json
+.matched-betting-cache/
+.ms-playwright/
+
+# Autoklicker kopieras lokalt via setup.sh — skickas vidare i zip, inte i git
+tools/*.exe
+matched-betting-share.zip
+
+# Inspect/inventory sample-filer (regenererbara genom att köra inspect-scripten)
+data/_inspect-*.json
+data/_probe-*.json
+# Audit-snapshot — transient, skrivs av audit-source-freshness.mjs / watchdog /
+# keepalive vid varje körning. Regenereras alltid; ska aldrig committas.
+data/_audit-sources.json
+# Polling-ramp-state (B2) — transient, skrivs av keepalive varje varv. Aldrig committas.
+data/_polling-state.json
+data/_bet9ja-*.json
+data/_bet9ja-*.js
+data/_bet9ja-*.html
+
+# Admin-genererad auth-fil + backups från reset-script — får ALDRIG committas
+data/admin-auth.json
+data/admin-auth.backup.*.json
+data/autoclicker-licenses.json
+data/autoclicker-licenses.json.corrupt.*.bak
+*.corrupt.*.bak
+
+data/users.json
+data/users.json.corrupt.*.bak
+
+private_downloads/*.zip
+!private_downloads/README.md
+
+# Autoclicker bot — runtime artifacts (källkoden i autoclicker/ versioneras)
+autoclicker/.venv/
+autoclicker/bot-chrome-profile/
+autoclicker/calibration.json
+autoclicker/license.txt
+autoclicker/autoclicker-share.zip
+autoclicker/*.zip
+autoclicker/__pycache__/
+autoclicker/*.pyc
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.workspace
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# CLV shadow-mode-logg (runtime-genererad, ej versionerad)
+data/clv-log.jsonl
+data/clv-log.*.jsonl
+
+# Kickoff-capturead closing-snapshot (runtime-genererad)
+data/pinnacle-closing.json

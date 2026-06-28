@@ -1,0 +1,134 @@
+name: Match Results Fetch
+
+# Hämtar FÄRDIGA matchresultat (fotboll/basket/tennis, igår+idag) från
+# Sofascore och committar data/match-results.json. Render kan inte fråga
+# Sofascore direkt (Cloudflare blockar datacenter-IP, verifierat 2026-06-12)
+# — men Actions-runners går igenom. Samma publicerings-kedja som odds:
+# fil-commit + Supabase-spegling → Render läser DB → disk → GitHub-raw.
+#
+# Cadens: EN gång i timmen räcker — resultat är statiska när matchen är klar,
+# och auto-settle gate:ar ändå på >2.5h efter avspark (settle sker då inom
+# ~1h av att gaten öppnar). Skonsamt mot Mullvad-relayens IP-rykte (delas med
+# betsson/vbet-scraping — färre knackningar = lägre Cloudflare-blockrisk).
+# Minut 7 (inte :00): GitHub throttlar de populära heltimmes-slotsen.
+# Scriptet är beroendefritt (node builtins) → ingen npm install → ~1 min körtid.
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: results-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # Browser-fallbacken (stealth-Chromium mot Cloudflare) kräver playwright.
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Get Playwright version
+        id: pw-version
+        run: |
+          PW_VERSION=$(node -e "const pkg=require('playwright/package.json'); console.log(pkg.version);" 2>/dev/null || echo "unknown")
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.pw-version.outputs.version }}-chromium
+
+      - name: Install Playwright Chromium (browser-only if cache hit)
+        run: |
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            npx playwright install-deps chromium
+          else
+            npx playwright install chromium --with-deps
+          fi
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Sofascore 403:ar ALLA datacenter-IP:n (verifierat 2026-06-12: även
+      # GitHub Azure-runners blockas på .com/.app/www). Mullvad-tunneln ger
+      # en konsument-IP — samma beprövade mönster som betsson/vbet-fetch.
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2
+
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set -e
+          # Skydda PrivateKey från trace-output.
+          set +x
+          if [ -z "$WG_CONF" ]; then
+            echo "::error::MULLVAD_WG_CONF secret saknas — kan inte starta VPN"
+            exit 1
+          fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo timeout 90 wg-quick up wg0
+          IP_INFO=$(curl -sS -m 10 https://am.i.mullvad.net/json || true)
+          echo "$IP_INFO" | jq '{ip, country, mullvad_exit_ip}' 2>/dev/null || echo "$IP_INFO"
+          echo "WireGuard tunnel up"
+
+      - name: Fetch match results (Sofascore)
+        env:
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          # API-Sports (api-football/api-basketball) — keyad gratiskälla för
+          # nischligor. No-op tills nyckeln läggs in som repo-secret.
+          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+        run: timeout -k 30 480 node scripts/fetch-results-github-action.mjs
+
+      - name: Commit and push results
+        run: |
+          git add data/match-results.json
+          if git diff --staged --quiet; then
+            echo "Ingen förändring — inget att committa."
+            exit 0
+          fi
+          git commit -m "chore(results): refresh match results ($(date -u +%FT%TZ))"
+          for attempt in 1 2 3 4 5 6; do
+            timeout 60 git fetch origin main >/dev/null 2>&1 || true
+            timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "push OK (försök $attempt)"; exit 0; fi
+            sleep $((attempt * 5))
+          done
+          echo "::warning::push misslyckades efter 6 försök — nästa cron-körning försöker igen"
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+          echo "WireGuard tunnel down + config raderad"

@@ -1,0 +1,11 @@
+[Unit]
+Description=Kör universal self-healer var 2:e minut
+
+[Timer]
+OnBootSec=180s
+OnUnitActiveSec=120s
+AccuracySec=15s
+Unit=self-heal.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,80 @@
+name: Render Deploy on Code Changes
+
+# Triggar Render Deploy Hook automatiskt när faktisk kod ändras på main.
+# Pinnacle-cron pushar till data/pinnacle-rows.json varannan minut — den vägen
+# vill vi INTE deploya, eftersom backend hämtar färsk Pinnacle-data via
+# raw.githubusercontent.com (se kommentaren i render.yaml.disabled).
+#
+# Setup (engångsjobb):
+#   1. Render dashboard → matched-betting → Settings → Deploy Hook → Copy URL
+#   2. GitHub repo → Settings → Secrets and variables → Actions → New repo secret
+#      Name:  RENDER_DEPLOY_HOOK_URL
+#      Value: <hela hook-URL:en, inkl. ?key=...>
+#
+# När hook är på plats triggas redeploy automatiskt vid push till main som
+# ändrar någon av path-listorna nedan. Pinnacle-data-pushar ignoreras.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "public/**"
+      - "scripts/**"
+      - "index.html"
+      - "vite.config.ts"
+      - "tailwind.config.ts"
+      - "postcss.config.js"
+      - "tsconfig*.json"
+      - "components.json"
+      - "package.json"
+      - "package-lock.json"
+      - "render.yaml"
+      - "render.yaml.disabled"
+      - ".github/workflows/render-deploy.yml"
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Manuell deploy-anledning (loggning)"
+        required: false
+        default: "manual trigger"
+
+concurrency:
+  group: render-deploy
+  cancel-in-progress: false
+
+jobs:
+  trigger-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Visa commit + ändrade paths
+        # Commit-meddelandet INTERPOLERAS ALDRIG direkt i shell — citattecken/
+        # backticks i meddelandet bröt annars kommandot och hela deploy-steget
+        # hoppades över (orsak till tysta misslyckade deploys 2026-06). Skicka
+        # via env-variabel så innehållet är ofarligt oavsett tecken.
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          DISPATCH_REASON: ${{ github.event.inputs.reason }}
+        run: |
+          echo "Commit:  ${{ github.sha }}"
+          echo "Trigger: ${{ github.event_name }}"
+          printf 'Message: %s\n' "$COMMIT_MSG" | head -1
+          [ -n "$DISPATCH_REASON" ] && echo "Reason:  $DISPATCH_REASON" || true
+
+      - name: Trigga Render Deploy Hook
+        env:
+          HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK_URL" ]; then
+            echo "::error::RENDER_DEPLOY_HOOK_URL saknas. Lägg till den under repo Settings → Secrets → Actions."
+            exit 1
+          fi
+          response=$(curl -sS -o /tmp/render-resp.txt -w "%{http_code}" -X POST "$HOOK_URL")
+          echo "HTTP: $response"
+          echo "---response---"
+          cat /tmp/render-resp.txt
+          echo
+          case "$response" in
+            2*) echo "::notice::Render-deploy triggad. Bygget tar ca 2–4 min." ;;
+            *)  echo "::error::Render Deploy Hook svarade $response"; exit 1 ;;
+          esac

@@ -1,0 +1,60 @@
+name: Tipwin Odds Fetch
+
+# tipwin.se (GP/NSoft-sportsbook) prematch-odds via Scrapfly: ETT render passerar CF,
+# en same-origin in-page-fetch hämtar offer/data (base62(gzip(filter))) → parsas IN-PAGE
+# till kanoniska rader → tipwin-rows.json (1X2 + totals). KOSTNAD: ASP+render+residential
+# = 30 credits/anrop. cron */12 (≈108k credits/mån) — budget uppgraderad till 1M/mån,
+# extra budget läggs på färskhet + 24h-fokus (>24h filtreras bort i skriptet).
+# Single-pass per cron-träff. Secret: SCRAPER_API_KEY.
+
+on:
+  # schedule avaktiverad — tipwin pollas nu i scrape-loop-paid.yml (viktad loop)
+  workflow_dispatch: {}
+
+concurrency:
+  group: tipwin-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Fetch Tipwin (Scrapfly)
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        run: node scripts/fetch-tipwin-github-action.mjs || echo "::warning::fetch exit!=0 — cache bevarad"
+      - name: Dump diag
+        if: always()
+        run: |
+          echo "===== _tipwin-scraper-diag.json ====="
+          cat data/_tipwin-scraper-diag.json 2>/dev/null || echo "(ingen diag)"
+          echo "===== tipwin-rows.json (sammanfattning) ====="
+          node -e "const d=require('./data/tipwin-rows.json');console.log('events:',d.events?.length??0);console.log('sample:',JSON.stringify((d.events||[])[0]||null))" 2>/dev/null || echo "(ingen rows-fil)"
+      - name: Commit + push (main)
+        if: always()
+        run: |
+          git add data/tipwin-rows.json data/_tipwin-scraper-diag.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "ingen förändring"; exit 0; fi
+          git commit -m "chore(tipwin): odds via GP-API ($(date -u +%FT%TZ))" || exit 0
+          for attempt in 1 2 3 4 5; do
+            timeout 60 git fetch origin main >/dev/null 2>&1 || true
+            timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+            if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

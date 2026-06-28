@@ -1,0 +1,128 @@
+name: ComeOn Group Odds Fetch
+
+# Fetchar 1X2-odds för ComeOn-gruppen (hajper, snabbare, comeon) via stealth-Chromium
+# på GitHub Actions Azure-runners (Cloudflare blockerar Render-IP men släpper igenom
+# Azure ASN). Workflow:n commit:ar data/comeon-rows.json som Render läser via
+# raw.githubusercontent.com / GitHub API contents endpoint.
+#
+# Pipeline-tid: ~12-15 min/körning (5-6 brands × ~2.5 min: Cloudflare-clearance
+# + 153 queries/brand). Sätt env COMEON_CONCURRENCY för att justera RSocket-takt.
+
+on:
+  # GitHub Actions PRIMÄR igen (active-active återställt 2026-06-08): VPS:en
+  # committade aldrig pålitligt, så att stänga av schemat gjorde källan stale.
+  # VPS:en kvar som hot-standby.
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+  # Trigga också på push till main så schedule-pauser (efter failed run) inte
+  # stoppar refresh. paths-ignore förhindrar att data-commits triggar nya runs.
+concurrency:
+  group: comeon-fetch
+  # cancel-in-progress: FALSE. ComeOn-pipelinen tar ~12-15 min (5-6 brands ×
+  # Cloudflare-väntan + RSocket). Med 'true' avbröt varje ny trigger (schedule
+  # + push + watchdog-dispatch) den pågående körningen INNAN den hann committa
+  # → ComeOn blev aldrig färsk (audit 2026-06-07: 5 cancelled runs i rad).
+  # Med 'false' låter vi pågående scrape köra klart; GitHub köar max 1 pending
+  # och droppar överskott tyst. Samma fix som Pinnacle/Bet7/Bet9ja.
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    # ~5h17m: self-sustaining loop (ComeOn är långsam ~13-16 min/körning, så en
+    # keepalive-dispatch hinner nästan bli stale innan den är klar — egen loop är
+    # robustare). Avslutar rent med marginal till 6h job-max; köad restart tar över.
+    timeout-minutes: 317
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Vi pushar tillbaka data-filen — fetch-depth 1 räcker.
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch ComeOn (självunderhållande loop, ~15 min cadens i ~5h)
+        # Kontinuerlig intern loop: fetch + commit var ~15:e min i upp till ~5h,
+        # oberoende av GitHub:s throttlade */10-schema. Resilient: failad fetch
+        # bevarar cache, loopen fortsätter. schedule/push kvar som restart.
+        env:
+          COMEON_CONCURRENCY: "4"
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # INTE 'set -e' — en iteration får aldrig döda loopen.
+          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          CADENCE_SECONDS=900      # ~15 min cadens (run ~13-16 min) << 30-min-tröskel
+          START_EPOCH=$(date +%s)
+          iter=0
+          # NO-PROGRESS-BREAKER (2026-06-12): lyckad fetch stämplar alltid ny
+          # updatedAt ⇒ commit. 3 raka iterationer utan publicerad data = blind
+          # loop (Cloudflare-block/hängande clearance) → avsluta rent så köad
+          # restart tar över med färsk runner.
+          NO_PROGRESS_STREAK=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd efter $iter iter — avslutar rent."; break; }
+            iter_start=$(date +%s)
+            echo "::group::ComeOn iteration $iter (elapsed $((now - START_EPOCH))s)"
+
+            # HÄNGVAKT (2026-06-12): en hängd Playwright/RSocket-session eller
+            # hängd git-nätverksoperation gör annars körningen till en zombie
+            # som håller concurrency-gruppen låst i timmar (alla omstarter
+            # köas+avbryts → källan stale). timeout gör varje kommando
+            # tidsbegränsat; loopen fortsätter med nästa iteration.
+            timeout -k 30 1500 node scripts/fetch-comeon-github-action.mjs || echo "::warning::iter $iter fetch exit!=0/timeout — cache bevarad, loopen fortsätter"
+
+            git add data/comeon-rows.json
+            if git diff --staged --quiet; then
+              echo "iter $iter: ingen förändring"
+              NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1))
+            else
+              git commit -m "chore(comeon): refresh odds data ($(date -u +%FT%TZ))" || true
+              PUSHED=0
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "iter $iter: push OK (försök $attempt)"; PUSHED=1; break; fi
+                sleep $((attempt * 5))
+              done
+              if [ "$PUSHED" = "1" ]; then NO_PROGRESS_STREAK=0; else NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1)); fi
+            fi
+            echo "::endgroup::"
+            if [ "$NO_PROGRESS_STREAK" -ge 3 ]; then
+              echo "::warning::$NO_PROGRESS_STREAK iterationer utan publicerad data — avslutar så köad restart tar över med färsk runner."
+              break
+            fi
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done

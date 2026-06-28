@@ -1,0 +1,86 @@
+name: Probe Betsson Markets (recon)
+
+# ISOLERAD RECON (workflow_dispatch only, egen concurrency-grupp → stör inte
+# betsson-fetch-loopen). Kör fetchern ENGÅNG i BETSSON_RECON_MODE: efter search
+# dumpas event/v2-struktur (olika subTabs) + kandidat transient/all-markets-
+# endpoints för ett riktigt fotbolls-event, sedan ren exit utan att skriva data.
+# Syfte: hitta alternativ väg till totals/AH som accordion/v1 inte exponerar.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: probe-betsson-markets
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Install WireGuard
+        run: |
+          set -e
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard resolvconf iproute2
+
+      - name: Start Mullvad WireGuard tunnel
+        env:
+          WG_CONF: ${{ secrets.MULLVAD_WG_CONF }}
+        run: |
+          set -e
+          set +x
+          if [ -z "$WG_CONF" ]; then
+            echo "::error::MULLVAD_WG_CONF secret saknas — kan inte starta VPN"
+            exit 1
+          fi
+          printf '%s' "$WG_CONF" | sudo tee /etc/wireguard/wg0.conf > /dev/null
+          sudo chmod 600 /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
+          echo "WireGuard tunnel up"
+
+      - name: Verify Swedish IP
+        run: |
+          set -e
+          IP_INFO=$(curl -sS -m 10 https://am.i.mullvad.net/json || true)
+          echo "$IP_INFO" | jq '{ip, country, city}' || echo "$IP_INFO"
+          COUNTRY=$(echo "$IP_INFO" | jq -r '.country // empty')
+          if [ "$COUNTRY" != "Sweden" ]; then
+            echo "::error::Förväntade country=Sweden, fick country=$COUNTRY"
+            exit 1
+          fi
+
+      - name: Recon Betsson markets (engång, inget data skrivs)
+        env:
+          BETSSON_RECON_MODE: "1"
+        run: |
+          # timeout: recon är bundet (≤40 events, ~2 rich-recons) men VPN-hicka
+          # får inte hänga hela jobbet.
+          timeout -k 30 720 node scripts/fetch-betsson-github-action.mjs || echo "recon exit!=0/timeout"
+
+      - name: Stop WireGuard tunnel
+        if: always()
+        run: |
+          set +x
+          sudo wg-quick down wg0 2>/dev/null || true
+          sudo rm -f /etc/wireguard/wg0.conf
+          echo "WireGuard tunnel down + config raderad"

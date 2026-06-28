@@ -1,0 +1,92 @@
+name: Source Watchdog
+
+# Självläkande färskhets-vakt. Körs var 5:e minut, kollar alla odds-källors
+# färskhet via scripts/audit-source-freshness.mjs, och:
+#   - auto-omstartar (workflow_dispatch) varje källa som blivit stale
+#   - för en hälsobok i data/source-health.json
+#   - öppnar/stänger ett GitHub-issue om en källa är stale länge
+#
+# Bakgrund: ComeOn + VBET låg stale i 3 dygn utan att någon märkte det,
+# eftersom auditen bara kördes manuellt. Den här workflow:n gör övervakningen
+# kontinuerlig och självläkande så ingen källa kan dö i tysthet.
+#
+# Committar source-health.json BARA vid materiell ändring (status-övergång,
+# omstart, eskalering) — inte var 5:e minut — så git-historiken inte spammas.
+# paths-ignore "data/**" i fetch-workflows gör att den commiten inte triggar
+# andra robotar.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: source-watchdog
+  # Avbryt aldrig en pågående watchdog — den är kort och idempotent.
+  cancel-in-progress: false
+
+permissions:
+  contents: write # committa source-health.json
+  actions: write # dispatch:a fetch-workflows
+  issues: write # öppna/stänga larm-issues
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run watchdog (audit + self-heal + alert + render keep-awake)
+        id: watch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Redundant Render keep-awake (utöver keepalive.yml). Osatt → default-URL.
+          # Sätt repo-variabeln RENDER_PING_URL till din .onrender.com-origin.
+          RENDER_PING_URL: ${{ vars.RENDER_PING_URL }}
+        run: node scripts/watchdog.mjs
+
+      - name: Commit health book (only on material change)
+        if: steps.watch.outputs.health_changed == 'true'
+        run: |
+          set -e
+          git add data/source-health.json
+          if git diff --staged --quiet; then
+            echo "Inget att committa"
+            exit 0
+          fi
+          git commit -m "chore(watchdog): uppdatera source-health ($(date -u +%FT%TZ))"
+          push_ok=0
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase --autostash origin/main || git rebase --abort || true
+            if git push origin HEAD:main; then
+              echo "Push OK på försök $attempt"
+              push_ok=1
+              break
+            fi
+            echo "Push avvisad på försök $attempt — väntar $((attempt * 3))s..."
+            sleep $((attempt * 3))
+          done
+          if [ $push_ok -eq 0 ]; then
+            echo "::warning::Kunde inte pusha source-health.json efter 5 försök"
+          fi

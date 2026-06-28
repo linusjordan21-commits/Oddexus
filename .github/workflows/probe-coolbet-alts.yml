@@ -1,0 +1,52 @@
+name: Probe Coolbet alternativa vägar (engångs)
+
+# Letar alternativa Coolbet-odds-vägar som INTE sitter bakom www.coolbet.com:s
+# Imperva-edge (app/sportsbook-backend, regionala domäner). Plain fetch, ingen
+# browser/VPN. ENDAST workflow_dispatch. Resultat → data/_coolbet-alts.json.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: probe-coolbet-alts
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run probe
+        run: node scripts/probe-coolbet-alts.mjs
+
+      - name: Commit probe output
+        if: always()
+        run: |
+          set -e
+          git add data/_coolbet-alts.json || true
+          if git diff --staged --quiet; then echo "No change"; exit 0; fi
+          git commit -m "chore(probe): coolbet alternativa vägar ($(date -u +%FT%TZ))"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git rebase --autostash "origin/$GITHUB_REF_NAME" || { git rebase --abort || true; }
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then echo "Push OK ($attempt)"; break; fi
+            sleep $((attempt * 5))
+          done

@@ -1,0 +1,85 @@
+name: Kambi (Unibet) Odds Fetch
+
+# Fetchar 1X2-odds för Unibet via Kambi's public CDN-feed
+# https://eu-offering-api.kambicdn.com/offering/v2018/ubse/listView/football/{region}.json
+#
+# Varje listView-response innehåller events MED inbäddade betOffers så vi
+# slipper per-event-call. Vi fan-out:ar 8 region-paths (varav ~2-3 träffar
+# för offering "ubse") parallellt och dedupe:ar på event.id.
+#
+# Pipeline-tid: ~0.5-1s per körning (lätt-vikt, public CDN, ingen Cloudflare).
+# cron */10 räcker — Kambi-odds rör sig långsammare än Pinnacle.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+concurrency:
+  group: kambi-fetch
+  cancel-in-progress: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Setup git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch Kambi (Unibet) odds (8 regions fan-out, dedupe)
+        env:
+          # Databas-spegling (docs/database-plan.md) — no-op om secrets saknas.
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          set -e
+          node scripts/fetch-kambi-github-action.mjs
+
+      - name: Commit & push data
+        run: |
+          set -e
+          git add data/kambi-rows.json
+          if git diff --staged --quiet; then
+            echo "No change in data/kambi-rows.json — skipping commit"
+            exit 0
+          fi
+          git commit -m "chore(kambi): refresh odds data ($(date -u +%FT%TZ))"
+          # Race-säker push (se altenar-fetch.yml för rationale).
+          push_ok=0
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            git fetch origin main
+            git rebase --autostash origin/main || { git rebase --abort || true; }
+            if git push origin HEAD:main; then
+              echo "Push OK på försök $attempt"
+              push_ok=1
+              break
+            fi
+            backoff=$((attempt * 10 + RANDOM % 15 + 5))
+            echo "Push avvisad på försök $attempt — väntar ${backoff}s och retry..."
+            sleep "$backoff"
+          done
+          if [ $push_ok -eq 0 ]; then
+            echo "::warning::Push misslyckades efter 10 försök — nästa workflow-körning fortsätter försöket"
+            exit 1
+          fi

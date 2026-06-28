@@ -1,0 +1,85 @@
+name: Persist Signals (tracking-worker)
+
+# Persisterar visade valuebets → Supabase (valuebet_signals + decision_snapshots)
+# var ~5 min. Webben beräknar (cachat); denna worker bara LÄSER /api/valuebets och
+# skriver ner det. Självdrivande loop + bulletproof self-redispatch (samma mönster
+# som pinnacle/keepalive) → throttlad cron kan inte döda den.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # reseed; loopen självdriver var ~5 min mellan reseeds
+  workflow_dispatch: {}
+
+concurrency:
+  group: persist-signals
+  cancel-in-progress: false
+
+jobs:
+  persist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 317
+    permissions:
+      contents: read
+      actions: write # self-redispatch
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Persist-loop (~5 min cadens i ~5h)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          VALUEBETS_URL: ${{ vars.VALUEBETS_URL }}
+          VALUEBETS_INTERNAL_TOKEN: ${{ secrets.VALUEBETS_INTERNAL_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LOOP_MAX_SECONDS=18000
+          CADENCE_SECONDS=300       # var 5:e minut
+          START_EPOCH=$(date +%s)
+          iter=0
+          SUCCESSOR_QUEUED=0
+          while :; do
+            iter=$((iter + 1))
+            now=$(date +%s)
+            [ $((now - START_EPOCH)) -ge "$LOOP_MAX_SECONDS" ] && { echo "Loop-budget nådd — avslutar rent."; break; }
+            iter_start=$(date +%s)
+
+            # BULLETPROOF SELF-REDISPATCH (iter≥2): köa efterföljare tidigt.
+            if [ "$SUCCESSOR_QUEUED" != "1" ] && [ "$iter" -ge 2 ] && [ -n "$GITHUB_TOKEN" ]; then
+              if curl -fsS -m 20 -X POST \
+                -H "Authorization: Bearer $GITHUB_TOKEN" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/persist-signals.yml/dispatches" \
+                -d '{"ref":"main"}' >/dev/null 2>&1; then
+                echo "Self-redispatch: efterföljare köad."
+                SUCCESSOR_QUEUED=1
+              fi
+            fi
+
+            # SJÄLV-UPPDATERA KOD varje varv → loopen fastnar aldrig på gammal kod
+            # (checkout använder annars dispatch-tidens sha i ~5h).
+            git fetch origin main -q 2>/dev/null && git reset --hard origin/main -q 2>/dev/null || true
+
+            timeout -k 30 240 npx vite-node scripts/persist-signals.mjs || echo "::warning::iter $iter persist exit!=0 — loopen fortsätter"
+
+            iter_elapsed=$(( $(date +%s) - iter_start ))
+            sleep_for=$(( CADENCE_SECONDS - iter_elapsed ))
+            if [ "$sleep_for" -gt 0 ]; then
+              remaining=$(( LOOP_MAX_SECONDS - ($(date +%s) - START_EPOCH) ))
+              [ "$sleep_for" -gt "$remaining" ] && sleep_for=$remaining
+              [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
+            fi
+          done

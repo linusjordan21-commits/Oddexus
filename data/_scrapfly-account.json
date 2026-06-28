@@ -1,0 +1,86 @@
+{
+  "ranAt": "2026-06-26T21:02:46.232Z",
+  "httpStatus": 200,
+  "plan": "PRO",
+  "period": {
+    "start": "2026-06-26 19:26:00",
+    "end": "2026-07-26 19:26:00"
+  },
+  "scrapeCredits": {
+    "used": 540,
+    "limit": 1194385,
+    "remaining": 1193845,
+    "extra": 0
+  },
+  "concurrency": {
+    "limit": 20,
+    "used": null
+  },
+  "raw": {
+    "account": {
+      "account_id": "ab336afc-9f1d-467a-b74c-b328e12bd950",
+      "currency": "USD",
+      "suspended": false,
+      "suspension_reason": "",
+      "timezone": "Europe/Stockholm"
+    },
+    "project": {
+      "allow_extra_usage": true,
+      "allowed_networks": [],
+      "budget_limit": null,
+      "budget_spent": null,
+      "concurrency_limit": null,
+      "name": "default",
+      "quota_reached": false,
+      "scrape_request_count": 540,
+      "scrape_request_limit": null,
+      "tags": []
+    },
+    "subscription": {
+      "billing": {
+        "current_extra_scrape_request_price": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "extra_scrape_request_price_per_10k": {
+          "amount": 3.5,
+          "currency": "USD"
+        },
+        "ongoing_payment": {
+          "amount": 0,
+          "currency": "USD"
+        },
+        "plan_price": {
+          "amount": 100,
+          "currency": "USD"
+        }
+      },
+      "extra_scrape_allowed": true,
+      "max_concurrency": 20,
+      "period": {
+        "end": "2026-07-26 19:26:00",
+        "start": "2026-06-26 19:26:00"
+      },
+      "plan_name": "PRO",
+      "usage": {
+        "schedule": {
+          "current": 0,
+          "limit": 100
+        },
+        "scrape": {
+          "concurrent_limit": 20,
+          "concurrent_remaining": 20,
+          "concurrent_usage": 0,
+          "current": 540,
+          "extra": 0,
+          "limit": 1194385,
+          "remaining": 1193845
+        },
+        "spider": {
+          "current": 0,
+          "limit": 10
+        }
+      }
+    }
+  }
+}

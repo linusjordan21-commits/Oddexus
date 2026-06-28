@@ -1,0 +1,159 @@
+{
+  "ranAt": "2026-06-23T21:29:07.109Z",
+  "navigations": [
+    {
+      "target": "https://www.coolbet.com/sv/odds/recommendations",
+      "attempt": 1,
+      "status": 200,
+      "challenge": true,
+      "title": "",
+      "error": null,
+      "polls": [
+        {
+          "p": 0,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 1,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 2,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 3,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 4,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 5,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 6,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 7,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 8,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 9,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 10,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 11,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 12,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 13,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 14,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        },
+        {
+          "p": 15,
+          "ch": true,
+          "status": null,
+          "url": "https://www.coolbet.com/sv/odds/recommendations"
+        }
+      ]
+    },
+    {
+      "target": "https://www.coolbet.com/sv/odds/recommendations",
+      "phase": "odds",
+      "ok": true,
+      "status": 403,
+      "challenge": true,
+      "title": "",
+      "error": null
+    }
+  ],
+  "captured": [
+    {
+      "url": "https://www.coolbet.com/sv/odds/recommendations",
+      "method": "GET",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "bodyLength": 6058,
+      "bodyHead": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <noscript>\r\n        <title>Pardon Our Interruption</title>\r\n    </noscript>\r\n\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <meta name=\"robots\" content=\"noindex, nofollow\">\r\n    <meta http-equiv=\"cache-control\" content=\"no-cache, no-store, must-revalidate\">\r\n    <meta http-equiv=\"pragma\" content=\"no-cache\">\r\n    <meta http-equiv=\"expires\" content=\"0\">\r\n\r\n    <style>\r\n        .container {\r\n            max-width: 800px;\r\n            margin: auto;\r\n            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;\r\n            color: #7a838c;\r\n        }\r\n        h1 { color: #2a2d30; font-weight: 500; }\r\n        li { margin: 0 0 10px; }\r\n        a { color: #428bca; }\r\n        a:hover, a:focus { color: #2a6496; }\r\n    </style>\r\n\r\n    <script>\r\n      window.reeseSkipExpirationCheck = true;\r\n      const isSpa = new URLSearchParams(window.location.search).get('X-SPA') === '1' || window.isImpervaSpaSupport;\r\n      const isInterstitial = new URLSearchParams(window.location.search).get('X-SPA-INTERSTITIAL') === '1';\r\n      let referrer = '';\r\n\r\n      //skip auto-load for isInterstitial - prevents initializeProtection to be called automatically\r\n      if (isSpa && isInterstitial) {\r\n        window.reeseSkipAutoLoad = true;\r\n      }\r\n      try {\r\n        referrer = new URL(document.referrer).origin;\r\n      } catch (e) {\r\n        referrer = '';\r\n      }\r\n    </script>\r\n\r\n    <!-- This head template should be placed before the following script tag that loads the challenge script -->\r\n    <script>\r\n      if (isSpa && isInterstitial) {\r\n        let protectionReady = false;\r\n        let tokenFromMessage = null;\r\n\r\n        window.addEventListener(\"message\", function (event) {\r\n          if (referrer === event.origin &&\r\n            event.data.messageName === '__imperva_interstitial_started__' &&\r\n            event.data.messageData &&\r\n            event.data.messageData.token) {\r\n            tokenFromMessage = event.data.messageData.token;\r\n            tryProtectionInit();\r\n          }\r\n        });\r\n\r\n        window.onProtectionLoaded = function () {\r\n          protectionReady = true;\r\n          tryProtectionInit();\r\n        };\r\n\r\n        function tryProtectionInit() {\r\n          if (protectionReady && tokenFromMessage) {\r\n            window.initializeProtection(tokenFromMessage);\r\n            tokenFromMessage = null;\r\n          }\r\n        }\r\n      }\r\n\r\n      window.onProtectionInitialized = function(protection) {\r\n        if (isSpa && isInterstitial) {\r\n          protection.exportToken(10000).then(function(tokenExport) {\r\n            const message = {\r\n              messageName: '__imperva_interstitial_complete__',\r\n              messageData: {\r\n                token: tokenExport\r\n              }\r\n            };\r\n            window.parent.postMessage(message, referrer);\r\n          });\r\n        } else {\r\n          if (protection && protection.cookieIsSet && !protection.cookieIsSet()) {\r\n            showBlockPage();\r\n            return;\r\n          }\r\n          if (!isSpa) {\r\n            window.location.reload(true);\r\n          }\r\n        }\r\n      };\r\n    </script>\r\n\r\n    <script>\r\n      if (!isSpa || isInterstitial) {\r\n        const scriptElement = document.createElement('script');\r\n        scriptElement.type = \"text/javascript\";\r\n        scriptElement.src = \"/eafe-at-it-of-the-Plowd-Macbeth-Macbeth-a-greeki/CQT5XBaBi8BSAxKNz4L41ENH7al6XvDfs4-qccOV8i8?s=J8UWU5Y9\";\r\n        scriptElement.async = true;\r\n        scriptElement.defer = true;\r\n        document.head.appendChild(scriptElement);\r\n      }\r\n    </script>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n\r\n<div class=\"container\">\r\n    <script>document.getElementsByClassName(\"container\")[0].style.display = \"none\";</script>\r\n\r\n    <h1>Pardon Our Interruption</h1>\r\n<p>As you were browsing something about your browser made us think you were a bot. There are a few reasons this might happen:</p>\r\n<ul>\r\n<noscript><li>You've disabled JavaScript in your web browser.</li></noscript>\r\n<li>You're a power user moving through this website with super-human speed.</li>\r\n<li>You've disabled cookies in your web browser.</li>\r\n<li>A third-party browser plugin, such as Ghostery or NoScript, is preventing JavaScript from running. Additional information is available in this <a title='Third party browser plugins that block javascript' href='http://ds.tl/help-third-party-plugins' target='_blank'>support article</a>.</li>\r\n</ul>\r\n<p>To regain access, please make sure that cookies and JavaScript are enabled before reloading the page.</p>\r\n\r\n\r\n</div>\r\n\r\n<div id=\"interstitial-inprogress\" style=\"display: none\">\r\n    <style>\n    #interstitial-inprogress {\n      width:100%;\n      height:100%;\n      position:absolute;\n      top: 0;\n      left: 0;\n      bottom: 0;\n      right: 0;\n      z-index:9999;\n      background:white url(\"/_Incapsula_Resource?NWFURVBO=images/error_pages/bg.png\") no-repeat center;\n    }\n    #interstitial-inprogress-box{\n      font-size:32px;\n      box-shadow:0 4px 14px 0 #0000001A,0 8px 24px 0 #00000021;\n      font-family:Inter,Helvetica,Arial,sans-serif;\n      position:absolute;\n      left:50%;\n      top:50%;\n      transform:translate(-50%,-50%);\n      background-color:white;\n      text-align:center;\n      width:auto;\n      min-width:min(95%,640px);\n      max-width:max-content;\n      padding:16px;\n    }\n    #interstitial-inprogress-box h3{\n      font-size:48px;\n    }\n  </style>\n  <div id=\"interstitial-inprogress-box\">\n    <h3>Please stand by</h3>\n    <p>We&apos;re getting everything ready for you. The page is loading, and you&apos;ll be on your way in just a few moments.</p>\n    <p>Thanks for your patience!</p>\n  </div>\n\r\n</div>\r\n\r\n<script>\r\n  function showBlockPage() {\r\n    document.title = \"Pardon Our Interruption\";\r\n    document.getElementsByClassName(\"container\")[0].style.display = \"block\";\r\n  }\r\n\r\n  if (isSpa && !isInterstitial) {\r\n    showBlockPage();\r\n  } else {\r\n    window.interstitialTimeout = setTimeout("
+    },
+    {
+      "url": "https://www.coolbet.com/eafe-at-it-of-the-Plowd-Macbeth-Macbeth-a-greeki/CQT5XBaBi8BSAxKNz4L41ENH7al6XvDfs4-qccOV8i8?d=www.coolbet.com",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyLength": 714,
+      "bodyHead": "{\"token\":\"3:SveyY+K7obvlBeCDFCH0Jw==:4VedP52yNcXfpzGp3/3dggq9/9AHPp1SveLL31lmX/UYrw9UjlkErWP3ovC90YuVEdbkGUzzOskMHc/meOGcEGviTIuJ4MhQgmXTsC6Y4YIx6CqGKddK4gJKB2rtdWDly4OaQK9YA1ZQs4XVm6Y+wzMU+eZ72VITRDvoEsDBH2U=:x+5kuhHYWcOCNVwZ02ATPfMWWf72lpz/ugeJ0h0dJTk=:wpq6UQMboiTQJzAJR9/Ae5wweM+SvGzel4MJ/DQLizsfXq/nlQwqSqYwhEX2jZokIV4oX/AMlnDdV1KyW9UESObr1Q5C41t4Hz6cnj8eTXnJG8DlXnJ1VQ5LJVIZ/Pcb+DdQbwDTw/QQ1h+2YP61OKvru8P4xz1KuqyCA1YrLznXsn09CXvRlndzkChXGvYlSF5aO562AsKo3+Np0nzZ+bvlda3YcfCeWMVtntT43mYtrvUkefCUqE+8LLDOQ7qc0kUJF3eCANgoxG6m1znwNA5oYoY14IdKzd9Iyip+TSROYscYwCYrC+BgNDfnbZbTnVK50Y7R8NoGMfECNNNEpvtgcLvbyVfu8pm+S/8/o8b/3yxbO5ELD6CMzFhAKQH6joo5ue+mhxv1XOjMYGV9eZc=:\",\"renewInSec\":682,\"cookieDomain\":\".coolbet.com\"}\n"
+    },
+    {
+      "url": "https://www.coolbet.com/de-Macd-thats-And-his-against-that-me-Euen-boot-?d=www.coolbet.com",
+      "method": "POST",
+      "status": 200,
+      "contentType": "application/json",
+      "bodyLength": 714,
+      "bodyHead": "{\"token\":\"3:SveyY+K7obvlBeCDFCH0Jw==:4VedP52yNcXfpzGp3/3dggq9/9AHPp1SveLL31lmX/UYrw9UjlkErWP3ovC90YuVEdbkGUzzOskMHc/meOGcEGviTIuJ4MhQgmXTsC6Y4YIx6CqGKddK4gJKB2rtdWDly4OaQK9YA1ZQs4XVm6Y+wzMU+eZ72VITRDvoEsDBH2U=:x+5kuhHYWcOCNVwZ02ATPfMWWf72lpz/ugeJ0h0dJTk=:wpq6UQMboiTQJzAJR9/Ae5wweM+SvGzel4MJ/DQLizsfXq/nlQwqSqYwhEX2jZokIV4oX/AMlnDdV1KyW9UESObr1Q5C41t4Hz6cnj8eTXnJG8DlXnJ1VQ5LJVIZ/Pcb+DdQbwDTw/QQ1h+2YP61OKvru8P4xz1KuqyCA1YrLznXsn09CXvRlndzkChXGvYlSF5aO562AsKo3+Np0nzZ+bvlda3YcfCeWMVtntT43mYtrvUkefCUqE+8LLDOQ7qc0kUJF3eCANgoxG6m1znwNA5oYoY14IdKzd9Iyip+TSROYscYwCYrC+BgNDfnbZbTnVK50Y7R8NoGMfECNNNEpvtgcLvbyVfu8pm+S/8/o8b/3yxbO5ELD6CMzFhAKQH6joo5ue+mhxv1XOjMYGV9eZc=:\",\"renewInSec\":857,\"cookieDomain\":\".coolbet.com\"}\n"
+    }
+  ],
+  "apiHosts": {
+    "www.coolbet.com": 3
+  },
+  "nextDataKeys": [
+    "statusbar",
+    "oncontentvisibilityautostatechange",
+    "oncontextrestored",
+    "onpopstate",
+    "cookieStore"
+  ],
+  "error": null,
+  "browserChannel": "chrome",
+  "clearedImperva": false
+}

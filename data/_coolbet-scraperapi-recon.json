@@ -1,0 +1,294 @@
+{
+  "ranAt": "2026-06-23T22:29:35.319Z",
+  "provider": "scrapedo",
+  "hasKey": true,
+  "navigations": [
+    {
+      "target": "https://www.coolbet.com/sv/odds/recommendations",
+      "status": 200,
+      "htmlLen": 31300,
+      "imperva": false,
+      "xhrCount": 0,
+      "error": null
+    },
+    {
+      "target": "https://www.coolbet.com/sv/odds/fotboll",
+      "status": 200,
+      "htmlLen": 31299,
+      "imperva": false,
+      "xhrCount": 0,
+      "error": null
+    }
+  ],
+  "capturedXhr": [],
+  "apiHints": [],
+  "apiHosts": {},
+  "htmlSample": "<!DOCTYPE html><html lang=\"en-GB\" translate=\"no\"><head><script src=\"/de-Macd-thats-And-his-against-that-me-Euen-boot-\" async=\"\"></script>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no, viewport-fit=cover\">\n        <link rel=\"preconnect\" href=\"https://gamestack-v2.imgix.net/\" crossorigin=\"\">\n        \n        <script>\n            window.addEventListener('error', function(e) {\n                if (e.target.tagName === 'SCRIPT' && e.target.src.includes(window.location.hostname) && e.target.src.includes('static/js')) {\n                    console.error('JS script failed to load:', e.target.src);\n                    setTimeout(() => window.location+='?indexbuster='+Date.now(), 1000);\n                }\n            }, true);\n\n            function loadSvg(theme) {\n                const ajax = new XMLHttpRequest();\n                ajax.open(\"GET\", `/assets/svg/${theme}/symbol/icons.svg?b=12348-18-June`, true);\n                ajax.send();\n                ajax.onload = function() {\n                    if(ajax.responseText.startsWith(\"<svg\")) {\n                        const div = document.createElement(\"div\");\n                        div.innerHTML = ajax.responseText;\n                        document.body.insertBefore(div, document.body.childNodes[0]);\n                    }\n                }\n            }\n\n            window.__ENVIRONMENT__ = {\n  \"QUALIFIED_NAME\": \"coolbet\",\n  \"CASINO_GAMES_PICS\": \"/c/imgix/\",\n  \"CLIENT_NAME\": \"coolbet\",\n  \"THEME\": \"coolbet\",\n  \"CMS_IMAGES\": \"https://coolbet-cms.imgix.net/\",\n  \"IMAGES_HOST\": \"/c/assets/\",\n  \"IMAGE_BASE_URL\": \"/c/assets/coolbet/\",\n  \"DOMAIN_NAMES_BY_LICENCE\": {\n    \"CANADA_ONTARIO\": \"coolbet.ca\",\n    \"ESTONIA\": \"coolbet.com\",\n    \"MALTA\": \"coolbet.com\",\n    \"SWEDEN\": \"coolbet.com\"\n  },\n  \"FACEBOOK_APP_ID\": \"1550945171886241\",\n  \"FACEBOOK_CLIENT_ID\": \"1550945171886241\",\n  \"GOOGLE_MAPS_KEY\": \"AIzaSyDEL86SkX6ghIpA-oHlSIGK078VL9VRUl4\",\n  \"AVAILABLE_MARKETS\": [\n    \"CA\",\n    \"CL\",\n    \"EE\",\n    \"FI\",\n    \"IS\",\n    \"NO\",\n    \"SE\"\n  ],\n  \"AVAILABLE_LICENSES\": [\n    \"MT\",\n    \"EE\",\n    \"SE\"\n  ],\n  \"FEATURE_ENABLED_PAYOUT_ROUND_UP\": \"false\",\n  \"GEOCOMPLY\": {\n    \"DESKTOP_INSTALLER_BASE_URL\": \"https://ums.geocomply.com/installer/url\",\n    \"DESKTOP_INSTALLER_KEY\": \"g0R3DgpwIM\",\n    \"ENVIRONMENT\": \"production\",\n    \"MOBILE_LIBRARY_URL\": \"https://cdn.geocomply.com/oobee/v2.18/oobee.js\",\n    \"MOBILE_OOBEE_SERVICE_URL\": \"https://ca1-es.geocomply.com/oobee.php\",\n    \"MOBILE_OOBEE_URL\": \"https://ca1-oobee.geocomply.com\"\n  },\n  \"POKER_PLAYTECH\": {\n    \"ANDROID_APP\": {\n      \"ESTONIA\": \"https://games-coolbetee.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetEe_new-MIT_COOLBET_EE_QTM-rls-26_1_01018_com.pokerapp.coolbet.ee.apk\",\n      \"MALTA\": \"https://games-coolbet.onegameslink.com/poker/mobile/26.1.01018/android/Coolbet_new-MIT_COOLBET_QTM-rls-26_1_01018_com.pokerapp.coolbet.apk\",\n      \"SWEDEN\": \"https://games-coolbetse.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetSe_new-MIT_COOLBET_SE_QTM-rls-26_1_01018_com.pokerapp.coolbet.se.apk\"\n    },\n    \"INTEGRATION_LIB\": {\n      \"ESTONIA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.ee/integration.min.js\",\n      \"MALTA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet/integration.min.js\",\n      \"SWEDEN\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.se/integration.min.js\"\n    },\n    \"WINDOWS_DOWNLOAD_CLIENT\": {\n      \"ESTONIA\": \"https://cachedownload-coolbetee.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"SWEDEN\": \"https://cachedownload-coolbetse.onegameslink.com/installer/poker/SetupPoker.exe\"\n    },\n    \"MAC_DOWNLOAD_CLIENT\": {\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/download/poker/mac/26.1.1.22/Coolbet-MIT_COOLBET_QTDL-rls-26_1_1_22-com.pokermac.coolbet_CoolbetPoker.pkg\"\n    }\n  },\n  \"BETRADAR_CLIENT_ID\": \"d18a4448c4fafb14d4dbd1546d6abd68\",\n  \"ENVIRONMENT\": \"prod\",\n  \"GOOGLE_CLIENT_ID\": \"712727173785-81fd84hjqhfp99cnt07qai9d50he81c7.apps.googleusercontent.com\",\n  \"LOQATE_API_KEY\": \"YU13-RP63-HC89-JP14\",\n  \"ROOT_URL\": \"https://www.coolbet.com\",\n  \"SENTRY_DSN\": \"https://cfecfd2aa69b4e5b824447f8b12f44ee@o1024335.ingest.sentry.io/4504327933132800\",\n  \"TERMINAL_INITIALIZATION_URL\": \"https://coolbet.staycool.ee/retail/terminals/new\",\n  \"BETBUILDER_WIDGET_KEY\": \"1cd58195-b649-4b3b-aad0-0bbce353d424\",\n  \"BETBUILDER_WIDGET_URL\": \"https://public-prod-gen2.sportcastlive.com\",\n  \"IS_CORE_BETBUILDER_INTEGRATION\": \"false\",\n  \"APPLE_CLIENT_ID\": \"com.coolbet.www\",\n  \"FACEBOOK_ADS_KEY\": {\n    \"coolbet.ca\": \"q4liddbfs509y15te3xil0ugzft11o\"\n  },\n  \"ADACT_API_KEY\": \"wGV8Vuc9mSiqKVsB55uKJomL7VyaSsLM\",\n  \"GOOGLE_GTM_ID\": \"GTM-MBM6MZ\",\n  \"GOOGLE_GTM\": {\n    \"www.coolbetchile.com\": \"GTM-NQGFWKBK\",\n    \"www.coolbet.com\": \"GTM-MBM6MZ\"\n  },\n  \"FACEBOOK_PIXEL\": {\n    \"www.coolbetchile.com\":",
+  "error": null,
+  "envObject": "{\n  \"QUALIFIED_NAME\": \"coolbet\",\n  \"CASINO_GAMES_PICS\": \"/c/imgix/\",\n  \"CLIENT_NAME\": \"coolbet\",\n  \"THEME\": \"coolbet\",\n  \"CMS_IMAGES\": \"https://coolbet-cms.imgix.net/\",\n  \"IMAGES_HOST\": \"/c/assets/\",\n  \"IMAGE_BASE_URL\": \"/c/assets/coolbet/\",\n  \"DOMAIN_NAMES_BY_LICENCE\": {\n    \"CANADA_ONTARIO\": \"coolbet.ca\",\n    \"ESTONIA\": \"coolbet.com\",\n    \"MALTA\": \"coolbet.com\",\n    \"SWEDEN\": \"coolbet.com\"\n  },\n  \"FACEBOOK_APP_ID\": \"1550945171886241\",\n  \"FACEBOOK_CLIENT_ID\": \"1550945171886241\",\n  \"GOOGLE_MAPS_KEY\": \"AIzaSyDEL86SkX6ghIpA-oHlSIGK078VL9VRUl4\",\n  \"AVAILABLE_MARKETS\": [\n    \"CA\",\n    \"CL\",\n    \"EE\",\n    \"FI\",\n    \"IS\",\n    \"NO\",\n    \"SE\"\n  ],\n  \"AVAILABLE_LICENSES\": [\n    \"MT\",\n    \"EE\",\n    \"SE\"\n  ],\n  \"FEATURE_ENABLED_PAYOUT_ROUND_UP\": \"false\",\n  \"GEOCOMPLY\": {\n    \"DESKTOP_INSTALLER_BASE_URL\": \"https://ums.geocomply.com/installer/url\",\n    \"DESKTOP_INSTALLER_KEY\": \"g0R3DgpwIM\",\n    \"ENVIRONMENT\": \"production\",\n    \"MOBILE_LIBRARY_URL\": \"https://cdn.geocomply.com/oobee/v2.18/oobee.js\",\n    \"MOBILE_OOBEE_SERVICE_URL\": \"https://ca1-es.geocomply.com/oobee.php\",\n    \"MOBILE_OOBEE_URL\": \"https://ca1-oobee.geocomply.com\"\n  },\n  \"POKER_PLAYTECH\": {\n    \"ANDROID_APP\": {\n      \"ESTONIA\": \"https://games-coolbetee.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetEe_new-MIT_COOLBET_EE_QTM-rls-26_1_01018_com.pokerapp.coolbet.ee.apk\",\n      \"MALTA\": \"https://games-coolbet.onegameslink.com/poker/mobile/26.1.01018/android/Coolbet_new-MIT_COOLBET_QTM-rls-26_1_01018_com.pokerapp.coolbet.apk\",\n      \"SWEDEN\": \"https://games-coolbetse.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetSe_new-MIT_COOLBET_SE_QTM-rls-26_1_01018_com.pokerapp.coolbet.se.apk\"\n    },\n    \"INTEGRATION_LIB\": {\n      \"ESTONIA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.ee/integration.min.js\",\n      \"MALTA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet/integration.min.js\",\n      \"SWEDEN\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.se/integration.min.js\"\n    },\n    \"WINDOWS_DOWNLOAD_CLIENT\": {\n      \"ESTONIA\": \"https://cachedownload-coolbetee.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"SWEDEN\": \"https://cachedownload-coolbetse.onegameslink.com/installer/poker/SetupPoker.exe\"\n    },\n    \"MAC_DOWNLOAD_CLIENT\": {\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/download/poker/mac/26.1.1.22/Coolbet-MIT_COOLBET_QTDL-rls-26_1_1_22-com.pokermac.coolbet_CoolbetPoker.pkg\"\n    }\n  },\n  \"BETRADAR_CLIENT_ID\": \"d18a4448c4fafb14d4dbd1546d6abd68\",\n  \"ENVIRONMENT\": \"prod\",\n  \"GOOGLE_CLIENT_ID\": \"712727173785-81fd84hjqhfp99cnt07qai9d50he81c7.apps.googleusercontent.com\",\n  \"LOQATE_API_KEY\": \"YU13-RP63-HC89-JP14\",\n  \"ROOT_URL\": \"https://www.coolbet.com\",\n  \"SENTRY_DSN\": \"https://cfecfd2aa69b4e5b824447f8b12f44ee@o1024335.ingest.sentry.io/4504327933132800\",\n  \"TERMINAL_INITIALIZATION_URL\": \"https://coolbet.staycool.ee/retail/terminals/new\",\n  \"BETBUILDER_WIDGET_KEY\": \"1cd58195-b649-4b3b-aad0-0bbce353d424\",\n  \"BETBUILDER_WIDGET_URL\": \"https://public-prod-gen2.sportcastlive.com\",\n  \"IS_CORE_BETBUILDER_INTEGRATION\": \"false\",\n  \"APPLE_CLIENT_ID\": \"com.coolbet.www\",\n  \"FACEBOOK_ADS_KEY\": {\n    \"coolbet.ca\": \"q4liddbfs509y15te3xil0ugzft11o\"\n  },\n  \"ADACT_API_KEY\": \"wGV8Vuc9mSiqKVsB55uKJomL7VyaSsLM\",\n  \"GOOGLE_GTM_ID\": \"GTM-MBM6MZ\",\n  \"GOOGLE_GTM\": {\n    \"www.coolbetchile.com\": \"GTM-NQGFWKBK\",\n    \"www.coolbet.com\": \"GTM-MBM6MZ\"\n  },\n  \"FACEBOOK_PIXEL\": {\n    \"www.coolbetchile.com\": \"1565384931508706\",\n    \"www.coolbet.com\": \"307150426568710\"\n  },\n  \"EDGE_TIER\": {\n    \"URL\": \"https://cdn.edgetier.com/coolbet.js\",\n    \"LOGGED_IN_CHAT_ID\": \"1\",\n    \"LOGGED_OUT_CHAT_ID\": \"2\"\n  },\n  \"PRO_IP_API_KEY\": \"k0uh9tTbciCrNkF\"\n}",
+  "envApiKeys": [
+    "IMAGES_HOST=/c/assets/",
+    "IMAGE_BASE_URL=/c/assets/coolbet/",
+    "FACEBOOK_APP_ID=1550945171886241",
+    "FACEBOOK_CLIENT_ID=1550945171886241",
+    "LOQATE_API_KEY=YU13-RP63-HC89-JP14",
+    "ROOT_URL=https://www.coolbet.com",
+    "TERMINAL_INITIALIZATION_URL=https://coolbet.staycool.ee/retail/terminals/new",
+    "BETBUILDER_WIDGET_URL=https://public-prod-gen2.sportcastlive.com",
+    "ADACT_API_KEY=wGV8Vuc9mSiqKVsB55uKJomL7VyaSsLM",
+    "PRO_IP_API_KEY=k0uh9tTbciCrNkF"
+  ],
+  "assets": [
+    "https://www.coolbet.com/de-Macd-thats-And-his-against-that-me-Euen-boot-",
+    "https://www.coolbet.com/static/js/lib-polyfill.5037d3b9.js",
+    "https://www.coolbet.com/static/js/lib-react.710afb8e.js",
+    "https://www.coolbet.com/static/js/lib-router.2b7df893.js",
+    "https://www.coolbet.com/static/js/1429.08af840c.js",
+    "https://www.coolbet.com/static/js/index.463c7ce7.js",
+    "https://www.coolbet.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=4&amp;cb=1811724452",
+    "https://www.coolbet.com/manifest.json"
+  ],
+  "bundlesGrepped": [
+    {
+      "url": "https://www.coolbet.com/static/js/1429.08af840c.js",
+      "ok": true,
+      "len": 744186,
+      "hitCount": 9,
+      "hits": [
+        "/fo/categories/{categoryId}/games",
+        "/fo/categories/by-code/{code}/games",
+        "https://connect.facebook.net/en_US/fbevents.js",
+        "https://www.facebook.com/dialog/send",
+        "https://www.facebook.com/sharer/sharer.php",
+        "https://bookmark.hatenaapis.com/count/entry",
+        "https://api.pinterest.com/v1/urls/count.json",
+        "https://api.tumblr.com/v2/share/stats",
+        "https://work.facebook.com/sharer.php"
+      ]
+    },
+    {
+      "url": "https://www.coolbet.com/static/js/index.463c7ce7.js",
+      "ok": true,
+      "len": 811939,
+      "hitCount": 10,
+      "hits": [
+        "sportsbook/team-logos/",
+        "v1/flags/FRONT_OFFICE",
+        "v2/onsite-message/list",
+        "v2/onsite-message/bulk-delete",
+        "v2/onsite-message/status",
+        "https://www.facebook.com/CoolbetIsland/",
+        "https://www.facebook.com/CoolbetEesti",
+        "https://www.facebook.com/CoolbetSverige/",
+        "https://www.facebook.com/CoolbetChile/",
+        "https://www.facebook.com/coolbetperu"
+      ]
+    }
+  ],
+  "contextSnippets": {
+    "1429.08af840c.js": [
+      {
+        "tok": "/api/",
+        "at": 508695,
+        "ctx": ",r){let n,i,o;return t||`${n=e.protocol?`${e.protocol}:`:\"\",i=e.port?`:${e.port}`:\"\",`${n}//${e.host}${i}${e.path?`/${e.path}`:\"\"}/api/`}${e.projectId}/envelope/?${o={sentry_version:\"7\"},e.publicKey&&(o.sentry_key=e.publicKey),r&&(o.sentry_client=`${r.name}/${r.ver"
+      },
+      {
+        "tok": "/api/",
+        "at": 609792,
+        "ctx": "78,0 -3.62997,1.64873 -3.62997,3.62305c0,1.97432 1.65219,3.62652 3.62997,3.62652zm0,0\"}),R(function(e,t){s(`https://www.reddit.com/api/info.json?limit=1&url=${e}`,{param:\"jsonp\"},(e,r)=>{t(!e&&r&&r.data&&r.data.children.length>0&&r.data.children[0].data.score?r.dat"
+      },
+      {
+        "tok": "matches",
+        "at": 86109,
+        "ctx": "on\"==typeof e?e(r):e;return(void 0!==l?function(e,t,r,i,o){let a=n.useCallback(()=>t,[t]),s=n.useMemo(()=>{if(o&&r)return()=>r(e).matches;if(null!==i){let{matches:t}=i(e);return()=>t}return a},[a,e,i,o,r]),[u,c]=n.useMemo(()=>{if(null===r)return[a,()=>()=>{}];let t=r"
+      },
+      {
+        "tok": "matches",
+        "at": 86134,
+        "ctx": "rn(void 0!==l?function(e,t,r,i,o){let a=n.useCallback(()=>t,[t]),s=n.useMemo(()=>{if(o&&r)return()=>r(e).matches;if(null!==i){let{matches:t}=i(e);return()=>t}return a},[a,e,i,o,r]),[u,c]=n.useMemo(()=>{if(null===r)return[a,()=>()=>{}];let t=r(e);return[()=>t.matches,"
+      },
+      {
+        "tok": "matches",
+        "at": 86263,
+        "ctx": "{matches:t}=i(e);return()=>t}return a},[a,e,i,o,r]),[u,c]=n.useMemo(()=>{if(null===r)return[a,()=>()=>{}];let t=r(e);return[()=>t.matches,e=>(t.addListener(e),()=>{t.removeListener(e)})]},[a,r,e]);return l(c,u,s)}:function(e,t,r,i,a){let[s,l]=n.useState(()=>a&&r?r(e)"
+      },
+      {
+        "tok": "matches",
+        "at": 86401,
+        "ctx": "e=>(t.addListener(e),()=>{t.removeListener(e)})]},[a,r,e]);return l(c,u,s)}:function(e,t,r,i,a){let[s,l]=n.useState(()=>a&&r?r(e).matches:i?i(e).matches:t);return(0,o.A)(()=>{let t=!0;if(!r)return;let n=r(e),i=()=>{t&&l(n.matches)};return i(),n.addListener(i),()=>{t="
+      },
+      {
+        "tok": "/fo/",
+        "at": 547454,
+        "ctx": "esRaw(e,t){return(0,n._)(function*(){let r={};return null!=e.cbAuth&&(r.cbAuth=String(e.cbAuth)),new p((yield this.request({path:\"/fo/games/favorite\",method:\"GET\",headers:r,query:{}},t)),e=>e.map(m))}).call(this)}getFavoriteGames(e){return(0,n._)(function*(e={},t)"
+      },
+      {
+        "tok": "/fo/",
+        "at": 548488,
+        "ctx": "r.operatingLanguages=e.operatingLanguages),null!=e.minBetRanges&&(r.minBetRanges=e.minBetRanges),new p((yield this.request({path:\"/fo/games/filtered\",method:\"GET\",headers:{},query:r},t)),e=>(function(e,t){var r;if(null==e)return e;return{games:null==e.games?void 0"
+      },
+      {
+        "tok": "/fo/",
+        "at": 549920,
+        "ctx": "().');let r={};null!=e.cursor&&(r.cursor=e.cursor),null!=e.country&&(r.country=e.country),null!=e.limit&&(r.limit=e.limit);let n=\"/fo/categories/{categoryId}/games\";return n=n.replace(\"{categoryId}\",encodeURIComponent(String(e.categoryId))),new p((yield this.reque"
+      },
+      {
+        "tok": "/fo/",
+        "at": 551302,
+        "ctx": "mes=e.themes.join(\",\")),null!=e.last30Days&&(r.last30Days=e.last30Days),null!=e.currentYear&&(r.currentYear=e.currentYear);let n=\"/fo/categories/by-code/{code}/games\";return n=n.replace(\"{code}\",encodeURIComponent(String(e.code))),new p((yield this.request({path:n"
+      },
+      {
+        "tok": "v2/",
+        "at": 612837,
+        "ctx": "tion:e.caption,posttype:e.posttype||\"link\"}),{windowWidth:660,windowHeight:460}),R(function(e,t){return s(\"https://api.tumblr.com/v2/share/stats\"+_({url:e}),(e,r)=>{t(!e&&r&&r.response?r.response.note_count:void 0)})}),y({color:\"#00aced\",networkName:\"twitter\",pat"
+      },
+      {
+        "tok": "category",
+        "at": 507855,
+        "ctx": "earOutcomes(){let e=this._outcomes;return this._outcomes={},Object.entries(e).map(([e,t])=>{let[r,n]=e.split(\":\");return{reason:r,category:n,quantity:t}})}_flushOutcomes(){var e;f.T&&d.vF.log(\"Flushing outcomes...\");let t=this._clearOutcomes();if(0===t.length){f.T&&d."
+      },
+      {
+        "tok": "category",
+        "at": 531046,
+        "ctx": "\"Breadcrumbs\",setup(e){var r,n,i,o,a,s,u;let p,h;t.console&&(r=e,eE(p=\"console\",function(e){var t;if((0,S.KU)()!==r)return;let n={category:\"console\",data:{arguments:e.args,logger:\"console\"},level:\"warn\"===(t=e.level)?\"warning\":[\"fatal\",\"error\",\"warning\",\"log\",\"info\",\""
+      },
+      {
+        "tok": "category",
+        "at": 532007,
+        "ctx": "rget?n.target:n;t=(0,eg.Hd)(i,{keyAttrs:o,maxStringLength:a}),r=(0,eg.xE)(i)}catch(e){t=\"<unknown>\"}if(0===t.length)return;let l={category:`ui.${e.name}`,message:t};r&&(l.data={\"ui.component_name\":r}),ek(l,{event:e.event,name:e.name,global:e.global})})),ew(\"dom\",eD)),"
+      },
+      {
+        "tok": "category",
+        "at": 532376,
+        "ctx": ".xhr[eU];if(!t||!r||!n)return;let{method:i,url:a,status_code:s,body:l}=n,u={xhr:e.xhr,input:l,startTimestamp:t,endTimestamp:r},c={category:\"xhr\",data:{method:i,url:a,status_code:s},type:\"http\",level:eM(s)};o.emit(\"beforeOutgoingRequestBreadcrumb\",c,u),ek(c,u)})),ew(\"x"
+      }
+    ],
+    "index.463c7ce7.js": [
+      {
+        "tok": "sportsbook",
+        "at": 3833,
+        "ctx": "):d(!0)},[e]);var f=function(e){return Number.isFinite(e)};return(0,M.En)(\"private\",{params:{service:\"casino-statistics\",channel:\"sportsbook-active-bets-sum-update\"},guardFunction:function(){return n},watchParams:[n]}),(0,M.hi)(\"sportsbook-active-bets-sum-update-\".conca"
+      },
+      {
+        "tok": "sportsbook",
+        "at": 3932,
+        "ctx": "e:\"casino-statistics\",channel:\"sportsbook-active-bets-sum-update\"},guardFunction:function(){return n},watchParams:[n]}),(0,M.hi)(\"sportsbook-active-bets-sum-update-\".concat(e),function(e){f(e)&&t(e)},[e]),{casinoSportsbookBalance:i,isError:u}};function B(){var e=(0,o._)"
+      },
+      {
+        "tok": "sportsbook",
+        "at": 56762,
+        "ctx": "r(var o,a=Object.keys(V)[Symbol.iterator]();!(e=(o=a.next()).done);e=!0){var s=o.value;if(s in n)if(\"open-page-rules\"===s){var c={sportsbook:(0,U.or)(\"support-rules-sport-game\",\"support.rules\"),casino:(0,U.or)(\"support-rules-sport-game\",\"support.rules\"),poker:(0,U.or)(\""
+      },
+      {
+        "tok": "sportsbook",
+        "at": 61293,
+        "ctx": "?null:(0,o.jsxs)(\"div\",{className:ev()((0,O._)({},\"EKT3tq\",t!==n)),children:[(0,o.jsx)(\"header\",{children:(0,es.T)(e[0].group,\"ui.sportsbook\")}),(0,o.jsxs)(\"table\",{children:[(0,o.jsx)(\"thead\",{children:(0,o.jsxs)(\"tr\",{children:[(0,o.jsx)(\"th\",{children:(0,es.T)(\"Team\""
+      },
+      {
+        "tok": "/api/",
+        "at": 59779,
+        "ctx": "0===t?\"league=1&season=2026\":t,r=(0,p._)((0,E.useState)(),2),i=r[0],a=r[1];return(0,E.useEffect)(function(){fetch(\"/s/football-api/api/fixtures?\".concat(n)).then(function(e){return e.json()}).then(function(e){a(e.response)}).catch(function(e){console.error(\"Fetch f"
+      },
+      {
+        "tok": "/api/",
+        "at": 60867,
+        "ctx": ".useState)(0),2),t=e[0],n=e[1],r=(0,p._)((0,E.useState)(),2),i=r[0],a=r[1];return(0,E.useEffect)(function(){fetch(\"/s/football-api/api/standings?league=1&season=2026\").then(function(e){return e.json()}).then(function(e){a(e.response[0].league.standings)}).catch(fun"
+      },
+      {
+        "tok": "matches",
+        "at": 160412,
+        "ctx": "c.A,{type:a.ww.LIVE}),h.ticket_type===a.ww.COMBO&&!g&&(0,i.jsxs)(\"span\",{className:\"HRgWlo\",children:[\"[ \",null==h?void 0:h.total_matches,\" ]\"]}),(null==h||null==(f=h.extra)?void 0:f.freeBet)&&(0,i.jsx)(\"div\",{className:l,children:(0,s.T)(\"free bet\",\"ui.sportsbook\")}"
+      },
+      {
+        "tok": "matches",
+        "at": 180240,
+        "ctx": "[]:eD)));var tm=(0,_.useRef)();(0,_.useEffect)(function(){tm&&tm.current&&ew&&!h()(Q)&&\"\"!==Q&&setImmediate(function(){tm.current.matches(\":-webkit-autofill\")&&v(\"\")})},[tm,Q]);var tp=\"data-test\",tv={success:q,failure:Y,warning:Z},th=ed||eK,tg=(0,o._)((t={onChange:ty"
+      },
+      {
+        "tok": "matches",
+        "at": 412582,
+        "ctx": "._)(function(){var r,f,m,p,v;return(0,a._)(this,function(a){switch(a.label){case 0:return r=(0,u.Mc)(),f=(0,l.o)(),m=d(\"bonus-bet/matches/\".concat(e)),p=(0,o._)((0,i._)({},t),{language:n,locale:n,country:r,layout:f}),[4,(0,s.lx)(m,p)];case 1:return v=a.sent(),(0,c.Cx"
+      },
+      {
+        "tok": "matches",
+        "at": 412744,
+        "ctx": "0,i._)({},t),{language:n,locale:n,country:r,layout:f}),[4,(0,s.lx)(m,p)];case 1:return v=a.sent(),(0,c.Cx)(v),[2,null==v?void 0:v.matches]}})})()}function y(e){var t=d(\"code/counter-id/\".concat(e));return(0,s.lx)(t)}function A(e){return(0,r._)(function(){var t;return"
+      },
+      {
+        "tok": "/fo/",
+        "at": 439151,
+        "ctx": "0,a._)(this,function(n){return t=m(\"banner-message/user\"),[2,(0,s.lx)(t,{market:e})]})})()}function v(e,t,n){var r=m(\"translations/fo/dynamic\");return(0,s.zA)(r,{language:t,fallbackLanguage:n,keys:e})}function h(e,t){return(0,r._)(function(){var n;return(0,a._)(th"
+      },
+      {
+        "tok": "/fo/",
+        "at": 439324,
+        "ctx": "fallbackLanguage:n,keys:e})}function h(e,t){return(0,r._)(function(){var n;return(0,a._)(this,function(r){return n=m(\"translations/fo/\".concat(e)),[2,(0,s.lx)(n,{fallbackLanguage:t,version:\"12348-18-June\"})]})})()}function g(e,t,n){var r=m(\"translations/fo/increme"
+      },
+      {
+        "tok": "/fo/",
+        "at": 439447,
+        "ctx": "lations/fo/\".concat(e)),[2,(0,s.lx)(n,{fallbackLanguage:t,version:\"12348-18-June\"})]})})()}function g(e,t,n){var r=m(\"translations/fo/incremental/\".concat(e,\"/\").concat(t));return(0,s.lx)(r,{fallbackLanguage:n,version:\"12348-18-June\"})}function b(e){var t=m(\"trans"
+      },
+      {
+        "tok": "v2/",
+        "at": 356201,
+        "ctx": "Countries:[B.Country.ESTONIA],allowedLicences:[B.Licence.ESTONIA],width:150},{name:\"Paysera\",externalLink:\"https://www.paysera.ee/v2/en-EE/index\",allowedCountries:[B.Country.ESTONIA],allowedLicences:[B.Licence.ESTONIA],width:150},{name:\"Sightline\",externalLink:\"h"
+      },
+      {
+        "tok": "v2/",
+        "at": 440584,
+        "ctx": "rn(0,a._)(this,function(a){switch(a.label){case 0:e=o.length>0&&void 0!==o[0]?o[0]:(0,l.$v)(),t=(0,f.bZ)(d.z.language),n=m(\"posts/v2/post_counts_by_category/Coolbet/\".concat(e,\"/\").concat(t)),a.label=1;case 1:return a.trys.push([1,3,,4]),[4,(0,s.lx)(n)];case 2:re"
+      },
+      {
+        "tok": "v2/",
+        "at": 443298,
+        "ctx": "31),s=function(e){return(0,o.pN)(\"crm\",e)};function c(){return(0,r._)(function(){var e;return(0,i._)(this,function(t){return e=s(\"v2/onsite-message/list\"),[2,(0,o.lx)(e)]})})()}function u(e){return(0,r._)(function(){var t;return(0,i._)(this,function(n){try{return"
+      },
+      {
+        "tok": "v2/",
+        "at": 443669,
+        "ctx": "e)}return[2]})})()}function l(e){return(0,r._)(function(){var t,n;return(0,i._)(this,function(r){try{return t={messageIds:e},n=s(\"v2/onsite-message/bulk-delete\"),[2,(0,o.zA)(n,t)]}catch(e){a.v.error(\"CrmMicroservice\",\"deleteCrmMessageByIds\",e)}return[2]})})()}fun"
+      },
+      {
+        "tok": "category",
+        "at": 13832,
+        "ctx": ":\"providers\",isPublic:!0,isAvailable:!0},{label:(0,v.d7)(-6),route:\"\".concat((0,g.aM)(\"casino.slots\"),\"/\").concat((0,b.T)(\"casino.category.\".concat(-6,\".slug\"))),icon:\"star\",isPublic:!0,isAvailable:B&&!!k.length},{label:(0,b.T)(\"casino.nav.casino-race\"),route:(0,g.aM)"
+      },
+      {
+        "tok": "category",
+        "at": 14931,
+        "ctx": "n:\"providers\",isPublic:!0,isAvailable:!0},{label:(0,v.d7)(-6),route:\"\".concat((0,g.aM)(\"casino.live\"),\"/\").concat((0,b.T)(\"casino.category.\".concat(-6,\".slug\"))),icon:\"star\",isPublic:!0,isAvailable:B&&!!k.length}].concat((0,a._)(M.filter(function(e){return\"live\"===e.t"
+      },
+      {
+        "tok": "category",
+        "at": 40613,
+        "ctx": "euGN8Y\",users:\"SJqyTF\",hidden:\"E_pCuN\"};function ex(e){var t,n,s,u,E,T,C,x,R,M,j,D=e.game,z=e.hiddenGameLabels,U=e.isFeatured,G=e.categoryCode,F=e.onGameClick,H=e.handleSearchFocus,K=e.isSearchResult,V=e.isContentFeatured,W=e.isRTPCalculator,q=e.isCategoryView,Y=e.isF"
+      },
+      {
+        "tok": "category",
+        "at": 44047,
+        "ctx": "t=e0.filter(function(e){return e.type===r}).findIndex(function(e){return e.code===G})+1}(X||0===X)&&!V&&X++;var i={launchSource:e,categoryLobbyPosition:t,gameRowPosition:X};w.A.latestGameLaunchPosition.set(i)}(),eK&&!eD)return void e.preventDefault();if(em&&eL&&w.A.is"
+      }
+    ]
+  },
+  "webpackRuntime": null,
+  "savedBundles": [
+    "_coolbet-bundle-1429.08af840c.js",
+    "_coolbet-bundle-index.463c7ce7.js"
+  ],
+  "chunkCount": 0,
+  "directAssetFetch": false,
+  "sportsbookChunks": [],
+  "oddsRender": {
+    "status": 200,
+    "htmlLen": 31300
+  },
+  "oddsRenderScripts": [
+    "https://www.coolbet.com/static/js/lib-polyfill.5037d3b9.js",
+    "https://www.coolbet.com/static/js/lib-react.710afb8e.js",
+    "https://www.coolbet.com/static/js/lib-router.2b7df893.js",
+    "https://www.coolbet.com/static/js/1429.08af840c.js",
+    "https://www.coolbet.com/static/js/index.463c7ce7.js"
+  ],
+  "oddsRenderHtmlSample": "<!DOCTYPE html><html lang=\"en-GB\" translate=\"no\"><head><script src=\"/de-Macd-thats-And-his-against-that-me-Euen-boot-\" async=\"\"></script>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no, viewport-fit=cover\">\n        <link rel=\"preconnect\" href=\"https://gamestack-v2.imgix.net/\" crossorigin=\"\">\n        \n        <script>\n            window.addEventListener('error', function(e) {\n                if (e.target.tagName === 'SCRIPT' && e.target.src.includes(window.location.hostname) && e.target.src.includes('static/js')) {\n                    console.error('JS script failed to load:', e.target.src);\n                    setTimeout(() => window.location+='?indexbuster='+Date.now(), 1000);\n                }\n            }, true);\n\n            function loadSvg(theme) {\n                const ajax = new XMLHttpRequest();\n                ajax.open(\"GET\", `/assets/svg/${theme}/symbol/icons.svg?b=12348-18-June`, true);\n                ajax.send();\n                ajax.onload = function() {\n                    if(ajax.responseText.startsWith(\"<svg\")) {\n                        const div = document.createElement(\"div\");\n                        div.innerHTML = ajax.responseText;\n                        document.body.insertBefore(div, document.body.childNodes[0]);\n                    }\n                }\n            }\n\n            window.__ENVIRONMENT__ = {\n  \"QUALIFIED_NAME\": \"coolbet\",\n  \"CASINO_GAMES_PICS\": \"/c/imgix/\",\n  \"CLIENT_NAME\": \"coolbet\",\n  \"THEME\": \"coolbet\",\n  \"CMS_IMAGES\": \"https://coolbet-cms.imgix.net/\",\n  \"IMAGES_HOST\": \"/c/assets/\",\n  \"IMAGE_BASE_URL\": \"/c/assets/coolbet/\",\n  \"DOMAIN_NAMES_BY_LICENCE\": {\n    \"CANADA_ONTARIO\": \"coolbet.ca\",\n    \"ESTONIA\": \"coolbet.com\",\n    \"MALTA\": \"coolbet.com\",\n    \"SWEDEN\": \"coolbet.com\"\n  },\n  \"FACEBOOK_APP_ID\": \"1550945171886241\",\n  \"FACEBOOK_CLIENT_ID\": \"1550945171886241\",\n  \"GOOGLE_MAPS_KEY\": \"AIzaSyDEL86SkX6ghIpA-oHlSIGK078VL9VRUl4\",\n  \"AVAILABLE_MARKETS\": [\n    \"CA\",\n    \"CL\",\n    \"EE\",\n    \"FI\",\n    \"IS\",\n    \"NO\",\n    \"SE\"\n  ],\n  \"AVAILABLE_LICENSES\": [\n    \"MT\",\n    \"EE\",\n    \"SE\"\n  ],\n  \"FEATURE_ENABLED_PAYOUT_ROUND_UP\": \"false\",\n  \"GEOCOMPLY\": {\n    \"DESKTOP_INSTALLER_BASE_URL\": \"https://ums.geocomply.com/installer/url\",\n    \"DESKTOP_INSTALLER_KEY\": \"g0R3DgpwIM\",\n    \"ENVIRONMENT\": \"production\",\n    \"MOBILE_LIBRARY_URL\": \"https://cdn.geocomply.com/oobee/v2.18/oobee.js\",\n    \"MOBILE_OOBEE_SERVICE_URL\": \"https://ca1-es.geocomply.com/oobee.php\",\n    \"MOBILE_OOBEE_URL\": \"https://ca1-oobee.geocomply.com\"\n  },\n  \"POKER_PLAYTECH\": {\n    \"ANDROID_APP\": {\n      \"ESTONIA\": \"https://games-coolbetee.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetEe_new-MIT_COOLBET_EE_QTM-rls-26_1_01018_com.pokerapp.coolbet.ee.apk\",\n      \"MALTA\": \"https://games-coolbet.onegameslink.com/poker/mobile/26.1.01018/android/Coolbet_new-MIT_COOLBET_QTM-rls-26_1_01018_com.pokerapp.coolbet.apk\",\n      \"SWEDEN\": \"https://games-coolbetse.onegameslink.com/poker/mobile/26.1.01018/android/CoolbetSe_new-MIT_COOLBET_SE_QTM-rls-26_1_01018_com.pokerapp.coolbet.se.apk\"\n    },\n    \"INTEGRATION_LIB\": {\n      \"ESTONIA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.ee/integration.min.js\",\n      \"MALTA\": \"https://login-mt.onegameslink.com/jswrapper/coolbet/integration.min.js\",\n      \"SWEDEN\": \"https://login-mt.onegameslink.com/jswrapper/coolbet.se/integration.min.js\"\n    },\n    \"WINDOWS_DOWNLOAD_CLIENT\": {\n      \"ESTONIA\": \"https://cachedownload-coolbetee.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/installer/poker/SetupPoker.exe\",\n      \"SWEDEN\": \"https://cachedownload-coolbetse.onegameslink.com/installer/poker/SetupPoker.exe\"\n    },\n    \"MAC_DOWNLOAD_CLIENT\": {\n      \"MALTA\": \"https://cachedownload-coolbet.onegameslink.com/download/poker/mac/26.1.1.22/Coolbet-MIT_COOLBET_QTDL-rls-26_1_1_22-com.pokermac.coolbet_CoolbetPoker.pkg\"\n    }\n  },\n  \"BETRADAR_CLIENT_ID\": \"d18a4448c4fafb14d4dbd1546d6abd68\",\n  \"ENVIRONMENT\": \"prod\",\n  \"GOOGLE_CLIENT_ID\": \"712727173785-81fd84hjqhfp99cnt07qai9d50he81c7.apps.googleusercontent.com\",\n  \"LOQATE_API_KEY\": \"YU13-RP63-HC89-JP14\",\n  \"ROOT_URL\": \"https://www.coolbet.com\",\n  \"SENTRY_DSN\": \"https://cfecfd2aa69b4e5b824447f8b12f44ee@o1024335.ingest.sentry.io/4504327933132800\",\n  \"TERMINAL_INITIALIZATION_URL\": \"https://coolbet.staycool.ee/retail/terminals/new\",\n  \"BETBUILDER_WIDGET_KEY\": \"1cd58195-b649-4b3b-aad0-0bbce353d424\",\n  \"BETBUILDER_WIDGET_URL\": \"https://public-prod-gen2.sportcastlive.com\",\n  \"IS_CORE_BETBUILDER_INTEGRATION\": \"false\",\n  \"APPLE_CLIENT_ID\": \"com.coolbet.www\",\n  \"FACEBOOK_ADS_KEY\": {\n    \"coolbet.ca\": \"q4liddbfs509y15te3xil0ugzft11o\"\n  },\n  \"ADACT_API_KEY\": \"wGV8Vuc9mSiqKVsB55uKJomL7VyaSsLM\",\n  \"GOOGLE_GTM_ID\": \"GTM-MBM6MZ\",\n  \"GOOGLE_GTM\": {\n    \"www.coolbetchile.com\": \"GTM-NQGFWKBK\",\n    \"www.coolbet.com\": \"GTM-MBM6MZ\"\n  },\n  \"FACEBOOK_PIXEL\": {\n    \"www.coolbetchile.com\": \"1565384931508706\",\n    \"www.coolbet.com\": \"307150426568710\"\n  },\n  \"EDGE_TIER\": {\n    \"URL\": \"https://cdn.edgetier.com/coolbet.js\",\n    \"LOGGED_IN_CHAT_ID\": \"1\",\n    \"LOGGED_OUT_CHAT_ID\": \"2\"\n  },\n  \"PRO_IP_API_KEY\": \"k0uh9tTbciCrNkF\"\n};\n        </script>\n\n        \n            <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">\n<link rel=\"preload\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<title>Coolbet</title>\n<meta name=\"theme-color\" content=\"#2c2c36\">\n<link rel=\"manifest\" href=\"/manifest.json\">\n<link rel=\"icon\" href=\"/assets/images/favicon/coolbet.png\">\n<link rel=\"apple-touch-icon\" href=\"/assets/icon/coolbet-apple-touch-icon.png\">\n\n<script type=\"application/ld+json\">\n    {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"WebSite\",\n        \"name\": \"Coolbet\",\n        \"url\": \"https://www.coolbet.pe/\",\n        \"alternateName\": [\"Coolbet.pe\"]\n    }\n</script>\n<script type=\"application/ld+json\">\n    {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"WebSite\",\n        \"name\": \"Coolbet\",\n        \"url\": \"https://www.coolbet.com/\",\n        \"alternateName\": [\"Coolbet.com\"]\n    }\n</script>\n<script type=\"application/ld+json\">\n    {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"WebSite\",\n        \"name\": \"Coolbet\",\n        \"url\": \"https://www.coolbetchile.com/\",\n        \"alternateName\": [\"Coolbetchile.com\"]\n    }\n</script>\n\n<style>\n    body {\n        min-height: calc(100vh);\n        background: rgba(32, 32, 39, 1);\n        background: linear-gradient(\n                to bottom,\n                rgba(32, 32, 39, 1) 0%,\n                rgba(32, 32, 39, 1) 19%,\n                rgba(62, 62, 74, 1) 50%,\n                rgba(32, 32, 39, 1) 80%,\n                rgba(32, 32, 39, 1) 100%\n        );\n    }\n\n    @media (max-width: 767px) {\n        body {\n            -webkit-user-select: none;\n            -webkit-tap-highlight-color: transparent;\n            -webkit-touch-callout: none\n        }\n    }\n\n    img {\n        max-width: 100%\n    }\n\n    #preloader {\n        position: fixed;\n        top: 0;\n        right: 0;\n        bottom: 0;\n        left: 0;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        color: white;\n        font-family: sans-serif;\n        text-align: center;\n        font-size: 0.625rem;\n    }\n</style>\n        \n    <style>html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underlinedotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:7"
+}
