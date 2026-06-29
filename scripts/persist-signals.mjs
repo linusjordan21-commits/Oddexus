@@ -134,10 +134,20 @@ async function main() {
     triggerCounts.value_disappeared = (triggerCounts.value_disappeared ?? 0) + 1;
   }
 
+  // PostgREST bulk-insert kräver att ALLA objekt i en batch har IDENTISKA nycklar
+  // (annars PGRST102 "All object keys must match"). buildSnapshotRecord vs
+  // snapshotFromSignalRow + villkorliga fält ger olika nyckel-set → normalisera
+  // varje rad till unionen av alla nycklar (saknade = null) före insert.
+  const allKeys = [...new Set(snapshots.flatMap((s) => Object.keys(s)))];
+  const normSnapshots = snapshots.map((s) => {
+    const o = {};
+    for (const k of allKeys) o[k] = s[k] === undefined ? null : s[k];
+    return o;
+  });
   // Snapshots i batchar om 500.
   let snapOk = 0;
-  for (let i = 0; i < snapshots.length; i += 500) {
-    const batch = snapshots.slice(i, i + 500);
+  for (let i = 0; i < normSnapshots.length; i += 500) {
+    const batch = normSnapshots.slice(i, i + 500);
     const r = await dbInsert("decision_snapshots", batch);
     if (r.ok) snapOk += batch.length;
     else console.warn(`[persist-signals] snapshot-insert fel (${r.status}): ${r.error ?? ""}`);
