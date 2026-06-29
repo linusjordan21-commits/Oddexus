@@ -1,14 +1,16 @@
-name: Shadow CLV Loop
+name: Shadow CLV (periodic one-shot)
 
-# Självdrivande shadow-CLV-loop. GitHubs schedule är opålitlig på publika repos
-# (kan throttlas i timmar), så vi förlitar oss INTE på den: varje körning loopar
-# internt (capture -> settle -> shadow var ~5:e min i ~45 min) OCH köar en
-# efterföljare (self-redispatch) → en kontinuerlig kedja oberoende av cron.
-# schedule + workflow_dispatch finns kvar som RE-SEED ifall kedjan dör.
+# ORCHESTRERAD PERIODIC (2026-06-29): tidigare en kontinuerlig 45-min self-loop som
+# ÅT EN GitHub-slot konstant. På det nya kontots ~12-slot-tak gav det noll headroom
+# → fleeten blev skör. NU: ETT pass (capture → settle → shadow), sedan exit. Keepalive
+# (flottans orchestrator) dispatchar detta var ~10:e min via workflow_dispatch — så
+# sloten är fri ~20-65% av tiden (beror på körtid: settle-clv skannar ~217k decisions
+# → passet är ~3-8 min). Closing-capture missas inte: 15-min-fönstret täcks av
+# 10-min-cadensen med ≥2 min marginal. schedule (7,27,47) kvar som BACKUP om keepalive dör.
 #
 # PÅVERKAR INGA live-beslut: läser committade *-rows.json, skriver bara CLV-
-# state via actions/cache (ingen repo-churn). Inga secrets utöver GITHUB_TOKEN
-# (self-redispatch). Inget auto-bet.
+# state via actions/cache (ingen repo-churn). Inga secrets utöver SUPABASE_*
+# (tracking-CLV) + GITHUB_TOKEN. Inget auto-bet. Max runtime 10 min (timeout).
 
 on:
   schedule:
@@ -23,10 +25,9 @@ concurrency:
 jobs:
   shadow:
     runs-on: ubuntu-latest
-    timeout-minutes: 60 # > loop-budget (45 min) så jobbet hinner spara cache
+    timeout-minutes: 10 # MAX runtime — ett periodic pass (capture+settle), inte en loop
     permissions:
-      contents: read
-      actions: write # self-redispatch (kontinuerlig kedja oberoende av schedule)
+      contents: read # ingen self-redispatch längre (keepalive dispatchar periodic)
 
     steps:
       - name: Checkout
@@ -53,54 +54,30 @@ jobs:
           restore-keys: |
             shadow-clv-state-
 
-      # Köa EN efterföljare TIDIGT så kedjan överlever även om denna run dör.
-      # concurrency (1 running + 1 pending) gör att den väntar och tar över när
-      # detta pass slutar. workflow_dispatch via GITHUB_TOKEN skapar nya runs
-      # (samma mönster som pinnacle-fetch.yml).
-      - name: Queue successor (self-redispatch)
+      - name: Capture closing + settle CLV (ETT periodic pass)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if curl -sf -X POST \
-            -H "Authorization: Bearer $GH_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/shadow-clv.yml/dispatches" \
-            -d '{"ref":"main"}'; then
-            echo "efterföljare köad — kontinuerlig kedja"
-          else
-            echo "self-redispatch misslyckades (schedule-backup kvarstår)"
-          fi
-
-      - name: Self-perpetuating loop (capture → settle → shadow)
-        env:
-          SHADOW_LOOP_MAX: "2700" # ~45 min pass
-          SHADOW_CADENCE: "300" # 5 min mellan cykler
           # Tracking-CLV: läser closing på disk + skriver CLV till spårade signaler.
           # Påverkar ingen prissättning. No-op om secrets saknas.
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          # Medvetet INTE 'set -e' — en enskild cykel får aldrig döda passet.
-          START=$(date +%s)
-          iter=0
-          while :; do
-            now=$(date +%s); elapsed=$((now - START))
-            if [ "$elapsed" -ge "$SHADOW_LOOP_MAX" ]; then
-              echo "loop-budget nådd (${elapsed}s, $iter cykler) — avslutar, efterföljare tar över"
-              break
-            fi
-            iter=$((iter + 1))
-            echo "::group::cykel $iter (elapsed ${elapsed}s)"
-            npx vite-node scripts/capture-pinnacle-closing.ts 15 2 || echo "[ci] capture-fel ignorerat"
-            npx vite-node scripts/settle-clv.ts || echo "[ci] settle-fel ignorerat"
-            npx vite-node scripts/settle-tracking-clv.mjs || echo "[ci] tracking-clv-fel ignorerat"
-            npx vite-node scripts/shadow-consensus.ts all || echo "[ci] shadow-fel ignorerat"
-            if [ -f data/clv-log.jsonl ]; then echo "clv-log rader: $(wc -l < data/clv-log.jsonl)"; fi
-            echo "::endgroup::"
-            now=$(date +%s); elapsed=$((now - START))
-            [ "$elapsed" -ge "$SHADOW_LOOP_MAX" ] && break
-            sleep "$SHADOW_CADENCE"
-          done
+          # Medvetet INTE 'set -e' — ett enskilt steg får aldrig fälla passet.
+          echo "=== shadow-clv ONE-SHOT START $(date -u +%FT%TZ) | commit ${GITHUB_SHA:0:8} ==="
+          # 1) CLOSING CAPTURE (tidskänslig: fångar Pinnacle-closing för matcher inom
+          #    15-min-fönstret före avspark). Körs FÖRST varje pass så fönstret aldrig
+          #    missas (keepalive dispatchar passet var ~10:e min → ≥5 min marginal).
+          echo "--- [1/4] closing capture (15-min-fönster) ---"
+          npx vite-node scripts/capture-pinnacle-closing.ts 15 2 || echo "[ci] capture-fel ignorerat"
+          [ -f data/pinnacle-closing.json ] && echo "closing-state: $(wc -c < data/pinnacle-closing.json) bytes"
+          # 2) SETTLEMENT (mindre tidskänslig, batchas naturligt per pass).
+          echo "--- [2/4] settle-clv (decisions) ---"
+          npx vite-node scripts/settle-clv.ts || echo "[ci] settle-fel ignorerat"
+          echo "--- [3/4] settle-tracking-clv (spårade signaler) ---"
+          npx vite-node scripts/settle-tracking-clv.mjs || echo "[ci] tracking-clv-fel ignorerat"
+          echo "--- [4/4] shadow-consensus ---"
+          npx vite-node scripts/shadow-consensus.ts all || echo "[ci] shadow-fel ignorerat"
+          [ -f data/clv-log.jsonl ] && echo "clv-log rader: $(wc -l < data/clv-log.jsonl)"
+          echo "=== shadow-clv ONE-SHOT SLUT $(date -u +%FT%TZ) ==="
 
       - name: Save CLV state
         if: always()

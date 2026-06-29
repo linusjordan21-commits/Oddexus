@@ -36,6 +36,14 @@ const PROACTIVE_FRACTION = Number(process.env.KEEPALIVE_PROACTIVE_FRACTION) || 0
 const COOLDOWN_MS = Number(process.env.KEEPALIVE_COOLDOWN_MS) || 120_000; // 2 min per källa
 const DRY_RUN = process.env.KEEPALIVE_DRY_RUN === "1";
 
+// Shadow CLV är ETT periodic JOBB (inte en odds-källa) → keepalive dispatchar det
+// var ~10:e min i st f att det äter en GitHub-slot konstant (det gjorde fleeten skör
+// på ~12-slot-taket). 10 min täcker closing-capturens 15-min-fönster med marginal.
+// hasActiveRun-guard → aldrig dubbel. Stäng av med SHADOW_CLV_ORCHESTRATE=0.
+const SHADOW_CLV_WORKFLOW = process.env.SHADOW_CLV_WORKFLOW || "shadow-clv.yml";
+const SHADOW_CLV_CADENCE_MS = Number(process.env.SHADOW_CLV_CADENCE_MS) || 10 * 60_000;
+const SHADOW_CLV_ENABLED = process.env.SHADOW_CLV_ORCHESTRATE !== "0";
+
 // Render-webbtjänsten somnar efter ~15 min utan inbound-trafik (kallstart 30-60s
 // = "sidan laddar inte"). Vi pingar dess publika health-endpoint varje varv
 // (~90s) så den aldrig hinner somna. Tom/osatt RENDER_PING_URL → default-URL.
@@ -145,6 +153,33 @@ async function dispatchWorkflow(workflowFile) {  if (DRY_RUN) {
   await gh("POST", `/repos/${REPO}/actions/workflows/${encodeURIComponent(workflowFile)}/dispatches`, {
     ref: "main",
   });
+}
+
+let lastShadowClvDispatch = 0;
+// Periodic orchestration av Shadow CLV: dispatchar ETT one-shot-pass var
+// SHADOW_CLV_CADENCE_MS. hasActiveRun-guard hindrar dubbletter (om ett tidigare
+// pass eller schedule-backupen fortfarande kör hoppar vi över men nollställer
+// takten). Passet avslutar på ~3-4 min → sloten är fri mellan passen = headroom.
+// Körs oberoende av käll-auditen så tung git/audit aldrig fördröjer closing-capture.
+async function maybeDispatchShadowClv() {
+  if (!SHADOW_CLV_ENABLED) return;
+  if (Date.now() - lastShadowClvDispatch < SHADOW_CLV_CADENCE_MS) return;
+  try {
+    if (await hasActiveRun(SHADOW_CLV_WORKFLOW)) {
+      // Kör redan (eller schedule-backupen startade ett) → dispatcha INTE (ingen dubblett).
+      // Nollställ INTE takten här: gjorde vi det skulle nästa dispatch skjutas ut en HEL
+      // cadence varje gång ett pass råkar vara aktivt vid gate → worst-case-glappet mellan
+      // captures kunde överstiga closing-fönstret. Lämna takten orörd → vi dispatchar så
+      // snart passet är klart (cadence-gate har redan löpt ut). Idempotent + hasActiveRun
+      // failar stängt (returnerar true vid API-fel → ingen dubbel).
+      return;
+    }
+    await dispatchWorkflow(SHADOW_CLV_WORKFLOW);
+    lastShadowClvDispatch = Date.now();
+    log(`🎯 shadow-clv periodic dispatch (var ${Math.round(SHADOW_CLV_CADENCE_MS / 60000)}min — closing capture + settle, one-shot)`);
+  } catch (e) {
+    log(`⚠ shadow-clv-dispatch-fel: ${e.message}`);
+  }
 }
 
 // Själv-omstart: GitHubs schedule kan dröja TIMMAR med att starta nästa
@@ -705,6 +740,7 @@ async function tick() {
       log(`tick-fel: ${e.message}`);
     }
     await pingRender();
+    await maybeDispatchShadowClv(); // periodic shadow-CLV (var ~10 min, one-shot, headroom)
     tickCount++;
     // BULLETPROOF: köa efterföljaren TIDIGT (efter 2 tick ≈ 3 min), inte bara nära
     // budgetslut. Keepalive är HELA flottans dispatcher → kraschar den mitt i loopen
