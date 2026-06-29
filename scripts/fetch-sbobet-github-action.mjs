@@ -149,6 +149,12 @@ function extractInPage(diagnose) {
   // 2) Bygg rå-rader per marknad med lagnamn/tid/AH-linje.
   const rows = [];
   const diag = [];
+  // COVERAGE-MÄTNING (2026-06-29): fånga de faktiska radernas text när tid INTE kunde
+  // parsas (men ej live) + esports-kandidater + AH-saknad-.OddsM, så fixen baseras på
+  // verklig DOM, inte gissning. Billigt, alltid på.
+  const nullTimeSamples = [];
+  const teamSamples = [];
+  let ahMissingOddsM = 0;
   for (const g of groups.values()) {
     const homeA = g.anchor["1"] || g.anchor["h"];
     const awayA = g.anchor["2"] || g.anchor["a"];
@@ -170,6 +176,13 @@ function extractInPage(diagnose) {
       if (aLine != null) handicapLine = -aLine;
     }
     const ahA = hAh || aAh;
+
+    // MÄTNING (coverage): vad ser de förlorade raderna ut som?
+    if (!isLive && !startTime && nullTimeSamples.length < 12) {
+      nullTimeSamples.push({ home: homeTeam ?? null, away: awayTeam ?? null, codes: Object.keys(g.price), rowText: rowText.slice(0, 220) });
+    }
+    if (teamSamples.length < 30 && (homeTeam || awayTeam)) teamSamples.push(`${homeTeam ?? "?"} - ${awayTeam ?? "?"}`);
+    if ((hAh || aAh) && handicapLine == null) ahMissingOddsM++;
 
     for (const [market, price] of Object.entries(g.price)) {
       rows.push({ oddsId: g.oddsId, market, price, homeTeam, awayTeam, startTime, handicapLine, isLive });
@@ -222,7 +235,8 @@ function extractInPage(diagnose) {
       cellText: (cell?.innerText || "").replace(/\s+/g, " ").trim().slice(0, 160),
     });
   }
-  return { rows: prematch, liveSkipped: rows.length - prematch.length, diag, anchorCount: anchors.length, marketHist, totalsSamples };
+  const nullTimeTotal = rows.length ? new Set(rows.filter((r) => !r.isLive && !r.startTime).map((r) => r.oddsId)).size : 0;
+  return { rows: prematch, liveSkipped: rows.length - prematch.length, diag, anchorCount: anchors.length, marketHist, totalsSamples, nullTimeSamples, teamSamples, ahMissingOddsM, nullTimeTotal };
 }
 
 async function scrapeUrl(context, url) {
@@ -237,6 +251,9 @@ async function scrapeUrl(context, url) {
       return { rows: [], liveSkipped: 0, diag: [], anchorCount: 0, marketHist: {}, totalsSamples: [] };
     });
     console.log(`[sbobet-action] ${url}: ${result.anchorCount} onPrice-länkar → ${result.rows.length} prematch-rå-rader (hoppade ${result.liveSkipped ?? 0} live)`);
+    console.log(`[sbobet-cov] ${url}: null-tid-grupper=${result.nullTimeTotal ?? 0} | AH utan .OddsM=${result.ahMissingOddsM ?? 0}`);
+    for (const s of (result.nullTimeSamples ?? []).slice(0, 8)) console.log(`[sbobet-cov] NULL-TID: ${JSON.stringify(s)}`);
+    console.log(`[sbobet-cov] lag-prov: ${JSON.stringify((result.teamSamples ?? []).slice(0, 20))}`);
     if (DIAGNOSE && result.diag?.length) {
       console.log(`[sbobet-action] DIAGNOSPROV (${url}):`);
       for (const d of result.diag) console.log(`   ${JSON.stringify(d)}`);
