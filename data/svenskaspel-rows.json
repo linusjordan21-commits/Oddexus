@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:30:34.382Z",
+  "updatedAt": "2026-06-29T05:33:03.430Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 186,
-  "skippedNoOdds": 0,
+  "uniqueEvents": 187,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 18914,
+  "durationMs": 19070,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028183536",
-      "title": "Salzburg (sane4ek8) - Roma (MeLToSik)",
-      "homeTeam": "Salzburg (sane4ek8)",
-      "awayTeam": "Roma (MeLToSik)",
-      "startTime": "2026-06-29T05:24:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.55,
-        "draw": 3.1,
-        "away": 6.1
-      }
-    },
-    {
-      "eventId": "1028183543",
-      "title": "Porto (Jekunam) - Fenerbahce (Revange)",
-      "homeTeam": "Porto (Jekunam)",
-      "awayTeam": "Fenerbahce (Revange)",
-      "startTime": "2026-06-29T05:24:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.02,
-        "draw": 14,
-        "away": 41
-      }
-    },
-    {
       "eventId": "1028185420",
       "title": "Torino (Voron) - Fiorentina (T3RZ)",
       "homeTeam": "Torino (Voron)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T05:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3.1,
-        "draw": 6.25,
-        "away": 1.54
+        "home": 7.5,
+        "draw": 8.5,
+        "away": 1.16
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T05:30:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.4,
-        "draw": 5.75,
-        "away": 1.83
+        "home": 3.35,
+        "draw": 6,
+        "away": 1.52
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T05:30:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.25,
-        "draw": 6,
-        "away": 1.53
+        "home": 3.1,
+        "draw": 5.2,
+        "away": 1.62
       }
     },
     {
@@ -1057,10 +1031,55 @@
       "startTime": "2026-06-29T05:30:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.38,
-        "draw": 5.1,
-        "away": 1.9
+        "home": 7.5,
+        "draw": 7.5,
+        "away": 1.19
       }
+    },
+    {
+      "eventId": "1028183544",
+      "title": "Roma (MeLToSik) - Porto (Jekunam)",
+      "homeTeam": "Roma (MeLToSik)",
+      "awayTeam": "Porto (Jekunam)",
+      "startTime": "2026-06-29T05:36:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.05,
+        "away": 2.12
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.8,
+          "under": 1.33
+        },
+        {
+          "line": 6.5,
+          "over": 5,
+          "under": 1.1
+        },
+        {
+          "line": 7.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 4.5,
+          "over": 1.93,
+          "under": 1.75
+        },
+        {
+          "line": 3.5,
+          "over": 1.33,
+          "under": 2.8
+        },
+        {
+          "line": 2.5,
+          "over": 1.11,
+          "under": 5
+        }
+      ]
     },
     {
       "eventId": "1028027335",
@@ -1551,155 +1570,155 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.32,
-        "draw": 5.5,
-        "away": 12.5
+        "home": 1.37,
+        "draw": 5,
+        "away": 11
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 10.5,
-          "under": 1.05
+          "over": 11.5,
+          "under": 1.04
         },
         {
           "line": 4.5,
-          "over": 5.2,
-          "under": 1.17
+          "over": 5.8,
+          "under": 1.14
         },
         {
           "line": 0.5,
-          "over": 1.03,
-          "under": 13
+          "over": 1.04,
+          "under": 12
         },
         {
           "line": 1.5,
-          "over": 1.21,
-          "under": 4.5
+          "over": 1.24,
+          "under": 4.2
         },
         {
           "line": 3.5,
-          "over": 2.75,
-          "under": 1.47
+          "over": 2.95,
+          "under": 1.41
         },
         {
           "line": 2.5,
-          "over": 1.7,
-          "under": 2.18
+          "over": 1.79,
+          "under": 2.06
         }
       ],
       "ah": [
         {
           "line": -1.5,
-          "home": 1.83,
-          "away": 1.98
+          "home": 1.95,
+          "away": 1.85
         },
         {
           "line": -3.5,
-          "home": 6.25,
-          "away": 1.12
+          "home": 7,
+          "away": 1.09
         },
         {
           "line": -2.25,
-          "home": 2.8,
-          "away": 1.43
-        },
-        {
-          "line": -1.75,
-          "home": 2.06,
-          "away": 1.76
-        },
-        {
-          "line": -2.75,
-          "home": 3.95,
-          "away": 1.25
-        },
-        {
-          "line": -3,
-          "home": 5.5,
-          "away": 1.15
-        },
-        {
-          "line": -0.75,
-          "home": 1.34,
-          "away": 3.2
-        },
-        {
-          "line": -1.25,
-          "home": 1.62,
-          "away": 2.25
-        },
-        {
-          "line": -2.5,
           "home": 3.15,
           "away": 1.36
         },
         {
+          "line": -1.75,
+          "home": 2.23,
+          "away": 1.65
+        },
+        {
+          "line": -2.75,
+          "home": 4.4,
+          "away": 1.21
+        },
+        {
+          "line": -3,
+          "home": 6.4,
+          "away": 1.12
+        },
+        {
+          "line": -0.75,
+          "home": 1.4,
+          "away": 2.9
+        },
+        {
+          "line": -1.25,
+          "home": 1.73,
+          "away": 2.08
+        },
+        {
+          "line": -2.5,
+          "home": 3.5,
+          "away": 1.3
+        },
+        {
           "line": -0.5,
-          "home": 1.29,
-          "away": 3.6
+          "home": 1.34,
+          "away": 3.25
         },
         {
           "line": -1,
-          "home": 1.42,
-          "away": 2.8
+          "home": 1.5,
+          "away": 2.55
         },
         {
           "line": -3.25,
-          "home": 5.8,
-          "away": 1.13
+          "home": 6.75,
+          "away": 1.11
         },
         {
           "line": -2,
-          "home": 2.48,
-          "away": 1.54
+          "home": 2.75,
+          "away": 1.44
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 13.5,
-            "over": 6,
-            "under": 1.1
+            "over": 6.5,
+            "under": 1.08
           },
           {
             "line": 7.5,
-            "over": 1.38,
-            "under": 2.85
+            "over": 1.41,
+            "under": 2.7
           },
           {
             "line": 9.5,
-            "over": 2.05,
-            "under": 1.71
+            "over": 2.12,
+            "under": 1.66
           },
           {
             "line": 10.5,
-            "over": 2.63,
-            "under": 1.44
+            "over": 2.75,
+            "under": 1.41
           },
           {
             "line": 8.5,
-            "over": 1.65,
-            "under": 2.12
+            "over": 1.68,
+            "under": 2.06
           },
           {
             "line": 6.5,
-            "over": 1.21,
-            "under": 4
+            "over": 1.23,
+            "under": 3.8
           },
           {
             "line": 11.5,
-            "over": 3.4,
-            "under": 1.28
+            "over": 3.6,
+            "under": 1.25
           },
           {
             "line": 5.5,
-            "over": 1.1,
-            "under": 6
+            "over": 1.11,
+            "under": 5.75
           },
           {
             "line": 12.5,
-            "over": 4.5,
-            "under": 1.17
+            "over": 4.8,
+            "under": 1.15
           }
         ]
       }
