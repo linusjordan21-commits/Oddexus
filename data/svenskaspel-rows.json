@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:07:31.591Z",
+  "updatedAt": "2026-06-29T05:10:01.123Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 188,
-  "skippedNoOdds": 0,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 14722,
+  "durationMs": 14851,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028181495",
-      "title": "Man City (zoyir) - Chelsea (exhausted)",
-      "homeTeam": "Man City (zoyir)",
-      "awayTeam": "Chelsea (exhausted)",
-      "startTime": "2026-06-29T04:54:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 17,
-        "draw": 8,
-        "away": 1.09
-      }
-    },
-    {
-      "eventId": "1028181509",
-      "title": "Arsenal (TikitakaMaster) - Tottenham (bodyaoo)",
-      "homeTeam": "Arsenal (TikitakaMaster)",
-      "awayTeam": "Tottenham (bodyaoo)",
-      "startTime": "2026-06-29T04:54:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 2.45,
-        "draw": 2.75,
-        "away": 2.63
-      }
-    },
-    {
       "eventId": "1028185414",
       "title": "Fiorentina (T3RZ) - Udinese (TOMMY)",
       "homeTeam": "Fiorentina (T3RZ)",
@@ -1018,22 +992,9 @@
       "startTime": "2026-06-29T05:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.49,
-        "draw": 5.25,
-        "away": 3.75
-      }
-    },
-    {
-      "eventId": "1028183533",
-      "title": "Fenerbahce (Revange) - Salzburg (sane4ek8)",
-      "homeTeam": "Fenerbahce (Revange)",
-      "awayTeam": "Salzburg (sane4ek8)",
-      "startTime": "2026-06-29T05:00:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.65,
-        "draw": 2.2,
-        "away": 3.05
+        "home": 1.21,
+        "draw": 6,
+        "away": 8.5
       }
     },
     {
@@ -1044,9 +1005,9 @@
       "startTime": "2026-06-29T05:01:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.06,
-        "draw": 14,
-        "away": 13
+        "home": 1.11,
+        "draw": 9.5,
+        "away": 11
       }
     },
     {
@@ -1057,9 +1018,9 @@
       "startTime": "2026-06-29T05:06:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.08,
-        "draw": 4.9,
-        "away": 2.18
+        "home": 3.4,
+        "draw": 4.6,
+        "away": 1.6
       }
     },
     {
@@ -1159,6 +1120,111 @@
           "line": 6.5,
           "over": 1.17,
           "under": 4
+        }
+      ]
+    },
+    {
+      "eventId": "1028183542",
+      "title": "Porto (Jekunam) - Salzburg (sane4ek8)",
+      "homeTeam": "Porto (Jekunam)",
+      "awayTeam": "Salzburg (sane4ek8)",
+      "startTime": "2026-06-29T05:12:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.43,
+        "draw": 4.7,
+        "away": 1.93
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 2.85,
+          "under": 1.33
+        },
+        {
+          "line": 9.5,
+          "over": 8,
+          "under": 1.03
+        },
+        {
+          "line": 8.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 4.5,
+          "over": 1.14,
+          "under": 4.3
+        },
+        {
+          "line": 3.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.92,
+          "under": 1.75
+        },
+        {
+          "line": 5.5,
+          "over": 1.42,
+          "under": 2.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028185416",
+      "title": "Bologna FC (Jur_Kr) - Fiorentina (T3RZ)",
+      "homeTeam": "Bologna FC (Jur_Kr)",
+      "awayTeam": "Fiorentina (T3RZ)",
+      "startTime": "2026-06-29T05:14:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.85,
+        "draw": 5.8,
+        "away": 1.63
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.13,
+          "under": 4.6
+        },
+        {
+          "line": 12.5,
+          "over": 8,
+          "under": 1.03
+        },
+        {
+          "line": 11.5,
+          "over": 4.8,
+          "under": 1.11
+        },
+        {
+          "line": 8.5,
+          "over": 1.64,
+          "under": 2.05
+        },
+        {
+          "line": 10.5,
+          "over": 3.1,
+          "under": 1.27
+        },
+        {
+          "line": 5.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 7.5,
+          "over": 1.32,
+          "under": 2.85
+        },
+        {
+          "line": 9.5,
+          "over": 2.2,
+          "under": 1.54
         }
       ]
     },
@@ -14270,6 +14336,19 @@
       }
     },
     {
+      "eventId": "1028177635",
+      "title": "Cosme Rolland de Ravel - Marat Sharipov",
+      "homeTeam": "Cosme Rolland de Ravel",
+      "awayTeam": "Marat Sharipov",
+      "startTime": "2026-06-29T13:00:00Z",
+      "league": "Troyes",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.7,
+        "away": 2.12
+      }
+    },
+    {
       "eventId": "1028155470",
       "title": "Marin Cilic - Daniil Medvedev",
       "homeTeam": "Marin Cilic",
@@ -14462,6 +14541,19 @@
       "odds": {
         "home": 1.73,
         "away": 1.98
+      }
+    },
+    {
+      "eventId": "1028181030",
+      "title": "Jordan Reznik - Yubel Ubri",
+      "homeTeam": "Jordan Reznik",
+      "awayTeam": "Yubel Ubri",
+      "startTime": "2026-06-29T14:00:00Z",
+      "league": "USA - Boca Raton",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.23,
+        "away": 1.56
       }
     },
     {
@@ -14895,6 +14987,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 106,
+  "tennisEventsCount": 108,
   "lastError": null
 }
