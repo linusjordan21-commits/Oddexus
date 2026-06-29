@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T04:16:29.464Z",
+  "updatedAt": "2026-06-29T04:18:59.597Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 203,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 202,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 16223,
+  "durationMs": 16180,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T04:11:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.3,
-        "draw": 4.9,
-        "away": 6.75
-      }
-    },
-    {
-      "eventId": "1028178544",
-      "title": "River Plate (nekishka) - Paris (Grellz)",
-      "homeTeam": "River Plate (nekishka)",
-      "awayTeam": "Paris (Grellz)",
-      "startTime": "2026-06-29T04:11:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 2.43,
-        "draw": 3.3,
-        "away": 2.28
+        "home": 1.08,
+        "draw": 8,
+        "away": 29
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T04:14:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 3.85,
-        "draw": 3.35,
-        "away": 1.71
+        "home": 2.7,
+        "draw": 2.65,
+        "away": 2.43
       }
     },
     {
@@ -1034,49 +1021,7 @@
         "home": 1.85,
         "draw": 4.5,
         "away": 2.63
-      },
-      "totals": [
-        {
-          "line": 12.5,
-          "over": 8,
-          "under": 1.03
-        },
-        {
-          "line": 9.5,
-          "over": 2.18,
-          "under": 1.58
-        },
-        {
-          "line": 7.5,
-          "over": 1.32,
-          "under": 2.9
-        },
-        {
-          "line": 6.5,
-          "over": 1.13,
-          "under": 4.5
-        },
-        {
-          "line": 11.5,
-          "over": 4.75,
-          "under": 1.12
-        },
-        {
-          "line": 5.5,
-          "over": 1.02,
-          "under": 8
-        },
-        {
-          "line": 8.5,
-          "over": 1.65,
-          "under": 2.04
-        },
-        {
-          "line": 10.5,
-          "over": 3.15,
-          "under": 1.27
-        }
-      ]
+      }
     },
     {
       "eventId": "1028178467",
@@ -1555,6 +1500,61 @@
           "line": 7.5,
           "over": 3.3,
           "under": 1.24
+        }
+      ]
+    },
+    {
+      "eventId": "1028181245",
+      "title": "Spain (LaikingDast) - Mexiko (KraftVK)",
+      "homeTeam": "Spain (LaikingDast)",
+      "awayTeam": "Mexiko (KraftVK)",
+      "startTime": "2026-06-29T04:45:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.43,
+        "draw": 3.3,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.12,
+          "under": 5.3
+        },
+        {
+          "line": 5.5,
+          "over": 1.3,
+          "under": 3.15
+        },
+        {
+          "line": 8.5,
+          "over": 3.65,
+          "under": 1.24
+        },
+        {
+          "line": 10.5,
+          "over": 11.5,
+          "under": 1.02
+        },
+        {
+          "line": 9.5,
+          "over": 6,
+          "under": 1.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.02,
+          "under": 12
+        },
+        {
+          "line": 7.5,
+          "over": 2.28,
+          "under": 1.55
+        },
+        {
+          "line": 6.5,
+          "over": 1.68,
+          "under": 2.02
         }
       ]
     },
