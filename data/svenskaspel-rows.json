@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:05:47.286Z",
+  "updatedAt": "2026-06-29T03:08:17.269Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 185,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 182,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 16662,
+  "durationMs": 16388,
   "events": [
     {
       "eventId": "1028072415",
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T02:56:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.95,
-        "draw": 2.8,
-        "away": 2.2
+        "home": 6.25,
+        "draw": 2.45,
+        "away": 1.75
       }
     },
     {
@@ -1018,135 +1018,58 @@
       "startTime": "2026-06-29T03:06:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.67,
-        "draw": 4.6,
-        "away": 3.1
+        "home": 1.41,
+        "draw": 5.1,
+        "away": 4.5
+      }
+    },
+    {
+      "eventId": "1028174546",
+      "title": "Real Madrid (zaha) - Barcelona (Solya)",
+      "homeTeam": "Real Madrid (zaha)",
+      "awayTeam": "Barcelona (Solya)",
+      "startTime": "2026-06-29T03:14:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.07,
+        "draw": 4.8,
+        "away": 2.2
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.23,
-          "under": 3.4
+          "over": 1.19,
+          "under": 3.7
         },
         {
           "line": 8.5,
-          "over": 2.9,
-          "under": 1.3
-        },
-        {
-          "line": 7.5,
-          "over": 2.04,
-          "under": 1.65
+          "over": 2.65,
+          "under": 1.37
         },
         {
           "line": 4.5,
-          "over": 1.07,
-          "under": 5.8
+          "over": 1.05,
+          "under": 6.75
         },
         {
-          "line": 6.5,
-          "over": 1.56,
-          "under": 2.23
+          "line": 7.5,
+          "over": 1.91,
+          "under": 1.75
         },
         {
           "line": 10.5,
-          "over": 7.5,
-          "under": 1.03
+          "over": 6.5,
+          "under": 1.05
         },
         {
           "line": 9.5,
-          "over": 4.5,
-          "under": 1.13
-        }
-      ]
-    },
-    {
-      "eventId": "1028174142",
-      "title": "Sporting CP (Noltzer) - B Dortmund (SpeciAL)",
-      "homeTeam": "Sporting CP (Noltzer)",
-      "awayTeam": "B Dortmund (SpeciAL)",
-      "startTime": "2026-06-29T03:08:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 3.25,
-        "draw": 6.25,
-        "away": 1.5
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 2.08,
-          "under": 1.64
-        },
-        {
-          "line": 8.5,
-          "over": 5.4,
-          "under": 1.09
-        },
-        {
-          "line": 5.5,
-          "over": 1.56,
-          "under": 2.23
-        },
-        {
-          "line": 4.5,
-          "over": 1.18,
-          "under": 3.8
-        },
-        {
-          "line": 7.5,
-          "over": 3.25,
-          "under": 1.25
-        },
-        {
-          "line": 3.5,
-          "over": 1.04,
-          "under": 7
-        }
-      ]
-    },
-    {
-      "eventId": "1028174518",
-      "title": "Man City (GanGsta_Panda) - Arsenal (Gaga)",
-      "homeTeam": "Man City (GanGsta_Panda)",
-      "awayTeam": "Arsenal (Gaga)",
-      "startTime": "2026-06-29T03:08:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.28,
-        "draw": 4.7,
-        "away": 2.04
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.32,
-          "under": 2.85
+          "over": 4,
+          "under": 1.16
         },
         {
           "line": 6.5,
-          "over": 2.6,
-          "under": 1.4
-        },
-        {
-          "line": 8.5,
-          "over": 7.5,
-          "under": 1.03
-        },
-        {
-          "line": 3.5,
-          "over": 1.1,
-          "under": 5
-        },
-        {
-          "line": 7.5,
-          "over": 4.3,
-          "under": 1.14
-        },
-        {
-          "line": 5.5,
-          "over": 1.8,
-          "under": 1.86
+          "over": 1.44,
+          "under": 2.45
         }
       ]
     },
