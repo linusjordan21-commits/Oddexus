@@ -131,7 +131,9 @@ const MAX_LEAGUES = Number(process.env.COOLBET_MAX_LEAGUES) || 20; // tak mot cr
 // Kostnadsoptimering: ETT Scrapfly-render (=30 credits) besöker FLERA ligor via
 // client-side-navigering (pushState+popstate → ingen reload → storen rensas ej →
 // Pusher-prenumerationer ackumuleras). Credit-kostnad är per ANROP, ej per liga.
-const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 6000;            // SPA-boot + store-fyllnad
+// 11000 (2026-06-29): 6000 var för kort — SPA-storen hann inte fylla flatCategories
+// (→ "ingen flatCategories i store" → katalog=0). Med 11-12s läses 64 ligor/219 matcher.
+const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 11000;           // SPA-boot + store-fyllnad
 const PUSHER_MS = Number(process.env.COOLBET_PUSHER_MS) || 6000;        // Pusher-fyllnad/liga
 const LEAGUES_PER_CALL = Number(process.env.COOLBET_LEAGUES_PER_CALL) || 4; // ligor/render
 // VIKTIGT: Scrapfly RESERVERAR varje execute-stegs hela timeout i förväg och summan
@@ -232,6 +234,9 @@ try{
   var byId={};raw.forEach(function(m){if(m.inplay===true)return;var t=Date.parse(m.match_start||'');if(isFinite(t)&&(t>hi||t<now))return;if(!byId[m.id])byId[m.id]=m;});
   var matches=Object.keys(byId).map(function(k){return byId[k]});
   o.matches=matches;o.matchCount=matches.length;
+  // DIAG: fördelning av rå-matchernas avspark (är 24h-fönstret genuint glest, eller datumbugg?)
+  o.windowProbe={nInplay:0,nBadDate:0,nPast:0,n24:0,n48:0,n72:0,nFuture:0,samples:[]};
+  raw.forEach(function(m){var t=Date.parse(m.match_start||'');if(m.inplay===true){o.windowProbe.nInplay++;}else if(!isFinite(t)){o.windowProbe.nBadDate++;}else{var dh=(t-now)/3600000;if(dh<0)o.windowProbe.nPast++;else if(dh<=24)o.windowProbe.n24++;else if(dh<=48)o.windowProbe.n48++;else if(dh<=72)o.windowProbe.n72++;else o.windowProbe.nFuture++;}if(o.windowProbe.samples.length<4)o.windowProbe.samples.push(String(m.match_start));});
   // målslug-lista: räkna 24h-matcher/slug; riktig fotboll FÖRE esoccer/special; flest först.
   var cnt={};matches.forEach(function(m){if(m.fullSlug)cnt[m.fullSlug]=(cnt[m.fullSlug]||0)+1;});
   function isReal(s){return !/esoccer|efootball|esport|virtual|cyber|specialspel/i.test(s);}
@@ -318,6 +323,7 @@ async function main() {
   diag.slug = nav.slug ?? null;
   diag.slugs = nav.slugs ?? null;
   diag.probe = nav.probe ?? null;
+  diag.windowProbe = nav.windowProbe ?? null; // diag: avsparks-fördelning (glest 24h-fönster vs datumbugg?)
   diag.storeKeys = nav.storeKeys ?? null;     // diag: vilka nycklar finns på window.stores nu?
   diag.sportsKeys = nav.sportsKeys ?? null;   // diag: vilka nycklar på window.stores.sports? (hitta var flatCategories tog vägen)
   diag.fcType = nav.fcType ?? null;

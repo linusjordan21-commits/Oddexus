@@ -31,11 +31,10 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           COOLBET_MAX_LEAGUES: "20"
-          COOLBET_BOOT_MS: "12000"
         run: |
           echo "=== coolbet-once START $(date -u +%FT%TZ) | commit ${GITHUB_SHA:0:8} ==="
           node scripts/fetch-coolbet-github-action.mjs 2>&1 || echo "node exit=$?"
           echo ""
           echo "=== DIAG (probe: leagues/rawMatches/matches24h/topSlugs) ==="
-          node -e "try{const d=require('./data/_coolbet-scraper-diag.json');console.log('ranAt:',d.ranAt);console.log('scrapflyHttp:',d.scrapflyHttp,'scrapflyError:',JSON.stringify(d.scrapflyError||null));console.log('catalogMatches:',d.catalogMatches,'oddsCount:',d.oddsCount,'builtEvents:',d.builtEvents);console.log('probe:',JSON.stringify(d.probe,null,1));console.log('storeKeys:',JSON.stringify(d.storeKeys));console.log('sportsKeys:',JSON.stringify(d.sportsKeys));console.log('fcType:',JSON.stringify(d.fcType));console.log('notes:',JSON.stringify(d.notes));}catch(e){console.log('diag-läsfel:',e.message)}"
+          node -e "try{const d=require('./data/_coolbet-scraper-diag.json');console.log('ranAt:',d.ranAt);console.log('scrapflyHttp:',d.scrapflyHttp,'scrapflyError:',JSON.stringify(d.scrapflyError||null));console.log('catalogMatches:',d.catalogMatches,'oddsCount:',d.oddsCount,'builtEvents:',d.builtEvents);console.log('probe:',JSON.stringify(d.probe,null,1));console.log('windowProbe:',JSON.stringify(d.windowProbe));console.log('storeKeys:',JSON.stringify(d.storeKeys));console.log('sportsKeys:',JSON.stringify(d.sportsKeys));console.log('fcType:',JSON.stringify(d.fcType));console.log('notes:',JSON.stringify(d.notes));}catch(e){console.log('diag-läsfel:',e.message)}"
           echo "=== coolbet-once SLUT $(date -u +%FT%TZ) ==="
