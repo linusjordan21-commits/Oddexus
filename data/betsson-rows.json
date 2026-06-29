@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T04:22:02.540Z",
+  "updatedAt": "2026-06-29T04:32:18.359Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -529,19 +529,6 @@
       "foundBy": "France"
     },
     {
-      "eventId": "f-QId7pOeuS0WGya8_UyaHsA",
-      "title": "France (Titan) - Senegal (Shaolin)",
-      "homeTeam": "France (Titan)",
-      "awayTeam": "Senegal (Shaolin)",
-      "startTime": "2026-06-29T04:15:00.000Z",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.35,
-        "away": 2.35
-      },
-      "foundBy": "France"
-    },
-    {
       "eventId": "f-mVniDUctFkWk2XsO-zq_SQ",
       "title": "Cuiaba Esporte Clube MT - América MG",
       "homeTeam": "Cuiaba Esporte Clube MT",
@@ -1032,32 +1019,6 @@
       ]
     },
     {
-      "eventId": "f-ugWuhhULwkmG9OGQzkGxXA",
-      "title": "Ecuador (Lucas) - Germany (Ultrex)",
-      "homeTeam": "Ecuador (Lucas)",
-      "awayTeam": "Germany (Ultrex)",
-      "startTime": "2026-06-29T04:15:00.000Z",
-      "odds": {
-        "home": 2.4,
-        "draw": 2.7,
-        "away": 2.95
-      },
-      "foundBy": "Germany"
-    },
-    {
-      "eventId": "f-JQWaxtYdCE2wSnMagLAqEA",
-      "title": "Tunisia (Furious) - Switzerland (Kratos)",
-      "homeTeam": "Tunisia (Furious)",
-      "awayTeam": "Switzerland (Kratos)",
-      "startTime": "2026-06-29T04:15:00.000Z",
-      "odds": {
-        "home": 2.4,
-        "draw": 3,
-        "away": 2.7
-      },
-      "foundBy": "Switzerland"
-    },
-    {
       "eventId": "f-Hgqvfb9GbUSVJ5_aviPS3A",
       "title": "Al Hikma - AL Tadamon Sour",
       "homeTeam": "Al Hikma",
@@ -1097,8 +1058,8 @@
       "totals": [
         {
           "line": 3.5,
-          "over": 2.3,
-          "under": 1.57
+          "over": 2.35,
+          "under": 1.55
         },
         {
           "line": 4.5,
@@ -1386,38 +1347,54 @@
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 195044,
+    "runMs": 210600,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-29T04:22:02.540Z"
+    "decidedAt": "2026-06-29T04:32:18.359Z"
   },
   "_linesDiag": {
     "ran": true,
     "withTotals": 26,
     "withAh": 10,
     "nearest": 30,
-    "ms": 12
+    "ms": 13
   },
   "_linesProbe": {
     "hasLinesPage": true,
     "evStatus": 200,
-    "nSummaries": 3,
+    "nSummaries": 11,
     "sumKeys": [
       "MW3W",
+      "MTG2W25",
       "MTG2W",
-      "MAHCP"
+      "M3WHCP",
+      "DC",
+      "MW2W",
+      "FTCSALT",
+      "HTG",
+      "ATG",
+      "ENOGM5G",
+      "OENG"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-2-ZHjwwf2EWrHxwoq7aloA\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-Hgqvfb9GbUSVJ5_aviPS3A\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 200,
     "gid": "MTG2W",
+    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-2-ZHjwwf2EWrHxwoq7aloA\",",
     "fullCatalogStatus": 200,
     "fullCatalogKeys": [
       "MW3W|Matchresultat",
+      "MTG2W25|Totalt antal mål",
       "MTG2W|Totalt antal mål",
-      "MAHCP|Asiatiska handikapp"
+      "M3WHCP|Handikapp (3-vägs)",
+      "DC|Dubbelchans",
+      "MW2W|Insatsen tillbaka vid oavgjort",
+      "FTCSALT|Rätt resultat",
+      "HTG|Totalt antal mål för Al Hikma",
+      "ATG|Totalt antal mål för AL Tadamon Sour",
+      "ENOGM5G|Exakt antal mål (max 5)",
+      "OENG|Totalt antal mål - udda eller jämnt"
     ],
-    "cornerKeys": [],
-    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-Hgqvfb9GbUSVJ5_aviPS3A\","
+    "cornerKeys": []
   },
   "_oddsProbe": {
     "via": "inpage",
