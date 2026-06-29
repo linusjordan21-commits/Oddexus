@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:39:09.162Z",
+  "updatedAt": "2026-06-29T01:42:05.388Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 186,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 183,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 14558,
+  "durationMs": 15752,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.75,
-        "draw": 2.25,
-        "away": 3.3
+        "home": 9,
+        "draw": 3.4,
+        "away": 1.42
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 5.6,
+        "home": 5.8,
         "draw": 3.6,
-        "away": 1.52
+        "away": 1.5
       }
     },
     {
@@ -1018,42 +1018,10 @@
       "startTime": "2026-06-29T01:40:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.65,
-        "draw": 5,
-        "away": 3
-      },
-      "totals": [
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.02
-        },
-        {
-          "line": 5.5,
-          "over": 1.95,
-          "under": 1.72
-        },
-        {
-          "line": 3.5,
-          "over": 1.14,
-          "under": 4.35
-        },
-        {
-          "line": 7.5,
-          "over": 4.8,
-          "under": 1.11
-        },
-        {
-          "line": 6.5,
-          "over": 2.85,
-          "under": 1.32
-        },
-        {
-          "line": 4.5,
-          "over": 1.4,
-          "under": 2.6
-        }
-      ]
+        "home": 1.35,
+        "draw": 5.6,
+        "away": 5
+      }
     },
     {
       "eventId": "1028173782",
@@ -13338,6 +13306,19 @@
   ],
   "eventsBasket": [
     {
+      "eventId": "1027860469",
+      "title": "Mets de Guaynabo - Gigantes De Carolina",
+      "homeTeam": "Mets de Guaynabo",
+      "awayTeam": "Gigantes De Carolina",
+      "startTime": "2026-06-29T00:14:00Z",
+      "league": "Baloncesto Superior Nacional",
+      "sport": "basketball",
+      "odds": {
+        "home": 10,
+        "away": 1.03
+      }
+    },
+    {
       "eventId": "1027545013",
       "title": "Iran - Syrien",
       "homeTeam": "Iran",
@@ -15355,7 +15336,7 @@
       }
     }
   ],
-  "basketEventsCount": 3,
+  "basketEventsCount": 4,
   "tennisEventsCount": 152,
   "lastError": null
 }
