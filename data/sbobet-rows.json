@@ -1,70 +1,7 @@
 {
-  "updatedAt": "2026-06-29T13:20:01.977Z",
+  "updatedAt": "2026-06-29T13:21:38.237Z",
   "source": "github-actions-dom-scrape",
   "events": {
-    "tn:e-newcastle utd::e-arsenal::2026-06-29T13:20:00.000Z": {
-      "sbobetEventId": "tn:e-newcastle utd::e-arsenal::2026-06-29T13:20:00.000Z",
-      "homeTeam": "e-Newcastle UTD (VAPOR)",
-      "awayTeam": "e-Arsenal (HORIZON)",
-      "startTime": "2026-06-29T13:20:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "693983600",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 4
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.65
-            }
-          ]
-        },
-        {
-          "oddsId": "693983613",
-          "marketType": "AH",
-          "scope": "full",
-          "line": -0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 1.97
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.73
-            }
-          ]
-        },
-        {
-          "oddsId": "693959478",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 4
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.65
-            }
-          ]
-        }
-      ]
-    },
     "tn:e-france::e-new zealand::2026-06-29T13:23:00.000Z": {
       "sbobetEventId": "tn:e-france::e-new zealand::2026-06-29T13:23:00.000Z",
       "homeTeam": "e-France (DEMOLISHOR)",
@@ -73,7 +10,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693985981",
+          "oddsId": "702884898",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -92,35 +29,7 @@
           ]
         },
         {
-          "oddsId": "693961859",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 3.1
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 3.1
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.15
-            }
-          ]
-        }
-      ]
-    },
-    "tn:e-france::e-new zealand::2026-06-29T13:20:00.000Z": {
-      "sbobetEventId": "tn:e-france::e-new zealand::2026-06-29T13:20:00.000Z",
-      "homeTeam": "e-France (DEMOLISHOR)",
-      "awayTeam": "e-New Zealand (HAVOC)",
-      "startTime": "2026-06-29T13:20:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "693986010",
+          "oddsId": "702884927",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -134,6 +43,97 @@
               "decimalOdds": 2.08
             }
           ]
+        },
+        {
+          "oddsId": "703752739",
+          "marketType": "ML_1X2",
+          "scope": "full",
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 3.1
+            },
+            {
+              "selection": "DRAW",
+              "decimalOdds": 3.1
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 2.15
+            }
+          ]
+        }
+      ]
+    },
+    "tn:e-napoli::e-liverpool::2026-06-29T13:27:00.000Z": {
+      "sbobetEventId": "tn:e-napoli::e-liverpool::2026-06-29T13:27:00.000Z",
+      "homeTeam": "e-Napoli (BUTCHER)",
+      "awayTeam": "e-Liverpool (DART)",
+      "startTime": "2026-06-29T13:27:00.000Z",
+      "competition": null,
+      "markets": [
+        {
+          "oddsId": "702887693",
+          "marketType": "ML_1X2",
+          "scope": "full",
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 2.15
+            },
+            {
+              "selection": "DRAW",
+              "decimalOdds": 3.75
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 2.65
+            }
+          ]
+        },
+        {
+          "oddsId": "703755534",
+          "marketType": "ML_1X2",
+          "scope": "full",
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 2.15
+            },
+            {
+              "selection": "DRAW",
+              "decimalOdds": 3.75
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 2.65
+            }
+          ]
+        }
+      ]
+    },
+    "tn:e-napoli::e-liverpool::2026-06-29T13:23:00.000Z": {
+      "sbobetEventId": "tn:e-napoli::e-liverpool::2026-06-29T13:23:00.000Z",
+      "homeTeam": "e-Napoli (BUTCHER)",
+      "awayTeam": "e-Liverpool (DART)",
+      "startTime": "2026-06-29T13:23:00.000Z",
+      "competition": null,
+      "markets": [
+        {
+          "oddsId": "702887702",
+          "marketType": "AH",
+          "scope": "full",
+          "line": -0.5,
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 2.08
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 1.64
+            }
+          ]
         }
       ]
     },
@@ -145,7 +145,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "685137131",
+          "oddsId": "694036048",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -164,7 +164,7 @@
           ]
         },
         {
-          "oddsId": "691876560",
+          "oddsId": "700775477",
           "marketType": "AH",
           "scope": "full",
           "line": -0.75,
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "oddsId": "685137126",
+          "oddsId": "694036043",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -196,7 +196,7 @@
           ]
         },
         {
-          "oddsId": "691876648",
+          "oddsId": "700775565",
           "marketType": "AH",
           "scope": "full",
           "line": -1,
@@ -212,7 +212,7 @@
           ]
         },
         {
-          "oddsId": "691922144",
+          "oddsId": "700821061",
           "marketType": "AH",
           "scope": "full",
           "line": -0.25,
@@ -228,7 +228,7 @@
           ]
         },
         {
-          "oddsId": "685113009",
+          "oddsId": "694903889",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -247,7 +247,7 @@
           ]
         },
         {
-          "oddsId": "686577702",
+          "oddsId": "696368582",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -266,7 +266,7 @@
           ]
         },
         {
-          "oddsId": "686577305",
+          "oddsId": "696368185",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -294,7 +294,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "685137543",
+          "oddsId": "694036460",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -313,7 +313,7 @@
           ]
         },
         {
-          "oddsId": "685137537",
+          "oddsId": "694036454",
           "marketType": "AH",
           "scope": "full",
           "line": -1.25,
@@ -329,7 +329,7 @@
           ]
         },
         {
-          "oddsId": "692532404",
+          "oddsId": "701431321",
           "marketType": "AH",
           "scope": "full",
           "line": -1.5,
@@ -345,7 +345,7 @@
           ]
         },
         {
-          "oddsId": "692568072",
+          "oddsId": "701466989",
           "marketType": "AH",
           "scope": "full",
           "line": -1.75,
@@ -361,7 +361,7 @@
           ]
         },
         {
-          "oddsId": "692532434",
+          "oddsId": "701431351",
           "marketType": "AH",
           "scope": "full",
           "line": -1,
@@ -377,7 +377,7 @@
           ]
         },
         {
-          "oddsId": "685113421",
+          "oddsId": "694904301",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -396,7 +396,7 @@
           ]
         },
         {
-          "oddsId": "686577792",
+          "oddsId": "696368672",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -415,7 +415,7 @@
           ]
         },
         {
-          "oddsId": "686577369",
+          "oddsId": "696368249",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -443,7 +443,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "685137724",
+          "oddsId": "694036641",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -453,32 +453,32 @@
             },
             {
               "selection": "DRAW",
-              "decimalOdds": 3.06
+              "decimalOdds": 3.05
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 3.23
+              "decimalOdds": 3.24
             }
           ]
         },
         {
-          "oddsId": "685137718",
+          "oddsId": "694036635",
           "marketType": "AH",
           "scope": "full",
           "line": -0.25,
           "runners": [
             {
               "selection": "HOME",
-              "decimalOdds": 1.98
+              "decimalOdds": 1.97
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 1.95
+              "decimalOdds": 1.96
             }
           ]
         },
         {
-          "oddsId": "691876686",
+          "oddsId": "700775603",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -494,7 +494,7 @@
           ]
         },
         {
-          "oddsId": "691876699",
+          "oddsId": "700775616",
           "marketType": "AH",
           "scope": "full",
           "line": 0,
@@ -510,7 +510,7 @@
           ]
         },
         {
-          "oddsId": "691922198",
+          "oddsId": "700821115",
           "marketType": "AH",
           "scope": "full",
           "line": -0.75,
@@ -526,7 +526,7 @@
           ]
         },
         {
-          "oddsId": "685113602",
+          "oddsId": "694904482",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -536,16 +536,16 @@
             },
             {
               "selection": "DRAW",
-              "decimalOdds": 3.06
+              "decimalOdds": 3.05
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 3.23
+              "decimalOdds": 3.24
             }
           ]
         },
         {
-          "oddsId": "686577627",
+          "oddsId": "696368507",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -564,7 +564,7 @@
           ]
         },
         {
-          "oddsId": "686577434",
+          "oddsId": "696368314",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -592,7 +592,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "685138100",
+          "oddsId": "694037017",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -611,7 +611,7 @@
           ]
         },
         {
-          "oddsId": "685138095",
+          "oddsId": "694037012",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -627,7 +627,7 @@
           ]
         },
         {
-          "oddsId": "692416815",
+          "oddsId": "701315732",
           "marketType": "AH",
           "scope": "full",
           "line": -0.25,
@@ -643,7 +643,7 @@
           ]
         },
         {
-          "oddsId": "692416873",
+          "oddsId": "701315790",
           "marketType": "AH",
           "scope": "full",
           "line": -0.75,
@@ -659,7 +659,7 @@
           ]
         },
         {
-          "oddsId": "692431149",
+          "oddsId": "701330066",
           "marketType": "AH",
           "scope": "full",
           "line": 0,
@@ -684,7 +684,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "685138377",
+          "oddsId": "694037294",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -703,7 +703,7 @@
           ]
         },
         {
-          "oddsId": "692532506",
+          "oddsId": "701431423",
           "marketType": "AH",
           "scope": "full",
           "line": -1.75,
@@ -719,7 +719,7 @@
           ]
         },
         {
-          "oddsId": "692532471",
+          "oddsId": "701431388",
           "marketType": "AH",
           "scope": "full",
           "line": -1.5,
@@ -735,7 +735,7 @@
           ]
         },
         {
-          "oddsId": "692568034",
+          "oddsId": "701466951",
           "marketType": "AH",
           "scope": "full",
           "line": -2,
@@ -751,7 +751,7 @@
           ]
         },
         {
-          "oddsId": "685138372",
+          "oddsId": "694037289",
           "marketType": "AH",
           "scope": "full",
           "line": -1.25,
@@ -776,7 +776,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "666978999",
+          "oddsId": "676769879",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -804,7 +804,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "663454380",
+          "oddsId": "673245260",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -832,7 +832,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "663454720",
+          "oddsId": "673245600",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -860,7 +860,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "679337566",
+          "oddsId": "689128446",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -888,7 +888,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693471902",
+          "oddsId": "703262782",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -916,7 +916,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693472886",
+          "oddsId": "703263766",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -944,7 +944,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "666982217",
+          "oddsId": "676773097",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -972,7 +972,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "666982180",
+          "oddsId": "676773060",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1000,7 +1000,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "662586048",
+          "oddsId": "672376928",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1014,7 +1014,7 @@
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 7.2
+              "decimalOdds": 7.1
             }
           ]
         }
@@ -1028,7 +1028,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693207106",
+          "oddsId": "702997986",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1056,7 +1056,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693206954",
+          "oddsId": "702997834",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1084,7 +1084,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693207332",
+          "oddsId": "702998212",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1094,11 +1094,11 @@
             },
             {
               "selection": "DRAW",
-              "decimalOdds": 2.85
+              "decimalOdds": 2.83
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 3.07
+              "decimalOdds": 3.08
             }
           ]
         }
@@ -1112,17 +1112,17 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "692915386",
+          "oddsId": "702706266",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
             {
               "selection": "HOME",
-              "decimalOdds": 3.16
+              "decimalOdds": 3.14
             },
             {
               "selection": "DRAW",
-              "decimalOdds": 3.17
+              "decimalOdds": 3.2
             },
             {
               "selection": "AWAY",
@@ -1140,7 +1140,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "692915403",
+          "oddsId": "702706283",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1168,49 +1168,21 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693460692",
+          "oddsId": "703251572",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
             {
               "selection": "HOME",
-              "decimalOdds": 4.14
+              "decimalOdds": 4.39
             },
             {
               "selection": "DRAW",
-              "decimalOdds": 3.76
+              "decimalOdds": 3.84
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 1.62
-            }
-          ]
-        }
-      ]
-    },
-    "tn:e-napoli::e-liverpool::2026-06-29T13:27:00.000Z": {
-      "sbobetEventId": "tn:e-napoli::e-liverpool::2026-06-29T13:27:00.000Z",
-      "homeTeam": "e-Napoli (BUTCHER)",
-      "awayTeam": "e-Liverpool (DART)",
-      "startTime": "2026-06-29T13:27:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "693964654",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.15
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 3.75
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.65
+              "decimalOdds": 1.58
             }
           ]
         }
@@ -1224,7 +1196,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693967648",
+          "oddsId": "703758528",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1252,7 +1224,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693970406",
+          "oddsId": "703761286",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1280,7 +1252,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693976443",
+          "oddsId": "703767323",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1308,7 +1280,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693976581",
+          "oddsId": "703767461",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1336,7 +1308,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693977851",
+          "oddsId": "703768731",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1364,7 +1336,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693980180",
+          "oddsId": "703771060",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1392,7 +1364,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693982572",
+          "oddsId": "703773452",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1420,7 +1392,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693984839",
+          "oddsId": "703775719",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1448,7 +1420,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693987716",
+          "oddsId": "703778596",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1476,7 +1448,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693990927",
+          "oddsId": "703781807",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1504,7 +1476,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693993386",
+          "oddsId": "703784266",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1532,7 +1504,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693996091",
+          "oddsId": "703786971",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1560,7 +1532,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693999040",
+          "oddsId": "703789920",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -1580,6 +1552,34 @@
         }
       ]
     },
+    "tn:e-aston villa::e-arsenal::2026-06-29T14:20:00.000Z": {
+      "sbobetEventId": "tn:e-aston villa::e-arsenal::2026-06-29T14:20:00.000Z",
+      "homeTeam": "e-Aston Villa (BLITZ)",
+      "awayTeam": "e-Arsenal (HORIZON)",
+      "startTime": "2026-06-29T14:20:00.000Z",
+      "competition": null,
+      "markets": [
+        {
+          "oddsId": "703792531",
+          "marketType": "ML_1X2",
+          "scope": "full",
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 2
+            },
+            {
+              "selection": "DRAW",
+              "decimalOdds": 3.75
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 2.95
+            }
+          ]
+        }
+      ]
+    },
     "tn:brazil::japan::": {
       "sbobetEventId": "tn:brazil::japan::",
       "homeTeam": "Brazil",
@@ -1588,7 +1588,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "691091029",
+          "oddsId": "700881909",
           "marketType": "AH",
           "scope": "full",
           "line": 0,
@@ -1613,7 +1613,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "691091057",
+          "oddsId": "700881937",
           "marketType": "AH",
           "scope": "full",
           "line": 0,
@@ -1638,7 +1638,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "691091141",
+          "oddsId": "700882021",
           "marketType": "AH",
           "scope": "full",
           "line": 0,
@@ -1663,7 +1663,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "679337562",
+          "oddsId": "689128442",
           "marketType": "AH",
           "scope": "full",
           "line": -1.5,
@@ -1688,43 +1688,18 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693460688",
+          "oddsId": "703251568",
           "marketType": "AH",
           "scope": "full",
           "line": 0.75,
           "runners": [
             {
               "selection": "HOME",
-              "decimalOdds": 1.97
+              "decimalOdds": 2.04
             },
             {
               "selection": "AWAY",
-              "decimalOdds": 1.87
-            }
-          ]
-        }
-      ]
-    },
-    "tn:e-newcastle utd::e-arsenal::": {
-      "sbobetEventId": "tn:e-newcastle utd::e-arsenal::",
-      "homeTeam": "e-Newcastle UTD (VAPOR)",
-      "awayTeam": "e-Arsenal (HORIZON)",
-      "startTime": null,
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "693959491",
-          "marketType": "AH",
-          "scope": "full",
-          "line": -0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 1.97
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.73
+              "decimalOdds": 1.8
             }
           ]
         }
@@ -1738,7 +1713,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693961888",
+          "oddsId": "703752768",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1763,7 +1738,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693964663",
+          "oddsId": "703755543",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -1788,7 +1763,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693967680",
+          "oddsId": "703758560",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1813,7 +1788,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693970428",
+          "oddsId": "703761308",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1838,7 +1813,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693976456",
+          "oddsId": "703767336",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1863,7 +1838,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693976603",
+          "oddsId": "703767483",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -1888,7 +1863,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693977866",
+          "oddsId": "703768746",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -1913,7 +1888,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693980182",
+          "oddsId": "703771062",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1938,7 +1913,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693982583",
+          "oddsId": "703773463",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -1963,7 +1938,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693984853",
+          "oddsId": "703775733",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -1988,7 +1963,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693987775",
+          "oddsId": "703778655",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -2013,7 +1988,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693990942",
+          "oddsId": "703781822",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -2038,7 +2013,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693993391",
+          "oddsId": "703784271",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -2063,7 +2038,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693996102",
+          "oddsId": "703786982",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -2088,7 +2063,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "693999054",
+          "oddsId": "703789934",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -2100,6 +2075,31 @@
             {
               "selection": "AWAY",
               "decimalOdds": 1.52
+            }
+          ]
+        }
+      ]
+    },
+    "tn:e-aston villa::e-arsenal::": {
+      "sbobetEventId": "tn:e-aston villa::e-arsenal::",
+      "homeTeam": "e-Aston Villa (BLITZ)",
+      "awayTeam": "e-Arsenal (HORIZON)",
+      "startTime": null,
+      "competition": null,
+      "markets": [
+        {
+          "oddsId": "703792569",
+          "marketType": "AH",
+          "scope": "full",
+          "line": -0.5,
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 1.97
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 1.73
             }
           ]
         }
@@ -2116,6 +2116,6 @@
     "markets": 90,
     "ahMarkets": 43,
     "ml1x2Markets": 47,
-    "durationMs": 5992
+    "durationMs": 5959
   }
 }
