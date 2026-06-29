@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-06-29T16:17:23.327Z",
+  "updatedAt": "2026-06-29T16:18:28.344Z",
   "sources": {
     "altenar": {
-      "currentIntervalSec": 31,
-      "toleranceFloorSec": 31,
+      "currentIntervalSec": 30,
+      "toleranceFloorSec": 30,
       "hardFloorSec": 30,
       "ceilingSec": 600,
       "backoffCount": 41,
@@ -11,8 +11,8 @@
       "lastStatus": "FRESH"
     },
     "unibet": {
-      "currentIntervalSec": 627,
-      "toleranceFloorSec": 627,
+      "currentIntervalSec": 596,
+      "toleranceFloorSec": 596,
       "hardFloorSec": 60,
       "ceilingSec": 600,
       "backoffCount": 141,
@@ -30,11 +30,11 @@
     },
     "coolbet": {
       "currentIntervalSec": 1800,
-      "toleranceFloorSec": 3.6528990084951393e+28,
+      "toleranceFloorSec": 5.369761542487855e+28,
       "hardFloorSec": 180,
       "ceilingSec": 1800,
-      "backoffCount": 152,
-      "lastBackoffAt": "2026-06-29T16:17:23.327Z",
+      "backoffCount": 153,
+      "lastBackoffAt": "2026-06-29T16:18:28.344Z",
       "lastStatus": "EMPTY"
     }
   }
