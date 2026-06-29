@@ -227,7 +227,15 @@ type AdminAuthFile = {
   updatedAt: string;
 };
 
-const ADMIN_AUTH_FILE = path.resolve(process.cwd(), "data", "admin-auth.json");
+// admin-auth.json MÅSTE ligga på den PERSISTENTA disken (APP_USERS_DATA_DIR), annars wipas
+// den vid varje Render-omstart/deploy → admin-lösenordet (satt via /admin) försvinner och man
+// låses ut (faller tillbaka till env-credentials med annat lösenord). 2026-06-29: flyttat från
+// efemära data/ till APP_USERS_DATA_DIR (samma persistenta disk som users.json) så lösenordet
+// överlever omstarter. Dev/utan env → data/ som förr.
+const ADMIN_AUTH_FILE = path.join(
+  process.env.APP_USERS_DATA_DIR?.trim() || path.resolve(process.cwd(), "data"),
+  "admin-auth.json",
+);
 
 /**
  * In-memory-cache av admin-auth.json (fix 2026-06-13). readAdminAuthFile() gör

@@ -24,7 +24,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
+// Matchar app:ens path (vite.config ADMIN_AUTH_FILE): persistenta disken om satt, annars data/.
+const DATA_DIR = process.env.APP_USERS_DATA_DIR?.trim() || path.resolve(process.cwd(), "data");
 const AUTH_FILE = path.join(DATA_DIR, "admin-auth.json");
 
 function fmtTimestamp() {
