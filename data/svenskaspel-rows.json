@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:07:36.296Z",
+  "updatedAt": "2026-06-29T02:10:06.420Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 189,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 187,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 19336,
+  "durationMs": 19239,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1026389376",
-      "title": "Minnesota United FC II - Tacoma Defiance",
-      "homeTeam": "Minnesota United FC II",
-      "awayTeam": "Tacoma Defiance",
-      "startTime": "2026-06-29T00:17:00Z",
-      "league": "MLS Next Pro",
-      "odds": {
-        "home": 15,
-        "draw": 1.05,
-        "away": 14
-      }
-    },
-    {
       "eventId": "1026389416",
       "title": "Orlando City B - Columbus Crew II",
       "homeTeam": "Orlando City B",
@@ -1005,9 +992,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 8.5,
-        "draw": 4.1,
-        "away": 1.34
+        "home": 7.5,
+        "draw": 3.75,
+        "away": 1.42
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T02:02:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.23,
-        "draw": 3.9,
-        "away": 2.25
+        "home": 2.3,
+        "draw": 3.5,
+        "away": 2.32
       }
     },
     {
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.76,
-        "draw": 3.8,
-        "away": 3.6
+        "home": 1.85,
+        "draw": 3.7,
+        "away": 3.3
       }
     },
     {
@@ -1044,9 +1031,9 @@
       "startTime": "2026-06-29T02:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.38,
-        "draw": 4,
-        "away": 6.5
+        "home": 2.75,
+        "draw": 2.4,
+        "away": 2.65
       }
     },
     {
@@ -1531,7 +1518,7 @@
         },
         {
           "line": -0.75,
-          "home": 1.85,
+          "home": 1.86,
           "away": 1.95
         },
         {
@@ -1547,7 +1534,7 @@
         {
           "line": -0.5,
           "home": 1.66,
-          "away": 2.23
+          "away": 2.2
         },
         {
           "line": 0.5,
@@ -14421,6 +14408,19 @@
       }
     },
     {
+      "eventId": "1028182182",
+      "title": "Andrew Fenty - Masamichi Imamura",
+      "homeTeam": "Andrew Fenty",
+      "awayTeam": "Masamichi Imamura",
+      "startTime": "2026-06-29T14:00:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.73,
+        "away": 1.98
+      }
+    },
+    {
       "eventId": "1028181681",
       "title": "Alina Granwehr - Sapfo Sakellaridi",
       "homeTeam": "Alina Granwehr",
@@ -15540,6 +15540,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 152,
+  "tennisEventsCount": 153,
   "lastError": null
 }
