@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:08:17.269Z",
+  "updatedAt": "2026-06-29T03:10:46.668Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 182,
+  "uniqueEvents": 184,
   "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 16388,
+  "durationMs": 16501,
   "events": [
     {
       "eventId": "1028072415",
@@ -998,19 +998,6 @@
       }
     },
     {
-      "eventId": "1028174555",
-      "title": "Atleti (nicky) - Barcelona (Solya)",
-      "homeTeam": "Atleti (nicky)",
-      "awayTeam": "Barcelona (Solya)",
-      "startTime": "2026-06-29T02:56:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 6.25,
-        "draw": 2.45,
-        "away": 1.75
-      }
-    },
-    {
       "eventId": "1028173795",
       "title": "Bayer 04 (Yeti) - Lille (luxiqq)",
       "homeTeam": "Bayer 04 (Yeti)",
@@ -1018,9 +1005,22 @@
       "startTime": "2026-06-29T03:06:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.41,
-        "draw": 5.1,
-        "away": 4.5
+        "home": 2.55,
+        "draw": 3.6,
+        "away": 2.07
+      }
+    },
+    {
+      "eventId": "1028174142",
+      "title": "Sporting CP (Noltzer) - B Dortmund (SpeciAL)",
+      "homeTeam": "Sporting CP (Noltzer)",
+      "awayTeam": "B Dortmund (SpeciAL)",
+      "startTime": "2026-06-29T03:08:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.1,
+        "draw": 5.5,
+        "away": 1.58
       }
     },
     {
@@ -1070,6 +1070,101 @@
           "line": 6.5,
           "over": 1.44,
           "under": 2.45
+        }
+      ]
+    },
+    {
+      "eventId": "1028174520",
+      "title": "Man City (GanGsta_Panda) - B Dortmund (SpeciAL)",
+      "homeTeam": "Man City (GanGsta_Panda)",
+      "awayTeam": "B Dortmund (SpeciAL)",
+      "startTime": "2026-06-29T03:20:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.7,
+        "draw": 5.3,
+        "away": 1.73
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 4.4
+        },
+        {
+          "line": 7.5,
+          "over": 4.75,
+          "under": 1.12
+        },
+        {
+          "line": 6.5,
+          "over": 2.8,
+          "under": 1.34
+        },
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.63
+        },
+        {
+          "line": 5.5,
+          "over": 1.93,
+          "under": 1.75
+        },
+        {
+          "line": 8.5,
+          "over": 8.5,
+          "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028174524",
+      "title": "Juventus (maggett0) - Arsenal (Gaga)",
+      "homeTeam": "Juventus (maggett0)",
+      "awayTeam": "Arsenal (Gaga)",
+      "startTime": "2026-06-29T03:20:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.23,
+        "draw": 4.6,
+        "away": 2.07
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.15,
+          "under": 4.25
+        },
+        {
+          "line": 8.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 2.5,
+          "over": 1.01,
+          "under": 9.5
+        },
+        {
+          "line": 7.5,
+          "over": 5,
+          "under": 1.11
+        },
+        {
+          "line": 4.5,
+          "over": 1.41,
+          "under": 2.55
+        },
+        {
+          "line": 5.5,
+          "over": 1.97,
+          "under": 1.71
+        },
+        {
+          "line": 6.5,
+          "over": 2.9,
+          "under": 1.3
         }
       ]
     },
