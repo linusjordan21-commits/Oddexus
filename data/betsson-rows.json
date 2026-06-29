@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T23:00:54.920Z",
+  "updatedAt": "2026-06-29T23:11:21.478Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -15,9 +15,9 @@
       "awayTeam": "La Serena",
       "startTime": "2026-07-01T22:00:00.000Z",
       "odds": {
-        "home": 1.72,
-        "draw": 3.5,
-        "away": 4.6
+        "home": 1.92,
+        "draw": 3.35,
+        "away": 3.8
       },
       "foundBy": "Cobresal"
     },
@@ -33,6 +33,19 @@
         "away": 3.55
       },
       "foundBy": "KTP"
+    },
+    {
+      "eventId": "f-zVyuMCyHPUeUEjsvZlIe4w",
+      "title": "Loudoun United Fc - Sporting Jax",
+      "homeTeam": "Loudoun United Fc",
+      "awayTeam": "Sporting Jax",
+      "startTime": "2026-07-03T23:00:00.000Z",
+      "odds": {
+        "home": 1.62,
+        "draw": 4.1,
+        "away": 4.6
+      },
+      "foundBy": "Loudoun United"
     },
     {
       "eventId": "f-Z_QYQXs9nUWFbFGC6vNDbw",
@@ -191,15 +204,15 @@
       "foundBy": "USA"
     },
     {
-      "eventId": "f-06RkfTbL_UGYFCxc4cANEQ",
-      "title": "Mexico (Walnut) - South Africa (Sarafi)",
-      "homeTeam": "Mexico (Walnut)",
-      "awayTeam": "South Africa (Sarafi)",
-      "startTime": "2026-06-29T22:45:00.000Z",
+      "eventId": "f-hoyx2N4K9UCFdGUOPGkAZw",
+      "title": "Spain (Cyclop) - Mexico (Walnut)",
+      "homeTeam": "Spain (Cyclop)",
+      "awayTeam": "Mexico (Walnut)",
+      "startTime": "2026-06-29T23:00:00.000Z",
       "odds": {
-        "home": 1.03,
-        "draw": 7,
-        "away": 100
+        "home": 2.85,
+        "draw": 2.35,
+        "away": 2.9
       },
       "foundBy": "Mexico"
     },
@@ -548,9 +561,9 @@
       "awayTeam": "Coquimbo",
       "startTime": "2026-07-01T22:00:00.000Z",
       "odds": {
-        "home": 3.4,
-        "draw": 3.3,
-        "away": 2.08
+        "home": 3.15,
+        "draw": 3.2,
+        "away": 2.22
       },
       "foundBy": "Deportes Limache"
     },
@@ -594,28 +607,15 @@
       "foundBy": "Shelbourne"
     },
     {
-      "eventId": "f-bCoCmR2r4Ey1JtyT905apA",
-      "title": "Spain (Cyclop) - Uruguay (Hawk)",
-      "homeTeam": "Spain (Cyclop)",
-      "awayTeam": "Uruguay (Hawk)",
-      "startTime": "2026-06-29T22:45:00.000Z",
-      "odds": {
-        "home": 100,
-        "draw": 6.5,
-        "away": 1.05
-      },
-      "foundBy": "Spain"
-    },
-    {
       "eventId": "f-UxO22ka_7kymzqW0Js9XzQ",
       "title": "Kongsvinger - Sogndal IL",
       "homeTeam": "Kongsvinger",
       "awayTeam": "Sogndal IL",
       "startTime": "2026-07-03T16:00:00.000Z",
       "odds": {
-        "home": 1.65,
+        "home": 1.68,
         "draw": 4.4,
-        "away": 4.4
+        "away": 4.3
       },
       "foundBy": "Kongsvinger"
     },
@@ -639,33 +639,280 @@
       "awayTeam": "Lions FC",
       "startTime": "2026-06-30T09:30:00.000Z",
       "odds": {
-        "home": 1.6,
-        "draw": 3.9,
-        "away": 4.6
+        "home": 1.62,
+        "draw": 3.85,
+        "away": 4.4
       },
       "foundBy": "Gold Coast Knights"
+    },
+    {
+      "eventId": "f-JtPEGyxVSEmd_igMdTCAYw",
+      "title": "IK Sirius FK - Mjällby AIF",
+      "homeTeam": "IK Sirius FK",
+      "awayTeam": "Mjällby AIF",
+      "startTime": "2026-07-03T17:00:00.000Z",
+      "odds": {
+        "home": 1.73,
+        "draw": 3.93,
+        "away": 4.66
+      },
+      "foundBy": "Sirius"
+    },
+    {
+      "eventId": "f-d0kLH16qg0q97sB6BETFdA",
+      "title": "Cobh Ramblers - Cork City",
+      "homeTeam": "Cobh Ramblers",
+      "awayTeam": "Cork City",
+      "startTime": "2026-07-03T18:45:00.000Z",
+      "odds": {
+        "home": 4.5,
+        "draw": 3.7,
+        "away": 1.72
+      },
+      "foundBy": "Cobh Ramblers"
+    },
+    {
+      "eventId": "f-Hkj_EocYokKV-SmnTnbNyA",
+      "title": "Unión Española - Colo Colo",
+      "homeTeam": "Unión Española",
+      "awayTeam": "Colo Colo",
+      "startTime": "2026-06-29T23:30:00.000Z",
+      "odds": {
+        "home": 5.2,
+        "draw": 4.2,
+        "away": 1.55
+      },
+      "foundBy": "Union Espanola"
+    },
+    {
+      "eventId": "f-BrWeMdYR1k6w0uj_DYJ7Ug",
+      "title": "Netherlands (Eric) - Brazil (Liam)",
+      "homeTeam": "Netherlands (Eric)",
+      "awayTeam": "Brazil (Liam)",
+      "startTime": "2026-06-29T23:00:00.000Z",
+      "odds": {
+        "home": 1.01,
+        "draw": 12,
+        "away": 50
+      },
+      "foundBy": "Netherlands"
+    },
+    {
+      "eventId": "f-Up6aeRNMK0ievVLm2cHqsQ",
+      "title": "Netherlands (Eric) - Paraguay (Adriano)",
+      "homeTeam": "Netherlands (Eric)",
+      "awayTeam": "Paraguay (Adriano)",
+      "startTime": "2026-06-29T23:15:00.000Z",
+      "odds": {
+        "home": 1.72,
+        "draw": 4.9,
+        "away": 2.95
+      },
+      "foundBy": "Netherlands"
+    },
+    {
+      "eventId": "f-wn4HCipuGk-ID3VEPLBK-Q",
+      "title": "Drogheda United - FC Bohemians",
+      "homeTeam": "Drogheda United",
+      "awayTeam": "FC Bohemians",
+      "startTime": "2026-07-03T18:45:00.000Z",
+      "odds": {
+        "home": 4.6,
+        "draw": 3.65,
+        "away": 1.72
+      },
+      "foundBy": "Drogheda United"
+    },
+    {
+      "eventId": "f-Wg0ssWuonUyBKajjvQQlFg",
+      "title": "FK Liepāja - Ogre United",
+      "homeTeam": "FK Liepāja",
+      "awayTeam": "Ogre United",
+      "startTime": "2026-06-30T16:00:00.000Z",
+      "odds": {
+        "home": 1.3,
+        "draw": 4.75,
+        "away": 10
+      },
+      "foundBy": "Liepaja"
+    },
+    {
+      "eventId": "f-mgQMV3Rv20mGbbrWrUwU7g",
+      "title": "BFC Daugavpils - FK Liepāja",
+      "homeTeam": "BFC Daugavpils",
+      "awayTeam": "FK Liepāja",
+      "startTime": "2026-07-04T13:00:00.000Z",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.6,
+        "away": 2.25
+      },
+      "foundBy": "Liepaja"
+    },
+    {
+      "eventId": "f-WqLR99xCC0K70Pe-y6IIPA",
+      "title": "JFC Viola - FK Liepāja-2/LFS",
+      "homeTeam": "JFC Viola",
+      "awayTeam": "FK Liepāja-2/LFS",
+      "startTime": "2026-07-04T15:00:00.000Z",
+      "odds": {
+        "home": 10,
+        "draw": 7,
+        "away": 1.15
+      },
+      "foundBy": "Liepaja"
+    },
+    {
+      "eventId": "f-WNYcpNFxO0uC-wkJyzsafQ",
+      "title": "Birmingham Legion FC - Detroit City FC",
+      "homeTeam": "Birmingham Legion FC",
+      "awayTeam": "Detroit City FC",
+      "startTime": "2026-07-03T00:00:00.000Z",
+      "odds": {
+        "home": 2.7,
+        "draw": 3.45,
+        "away": 2.38
+      },
+      "foundBy": "Birmingham Legion"
+    },
+    {
+      "eventId": "f-nUcFPGQMwUiPYSfKmHRjkw",
+      "title": "Yunnan Yukun - Henan Songshan Longmen",
+      "homeTeam": "Yunnan Yukun",
+      "awayTeam": "Henan Songshan Longmen",
+      "startTime": "2026-07-03T12:00:00.000Z",
+      "odds": {
+        "home": 2.42,
+        "draw": 3.5,
+        "away": 2.7
+      },
+      "foundBy": "Yunnan Yukun"
+    },
+    {
+      "eventId": "f-5pUACNg2oE2x4tVP5xvoEg",
+      "title": "SER Caxias do Sul - Anápolis",
+      "homeTeam": "SER Caxias do Sul",
+      "awayTeam": "Anápolis",
+      "startTime": "2026-06-30T22:30:00.000Z",
+      "odds": {
+        "home": 1.52,
+        "draw": 3.55,
+        "away": 6.2
+      },
+      "foundBy": "Caxias"
+    },
+    {
+      "eventId": "f-fPIDKin70ECk0CZOVgp5IQ",
+      "title": "Volta Redonda - Amazonas",
+      "homeTeam": "Volta Redonda",
+      "awayTeam": "Amazonas",
+      "startTime": "2026-06-30T23:30:00.000Z",
+      "odds": {
+        "home": 1.95,
+        "draw": 2.75,
+        "away": 4.5
+      },
+      "foundBy": "Volta Redonda"
+    },
+    {
+      "eventId": "f-o5UrkYtBWEKlmIsIQpysMw",
+      "title": "RFS - BFC Daugavpils",
+      "homeTeam": "RFS",
+      "awayTeam": "BFC Daugavpils",
+      "startTime": "2026-06-30T15:00:00.000Z",
+      "odds": {
+        "home": 1.22,
+        "draw": 5,
+        "away": 15
+      },
+      "foundBy": "RFS"
+    },
+    {
+      "eventId": "f-UGT5z4iKSEyLm2-pdhqpYg",
+      "title": "RFS - FK Auda",
+      "homeTeam": "RFS",
+      "awayTeam": "FK Auda",
+      "startTime": "2026-07-04T15:00:00.000Z",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.2,
+        "away": 6.5
+      },
+      "foundBy": "RFS"
+    },
+    {
+      "eventId": "f-ZW3QsGAvCkKVLv-VO9iUvg",
+      "title": "Derry City - Waterford",
+      "homeTeam": "Derry City",
+      "awayTeam": "Waterford",
+      "startTime": "2026-07-03T18:45:00.000Z",
+      "odds": {
+        "home": 1.45,
+        "draw": 4.4,
+        "away": 6.4
+      },
+      "foundBy": "Derry City"
+    },
+    {
+      "eventId": "f-dH1BqsMWlEWkROqpzexqZA",
+      "title": "Logan Lightning - Redlands United FC",
+      "homeTeam": "Logan Lightning",
+      "awayTeam": "Redlands United FC",
+      "startTime": "2026-06-30T10:30:00.000Z",
+      "odds": {
+        "home": 2.48,
+        "draw": 3.8,
+        "away": 2.32
+      },
+      "foundBy": "Logan Lightning"
+    },
+    {
+      "eventId": "f-rUGiPZJum0WZ0beDzEhU8Q",
+      "title": "CD Universidad Catolica - Everton",
+      "homeTeam": "CD Universidad Catolica",
+      "awayTeam": "Everton",
+      "startTime": "2026-07-01T00:30:00.000Z",
+      "odds": {
+        "home": 1.58,
+        "draw": 4.1,
+        "away": 4.9
+      },
+      "foundBy": "Universidad Catolica"
+    },
+    {
+      "eventId": "f-PXP8XRHYN0yS2qhVSs9tgA",
+      "title": "Universidad Católica - Mushuc Runa SC",
+      "homeTeam": "Universidad Católica",
+      "awayTeam": "Mushuc Runa SC",
+      "startTime": "2026-07-05T20:00:00.000Z",
+      "odds": {
+        "home": 1.49,
+        "draw": 4.2,
+        "away": 5.8
+      },
+      "foundBy": "Universidad Catolica"
     }
   ],
   "eventsBasket": [],
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 205647,
+    "runMs": 210684,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-29T23:00:54.920Z"
+    "decidedAt": "2026-06-29T23:11:21.478Z"
   },
   "_linesDiag": {
     "ran": true,
     "withTotals": 0,
     "withAh": 0,
     "nearest": 30,
-    "ms": 24
+    "ms": 23
   },
   "_linesProbe": {
     "hasLinesPage": true,
     "evStatus": 200,
-    "nSummaries": 20,
+    "nSummaries": 76,
     "sumKeys": [
       "MW3W",
       "MTG2W25",
@@ -676,19 +923,19 @@
       "BTTS",
       "DC",
       "MW2W",
+      "HNB",
+      "ANB",
       "MW3W1H",
+      "MW3W2H",
+      "HTFTFB",
       "FTCSALT",
+      "MAHCP",
       "HTG",
       "ATG",
-      "CS1H10W",
-      "1HDC",
-      "ENOGM5G",
-      "OENG",
-      "HTOENG",
-      "m-f-qksyGjfoKECHEnevUV_IAw-2HOE",
-      "gi-1462946189"
+      "BTTS1H",
+      "BTTS2H"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-qksyGjfoKECHEnevUV_IAw\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-Hkj_EocYokKV-SmnTnbNyA\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 403,
     "gid": "MTG2W",
     "accBodyHead": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content",
@@ -703,17 +950,57 @@
       "BTTS|Båda lagen gör mål",
       "DC|Dubbelchans",
       "MW2W|Insatsen tillbaka vid oavgjort",
+      "HNB|Unión Española – inget spel",
+      "ANB|Vinst för Colo Colo – inget spel",
       "MW3W1H|Halvtidsresultat",
+      "MW3W2H|2:a halvlek resultat",
+      "HTFTFB|Halvtid/Fulltid",
       "FTCSALT|Rätt resultat",
-      "HTG|Totalt antal mål för Sunshine Coast Wanderers FC",
-      "ATG|Totalt antal mål för Olympic FC Brisbane",
+      "MAHCP|Asiatiska handikapp",
+      "HTG|Totalt antal mål för Unión Española",
+      "ATG|Totalt antal mål för Colo Colo",
+      "BTTS1H|1:a halvlek - Båda lagen gör mål",
+      "BTTS2H|2:a halvlek - Båda lagen gör mål",
       "CS1H10W|1:a halvlek - Korrekt resultat (max 4 mål)",
+      "CS2H10W|2:a halvlek - Rätt resultat (10-vägs)",
       "1HDC|1:a halvlek - Dubbelchans",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-DCH-2|2:a Halvlek - Dubbelchans",
+      "HTDNB|Oavgjort efter första halvlek – inget spel",
+      "HTHCPWT|Första halvlek – handikapp (3-vägs)",
+      "HTAHCP2W|Första halvlekens handikapp",
+      "2HDNB|2:a halvlek - Pengarna tillbaka vid oavgjort",
+      "2HHCPWT|2:a halvlek - 3-vägshandikapp",
+      "2HHCP|2:a halvlek -vägshandikapp",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-MWOU-3.5|Resultat + Antal mål 3.5",
+      "MWBTTS|Resultat + Båda lagen gör mål",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-BTTSOU-2.5|Båda lagen gör mål + Totalt antal mål 2.5",
+      "DCBTTS|Dubbel chans + båda lag gör mål",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-DCATGOU-1.5|Dubbelchans + Antal mål 1.5",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-DCATGOU-2.5|Dubbelchans + Antal mål 2.5",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-DCATGOU-3.5|Dubbelchans + Antal mål 3.5",
+      "m-f-Hkj_EocYokKV-SmnTnbNyA-DCATGOU-4.5|Dubbelchans + Antal mål 4.5",
+      "ATTWIN|Colo Colo vinner",
+      "HTTWIN|Unión Española vinner",
+      "ANYTTW|Ett av lagen vinner",
+      "HWTN|Unión Española vinner och håller nollan",
+      "AWTN|Colo Colo vinner och håller nollan",
+      "HTCS|Unión Española håller nollan",
+      "ATCS|Colo Colo håller nollan",
+      "HSH|Halvlek med flest mål",
+      "HHSH|Halvlek med flest poäng för Unión Española",
+      "AHSH|Halvlek med flest poäng för Colo Colo",
+      "WTTS|Lag att göra mål i matchen",
+      "HTSBH|Unión Española gör mål i båda halvlekarna",
+      "ATSBH|Colo Colo gör mål i båda halvlekarna",
       "ENOGM5G|Exakt antal mål (max 5)",
+      "MGOALS|Flera mål",
+      "HTMGOALS|Flera mål för Unión Española",
+      "ATMGOALS|Flera mål för Colo Colo",
+      "MSCORES|Kombinerat rätt resultat",
+      "HTEXNOG|Exakt antal mål för Unión Española",
+      "ATEXNOG|Rätt antal mål för Colo Colo",
       "OENG|Totalt antal mål - udda eller jämnt",
-      "HTOENG|1:a halvlek - Totalt antal mål - udda eller jämnt",
-      "m-f-qksyGjfoKECHEnevUV_IAw-2HOE|2:a halvlek - Udda/jämnt",
-      "gi-1462946189|Pre-Built Combinations"
+      "HTOEG|Totalt antal mål för Unión Española – udda/jämnt"
     ],
     "cornerKeys": []
   },
