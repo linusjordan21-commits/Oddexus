@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:43:46.871Z",
+  "updatedAt": "2026-06-29T19:47:48.583Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 252,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 254,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 20729,
+  "durationMs": 21627,
   "events": [
     {
       "eventId": "1028072415",
@@ -993,7 +993,7 @@
       "league": "Úrvalsdeild",
       "odds": {
         "home": 12.5,
-        "draw": 7.5,
+        "draw": 7,
         "away": 1.12
       }
     },
@@ -1005,61 +1005,9 @@
       "startTime": "2026-06-29T19:16:00Z",
       "league": "1. Deild",
       "odds": {
-        "home": 1.07,
-        "draw": 9.5,
-        "away": 17
-      }
-    },
-    {
-      "eventId": "1028190049",
-      "title": "Irak (drksd3) - Senegal (Sxitted)",
-      "homeTeam": "Irak (drksd3)",
-      "awayTeam": "Senegal (Sxitted)",
-      "startTime": "2026-06-29T19:36:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 9.5,
-        "draw": 7.5,
-        "away": 1.15
-      }
-    },
-    {
-      "eventId": "1028185619",
-      "title": "Lazio (Jur_Kr) - Lecce (djamik)",
-      "homeTeam": "Lazio (Jur_Kr)",
-      "awayTeam": "Lecce (djamik)",
-      "startTime": "2026-06-29T19:36:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 9.5,
-        "draw": 6,
-        "away": 1.19
-      }
-    },
-    {
-      "eventId": "1028185620",
-      "title": "Inter (Voron) - Juventus (TOMMY)",
-      "homeTeam": "Inter (Voron)",
-      "awayTeam": "Juventus (TOMMY)",
-      "startTime": "2026-06-29T19:36:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.03,
-        "draw": 15,
-        "away": 29
-      }
-    },
-    {
-      "eventId": "1028185642",
-      "title": "Nordirland (Shark) - Norge (Mqrkkkkkk)",
-      "homeTeam": "Nordirland (Shark)",
-      "awayTeam": "Norge (Mqrkkkkkk)",
-      "startTime": "2026-06-29T19:36:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 1.19,
-        "draw": 6.75,
-        "away": 8
+        "home": 1.06,
+        "draw": 10.5,
+        "away": 19
       }
     },
     {
@@ -1070,9 +1018,9 @@
       "startTime": "2026-06-29T19:38:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.44,
-        "draw": 6,
-        "away": 3.85
+        "home": 1.03,
+        "draw": 14,
+        "away": 25
       }
     },
     {
@@ -1083,9 +1031,9 @@
       "startTime": "2026-06-29T19:38:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.33,
-        "draw": 3.6,
-        "away": 2.25
+        "home": 1.24,
+        "draw": 5.1,
+        "away": 9
       }
     },
     {
@@ -1096,9 +1044,9 @@
       "startTime": "2026-06-29T19:40:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.58,
-        "draw": 4.1,
-        "away": 3.8
+        "home": 1.47,
+        "draw": 3.4,
+        "away": 6.75
       }
     },
     {
@@ -1109,9 +1057,9 @@
       "startTime": "2026-06-29T19:40:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.56,
-        "draw": 4.5,
-        "away": 3.6
+        "home": 1.3,
+        "draw": 4.2,
+        "away": 9
       }
     },
     {
@@ -1122,9 +1070,9 @@
       "startTime": "2026-06-29T19:43:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.68,
-        "draw": 4.1,
-        "away": 3.25
+        "home": 1.07,
+        "draw": 9.5,
+        "away": 21
       }
     },
     {
@@ -1135,9 +1083,9 @@
       "startTime": "2026-06-29T19:43:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.23,
-        "draw": 4.9,
-        "away": 2.04
+        "home": 2.35,
+        "draw": 3.8,
+        "away": 2.17
       }
     },
     {
@@ -1148,37 +1096,10 @@
       "startTime": "2026-06-29T19:46:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.84,
-        "draw": 4.6,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 2.9,
-          "under": 1.3
-        },
-        {
-          "line": 2.5,
-          "over": 1.08,
-          "under": 5.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.35,
-          "under": 2.75
-        },
-        {
-          "line": 4.5,
-          "over": 1.85,
-          "under": 1.81
-        },
-        {
-          "line": 6.5,
-          "over": 5,
-          "under": 1.11
-        }
-      ]
+        "home": 1.87,
+        "draw": 4.5,
+        "away": 2.55
+      }
     },
     {
       "eventId": "1028186280",
@@ -1188,42 +1109,10 @@
       "startTime": "2026-06-29T19:46:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.55,
-        "draw": 4.5,
+        "home": 2.5,
+        "draw": 4.6,
         "away": 1.89
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 5.5,
-          "over": 1.6,
-          "under": 2.12
-        },
-        {
-          "line": 6.5,
-          "over": 2.23,
-          "under": 1.53
-        },
-        {
-          "line": 8.5,
-          "over": 5.75,
-          "under": 1.07
-        },
-        {
-          "line": 7.5,
-          "over": 3.45,
-          "under": 1.22
-        },
-        {
-          "line": 4.5,
-          "over": 1.23,
-          "under": 3.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1028193852",
@@ -2266,6 +2155,101 @@
       ]
     },
     {
+      "eventId": "1028186313",
+      "title": "Kroatien (Kavviro) - Skottland (volvo)",
+      "homeTeam": "Kroatien (Kavviro)",
+      "awayTeam": "Skottland (volvo)",
+      "startTime": "2026-06-29T20:19:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.95,
+        "away": 1.72
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.06,
+          "under": 7.5
+        },
+        {
+          "line": 4.5,
+          "over": 2.6,
+          "under": 1.43
+        },
+        {
+          "line": 5.5,
+          "over": 4.6,
+          "under": 1.16
+        },
+        {
+          "line": 2.5,
+          "over": 1.28,
+          "under": 3.35
+        },
+        {
+          "line": 3.5,
+          "over": 1.73,
+          "under": 1.96
+        },
+        {
+          "line": 6.5,
+          "over": 9,
+          "under": 1.04
+        }
+      ]
+    },
+    {
+      "eventId": "1028186336",
+      "title": "Sverige (Nightxx) - Czechia (tohi4)",
+      "homeTeam": "Sverige (Nightxx)",
+      "awayTeam": "Czechia (tohi4)",
+      "startTime": "2026-06-29T20:19:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.92,
+        "draw": 3.8,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 8.5
+        },
+        {
+          "line": 3.5,
+          "over": 1.2,
+          "under": 4.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.5,
+          "under": 2.38
+        },
+        {
+          "line": 6.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 8.5,
+          "over": 10.5,
+          "under": 1.03
+        },
+        {
+          "line": 7.5,
+          "over": 5.4,
+          "under": 1.12
+        },
+        {
+          "line": 5.5,
+          "over": 2.04,
+          "under": 1.67
+        }
+      ]
+    },
+    {
       "eventId": "1028185666",
       "title": "Algeriet (Jackson) - Jordanien (OP1OT)",
       "homeTeam": "Algeriet (Jackson)",
@@ -2488,8 +2472,8 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.38,
-        "draw": 5,
+        "home": 1.37,
+        "draw": 5.25,
         "away": 10
       },
       "totals": [
@@ -2521,14 +2505,14 @@
         {
           "line": 2.5,
           "over": 1.68,
-          "under": 2.2
+          "under": 2.23
         }
       ],
       "ah": [
         {
           "line": -1.5,
-          "home": 1.98,
-          "away": 1.81
+          "home": 1.97,
+          "away": 1.83
         },
         {
           "line": -3.5,
@@ -2538,12 +2522,12 @@
         {
           "line": -2.25,
           "home": 3.15,
-          "away": 1.35
+          "away": 1.36
         },
         {
           "line": -1.75,
-          "home": 2.28,
-          "away": 1.62
+          "home": 2.25,
+          "away": 1.64
         },
         {
           "line": -2.75,
@@ -2557,28 +2541,28 @@
         },
         {
           "line": -0.75,
-          "home": 1.42,
-          "away": 2.85
+          "home": 1.41,
+          "away": 2.9
         },
         {
           "line": -1.25,
-          "home": 1.77,
-          "away": 2.05
+          "home": 1.75,
+          "away": 2.08
         },
         {
           "line": -2.5,
-          "home": 3.55,
+          "home": 3.5,
           "away": 1.3
         },
         {
           "line": -0.5,
-          "home": 1.35,
-          "away": 3.2
+          "home": 1.34,
+          "away": 3.25
         },
         {
           "line": -1,
-          "home": 1.54,
-          "away": 2.48
+          "home": 1.52,
+          "away": 2.55
         },
         {
           "line": -3.25,
@@ -2588,7 +2572,7 @@
         {
           "line": -2,
           "home": 2.8,
-          "away": 1.43
+          "away": 1.44
         }
       ],
       "corners": {
@@ -11100,6 +11084,97 @@
       ]
     },
     {
+      "eventId": "1026293765",
+      "title": "Jeonbuk Motors - Gangwon",
+      "homeTeam": "Jeonbuk Motors",
+      "awayTeam": "Gangwon",
+      "startTime": "2026-07-04T10:30:00Z",
+      "league": "K-League 1",
+      "odds": {
+        "home": 2.16,
+        "draw": 2.95,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.41,
+          "under": 2.55
+        },
+        {
+          "line": 3.5,
+          "over": 4.25,
+          "under": 1.15
+        },
+        {
+          "line": 0.5,
+          "over": 1.06,
+          "under": 6.25
+        },
+        {
+          "line": 2.5,
+          "over": 2.32,
+          "under": 1.5
+        }
+      ],
+      "ah": [
+        {
+          "line": -1.5,
+          "home": 4.3,
+          "away": 1.17
+        },
+        {
+          "line": -0.5,
+          "home": 2.14,
+          "away": 1.61
+        },
+        {
+          "line": -1.25,
+          "home": 3.9,
+          "away": 1.21
+        },
+        {
+          "line": 0.5,
+          "home": 1.3,
+          "away": 3.1
+        },
+        {
+          "line": -1,
+          "home": 3.45,
+          "away": 1.26
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 7.5,
+            "over": 1.5,
+            "under": 2.35
+          },
+          {
+            "line": 6.5,
+            "over": 1.28,
+            "under": 3.25
+          },
+          {
+            "line": 9.5,
+            "over": 2.4,
+            "under": 1.49
+          },
+          {
+            "line": 8.5,
+            "over": 1.86,
+            "under": 1.82
+          },
+          {
+            "line": 10.5,
+            "over": 3.2,
+            "under": 1.29
+          }
+        ]
+      }
+    },
+    {
       "eventId": "1026293778",
       "title": "Anyang FC - Pohang Steelers",
       "homeTeam": "Anyang FC",
@@ -15916,8 +15991,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.25,
-        "away": 1.33
+        "home": 2.4,
+        "away": 1.56
       }
     },
     {
@@ -15929,8 +16004,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.9,
-        "away": 1.25
+        "home": 4.5,
+        "away": 1.19
       }
     },
     {
@@ -15942,8 +16017,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.06,
-        "away": 8.5
+        "home": 1.03,
+        "away": 12.5
       }
     },
     {
@@ -15955,8 +16030,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.21,
-        "away": 4.35
+        "home": 1.23,
+        "away": 4.1
       }
     },
     {
@@ -16488,8 +16563,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.54,
-        "away": 2.48
+        "home": 1.5,
+        "away": 2.6
       }
     },
     {
