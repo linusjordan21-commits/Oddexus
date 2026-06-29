@@ -14053,7 +14053,7 @@ function rebuildValuebetsResponse(
  * fortfarande är inom färskhetsgaten (3 min). Är den äldre byggs svaret om
  * (gaten ger då 0 valuebets — snabb early-return), så stale +EV kan aldrig visas.
  */
-async function getValuebetsResponseBodyCached(hoursWindow: number): Promise<string> {
+async function getValuebetsResponseBodyCached(hoursWindow: number, cacheOnly = false): Promise<string> {
   // STABILITETS-GATE (boot-OOM-diagnos): medan tung uppvärmning är av bygger vi
   // ALDRIG om valuebets — rebuildValuebetsResponse sprängde V8-heapen (>1,5 GB
   // ensam) och dödade processen (134) vid varje request/warm. Servera RAM-/disk-
@@ -14085,8 +14085,22 @@ async function getValuebetsResponseBodyCached(hoursWindow: number): Promise<stri
     if (ageMs !== null && ageMs <= PINNACLE_FRESHNESS_THRESHOLD_MS) {
       return cached.body;
     }
+    // Pinnacle-snapshot för gammal. cacheOnly (persist/server-till-server): ALDRIG
+    // synkron rebuild — den är >90s + OOM-benägen → klienten (persist) timeout:ar.
+    // Pinnacle stale → korrekt 0 valuebets (samma som färskhetsgaten ger, ingen
+    // falsk +EV), och vi bygger om i BAKGRUNDEN så nästa varv blir varmt.
+    if (cacheOnly) {
+      void rebuildValuebetsResponse(hoursWindow, inputKey, probeMatches, pinnacleMeta).catch(() => {});
+      return JSON.stringify({ updatedAt: new Date().toISOString(), valueBets: [], note: "cacheOnly: pinnacle-snapshot stale (>3min) → 0 valuebets, rebuild i bakgrunden" });
+    }
     // Pinnacle-snapshot för gammal → bygg om och vänta in (gaten → 0 valuebets).
     return rebuildValuebetsResponse(hoursWindow, inputKey, probeMatches, pinnacleMeta);
+  }
+  // Ingen cache. cacheOnly → trigga bakgrunds-rebuild + returnera tomt DIREKT
+  // (ingen blockerande kallstarts-rebuild för persist).
+  if (cacheOnly) {
+    void rebuildValuebetsResponse(hoursWindow, inputKey, probeMatches, pinnacleMeta).catch(() => {});
+    return JSON.stringify({ updatedAt: new Date().toISOString(), valueBets: [], note: "cacheOnly: cache kall → rebuild i bakgrunden" });
   }
   return rebuildValuebetsResponse(hoursWindow, inputKey, probeMatches, pinnacleMeta);
 }
@@ -14365,8 +14379,11 @@ async function valuebetsDevApi(req: IncomingMessage, res: ServerResponse, next: 
     const ALLOWED_HOURS = [24, 48, 72] as const;
     const hoursRaw = Number(params.get("hours"));
     const hoursWindow = ALLOWED_HOURS.includes(hoursRaw as 24 | 48 | 72) ? hoursRaw : 24;
+    // cacheOnly=1: server-till-server (persist-signals) — servera senaste cache utan
+    // synkron tung rebuild (som är >90s + OOM-benägen → persist timeout:ar). Se getValuebetsResponseBodyCached.
+    const cacheOnly = params.get("cacheOnly") === "1";
 
-    const body = await getValuebetsResponseBodyCached(hoursWindow);
+    const body = await getValuebetsResponseBodyCached(hoursWindow, cacheOnly);
     res.statusCode = 200;
     res.end(body);
   } catch (error) {

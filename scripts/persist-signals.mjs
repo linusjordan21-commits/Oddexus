@@ -32,7 +32,9 @@ const HOURS = process.env.VALUEBETS_HOURS || "24";
 const INTERNAL_TOKEN = (process.env.VALUEBETS_INTERNAL_TOKEN || process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY || "").trim();
 
 async function fetchValuebets() {
-  const url = `${BASE}/api/valuebets?hours=${HOURS}`;
+  // cacheOnly=1: läs serverns warmade cache utan att trigga en synkron tung rebuild
+  // (rebuild >90s + OOM → timeout). Pinnacle stale → servern ger 0 valuebets (korrekt).
+  const url = `${BASE}/api/valuebets?hours=${HOURS}&cacheOnly=1`;
   console.log(`[persist-debug] fetch ${url} (token ${INTERNAL_TOKEN ? "satt" : "SAKNAS"})`);
   const controller = new AbortController();
   const t = setTimeout(() => controller.abort(), 90000);
