@@ -94,7 +94,12 @@ function extractInPage(diagnose) {
    */
   function parseTimeOrLive(rowText) {
     const t = (rowText || "").trim();
-    const md = /^([A-Za-z]{3})\s+(\d{1,2})\s+(\d{1,2}):(\d{2})\b/.exec(t);
+    // SBOBET klistrar ibland ihop dag+tid utan mellanslag ("Jun 3001:00" = Jun 30 01:00)
+    // när radens innerText slår ihop flera matcher. \s* (ej \s+) mellan dag och tid + HH
+    // som exakt \d{2} (zero-padded) tvingar regexen att backtracka dagen korrekt även för
+    // 1-siffriga dagar ("Jun 301:00" → dag=3, 01:00). Coverage-audit 2026-06-29: detta var
+    // 36% null startTime som bröt dedup + Pinnacle-matchning.
+    const md = /^([A-Za-z]{3})\s+(\d{1,2})\s*(\d{2}):(\d{2})/.exec(t);
     if (md && MONTHS[md[1]] != null) {
       const now = new Date();
       let year = now.getUTCFullYear();
@@ -155,11 +160,17 @@ function extractInPage(diagnose) {
   const nullTimeSamples = [];
   const teamSamples = [];
   let ahMissingOddsM = 0;
+  let esportsSkipped = 0;
+  // Esoccer-markör: "e-"-prefix ELLER versal-handle i parentes ("(VAPOR)"). "(n)" = 1 gemen
+  // (neutral plan) påverkas ej. Real-lag med 3+ versaler i parentes är extremt sällsynt här.
+  const ESPORTS_RE = /^e-|\([A-Z]{3,}\)/;
   for (const g of groups.values()) {
     const homeA = g.anchor["1"] || g.anchor["h"];
     const awayA = g.anchor["2"] || g.anchor["a"];
     const homeTeam = teamOf(homeA);
     const awayTeam = teamOf(awayA);
+    // ESPORTS-FILTER: esoccer ("e-Morocco (DEZZY)") matchar aldrig Pinnacle → ren brus, skippa.
+    if (ESPORTS_RE.test(homeTeam || "") || ESPORTS_RE.test(awayTeam || "")) { esportsSkipped++; continue; }
     const anyA = homeA || awayA || Object.values(g.anchor)[0];
     const row = anyA ? climbToRow(anyA) : null;
     const rowText = (row?.innerText || "").replace(/\s+/g, " ").trim();
@@ -236,7 +247,7 @@ function extractInPage(diagnose) {
     });
   }
   const nullTimeTotal = rows.length ? new Set(rows.filter((r) => !r.isLive && !r.startTime).map((r) => r.oddsId)).size : 0;
-  return { rows: prematch, liveSkipped: rows.length - prematch.length, diag, anchorCount: anchors.length, marketHist, totalsSamples, nullTimeSamples, teamSamples, ahMissingOddsM, nullTimeTotal };
+  return { rows: prematch, liveSkipped: rows.length - prematch.length, diag, anchorCount: anchors.length, marketHist, totalsSamples, nullTimeSamples, teamSamples, ahMissingOddsM, nullTimeTotal, esportsSkipped };
 }
 
 async function scrapeUrl(context, url) {
@@ -251,7 +262,7 @@ async function scrapeUrl(context, url) {
       return { rows: [], liveSkipped: 0, diag: [], anchorCount: 0, marketHist: {}, totalsSamples: [] };
     });
     console.log(`[sbobet-action] ${url}: ${result.anchorCount} onPrice-länkar → ${result.rows.length} prematch-rå-rader (hoppade ${result.liveSkipped ?? 0} live)`);
-    console.log(`[sbobet-cov] ${url}: null-tid-grupper=${result.nullTimeTotal ?? 0} | AH utan .OddsM=${result.ahMissingOddsM ?? 0}`);
+    console.log(`[sbobet-cov] ${url}: null-tid-grupper=${result.nullTimeTotal ?? 0} | esports-skippade=${result.esportsSkipped ?? 0} | AH utan .OddsM=${result.ahMissingOddsM ?? 0}`);
     for (const s of (result.nullTimeSamples ?? []).slice(0, 8)) console.log(`[sbobet-cov] NULL-TID: ${JSON.stringify(s)}`);
     console.log(`[sbobet-cov] lag-prov: ${JSON.stringify((result.teamSamples ?? []).slice(0, 20))}`);
     if (DIAGNOSE && result.diag?.length) {
