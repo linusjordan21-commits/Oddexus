@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T10:50:27.519Z",
+  "updatedAt": "2026-06-29T10:52:57.429Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 175,
+  "uniqueEvents": 177,
   "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 19099,
+  "durationMs": 19116,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,35 @@
       "startTime": "2026-06-29T10:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.18,
-        "draw": 8.5,
-        "away": 7
+        "home": 1.03,
+        "draw": 14,
+        "away": 35
       }
     },
     {
-      "eventId": "1028183571",
-      "title": "Atleti (sane4ek8) - Barcelona (MeLToSik)",
-      "homeTeam": "Atleti (sane4ek8)",
-      "awayTeam": "Barcelona (MeLToSik)",
-      "startTime": "2026-06-29T10:42:00Z",
-      "league": "Esports Battle (2x4min)",
+      "eventId": "1028188147",
+      "title": "Paris (exhausted) - Liverpool (zoyir)",
+      "homeTeam": "Paris (exhausted)",
+      "awayTeam": "Liverpool (zoyir)",
+      "startTime": "2026-06-29T10:50:00Z",
+      "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 51,
-        "draw": 10,
-        "away": 1.04
+        "home": 3.4,
+        "draw": 5.3,
+        "away": 1.53
+      }
+    },
+    {
+      "eventId": "1028188174",
+      "title": "Atleti (Frantsuz) - Bayern Munchen (TikitakaMaster)",
+      "homeTeam": "Atleti (Frantsuz)",
+      "awayTeam": "Bayern Munchen (TikitakaMaster)",
+      "startTime": "2026-06-29T10:50:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 4.2,
+        "draw": 5,
+        "away": 1.45
       }
     },
     {
@@ -1197,6 +1210,56 @@
           "line": 5.5,
           "over": 2.33,
           "under": 1.48
+        }
+      ]
+    },
+    {
+      "eventId": "1028183576",
+      "title": "Athletic Club (Jekunam) - Atleti (sane4ek8)",
+      "homeTeam": "Athletic Club (Jekunam)",
+      "awayTeam": "Atleti (sane4ek8)",
+      "startTime": "2026-06-29T11:06:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.06,
+        "draw": 3.8,
+        "away": 2.48
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 3,
+          "under": 1.29
+        },
+        {
+          "line": 5.5,
+          "over": 1.47,
+          "under": 2.38
+        },
+        {
+          "line": 6.5,
+          "over": 2.04,
+          "under": 1.65
+        },
+        {
+          "line": 9.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 4.5,
+          "over": 1.19,
+          "under": 3.75
+        },
+        {
+          "line": 8.5,
+          "over": 5.1,
+          "under": 1.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 7.5
         }
       ]
     },
@@ -12956,8 +13019,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 1.38,
-        "away": 2.75
+        "home": 1.46,
+        "away": 2.55
       }
     },
     {
@@ -12971,6 +13034,19 @@
       "odds": {
         "home": 1.58,
         "away": 2.2
+      }
+    },
+    {
+      "eventId": "1027860472",
+      "title": "Gigantes De Carolina - Osos de Manatí",
+      "homeTeam": "Gigantes De Carolina",
+      "awayTeam": "Osos de Manatí",
+      "startTime": "2026-06-30T00:00:00Z",
+      "league": "Baloncesto Superior Nacional",
+      "sport": "basketball",
+      "odds": {
+        "home": 1.73,
+        "away": 1.98
       }
     },
     {
@@ -13015,19 +13091,6 @@
   ],
   "eventsTennis": [
     {
-      "eventId": "1028177664",
-      "title": "Simona Wirglerova - Nikola Breckova",
-      "homeTeam": "Simona Wirglerova",
-      "awayTeam": "Nikola Breckova",
-      "startTime": "2026-06-29T08:56:00Z",
-      "league": "Tjeckien",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.23,
-        "away": 3.65
-      }
-    },
-    {
       "eventId": "1028181589",
       "title": "Merel Hoedt - Dune Vaissaud",
       "homeTeam": "Merel Hoedt",
@@ -13036,8 +13099,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.55,
-        "away": 1.47
+        "home": 2.65,
+        "away": 1.43
       }
     },
     {
@@ -13049,8 +13112,21 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 2.75,
-        "away": 1.4
+        "home": 2.55,
+        "away": 1.47
+      }
+    },
+    {
+      "eventId": "1028182682",
+      "title": "Fausto Tabacco - Daniele Rapagnetta",
+      "homeTeam": "Fausto Tabacco",
+      "awayTeam": "Daniele Rapagnetta",
+      "startTime": "2026-06-29T09:17:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 31,
+        "away": 1.01
       }
     },
     {
@@ -13062,8 +13138,8 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
-        "away": 1.54
+        "home": 1.92,
+        "away": 1.8
       }
     },
     {
@@ -13075,8 +13151,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.03,
-        "away": 9.5
+        "home": 1.01,
+        "away": 12.5
       }
     },
     {
@@ -13088,8 +13164,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.36,
-        "away": 2.95
+        "home": 1.38,
+        "away": 2.8
       }
     },
     {
@@ -13101,8 +13177,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.66,
-        "away": 2.12
+        "home": 1.77,
+        "away": 1.96
       }
     },
     {
@@ -13114,8 +13190,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.01,
-        "away": 21
+        "home": 1.02,
+        "away": 20
       }
     },
     {
@@ -13127,8 +13203,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.72,
-        "away": 2.1
+        "home": 1.68,
+        "away": 2.16
       }
     },
     {
@@ -13140,8 +13216,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.4,
-        "away": 1.55
+        "home": 2.23,
+        "away": 1.64
       }
     },
     {
@@ -13153,8 +13229,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 9.5
+        "home": 1.09,
+        "away": 7
       }
     },
     {
@@ -13166,8 +13242,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.8,
-        "away": 1.42
+        "home": 3.65,
+        "away": 1.28
       }
     },
     {
@@ -13180,7 +13256,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.03,
-        "away": 13
+        "away": 12
       }
     },
     {
@@ -13192,8 +13268,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 7.5,
-        "away": 1.08
+        "home": 9,
+        "away": 1.06
       }
     },
     {
@@ -13205,8 +13281,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.55,
-        "away": 1.29
+        "home": 3.3,
+        "away": 1.32
       }
     },
     {
@@ -13219,7 +13295,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.21,
-        "away": 4.35
+        "away": 4.25
       }
     },
     {
@@ -13231,8 +13307,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 11,
-        "away": 1.04
+        "home": 8,
+        "away": 1.07
       }
     },
     {
@@ -13244,8 +13320,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.25,
-        "away": 3.7
+        "home": 1.16,
+        "away": 4.8
       }
     },
     {
@@ -13257,8 +13333,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.03,
-        "away": 14
+        "home": 1.02,
+        "away": 18
       }
     },
     {
@@ -13270,8 +13346,8 @@
       "league": "Figueira da Foz",
       "sport": "tennis",
       "odds": {
-        "home": 1.68,
-        "away": 2.1
+        "home": 1.52,
+        "away": 2.4
       }
     },
     {
@@ -13283,8 +13359,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 4.7,
-        "away": 1.18
+        "home": 3.8,
+        "away": 1.26
       }
     },
     {
@@ -13296,8 +13372,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.98,
-        "away": 1.8
+        "home": 1.85,
+        "away": 1.93
       }
     },
     {
@@ -13322,8 +13398,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 4.75,
-        "away": 1.18
+        "home": 3.85,
+        "away": 1.25
       }
     },
     {
@@ -13335,8 +13411,8 @@
       "league": "Hillcrest",
       "sport": "tennis",
       "odds": {
-        "home": 6.75,
-        "away": 1.08
+        "home": 5.8,
+        "away": 1.11
       }
     },
     {
@@ -13348,8 +13424,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 3,
-        "away": 1.34
+        "home": 2.48,
+        "away": 1.49
       }
     },
     {
@@ -13361,34 +13437,34 @@
       "league": "Aix-les-Bains",
       "sport": "tennis",
       "odds": {
-        "home": 3.9,
-        "away": 1.22
+        "home": 3.65,
+        "away": 1.25
       }
     },
     {
-      "eventId": "1028182102",
-      "title": "Oriol Roca Batalla - Daniel Masur",
-      "homeTeam": "Oriol Roca Batalla",
-      "awayTeam": "Daniel Masur",
-      "startTime": "2026-06-29T10:55:00Z",
-      "league": "Milan",
+      "eventId": "1028182890",
+      "title": "Klara Vaja - Doroteja Petrovic",
+      "homeTeam": "Klara Vaja",
+      "awayTeam": "Doroteja Petrovic",
+      "startTime": "2026-06-29T10:50:00Z",
+      "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 1.34,
-        "away": 2.95
+        "home": 1.46,
+        "away": 2.55
       }
     },
     {
-      "eventId": "1028177626",
-      "title": "Daniel Rincon - Jacopo Vasami",
-      "homeTeam": "Daniel Rincon",
-      "awayTeam": "Jacopo Vasami",
-      "startTime": "2026-06-29T10:55:00Z",
-      "league": "Milan",
+      "eventId": "1028182174",
+      "title": "Arjun Mehrotra - Allan Gatoto",
+      "homeTeam": "Arjun Mehrotra",
+      "awayTeam": "Allan Gatoto",
+      "startTime": "2026-06-29T10:52:00Z",
+      "league": "Hillcrest",
       "sport": "tennis",
       "odds": {
-        "home": 2.12,
-        "away": 1.68
+        "home": 1.61,
+        "away": 2.2
       }
     },
     {
@@ -13402,6 +13478,32 @@
       "odds": {
         "home": 3.3,
         "away": 1.27
+      }
+    },
+    {
+      "eventId": "1028182102",
+      "title": "Oriol Roca Batalla - Daniel Masur",
+      "homeTeam": "Oriol Roca Batalla",
+      "awayTeam": "Daniel Masur",
+      "startTime": "2026-06-29T11:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.34,
+        "away": 2.95
+      }
+    },
+    {
+      "eventId": "1028177626",
+      "title": "Daniel Rincon - Jacopo Vasami",
+      "homeTeam": "Daniel Rincon",
+      "awayTeam": "Jacopo Vasami",
+      "startTime": "2026-06-29T11:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.12,
+        "away": 1.68
       }
     },
     {
@@ -13714,19 +13816,6 @@
       "odds": {
         "home": 1.17,
         "away": 4.8
-      }
-    },
-    {
-      "eventId": "1028155436",
-      "title": "Jannik Sinner - Miomir Kecmanovic",
-      "homeTeam": "Jannik Sinner",
-      "awayTeam": "Miomir Kecmanovic",
-      "startTime": "2026-06-29T12:30:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 20,
-        "away": 1.01
       }
     },
     {
@@ -14744,7 +14833,7 @@
       }
     }
   ],
-  "basketEventsCount": 9,
-  "tennisEventsCount": 133,
+  "basketEventsCount": 10,
+  "tennisEventsCount": 134,
   "lastError": null
 }
