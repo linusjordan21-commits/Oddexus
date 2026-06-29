@@ -1,0 +1,40 @@
+name: Coolbet Once Debug
+
+# Kontrollerad debug: kör fetch-coolbet ENA gången (ingen loop) + dumpar diag-filens
+# probe (leagues/rawMatches/matches24h/topSlugs) → visar EXAKT var katalog-bygget
+# bryter (flatCategories→fo-category→24h-filter). workflow_dispatch only.
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: coolbet-once-debug
+  cancel-in-progress: false
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Coolbet ONCE (no loop, dump probe)
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+          SCRAPER_PROVIDER: ${{ vars.SCRAPER_PROVIDER }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          COOLBET_MAX_LEAGUES: "20"
+        run: |
+          echo "=== coolbet-once START $(date -u +%FT%TZ) | commit ${GITHUB_SHA:0:8} ==="
+          node scripts/fetch-coolbet-github-action.mjs 2>&1 || echo "node exit=$?"
+          echo ""
+          echo "=== DIAG (probe: leagues/rawMatches/matches24h/topSlugs) ==="
+          node -e "try{const d=require('./data/_coolbet-scraper-diag.json');console.log('ranAt:',d.ranAt);console.log('scrapflyHttp:',d.scrapflyHttp,'scrapflyError:',JSON.stringify(d.scrapflyError||null));console.log('catalogMatches:',d.catalogMatches,'oddsCount:',d.oddsCount,'builtEvents:',d.builtEvents);console.log('probe:',JSON.stringify(d.probe,null,1));console.log('notes:',JSON.stringify(d.notes));}catch(e){console.log('diag-läsfel:',e.message)}"
+          echo "=== coolbet-once SLUT $(date -u +%FT%TZ) ==="
