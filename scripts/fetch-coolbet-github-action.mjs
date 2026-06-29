@@ -131,18 +131,17 @@ const MAX_LEAGUES = Number(process.env.COOLBET_MAX_LEAGUES) || 20; // tak mot cr
 // Kostnadsoptimering: ETT Scrapfly-render (=30 credits) besöker FLERA ligor via
 // client-side-navigering (pushState+popstate → ingen reload → storen rensas ej →
 // Pusher-prenumerationer ackumuleras). Credit-kostnad är per ANROP, ej per liga.
-// 14000 (2026-06-29): 6000 var för kort — SPA-storen hann inte fylla flatCategories
-// (→ "ingen flatCategories i store" → katalog=0). Mätt: 11s misslyckas, 12s läser 64
-// ligor/219 matcher → flaky race vid ~11-12s. 14s ger marginal; ryms i Scrapflys 90s-
-// budget (14 boot + 24 init + 4×(6+5) chunks = 82s). Höj via COOLBET_BOOT_MS vid behov.
-const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 14000;          // SPA-boot + store-fyllnad
+// 4000 (2026-06-29): bas-boot innan vi börjar POLLA efter flatCategories i INIT (fast
+// boot-wait var flaky — 6/11/14s misslyckades, 12s lyckades; store-fyllnaden varierar).
+// Pollen i INIT_SCRIPT väntar exakt så länge som behövs (upp till ~16s) → robustare.
+const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 4000;           // SPA-boot innan poll
 const PUSHER_MS = Number(process.env.COOLBET_PUSHER_MS) || 6000;        // Pusher-fyllnad/liga
-const LEAGUES_PER_CALL = Number(process.env.COOLBET_LEAGUES_PER_CALL) || 4; // ligor/render
+const LEAGUES_PER_CALL = Number(process.env.COOLBET_LEAGUES_PER_CALL) || 3; // ligor/render (3 i anrop 1 ger budget åt pollen; resten i anrop 2+)
 // VIKTIGT: Scrapfly RESERVERAR varje execute-stegs hela timeout i förväg och summan
 // (render + waits + execute-timeouts) måste rymmas under top-level timeout (90s).
-// INIT fetchar nu fo-category för ~90 ligor parallellt (concurrency 12) → ~24s.
-// Render1: 6(boot)+24(init)+4×(6+5)=74s < 90. Chunk-render: 6+3+4×11=53s.
-const INIT_EXEC_MS = Number(process.env.COOLBET_INIT_EXEC_MS) || 24000;
+// INIT pollar nu flatCategories (~upp till 16s) + fetchar fo-category för ligor
+// parallellt (~24s) → reservera 42s. Render1: 4(boot)+42(init)+3×(6+5)=79s < 90.
+const INIT_EXEC_MS = Number(process.env.COOLBET_INIT_EXEC_MS) || 42000;
 const STEP_EXEC_MS = Number(process.env.COOLBET_STEP_EXEC_MS) || 5000;
 
 function scrapflyUrl(scenario, pageUrl = FOOTBALL_PAGE) {
@@ -220,9 +219,14 @@ function keepMk(mk){var t=mk.market_type_id;var n=String(mk.name||'').toLowerCas
 function trim(m,slug,lname){return {id:m.id,name:m.name,home_team_name:m.home_team_name,away_team_name:m.away_team_name,match_start:m.match_start,inplay:m.inplay,category_name:lname||m.category_name,fullSlug:slug,markets:(m.markets||[]).filter(keepMk).map(function(mk){return {id:mk.id,market_type_id:mk.market_type_id,name:mk.name,raw_line:mk.raw_line,line:mk.line,outcomes:(mk.outcomes||[]).map(function(oc){return {id:oc.id,result_key:oc.result_key,name:oc.name}})}})}}
 var o={};
 try{
-  var st=(window.stores&&window.stores.sports)||null;
-  var fc=st?val(st.flatCategories):null;
-  if(!Array.isArray(fc)){o.err='ingen flatCategories i store';try{o.storeKeys=window.stores?Object.keys(window.stores):'no window.stores';o.sportsKeys=st?Object.keys(st):'no window.stores.sports';o.fcType=typeof (st&&st.flatCategories);}catch(e){o.storeProbeErr=String(e).slice(0,120);}window.__matches=[];window.__slugs=[];window.__odds={};window.__i=0;return JSON.stringify(o);}
+  // POLL: SPA-storen fyller flatCategories vid en VARIERANDE tid (~11-14s, ibland mer).
+  // En fast boot-wait är bevisat flaky (6/11/14s misslyckades, 12s lyckades). Polla
+  // var 500ms tills flatCategories är en icke-tom array (max ~16s), så vi väntar exakt
+  // så länge som behövs i st f att gissa. Scenariot är async (await tillåtet här).
+  var st=null,fc=null,polls=0;
+  for(polls=0;polls<32;polls++){st=(window.stores&&window.stores.sports)||null;fc=st?val(st.flatCategories):null;if(Array.isArray(fc)&&fc.length)break;await new Promise(function(r){setTimeout(r,500);});}
+  o.bootPolls=polls;
+  if(!Array.isArray(fc)||!fc.length){o.err='ingen flatCategories i store';try{o.storeKeys=window.stores?Object.keys(window.stores):'no window.stores';o.sportsKeys=st?Object.keys(st):'no window.stores.sports';o.fcType=typeof (st&&st.flatCategories);}catch(e){o.storeProbeErr=String(e).slice(0,120);}window.__matches=[];window.__slugs=[];window.__odds={};window.__i=0;return JSON.stringify(o);}
   var leagues=fc.filter(function(c){return /^fotboll(\\/|$)/i.test(String(c&&c.fullSlug||''))&&(c.matches_count||0)>0;}).map(function(c){return {id:c.id,fullSlug:c.fullSlug,name:c.name,n:c.matches_count};});
   o.leagueCount=leagues.length;
   // parallell fetch (concurrency 12) av fo-category per liga → alla matcher.
@@ -325,6 +329,7 @@ async function main() {
   diag.slug = nav.slug ?? null;
   diag.slugs = nav.slugs ?? null;
   diag.probe = nav.probe ?? null;
+  diag.bootPolls = nav.bootPolls ?? null;     // diag: hur många 500ms-polls innan flatCategories fylldes
   diag.windowProbe = nav.windowProbe ?? null; // diag: avsparks-fördelning (glest 24h-fönster vs datumbugg?)
   diag.storeKeys = nav.storeKeys ?? null;     // diag: vilka nycklar finns på window.stores nu?
   diag.sportsKeys = nav.sportsKeys ?? null;   // diag: vilka nycklar på window.stores.sports? (hitta var flatCategories tog vägen)
