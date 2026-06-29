@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:49:05.788Z",
+  "updatedAt": "2026-06-29T06:51:36.869Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 186,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 184,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 15547,
+  "durationMs": 15693,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.32,
-        "draw": 6.5,
-        "away": 4.9
+        "home": 1.52,
+        "draw": 4.9,
+        "away": 3.75
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.38,
-        "draw": 4.25,
-        "away": 2.04
+        "home": 25,
+        "draw": 10,
+        "away": 1.06
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.55,
-        "draw": 4.9,
-        "away": 3.45
+        "home": 1.82,
+        "draw": 3.35,
+        "away": 3.3
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T06:48:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.58,
-        "draw": 3.85,
-        "away": 4
+        "home": 1.08,
+        "draw": 8.5,
+        "away": 21
       }
     },
     {
@@ -1044,9 +1044,9 @@
       "startTime": "2026-06-29T06:48:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.32,
-        "draw": 4.1,
-        "away": 2.12
+        "home": 2.38,
+        "draw": 3.6,
+        "away": 2.2
       }
     },
     {
@@ -2286,6 +2286,46 @@
           "line": 5.5,
           "over": 1.3,
           "under": 2.95
+        }
+      ]
+    },
+    {
+      "eventId": "1028181274",
+      "title": "Napoli (mko1919) - Sassuolo (nikkitta)",
+      "homeTeam": "Napoli (mko1919)",
+      "awayTeam": "Sassuolo (nikkitta)",
+      "startTime": "2026-06-29T07:31:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.38,
+        "draw": 3.6,
+        "away": 2.2
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.12,
+          "under": 4.7
+        },
+        {
+          "line": 6.5,
+          "over": 5.6,
+          "under": 1.08
+        },
+        {
+          "line": 5.5,
+          "over": 3.2,
+          "under": 1.26
+        },
+        {
+          "line": 3.5,
+          "over": 1.41,
+          "under": 2.55
+        },
+        {
+          "line": 4.5,
+          "over": 2.02,
+          "under": 1.68
         }
       ]
     },
@@ -13336,8 +13376,8 @@
       "league": "FIBA VM-kval - Asien",
       "sport": "basketball",
       "odds": {
-        "home": 1.47,
-        "away": 2.48
+        "home": 1.5,
+        "away": 2.4
       }
     },
     {
@@ -13377,8 +13417,8 @@
       "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 3.55,
-        "away": 1.26
+        "home": 4.1,
+        "away": 1.21
       }
     },
     {
