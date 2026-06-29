@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:25:07.394Z",
+  "updatedAt": "2026-06-29T02:27:36.946Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 193,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 192,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 19553,
+  "durationMs": 19454,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 3.5,
-        "draw": 1.94,
-        "away": 3.25
+        "home": 1.33,
+        "draw": 3.65,
+        "away": 12.5
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.89,
-        "draw": 3.5,
-        "away": 3.35
+        "home": 1.79,
+        "draw": 3.6,
+        "away": 3.7
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T02:20:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.5,
-        "draw": 4.3,
-        "away": 4.2
+        "home": 1.4,
+        "draw": 4.1,
+        "away": 6.25
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T02:20:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 5.1,
-        "draw": 5.4,
-        "away": 1.35
+        "home": 15,
+        "draw": 9,
+        "away": 1.09
       }
     },
     {
@@ -1044,9 +1044,9 @@
       "startTime": "2026-06-29T02:20:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.34,
-        "draw": 5.4,
-        "away": 5.2
+        "home": 1.03,
+        "draw": 13,
+        "away": 46
       }
     },
     {
@@ -1057,9 +1057,9 @@
       "startTime": "2026-06-29T02:24:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.6,
+        "home": 3.75,
         "draw": 7.5,
-        "away": 1.64
+        "away": 1.4
       }
     },
     {
@@ -1070,8 +1070,8 @@
       "startTime": "2026-06-29T02:24:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.25,
-        "draw": 5.75,
+        "home": 1.29,
+        "draw": 4.9,
         "away": 7
       }
     },
@@ -1357,6 +1357,56 @@
           "line": 6.5,
           "over": 1.8,
           "under": 1.87
+        }
+      ]
+    },
+    {
+      "eventId": "1028174521",
+      "title": "Sporting CP (Noltzer) - Juventus (maggett0)",
+      "homeTeam": "Sporting CP (Noltzer)",
+      "awayTeam": "Juventus (maggett0)",
+      "startTime": "2026-06-29T02:44:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.38,
+        "draw": 5.1,
+        "away": 1.9
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.17,
+          "under": 3.9
+        },
+        {
+          "line": 6.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 3.5,
+          "over": 1.04,
+          "under": 7.5
+        },
+        {
+          "line": 9.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 8.5,
+          "over": 5,
+          "under": 1.11
+        },
+        {
+          "line": 7.5,
+          "over": 3,
+          "under": 1.29
+        },
+        {
+          "line": 5.5,
+          "over": 1.49,
+          "under": 2.33
         }
       ]
     },
@@ -3053,8 +3103,8 @@
       "league": "VM 2026",
       "odds": {
         "home": 2.38,
-        "draw": 2.9,
-        "away": 3.9
+        "draw": 2.85,
+        "away": 3.85
       },
       "totals": [
         {
@@ -3087,7 +3137,7 @@
         {
           "line": -0.5,
           "home": 2.28,
-          "away": 1.63
+          "away": 1.62
         },
         {
           "line": -0.75,
@@ -3096,8 +3146,8 @@
         },
         {
           "line": 0.5,
-          "home": 1.29,
-          "away": 3.6
+          "home": 1.28,
+          "away": 3.65
         },
         {
           "line": -1.25,
@@ -3111,8 +3161,8 @@
         },
         {
           "line": -0.25,
-          "home": 1.91,
-          "away": 1.89
+          "home": 1.92,
+          "away": 1.88
         },
         {
           "line": -1.5,
