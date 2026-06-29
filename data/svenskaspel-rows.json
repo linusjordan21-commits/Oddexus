@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:43:03.870Z",
+  "updatedAt": "2026-06-29T05:45:34.770Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 188,
-  "skippedNoOdds": 1,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 19387,
+  "durationMs": 19653,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028183534",
-      "title": "Fenerbahce (Revange) - Salzburg (sane4ek8)",
-      "homeTeam": "Fenerbahce (Revange)",
-      "awayTeam": "Salzburg (sane4ek8)",
-      "startTime": "2026-06-29T05:36:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 4.7,
-        "draw": 3,
-        "away": 1.68
-      }
-    },
-    {
-      "eventId": "1028183544",
-      "title": "Roma (MeLToSik) - Porto (Jekunam)",
-      "homeTeam": "Roma (MeLToSik)",
-      "awayTeam": "Porto (Jekunam)",
-      "startTime": "2026-06-29T05:36:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 35,
-        "draw": 6.5,
-        "away": 1.1
-      }
-    },
-    {
       "eventId": "1028185423",
       "title": "Udinese (TOMMY) - Bologna FC (Jur_Kr)",
       "homeTeam": "Udinese (TOMMY)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T05:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.02,
-        "draw": 7,
-        "away": 2.02
+        "home": 3.8,
+        "draw": 7.5,
+        "away": 1.38
       }
     },
     {
@@ -1215,6 +1189,56 @@
           "line": 8.5,
           "over": 1.83,
           "under": 1.84
+        }
+      ]
+    },
+    {
+      "eventId": "1028181349",
+      "title": "Porto (Jekunam) - Salzburg (sane4ek8)",
+      "homeTeam": "Porto (Jekunam)",
+      "awayTeam": "Salzburg (sane4ek8)",
+      "startTime": "2026-06-29T06:00:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.04,
+        "draw": 4.8,
+        "away": 2.25
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.45,
+          "under": 2.43
+        },
+        {
+          "line": 9.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 7.5,
+          "over": 2.9,
+          "under": 1.3
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 6.5,
+          "over": 1.97,
+          "under": 1.7
+        },
+        {
+          "line": 4.5,
+          "over": 1.16,
+          "under": 4
+        },
+        {
+          "line": 8.5,
+          "over": 4.7,
+          "under": 1.12
         }
       ]
     },

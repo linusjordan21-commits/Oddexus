@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:42:43.930Z",
+  "updatedAt": "2026-06-29T05:45:14.418Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 204,
-  "skippedNoOdds": 5,
+  "uniqueEvents": 201,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 20699,
+  "durationMs": 20752,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028183534",
-      "title": "Fenerbahce (Revange) - Salzburg (sane4ek8)",
-      "homeTeam": "Fenerbahce (Revange)",
-      "awayTeam": "Salzburg (sane4ek8)",
-      "startTime": "2026-06-29T05:36:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 4.3,
-        "draw": 3.1,
-        "away": 1.7
-      }
-    },
-    {
-      "eventId": "1028183544",
-      "title": "Roma (MeLToSik) - Porto (Jekunam)",
-      "homeTeam": "Roma (MeLToSik)",
-      "awayTeam": "Porto (Jekunam)",
-      "startTime": "2026-06-29T05:36:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 29,
-        "draw": 6,
-        "away": 1.12
-      }
-    },
-    {
       "eventId": "1028185423",
       "title": "Udinese (TOMMY) - Bologna FC (Jur_Kr)",
       "homeTeam": "Udinese (TOMMY)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T05:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.02,
+        "home": 3.75,
         "draw": 7.5,
-        "away": 2
+        "away": 1.38
       }
     },
     {
@@ -1420,6 +1394,106 @@
           "line": 7.5,
           "over": 2.85,
           "under": 1.37
+        }
+      ]
+    },
+    {
+      "eventId": "1028181230",
+      "title": "Spain (LaikingDast) - Ghana (Bomb1to)",
+      "homeTeam": "Spain (LaikingDast)",
+      "awayTeam": "Ghana (Bomb1to)",
+      "startTime": "2026-06-29T05:57:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.65,
+        "draw": 4.1,
+        "away": 1.6
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 2.28,
+          "under": 1.54
+        },
+        {
+          "line": 4.5,
+          "over": 1.29,
+          "under": 3.25
+        },
+        {
+          "line": 5.5,
+          "over": 1.62,
+          "under": 2.12
+        },
+        {
+          "line": 8.5,
+          "over": 6.1,
+          "under": 1.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 6.1
+        },
+        {
+          "line": 7.5,
+          "over": 3.5,
+          "under": 1.26
+        },
+        {
+          "line": 9.5,
+          "over": 11.5,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028181231",
+      "title": "Portugal (nikkitta) - Mexiko (KraftVK)",
+      "homeTeam": "Portugal (nikkitta)",
+      "awayTeam": "Mexiko (KraftVK)",
+      "startTime": "2026-06-29T05:57:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.4,
+        "draw": 4.9,
+        "away": 1.91
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 11.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.8
+        },
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 4.9
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 6.5,
+          "over": 2.63,
+          "under": 1.42
+        },
+        {
+          "line": 5.5,
+          "over": 1.83,
+          "under": 1.84
+        },
+        {
+          "line": 7.5,
+          "over": 4.35,
+          "under": 1.17
         }
       ]
     },
