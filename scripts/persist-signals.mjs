@@ -34,7 +34,7 @@ const INTERNAL_TOKEN = (process.env.VALUEBETS_INTERNAL_TOKEN || process.env.SUPA
 async function fetchValuebets() {
   const url = `${BASE}/api/valuebets?hours=${HOURS}`;
   const controller = new AbortController();
-  const t = setTimeout(() => controller.abort(), 30000);
+  const t = setTimeout(() => controller.abort(), 90000);
   try {
     const res = await fetch(url, { headers: { Accept: "application/json", "User-Agent": "persist-signals", "X-Internal-Token": INTERNAL_TOKEN }, signal: controller.signal });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);

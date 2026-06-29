@@ -35,7 +35,7 @@ const SUPABASE_KEY = (
 ).trim();
 const TIMEOUT_MS = (() => {
   const raw = Number(process.env.ODDS_DB_TIMEOUT_MS);
-  return Number.isFinite(raw) && raw >= 1000 ? Math.floor(raw) : 15000;
+  return Number.isFinite(raw) && raw >= 1000 ? Math.floor(raw) : 45000;
 })();
 
 // SPEGLINGS-STRYPNING per källa: spegla odds_cache som mest var N:e ms per källa.
