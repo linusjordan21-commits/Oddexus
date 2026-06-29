@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T12:51:25.237Z",
+  "updatedAt": "2026-06-29T12:55:26.074Z",
   "source": "github-actions",
   "bookmaker": "unibet",
   "displayName": "Unibet",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 128,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 127,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 12317,
+  "durationMs": 12088,
   "events": [
     {
       "eventId": "1028072415",
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T12:44:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.18,
-        "draw": 7.5,
-        "away": 8
+        "home": 1.37,
+        "draw": 5.1,
+        "away": 5
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T12:44:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 4.1,
-        "draw": 4.5,
-        "away": 1.5
+        "home": 8,
+        "draw": 6.25,
+        "away": 1.21
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T12:45:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.93,
-        "draw": 4.2,
-        "away": 2.6
+        "home": 1.22,
+        "draw": 6.1,
+        "away": 8
       }
     },
     {
@@ -1045,7 +1045,7 @@
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
         "home": 1.98,
-        "draw": 4.2,
+        "draw": 4.25,
         "away": 2.45
       }
     },
@@ -1083,215 +1083,36 @@
       "startTime": "2026-06-29T12:48:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.33,
-        "draw": 4.2,
-        "away": 2.08
+        "home": 1.94,
+        "draw": 4,
+        "away": 2.6
       }
     },
     {
-      "eventId": "1028183593",
-      "title": "Kroatien (sane4ek8) - Tjeckien (MeLToSik)",
-      "homeTeam": "Kroatien (sane4ek8)",
-      "awayTeam": "Tjeckien (MeLToSik)",
-      "startTime": "2026-06-29T12:52:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
+      "eventId": "1028181333",
+      "title": "Juventus (mko1919) - B Dortmund (LaikingDast)",
+      "homeTeam": "Juventus (mko1919)",
+      "awayTeam": "B Dortmund (LaikingDast)",
+      "startTime": "2026-06-29T12:49:00Z",
+      "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.23,
-        "draw": 3.4,
-        "away": 2.43
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.41,
-          "under": 2.7
-        },
-        {
-          "line": 8.5,
-          "over": 8,
-          "under": 1.06
-        },
-        {
-          "line": 7.5,
-          "over": 4.25,
-          "under": 1.18
-        },
-        {
-          "line": 5.5,
-          "over": 1.82,
-          "under": 1.86
-        },
-        {
-          "line": 2.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 6.5,
-          "over": 2.7,
-          "under": 1.4
-        },
-        {
-          "line": 3.5,
-          "over": 1.14,
-          "under": 5
-        }
-      ]
+        "home": 3.2,
+        "draw": 3.1,
+        "away": 1.94
+      }
     },
     {
-      "eventId": "1028183586",
-      "title": "Sverige (Jekunam) - USA (Revange)",
-      "homeTeam": "Sverige (Jekunam)",
-      "awayTeam": "USA (Revange)",
-      "startTime": "2026-06-29T12:52:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
+      "eventId": "1028181284",
+      "title": "Arsenal (Bomb1to) - Sporting CP (nikkitta)",
+      "homeTeam": "Arsenal (Bomb1to)",
+      "awayTeam": "Sporting CP (nikkitta)",
+      "startTime": "2026-06-29T12:49:00Z",
+      "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.05,
-        "draw": 3.65,
-        "away": 1.84
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.25,
-          "under": 3.6
-        },
-        {
-          "line": 6.5,
-          "over": 3.65,
-          "under": 1.24
-        },
-        {
-          "line": 2.5,
-          "over": 1.07,
-          "under": 7
-        },
-        {
-          "line": 5.5,
-          "over": 2.28,
-          "under": 1.54
-        },
-        {
-          "line": 7.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 4.5,
-          "over": 1.63,
-          "under": 2.12
-        }
-      ]
-    },
-    {
-      "eventId": "1028185850",
-      "title": "Marocko (Gabryss) - Portugal (Double_S)",
-      "homeTeam": "Marocko (Gabryss)",
-      "awayTeam": "Portugal (Double_S)",
-      "startTime": "2026-06-29T12:52:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 1.85,
-        "draw": 5.5,
-        "away": 2.4
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 2.5,
-          "under": 1.46
-        },
-        {
-          "line": 10.5,
-          "over": 11.5,
-          "under": 1.02
-        },
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 8.5
-        },
-        {
-          "line": 5.5,
-          "over": 1.41,
-          "under": 2.65
-        },
-        {
-          "line": 6.5,
-          "over": 1.79,
-          "under": 1.89
-        },
-        {
-          "line": 8.5,
-          "over": 3.75,
-          "under": 1.23
-        },
-        {
-          "line": 4.5,
-          "over": 1.16,
-          "under": 4.6
-        },
-        {
-          "line": 9.5,
-          "over": 6.4,
-          "under": 1.09
-        }
-      ]
-    },
-    {
-      "eventId": "1028185851",
-      "title": "Nederländerna (FanFan) - Qatar (kamil06_)",
-      "homeTeam": "Nederländerna (FanFan)",
-      "awayTeam": "Qatar (kamil06_)",
-      "startTime": "2026-06-29T12:52:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 3.65,
-        "draw": 7.5,
-        "away": 1.4
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 8.5
-        },
-        {
-          "line": 8.5,
-          "over": 3.7,
-          "under": 1.23
-        },
-        {
-          "line": 10.5,
-          "over": 11,
-          "under": 1.03
-        },
-        {
-          "line": 7.5,
-          "over": 2.5,
-          "under": 1.45
-        },
-        {
-          "line": 4.5,
-          "over": 1.16,
-          "under": 4.6
-        },
-        {
-          "line": 6.5,
-          "over": 1.78,
-          "under": 1.9
-        },
-        {
-          "line": 5.5,
-          "over": 1.41,
-          "under": 2.65
-        },
-        {
-          "line": 9.5,
-          "over": 6.25,
-          "under": 1.09
-        }
-      ]
+        "home": 2.38,
+        "draw": 2.7,
+        "away": 2.75
+      }
     },
     {
       "eventId": "1028185378",
@@ -4369,6 +4190,44 @@
       ]
     },
     {
+      "eventId": "1028186143",
+      "title": "Aston Villa (hit) - Fenerbahce (Animal)",
+      "homeTeam": "Aston Villa (hit)",
+      "awayTeam": "Fenerbahce (Animal)",
+      "startTime": "2026-06-29T14:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.02,
+        "draw": 3.8,
+        "away": 2.55
+      }
+    },
+    {
+      "eventId": "1028186079",
+      "title": "Salzburg (Linox) - Porto (chevare)",
+      "homeTeam": "Salzburg (Linox)",
+      "awayTeam": "Porto (chevare)",
+      "startTime": "2026-06-29T14:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.15,
+        "away": 2.12
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.42,
+          "under": 2.5
+        },
+        {
+          "line": 4.5,
+          "over": 2.06,
+          "under": 1.64
+        }
+      ]
+    },
+    {
       "eventId": "1028185546",
       "title": "Chelsea (luxiqq) - Tottenham (djamik)",
       "homeTeam": "Chelsea (luxiqq)",
@@ -6782,8 +6641,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.83,
-        "away": 1.89
+        "home": 2.32,
+        "away": 1.56
       }
     },
     {
@@ -6795,8 +6654,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.7,
-        "away": 1.46
+        "home": 2.63,
+        "away": 1.47
       }
     },
     {
@@ -6808,8 +6667,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.71,
-        "away": 2.1
+        "home": 1.79,
+        "away": 2
       }
     },
     {
@@ -6873,8 +6732,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.16,
-        "away": 5
+        "home": 1.19,
+        "away": 4.5
       }
     },
     {
@@ -6899,8 +6758,8 @@
       "league": "Elvas",
       "sport": "tennis",
       "odds": {
-        "home": 3.45,
-        "away": 1.28
+        "home": 2.88,
+        "away": 1.37
       }
     },
     {
@@ -6990,8 +6849,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 5,
-        "away": 1.14
+        "home": 5.8,
+        "away": 1.11
       }
     },
     {
@@ -7017,7 +6876,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.01,
-        "away": 11
+        "away": 11.5
       }
     },
     {
@@ -7055,21 +6914,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.18,
-        "away": 4.7
-      }
-    },
-    {
-      "eventId": "1028183359",
-      "title": "Lenny Couturier - Marcel Hornung",
-      "homeTeam": "Lenny Couturier",
-      "awayTeam": "Marcel Hornung",
-      "startTime": "2026-06-29T12:16:00Z",
-      "league": "Nivelles",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.01,
-        "away": 12.5
+        "home": 1.15,
+        "away": 5.2
       }
     },
     {
@@ -7120,8 +6966,8 @@
       "league": "Getxo",
       "sport": "tennis",
       "odds": {
-        "home": 2,
-        "away": 1.74
+        "home": 1.75,
+        "away": 1.98
       }
     },
     {
@@ -7161,19 +7007,6 @@
       "odds": {
         "home": 1.73,
         "away": 2.02
-      }
-    },
-    {
-      "eventId": "1028155278",
-      "title": "Bianca Andreescu - Shuai Zhang",
-      "homeTeam": "Bianca Andreescu",
-      "awayTeam": "Shuai Zhang",
-      "startTime": "2026-06-29T12:55:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.23,
-        "away": 1.65
       }
     },
     {
@@ -8108,8 +7941,21 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
-        "away": 1.53
+        "home": 2.65,
+        "away": 1.42
+      }
+    },
+    {
+      "eventId": "1028190339",
+      "title": "Shinji Hazawa - Koki Matsuda",
+      "homeTeam": "Shinji Hazawa",
+      "awayTeam": "Koki Matsuda",
+      "startTime": "2026-06-30T03:30:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.25,
+        "away": 1.57
       }
     },
     {
@@ -8764,6 +8610,6 @@
     }
   ],
   "basketEventsCount": 11,
-  "tennisEventsCount": 153,
+  "tennisEventsCount": 152,
   "lastError": null
 }

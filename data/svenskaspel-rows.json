@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T12:51:09.765Z",
+  "updatedAt": "2026-06-29T12:55:10.180Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 196,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 198,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 19894,
+  "durationMs": 19968,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T12:45:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.93,
-        "draw": 4.2,
-        "away": 2.6
+        "home": 1.22,
+        "draw": 6.1,
+        "away": 8
       }
     },
     {
@@ -1006,7 +1006,7 @@
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
         "home": 1.98,
-        "draw": 4.2,
+        "draw": 4.25,
         "away": 2.45
       }
     },
@@ -1044,9 +1044,35 @@
       "startTime": "2026-06-29T12:48:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.33,
-        "draw": 4.2,
-        "away": 2.08
+        "home": 1.94,
+        "draw": 4,
+        "away": 2.6
+      }
+    },
+    {
+      "eventId": "1028181333",
+      "title": "Juventus (mko1919) - B Dortmund (LaikingDast)",
+      "homeTeam": "Juventus (mko1919)",
+      "awayTeam": "B Dortmund (LaikingDast)",
+      "startTime": "2026-06-29T12:49:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.1,
+        "away": 1.94
+      }
+    },
+    {
+      "eventId": "1028181284",
+      "title": "Arsenal (Bomb1to) - Sporting CP (nikkitta)",
+      "homeTeam": "Arsenal (Bomb1to)",
+      "awayTeam": "Sporting CP (nikkitta)",
+      "startTime": "2026-06-29T12:49:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.38,
+        "draw": 2.7,
+        "away": 2.75
       }
     },
     {
@@ -2991,6 +3017,31 @@
           "line": 10.5,
           "over": 8.5,
           "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028186079",
+      "title": "Salzburg (Linox) - Porto (chevare)",
+      "homeTeam": "Salzburg (Linox)",
+      "awayTeam": "Porto (chevare)",
+      "startTime": "2026-06-29T14:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.15,
+        "away": 2.12
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.42,
+          "under": 2.5
+        },
+        {
+          "line": 4.5,
+          "over": 2.06,
+          "under": 1.64
         }
       ]
     },
@@ -13868,8 +13919,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.83,
-        "away": 1.89
+        "home": 2.32,
+        "away": 1.56
       }
     },
     {
@@ -13881,8 +13932,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.7,
-        "away": 1.46
+        "home": 2.63,
+        "away": 1.47
       }
     },
     {
@@ -13894,8 +13945,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.71,
-        "away": 2.1
+        "home": 1.79,
+        "away": 2
       }
     },
     {
@@ -13959,8 +14010,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.16,
-        "away": 5
+        "home": 1.19,
+        "away": 4.5
       }
     },
     {
@@ -13985,8 +14036,8 @@
       "league": "Elvas",
       "sport": "tennis",
       "odds": {
-        "home": 3.45,
-        "away": 1.28
+        "home": 2.88,
+        "away": 1.37
       }
     },
     {
@@ -14076,8 +14127,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 5,
-        "away": 1.14
+        "home": 5.8,
+        "away": 1.11
       }
     },
     {
@@ -14103,7 +14154,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.01,
-        "away": 11
+        "away": 11.5
       }
     },
     {
@@ -14141,21 +14192,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.18,
-        "away": 4.7
-      }
-    },
-    {
-      "eventId": "1028183359",
-      "title": "Lenny Couturier - Marcel Hornung",
-      "homeTeam": "Lenny Couturier",
-      "awayTeam": "Marcel Hornung",
-      "startTime": "2026-06-29T12:16:00Z",
-      "league": "Nivelles",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.01,
-        "away": 12.5
+        "home": 1.15,
+        "away": 5.2
       }
     },
     {
@@ -14206,8 +14244,8 @@
       "league": "Getxo",
       "sport": "tennis",
       "odds": {
-        "home": 2,
-        "away": 1.74
+        "home": 1.75,
+        "away": 1.98
       }
     },
     {
@@ -14247,19 +14285,6 @@
       "odds": {
         "home": 1.73,
         "away": 2.02
-      }
-    },
-    {
-      "eventId": "1028155278",
-      "title": "Bianca Andreescu - Shuai Zhang",
-      "homeTeam": "Bianca Andreescu",
-      "awayTeam": "Shuai Zhang",
-      "startTime": "2026-06-29T12:55:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.23,
-        "away": 1.65
       }
     },
     {
@@ -15194,8 +15219,21 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
-        "away": 1.53
+        "home": 2.65,
+        "away": 1.42
+      }
+    },
+    {
+      "eventId": "1028190339",
+      "title": "Shinji Hazawa - Koki Matsuda",
+      "homeTeam": "Shinji Hazawa",
+      "awayTeam": "Koki Matsuda",
+      "startTime": "2026-06-30T03:30:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.25,
+        "away": 1.57
       }
     },
     {
@@ -15850,6 +15888,6 @@
     }
   ],
   "basketEventsCount": 11,
-  "tennisEventsCount": 153,
+  "tennisEventsCount": 152,
   "lastError": null
 }
