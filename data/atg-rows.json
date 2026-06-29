@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:51:12.810Z",
+  "updatedAt": "2026-06-29T03:53:43.456Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 204,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 206,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 21586,
+  "durationMs": 22002,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.17,
-        "draw": 4.8,
-        "away": 29
-      }
-    },
-    {
-      "eventId": "1028174540",
-      "title": "Juventus (maggett0) - Sporting CP (Noltzer)",
-      "homeTeam": "Juventus (maggett0)",
-      "awayTeam": "Sporting CP (Noltzer)",
-      "startTime": "2026-06-29T03:44:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.09,
-        "draw": 8.5,
-        "away": 19
+        "home": 1.14,
+        "draw": 5.3,
+        "away": 41
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T03:47:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.77,
-        "draw": 4,
-        "away": 3
+        "home": 1.14,
+        "draw": 6.5,
+        "away": 13
       }
     },
     {
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T03:50:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.82,
-        "draw": 4.6,
-        "away": 2.65
+        "home": 1.43,
+        "draw": 4.7,
+        "away": 4.7
       }
     },
     {
@@ -1393,6 +1380,96 @@
           "line": 3.5,
           "over": 1.09,
           "under": 5.3
+        }
+      ]
+    },
+    {
+      "eventId": "1028178543",
+      "title": "Man City (Simaponika) - Boca Juniors (volvo)",
+      "homeTeam": "Man City (Simaponika)",
+      "awayTeam": "Boca Juniors (volvo)",
+      "startTime": "2026-06-29T04:11:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.9,
+        "draw": 5,
+        "away": 1.48
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.36,
+          "under": 2.9
+        },
+        {
+          "line": 6.5,
+          "over": 4.6,
+          "under": 1.16
+        },
+        {
+          "line": 2.5,
+          "over": 1.11,
+          "under": 5.8
+        },
+        {
+          "line": 4.5,
+          "over": 1.79,
+          "under": 1.89
+        },
+        {
+          "line": 7.5,
+          "over": 9,
+          "under": 1.04
+        },
+        {
+          "line": 5.5,
+          "over": 2.7,
+          "under": 1.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028178544",
+      "title": "River Plate (nekishka) - Paris (Grellz)",
+      "homeTeam": "River Plate (nekishka)",
+      "awayTeam": "Paris (Grellz)",
+      "startTime": "2026-06-29T04:11:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.28,
+        "draw": 4.5,
+        "away": 2.06
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 3.75,
+          "under": 1.23
+        },
+        {
+          "line": 5.5,
+          "over": 2.35,
+          "under": 1.52
+        },
+        {
+          "line": 2.5,
+          "over": 1.07,
+          "under": 7
+        },
+        {
+          "line": 4.5,
+          "over": 1.63,
+          "under": 2.1
+        },
+        {
+          "line": 7.5,
+          "over": 7,
+          "under": 1.07
+        },
+        {
+          "line": 3.5,
+          "over": 1.27,
+          "under": 3.35
         }
       ]
     },
