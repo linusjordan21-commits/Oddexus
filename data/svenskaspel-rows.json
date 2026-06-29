@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:52:05.821Z",
+  "updatedAt": "2026-06-29T20:56:06.636Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 213,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 218,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 17800,
+  "durationMs": 18550,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,35 +992,9 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.37,
-        "draw": 4.1,
-        "away": 10.5
-      }
-    },
-    {
-      "eventId": "1028185649",
-      "title": "River Plate (abr4m_5) - Independiente (Galikooo)",
-      "homeTeam": "River Plate (abr4m_5)",
-      "awayTeam": "Independiente (Galikooo)",
-      "startTime": "2026-06-29T20:42:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.65,
-        "draw": 3.4,
-        "away": 4.2
-      }
-    },
-    {
-      "eventId": "1028186348",
-      "title": "Benfica (Kray) - Porto (Inquisitor)",
-      "homeTeam": "Benfica (Kray)",
-      "awayTeam": "Porto (Inquisitor)",
-      "startTime": "2026-06-29T20:46:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 12,
-        "draw": 4.7,
-        "away": 1.23
+        "home": 1.35,
+        "draw": 4.25,
+        "away": 11
       }
     },
     {
@@ -1031,42 +1005,10 @@
       "startTime": "2026-06-29T20:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.78,
-        "draw": 3.3,
-        "away": 3.55
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.65,
-          "under": 2.04
-        },
-        {
-          "line": 6.5,
-          "over": 2.4,
-          "under": 1.45
-        },
-        {
-          "line": 3.5,
-          "over": 1.07,
-          "under": 6
-        },
-        {
-          "line": 4.5,
-          "over": 1.29,
-          "under": 3.05
-        },
-        {
-          "line": 7.5,
-          "over": 3.65,
-          "under": 1.2
-        },
-        {
-          "line": 8.5,
-          "over": 6.5,
-          "under": 1.05
-        }
-      ]
+        "home": 1.98,
+        "draw": 2.8,
+        "away": 3.45
+      }
     },
     {
       "eventId": "1028193815",
@@ -1076,42 +1018,10 @@
       "startTime": "2026-06-29T20:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.33,
-        "draw": 4.7,
-        "away": 1.98
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.48,
-          "under": 2.33
-        },
-        {
-          "line": 3.5,
-          "over": 1.18,
-          "under": 3.85
-        },
-        {
-          "line": 2.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 5.5,
-          "over": 2.14,
-          "under": 1.58
-        },
-        {
-          "line": 7.5,
-          "over": 5.8,
-          "under": 1.07
-        },
-        {
-          "line": 6.5,
-          "over": 3.25,
-          "under": 1.25
-        }
-      ]
+        "home": 1.61,
+        "draw": 4.2,
+        "away": 3.55
+      }
     },
     {
       "eventId": "1028185651",
@@ -1602,6 +1512,96 @@
       ]
     },
     {
+      "eventId": "1028193848",
+      "title": "Barcelona (maggett0) - Real Madrid (Gaga)",
+      "homeTeam": "Barcelona (maggett0)",
+      "awayTeam": "Real Madrid (Gaga)",
+      "startTime": "2026-06-29T21:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.2,
+        "draw": 4.35,
+        "away": 2.16
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.45,
+          "under": 1.44
+        },
+        {
+          "line": 3.5,
+          "over": 1.26,
+          "under": 3.2
+        },
+        {
+          "line": 4.5,
+          "over": 1.65,
+          "under": 2.04
+        },
+        {
+          "line": 2.5,
+          "over": 1.06,
+          "under": 6.5
+        },
+        {
+          "line": 7.5,
+          "over": 7,
+          "under": 1.04
+        },
+        {
+          "line": 6.5,
+          "over": 3.95,
+          "under": 1.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028186329",
+      "title": "Athletic Club (Noltzer) - Atleti (SpeciAL)",
+      "homeTeam": "Athletic Club (Noltzer)",
+      "awayTeam": "Atleti (SpeciAL)",
+      "startTime": "2026-06-29T21:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.1,
+        "draw": 5.6,
+        "away": 1.58
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 5.5,
+          "over": 1.67,
+          "under": 2
+        },
+        {
+          "line": 7.5,
+          "over": 3.75,
+          "under": 1.19
+        },
+        {
+          "line": 6.5,
+          "over": 2.35,
+          "under": 1.48
+        },
+        {
+          "line": 4.5,
+          "over": 1.26,
+          "under": 3.15
+        },
+        {
+          "line": 8.5,
+          "over": 6.4,
+          "under": 1.06
+        }
+      ]
+    },
+    {
       "eventId": "1028186364",
       "title": "Boca Juniors (zaha) - Racing Club (saportj)",
       "homeTeam": "Boca Juniors (zaha)",
@@ -1653,6 +1653,91 @@
           "line": 11.5,
           "over": 8,
           "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028186345",
+      "title": "Vitoria SC (OG) - Benfica (Kray)",
+      "homeTeam": "Vitoria SC (OG)",
+      "awayTeam": "Benfica (Kray)",
+      "startTime": "2026-06-29T21:22:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 4.3,
+        "draw": 5,
+        "away": 1.38
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.06,
+          "under": 6.5
+        },
+        {
+          "line": 6.5,
+          "over": 2.23,
+          "under": 1.54
+        },
+        {
+          "line": 4.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.57,
+          "under": 2.17
+        },
+        {
+          "line": 7.5,
+          "over": 3.35,
+          "under": 1.23
+        },
+        {
+          "line": 8.5,
+          "over": 5.8,
+          "under": 1.07
+        }
+      ]
+    },
+    {
+      "eventId": "1028186337",
+      "title": "Braga (hotShot) - Porto (Inquisitor)",
+      "homeTeam": "Braga (hotShot)",
+      "awayTeam": "Porto (Inquisitor)",
+      "startTime": "2026-06-29T21:22:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3,
+        "draw": 2.55,
+        "away": 2.32
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.9,
+          "under": 1.32
+        },
+        {
+          "line": 6.5,
+          "over": 5.6,
+          "under": 1.08
+        },
+        {
+          "line": 4.5,
+          "over": 2,
+          "under": 1.67
+        },
+        {
+          "line": 2.5,
+          "over": 1.13,
+          "under": 4.5
+        },
+        {
+          "line": 3.5,
+          "over": 1.35,
+          "under": 2.75
         }
       ]
     },
@@ -2234,9 +2319,9 @@
       "startTime": "2026-06-29T22:58:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.55,
-        "draw": 5.25,
-        "away": 1.8
+        "home": 2.5,
+        "draw": 5.1,
+        "away": 1.84
       },
       "totals": [
         {
@@ -2618,6 +2703,216 @@
           "line": 7.5,
           "over": 2.1,
           "under": 1.63
+        }
+      ]
+    },
+    {
+      "eventId": "1028185411",
+      "title": "Real Sociedad (luxiqq) - Athletic Club (abr4m_5)",
+      "homeTeam": "Real Sociedad (luxiqq)",
+      "awayTeam": "Athletic Club (abr4m_5)",
+      "startTime": "2026-06-29T23:54:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.75,
+        "draw": 5.6,
+        "away": 1.41
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 2.23,
+          "under": 1.54
+        },
+        {
+          "line": 5.5,
+          "over": 1.11,
+          "under": 4.9
+        },
+        {
+          "line": 4.5,
+          "over": 1.01,
+          "under": 9.5
+        },
+        {
+          "line": 7.5,
+          "over": 1.65,
+          "under": 2.04
+        },
+        {
+          "line": 6.5,
+          "over": 1.3,
+          "under": 2.95
+        },
+        {
+          "line": 11.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 9.5,
+          "over": 3.15,
+          "under": 1.26
+        },
+        {
+          "line": 10.5,
+          "over": 5,
+          "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028185686",
+      "title": "Villarreal (Galikooo) - Valencia (drksd3)",
+      "homeTeam": "Villarreal (Galikooo)",
+      "awayTeam": "Valencia (drksd3)",
+      "startTime": "2026-06-29T23:54:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.37,
+        "draw": 4.7,
+        "away": 4.6
+      },
+      "totals": [
+        {
+          "line": 10.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 8.5,
+          "over": 2.1,
+          "under": 1.63
+        },
+        {
+          "line": 9.5,
+          "over": 2.88,
+          "under": 1.32
+        },
+        {
+          "line": 6.5,
+          "over": 1.27,
+          "under": 3.15
+        },
+        {
+          "line": 11.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 5.5,
+          "over": 1.09,
+          "under": 5.4
+        },
+        {
+          "line": 7.5,
+          "over": 1.55,
+          "under": 2.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028185687",
+      "title": "Sevilla (Int1liGenT) - Athletic Club (abr4m_5)",
+      "homeTeam": "Sevilla (Int1liGenT)",
+      "awayTeam": "Athletic Club (abr4m_5)",
+      "startTime": "2026-06-30T00:08:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.82,
+        "draw": 5.2,
+        "away": 2.5
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.07,
+          "under": 6
+        },
+        {
+          "line": 9.5,
+          "over": 2.65,
+          "under": 1.37
+        },
+        {
+          "line": 10.5,
+          "over": 3.9,
+          "under": 1.18
+        },
+        {
+          "line": 11.5,
+          "over": 6.25,
+          "under": 1.06
+        },
+        {
+          "line": 7.5,
+          "over": 1.47,
+          "under": 2.38
+        },
+        {
+          "line": 6.5,
+          "over": 1.21,
+          "under": 3.55
+        },
+        {
+          "line": 8.5,
+          "over": 1.91,
+          "under": 1.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028185738",
+      "title": "Villarreal (Galikooo) - Real Sociedad (luxiqq)",
+      "homeTeam": "Villarreal (Galikooo)",
+      "awayTeam": "Real Sociedad (luxiqq)",
+      "startTime": "2026-06-30T00:08:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.29,
+        "draw": 6.75,
+        "away": 4.3
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 2.32,
+          "under": 1.49
+        },
+        {
+          "line": 4.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.34,
+          "under": 2.8
+        },
+        {
+          "line": 5.5,
+          "over": 1.14,
+          "under": 4.4
+        },
+        {
+          "line": 9.5,
+          "over": 3.4,
+          "under": 1.23
+        },
+        {
+          "line": 7.5,
+          "over": 1.74,
+          "under": 1.94
+        },
+        {
+          "line": 11.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 10.5,
+          "over": 5.3,
+          "under": 1.09
         }
       ]
     },
@@ -14761,8 +15056,8 @@
       "league": "WNBA",
       "sport": "basketball",
       "odds": {
-        "home": 1.42,
-        "away": 2.9
+        "home": 1.43,
+        "away": 2.85
       }
     }
   ],
@@ -14802,8 +15097,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.12,
-        "away": 6
+        "home": 1.2,
+        "away": 4.4
       }
     },
     {
@@ -16245,8 +16540,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.24,
-        "away": 4.1
+        "home": 1.25,
+        "away": 4
       }
     },
     {
