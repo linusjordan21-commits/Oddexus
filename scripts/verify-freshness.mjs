@@ -44,21 +44,33 @@ const fmtAge = (ms) => { const s = Math.round((Date.now() - ms) / 1000); return 
     const last30 = (await q(`valuebet_signals?select=signal_id&first_detected_at=gte.${isoAgo(30)}`, { count: true })).total;
     console.log(`\n-- VALUEBET_SIGNALS --`);
     console.log(`   senaste first_detected_at: ${max || "(ingen)"} | nya senaste 30m: ${last30}`);
-    const { rows } = await q(`valuebet_signals?select=market_type,event_id,clv_status,clv_pct&first_detected_at=gte.${isoAgo(24 * 60)}&limit=20000`);
+    const { rows } = await q(`valuebet_signals?select=market_type,event_id,clv_status,clv_pct,status,start_time,signal_id,selection,line&first_detected_at=gte.${isoAgo(24 * 60)}&limit=20000`);
     const g = {};
+    const sc = {};
     for (const r of rows) {
       const k = r.market_type || "(null)";
-      g[k] = g[k] || { n: 0, ev: 0, settled: 0, no_closing: 0, clvs: [] };
+      g[k] = g[k] || { n: 0, ev: 0, settled: 0, no_closing: 0, pending: 0, clvs: [] };
       g[k].n++; if (r.event_id) g[k].ev++;
       if (r.clv_status === "settled") g[k].settled++;
-      if (r.clv_status === "no_closing") g[k].no_closing++;
+      else if (r.clv_status === "no_closing") g[k].no_closing++;
+      else g[k].pending++; // null/pending
       if (typeof r.clv_pct === "number") g[k].clvs.push(r.clv_pct);
+      const sk = `${r.status || "?"} / ${r.clv_status || "pending"}`;
+      sc[sk] = (sc[sk] || 0) + 1;
     }
-    console.log(`   market_type (24h): n | event_id | settled | no_closing | avg_clv`);
+    console.log(`   market_type (24h):  n | evt_id | evt%% | settled | no_closing | pending | avg_clv`);
     for (const [k, v] of Object.entries(g).sort((a, b) => b[1].n - a[1].n)) {
       const avg = v.clvs.length ? (v.clvs.reduce((a, b) => a + b, 0) / v.clvs.length).toFixed(3) : "—";
-      console.log(`     ${k.padEnd(14)} ${String(v.n).padStart(5)} | ${String(v.ev).padStart(8)} | ${String(v.settled).padStart(7)} | ${String(v.no_closing).padStart(10)} | ${avg}`);
+      const pct = v.n ? (100 * v.ev / v.n).toFixed(0) : "0";
+      console.log(`     ${k.padEnd(12)} ${String(v.n).padStart(5)} | ${String(v.ev).padStart(6)} | ${pct.padStart(4)} | ${String(v.settled).padStart(7)} | ${String(v.no_closing).padStart(10)} | ${String(v.pending).padStart(7)} | ${avg}`);
     }
+    console.log(`   status / clv_status (24h):`);
+    for (const [k, n] of Object.entries(sc).sort((a, b) => b[1] - a[1])) console.log(`     ${k.padEnd(34)} ${n}`);
+    // Exempel-signaler vars avspark PASSERAT (där closing borde finnas)
+    const nowMs = Date.now();
+    const passed = rows.filter((r) => r.start_time && Date.parse(r.start_time) < nowMs).sort((a, b) => Date.parse(b.start_time) - Date.parse(a.start_time)).slice(0, 6);
+    console.log(`   EXEMPEL passerade signaler (avspark < nu): ${passed.length}`);
+    for (const r of passed) console.log(`     ${r.market_type}/${r.selection ?? "?"}${r.line != null ? `@${r.line}` : ""} evt=${r.event_id ?? "SAKNAS"} clv=${r.clv_status ?? "pending"} kickoff=${r.start_time}`);
   } catch (e) { console.log("   VALUEBET_SIGNALS FEL:", e.message); }
 
   // 3) decision_snapshots
