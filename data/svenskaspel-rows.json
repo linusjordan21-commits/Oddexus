@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:54:04.064Z",
+  "updatedAt": "2026-06-29T03:56:34.433Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 185,
-  "skippedNoOdds": 0,
+  "uniqueEvents": 186,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 20043,
+  "durationMs": 19999,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1026389412",
-      "title": "Los Angeles FC II - Houston Dynamo II",
-      "homeTeam": "Los Angeles FC II",
-      "awayTeam": "Houston Dynamo II",
-      "startTime": "2026-06-29T02:03:00Z",
-      "league": "MLS Next Pro",
-      "odds": {
-        "home": 1.13,
-        "draw": 5.5,
-        "away": 46
-      }
-    },
-    {
       "eventId": "1028174145",
       "title": "Sporting CP (Noltzer) - Arsenal (Gaga)",
       "homeTeam": "Sporting CP (Noltzer)",
@@ -1008,39 +995,7 @@
         "home": 2.32,
         "draw": 4.5,
         "away": 2.02
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.16,
-          "under": 4
-        },
-        {
-          "line": 7.5,
-          "over": 5.5,
-          "under": 1.08
-        },
-        {
-          "line": 5.5,
-          "over": 2.05,
-          "under": 1.64
-        },
-        {
-          "line": 4.5,
-          "over": 1.46,
-          "under": 2.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.01,
-          "under": 9
-        },
-        {
-          "line": 6.5,
-          "over": 3.1,
-          "under": 1.28
-        }
-      ]
+      }
     },
     {
       "eventId": "1028174150",
@@ -1050,42 +1005,10 @@
       "startTime": "2026-06-29T03:56:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.16,
-        "draw": 3.8,
-        "away": 2.35
-      },
-      "totals": [
-        {
-          "line": 8.5,
-          "over": 8.5,
-          "under": 1.02
-        },
-        {
-          "line": 7.5,
-          "over": 4.5,
-          "under": 1.13
-        },
-        {
-          "line": 5.5,
-          "over": 1.85,
-          "under": 1.82
-        },
-        {
-          "line": 4.5,
-          "over": 1.36,
-          "under": 2.7
-        },
-        {
-          "line": 6.5,
-          "over": 2.75,
-          "under": 1.35
-        },
-        {
-          "line": 3.5,
-          "over": 1.11,
-          "under": 4.8
-        }
-      ]
+        "home": 2.14,
+        "draw": 3.75,
+        "away": 2.4
+      }
     },
     {
       "eventId": "1028181492",
@@ -1279,6 +1202,51 @@
           "line": 10.5,
           "over": 3.15,
           "under": 1.27
+        }
+      ]
+    },
+    {
+      "eventId": "1028181418",
+      "title": "B Dortmund (Pavlinho19) - Frankfurt (Rodja)",
+      "homeTeam": "B Dortmund (Pavlinho19)",
+      "awayTeam": "Frankfurt (Rodja)",
+      "startTime": "2026-06-29T04:30:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.47,
+        "draw": 6,
+        "away": 3.3
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 6.1
+        },
+        {
+          "line": 8.5,
+          "over": 6.1,
+          "under": 1.07
+        },
+        {
+          "line": 4.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 6.5,
+          "over": 2.25,
+          "under": 1.55
+        },
+        {
+          "line": 5.5,
+          "over": 1.62,
+          "under": 2.08
+        },
+        {
+          "line": 7.5,
+          "over": 3.55,
+          "under": 1.21
         }
       ]
     },
@@ -14682,6 +14650,19 @@
       }
     },
     {
+      "eventId": "1028185728",
+      "title": "Ozan Baris - James Kent Trotter",
+      "homeTeam": "Ozan Baris",
+      "awayTeam": "James Kent Trotter",
+      "startTime": "2026-06-29T15:10:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.96,
+        "away": 1.76
+      }
+    },
+    {
       "eventId": "1028183207",
       "title": "Hiroki Moriya - Edward Winter",
       "homeTeam": "Hiroki Moriya",
@@ -15658,6 +15639,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 162,
+  "tennisEventsCount": 163,
   "lastError": null
 }

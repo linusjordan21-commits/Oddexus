@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:53:43.456Z",
+  "updatedAt": "2026-06-29T03:56:13.442Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 206,
+  "uniqueEvents": 205,
   "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 22002,
+  "durationMs": 22114,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1026389412",
-      "title": "Los Angeles FC II - Houston Dynamo II",
-      "homeTeam": "Los Angeles FC II",
-      "awayTeam": "Houston Dynamo II",
-      "startTime": "2026-06-29T02:03:00Z",
-      "league": "MLS Next Pro",
-      "odds": {
-        "home": 1.14,
-        "draw": 5.3,
-        "away": 41
-      }
-    },
-    {
-      "eventId": "1028178466",
-      "title": "River Plate (nekishka) - Boca Juniors (volvo)",
-      "homeTeam": "River Plate (nekishka)",
-      "awayTeam": "Boca Juniors (volvo)",
-      "startTime": "2026-06-29T03:47:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.14,
-        "draw": 6.5,
-        "away": 13
-      }
-    },
-    {
       "eventId": "1028174097",
       "title": "Sweden (DangerDim77) - Tjeckien (R0ge)",
       "homeTeam": "Sweden (DangerDim77)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T03:50:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.43,
-        "draw": 4.7,
-        "away": 4.7
+        "home": 1.37,
+        "draw": 4.4,
+        "away": 6
       }
     },
     {
@@ -1720,6 +1694,51 @@
           "line": 3.5,
           "over": 1.11,
           "under": 5.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028181418",
+      "title": "B Dortmund (Pavlinho19) - Frankfurt (Rodja)",
+      "homeTeam": "B Dortmund (Pavlinho19)",
+      "awayTeam": "Frankfurt (Rodja)",
+      "startTime": "2026-06-29T04:30:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.52,
+        "draw": 6,
+        "away": 3.3
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 6.1
+        },
+        {
+          "line": 8.5,
+          "over": 6.1,
+          "under": 1.07
+        },
+        {
+          "line": 4.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 6.5,
+          "over": 2.25,
+          "under": 1.55
+        },
+        {
+          "line": 5.5,
+          "over": 1.62,
+          "under": 2.08
+        },
+        {
+          "line": 7.5,
+          "over": 3.55,
+          "under": 1.21
         }
       ]
     },
@@ -15179,6 +15198,19 @@
       }
     },
     {
+      "eventId": "1028185728",
+      "title": "Ozan Baris - James Kent Trotter",
+      "homeTeam": "Ozan Baris",
+      "awayTeam": "James Kent Trotter",
+      "startTime": "2026-06-29T15:10:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.96,
+        "away": 1.76
+      }
+    },
+    {
       "eventId": "1028183207",
       "title": "Hiroki Moriya - Edward Winter",
       "homeTeam": "Hiroki Moriya",
@@ -16142,6 +16174,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 159,
+  "tennisEventsCount": 160,
   "lastError": null
 }
