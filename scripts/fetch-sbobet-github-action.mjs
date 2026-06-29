@@ -169,8 +169,9 @@ function extractInPage(diagnose) {
     const awayA = g.anchor["2"] || g.anchor["a"];
     const homeTeam = teamOf(homeA);
     const awayTeam = teamOf(awayA);
-    // ESPORTS-FILTER: esoccer ("e-Morocco (DEZZY)") matchar aldrig Pinnacle → ren brus, skippa.
-    if (ESPORTS_RE.test(homeTeam || "") || ESPORTS_RE.test(awayTeam || "")) { esportsSkipped++; continue; }
+    // SBOBET ÄR EN SHARP-KÄLLA → den ska behålla sina EGNA matcher även om de inte matchar
+    // Pinnacle. Vi FILTRERAR INTE esoccer här (revert 2026-06-29) — bara mäter antalet.
+    if (ESPORTS_RE.test(homeTeam || "") || ESPORTS_RE.test(awayTeam || "")) esportsSkipped++;
     const anyA = homeA || awayA || Object.values(g.anchor)[0];
     const row = anyA ? climbToRow(anyA) : null;
     const rowText = (row?.innerText || "").replace(/\s+/g, " ").trim();
