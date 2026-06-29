@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:23:34.730Z",
+  "updatedAt": "2026-06-29T03:26:05.216Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 187,
+  "uniqueEvents": 189,
   "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 14816,
+  "durationMs": 15027,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,6 +985,19 @@
       ]
     },
     {
+      "eventId": "1026389412",
+      "title": "Los Angeles FC II - Houston Dynamo II",
+      "homeTeam": "Los Angeles FC II",
+      "awayTeam": "Houston Dynamo II",
+      "startTime": "2026-06-29T02:03:00Z",
+      "league": "MLS Next Pro",
+      "odds": {
+        "home": 4.2,
+        "draw": 2.23,
+        "away": 2.35
+      }
+    },
+    {
       "eventId": "1028174546",
       "title": "Real Madrid (zaha) - Barcelona (Solya)",
       "homeTeam": "Real Madrid (zaha)",
@@ -992,22 +1005,9 @@
       "startTime": "2026-06-29T03:14:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 4.4,
-        "draw": 3.9,
-        "away": 1.53
-      }
-    },
-    {
-      "eventId": "1028174520",
-      "title": "Man City (GanGsta_Panda) - B Dortmund (SpeciAL)",
-      "homeTeam": "Man City (GanGsta_Panda)",
-      "awayTeam": "B Dortmund (SpeciAL)",
-      "startTime": "2026-06-29T03:20:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 21,
-        "draw": 14,
-        "away": 1.04
+        "home": 51,
+        "draw": 13,
+        "away": 1.02
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T03:20:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.3,
-        "draw": 3.95,
-        "away": 2.16
+        "home": 4.7,
+        "draw": 4.1,
+        "away": 1.48
       }
     },
     {
@@ -1250,6 +1250,96 @@
           "line": 5.5,
           "over": 3.05,
           "under": 1.28
+        }
+      ]
+    },
+    {
+      "eventId": "1028174145",
+      "title": "Sporting CP (Noltzer) - Arsenal (Gaga)",
+      "homeTeam": "Sporting CP (Noltzer)",
+      "awayTeam": "Arsenal (Gaga)",
+      "startTime": "2026-06-29T03:56:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.32,
+        "draw": 4.5,
+        "away": 2.02
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.16,
+          "under": 4
+        },
+        {
+          "line": 7.5,
+          "over": 5.5,
+          "under": 1.08
+        },
+        {
+          "line": 5.5,
+          "over": 2.05,
+          "under": 1.64
+        },
+        {
+          "line": 4.5,
+          "over": 1.46,
+          "under": 2.4
+        },
+        {
+          "line": 2.5,
+          "over": 1.01,
+          "under": 9
+        },
+        {
+          "line": 6.5,
+          "over": 3.1,
+          "under": 1.28
+        }
+      ]
+    },
+    {
+      "eventId": "1028174150",
+      "title": "Man City (GanGsta_Panda) - Juventus (maggett0)",
+      "homeTeam": "Man City (GanGsta_Panda)",
+      "awayTeam": "Juventus (maggett0)",
+      "startTime": "2026-06-29T03:56:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.16,
+        "draw": 3.8,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 7.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 5.5,
+          "over": 1.85,
+          "under": 1.82
+        },
+        {
+          "line": 4.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 6.5,
+          "over": 2.75,
+          "under": 1.35
+        },
+        {
+          "line": 3.5,
+          "over": 1.11,
+          "under": 4.8
         }
       ]
     },
