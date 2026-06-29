@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:59:18.645Z",
+  "updatedAt": "2026-06-29T02:01:48.467Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 203,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 200,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 17035,
+  "durationMs": 17411,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 21,
-        "draw": 4.5,
-        "away": 1.21
+        "home": 41,
+        "draw": 5.4,
+        "away": 1.14
       }
     },
     {
@@ -1005,22 +1005,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 6.75,
-        "draw": 3.75,
-        "away": 1.44
-      }
-    },
-    {
-      "eventId": "1028174092",
-      "title": "Paris (A1ose) - Real Madrid (SPACE)",
-      "homeTeam": "Paris (A1ose)",
-      "awayTeam": "Real Madrid (SPACE)",
-      "startTime": "2026-06-29T01:52:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.4,
-        "draw": 2.15,
-        "away": 3.7
+        "home": 6.5,
+        "draw": 3.7,
+        "away": 1.46
       }
     },
     {
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T01:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.9,
-        "draw": 4.1,
-        "away": 1.79
+        "home": 4.9,
+        "draw": 4.4,
+        "away": 1.44
       }
     },
     {
@@ -1044,9 +1031,9 @@
       "startTime": "2026-06-29T01:56:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.48,
-        "draw": 4.5,
-        "away": 4.25
+        "home": 1.13,
+        "draw": 7.5,
+        "away": 12.5
       }
     },
     {
@@ -1054,7 +1041,7 @@
       "title": "Los Angeles FC II - Houston Dynamo II",
       "homeTeam": "Los Angeles FC II",
       "awayTeam": "Houston Dynamo II",
-      "startTime": "2026-06-29T02:00:00Z",
+      "startTime": "2026-06-29T02:02:00Z",
       "league": "MLS Next Pro",
       "odds": {
         "home": 2.63,
@@ -1411,6 +1398,51 @@
       ]
     },
     {
+      "eventId": "1028174541",
+      "title": "Arsenal (Gaga) - Juventus (maggett0)",
+      "homeTeam": "Arsenal (Gaga)",
+      "awayTeam": "Juventus (maggett0)",
+      "startTime": "2026-06-29T02:20:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.12,
+        "draw": 4.75,
+        "away": 2.16
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 6,
+          "under": 1.07
+        },
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.5,
+          "under": 2.3
+        },
+        {
+          "line": 5.5,
+          "over": 2.17,
+          "under": 1.57
+        },
+        {
+          "line": 3.5,
+          "over": 1.19,
+          "under": 3.7
+        },
+        {
+          "line": 6.5,
+          "over": 3.3,
+          "under": 1.24
+        }
+      ]
+    },
+    {
       "eventId": "1028174496",
       "title": "B Dortmund (SpeciAL) - Man City (GanGsta_Panda)",
       "homeTeam": "B Dortmund (SpeciAL)",
@@ -1661,11 +1693,11 @@
         {
           "line": 2.5,
           "over": 2.07,
-          "under": 1.78
+          "under": 1.77
         },
         {
           "line": 1.5,
-          "over": 1.33,
+          "over": 1.34,
           "under": 3.35
         },
         {
@@ -1683,11 +1715,11 @@
         {
           "line": -1.25,
           "home": 2.55,
-          "away": 1.52
+          "away": 1.5
         },
         {
           "line": -2.25,
-          "home": 5.5,
+          "home": 5.6,
           "away": 1.14
         },
         {
@@ -1702,8 +1734,8 @@
         },
         {
           "line": -1,
-          "home": 2.18,
-          "away": 1.68
+          "home": 2.2,
+          "away": 1.67
         },
         {
           "line": -0.25,
@@ -1733,7 +1765,7 @@
         {
           "line": -1.5,
           "home": 2.88,
-          "away": 1.42
+          "away": 1.41
         },
         {
           "line": -2,
@@ -1745,8 +1777,8 @@
         "totals": [
           {
             "line": 7.5,
-            "over": 1.38,
-            "under": 2.85
+            "over": 1.37,
+            "under": 2.88
           },
           {
             "line": 12.5,
@@ -1755,7 +1787,7 @@
           },
           {
             "line": 9.5,
-            "over": 2.04,
+            "over": 2.02,
             "under": 1.71
           },
           {
@@ -1781,7 +1813,7 @@
           {
             "line": 10.5,
             "over": 2.6,
-            "under": 1.44
+            "under": 1.45
           },
           {
             "line": 11.5,
