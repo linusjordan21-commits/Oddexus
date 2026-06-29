@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T23:28:28.906Z",
+  "updatedAt": "2026-06-29T23:32:29.522Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 217,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 224,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 18195,
+  "durationMs": 18404,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T23:24:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.36,
-        "draw": 5.8,
-        "away": 4.6
+        "home": 1.24,
+        "draw": 6,
+        "away": 7
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T23:26:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.05,
-        "draw": 16,
-        "away": 14
+        "home": 1.04,
+        "draw": 14,
+        "away": 18
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T23:26:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.1,
-        "draw": 4.8,
-        "away": 1.64
+        "home": 3.05,
+        "draw": 3.45,
+        "away": 1.88
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T23:26:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.62,
-        "draw": 3.65,
-        "away": 4.1
+        "home": 3.15,
+        "draw": 2.88,
+        "away": 2.04
       }
     },
     {
@@ -1044,9 +1044,9 @@
       "startTime": "2026-06-29T23:26:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.43,
-        "draw": 4.4,
-        "away": 1.96
+        "home": 1.14,
+        "draw": 6.75,
+        "away": 13
       }
     },
     {
@@ -1058,41 +1058,9 @@
       "league": "Esports Battle (2x4min)",
       "odds": {
         "home": 2.25,
-        "draw": 4.7,
-        "away": 2.05
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 4.8,
-          "under": 1.11
-        },
-        {
-          "line": 3.5,
-          "over": 1.13,
-          "under": 4.5
-        },
-        {
-          "line": 6.5,
-          "over": 2.85,
-          "under": 1.33
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.01
-        },
-        {
-          "line": 5.5,
-          "over": 1.91,
-          "under": 1.75
-        },
-        {
-          "line": 4.5,
-          "over": 1.38,
-          "under": 2.63
-        }
-      ]
+        "draw": 4.2,
+        "away": 2.15
+      }
     },
     {
       "eventId": "1028186428",
@@ -1102,79 +1070,110 @@
       "startTime": "2026-06-29T23:29:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.76,
-        "draw": 3.7,
+        "home": 1.91,
+        "draw": 3.15,
         "away": 3.25
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.01,
-          "under": 9.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.57,
-          "under": 2.17
-        },
-        {
-          "line": 2.5,
-          "over": 1.19,
-          "under": 3.75
-        },
-        {
-          "line": 5.5,
-          "over": 3.9,
-          "under": 1.17
-        },
-        {
-          "line": 4.5,
-          "over": 2.33,
-          "under": 1.48
-        },
-        {
-          "line": 6.5,
-          "over": 7.5,
-          "under": 1.03
-        }
-      ]
+      }
     },
     {
       "eventId": "1028081510",
       "title": "Unión Española - Colo Colo",
       "homeTeam": "Unión Española",
       "awayTeam": "Colo Colo",
-      "startTime": "2026-06-29T23:30:00Z",
+      "startTime": "2026-06-29T23:32:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 5.1,
-        "draw": 4.3,
-        "away": 1.47
+        "home": 4.75,
+        "draw": 3.95,
+        "away": 1.55
+      }
+    },
+    {
+      "eventId": "1028193867",
+      "title": "Man City (Noltzer) - Liverpool (Gaga)",
+      "homeTeam": "Man City (Noltzer)",
+      "awayTeam": "Liverpool (Gaga)",
+      "startTime": "2026-06-29T23:38:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.35,
+        "draw": 4.7,
+        "away": 1.98
       },
       "totals": [
         {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.6
+          "line": 5.5,
+          "over": 2.08,
+          "under": 1.64
+        },
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.47,
+          "under": 2.38
         },
         {
           "line": 3.5,
+          "over": 1.18,
+          "under": 3.9
+        },
+        {
+          "line": 6.5,
+          "over": 3.15,
+          "under": 1.26
+        },
+        {
+          "line": 7.5,
+          "over": 5.4,
+          "under": 1.09
+        }
+      ]
+    },
+    {
+      "eventId": "1028193863",
+      "title": "Chelsea (SpeciAL) - Arsenal (maggett0)",
+      "homeTeam": "Chelsea (SpeciAL)",
+      "awayTeam": "Arsenal (maggett0)",
+      "startTime": "2026-06-29T23:38:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.7,
+        "draw": 3.3,
+        "away": 3.95
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 7.5,
+          "over": 3.25,
+          "under": 1.25
+        },
+        {
+          "line": 4.5,
+          "over": 1.24,
+          "under": 3.3
+        },
+        {
+          "line": 5.5,
+          "over": 1.54,
+          "under": 2.23
+        },
+        {
+          "line": 6.5,
           "over": 2.23,
           "under": 1.53
         },
         {
-          "line": 4.5,
-          "over": 3.75,
-          "under": 1.2
-        },
-        {
-          "line": 2.5,
-          "over": 1.48,
-          "under": 2.35
-        },
-        {
-          "line": 5.5,
-          "over": 6.5,
+          "line": 8.5,
+          "over": 6,
           "under": 1.07
         }
       ]
@@ -1276,6 +1275,236 @@
           "line": 7.5,
           "over": 2.1,
           "under": 1.63
+        }
+      ]
+    },
+    {
+      "eventId": "1028186401",
+      "title": "Bologna (Kavviro) - Napoli (tohi4)",
+      "homeTeam": "Bologna (Kavviro)",
+      "awayTeam": "Napoli (tohi4)",
+      "startTime": "2026-06-29T23:41:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.56,
+        "draw": 4.6,
+        "away": 3.6
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.29,
+          "under": 3.05
+        },
+        {
+          "line": 5.5,
+          "over": 2.6,
+          "under": 1.4
+        },
+        {
+          "line": 2.5,
+          "over": 1.07,
+          "under": 6
+        },
+        {
+          "line": 4.5,
+          "over": 1.75,
+          "under": 1.93
+        },
+        {
+          "line": 7.5,
+          "over": 8,
+          "under": 1.02
+        },
+        {
+          "line": 6.5,
+          "over": 4.3,
+          "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028186431",
+      "title": "Juventus (Grellz) - Roma (volvo)",
+      "homeTeam": "Juventus (Grellz)",
+      "awayTeam": "Roma (volvo)",
+      "startTime": "2026-06-29T23:41:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.2,
+        "draw": 5.75,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.32,
+          "under": 2.88
+        },
+        {
+          "line": 3.5,
+          "over": 1.11,
+          "under": 4.9
+        },
+        {
+          "line": 6.5,
+          "over": 2.6,
+          "under": 1.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.81,
+          "under": 1.86
+        },
+        {
+          "line": 7.5,
+          "over": 4.3,
+          "under": 1.14
+        },
+        {
+          "line": 8.5,
+          "over": 7.5,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028186376",
+      "title": "River Plate (Kosta) - Boca Juniors (zaha)",
+      "homeTeam": "River Plate (Kosta)",
+      "awayTeam": "Boca Juniors (zaha)",
+      "startTime": "2026-06-29T23:42:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 3.1,
+        "draw": 6.25,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.04,
+          "under": 7.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.4,
+          "under": 2.55
+        },
+        {
+          "line": 9.5,
+          "over": 3.8,
+          "under": 1.19
+        },
+        {
+          "line": 5.5,
+          "over": 1.18,
+          "under": 3.9
+        },
+        {
+          "line": 10.5,
+          "over": 6.1,
+          "under": 1.06
+        },
+        {
+          "line": 7.5,
+          "over": 1.85,
+          "under": 1.82
+        },
+        {
+          "line": 8.5,
+          "over": 2.5,
+          "under": 1.42
+        }
+      ]
+    },
+    {
+      "eventId": "1028186399",
+      "title": "Napoli (tohi4) - Juventus (Grellz)",
+      "homeTeam": "Napoli (tohi4)",
+      "awayTeam": "Juventus (Grellz)",
+      "startTime": "2026-06-29T23:53:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.05,
+        "draw": 5.8,
+        "away": 1.57
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.95,
+          "under": 1.72
+        },
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 4.35
+        },
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.63
+        },
+        {
+          "line": 8.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 6.5,
+          "over": 2.85,
+          "under": 1.33
+        },
+        {
+          "line": 7.5,
+          "over": 5,
+          "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028186386",
+      "title": "Sassuolo (Nightxx) - Bologna (Kavviro)",
+      "homeTeam": "Sassuolo (Nightxx)",
+      "awayTeam": "Bologna (Kavviro)",
+      "startTime": "2026-06-29T23:53:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.33,
+        "draw": 4.3,
+        "away": 2.06
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 2.35,
+          "under": 1.48
+        },
+        {
+          "line": 6.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 3.5,
+          "over": 1.6,
+          "under": 2.12
+        },
+        {
+          "line": 5.5,
+          "over": 4,
+          "under": 1.16
+        },
+        {
+          "line": 1.5,
+          "over": 1.01,
+          "under": 9
+        },
+        {
+          "line": 2.5,
+          "over": 1.17,
+          "under": 3.9
         }
       ]
     },
@@ -1494,43 +1723,43 @@
       "odds": {
         "home": 1.68,
         "draw": 5,
-        "away": 2.88
+        "away": 2.9
       },
       "totals": [
         {
           "line": 10.5,
-          "over": 4.4,
-          "under": 1.14
+          "over": 3.85,
+          "under": 1.18
         },
         {
           "line": 6.5,
-          "over": 1.23,
-          "under": 3.35
+          "over": 1.2,
+          "under": 3.65
         },
         {
           "line": 5.5,
-          "over": 1.08,
-          "under": 5.6
+          "over": 1.06,
+          "under": 6.25
         },
         {
           "line": 8.5,
-          "over": 2.02,
-          "under": 1.68
+          "over": 1.88,
+          "under": 1.79
         },
         {
           "line": 7.5,
-          "over": 1.55,
-          "under": 2.25
+          "over": 1.45,
+          "under": 2.4
         },
         {
           "line": 11.5,
-          "over": 7,
-          "under": 1.04
+          "over": 6.25,
+          "under": 1.06
         },
         {
           "line": 9.5,
-          "over": 2.85,
-          "under": 1.32
+          "over": 2.6,
+          "under": 1.4
         }
       ]
     },
@@ -2098,45 +2327,45 @@
       "startTime": "2026-06-30T01:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.9,
+        "home": 2.88,
         "draw": 5.1,
-        "away": 1.68
+        "away": 1.67
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.08,
-          "under": 5.5
+          "over": 1.06,
+          "under": 6.25
         },
         {
           "line": 6.5,
-          "over": 1.25,
-          "under": 3.25
+          "over": 1.2,
+          "under": 3.6
         },
         {
           "line": 9.5,
-          "over": 2.85,
-          "under": 1.32
+          "over": 2.6,
+          "under": 1.38
         },
         {
           "line": 10.5,
-          "over": 4.3,
-          "under": 1.14
+          "over": 3.85,
+          "under": 1.18
         },
         {
           "line": 11.5,
-          "over": 7,
-          "under": 1.04
+          "over": 6.1,
+          "under": 1.06
         },
         {
           "line": 7.5,
-          "over": 1.54,
-          "under": 2.23
+          "over": 1.45,
+          "under": 2.43
         },
         {
           "line": 8.5,
-          "over": 2.02,
-          "under": 1.68
+          "over": 1.9,
+          "under": 1.76
         }
       ]
     },
@@ -12957,6 +13186,41 @@
       ]
     },
     {
+      "eventId": "1028136774",
+      "title": "Corpus Christi FC - Chattanooga Red Wolves SC",
+      "homeTeam": "Corpus Christi FC",
+      "awayTeam": "Chattanooga Red Wolves SC",
+      "startTime": "2026-07-04T23:30:00Z",
+      "league": "USL League 1",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.2,
+        "away": 2.3
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.75,
+          "under": 1.89
+        },
+        {
+          "line": 1.5,
+          "over": 1.22,
+          "under": 3.55
+        },
+        {
+          "line": 3.5,
+          "over": 2.85,
+          "under": 1.34
+        },
+        {
+          "line": 4.5,
+          "over": 5,
+          "under": 1.11
+        }
+      ]
+    },
+    {
       "eventId": "1026293758",
       "title": "Gimcheon Sangmu FC - Jeju United",
       "homeTeam": "Gimcheon Sangmu FC",
@@ -15254,19 +15518,6 @@
   ],
   "eventsBasket": [
     {
-      "eventId": "1028131663",
-      "title": "Atlético Olimpia - Albatros",
-      "homeTeam": "Atlético Olimpia",
-      "awayTeam": "Albatros",
-      "startTime": "2026-06-29T23:15:00Z",
-      "league": "Torneo Metropolitano",
-      "sport": "basketball",
-      "odds": {
-        "home": 1.05,
-        "away": 8.5
-      }
-    },
-    {
       "eventId": "1028131665",
       "title": "Club Atlético Tabaré - Colon",
       "homeTeam": "Club Atlético Tabaré",
@@ -15275,8 +15526,8 @@
       "league": "Torneo Metropolitano",
       "sport": "basketball",
       "odds": {
-        "home": 1.03,
-        "away": 10
+        "home": 1.08,
+        "away": 6.75
       }
     },
     {
@@ -15446,8 +15697,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.87,
-        "away": 1.89
+        "home": 1.9,
+        "away": 1.86
       }
     },
     {
@@ -15459,8 +15710,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.84,
-        "away": 1.92
+        "home": 2.43,
+        "away": 1.53
       }
     },
     {
@@ -15472,8 +15723,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.54,
-        "away": 2.4
+        "home": 1.64,
+        "away": 2.18
       }
     },
     {
@@ -16083,8 +16334,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.5,
-        "away": 2.6
+        "home": 1.49,
+        "away": 2.63
       }
     },
     {
@@ -17180,7 +17431,7 @@
       }
     }
   ],
-  "basketEventsCount": 12,
+  "basketEventsCount": 11,
   "tennisEventsCount": 136,
   "lastError": null
 }
