@@ -1,0 +1,44 @@
+name: SBOBET Recon Debug
+
+# Kontrollerad recon: kör fetch-sbobet ENA gången med SBOBET_DIAGNOSE=1 + kandidat-URL:er
+# (fler sporter än de 2 default euro-vyerna) → dumpar marketHist + totalsSamples + anchorCount
+# per URL till data/_sbobet-diag.json + loggen. Visar vilka sport/liga-URL:er som funkar +
+# var totals (icke-1x2/AH-koder) renderas, INNAN vi rör parser/URL-config. workflow_dispatch only.
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: sbobet-recon-debug
+  cancel-in-progress: false
+
+jobs:
+  recon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+      - name: SBOBET recon (DIAGNOSE + candidate sport URLs)
+        env:
+          SBOBET_DIAGNOSE: "1"
+          # Kandidat-URL:er: 2 nuvarande + gissade sporter. De som 404:ar ger anchorCount=0
+          # (scrapern hanterar det tyst) → reconet visar vilka som funkar.
+          SBOBET_URLS: "https://www.sbobet.com/en/euro,https://www.sbobet.com/en/euro/football,https://www.sbobet.com/en/euro/tennis,https://www.sbobet.com/en/euro/basketball,https://www.sbobet.com/en/euro/e-sports,https://www.sbobet.com/en/euro/ice-hockey,https://www.sbobet.com/en/euro/american-football,https://www.sbobet.com/en/euro/baseball"
+          SBOBET_SETTLE_MS: "10000"
+          SBOBET_DEADLINE_MS: "600000"
+        run: |
+          echo "=== sbobet-recon START $(date -u +%FT%TZ) ==="
+          npx vite-node scripts/fetch-sbobet-github-action.mjs 2>&1 | grep -iE "onPrice|prematch|DIAGNOS|anchorCount|Klart" || echo "node exit=$?"
+          echo ""
+          echo "=== DIAG: marketHist (vilka koder finns) + perUrl (vilka URL:er funkar) + totalsSamples ==="
+          node -e "try{const d=require('./data/_sbobet-diag.json');console.log('marketHist:',JSON.stringify(d.marketHist));console.log('perUrl:',JSON.stringify(d.perUrl,null,1));console.log('totalsSamples:',JSON.stringify((d.totalsSamples||[]).slice(0,10),null,1));}catch(e){console.log('diag-läsfel:',e.message)}"
+          echo "=== sbobet-recon SLUT $(date -u +%FT%TZ) ==="
