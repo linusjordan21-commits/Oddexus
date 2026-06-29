@@ -97,7 +97,11 @@ const KEPT_MARKET_TYPES = new Set(["moneyline", "spread", "total"]);
 
 function trimMarket(market) {
   if (!market || typeof market !== "object") return null;
-  if (market.period !== 0) return null; // bara full match (period 0)
+  // period 0 = full match, period 1 = första halvlek (1H). Fångar BÅDA (H1 är gratis —
+  // API-svaret innehåller alla perioder, vi slutar bara slänga period 1). period 2 (2H) +
+  // övriga droppas. H1-rader är säkra: motorn bygger helmatch-fair-priser bara från period 0
+  // (buildPinnacleRowsFromSport) + marketKey har period i nyckeln → aldrig FT/H1-hopblandning.
+  if (market.period !== 0 && market.period !== 1) return null;
   if (market.status && market.status !== "open") return null;
   if (typeof market.matchupId !== "number") return null;
   const type = market.type;
@@ -125,7 +129,7 @@ function trimMarket(market) {
   return {
     matchupId: market.matchupId,
     type,
-    period: 0,
+    period: market.period, // 0 = full match, 1 = första halvlek (1H)
     ...(type === "moneyline" ? {} : { isAlternate: !!market.isAlternate }),
     limit: pinnacleLimit,
     prices: Array.isArray(market.prices)
