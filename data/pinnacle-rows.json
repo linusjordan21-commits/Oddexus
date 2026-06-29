@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T10:25:24.346Z",
+  "updatedAt": "2026-06-29T10:27:29.554Z",
   "bySport": {
     "soccer": {
       "sportId": 29,
@@ -153760,6 +153760,22 @@
       ],
       "markets": [
         {
+          "matchupId": 1632207660,
+          "type": "moneyline",
+          "period": 0,
+          "limit": 950,
+          "prices": [
+            {
+              "designation": "home",
+              "price": 170
+            },
+            {
+              "designation": "away",
+              "price": -201
+            }
+          ]
+        },
+        {
           "matchupId": 1632207758,
           "type": "moneyline",
           "period": 0,
@@ -153792,18 +153808,18 @@
           ]
         },
         {
-          "matchupId": 1631367149,
+          "matchupId": 1632061617,
           "type": "moneyline",
           "period": 0,
-          "limit": 3000,
+          "limit": 950,
           "prices": [
             {
               "designation": "home",
-              "price": 133
+              "price": 294
             },
             {
               "designation": "away",
-              "price": -156
+              "price": -365
             }
           ]
         },
@@ -153824,82 +153840,18 @@
           ]
         },
         {
-          "matchupId": 1631373781,
+          "matchupId": 1631367148,
           "type": "moneyline",
           "period": 0,
-          "limit": 2050,
+          "limit": 3000,
           "prices": [
             {
               "designation": "home",
-              "price": -216
+              "price": 128
             },
             {
               "designation": "away",
-              "price": 182
-            }
-          ]
-        },
-        {
-          "matchupId": 1632061617,
-          "type": "moneyline",
-          "period": 0,
-          "limit": 950,
-          "prices": [
-            {
-              "designation": "home",
-              "price": 294
-            },
-            {
-              "designation": "away",
-              "price": -365
-            }
-          ]
-        },
-        {
-          "matchupId": 1631367150,
-          "type": "moneyline",
-          "period": 0,
-          "limit": 2050,
-          "prices": [
-            {
-              "designation": "home",
-              "price": 1379
-            },
-            {
-              "designation": "away",
-              "price": -3333
-            }
-          ]
-        },
-        {
-          "matchupId": 1632207663,
-          "type": "moneyline",
-          "period": 0,
-          "limit": 950,
-          "prices": [
-            {
-              "designation": "home",
-              "price": 145
-            },
-            {
-              "designation": "away",
-              "price": -170
-            }
-          ]
-        },
-        {
-          "matchupId": 1632207661,
-          "type": "moneyline",
-          "period": 0,
-          "limit": 950,
-          "prices": [
-            {
-              "designation": "home",
-              "price": -149
-            },
-            {
-              "designation": "away",
-              "price": 127
+              "price": -150
             }
           ]
         },
@@ -153920,22 +153872,6 @@
           ]
         },
         {
-          "matchupId": 1632073435,
-          "type": "moneyline",
-          "period": 0,
-          "limit": 950,
-          "prices": [
-            {
-              "designation": "home",
-              "price": -155
-            },
-            {
-              "designation": "away",
-              "price": 132
-            }
-          ]
-        },
-        {
           "matchupId": 1632193218,
           "type": "moneyline",
           "period": 0,
@@ -153952,18 +153888,66 @@
           ]
         },
         {
-          "matchupId": 1631367148,
+          "matchupId": 1632207663,
+          "type": "moneyline",
+          "period": 0,
+          "limit": 950,
+          "prices": [
+            {
+              "designation": "home",
+              "price": 145
+            },
+            {
+              "designation": "away",
+              "price": -170
+            }
+          ]
+        },
+        {
+          "matchupId": 1631373781,
+          "type": "moneyline",
+          "period": 0,
+          "limit": 2050,
+          "prices": [
+            {
+              "designation": "home",
+              "price": -216
+            },
+            {
+              "designation": "away",
+              "price": 182
+            }
+          ]
+        },
+        {
+          "matchupId": 1632073435,
+          "type": "moneyline",
+          "period": 0,
+          "limit": 950,
+          "prices": [
+            {
+              "designation": "home",
+              "price": -155
+            },
+            {
+              "designation": "away",
+              "price": 132
+            }
+          ]
+        },
+        {
+          "matchupId": 1631367149,
           "type": "moneyline",
           "period": 0,
           "limit": 3000,
           "prices": [
             {
               "designation": "home",
-              "price": 128
+              "price": 133
             },
             {
               "designation": "away",
-              "price": -150
+              "price": -156
             }
           ]
         },
@@ -153984,18 +153968,34 @@
           ]
         },
         {
-          "matchupId": 1632207660,
+          "matchupId": 1631367150,
+          "type": "moneyline",
+          "period": 0,
+          "limit": 2050,
+          "prices": [
+            {
+              "designation": "home",
+              "price": 1379
+            },
+            {
+              "designation": "away",
+              "price": -3333
+            }
+          ]
+        },
+        {
+          "matchupId": 1632207661,
           "type": "moneyline",
           "period": 0,
           "limit": 950,
           "prices": [
             {
               "designation": "home",
-              "price": 170
+              "price": -149
             },
             {
               "designation": "away",
-              "price": -201
+              "price": 127
             }
           ]
         }
@@ -154071,6 +154071,6 @@
       "title": "Online Sports Betting | The Best Odds | Pinnacle",
       "cookieCount": 0
     },
-    "totalDurationMs": 6712
+    "totalDurationMs": 6824
   }
 }
