@@ -1,7 +1,27 @@
 {
-  "updatedAt": "2026-06-29T14:29:11.924Z",
+  "updatedAt": "2026-06-29T14:43:17.946Z",
   "source": "scrapfly",
   "partial": false,
-  "status": "scrape_failed",
-  "events": []
+  "status": "no_events",
+  "reason": "no eligible prematch events in 24h window",
+  "events": [],
+  "meta": {
+    "leagues": 62,
+    "rawMatches": 219,
+    "window": {
+      "nInplay": 121,
+      "nBadDate": 0,
+      "nPast": 0,
+      "n24": 1,
+      "n48": 4,
+      "n72": 1,
+      "nFuture": 92,
+      "samples": [
+        "2026-06-29T17:00:00+00:00",
+        "2026-06-30T17:00:00+00:00",
+        "2026-06-30T21:00:00+00:00",
+        "2026-06-30T21:00:00+00:00"
+      ]
+    }
+  }
 }
