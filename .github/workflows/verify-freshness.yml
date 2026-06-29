@@ -1,0 +1,24 @@
+name: Verify Freshness (DB-side audit)
+
+# Manuellt verktyg: kör scripts/verify-freshness.mjs mot Supabase och skriver ut
+# odds_cache-åldrar + valuebet_signals/decision_snapshots-färskhet i loggen.
+# Read-only. workflow_dispatch only (inget schema → ingen run-storm).
+on:
+  workflow_dispatch: {}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run freshness verification
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: node scripts/verify-freshness.mjs
