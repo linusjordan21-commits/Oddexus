@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T13:18:14.171Z",
+  "updatedAt": "2026-06-29T13:19:20.347Z",
   "sources": {
     "altenar": {
       "currentIntervalSec": 33,
@@ -27,6 +27,15 @@
       "backoffCount": 182,
       "lastBackoffAt": "2026-06-28T12:42:11.140Z",
       "lastStatus": "FRESH"
+    },
+    "coolbet": {
+      "currentIntervalSec": 1350,
+      "toleranceFloorSec": 180,
+      "hardFloorSec": 180,
+      "ceilingSec": 1800,
+      "backoffCount": 0,
+      "lastBackoffAt": null,
+      "lastStatus": "STALE"
     }
   }
 }
