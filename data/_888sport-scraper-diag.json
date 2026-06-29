@@ -1,29 +1,18 @@
 {
-  "ranAt": "2026-06-29T05:03:51.899Z",
+  "ranAt": "2026-06-29T05:13:51.044Z",
   "catalogs": 5,
   "builtEvents": 25,
   "notes": [],
   "wsRecon": {
     "murl": "https://www.888sport.se/football/iceland/icelandic-urvalsdeild/akranes-vs-fram/",
     "wsUrls": [
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-31a4a122-cfc2-4913-9d48-e9c01063aa05",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-31a4a122-cfc2-4913-9d48-e9c01063aa05",
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-77fb7b30-4335-41b5-adea-5cdbc4044392",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-77fb7b30-4335-41b5-adea-5cdbc4044392"
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-5c7071b3-50a0-42c7-876b-e1d3d74941fb",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-5c7071b3-50a0-42c7-876b-e1d3d74941fb",
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-b411b87d-444a-4171-b28a-7494ad0dc801",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-b411b87d-444a-4171-b28a-7494ad0dc801"
     ],
-    "frameCount": 12,
-    "frames": [
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:58\",\"guid\":\"ef8a1f60-7377-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844440}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:58\",\"guid\":\"eff48eae-7377-11f1-af92-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844441}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:58\",\"guid\":\"eff93710-7377-11f1-9122-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844441}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:59\",\"guid\":\"f021ffc4-7377-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844440}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:59\",\"guid\":\"f04fdff2-7377-11f1-b125-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844439}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:03:59\",\"guid\":\"f054fb54-7377-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[{\"name\":\"Matchvinnare\",\"selections\":{\"16773895406\":{\"fraction_price\":\"4\\/5\",\"price\":1.8,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":1,\"extra_info\":null,\"name\":\"Iraq (Hulk)\",\"decimal_price\":1.8,\"tradable\":true,\"sp_only\":false,\"outcome\":\"UNSETTLED\",\"type\":\"1\",\"order\":1000},\"16773895405\":{\"fraction_price\":\"14\\/5\",\"price\":3.8,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":2,\"extra_info\":null,\"name\":\"O",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:04:00\",\"guid\":\"f126350c-7377-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844438}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:04:00\",\"guid\":\"f12b051e-7377-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844438}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:04:01\",\"guid\":\"f17484f0-7377-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844436}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:04:01\",\"guid\":\"f1782416-7377-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[{\"name\":\"Matchvinnare\",\"selections\":{\"16773895366\":{\"fraction_price\":\"9\\/5\",\"price\":2.8,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":2,\"extra_info\":null,\"name\":\"Oavgjort\",\"decimal_price\":2.8,\"tradable\":true,\"sp_only\":false,\"outcome\":\"UNSETTLED\",\"type\":\"X\",\"order\":1000},\"16773895364\":{\"fraction_price\":\"29\\/20\",\"price\":2.45,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":1,\"extra_info\":null,\"name\":\"Sw"
-    ]
+    "frameCount": 0,
+    "frames": []
   },
   "droppedOutsideWindow": 5
 }
