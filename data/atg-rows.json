@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:31:23.230Z",
+  "updatedAt": "2026-06-29T01:33:53.767Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 196,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 197,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 15149,
+  "durationMs": 15137,
   "events": [
     {
       "eventId": "1028072415",
@@ -993,8 +993,8 @@
       "league": "MLS Next Pro",
       "odds": {
         "home": 2.63,
-        "draw": 2.5,
-        "away": 3.05
+        "draw": 2.45,
+        "away": 3.1
       }
     },
     {
@@ -1005,35 +1005,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.6,
-        "draw": 3.05,
-        "away": 2.55
-      }
-    },
-    {
-      "eventId": "1028174535",
-      "title": "Croatia (maggett0) - Portugal (Noltzer)",
-      "homeTeam": "Croatia (maggett0)",
-      "awayTeam": "Portugal (Noltzer)",
-      "startTime": "2026-06-29T01:24:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 2.45,
-        "draw": 2.95,
-        "away": 2.45
-      }
-    },
-    {
-      "eventId": "1028174507",
-      "title": "Congo DR (Gaga) - Uzbekistan (SpeciAL)",
-      "homeTeam": "Congo DR (Gaga)",
-      "awayTeam": "Uzbekistan (SpeciAL)",
-      "startTime": "2026-06-29T01:24:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 26,
-        "draw": 10,
-        "away": 1.05
+        "home": 5.25,
+        "draw": 3.75,
+        "away": 1.53
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T01:26:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.2,
-        "draw": 7,
-        "away": 7.5
+        "home": 1.32,
+        "draw": 5.3,
+        "away": 5.6
       }
     },
     {
@@ -1057,8 +1031,8 @@
       "startTime": "2026-06-29T01:27:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.13,
-        "draw": 7,
+        "home": 1.17,
+        "draw": 5.75,
         "away": 13
       }
     },
@@ -1070,9 +1044,9 @@
       "startTime": "2026-06-29T01:27:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.43,
-        "draw": 4.8,
-        "away": 1.91
+        "home": 5.3,
+        "draw": 5.2,
+        "away": 1.35
       }
     },
     {
@@ -1083,9 +1057,9 @@
       "startTime": "2026-06-29T01:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.32,
-        "draw": 6.1,
-        "away": 5.1
+        "home": 1.04,
+        "draw": 14,
+        "away": 23
       }
     },
     {
@@ -1096,10 +1070,110 @@
       "startTime": "2026-06-29T01:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 5,
-        "draw": 5.3,
-        "away": 1.36
+        "home": 14,
+        "draw": 8,
+        "away": 1.11
       }
+    },
+    {
+      "eventId": "1028174147",
+      "title": "England (GanGsta_Panda) - Croatia (maggett0)",
+      "homeTeam": "England (GanGsta_Panda)",
+      "awayTeam": "Croatia (maggett0)",
+      "startTime": "2026-06-29T01:36:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.18,
+        "draw": 3.8,
+        "away": 2.33
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.15,
+          "under": 4.8
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 5.5,
+          "over": 1.84,
+          "under": 1.84
+        },
+        {
+          "line": 4.5,
+          "over": 1.4,
+          "under": 2.7
+        },
+        {
+          "line": 6.5,
+          "over": 2.7,
+          "under": 1.4
+        },
+        {
+          "line": 2.5,
+          "over": 1.03,
+          "under": 10.5
+        },
+        {
+          "line": 7.5,
+          "over": 4.4,
+          "under": 1.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028174494",
+      "title": "Portugal (Noltzer) - Congo DR (Gaga)",
+      "homeTeam": "Portugal (Noltzer)",
+      "awayTeam": "Congo DR (Gaga)",
+      "startTime": "2026-06-29T01:36:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.28,
+        "draw": 4.5,
+        "away": 2.07
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.8
+        },
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 5
+        },
+        {
+          "line": 6.5,
+          "over": 2.65,
+          "under": 1.42
+        },
+        {
+          "line": 7.5,
+          "over": 4.35,
+          "under": 1.18
+        },
+        {
+          "line": 5.5,
+          "over": 1.83,
+          "under": 1.85
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 12
+        }
+      ]
     },
     {
       "eventId": "1026389412",
@@ -13369,8 +13443,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 19,
-        "away": 1.01
+        "home": 16,
+        "away": 1.02
       }
     },
     {
