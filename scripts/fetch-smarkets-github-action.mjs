@@ -344,7 +344,11 @@ async function buildSportRows(sport, events) {
     const slots = sport.twoWay ? ["home", "away"] : ["home", "draw", "away"];
     const layCount = slots.filter((s) => lay[s] != null).length;
     const backCount = slots.filter((s) => back[s] != null).length;
-    if (layCount < 1 && backCount < 2) { funnel.noOdds++; continue; }
+    // Behåll event med MINST ett pris på någon sida. Tidigare `layCount<1 && backCount<2`
+    // slängde ~169 giltiga tennis-events (2-vägs) med asymmetrisk börs-likviditet — coverage-
+    // audit 2026-06-29. Börs har normalt partiell depth; används som confirmation, downstream
+    // tål partiell likviditet. Endast helt pris-lösa event filtreras nu bort.
+    if (layCount === 0 && backCount === 0) { funnel.noOdds++; continue; }
 
     funnel.ok++;
     const row = {

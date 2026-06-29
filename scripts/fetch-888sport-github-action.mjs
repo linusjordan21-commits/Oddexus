@@ -29,7 +29,11 @@ const log = (...a) => console.log("[888sport]", ...a);
 process.on("unhandledRejection", (e) => log("unhandledRejection (ignorerad):", e?.message ?? e));
 
 const PAGE_URL = "https://www.888sport.se/fotboll/";
-const TIMEFRAMES = ["today", "tomorrow"]; // giltiga Spectate-tidsfönster (3days/week → 400)
+// Coverage-audit 2026-06-29: bara today+tomorrow gav ~23 events; Spectate stödjer även
+// "3days" (kommentaren: 3days/week → ~400). Lägg till 3days → fler matchbara matcher.
+// Ogiltig timeframe loggas + hoppas över (rad 144), så detta är säkert. Fönstret breddas
+// 24→48h nedan så de extra matcherna inte filtreras bort direkt.
+const TIMEFRAMES = ["today", "tomorrow", "3days"]; // giltiga Spectate-tidsfönster
 
 // Bygg kanoniska events ur Spectate-katalogen (events{}→markets{}→selections{}).
 function buildEvents(catalogs) {
@@ -177,9 +181,10 @@ async function main() {
   // OBS: Spectates getUpcomingEvents-katalog returnerar bara huvudmarknaden "Matchvinnare"
   // (1X2) inline — inga totals/AH. De kräver per-event detalj-anrop (ej implementerat).
   const allEvents = buildEvents(catalogs);
-  // Fokusera på 24h-fönstret (888sport är gratis men vi håller samma fokus som
-  // de betalda källorna så valuebettern jämför imminenta matcher konsekvent).
-  const win = filterToWindowHours(allEvents, { windowHours: 24 });
+  // Coverage-audit 2026-06-29: 24h slängde 21% near-boundary + de extra "3days"-matcherna.
+  // Breddat till 48h → fler matchbara matcher (Pinnacle har 56d-horisont så de matchas).
+  // Valuebets-motorn kan fortfarande filtrera snävare vid visning.
+  const win = filterToWindowHours(allEvents, { windowHours: 48 });
   const events = win.kept;
   diag.droppedOutsideWindow = win.dropped;
   diag.builtEvents = events.length;
