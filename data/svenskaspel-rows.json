@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:24:07.035Z",
+  "updatedAt": "2026-06-29T20:28:07.754Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 217,
-  "skippedNoOdds": 6,
+  "uniqueEvents": 213,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 18441,
+  "durationMs": 18859,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,35 +992,9 @@
       "startTime": "2026-06-29T19:16:00Z",
       "league": "Úrvalsdeild",
       "odds": {
-        "home": 23,
-        "draw": 9,
-        "away": 1.06
-      }
-    },
-    {
-      "eventId": "1026435600",
-      "title": "Afturelding Mosfellsbaer - Aegir Thorlakshofn",
-      "homeTeam": "Afturelding Mosfellsbaer",
-      "awayTeam": "Aegir Thorlakshofn",
-      "startTime": "2026-06-29T19:16:00Z",
-      "league": "1. Deild",
-      "odds": {
-        "home": 1.08,
-        "draw": 9,
-        "away": 19
-      }
-    },
-    {
-      "eventId": "1028185646",
-      "title": "Boca Juniors (drksd3) - Independiente (Galikooo)",
-      "homeTeam": "Boca Juniors (drksd3)",
-      "awayTeam": "Independiente (Galikooo)",
-      "startTime": "2026-06-29T20:14:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 12,
-        "draw": 3.45,
-        "away": 1.36
+        "home": 26,
+        "draw": 10,
+        "away": 1.05
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T20:22:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.68,
-        "draw": 2.8,
-        "away": 5.2
+        "home": 2.9,
+        "draw": 1.89,
+        "away": 3.6
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T20:22:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.42,
-        "draw": 5.1,
-        "away": 4.5
+        "home": 1.04,
+        "draw": 11.5,
+        "away": 30
       }
     },
     {
@@ -1153,167 +1127,6 @@
           "under": 1.23
         }
       ]
-    },
-    {
-      "eventId": "1028163543",
-      "title": "Tyskland - Paraguay",
-      "homeTeam": "Tyskland",
-      "awayTeam": "Paraguay",
-      "startTime": "2026-06-29T20:30:00Z",
-      "league": "VM 2026",
-      "odds": {
-        "home": 1.35,
-        "draw": 5.1,
-        "away": 10.5
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 9.5,
-          "under": 1.06
-        },
-        {
-          "line": 4.5,
-          "over": 5,
-          "under": 1.18
-        },
-        {
-          "line": 0.5,
-          "over": 1.03,
-          "under": 13
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 4.75
-        },
-        {
-          "line": 3.5,
-          "over": 2.65,
-          "under": 1.49
-        },
-        {
-          "line": 2.5,
-          "over": 1.66,
-          "under": 2.25
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 1.91,
-          "away": 1.89
-        },
-        {
-          "line": -3.5,
-          "home": 6.5,
-          "away": 1.11
-        },
-        {
-          "line": -2.25,
-          "home": 2.95,
-          "away": 1.38
-        },
-        {
-          "line": -1.75,
-          "home": 2.17,
-          "away": 1.68
-        },
-        {
-          "line": -2.75,
-          "home": 4.1,
-          "away": 1.23
-        },
-        {
-          "line": -3,
-          "home": 5.75,
-          "away": 1.14
-        },
-        {
-          "line": -0.75,
-          "home": 1.38,
-          "away": 3
-        },
-        {
-          "line": -1.25,
-          "home": 1.7,
-          "away": 2.15
-        },
-        {
-          "line": -2.5,
-          "home": 3.3,
-          "away": 1.33
-        },
-        {
-          "line": -0.5,
-          "home": 1.32,
-          "away": 3.4
-        },
-        {
-          "line": -1,
-          "home": 1.48,
-          "away": 2.65
-        },
-        {
-          "line": -3.25,
-          "home": 6.1,
-          "away": 1.12
-        },
-        {
-          "line": -2,
-          "home": 2.63,
-          "away": 1.48
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 5.4,
-            "under": 1.12
-          },
-          {
-            "line": 7.5,
-            "over": 1.32,
-            "under": 3.15
-          },
-          {
-            "line": 9.5,
-            "over": 1.88,
-            "under": 1.84
-          },
-          {
-            "line": 10.5,
-            "over": 2.38,
-            "under": 1.53
-          },
-          {
-            "line": 8.5,
-            "over": 1.55,
-            "under": 2.33
-          },
-          {
-            "line": 6.5,
-            "over": 1.17,
-            "under": 4.5
-          },
-          {
-            "line": 11.5,
-            "over": 3.05,
-            "under": 1.33
-          },
-          {
-            "line": 5.5,
-            "over": 1.08,
-            "under": 6.75
-          },
-          {
-            "line": 12.5,
-            "over": 4,
-            "under": 1.21
-          }
-        ]
-      }
     },
     {
       "eventId": "1028186289",
@@ -1514,6 +1327,167 @@
           "under": 1.8
         }
       ]
+    },
+    {
+      "eventId": "1028163543",
+      "title": "Tyskland - Paraguay",
+      "homeTeam": "Tyskland",
+      "awayTeam": "Paraguay",
+      "startTime": "2026-06-29T20:35:00Z",
+      "league": "VM 2026",
+      "odds": {
+        "home": 1.35,
+        "draw": 5.1,
+        "away": 10.5
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 9.5,
+          "under": 1.06
+        },
+        {
+          "line": 4.5,
+          "over": 5,
+          "under": 1.18
+        },
+        {
+          "line": 0.5,
+          "over": 1.03,
+          "under": 13
+        },
+        {
+          "line": 1.5,
+          "over": 1.2,
+          "under": 4.75
+        },
+        {
+          "line": 3.5,
+          "over": 2.65,
+          "under": 1.49
+        },
+        {
+          "line": 2.5,
+          "over": 1.66,
+          "under": 2.25
+        }
+      ],
+      "ah": [
+        {
+          "line": -1.5,
+          "home": 1.91,
+          "away": 1.89
+        },
+        {
+          "line": -3.5,
+          "home": 6.5,
+          "away": 1.11
+        },
+        {
+          "line": -2.25,
+          "home": 2.95,
+          "away": 1.38
+        },
+        {
+          "line": -1.75,
+          "home": 2.17,
+          "away": 1.68
+        },
+        {
+          "line": -2.75,
+          "home": 4.1,
+          "away": 1.23
+        },
+        {
+          "line": -3,
+          "home": 5.75,
+          "away": 1.14
+        },
+        {
+          "line": -0.75,
+          "home": 1.38,
+          "away": 3
+        },
+        {
+          "line": -1.25,
+          "home": 1.7,
+          "away": 2.15
+        },
+        {
+          "line": -2.5,
+          "home": 3.3,
+          "away": 1.33
+        },
+        {
+          "line": -0.5,
+          "home": 1.32,
+          "away": 3.4
+        },
+        {
+          "line": -1,
+          "home": 1.48,
+          "away": 2.65
+        },
+        {
+          "line": -3.25,
+          "home": 6.1,
+          "away": 1.12
+        },
+        {
+          "line": -2,
+          "home": 2.63,
+          "away": 1.48
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 13.5,
+            "over": 5.4,
+            "under": 1.12
+          },
+          {
+            "line": 7.5,
+            "over": 1.32,
+            "under": 3.15
+          },
+          {
+            "line": 9.5,
+            "over": 1.88,
+            "under": 1.84
+          },
+          {
+            "line": 10.5,
+            "over": 2.38,
+            "under": 1.53
+          },
+          {
+            "line": 8.5,
+            "over": 1.55,
+            "under": 2.33
+          },
+          {
+            "line": 6.5,
+            "over": 1.17,
+            "under": 4.5
+          },
+          {
+            "line": 11.5,
+            "over": 3.05,
+            "under": 1.33
+          },
+          {
+            "line": 5.5,
+            "over": 1.08,
+            "under": 6.75
+          },
+          {
+            "line": 12.5,
+            "over": 4,
+            "under": 1.21
+          }
+        ]
+      }
     },
     {
       "eventId": "1028193855",
@@ -1941,6 +1915,51 @@
       ]
     },
     {
+      "eventId": "1028186349",
+      "title": "Porto (Inquisitor) - Sporting CP (Kodak)",
+      "homeTeam": "Porto (Inquisitor)",
+      "awayTeam": "Sporting CP (Kodak)",
+      "startTime": "2026-06-29T20:58:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.12,
+        "draw": 3.05,
+        "away": 2.8
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 6.4,
+          "under": 1.06
+        },
+        {
+          "line": 3.5,
+          "over": 1.2,
+          "under": 3.65
+        },
+        {
+          "line": 4.5,
+          "over": 1.61,
+          "under": 2.1
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 5.5,
+          "over": 2.25,
+          "under": 1.52
+        },
+        {
+          "line": 6.5,
+          "over": 3.75,
+          "under": 1.19
+        }
+      ]
+    },
+    {
       "eventId": "1028186341",
       "title": "Braga (hotShot) - Vitoria SC (OG)",
       "homeTeam": "Braga (hotShot)",
@@ -1984,6 +2003,19 @@
           "under": 1.06
         }
       ]
+    },
+    {
+      "eventId": "1028186387",
+      "title": "Boca Juniors (zaha) - River Plate (Kosta)",
+      "homeTeam": "Boca Juniors (zaha)",
+      "awayTeam": "River Plate (Kosta)",
+      "startTime": "2026-06-29T21:00:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 1.47,
+        "draw": 6.5,
+        "away": 3.15
+      }
     },
     {
       "eventId": "1028185653",
@@ -2854,8 +2886,8 @@
       "league": "VM 2026",
       "odds": {
         "home": 2.43,
-        "draw": 3.05,
-        "away": 3.4
+        "draw": 3.1,
+        "away": 3.5
       },
       "totals": [
         {
@@ -2892,13 +2924,13 @@
       "ah": [
         {
           "line": -1.5,
-          "home": 4.8,
-          "away": 1.18
+          "home": 4.7,
+          "away": 1.19
         },
         {
           "line": 0.5,
           "home": 1.34,
-          "away": 3.25
+          "away": 3.3
         },
         {
           "line": 1.5,
@@ -2907,7 +2939,7 @@
         },
         {
           "line": -1,
-          "home": 3.85,
+          "home": 3.8,
           "away": 1.26
         },
         {
@@ -2917,38 +2949,38 @@
         },
         {
           "line": -0.25,
-          "home": 1.98,
-          "away": 1.83
+          "home": 1.97,
+          "away": 1.84
         },
         {
           "line": -1.25,
-          "home": 4.35,
+          "home": 4.25,
           "away": 1.22
         },
         {
           "line": -0.5,
-          "home": 2.33,
-          "away": 1.6
+          "home": 2.3,
+          "away": 1.61
         },
         {
           "line": -0.75,
           "home": 2.8,
-          "away": 1.43
+          "away": 1.44
         },
         {
           "line": 1,
           "home": 1.11,
-          "away": 6.4
+          "away": 6.5
         },
         {
           "line": 0.25,
-          "home": 1.45,
-          "away": 2.75
+          "home": 1.44,
+          "away": 2.8
         },
         {
           "line": 0.75,
-          "home": 1.23,
-          "away": 4.1
+          "home": 1.22,
+          "away": 4.2
         }
       ],
       "corners": {
@@ -5027,149 +5059,149 @@
       "startTime": "2026-07-02T00:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.38,
-        "draw": 5.2,
-        "away": 9.5
+        "home": 1.35,
+        "draw": 5.25,
+        "away": 10
       },
       "totals": [
         {
           "line": 1.5,
           "over": 1.25,
-          "under": 4
+          "under": 4.1
         },
         {
           "line": 2.5,
-          "over": 1.82,
-          "under": 2.02
+          "over": 1.78,
+          "under": 2.06
         },
         {
           "line": 0.5,
-          "over": 1.04,
-          "under": 12
+          "over": 1.03,
+          "under": 12.5
         },
         {
           "line": 5.5,
-          "over": 12.5,
-          "under": 1.03
+          "over": 12,
+          "under": 1.04
         },
         {
           "line": 3.5,
-          "over": 3.15,
-          "under": 1.38
+          "over": 3.05,
+          "under": 1.4
         },
         {
           "line": 4.5,
-          "over": 6.1,
-          "under": 1.13
+          "over": 6,
+          "under": 1.14
         }
       ],
       "ah": [
         {
           "line": -3.5,
-          "home": 8,
-          "away": 1.08
+          "home": 7.5,
+          "away": 1.09
         },
         {
           "line": -0.5,
-          "home": 1.35,
-          "away": 3.2
+          "home": 1.33,
+          "away": 3.35
         },
         {
           "line": -1,
-          "home": 1.56,
-          "away": 2.43
+          "home": 1.5,
+          "away": 2.55
         },
         {
           "line": -1.75,
-          "home": 2.38,
-          "away": 1.57
+          "home": 2.28,
+          "away": 1.62
         },
         {
           "line": -2.5,
-          "home": 3.8,
-          "away": 1.27
+          "home": 3.6,
+          "away": 1.29
         },
         {
           "line": -1.25,
-          "home": 1.81,
-          "away": 2
+          "home": 1.75,
+          "away": 2.08
         },
         {
           "line": -3,
-          "home": 7,
-          "away": 1.1
+          "home": 6.5,
+          "away": 1.11
         },
         {
           "line": -0.75,
-          "home": 1.43,
-          "away": 2.8
+          "home": 1.4,
+          "away": 2.95
         },
         {
           "line": -1.5,
-          "home": 2.06,
-          "away": 1.76
+          "home": 1.98,
+          "away": 1.82
         },
         {
           "line": -2.75,
-          "home": 4.8,
-          "away": 1.18
+          "home": 4.5,
+          "away": 1.2
         },
         {
           "line": -2,
-          "home": 3,
-          "away": 1.38
+          "home": 2.85,
+          "away": 1.42
         },
         {
           "line": -2.25,
-          "home": 3.4,
-          "away": 1.3
+          "home": 3.2,
+          "away": 1.34
         },
         {
           "line": -3.25,
-          "home": 7.5,
-          "away": 1.09
+          "home": 7,
+          "away": 1.1
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 12.5,
-            "over": 4.5,
+            "over": 4.4,
             "under": 1.17
           },
           {
             "line": 10.5,
-            "over": 2.55,
-            "under": 1.47
+            "over": 2.5,
+            "under": 1.48
           },
           {
             "line": 11.5,
-            "over": 3.35,
-            "under": 1.28
+            "over": 3.3,
+            "under": 1.29
           },
           {
             "line": 9.5,
-            "over": 2,
-            "under": 1.74
+            "over": 1.98,
+            "under": 1.75
           },
           {
             "line": 7.5,
-            "over": 1.36,
+            "over": 1.35,
             "under": 2.95
           },
           {
             "line": 6.5,
-            "over": 1.2,
-            "under": 4.1
+            "over": 1.19,
+            "under": 4.2
           },
           {
             "line": 8.5,
-            "over": 1.62,
-            "under": 2.18
+            "over": 1.61,
+            "under": 2.2
           },
           {
             "line": 13.5,
-            "over": 6.1,
+            "over": 6,
             "under": 1.1
           },
           {
@@ -14922,8 +14954,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 6.75
+        "home": 1.09,
+        "away": 7
       }
     },
     {
@@ -14935,8 +14967,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 2.75,
-        "away": 1.42
+        "home": 1.9,
+        "away": 1.84
       }
     },
     {
@@ -14948,8 +14980,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.46,
-        "away": 2.55
+        "home": 1.57,
+        "away": 2.28
       }
     },
     {
@@ -14961,8 +14993,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 5.5,
-        "away": 1.13
+        "home": 8,
+        "away": 1.05
       }
     },
     {
@@ -14974,8 +15006,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.09,
-        "away": 6.5
+        "home": 1.12,
+        "away": 5.6
       }
     },
     {
