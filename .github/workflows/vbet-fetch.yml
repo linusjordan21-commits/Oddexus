@@ -41,7 +41,7 @@ jobs:
     # progress:false köade dispatch:arna bakom varandra och vbet hann bara
     # committa ~var 30:e min (= sin tröskel → stale). En intern loop som håller
     # Mullvad-tunneln uppe och kör scrapen back-to-back ger ~9 min cadens i stället.
-    timeout-minutes: 30
+    timeout-minutes: 317
 
     permissions:
       contents: write
@@ -139,7 +139,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=1500   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
           # VBET_QUERY_LIMIT sänkt 250->120: färre swarm-anslutningar per körning
           # → mindre burst mot den delade Mullvad-relay-IP:n → Cloudflare blockar
           # mer sällan. Färre events men FÄRSK data slår fler men stale.

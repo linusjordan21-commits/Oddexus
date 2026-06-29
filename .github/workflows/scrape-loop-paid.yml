@@ -26,7 +26,7 @@ concurrency:
 jobs:
   loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 317
     permissions:
       contents: write
       actions: write
@@ -54,7 +54,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=1500     # ~5h
+          LOOP_MAX_SECONDS=18000     # ~5h
           CYCLE_MIN_SECONDS=420      # golv 7 min/cykel (budget-pacing)
           SAFETY_FLOOR=40000         # < så många credits kvar → slow-mode
           SLOW_SLEEP=1800            # slow-mode: 30 min/cykel

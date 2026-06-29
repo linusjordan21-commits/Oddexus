@@ -24,7 +24,7 @@ concurrency:
 jobs:
   loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 30   # < 6h GHA-tak, marginal för städning
+    timeout-minutes: 317   # < 6h GHA-tak, marginal för städning
     permissions:
       contents: write
       actions: write       # self-redispatch (workflow_dispatch av sig själv)
@@ -51,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=1500     # ~5h
+          LOOP_MAX_SECONDS=18000     # ~5h
           CYCLE_SECONDS=240          # mål: ~4 min/cykel (atg+svenskaspel+altenar+kambi)
           START_EPOCH=$(date +%s)
           iter=0
