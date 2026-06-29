@@ -54,6 +54,8 @@ export interface SbobetRawOdds {
   handicapLine?: number;
   /** Stabilt event-id ur DOM om skrapan hittar ett (annars härleds nyckel). */
   eventId?: string;
+  /** Sport (football/tennis/basketball/baseball) härledd ur vy-URL:en. Default football. */
+  sport?: string;
 }
 
 /** En SBOBET-runner (utfall) med decimal-odds. */
@@ -75,6 +77,7 @@ export interface SbobetMarket {
 
 export interface ParsedSbobetEvent {
   sbobetEventId: string;
+  sport: string;
   homeTeam: string;
   awayTeam: string;
   startTime: string | null;
@@ -105,7 +108,10 @@ function eventKeyOf(r: SbobetRawOdds): string | null {
   if (r.eventId) return `id:${r.eventId}`;
   if (r.homeTeam && r.awayTeam) {
     const start = r.startTime ?? "";
-    return `tn:${normalizeTeamName(r.homeTeam)}::${normalizeTeamName(r.awayTeam)}::${start}`;
+    // Sport i nyckeln → samma lagnamn i olika sporter (t.ex. landslag "Brazil" i fotboll
+    // vs basket) slås aldrig ihop till samma event.
+    const sport = r.sport ?? "football";
+    return `tn:${sport}::${normalizeTeamName(r.homeTeam)}::${normalizeTeamName(r.awayTeam)}::${start}`;
   }
   return null;
 }
@@ -186,6 +192,7 @@ export function parseSbobetMarkets(raw: SbobetRawOdds[]): ParsedSbobetEvent[] {
     } else {
       byEvent.set(key, {
         sbobetEventId: firstDefined(rows, (r) => r.eventId) ?? key,
+        sport: firstDefined(rows, (r) => r.sport) ?? "football",
         homeTeam: home,
         awayTeam: away,
         startTime: firstDefined(rows, (r) => r.startTime),

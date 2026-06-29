@@ -40,12 +40,25 @@ chromiumExtra.use(StealthPlugin());
 const DATA_DIR = path.resolve(process.cwd(), "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "sbobet-rows.json");
 
+// Recon 2026-06-29 bekräftade: football/tennis/basketball/baseball renderar prematch-rader
+// (american-football/ice-hockey bara live, e-sports tomt). Lägg till tennis/basket/baseball
+// (+~236 matchbara rader, Pinnacle täcker dem). Droppar mixade /en/euro (esports-brus +
+// tvetydig sport). Sport härleds per URL (sportFromUrl) → taggas på varje rad.
 const DEFAULT_URLS = [
-  "https://www.sbobet.com/en/euro",
   "https://www.sbobet.com/en/euro/football",
+  "https://www.sbobet.com/en/euro/tennis",
+  "https://www.sbobet.com/en/euro/basketball",
+  "https://www.sbobet.com/en/euro/baseball",
 ];
 const URLS = (process.env.SBOBET_URLS || DEFAULT_URLS.join(","))
   .split(",").map((s) => s.trim()).filter(Boolean);
+function sportFromUrl(url) {
+  const seg = (String(url).split(/[/?#]/).filter(Boolean).pop() || "").toLowerCase();
+  if (seg === "tennis") return "tennis";
+  if (seg === "basketball") return "basketball";
+  if (seg === "baseball") return "baseball";
+  return "football"; // /football + fallback (mixade vyer)
+}
 const SETTLE_MS = Number(process.env.SBOBET_SETTLE_MS) || 12_000;
 const DIAGNOSE = process.env.SBOBET_DIAGNOSE === "1";
 
@@ -61,7 +74,7 @@ const DIAGNOSE = process.env.SBOBET_DIAGNOSE === "1";
  * Grupperar per oddsId (en marknad) så hela 1X2/AH-marknaden byggs samlat.
  * Returnerar RÅ-rader (SbobetRawOdds-form) + ett diagnostikprov.
  */
-function extractInPage(diagnose) {
+function extractInPage({ diagnose, sport }) {
   const MONTHS = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5, Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11 };
 
   function parseOnPrice(s) {
@@ -197,7 +210,7 @@ function extractInPage(diagnose) {
     if ((hAh || aAh) && handicapLine == null) ahMissingOddsM++;
 
     for (const [market, price] of Object.entries(g.price)) {
-      rows.push({ oddsId: g.oddsId, market, price, homeTeam, awayTeam, startTime, handicapLine, isLive });
+      rows.push({ oddsId: g.oddsId, market, price, homeTeam, awayTeam, startTime, handicapLine, isLive, sport });
     }
 
     if (diagnose && diag.length < 10) {
@@ -258,7 +271,8 @@ async function scrapeUrl(context, url) {
       console.warn(`[sbobet-action] goto-fel ${url}: ${e?.message}`);
     });
     await page.waitForTimeout(SETTLE_MS);
-    const result = await page.evaluate(extractInPage, DIAGNOSE).catch((e) => {
+    const sport = sportFromUrl(url);
+    const result = await page.evaluate(extractInPage, { diagnose: DIAGNOSE, sport }).catch((e) => {
       console.warn(`[sbobet-action] evaluate-fel ${url}: ${e?.message}`);
       return { rows: [], liveSkipped: 0, diag: [], anchorCount: 0, marketHist: {}, totalsSamples: [] };
     });
