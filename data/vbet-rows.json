@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T12:30:51.571Z",
+  "updatedAt": "2026-06-29T12:46:21.152Z",
   "source": "github-actions",
   "partial": false,
   "queryStrategy": "pinnacle-home-team",
@@ -2808,9 +2808,9 @@
       "startTs": 1782811800,
       "startTime": "2026-06-30T09:30:00.000Z",
       "odds": {
-        "home": 3.64,
-        "draw": 3.45,
-        "away": 1.8
+        "home": 3.5,
+        "draw": 3.41,
+        "away": 1.85
       },
       "totals": [
         {
@@ -2826,14 +2826,9 @@
       ],
       "ah": [
         {
-          "line": 1,
-          "home": 1.45,
-          "away": 2.48
-        },
-        {
           "line": 0.5,
-          "home": 1.88,
-          "away": 1.78
+          "home": 1.83,
+          "away": 1.83
         }
       ],
       "foundBy": "Sunshine Coast Wanderers"
@@ -2989,20 +2984,6 @@
       "foundBy": "Democrata GV"
     },
     {
-      "gameId": 30162327,
-      "title": "Nyasa Big Bullets FC - Masters FC",
-      "homeTeam": "Nyasa Big Bullets FC",
-      "awayTeam": "Masters FC",
-      "startTs": 1782736200,
-      "startTime": "2026-06-29T12:30:00.000Z",
-      "odds": {
-        "home": 1.53,
-        "draw": 3.71,
-        "away": 5.7
-      },
-      "foundBy": "Big Bullets"
-    },
-    {
       "gameId": 30130648,
       "title": "UMF Afturelding - Aegir Thorlakshofn",
       "homeTeam": "UMF Afturelding",
@@ -3141,6 +3122,20 @@
         "away": 4.7
       },
       "foundBy": "Skala"
+    },
+    {
+      "gameId": 30142328,
+      "title": "Brasilien - Japan",
+      "homeTeam": "Brasilien",
+      "awayTeam": "Japan",
+      "startTs": 1782752400,
+      "startTime": "2026-06-29T17:00:00.000Z",
+      "odds": {
+        "home": 1.78,
+        "draw": 3.64,
+        "away": 5.1
+      },
+      "foundBy": "Brazil"
     }
   ],
   "eventsBasket": [
@@ -3214,8 +3209,8 @@
       "league": null,
       "sport": "basketball",
       "odds": {
-        "home": 1.42,
-        "away": 2.38
+        "home": 1.45,
+        "away": 2.34
       },
       "foundBy": "Gigantes de Carolina"
     }
@@ -3286,8 +3281,8 @@
       "title": "Soon Woo Kwon - Martin Landaluce",
       "homeTeam": "Soon Woo Kwon",
       "awayTeam": "Martin Landaluce",
-      "startTs": 1782738000,
-      "startTime": "2026-06-29T13:00:00.000Z",
+      "startTs": 1782739800,
+      "startTime": "2026-06-29T13:30:00.000Z",
       "league": null,
       "sport": "tennis",
       "odds": {
@@ -3389,9 +3384,9 @@
   ],
   "_tuning": {
     "limitUsed": 120,
-    "runMs": 174727,
+    "runMs": 204014,
     "deadlineMs": 1020000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-29T12:30:51.571Z"
+    "decidedAt": "2026-06-29T12:46:21.153Z"
   }
 }
