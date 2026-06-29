@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:30:06.693Z",
+  "updatedAt": "2026-06-29T02:32:51.021Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 192,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 191,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 19431,
+  "durationMs": 14828,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.33,
-        "draw": 3.65,
-        "away": 12.5
+        "home": 1.28,
+        "draw": 3.9,
+        "away": 15
       }
     },
     {
@@ -1005,35 +1005,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.76,
-        "draw": 3.55,
-        "away": 3.85
-      }
-    },
-    {
-      "eventId": "1028174554",
-      "title": "Barcelona (Solya) - Real Madrid (zaha)",
-      "homeTeam": "Barcelona (Solya)",
-      "awayTeam": "Real Madrid (zaha)",
-      "startTime": "2026-06-29T02:20:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 36,
-        "draw": 15,
-        "away": 1.02
-      }
-    },
-    {
-      "eventId": "1028173788",
-      "title": "Bayer 04 (Yeti) - Tottenham (abr4m_5)",
-      "homeTeam": "Bayer 04 (Yeti)",
-      "awayTeam": "Tottenham (abr4m_5)",
-      "startTime": "2026-06-29T02:24:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 8,
-        "draw": 9.5,
-        "away": 1.15
+        "home": 1.77,
+        "draw": 3.45,
+        "away": 3.9
       }
     },
     {
@@ -1044,22 +1018,9 @@
       "startTime": "2026-06-29T02:24:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.13,
-        "draw": 7,
-        "away": 15
-      }
-    },
-    {
-      "eventId": "1028174274",
-      "title": "Atleti (R0ge) - Real Madrid (SPACE)",
-      "homeTeam": "Atleti (R0ge)",
-      "awayTeam": "Real Madrid (SPACE)",
-      "startTime": "2026-06-29T02:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.42,
-        "draw": 5,
-        "away": 4.6
+        "home": 1.94,
+        "draw": 2.6,
+        "away": 4.1
       }
     },
     {
@@ -1070,42 +1031,10 @@
       "startTime": "2026-06-29T02:32:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.6,
-        "draw": 3.2,
-        "away": 1.8
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.63,
-          "under": 2.06
-        },
-        {
-          "line": 6.5,
-          "over": 2.4,
-          "under": 1.46
-        },
-        {
-          "line": 7.5,
-          "over": 3.6,
-          "under": 1.2
-        },
-        {
-          "line": 4.5,
-          "over": 1.29,
-          "under": 3.05
-        },
-        {
-          "line": 8.5,
-          "over": 6.5,
-          "under": 1.05
-        },
-        {
-          "line": 3.5,
-          "over": 1.06,
-          "under": 6.1
-        }
-      ]
+        "home": 3.65,
+        "draw": 3.1,
+        "away": 1.81
+      }
     },
     {
       "eventId": "1028174522",
@@ -1115,42 +1044,10 @@
       "startTime": "2026-06-29T02:32:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.58,
+        "home": 1.57,
         "draw": 4.9,
-        "away": 3.35
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.05,
-          "under": 6.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.26,
-          "under": 3.2
-        },
-        {
-          "line": 7.5,
-          "over": 7.5,
-          "under": 1.03
-        },
-        {
-          "line": 4.5,
-          "over": 1.67,
-          "under": 2.02
-        },
-        {
-          "line": 5.5,
-          "over": 2.48,
-          "under": 1.42
-        },
-        {
-          "line": 6.5,
-          "over": 4,
-          "under": 1.16
-        }
-      ]
+        "away": 3.4
+      }
     },
     {
       "eventId": "1028173790",
@@ -1349,6 +1246,51 @@
           "line": 5.5,
           "over": 1.49,
           "under": 2.33
+        }
+      ]
+    },
+    {
+      "eventId": "1028174526",
+      "title": "B Dortmund (SpeciAL) - Arsenal (Gaga)",
+      "homeTeam": "B Dortmund (SpeciAL)",
+      "awayTeam": "Arsenal (Gaga)",
+      "startTime": "2026-06-29T02:44:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.85,
+        "draw": 5.5,
+        "away": 2.4
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.68,
+          "under": 2.02
+        },
+        {
+          "line": 5.5,
+          "over": 2.55,
+          "under": 1.41
+        },
+        {
+          "line": 3.5,
+          "over": 1.27,
+          "under": 3.1
+        },
+        {
+          "line": 6.5,
+          "over": 4.1,
+          "under": 1.16
+        },
+        {
+          "line": 7.5,
+          "over": 8,
+          "under": 1.03
+        },
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 6.75
         }
       ]
     },
@@ -14492,6 +14434,19 @@
       }
     },
     {
+      "eventId": "1028183902",
+      "title": "Dhakshineswar Suresh - Samir Banerjee",
+      "homeTeam": "Dhakshineswar Suresh",
+      "awayTeam": "Samir Banerjee",
+      "startTime": "2026-06-29T14:00:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.73,
+        "away": 1.98
+      }
+    },
+    {
       "eventId": "1028182182",
       "title": "Andrew Fenty - Masamichi Imamura",
       "homeTeam": "Andrew Fenty",
@@ -15637,6 +15592,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 155,
+  "tennisEventsCount": 156,
   "lastError": null
 }
