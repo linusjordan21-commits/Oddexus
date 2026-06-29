@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:44:18.852Z",
+  "updatedAt": "2026-06-29T01:46:48.944Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 200,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 201,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 16926,
+  "durationMs": 17043,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 9.5,
-        "draw": 3.75,
-        "away": 1.36
+        "home": 11.5,
+        "draw": 3.8,
+        "away": 1.32
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 6,
-        "draw": 3.6,
-        "away": 1.5
+        "home": 6.75,
+        "draw": 3.75,
+        "away": 1.44
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T01:39:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 15,
-        "draw": 10,
-        "away": 1.08
+        "home": 8.5,
+        "draw": 5.1,
+        "away": 1.25
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T01:39:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.38,
-        "draw": 5.25,
-        "away": 4.75
+        "home": 1.28,
+        "draw": 4.75,
+        "away": 8
       }
     },
     {
@@ -1044,9 +1044,9 @@
       "startTime": "2026-06-29T01:40:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.33,
-        "draw": 5.25,
-        "away": 5.6
+        "home": 1.28,
+        "draw": 4.5,
+        "away": 9
       }
     },
     {
@@ -1057,9 +1057,9 @@
       "startTime": "2026-06-29T01:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.2,
-        "draw": 4.75,
-        "away": 2.07
+        "home": 2.06,
+        "draw": 4.3,
+        "away": 2.33
       }
     },
     {
@@ -1070,9 +1070,22 @@
       "startTime": "2026-06-29T01:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.89,
-        "draw": 6,
-        "away": 2.25
+        "home": 2.48,
+        "draw": 5.1,
+        "away": 1.85
+      }
+    },
+    {
+      "eventId": "1028174531",
+      "title": "Real Madrid (zaha) - Atleti (nicky)",
+      "homeTeam": "Real Madrid (zaha)",
+      "awayTeam": "Atleti (nicky)",
+      "startTime": "2026-06-29T01:44:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 1.72,
+        "draw": 4.4,
+        "away": 3
       }
     },
     {
@@ -1316,6 +1329,106 @@
       ]
     },
     {
+      "eventId": "1028173785",
+      "title": "Lille (luxiqq) - Bayer 04 (Yeti)",
+      "homeTeam": "Lille (luxiqq)",
+      "awayTeam": "Bayer 04 (Yeti)",
+      "startTime": "2026-06-29T01:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.95,
+        "draw": 4.5,
+        "away": 1.71
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 7.5,
+          "over": 1.95,
+          "under": 1.72
+        },
+        {
+          "line": 9.5,
+          "over": 4.2,
+          "under": 1.15
+        },
+        {
+          "line": 10.5,
+          "over": 7,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 1.47,
+          "under": 2.38
+        },
+        {
+          "line": 5.5,
+          "over": 1.19,
+          "under": 3.7
+        },
+        {
+          "line": 8.5,
+          "over": 2.75,
+          "under": 1.34
+        }
+      ]
+    },
+    {
+      "eventId": "1028173805",
+      "title": "Senegal (Leclerc) - Iraq (OP1OT)",
+      "homeTeam": "Senegal (Leclerc)",
+      "awayTeam": "Iraq (OP1OT)",
+      "startTime": "2026-06-29T01:56:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2.6,
+        "draw": 4.4,
+        "away": 1.88
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.94,
+          "under": 1.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.21,
+          "under": 3.95
+        },
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 7.5
+        },
+        {
+          "line": 9.5,
+          "over": 7.5,
+          "under": 1.07
+        },
+        {
+          "line": 8.5,
+          "over": 4.35,
+          "under": 1.18
+        },
+        {
+          "line": 7.5,
+          "over": 2.8,
+          "under": 1.38
+        },
+        {
+          "line": 5.5,
+          "over": 1.48,
+          "under": 2.43
+        }
+      ]
+    },
+    {
       "eventId": "1026389412",
       "title": "Los Angeles FC II - Houston Dynamo II",
       "homeTeam": "Los Angeles FC II",
@@ -1323,9 +1436,9 @@
       "startTime": "2026-06-29T02:00:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.6,
-        "draw": 3.55,
-        "away": 2.23
+        "home": 2.63,
+        "draw": 3.5,
+        "away": 2.25
       },
       "totals": [
         {
@@ -1335,13 +1448,13 @@
         },
         {
           "line": 2.5,
-          "over": 1.41,
-          "under": 2.55
+          "over": 1.43,
+          "under": 2.5
         },
         {
           "line": 5.5,
           "over": 5.6,
-          "under": 1.09
+          "under": 1.08
         },
         {
           "line": 4.5,
@@ -1350,8 +1463,8 @@
         },
         {
           "line": 3.5,
-          "over": 2.06,
-          "under": 1.63
+          "over": 2.08,
+          "under": 1.62
         }
       ]
     },
@@ -13583,8 +13696,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 6.5,
-        "away": 1.07
+        "home": 6.75,
+        "away": 1.06
       }
     },
     {
