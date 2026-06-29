@@ -23,7 +23,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { installHardDeadline, writeJsonPreservingCache, filterToWindowHours } from "./lib/scrape-guard.mjs";
+import { installHardDeadline, writeJsonPreservingCache, atomicWriteString, filterToWindowHours } from "./lib/scrape-guard.mjs";
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
 const OUTPUT_FILE = path.join(DATA_DIR, "coolbet-rows.json");
@@ -370,9 +370,50 @@ async function main() {
   diag.droppedOutsideWindow = win.dropped;
   diag.builtEvents = events.length;
 
-  const payload = { updatedAt: new Date().toISOString(), source: "scrapfly", partial: false, events };
-  const res = writeJsonPreservingCache(OUTPUT_FILE, payload, { label: "coolbet" });
-  console.log(`[coolbet] katalog=${matches.length} odds=${diag.oddsCount} events=${events.length} anrop=${diag.calls.length} slug=${diag.slug} (skrivet: ${res.written})`);
+  // SCRAPE-SUCCESS-detektering: katalogen lästes (flatCategories hittades → leagues>0,
+  // inget nav-fel). Tre utfall:
+  //   - events>0           → normal write (cache-preserve som vanligt).
+  //   - scrapeOk, 0 events → FÄRSK HEARTBEAT (status=no_events): tom events-lista men ny
+  //                          updated_at + metadata. force-write + mirror så panelen visar
+  //                          "active/no_events" i st f "stale 20h". Genuint glest prematch-
+  //                          fönster (t.ex. VM/sommar: live + >72h-matcher) är INTE en fail.
+  //   - scrape failade     → cache-preserve (behåll senaste goda data, klottra ej över tomt).
+  const scrapeOk = !nav.err && (Number(nav.probe?.leagues) > 0 || matches.length > 0);
+  const nowIso = new Date().toISOString();
+  let res;
+  if (events.length > 0) {
+    res = writeJsonPreservingCache(
+      OUTPUT_FILE,
+      { updatedAt: nowIso, source: "scrapfly", partial: false, status: "ok", events },
+      { label: "coolbet" },
+    );
+  } else if (scrapeOk) {
+    const heartbeat = {
+      updatedAt: nowIso,
+      source: "scrapfly",
+      partial: false,
+      status: "no_events",
+      reason: "no eligible prematch events in 24h window",
+      events: [],
+      meta: {
+        leagues: nav.probe?.leagues ?? null,
+        rawMatches: nav.probe?.rawMatches ?? null,
+        window: nav.windowProbe ?? null,
+      },
+    };
+    atomicWriteString(OUTPUT_FILE, JSON.stringify(heartbeat, null, 2) + "\n");
+    res = { written: true, preserved: false, heartbeat: true };
+    diag.status = "no_events";
+    console.log(`[coolbet] HEARTBEAT no_events: scrape OK (leagues=${nav.probe?.leagues ?? "?"}, raw=${nav.probe?.rawMatches ?? "?"}) men 0 prematch-events i 24h → färsk updated_at + mirror`);
+  } else {
+    res = writeJsonPreservingCache(
+      OUTPUT_FILE,
+      { updatedAt: nowIso, source: "scrapfly", partial: false, status: "scrape_failed", events: [] },
+      { label: "coolbet" },
+    );
+    diag.status = "scrape_failed";
+  }
+  console.log(`[coolbet] katalog=${matches.length} odds=${diag.oddsCount} events=${events.length} anrop=${diag.calls.length} slug=${diag.slug} scrapeOk=${scrapeOk} (skrivet: ${res.written}${res.heartbeat ? ", heartbeat" : ""})`);
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.writeFileSync(DIAG_FILE, JSON.stringify(diag, null, 2) + "\n");

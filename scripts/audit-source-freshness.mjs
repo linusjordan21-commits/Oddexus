@@ -149,6 +149,21 @@ const SOURCES = [
     backendCacheTtlSec: 60,
     note: "X3000 / Golden Bull / 1x2 / Speedybet — search-based prewarm cache",
   },
+  {
+    id: "coolbet",
+    name: "Coolbet",
+    type: "foreign_bookmaker",
+    workflow: "scrape-loop-paid.yml",
+    dataFile: "coolbet-rows.json",
+    statusFile: null,
+    // 45 min SLA (soft). Körs i scrape-loop-paid (var 2:a iter, delar loop m. tipwin/10bet).
+    // EJ i LOOP_SOURCES → keepalive dispatchar bara om loopen är DÖD (hasActiveRun-guard),
+    // reapar aldrig (risk att döda tipwin/10bet undviks). Scrapern skriver en 'no_events'-
+    // heartbeat (färsk updated_at) när prematch-fönstret är tomt → ej falsk stale.
+    staleAfterSec: 45 * 60,
+    backendCacheTtlSec: 60,
+    note: "Scrapfly+Pusher (sbgate), del av scrape-loop-paid. Status: ok / no_events / scrape_failed.",
+  },
 ];
 
 // On-demand scrape-only — listas separat (ingen disk-cache att audita).
