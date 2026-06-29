@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:03:00.903Z",
+  "updatedAt": "2026-06-29T06:05:31.036Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 178,
-  "skippedNoOdds": 5,
+  "uniqueEvents": 184,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 14049,
+  "durationMs": 14577,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1028181441",
-      "title": "Stuttgart (borees) - Leipzig (Ganger_29)",
-      "homeTeam": "Stuttgart (borees)",
-      "awayTeam": "Leipzig (Ganger_29)",
-      "startTime": "2026-06-29T05:54:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 9,
-        "draw": 4.75,
-        "away": 1.26
-      }
-    },
-    {
       "eventId": "1028185425",
       "title": "Udinese (TOMMY) - Torino (Voron)",
       "homeTeam": "Udinese (TOMMY)",
@@ -1005,9 +992,9 @@
       "startTime": "2026-06-29T05:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.55,
+        "home": 6.25,
         "draw": 4,
-        "away": 1.95
+        "away": 1.41
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T05:56:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.53,
-        "draw": 4.75,
-        "away": 3.75
+        "home": 2,
+        "draw": 3.85,
+        "away": 2.55
       }
     },
     {
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T06:00:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.58,
-        "draw": 4.6,
-        "away": 3.45
+        "home": 1.2,
+        "draw": 6.4,
+        "away": 8
       }
     },
     {
@@ -1044,9 +1031,9 @@
       "startTime": "2026-06-29T06:00:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 6,
-        "draw": 3.6,
-        "away": 1.46
+        "home": 7,
+        "draw": 3.25,
+        "away": 1.48
       }
     },
     {
@@ -1057,9 +1044,9 @@
       "startTime": "2026-06-29T06:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 13,
-        "draw": 9,
-        "away": 1.1
+        "home": 7.5,
+        "draw": 4.9,
+        "away": 1.28
       }
     },
     {
@@ -1070,9 +1057,9 @@
       "startTime": "2026-06-29T06:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.66,
+        "home": 1.44,
         "draw": 4.2,
-        "away": 3.35
+        "away": 5
       }
     },
     {
@@ -2367,6 +2354,421 @@
           "line": 5.5,
           "over": 1.1,
           "under": 5
+        }
+      ]
+    },
+    {
+      "eventId": "1028185804",
+      "title": "Liverpool (savinho) - Barcelona (Gabryss)",
+      "homeTeam": "Liverpool (savinho)",
+      "awayTeam": "Barcelona (Gabryss)",
+      "startTime": "2026-06-29T06:28:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.5,
+        "draw": 4.6,
+        "away": 1.58
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.57,
+          "under": 2.16
+        },
+        {
+          "line": 3.5,
+          "over": 1.06,
+          "under": 6.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.24,
+          "under": 3.3
+        },
+        {
+          "line": 8.5,
+          "over": 5.25,
+          "under": 1.09
+        },
+        {
+          "line": 7.5,
+          "over": 3.25,
+          "under": 1.25
+        },
+        {
+          "line": 6.5,
+          "over": 2.17,
+          "under": 1.56
+        },
+        {
+          "line": 9.5,
+          "over": 9.5,
+          "under": 1.01
+        }
+      ]
+    },
+    {
+      "eventId": "1028185431",
+      "title": "Fiorentina (T3RZ) - Torino (Voron)",
+      "homeTeam": "Fiorentina (T3RZ)",
+      "awayTeam": "Torino (Voron)",
+      "startTime": "2026-06-29T06:38:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.46,
+        "draw": 6.5,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.04,
+          "under": 7.5
+        },
+        {
+          "line": 7.5,
+          "over": 1.37,
+          "under": 2.65
+        },
+        {
+          "line": 11.5,
+          "over": 5.3,
+          "under": 1.09
+        },
+        {
+          "line": 6.5,
+          "over": 1.15,
+          "under": 4.2
+        },
+        {
+          "line": 10.5,
+          "over": 3.4,
+          "under": 1.23
+        },
+        {
+          "line": 9.5,
+          "over": 2.38,
+          "under": 1.47
+        },
+        {
+          "line": 8.5,
+          "over": 1.75,
+          "under": 1.93
+        },
+        {
+          "line": 12.5,
+          "over": 8.5,
+          "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028185451",
+      "title": "USA (kozak) - Wales (Shark)",
+      "homeTeam": "USA (kozak)",
+      "awayTeam": "Wales (Shark)",
+      "startTime": "2026-06-29T06:38:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2.12,
+        "draw": 8,
+        "away": 1.86
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.26,
+          "under": 3.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.08,
+          "under": 6.5
+        },
+        {
+          "line": 9.5,
+          "over": 4.4,
+          "under": 1.17
+        },
+        {
+          "line": 7.5,
+          "over": 2,
+          "under": 1.7
+        },
+        {
+          "line": 6.5,
+          "over": 1.5,
+          "under": 2.38
+        },
+        {
+          "line": 3.5,
+          "over": 1.02,
+          "under": 13
+        },
+        {
+          "line": 8.5,
+          "over": 2.75,
+          "under": 1.4
+        },
+        {
+          "line": 10.5,
+          "over": 7,
+          "under": 1.07
+        }
+      ]
+    },
+    {
+      "eventId": "1028185805",
+      "title": "PSG (Double_S) - Barcelona (Gabryss)",
+      "homeTeam": "PSG (Double_S)",
+      "awayTeam": "Barcelona (Gabryss)",
+      "startTime": "2026-06-29T06:42:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.35,
+        "draw": 5.6,
+        "away": 1.86
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 2.23,
+          "under": 1.54
+        },
+        {
+          "line": 5.5,
+          "over": 1.28,
+          "under": 3.05
+        },
+        {
+          "line": 6.5,
+          "over": 1.61,
+          "under": 2.1
+        },
+        {
+          "line": 10.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 4.5,
+          "over": 1.09,
+          "under": 5.3
+        },
+        {
+          "line": 8.5,
+          "over": 3.2,
+          "under": 1.25
+        },
+        {
+          "line": 9.5,
+          "over": 5.2,
+          "under": 1.1
+        }
+      ]
+    },
+    {
+      "eventId": "1028185806",
+      "title": "Tottenham (kamil06_) - FC Bayern (FanFan)",
+      "homeTeam": "Tottenham (kamil06_)",
+      "awayTeam": "FC Bayern (FanFan)",
+      "startTime": "2026-06-29T06:42:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.27,
+        "draw": 8,
+        "away": 4.2
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.09,
+          "under": 5.3
+        },
+        {
+          "line": 6.5,
+          "over": 1.62,
+          "under": 2.1
+        },
+        {
+          "line": 5.5,
+          "over": 1.29,
+          "under": 3
+        },
+        {
+          "line": 7.5,
+          "over": 2.28,
+          "under": 1.5
+        },
+        {
+          "line": 10.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 8.5,
+          "over": 3.3,
+          "under": 1.24
+        },
+        {
+          "line": 9.5,
+          "over": 5.4,
+          "under": 1.09
+        }
+      ]
+    },
+    {
+      "eventId": "1028185433",
+      "title": "Bologna FC (Jur_Kr) - Udinese (TOMMY)",
+      "homeTeam": "Bologna FC (Jur_Kr)",
+      "awayTeam": "Udinese (TOMMY)",
+      "startTime": "2026-06-29T06:52:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.02,
+        "draw": 7.5,
+        "away": 1.98
+      },
+      "totals": [
+        {
+          "line": 11.5,
+          "over": 4.25,
+          "under": 1.15
+        },
+        {
+          "line": 7.5,
+          "over": 1.26,
+          "under": 3.15
+        },
+        {
+          "line": 5.5,
+          "over": 1.01,
+          "under": 9
+        },
+        {
+          "line": 12.5,
+          "over": 6.5,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 1.09,
+          "under": 5.3
+        },
+        {
+          "line": 9.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 10.5,
+          "over": 2.7,
+          "under": 1.36
+        },
+        {
+          "line": 8.5,
+          "over": 1.52,
+          "under": 2.28
+        }
+      ]
+    },
+    {
+      "eventId": "1028185807",
+      "title": "PSG (Double_S) - FC Bayern (FanFan)",
+      "homeTeam": "PSG (Double_S)",
+      "awayTeam": "FC Bayern (FanFan)",
+      "startTime": "2026-06-29T06:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.05,
+        "draw": 6.25,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 2.8,
+          "under": 1.34
+        },
+        {
+          "line": 6.5,
+          "over": 1.48,
+          "under": 2.33
+        },
+        {
+          "line": 10.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 5.5,
+          "over": 1.22,
+          "under": 3.5
+        },
+        {
+          "line": 9.5,
+          "over": 4.4,
+          "under": 1.14
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 6.4
+        },
+        {
+          "line": 7.5,
+          "over": 2,
+          "under": 1.68
+        }
+      ]
+    },
+    {
+      "eventId": "1028185808",
+      "title": "Tottenham (kamil06_) - Liverpool (savinho)",
+      "homeTeam": "Tottenham (kamil06_)",
+      "awayTeam": "Liverpool (savinho)",
+      "startTime": "2026-06-29T06:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.07,
+        "draw": 10.5,
+        "away": 9.5
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.16,
+          "under": 4.1
+        },
+        {
+          "line": 7.5,
+          "over": 2.65,
+          "under": 1.37
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 9.5,
+          "over": 7,
+          "under": 1.04
+        },
+        {
+          "line": 6.5,
+          "over": 1.88,
+          "under": 1.79
+        },
+        {
+          "line": 8.5,
+          "over": 4.1,
+          "under": 1.16
+        },
+        {
+          "line": 5.5,
+          "over": 1.41,
+          "under": 2.5
         }
       ]
     },
@@ -7805,6 +8207,41 @@
           "line": 1.5,
           "over": 1.08,
           "under": 6
+        }
+      ]
+    },
+    {
+      "eventId": "1026305142",
+      "title": "NSÍ Runavík - KI Klaksvik",
+      "homeTeam": "NSÍ Runavík",
+      "awayTeam": "KI Klaksvik",
+      "startTime": "2026-07-03T18:00:00Z",
+      "league": "Premier League",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.35,
+        "away": 2.2
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.62,
+          "under": 2.08
+        },
+        {
+          "line": 4.5,
+          "over": 4.35,
+          "under": 1.15
+        },
+        {
+          "line": 1.5,
+          "over": 1.18,
+          "under": 3.95
+        },
+        {
+          "line": 3.5,
+          "over": 2.55,
+          "under": 1.42
         }
       ]
     },
