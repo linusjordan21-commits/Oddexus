@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:58:49.885Z",
+  "updatedAt": "2026-06-29T07:01:20.497Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 210,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 211,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 17557,
+  "durationMs": 17804,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028185433",
-      "title": "Bologna FC (Jur_Kr) - Udinese (TOMMY)",
-      "homeTeam": "Bologna FC (Jur_Kr)",
-      "awayTeam": "Udinese (TOMMY)",
-      "startTime": "2026-06-29T06:52:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.53,
-        "draw": 6.5,
-        "away": 3.1
-      }
-    },
-    {
-      "eventId": "1028181425",
-      "title": "Paris (borees) - Nice (Pavlinho19)",
-      "homeTeam": "Paris (borees)",
-      "awayTeam": "Nice (Pavlinho19)",
-      "startTime": "2026-06-29T06:52:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 19,
-        "draw": 8,
-        "away": 1.1
-      }
-    },
-    {
       "eventId": "1028181240",
       "title": "Napoli (mko1919) - Roma (Bomb1to)",
       "homeTeam": "Napoli (mko1919)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T06:55:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 5.25,
-        "draw": 3.8,
-        "away": 1.48
+        "home": 17,
+        "draw": 6.4,
+        "away": 1.13
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T06:55:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 4,
-        "draw": 3.7,
-        "away": 1.6
+        "home": 1.74,
+        "draw": 3,
+        "away": 4.25
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T06:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 7.5,
-        "draw": 8.5,
-        "away": 1.16
+        "home": 9.5,
+        "draw": 9,
+        "away": 1.13
       }
     },
     {
@@ -1057,8 +1031,8 @@
       "startTime": "2026-06-29T06:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.05,
-        "draw": 14,
+        "home": 1.07,
+        "draw": 11,
         "away": 16
       }
     },
@@ -2564,6 +2538,51 @@
           "line": 11.5,
           "over": 8,
           "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028181482",
+      "title": "Monaco (Rodja) - Nice (Pavlinho19)",
+      "homeTeam": "Monaco (Rodja)",
+      "awayTeam": "Nice (Pavlinho19)",
+      "startTime": "2026-06-29T07:40:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.25,
+        "draw": 6.25,
+        "away": 1.52
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.09,
+          "under": 5.25
+        },
+        {
+          "line": 8.5,
+          "over": 7,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 1.75,
+          "under": 1.91
+        },
+        {
+          "line": 7.5,
+          "over": 4,
+          "under": 1.17
+        },
+        {
+          "line": 6.5,
+          "over": 2.45,
+          "under": 1.44
+        },
+        {
+          "line": 4.5,
+          "over": 1.29,
+          "under": 3.05
         }
       ]
     },
