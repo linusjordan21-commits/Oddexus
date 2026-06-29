@@ -1,4 +1,4 @@
-name: Scrape-loop FREE (atg + svenskaspel)
+name: Scrape-loop FREE (atg + svenskaspel + altenar + kambi)
 
 # SJÄLVDRIVEN LOOP för de två STÖRSTA odds-källorna (atg ~1276 linjer, svenskaspel
 # ~1083 linjer) — båda via Kambi-CDN-API, HELT GRATIS (ingen Scrapfly-credit, ingen
@@ -52,7 +52,7 @@ jobs:
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
           LOOP_MAX_SECONDS=1500     # ~5h
-          CYCLE_SECONDS=150          # mål: ~2,5 min/cykel (atg+svenskaspel)
+          CYCLE_SECONDS=240          # mål: ~4 min/cykel (atg+svenskaspel+altenar+kambi)
           START_EPOCH=$(date +%s)
           iter=0
           SUCCESSOR_QUEUED=0
@@ -65,19 +65,28 @@ jobs:
             # Hämta båda källorna (hängvakt: per-script timeout så loopen aldrig fastnar).
             timeout -k 30 200 node scripts/fetch-atg-github-action.mjs || echo "::warning::atg iter $iter exit!=0/timeout — cache bevarad"
             timeout -k 30 200 node scripts/fetch-svenskaspel-github-action.mjs || echo "::warning::svenskaspel iter $iter exit!=0/timeout — cache bevarad"
+            # Konsoliderade (2026-06-29): altenar + kambi flyttade hit (enkla, ingen VPN/
+            # Chromium) → 1 slot täcker 4 källor istället för 3 separata workflows som
+            # svalt på det throttlade kontots ~12-slot-tak. Egna workflows avstängda.
+            timeout -k 30 200 node scripts/fetch-altenar-github-action.mjs || echo "::warning::altenar iter $iter exit!=0/timeout — cache bevarad"
+            timeout -k 30 200 node scripts/fetch-kambi-github-action.mjs || echo "::warning::kambi iter $iter exit!=0/timeout — cache bevarad"
 
             # Conflict-free publicering (reset-reapply per fil): spara fresh, reset till
             # origin/main, lägg tillbaka fresh, pusha. Aldrig konflikt med pinnacle m.fl.
             cp -f data/atg-rows.json /tmp/atg-fresh.json 2>/dev/null || true
             cp -f data/svenskaspel-rows.json /tmp/svs-fresh.json 2>/dev/null || true
+            cp -f data/altenar-rows.json /tmp/altenar-fresh.json 2>/dev/null || true
+            cp -f data/kambi-rows.json /tmp/kambi-fresh.json 2>/dev/null || true
             for attempt in 1 2 3 4 5; do
               timeout 60 git fetch origin main >/dev/null 2>&1 || true
               timeout 30 git reset --hard origin/main >/dev/null 2>&1 || true
               cp -f /tmp/atg-fresh.json data/atg-rows.json 2>/dev/null || true
               cp -f /tmp/svs-fresh.json data/svenskaspel-rows.json 2>/dev/null || true
-              git add data/atg-rows.json data/svenskaspel-rows.json 2>/dev/null || true
+              cp -f /tmp/altenar-fresh.json data/altenar-rows.json 2>/dev/null || true
+              cp -f /tmp/kambi-fresh.json data/kambi-rows.json 2>/dev/null || true
+              git add data/atg-rows.json data/svenskaspel-rows.json data/altenar-rows.json data/kambi-rows.json 2>/dev/null || true
               if git diff --staged --quiet; then echo "Iter $iter: ingen förändring"; break; fi
-              git commit -m "chore(loop-free): atg+svenskaspel ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
+              git commit -m "chore(loop-free): atg+svenskaspel+altenar+kambi ($(date -u +%FT%TZ))" >/dev/null 2>&1 || true
               if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "Iter $iter: push OK (försök $attempt)"; break; fi
               sleep $((attempt))
             done
