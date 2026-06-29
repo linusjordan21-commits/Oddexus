@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T04:23:59.824Z",
+  "updatedAt": "2026-06-29T04:26:29.621Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 200,
+  "uniqueEvents": 202,
   "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 16184,
+  "durationMs": 16301,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T04:18:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.85,
-        "draw": 4.5,
-        "away": 2.63
+        "home": 1.6,
+        "draw": 4.6,
+        "away": 3.4
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T04:23:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.63,
-        "draw": 4.9,
-        "away": 1.78
+        "home": 2.6,
+        "draw": 4.4,
+        "away": 1.88
       }
     },
     {
@@ -1019,46 +1019,9 @@
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
         "home": 1.71,
-        "draw": 4.6,
-        "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.94,
-          "under": 1.75
-        },
-        {
-          "line": 5.5,
-          "over": 3.05,
-          "under": 1.33
-        },
-        {
-          "line": 3.5,
-          "over": 1.43,
-          "under": 2.6
-        },
-        {
-          "line": 1.5,
-          "over": 1.02,
-          "under": 13
-        },
-        {
-          "line": 2.5,
-          "over": 1.13,
-          "under": 5.1
-        },
-        {
-          "line": 7.5,
-          "over": 10.5,
-          "under": 1.03
-        },
-        {
-          "line": 6.5,
-          "over": 5.3,
-          "under": 1.12
-        }
-      ]
+        "draw": 4.35,
+        "away": 3.05
+      }
     },
     {
       "eventId": "1028174280",
@@ -1069,46 +1032,9 @@
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
         "home": 2.75,
-        "draw": 5.4,
-        "away": 1.7
-      },
-      "totals": [
-        {
-          "line": 9.5,
-          "over": 12.5,
-          "under": 1.02
-        },
-        {
-          "line": 8.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 7.5,
-          "over": 3.7,
-          "under": 1.23
-        },
-        {
-          "line": 6.5,
-          "over": 2.33,
-          "under": 1.52
-        },
-        {
-          "line": 5.5,
-          "over": 1.68,
-          "under": 2.04
-        },
-        {
-          "line": 4.5,
-          "over": 1.3,
-          "under": 3.2
-        },
-        {
-          "line": 3.5,
-          "over": 1.11,
-          "under": 5.75
-        }
-      ]
+        "draw": 5.25,
+        "away": 1.71
+      }
     },
     {
       "eventId": "1028181418",
@@ -1547,6 +1473,96 @@
           "line": 6.5,
           "over": 1.68,
           "under": 2.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028181419",
+      "title": "Leipzig (Ganger_29) - Stuttgart (borees)",
+      "homeTeam": "Leipzig (Ganger_29)",
+      "awayTeam": "Stuttgart (borees)",
+      "startTime": "2026-06-29T04:54:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.82,
+        "draw": 5.3,
+        "away": 2.48
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 6.5,
+          "over": 2.4,
+          "under": 1.46
+        },
+        {
+          "line": 4.5,
+          "over": 1.27,
+          "under": 3.15
+        },
+        {
+          "line": 8.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 1.7,
+          "under": 1.97
+        },
+        {
+          "line": 7.5,
+          "over": 3.95,
+          "under": 1.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028181428",
+      "title": "B Dortmund (Pavlinho19) - Bayern Munchen (Lumix)",
+      "homeTeam": "B Dortmund (Pavlinho19)",
+      "awayTeam": "Bayern Munchen (Lumix)",
+      "startTime": "2026-06-29T04:54:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.1,
+        "draw": 4.3,
+        "away": 2.25
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.24,
+          "under": 3.35
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 4.5,
+          "over": 1.6,
+          "under": 2.12
+        },
+        {
+          "line": 6.5,
+          "over": 3.7,
+          "under": 1.19
+        },
+        {
+          "line": 7.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 2.35,
+          "under": 1.48
         }
       ]
     },
@@ -2309,7 +2325,7 @@
       "ah": [
         {
           "line": -1.5,
-          "home": 4.35,
+          "home": 4.4,
           "away": 1.21
         },
         {
@@ -2345,7 +2361,7 @@
         {
           "line": -0.5,
           "home": 2.18,
-          "away": 1.68
+          "away": 1.67
         },
         {
           "line": -0.75,
@@ -2365,7 +2381,7 @@
         {
           "line": 0.75,
           "home": 1.2,
-          "away": 4.5
+          "away": 4.6
         }
       ],
       "corners": {
@@ -15147,6 +15163,19 @@
       }
     },
     {
+      "eventId": "1028183117",
+      "title": "Martin Maldonado - Segundo Goity Zapico",
+      "homeTeam": "Martin Maldonado",
+      "awayTeam": "Segundo Goity Zapico",
+      "startTime": "2026-06-29T16:10:00Z",
+      "league": "Quito",
+      "sport": "tennis",
+      "odds": {
+        "home": 4.4,
+        "away": 1.17
+      }
+    },
+    {
       "eventId": "1028179917",
       "title": "Daniil Glinka - Aidan Mayo",
       "homeTeam": "Daniil Glinka",
@@ -16045,6 +16074,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 161,
+  "tennisEventsCount": 162,
   "lastError": null
 }
