@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T12:26:22.385Z",
+  "updatedAt": "2026-06-29T12:30:22.374Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 111,
-  "skippedNoOdds": 0,
+  "uniqueEvents": 119,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 11013,
+  "durationMs": 11081,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028181471",
-      "title": "Nottm Forest (Pavlinho19) - Brighton (borees)",
-      "homeTeam": "Nottm Forest (Pavlinho19)",
-      "awayTeam": "Brighton (borees)",
-      "startTime": "2026-06-29T12:22:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.85,
-        "draw": 3.85,
-        "away": 1.86
-      }
-    },
-    {
-      "eventId": "1028181501",
-      "title": "Man Utd (Ganger_29) - Newcastle (Rodja)",
-      "homeTeam": "Man Utd (Ganger_29)",
-      "awayTeam": "Newcastle (Rodja)",
-      "startTime": "2026-06-29T12:22:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.37,
-        "draw": 5.4,
-        "away": 4.75
-      }
-    },
-    {
       "eventId": "1028185846",
       "title": "Finland (savinho) - Portugal (Double_S)",
       "homeTeam": "Finland (savinho)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T12:24:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.76,
-        "draw": 4,
-        "away": 3.1
+        "home": 4.5,
+        "draw": 3.8,
+        "away": 1.54
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T12:24:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 2.2,
-        "draw": 4.2,
-        "away": 2.18
+        "home": 1.56,
+        "draw": 3.95,
+        "away": 4.1
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T12:25:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.75,
-        "draw": 3.4,
-        "away": 3.55
+        "home": 4.5,
+        "draw": 2.9,
+        "away": 1.73
       }
     },
     {
@@ -1057,115 +1031,10 @@
       "startTime": "2026-06-29T12:25:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.33,
-        "draw": 3.2,
-        "away": 2.43
+        "home": 4.2,
+        "draw": 2.9,
+        "away": 1.77
       }
-    },
-    {
-      "eventId": "1028185374",
-      "title": "FC Bayern (Jur_Kr) - Benfica (Voron)",
-      "homeTeam": "FC Bayern (Jur_Kr)",
-      "awayTeam": "Benfica (Voron)",
-      "startTime": "2026-06-29T12:30:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.86,
-        "draw": 8,
-        "away": 2.1
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.08,
-          "under": 5.75
-        },
-        {
-          "line": 11.5,
-          "over": 6.75,
-          "under": 1.05
-        },
-        {
-          "line": 8.5,
-          "over": 1.94,
-          "under": 1.73
-        },
-        {
-          "line": 6.5,
-          "over": 1.21,
-          "under": 3.55
-        },
-        {
-          "line": 10.5,
-          "over": 4,
-          "under": 1.17
-        },
-        {
-          "line": 9.5,
-          "over": 2.75,
-          "under": 1.34
-        },
-        {
-          "line": 7.5,
-          "over": 1.5,
-          "under": 2.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028185375",
-      "title": "Chelsea (luxiqq) - Borussia Dortmund (TOMMY)",
-      "homeTeam": "Chelsea (luxiqq)",
-      "awayTeam": "Borussia Dortmund (TOMMY)",
-      "startTime": "2026-06-29T12:30:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 2.7,
-        "draw": 4.7,
-        "away": 1.78
-      },
-      "totals": [
-        {
-          "line": 8.5,
-          "over": 1.63,
-          "under": 2.07
-        },
-        {
-          "line": 7.5,
-          "over": 1.3,
-          "under": 2.95
-        },
-        {
-          "line": 5.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 9.5,
-          "over": 2.14,
-          "under": 1.58
-        },
-        {
-          "line": 10.5,
-          "over": 3.05,
-          "under": 1.28
-        },
-        {
-          "line": 11.5,
-          "over": 4.7,
-          "under": 1.12
-        },
-        {
-          "line": 12.5,
-          "over": 7.5,
-          "under": 1.03
-        },
-        {
-          "line": 6.5,
-          "over": 1.12,
-          "under": 4.6
-        }
-      ]
     },
     {
       "eventId": "1028185551",
@@ -1178,54 +1047,7 @@
         "home": 3.8,
         "draw": 4.4,
         "away": 1.55
-      },
-      "totals": [
-        {
-          "line": 11.5,
-          "over": 6.5,
-          "under": 1.09
-        },
-        {
-          "line": 5.5,
-          "over": 1.1,
-          "under": 6.1
-        },
-        {
-          "line": 9.5,
-          "over": 2.65,
-          "under": 1.41
-        },
-        {
-          "line": 4.5,
-          "over": 1.02,
-          "under": 11.5
-        },
-        {
-          "line": 8.5,
-          "over": 1.95,
-          "under": 1.73
-        },
-        {
-          "line": 12.5,
-          "over": 11.5,
-          "under": 1.02
-        },
-        {
-          "line": 7.5,
-          "over": 1.5,
-          "under": 2.38
-        },
-        {
-          "line": 10.5,
-          "over": 4,
-          "under": 1.2
-        },
-        {
-          "line": 6.5,
-          "over": 1.26,
-          "under": 3.5
-        }
-      ]
+      }
     },
     {
       "eventId": "1028186051",
@@ -1238,104 +1060,7 @@
         "home": 2.43,
         "draw": 4.9,
         "away": 1.89
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 1.3,
-          "under": 2.95
-        },
-        {
-          "line": 6.5,
-          "over": 1.12,
-          "under": 4.6
-        },
-        {
-          "line": 5.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 8.5,
-          "over": 1.62,
-          "under": 2.08
-        },
-        {
-          "line": 10.5,
-          "over": 3.05,
-          "under": 1.29
-        },
-        {
-          "line": 11.5,
-          "over": 4.6,
-          "under": 1.12
-        },
-        {
-          "line": 9.5,
-          "over": 2.15,
-          "under": 1.58
-        },
-        {
-          "line": 12.5,
-          "over": 7.5,
-          "under": 1.03
-        }
-      ]
-    },
-    {
-      "eventId": "1028186043",
-      "title": "Spanien (Uchihax) - England (Peconi)",
-      "homeTeam": "Spanien (Uchihax)",
-      "awayTeam": "England (Peconi)",
-      "startTime": "2026-06-29T12:30:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.37,
-        "draw": 6.75,
-        "away": 3.65
-      },
-      "totals": [
-        {
-          "line": 12.5,
-          "over": 9,
-          "under": 1.01
-        },
-        {
-          "line": 6.5,
-          "over": 1.15,
-          "under": 4.1
-        },
-        {
-          "line": 11.5,
-          "over": 5.3,
-          "under": 1.09
-        },
-        {
-          "line": 10.5,
-          "over": 3.35,
-          "under": 1.23
-        },
-        {
-          "line": 5.5,
-          "over": 1.05,
-          "under": 7
-        },
-        {
-          "line": 8.5,
-          "over": 1.75,
-          "under": 1.93
-        },
-        {
-          "line": 7.5,
-          "over": 1.38,
-          "under": 2.63
-        },
-        {
-          "line": 9.5,
-          "over": 2.38,
-          "under": 1.47
-        }
-      ]
+      }
     },
     {
       "eventId": "1028181487",
@@ -1723,61 +1448,6 @@
       ]
     },
     {
-      "eventId": "1028190034",
-      "title": "New Zealand (Sxitted) - Iran (Shark)",
-      "homeTeam": "New Zealand (Sxitted)",
-      "awayTeam": "Iran (Shark)",
-      "startTime": "2026-06-29T12:44:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 1.78,
-        "draw": 4.5,
-        "away": 2.75
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 4.5,
-          "over": 1.13,
-          "under": 5.1
-        },
-        {
-          "line": 5.5,
-          "over": 1.35,
-          "under": 2.95
-        },
-        {
-          "line": 6.5,
-          "over": 1.7,
-          "under": 2
-        },
-        {
-          "line": 9.5,
-          "over": 5.5,
-          "under": 1.12
-        },
-        {
-          "line": 7.5,
-          "over": 2.32,
-          "under": 1.53
-        },
-        {
-          "line": 10.5,
-          "over": 10,
-          "under": 1.04
-        },
-        {
-          "line": 8.5,
-          "over": 3.45,
-          "under": 1.26
-        }
-      ]
-    },
-    {
       "eventId": "1028185376",
       "title": "Tottenham (djamik) - Benfica (Voron)",
       "homeTeam": "Tottenham (djamik)",
@@ -1929,6 +1599,61 @@
           "line": 9.5,
           "over": 2.38,
           "under": 1.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028190034",
+      "title": "New Zealand (Sxitted) - Iran (Shark)",
+      "homeTeam": "New Zealand (Sxitted)",
+      "awayTeam": "Iran (Shark)",
+      "startTime": "2026-06-29T12:44:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.78,
+        "draw": 4.5,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 10
+        },
+        {
+          "line": 4.5,
+          "over": 1.13,
+          "under": 5.1
+        },
+        {
+          "line": 5.5,
+          "over": 1.35,
+          "under": 2.95
+        },
+        {
+          "line": 6.5,
+          "over": 1.7,
+          "under": 2
+        },
+        {
+          "line": 9.5,
+          "over": 5.5,
+          "under": 1.12
+        },
+        {
+          "line": 7.5,
+          "over": 2.32,
+          "under": 1.53
+        },
+        {
+          "line": 10.5,
+          "over": 10,
+          "under": 1.04
+        },
+        {
+          "line": 8.5,
+          "over": 3.45,
+          "under": 1.26
         }
       ]
     },
@@ -2423,61 +2148,6 @@
       ]
     },
     {
-      "eventId": "1028190036",
-      "title": "New Zealand (Sxitted) - Irland (Mqrkkkkkk)",
-      "homeTeam": "New Zealand (Sxitted)",
-      "awayTeam": "Irland (Mqrkkkkkk)",
-      "startTime": "2026-06-29T12:58:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2,
-        "draw": 4.4,
-        "away": 2.38
-      },
-      "totals": [
-        {
-          "line": 10.5,
-          "over": 9,
-          "under": 1.04
-        },
-        {
-          "line": 6.5,
-          "over": 1.66,
-          "under": 2.06
-        },
-        {
-          "line": 9.5,
-          "over": 5.25,
-          "under": 1.13
-        },
-        {
-          "line": 8.5,
-          "over": 3.3,
-          "under": 1.29
-        },
-        {
-          "line": 5.5,
-          "over": 1.33,
-          "under": 3.05
-        },
-        {
-          "line": 7.5,
-          "over": 2.25,
-          "under": 1.56
-        },
-        {
-          "line": 4.5,
-          "over": 1.13,
-          "under": 5.2
-        },
-        {
-          "line": 3.5,
-          "over": 1.03,
-          "under": 11
-        }
-      ]
-    },
-    {
       "eventId": "1028185378",
       "title": "Tottenham (djamik) - Borussia Dortmund (TOMMY)",
       "homeTeam": "Tottenham (djamik)",
@@ -2664,6 +2334,61 @@
           "line": 4.5,
           "over": 1.56,
           "under": 2.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028190036",
+      "title": "New Zealand (Sxitted) - Irland (Mqrkkkkkk)",
+      "homeTeam": "New Zealand (Sxitted)",
+      "awayTeam": "Irland (Mqrkkkkkk)",
+      "startTime": "2026-06-29T12:58:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2,
+        "draw": 4.4,
+        "away": 2.38
+      },
+      "totals": [
+        {
+          "line": 10.5,
+          "over": 9,
+          "under": 1.04
+        },
+        {
+          "line": 6.5,
+          "over": 1.66,
+          "under": 2.06
+        },
+        {
+          "line": 9.5,
+          "over": 5.25,
+          "under": 1.13
+        },
+        {
+          "line": 8.5,
+          "over": 3.3,
+          "under": 1.29
+        },
+        {
+          "line": 5.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 7.5,
+          "over": 2.25,
+          "under": 1.56
+        },
+        {
+          "line": 4.5,
+          "over": 1.13,
+          "under": 5.2
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 11
         }
       ]
     },
@@ -2963,6 +2688,46 @@
       ]
     },
     {
+      "eventId": "1028190617",
+      "title": "Napoli (Hristian05) - Roma (Duka)",
+      "homeTeam": "Napoli (Hristian05)",
+      "awayTeam": "Roma (Duka)",
+      "startTime": "2026-06-29T13:10:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.7,
+        "draw": 3.7,
+        "away": 1.95
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.85,
+          "under": 1.32
+        },
+        {
+          "line": 2.5,
+          "over": 1.1,
+          "under": 5.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.34,
+          "under": 2.75
+        },
+        {
+          "line": 6.5,
+          "over": 5,
+          "under": 1.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.89,
+          "under": 1.77
+        }
+      ]
+    },
+    {
       "eventId": "1028186073",
       "title": "Sassuolo (BlueEyes) - Juventus (Decade)",
       "homeTeam": "Sassuolo (BlueEyes)",
@@ -3004,46 +2769,6 @@
           "line": 7.5,
           "over": 4,
           "under": 1.16
-        }
-      ]
-    },
-    {
-      "eventId": "1028190617",
-      "title": "Napoli (Hristian05) - Roma (Duka)",
-      "homeTeam": "Napoli (Hristian05)",
-      "awayTeam": "Roma (Duka)",
-      "startTime": "2026-06-29T13:10:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.7,
-        "draw": 3.7,
-        "away": 1.95
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 2.85,
-          "under": 1.32
-        },
-        {
-          "line": 2.5,
-          "over": 1.1,
-          "under": 5.1
-        },
-        {
-          "line": 3.5,
-          "over": 1.34,
-          "under": 2.75
-        },
-        {
-          "line": 6.5,
-          "over": 5,
-          "under": 1.1
-        },
-        {
-          "line": 4.5,
-          "over": 1.89,
-          "under": 1.77
         }
       ]
     },
@@ -3208,47 +2933,92 @@
       ]
     },
     {
-      "eventId": "1028186053",
-      "title": "Juventus (Decade) - Napoli (Hristian05)",
-      "homeTeam": "Juventus (Decade)",
-      "awayTeam": "Napoli (Hristian05)",
-      "startTime": "2026-06-29T13:22:00Z",
+      "eventId": "1028181275",
+      "title": "Juventus (mko1919) - Man City (KraftVK)",
+      "homeTeam": "Juventus (mko1919)",
+      "awayTeam": "Man City (KraftVK)",
+      "startTime": "2026-06-29T13:13:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.1,
-        "draw": 5.5,
-        "away": 2.06
+        "home": 2,
+        "draw": 4,
+        "away": 2.5
       },
       "totals": [
         {
           "line": 8.5,
-          "over": 6.5,
-          "under": 1.05
-        },
-        {
-          "line": 6.5,
-          "over": 2.33,
-          "under": 1.49
-        },
-        {
-          "line": 3.5,
-          "over": 1.08,
-          "under": 5.75
+          "over": 7.5,
+          "under": 1.04
         },
         {
           "line": 5.5,
-          "over": 1.68,
-          "under": 2.02
+          "over": 1.75,
+          "under": 1.91
+        },
+        {
+          "line": 3.5,
+          "over": 1.09,
+          "under": 5.3
         },
         {
           "line": 7.5,
-          "over": 3.8,
-          "under": 1.18
+          "over": 4.1,
+          "under": 1.16
         },
         {
           "line": 4.5,
-          "over": 1.25,
-          "under": 3.2
+          "over": 1.3,
+          "under": 2.9
+        },
+        {
+          "line": 6.5,
+          "over": 2.55,
+          "under": 1.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028181270",
+      "title": "B Dortmund (LaikingDast) - Sporting CP (nikkitta)",
+      "homeTeam": "B Dortmund (LaikingDast)",
+      "awayTeam": "Sporting CP (nikkitta)",
+      "startTime": "2026-06-29T13:13:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.65,
+        "draw": 3,
+        "away": 2.25
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.98,
+          "under": 1.71
+        },
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.48,
+          "under": 2.35
+        },
+        {
+          "line": 6.5,
+          "over": 3.15,
+          "under": 1.26
+        },
+        {
+          "line": 3.5,
+          "over": 1.15,
+          "under": 4.25
+        },
+        {
+          "line": 7.5,
+          "over": 5.1,
+          "under": 1.1
         }
       ]
     },
@@ -3294,6 +3064,51 @@
           "line": 4.5,
           "over": 1.38,
           "under": 2.6
+        }
+      ]
+    },
+    {
+      "eventId": "1028186053",
+      "title": "Juventus (Decade) - Napoli (Hristian05)",
+      "homeTeam": "Juventus (Decade)",
+      "awayTeam": "Napoli (Hristian05)",
+      "startTime": "2026-06-29T13:22:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.1,
+        "draw": 5.5,
+        "away": 2.06
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 6.5,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 2.33,
+          "under": 1.49
+        },
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.75
+        },
+        {
+          "line": 5.5,
+          "over": 1.68,
+          "under": 2.02
+        },
+        {
+          "line": 7.5,
+          "over": 3.8,
+          "under": 1.18
+        },
+        {
+          "line": 4.5,
+          "over": 1.25,
+          "under": 3.2
         }
       ]
     },
@@ -3498,61 +3313,6 @@
       ]
     },
     {
-      "eventId": "1028190037",
-      "title": "New Zealand (Sxitted) - Egypten (drksd3)",
-      "homeTeam": "New Zealand (Sxitted)",
-      "awayTeam": "Egypten (drksd3)",
-      "startTime": "2026-06-29T13:26:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2,
-        "draw": 5.6,
-        "away": 2.17
-      },
-      "totals": [
-        {
-          "line": 9.5,
-          "over": 6.25,
-          "under": 1.09
-        },
-        {
-          "line": 7.5,
-          "over": 2.48,
-          "under": 1.47
-        },
-        {
-          "line": 6.5,
-          "over": 1.75,
-          "under": 1.93
-        },
-        {
-          "line": 8.5,
-          "over": 3.7,
-          "under": 1.23
-        },
-        {
-          "line": 4.5,
-          "over": 1.16,
-          "under": 4.6
-        },
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 9
-        },
-        {
-          "line": 10.5,
-          "over": 11,
-          "under": 1.03
-        },
-        {
-          "line": 5.5,
-          "over": 1.4,
-          "under": 2.7
-        }
-      ]
-    },
-    {
       "eventId": "1028185538",
       "title": "Borussia Dortmund (TOMMY) - Benfica (Voron)",
       "homeTeam": "Borussia Dortmund (TOMMY)",
@@ -3709,6 +3469,251 @@
           "line": 7.5,
           "over": 3.15,
           "under": 1.32
+        }
+      ]
+    },
+    {
+      "eventId": "1028190037",
+      "title": "New Zealand (Sxitted) - Egypten (drksd3)",
+      "homeTeam": "New Zealand (Sxitted)",
+      "awayTeam": "Egypten (drksd3)",
+      "startTime": "2026-06-29T13:26:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2,
+        "draw": 5.6,
+        "away": 2.17
+      },
+      "totals": [
+        {
+          "line": 9.5,
+          "over": 6.25,
+          "under": 1.09
+        },
+        {
+          "line": 7.5,
+          "over": 2.48,
+          "under": 1.47
+        },
+        {
+          "line": 6.5,
+          "over": 1.75,
+          "under": 1.93
+        },
+        {
+          "line": 8.5,
+          "over": 3.7,
+          "under": 1.23
+        },
+        {
+          "line": 4.5,
+          "over": 1.16,
+          "under": 4.6
+        },
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 9
+        },
+        {
+          "line": 10.5,
+          "over": 11,
+          "under": 1.03
+        },
+        {
+          "line": 5.5,
+          "over": 1.4,
+          "under": 2.7
+        }
+      ]
+    },
+    {
+      "eventId": "1028186071",
+      "title": "Napoli (Hristian05) - Sassuolo (BlueEyes)",
+      "homeTeam": "Napoli (Hristian05)",
+      "awayTeam": "Sassuolo (BlueEyes)",
+      "startTime": "2026-06-29T13:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.65,
+        "draw": 3.75,
+        "away": 1.98
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.28,
+          "under": 3.05
+        },
+        {
+          "line": 2.5,
+          "over": 1.07,
+          "under": 6
+        },
+        {
+          "line": 7.5,
+          "over": 8,
+          "under": 1.02
+        },
+        {
+          "line": 5.5,
+          "over": 2.6,
+          "under": 1.38
+        },
+        {
+          "line": 4.5,
+          "over": 1.75,
+          "under": 1.93
+        },
+        {
+          "line": 6.5,
+          "over": 4.35,
+          "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028186082",
+      "title": "Bologna (Totti) - Juventus (Decade)",
+      "homeTeam": "Bologna (Totti)",
+      "awayTeam": "Juventus (Decade)",
+      "startTime": "2026-06-29T13:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.85,
+        "draw": 5.25,
+        "away": 2.43
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 4.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.94,
+          "under": 1.73
+        },
+        {
+          "line": 8.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.6
+        },
+        {
+          "line": 6.5,
+          "over": 2.8,
+          "under": 1.33
+        },
+        {
+          "line": 7.5,
+          "over": 4.8,
+          "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028186112",
+      "title": "Qatar (Dicca) - Saudiarabien (llulle)",
+      "homeTeam": "Qatar (Dicca)",
+      "awayTeam": "Saudiarabien (llulle)",
+      "startTime": "2026-06-29T13:37:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.96,
+        "draw": 4.7,
+        "away": 2.38
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 9
+        },
+        {
+          "line": 6.5,
+          "over": 3.2,
+          "under": 1.3
+        },
+        {
+          "line": 7.5,
+          "over": 5.6,
+          "under": 1.11
+        },
+        {
+          "line": 3.5,
+          "over": 1.21,
+          "under": 3.95
+        },
+        {
+          "line": 5.5,
+          "over": 2.12,
+          "under": 1.63
+        },
+        {
+          "line": 4.5,
+          "over": 1.52,
+          "under": 2.35
+        },
+        {
+          "line": 8.5,
+          "over": 11,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028186068",
+      "title": "Sverige (Cofi111) - Norge (pikalicaaa)",
+      "homeTeam": "Sverige (Cofi111)",
+      "awayTeam": "Norge (pikalicaaa)",
+      "startTime": "2026-06-29T13:37:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.32,
+        "draw": 4.8,
+        "away": 1.98
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.62,
+          "under": 2.12
+        },
+        {
+          "line": 9.5,
+          "over": 11.5,
+          "under": 1.02
+        },
+        {
+          "line": 7.5,
+          "over": 3.45,
+          "under": 1.27
+        },
+        {
+          "line": 4.5,
+          "over": 1.27,
+          "under": 3.4
+        },
+        {
+          "line": 3.5,
+          "over": 1.09,
+          "under": 6.25
+        },
+        {
+          "line": 6.5,
+          "over": 2.2,
+          "under": 1.58
+        },
+        {
+          "line": 8.5,
+          "over": 6,
+          "under": 1.1
         }
       ]
     },
@@ -3878,57 +3883,97 @@
       ]
     },
     {
-      "eventId": "1028190038",
-      "title": "Iran (Shark) - New Zealand (Sxitted)",
-      "homeTeam": "Iran (Shark)",
-      "awayTeam": "New Zealand (Sxitted)",
-      "startTime": "2026-06-29T13:54:00Z",
-      "league": "CLA World Cup (2x5 min)",
+      "eventId": "1028186127",
+      "title": "Salzburg (Linox) - Aston Villa (hit)",
+      "homeTeam": "Salzburg (Linox)",
+      "awayTeam": "Aston Villa (hit)",
+      "startTime": "2026-06-29T13:40:00Z",
+      "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.75,
-        "draw": 4.5,
-        "away": 1.81
+        "home": 3.35,
+        "draw": 3.1,
+        "away": 1.88
       },
       "totals": [
         {
-          "line": 3.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 6.5,
-          "over": 1.7,
-          "under": 2
-        },
-        {
-          "line": 7.5,
-          "over": 2.28,
-          "under": 1.54
+          "line": 2.5,
+          "over": 1.25,
+          "under": 3.25
         },
         {
           "line": 5.5,
-          "over": 1.35,
-          "under": 2.95
+          "over": 4.4,
+          "under": 1.14
+        },
+        {
+          "line": 3.5,
+          "over": 1.67,
+          "under": 2
+        },
+        {
+          "line": 1.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 4.5,
+          "over": 2.63,
+          "under": 1.38
+        },
+        {
+          "line": 6.5,
+          "over": 9,
+          "under": 1.01
+        }
+      ]
+    },
+    {
+      "eventId": "1028186095",
+      "title": "Roma (lzrn) - Fenerbahce (Animal)",
+      "homeTeam": "Roma (lzrn)",
+      "awayTeam": "Fenerbahce (Animal)",
+      "startTime": "2026-06-29T13:40:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.38,
+        "draw": 5,
+        "away": 1.92
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 3.15,
+          "under": 1.27
         },
         {
           "line": 9.5,
-          "over": 5.6,
-          "under": 1.11
+          "over": 5.2,
+          "under": 1.1
+        },
+        {
+          "line": 7.5,
+          "over": 2.14,
+          "under": 1.58
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 6.25
         },
         {
           "line": 10.5,
           "over": 9.5,
-          "under": 1.04
+          "under": 1.01
         },
         {
-          "line": 4.5,
-          "over": 1.14,
-          "under": 5
+          "line": 5.5,
+          "over": 1.23,
+          "under": 3.4
         },
         {
-          "line": 8.5,
-          "over": 3.45,
-          "under": 1.27
+          "line": 6.5,
+          "over": 1.54,
+          "under": 2.23
         }
       ]
     },
@@ -4093,57 +4138,57 @@
       ]
     },
     {
-      "eventId": "1028190039",
-      "title": "Irland (Mqrkkkkkk) - New Zealand (Sxitted)",
-      "homeTeam": "Irland (Mqrkkkkkk)",
+      "eventId": "1028190038",
+      "title": "Iran (Shark) - New Zealand (Sxitted)",
+      "homeTeam": "Iran (Shark)",
       "awayTeam": "New Zealand (Sxitted)",
-      "startTime": "2026-06-29T14:08:00Z",
+      "startTime": "2026-06-29T13:54:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 2.35,
+        "home": 2.75,
         "draw": 4.5,
-        "away": 2
+        "away": 1.81
       },
       "totals": [
         {
-          "line": 4.5,
-          "over": 1.13,
-          "under": 5.2
-        },
-        {
-          "line": 8.5,
-          "over": 3.3,
-          "under": 1.29
-        },
-        {
-          "line": 9.5,
-          "over": 5.3,
-          "under": 1.12
-        },
-        {
-          "line": 5.5,
-          "over": 1.33,
-          "under": 3.05
-        },
-        {
           "line": 3.5,
           "over": 1.03,
-          "under": 10.5
+          "under": 10
         },
         {
           "line": 6.5,
-          "over": 1.67,
-          "under": 2.05
+          "over": 1.7,
+          "under": 2
         },
         {
           "line": 7.5,
-          "over": 2.25,
-          "under": 1.56
+          "over": 2.28,
+          "under": 1.54
+        },
+        {
+          "line": 5.5,
+          "over": 1.35,
+          "under": 2.95
+        },
+        {
+          "line": 9.5,
+          "over": 5.6,
+          "under": 1.11
         },
         {
           "line": 10.5,
           "over": 9.5,
           "under": 1.04
+        },
+        {
+          "line": 4.5,
+          "over": 1.14,
+          "under": 5
+        },
+        {
+          "line": 8.5,
+          "over": 3.45,
+          "under": 1.27
         }
       ]
     },
@@ -4244,6 +4289,61 @@
           "line": 10.5,
           "over": 8.5,
           "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028190039",
+      "title": "Irland (Mqrkkkkkk) - New Zealand (Sxitted)",
+      "homeTeam": "Irland (Mqrkkkkkk)",
+      "awayTeam": "New Zealand (Sxitted)",
+      "startTime": "2026-06-29T14:08:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2.35,
+        "draw": 4.5,
+        "away": 2
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.13,
+          "under": 5.2
+        },
+        {
+          "line": 8.5,
+          "over": 3.3,
+          "under": 1.29
+        },
+        {
+          "line": 9.5,
+          "over": 5.3,
+          "under": 1.12
+        },
+        {
+          "line": 5.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 10.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.67,
+          "under": 2.05
+        },
+        {
+          "line": 7.5,
+          "over": 2.25,
+          "under": 1.56
+        },
+        {
+          "line": 10.5,
+          "over": 9.5,
+          "under": 1.04
         }
       ]
     },
@@ -4408,61 +4508,6 @@
       ]
     },
     {
-      "eventId": "1028190041",
-      "title": "Egypten (drksd3) - New Zealand (Sxitted)",
-      "homeTeam": "Egypten (drksd3)",
-      "awayTeam": "New Zealand (Sxitted)",
-      "startTime": "2026-06-29T14:36:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2.2,
-        "draw": 5.5,
-        "away": 1.98
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 8.5
-        },
-        {
-          "line": 4.5,
-          "over": 1.16,
-          "under": 4.6
-        },
-        {
-          "line": 9.5,
-          "over": 6.1,
-          "under": 1.1
-        },
-        {
-          "line": 6.5,
-          "over": 1.77,
-          "under": 1.91
-        },
-        {
-          "line": 5.5,
-          "over": 1.41,
-          "under": 2.65
-        },
-        {
-          "line": 7.5,
-          "over": 2.48,
-          "under": 1.47
-        },
-        {
-          "line": 8.5,
-          "over": 3.7,
-          "under": 1.24
-        },
-        {
-          "line": 10.5,
-          "over": 10.5,
-          "under": 1.03
-        }
-      ]
-    },
-    {
       "eventId": "1028185548",
       "title": "FC Bayern (Jur_Kr) - Tottenham (djamik)",
       "homeTeam": "FC Bayern (Jur_Kr)",
@@ -4623,72 +4668,57 @@
       ]
     },
     {
-      "eventId": "1028027335",
-      "title": "FK Auda - Riga FC",
-      "homeTeam": "FK Auda",
-      "awayTeam": "Riga FC",
-      "startTime": "2026-06-29T15:00:00Z",
-      "league": "Virsliga",
+      "eventId": "1028190041",
+      "title": "Egypten (drksd3) - New Zealand (Sxitted)",
+      "homeTeam": "Egypten (drksd3)",
+      "awayTeam": "New Zealand (Sxitted)",
+      "startTime": "2026-06-29T14:36:00Z",
+      "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 6.1,
-        "draw": 4.5,
-        "away": 1.38
+        "home": 2.2,
+        "draw": 5.5,
+        "away": 1.98
       },
       "totals": [
         {
           "line": 3.5,
-          "over": 2.25,
-          "under": 1.52
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.5
-        },
-        {
-          "line": 2.5,
-          "over": 1.49,
-          "under": 2.33
+          "over": 1.05,
+          "under": 8.5
         },
         {
           "line": 4.5,
-          "over": 3.75,
-          "under": 1.2
-        }
-      ]
-    },
-    {
-      "eventId": "1028027336",
-      "title": "FK Jelgava - Grobiņas SC",
-      "homeTeam": "FK Jelgava",
-      "awayTeam": "Grobiņas SC",
-      "startTime": "2026-06-29T15:00:00Z",
-      "league": "Virsliga",
-      "odds": {
-        "home": 2.04,
-        "draw": 3.2,
-        "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.75,
-          "under": 1.08
+          "over": 1.16,
+          "under": 4.6
         },
         {
-          "line": 2.5,
-          "over": 1.87,
-          "under": 1.77
+          "line": 9.5,
+          "over": 6.1,
+          "under": 1.1
         },
         {
-          "line": 3.5,
-          "over": 3.2,
-          "under": 1.27
+          "line": 6.5,
+          "over": 1.77,
+          "under": 1.91
         },
         {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.25
+          "line": 5.5,
+          "over": 1.41,
+          "under": 2.65
+        },
+        {
+          "line": 7.5,
+          "over": 2.48,
+          "under": 1.47
+        },
+        {
+          "line": 8.5,
+          "over": 3.7,
+          "under": 1.24
+        },
+        {
+          "line": 10.5,
+          "over": 10.5,
+          "under": 1.03
         }
       ]
     },
@@ -4868,57 +4898,72 @@
       ]
     },
     {
-      "eventId": "1028190042",
-      "title": "Saudiarabien (Sxitted) - Rumänien (Shark)",
-      "homeTeam": "Saudiarabien (Sxitted)",
-      "awayTeam": "Rumänien (Shark)",
-      "startTime": "2026-06-29T15:14:00Z",
-      "league": "CLA World Cup (2x5 min)",
+      "eventId": "1028027335",
+      "title": "FK Auda - Riga FC",
+      "homeTeam": "FK Auda",
+      "awayTeam": "Riga FC",
+      "startTime": "2026-06-29T15:00:00Z",
+      "league": "Virsliga",
       "odds": {
-        "home": 1.79,
+        "home": 6.1,
         "draw": 4.5,
-        "away": 2.75
+        "away": 1.38
       },
       "totals": [
         {
-          "line": 5.5,
-          "over": 1.35,
-          "under": 2.95
+          "line": 3.5,
+          "over": 2.25,
+          "under": 1.52
         },
         {
-          "line": 9.5,
-          "over": 5.5,
-          "under": 1.12
+          "line": 1.5,
+          "over": 1.14,
+          "under": 4.5
         },
         {
-          "line": 7.5,
-          "over": 2.3,
-          "under": 1.53
+          "line": 2.5,
+          "over": 1.49,
+          "under": 2.33
         },
         {
           "line": 4.5,
-          "over": 1.14,
-          "under": 5
+          "over": 3.75,
+          "under": 1.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028027336",
+      "title": "FK Jelgava - Grobiņas SC",
+      "homeTeam": "FK Jelgava",
+      "awayTeam": "Grobiņas SC",
+      "startTime": "2026-06-29T15:00:00Z",
+      "league": "Virsliga",
+      "odds": {
+        "home": 2.04,
+        "draw": 3.2,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 5.75,
+          "under": 1.08
+        },
+        {
+          "line": 2.5,
+          "over": 1.87,
+          "under": 1.77
         },
         {
           "line": 3.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 10.5,
-          "over": 10,
-          "under": 1.04
-        },
-        {
-          "line": 8.5,
-          "over": 3.4,
+          "over": 3.2,
           "under": 1.27
         },
         {
-          "line": 6.5,
-          "over": 1.7,
-          "under": 2
+          "line": 1.5,
+          "over": 1.26,
+          "under": 3.25
         }
       ]
     },
@@ -5033,27 +5078,37 @@
       ]
     },
     {
-      "eventId": "1028190043",
-      "title": "Saudiarabien (Sxitted) - Uruguay (Mqrkkkkkk)",
+      "eventId": "1028190042",
+      "title": "Saudiarabien (Sxitted) - Rumänien (Shark)",
       "homeTeam": "Saudiarabien (Sxitted)",
-      "awayTeam": "Uruguay (Mqrkkkkkk)",
-      "startTime": "2026-06-29T15:28:00Z",
+      "awayTeam": "Rumänien (Shark)",
+      "startTime": "2026-06-29T15:14:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 2,
+        "home": 1.79,
         "draw": 4.5,
-        "away": 2.35
+        "away": 2.75
       },
       "totals": [
         {
-          "line": 6.5,
-          "over": 1.67,
-          "under": 2.04
+          "line": 5.5,
+          "over": 1.35,
+          "under": 2.95
         },
         {
           "line": 9.5,
-          "over": 5.4,
+          "over": 5.5,
           "under": 1.12
+        },
+        {
+          "line": 7.5,
+          "over": 2.3,
+          "under": 1.53
+        },
+        {
+          "line": 4.5,
+          "over": 1.14,
+          "under": 5
         },
         {
           "line": 3.5,
@@ -5062,28 +5117,18 @@
         },
         {
           "line": 10.5,
-          "over": 9.5,
+          "over": 10,
           "under": 1.04
         },
         {
-          "line": 4.5,
-          "over": 1.14,
-          "under": 5
-        },
-        {
-          "line": 5.5,
-          "over": 1.34,
-          "under": 3
-        },
-        {
-          "line": 7.5,
-          "over": 2.28,
-          "under": 1.55
-        },
-        {
           "line": 8.5,
-          "over": 3.35,
-          "under": 1.28
+          "over": 3.4,
+          "under": 1.27
+        },
+        {
+          "line": 6.5,
+          "over": 1.7,
+          "under": 2
         }
       ]
     },
@@ -5194,6 +5239,61 @@
           "line": 7.5,
           "over": 2.17,
           "under": 1.6
+        }
+      ]
+    },
+    {
+      "eventId": "1028190043",
+      "title": "Saudiarabien (Sxitted) - Uruguay (Mqrkkkkkk)",
+      "homeTeam": "Saudiarabien (Sxitted)",
+      "awayTeam": "Uruguay (Mqrkkkkkk)",
+      "startTime": "2026-06-29T15:28:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 2,
+        "draw": 4.5,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.67,
+          "under": 2.04
+        },
+        {
+          "line": 9.5,
+          "over": 5.4,
+          "under": 1.12
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 10
+        },
+        {
+          "line": 10.5,
+          "over": 9.5,
+          "under": 1.04
+        },
+        {
+          "line": 4.5,
+          "over": 1.14,
+          "under": 5
+        },
+        {
+          "line": 5.5,
+          "over": 1.34,
+          "under": 3
+        },
+        {
+          "line": 7.5,
+          "over": 2.28,
+          "under": 1.55
+        },
+        {
+          "line": 8.5,
+          "over": 3.35,
+          "under": 1.28
         }
       ]
     },
@@ -5357,22 +5457,22 @@
       "totals": [
         {
           "line": 3.5,
-          "over": 3.9,
+          "over": 3.85,
           "under": 1.27
         },
         {
           "line": 0.5,
-          "over": 1.06,
+          "over": 1.05,
           "under": 10
         },
         {
           "line": 2.5,
-          "over": 2.12,
-          "under": 1.74
+          "over": 2.1,
+          "under": 1.76
         },
         {
           "line": 1.5,
-          "over": 1.35,
+          "over": 1.34,
           "under": 3.3
         },
         {
@@ -5382,7 +5482,7 @@
         },
         {
           "line": 5.5,
-          "over": 17,
+          "over": 16,
           "under": 1.01
         }
       ],
@@ -5394,12 +5494,12 @@
         },
         {
           "line": -2.25,
-          "home": 6.25,
+          "home": 6.1,
           "away": 1.12
         },
         {
           "line": -1.75,
-          "home": 3.95,
+          "home": 3.9,
           "away": 1.25
         },
         {
@@ -5425,22 +5525,22 @@
         {
           "line": 0.5,
           "home": 1.19,
-          "away": 4.7
+          "away": 4.75
         },
         {
           "line": 0.25,
-          "home": 1.23,
+          "home": 1.22,
           "away": 4.2
         },
         {
           "line": -2.5,
-          "home": 6.75,
+          "home": 6.5,
           "away": 1.11
         },
         {
           "line": -1.5,
-          "home": 3.15,
-          "away": 1.36
+          "home": 3.1,
+          "away": 1.37
         },
         {
           "line": -2,
@@ -5452,8 +5552,8 @@
         "totals": [
           {
             "line": 7.5,
-            "over": 1.48,
-            "under": 2.5
+            "over": 1.47,
+            "under": 2.55
           },
           {
             "line": 12.5,
@@ -5462,27 +5562,27 @@
           },
           {
             "line": 9.5,
-            "over": 2.28,
-            "under": 1.57
+            "over": 2.25,
+            "under": 1.58
           },
           {
             "line": 8.5,
-            "over": 1.8,
-            "under": 1.93
+            "over": 1.78,
+            "under": 1.95
           },
           {
             "line": 6.5,
-            "over": 1.27,
-            "under": 3.5
+            "over": 1.26,
+            "under": 3.55
           },
           {
             "line": 5.5,
-            "over": 1.13,
-            "under": 5.2
+            "over": 1.12,
+            "under": 5.4
           },
           {
             "line": 10.5,
-            "over": 2.95,
+            "over": 3,
             "under": 1.35
           },
           {
@@ -6231,8 +6331,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
-        "away": 1.58
+        "home": 4.5,
+        "away": 1.2
       }
     },
     {
@@ -6244,8 +6344,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 9
+        "home": 1.09,
+        "away": 7
       }
     },
     {
@@ -6257,8 +6357,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.68,
-        "away": 2.16
+        "home": 1.75,
+        "away": 2.05
       }
     },
     {
@@ -6270,8 +6370,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.48,
-        "away": 2.63
+        "home": 1.23,
+        "away": 4
       }
     },
     {
@@ -6283,8 +6383,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.44,
-        "away": 2.75
+        "home": 1.33,
+        "away": 3.25
       }
     },
     {
@@ -6296,8 +6396,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.46,
-        "away": 2.7
+        "home": 1.55,
+        "away": 2.43
       }
     },
     {
@@ -6309,8 +6409,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.65,
-        "away": 1.43
+        "home": 2.18,
+        "away": 1.62
       }
     },
     {
@@ -6322,8 +6422,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.77,
-        "away": 2
+        "home": 1.4,
+        "away": 2.88
       }
     },
     {
@@ -6335,8 +6435,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.76,
-        "away": 2.04
+        "home": 1.45,
+        "away": 2.7
       }
     },
     {
@@ -6348,8 +6448,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.8,
-        "away": 1.26
+        "home": 2.35,
+        "away": 1.58
       }
     },
     {
@@ -6361,8 +6461,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.28,
-        "away": 3.6
+        "home": 1.21,
+        "away": 4.35
       }
     },
     {
@@ -6374,8 +6474,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.25,
-        "away": 1.34
+        "home": 3,
+        "away": 1.38
       }
     },
     {
@@ -6387,8 +6487,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.09,
-        "away": 7
+        "home": 1.08,
+        "away": 7.5
       }
     },
     {
@@ -6400,8 +6500,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.5,
-        "away": 1.29
+        "home": 4.1,
+        "away": 1.23
       }
     },
     {
@@ -6413,8 +6513,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.66,
-        "away": 2.17
+        "home": 1.55,
+        "away": 2.38
       }
     },
     {
@@ -6426,8 +6526,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.45,
-        "away": 2.7
+        "home": 1.21,
+        "away": 4.3
       }
     },
     {
@@ -6439,112 +6539,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.1,
-        "away": 1.36
-      }
-    },
-    {
-      "eventId": "1028155463",
-      "title": "Arthur Rinderknech - Oliver Tarvet",
-      "homeTeam": "Arthur Rinderknech",
-      "awayTeam": "Oliver Tarvet",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.23,
-        "away": 1.65
-      }
-    },
-    {
-      "eventId": "1028190307",
-      "title": "Antonia Ruzic - Darja Semenistaja",
-      "homeTeam": "Antonia Ruzic",
-      "awayTeam": "Darja Semenistaja",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.41,
-        "away": 2.95
-      }
-    },
-    {
-      "eventId": "1028155435",
-      "title": "Nuno Borges - Tristan Boyer",
-      "homeTeam": "Nuno Borges",
-      "awayTeam": "Tristan Boyer",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 3.25,
-        "away": 1.34
-      }
-    },
-    {
-      "eventId": "1028155445",
-      "title": "Hugo Gaston - Stefanos Tsitsipas",
-      "homeTeam": "Hugo Gaston",
-      "awayTeam": "Stefanos Tsitsipas",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.63,
-        "away": 1.48
-      }
-    },
-    {
-      "eventId": "1028155447",
-      "title": "Soonwoo Kwon - Martin Landaluce",
-      "homeTeam": "Soonwoo Kwon",
-      "awayTeam": "Martin Landaluce",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.23,
-        "away": 1.66
-      }
-    },
-    {
-      "eventId": "1028177616",
-      "title": "Max Alcala Gurri - Sascha Gueymard Wayenburg",
-      "homeTeam": "Max Alcala Gurri",
-      "awayTeam": "Sascha Gueymard Wayenburg",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Brasov",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.38,
-        "away": 2.9
-      }
-    },
-    {
-      "eventId": "1028177622",
-      "title": "Maks Kasnikowski - Andres Andrade",
-      "homeTeam": "Maks Kasnikowski",
-      "awayTeam": "Andres Andrade",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Brasov",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.44,
-        "away": 2.7
-      }
-    },
-    {
-      "eventId": "1028155277",
-      "title": "Alycia Parks - Alicia Dudeney",
-      "homeTeam": "Alycia Parks",
-      "awayTeam": "Alicia Dudeney",
-      "startTime": "2026-06-29T12:35:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.47,
-        "away": 2.65
+        "home": 2.7,
+        "away": 1.46
       }
     },
     {
@@ -6561,6 +6557,71 @@
       }
     },
     {
+      "eventId": "1028155463",
+      "title": "Arthur Rinderknech - Oliver Tarvet",
+      "homeTeam": "Arthur Rinderknech",
+      "awayTeam": "Oliver Tarvet",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.23,
+        "away": 1.65
+      }
+    },
+    {
+      "eventId": "1028190307",
+      "title": "Antonia Ruzic - Darja Semenistaja",
+      "homeTeam": "Antonia Ruzic",
+      "awayTeam": "Darja Semenistaja",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.41,
+        "away": 2.95
+      }
+    },
+    {
+      "eventId": "1028155435",
+      "title": "Nuno Borges - Tristan Boyer",
+      "homeTeam": "Nuno Borges",
+      "awayTeam": "Tristan Boyer",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.25,
+        "away": 1.34
+      }
+    },
+    {
+      "eventId": "1028155445",
+      "title": "Hugo Gaston - Stefanos Tsitsipas",
+      "homeTeam": "Hugo Gaston",
+      "awayTeam": "Stefanos Tsitsipas",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.63,
+        "away": 1.48
+      }
+    },
+    {
+      "eventId": "1028155447",
+      "title": "Soonwoo Kwon - Martin Landaluce",
+      "homeTeam": "Soonwoo Kwon",
+      "awayTeam": "Martin Landaluce",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.23,
+        "away": 1.66
+      }
+    },
+    {
       "eventId": "1028177625",
       "title": "Gustavo Heide - Federico Agustin Gomez",
       "homeTeam": "Gustavo Heide",
@@ -6571,6 +6632,45 @@
       "odds": {
         "home": 1.17,
         "away": 4.8
+      }
+    },
+    {
+      "eventId": "1028177616",
+      "title": "Max Alcala Gurri - Sascha Gueymard Wayenburg",
+      "homeTeam": "Max Alcala Gurri",
+      "awayTeam": "Sascha Gueymard Wayenburg",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Brasov",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.38,
+        "away": 2.9
+      }
+    },
+    {
+      "eventId": "1028177622",
+      "title": "Maks Kasnikowski - Andres Andrade",
+      "homeTeam": "Maks Kasnikowski",
+      "awayTeam": "Andres Andrade",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Brasov",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.44,
+        "away": 2.7
+      }
+    },
+    {
+      "eventId": "1028155277",
+      "title": "Alycia Parks - Alicia Dudeney",
+      "homeTeam": "Alycia Parks",
+      "awayTeam": "Alicia Dudeney",
+      "startTime": "2026-06-29T12:40:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.47,
+        "away": 2.65
       }
     },
     {
@@ -6630,7 +6730,7 @@
       "title": "Marin Cilic - Daniil Medvedev",
       "homeTeam": "Marin Cilic",
       "awayTeam": "Daniil Medvedev",
-      "startTime": "2026-06-29T13:10:00Z",
+      "startTime": "2026-06-29T13:20:00Z",
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
@@ -6717,19 +6817,6 @@
       }
     },
     {
-      "eventId": "1028155473",
-      "title": "Alejandro Davidovich Fokina - Juan Manuel Cerundolo",
-      "homeTeam": "Alejandro Davidovich Fokina",
-      "awayTeam": "Juan Manuel Cerundolo",
-      "startTime": "2026-06-29T13:30:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.25,
-        "away": 3.95
-      }
-    },
-    {
       "eventId": "1028177635",
       "title": "Cosme Rolland de Ravel - Marat Sharipov",
       "homeTeam": "Cosme Rolland de Ravel",
@@ -6740,19 +6827,6 @@
       "odds": {
         "home": 1.7,
         "away": 2.12
-      }
-    },
-    {
-      "eventId": "1028155448",
-      "title": "Thiago Agustin Tirante - Fabian Marozsan",
-      "homeTeam": "Thiago Agustin Tirante",
-      "awayTeam": "Fabian Marozsan",
-      "startTime": "2026-06-29T13:40:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.8,
-        "away": 1.44
       }
     },
     {
@@ -6769,6 +6843,32 @@
       }
     },
     {
+      "eventId": "1028155473",
+      "title": "Alejandro Davidovich Fokina - Juan Manuel Cerundolo",
+      "homeTeam": "Alejandro Davidovich Fokina",
+      "awayTeam": "Juan Manuel Cerundolo",
+      "startTime": "2026-06-29T13:50:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.25,
+        "away": 3.95
+      }
+    },
+    {
+      "eventId": "1028155448",
+      "title": "Thiago Agustin Tirante - Fabian Marozsan",
+      "homeTeam": "Thiago Agustin Tirante",
+      "awayTeam": "Fabian Marozsan",
+      "startTime": "2026-06-29T13:50:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.8,
+        "away": 1.44
+      }
+    },
+    {
       "eventId": "1028183902",
       "title": "Dhakshineswar Suresh - Samir Banerjee",
       "homeTeam": "Dhakshineswar Suresh",
@@ -6782,19 +6882,6 @@
       }
     },
     {
-      "eventId": "1028155243",
-      "title": "Oleksandra Oliynykova - Mccartney Kessler",
-      "homeTeam": "Oleksandra Oliynykova",
-      "awayTeam": "Mccartney Kessler",
-      "startTime": "2026-06-29T14:00:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 5.8,
-        "away": 1.14
-      }
-    },
-    {
       "eventId": "1028177624",
       "title": "Diego Dedura-Palomero - Miguel Damas",
       "homeTeam": "Diego Dedura-Palomero",
@@ -6805,45 +6892,6 @@
       "odds": {
         "home": 1.48,
         "away": 2.55
-      }
-    },
-    {
-      "eventId": "1028155276",
-      "title": "Karolina Muchova - Anastasia Zakharova",
-      "homeTeam": "Karolina Muchova",
-      "awayTeam": "Anastasia Zakharova",
-      "startTime": "2026-06-29T14:00:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 6.1,
-        "away": 1.12
-      }
-    },
-    {
-      "eventId": "1028155270",
-      "title": "Elsa Jacquemot - Naomi Osaka",
-      "homeTeam": "Elsa Jacquemot",
-      "awayTeam": "Naomi Osaka",
-      "startTime": "2026-06-29T14:00:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 5.8,
-        "away": 1.13
-      }
-    },
-    {
-      "eventId": "1028155293",
-      "title": "Peyton Stearns - Nikola Bartunkova",
-      "homeTeam": "Peyton Stearns",
-      "awayTeam": "Nikola Bartunkova",
-      "startTime": "2026-06-29T14:00:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.38,
-        "away": 3
       }
     },
     {
@@ -6886,6 +6934,19 @@
       }
     },
     {
+      "eventId": "1028155270",
+      "title": "Elsa Jacquemot - Naomi Osaka",
+      "homeTeam": "Elsa Jacquemot",
+      "awayTeam": "Naomi Osaka",
+      "startTime": "2026-06-29T14:05:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 5.8,
+        "away": 1.13
+      }
+    },
+    {
       "eventId": "1028155236",
       "title": "Aryna Sabalenka - Teodora Kostovic",
       "homeTeam": "Aryna Sabalenka",
@@ -6899,16 +6960,55 @@
       }
     },
     {
+      "eventId": "1028155243",
+      "title": "Oleksandra Oliynykova - Mccartney Kessler",
+      "homeTeam": "Oleksandra Oliynykova",
+      "awayTeam": "Mccartney Kessler",
+      "startTime": "2026-06-29T14:20:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 5.8,
+        "away": 1.14
+      }
+    },
+    {
       "eventId": "1028155261",
       "title": "Mingge Xu - Daria Kasatkina",
       "homeTeam": "Mingge Xu",
       "awayTeam": "Daria Kasatkina",
-      "startTime": "2026-06-29T14:10:00Z",
+      "startTime": "2026-06-29T14:20:00Z",
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
         "home": 5.75,
         "away": 1.14
+      }
+    },
+    {
+      "eventId": "1028155276",
+      "title": "Karolina Muchova - Anastasia Zakharova",
+      "homeTeam": "Karolina Muchova",
+      "awayTeam": "Anastasia Zakharova",
+      "startTime": "2026-06-29T14:20:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 6.1,
+        "away": 1.12
+      }
+    },
+    {
+      "eventId": "1028155293",
+      "title": "Peyton Stearns - Nikola Bartunkova",
+      "homeTeam": "Peyton Stearns",
+      "awayTeam": "Nikola Bartunkova",
+      "startTime": "2026-06-29T14:20:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.38,
+        "away": 3
       }
     },
     {
@@ -6948,19 +7048,6 @@
       "odds": {
         "home": 1.4,
         "away": 3
-      }
-    },
-    {
-      "eventId": "1028155305",
-      "title": "Magda Linette - Mirra Andreeva",
-      "homeTeam": "Magda Linette",
-      "awayTeam": "Mirra Andreeva",
-      "startTime": "2026-06-29T14:50:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.17,
-        "away": 5.1
       }
     },
     {
@@ -7029,6 +7116,19 @@
       }
     },
     {
+      "eventId": "1028155305",
+      "title": "Magda Linette - Mirra Andreeva",
+      "homeTeam": "Magda Linette",
+      "awayTeam": "Mirra Andreeva",
+      "startTime": "2026-06-29T15:00:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.17,
+        "away": 5.1
+      }
+    },
+    {
       "eventId": "1028181683",
       "title": "Lucie Pawlak - Isabella Maria Serban",
       "homeTeam": "Lucie Pawlak",
@@ -7039,19 +7139,6 @@
       "odds": {
         "home": 3.1,
         "away": 1.3
-      }
-    },
-    {
-      "eventId": "1028155439",
-      "title": "Brandon Nakashima - Jack Pinnington Jones",
-      "homeTeam": "Brandon Nakashima",
-      "awayTeam": "Jack Pinnington Jones",
-      "startTime": "2026-06-29T15:10:00Z",
-      "league": "Wimbledon",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.25,
-        "away": 3.9
       }
     },
     {
@@ -7094,32 +7181,6 @@
       }
     },
     {
-      "eventId": "1028155324",
-      "title": "Dayana Yastremska - Aoi Ito",
-      "homeTeam": "Dayana Yastremska",
-      "awayTeam": "Aoi Ito",
-      "startTime": "2026-06-29T15:10:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.18,
-        "away": 4.8
-      }
-    },
-    {
-      "eventId": "1028155313",
-      "title": "Francesca Jones - Diane Parry",
-      "homeTeam": "Francesca Jones",
-      "awayTeam": "Diane Parry",
-      "startTime": "2026-06-29T15:10:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 3.4,
-        "away": 1.32
-      }
-    },
-    {
       "eventId": "1028155315",
       "title": "Magdalena Frech - Anna Kalinskaya",
       "homeTeam": "Magdalena Frech",
@@ -7159,11 +7220,24 @@
       }
     },
     {
+      "eventId": "1028155439",
+      "title": "Brandon Nakashima - Jack Pinnington Jones",
+      "homeTeam": "Brandon Nakashima",
+      "awayTeam": "Jack Pinnington Jones",
+      "startTime": "2026-06-29T15:30:00Z",
+      "league": "Wimbledon",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.25,
+        "away": 3.9
+      }
+    },
+    {
       "eventId": "1028155331",
       "title": "Ekaterina Alexandrova - Panna Udvardy",
       "homeTeam": "Ekaterina Alexandrova",
       "awayTeam": "Panna Udvardy",
-      "startTime": "2026-06-29T15:20:00Z",
+      "startTime": "2026-06-29T15:30:00Z",
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
@@ -7182,6 +7256,32 @@
       "odds": {
         "home": 11.5,
         "away": 1.04
+      }
+    },
+    {
+      "eventId": "1028155324",
+      "title": "Dayana Yastremska - Aoi Ito",
+      "homeTeam": "Dayana Yastremska",
+      "awayTeam": "Aoi Ito",
+      "startTime": "2026-06-29T15:30:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.18,
+        "away": 4.8
+      }
+    },
+    {
+      "eventId": "1028155313",
+      "title": "Francesca Jones - Diane Parry",
+      "homeTeam": "Francesca Jones",
+      "awayTeam": "Diane Parry",
+      "startTime": "2026-06-29T15:30:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.4,
+        "away": 1.32
       }
     },
     {
@@ -7716,9 +7816,22 @@
         "home": 8,
         "away": 1.08
       }
+    },
+    {
+      "eventId": "1028155330",
+      "title": "Taylor Townsend - Iga Swiatek",
+      "homeTeam": "Taylor Townsend",
+      "awayTeam": "Iga Swiatek",
+      "startTime": "2026-06-30T12:30:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.15,
+        "away": 5.4
+      }
     }
   ],
   "basketEventsCount": 11,
-  "tennisEventsCount": 115,
+  "tennisEventsCount": 116,
   "lastError": null
 }
