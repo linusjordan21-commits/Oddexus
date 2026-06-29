@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:21:00.838Z",
+  "updatedAt": "2026-06-29T06:23:31.347Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 215,
-  "skippedNoOdds": 7,
+  "uniqueEvents": 209,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 21511,
+  "durationMs": 21379,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T06:14:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.25,
-        "draw": 3.2,
-        "away": 2.5
-      }
-    },
-    {
-      "eventId": "1028185802",
-      "title": "FC Bayern (FanFan) - Barcelona (Gabryss)",
-      "homeTeam": "FC Bayern (FanFan)",
-      "awayTeam": "Barcelona (Gabryss)",
-      "startTime": "2026-06-29T06:14:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.18,
-        "draw": 6,
-        "away": 10
+        "home": 2.6,
+        "draw": 2.38,
+        "away": 2.85
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T06:18:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 5,
-        "draw": 6.25,
-        "away": 1.32
+        "home": 3.6,
+        "draw": 4.6,
+        "away": 1.56
       }
     },
     {
@@ -1031,47 +1018,10 @@
       "startTime": "2026-06-29T06:21:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.33,
-        "draw": 2.95,
-        "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.55,
-          "under": 2.25
-        },
-        {
-          "line": 5.5,
-          "over": 1.23,
-          "under": 3.75
-        },
-        {
-          "line": 8.5,
-          "over": 3,
-          "under": 1.34
-        },
-        {
-          "line": 10.5,
-          "over": 8.5,
-          "under": 1.05
-        },
-        {
-          "line": 4.5,
-          "over": 1.09,
-          "under": 6.1
-        },
-        {
-          "line": 7.5,
-          "over": 1.98,
-          "under": 1.72
-        },
-        {
-          "line": 9.5,
-          "over": 4.5,
-          "under": 1.16
-        }
-      ]
+        "home": 3.25,
+        "draw": 2.9,
+        "away": 2
+      }
     },
     {
       "eventId": "1028181219",
@@ -1081,42 +1031,10 @@
       "startTime": "2026-06-29T06:21:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.32,
-        "draw": 4,
-        "away": 2.14
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.13,
-          "under": 5.1
-        },
-        {
-          "line": 6.5,
-          "over": 5,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.4,
-          "under": 2.7
-        },
-        {
-          "line": 4.5,
-          "over": 1.89,
-          "under": 1.79
-        },
-        {
-          "line": 7.5,
-          "over": 10,
-          "under": 1.04
-        },
-        {
-          "line": 5.5,
-          "over": 2.9,
-          "under": 1.36
-        }
-      ]
+        "home": 2.38,
+        "draw": 3.6,
+        "away": 2.2
+      }
     },
     {
       "eventId": "1028185429",
@@ -2341,25 +2259,25 @@
       "startTime": "2026-06-29T07:06:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.34,
-        "draw": 6.75,
-        "away": 4.5
+        "home": 1.4,
+        "draw": 6.5,
+        "away": 4
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.23,
-          "under": 3.7
+          "over": 1.24,
+          "under": 3.65
         },
         {
           "line": 7.5,
-          "over": 1.93,
-          "under": 1.76
+          "over": 1.98,
+          "under": 1.71
         },
         {
           "line": 9.5,
-          "over": 4.1,
-          "under": 1.19
+          "over": 4.3,
+          "under": 1.18
         },
         {
           "line": 4.5,
@@ -2368,23 +2286,18 @@
         },
         {
           "line": 8.5,
-          "over": 2.7,
-          "under": 1.41
+          "over": 2.75,
+          "under": 1.4
         },
         {
           "line": 6.5,
-          "over": 1.49,
-          "under": 2.43
+          "over": 1.5,
+          "under": 2.38
         },
         {
           "line": 10.5,
           "over": 7,
-          "under": 1.08
-        },
-        {
-          "line": 11.5,
-          "over": 13,
-          "under": 1.02
+          "under": 1.07
         }
       ]
     },
@@ -2446,45 +2359,45 @@
       "startTime": "2026-06-29T07:10:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 6.1,
+        "home": 6,
         "draw": 6.1,
-        "away": 1.21
+        "away": 1.22
       },
       "totals": [
         {
           "line": 6.5,
-          "over": 2.04,
-          "under": 1.65
+          "over": 2.12,
+          "under": 1.6
         },
         {
           "line": 3.5,
-          "over": 1.05,
-          "under": 6.75
+          "over": 1.06,
+          "under": 6.4
         },
         {
           "line": 5.5,
-          "over": 1.5,
-          "under": 2.3
+          "over": 1.53,
+          "under": 2.23
         },
         {
           "line": 9.5,
-          "over": 8.5,
-          "under": 1.02
+          "over": 9,
+          "under": 1.01
         },
         {
           "line": 7.5,
-          "over": 2.95,
-          "under": 1.3
+          "over": 3.1,
+          "under": 1.27
         },
         {
           "line": 4.5,
-          "over": 1.2,
-          "under": 3.65
+          "over": 1.22,
+          "under": 3.45
         },
         {
           "line": 8.5,
-          "over": 4.7,
-          "under": 1.12
+          "over": 5.1,
+          "under": 1.1
         }
       ]
     },
@@ -2497,39 +2410,39 @@
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
         "home": 1.4,
-        "draw": 4.9,
-        "away": 4.2
+        "draw": 5.1,
+        "away": 4.1
       },
       "totals": [
         {
           "line": 4.5,
-          "over": 1.34,
-          "under": 2.75
+          "over": 1.33,
+          "under": 2.8
         },
         {
           "line": 5.5,
-          "over": 1.79,
-          "under": 1.87
+          "over": 1.76,
+          "under": 1.9
         },
         {
           "line": 7.5,
-          "over": 4,
-          "under": 1.16
+          "over": 3.9,
+          "under": 1.18
         },
         {
           "line": 6.5,
-          "over": 2.55,
-          "under": 1.4
+          "over": 2.5,
+          "under": 1.42
         },
         {
           "line": 3.5,
           "over": 1.11,
-          "under": 4.8
+          "under": 4.9
         },
         {
           "line": 8.5,
-          "over": 7,
-          "under": 1.04
+          "over": 6.75,
+          "under": 1.05
         }
       ]
     },
@@ -3521,25 +3434,25 @@
       "startTime": "2026-06-29T08:26:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 4.4,
+        "home": 3.95,
         "draw": 6.5,
-        "away": 1.35
+        "away": 1.4
       },
       "totals": [
         {
           "line": 4.5,
-          "over": 1.08,
-          "under": 6.75
+          "over": 1.09,
+          "under": 6.5
         },
         {
           "line": 6.5,
           "over": 1.5,
-          "under": 2.4
+          "under": 2.38
         },
         {
           "line": 7.5,
-          "over": 1.95,
-          "under": 1.74
+          "over": 1.96,
+          "under": 1.73
         },
         {
           "line": 9.5,
@@ -3548,8 +3461,8 @@
         },
         {
           "line": 5.5,
-          "over": 1.24,
-          "under": 3.65
+          "over": 1.25,
+          "under": 3.6
         },
         {
           "line": 8.5,
@@ -3558,13 +3471,13 @@
         },
         {
           "line": 11.5,
-          "over": 12.5,
+          "over": 13,
           "under": 1.02
         },
         {
           "line": 10.5,
           "over": 7,
-          "under": 1.08
+          "under": 1.07
         }
       ]
     },
@@ -3626,9 +3539,9 @@
       "startTime": "2026-06-29T08:30:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.21,
-        "draw": 6.25,
-        "away": 6.1
+        "home": 1.22,
+        "draw": 6.1,
+        "away": 6
       },
       "totals": [
         {
@@ -3638,23 +3551,23 @@
         },
         {
           "line": 9.5,
-          "over": 8.5,
-          "under": 1.02
+          "over": 9,
+          "under": 1.01
         },
         {
           "line": 5.5,
           "over": 1.52,
-          "under": 2.28
+          "under": 2.25
         },
         {
           "line": 6.5,
           "over": 2.08,
-          "under": 1.63
+          "under": 1.62
         },
         {
           "line": 3.5,
           "over": 1.05,
-          "under": 6.75
+          "under": 6.5
         },
         {
           "line": 7.5,
@@ -3663,8 +3576,8 @@
         },
         {
           "line": 8.5,
-          "over": 4.9,
-          "under": 1.11
+          "over": 5,
+          "under": 1.1
         }
       ]
     },
@@ -3683,33 +3596,33 @@
       "totals": [
         {
           "line": 5.5,
-          "over": 1.8,
-          "under": 1.87
+          "over": 1.77,
+          "under": 1.9
         },
         {
           "line": 6.5,
-          "over": 2.55,
-          "under": 1.4
+          "over": 2.5,
+          "under": 1.45
         },
         {
           "line": 4.5,
-          "over": 1.34,
-          "under": 2.75
+          "over": 1.33,
+          "under": 2.8
         },
         {
           "line": 7.5,
-          "over": 4,
+          "over": 3.95,
           "under": 1.17
         },
         {
           "line": 8.5,
-          "over": 7,
-          "under": 1.04
+          "over": 6.75,
+          "under": 1.05
         },
         {
           "line": 3.5,
           "over": 1.11,
-          "under": 4.8
+          "under": 4.9
         }
       ]
     },
@@ -5003,14 +4916,14 @@
       "startTime": "2026-06-30T01:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 2.3,
+        "home": 2.32,
         "draw": 3.1,
-        "away": 3.8
+        "away": 3.75
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 18,
+          "over": 17,
           "under": 1.01
         },
         {
@@ -5020,13 +4933,13 @@
         },
         {
           "line": 2.5,
-          "over": 2.2,
-          "under": 1.68
+          "over": 2.18,
+          "under": 1.7
         },
         {
           "line": 1.5,
-          "over": 1.37,
-          "under": 3.15
+          "over": 1.36,
+          "under": 3.2
         },
         {
           "line": 0.5,
@@ -5048,46 +4961,46 @@
         {
           "line": 0.5,
           "home": 1.3,
-          "away": 3.55
+          "away": 3.5
         },
         {
           "line": 1.5,
           "home": 1.07,
-          "away": 8.5
+          "away": 8
         },
         {
           "line": -1,
           "home": 3.5,
-          "away": 1.3
+          "away": 1.29
         },
         {
           "line": 1.25,
           "home": 1.08,
-          "away": 8
+          "away": 7.5
         },
         {
           "line": -0.25,
-          "home": 1.87,
-          "away": 1.93
+          "home": 1.88,
+          "away": 1.92
         },
         {
           "line": -1.25,
-          "home": 3.95,
+          "home": 4,
           "away": 1.24
         },
         {
           "line": -0.5,
           "home": 2.2,
-          "away": 1.67
+          "away": 1.66
         },
         {
           "line": -0.75,
-          "home": 2.6,
+          "home": 2.63,
           "away": 1.48
         },
         {
           "line": 1,
-          "home": 1.09,
+          "home": 1.1,
           "away": 7
         },
         {
@@ -5097,15 +5010,15 @@
         },
         {
           "line": 0.75,
-          "home": 1.19,
-          "away": 4.6
+          "home": 1.2,
+          "away": 4.5
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 9.5,
-            "over": 2.06,
+            "over": 2.07,
             "under": 1.68
           },
           {
@@ -5121,12 +5034,12 @@
           {
             "line": 5.5,
             "over": 1.1,
-            "under": 6
+            "under": 5.8
           },
           {
             "line": 10.5,
-            "over": 2.65,
-            "under": 1.43
+            "over": 2.7,
+            "under": 1.42
           },
           {
             "line": 13.5,
@@ -5135,12 +5048,12 @@
           },
           {
             "line": 11.5,
-            "over": 3.55,
-            "under": 1.26
+            "over": 3.6,
+            "under": 1.25
           },
           {
             "line": 8.5,
-            "over": 1.65,
+            "over": 1.66,
             "under": 2.12
           },
           {
@@ -5727,24 +5640,24 @@
       "startTime": "2026-07-01T01:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 2.33,
-        "draw": 2.85,
-        "away": 3.95
+        "home": 2.3,
+        "draw": 2.9,
+        "away": 4.1
       },
       "totals": [
         {
           "line": 0.5,
-          "over": 1.13,
-          "under": 6.25
+          "over": 1.12,
+          "under": 6.4
         },
         {
           "line": 3.5,
           "over": 5.75,
-          "under": 1.14
+          "under": 1.15
         },
         {
           "line": 2.5,
-          "over": 2.85,
+          "over": 2.8,
           "under": 1.44
         },
         {
@@ -5761,43 +5674,43 @@
       "ah": [
         {
           "line": -0.5,
-          "home": 2.25,
-          "away": 1.64
+          "home": 2.2,
+          "away": 1.67
         },
         {
           "line": -0.75,
-          "home": 2.75,
-          "away": 1.45
+          "home": 2.65,
+          "away": 1.47
         },
         {
           "line": 0.5,
-          "home": 1.28,
-          "away": 3.7
+          "home": 1.26,
+          "away": 3.8
         },
         {
           "line": -1.25,
-          "home": 4.35,
-          "away": 1.21
+          "home": 4.2,
+          "away": 1.23
         },
         {
           "line": 0.25,
-          "home": 1.36,
-          "away": 3.1
+          "home": 1.34,
+          "away": 3.2
         },
         {
           "line": -0.25,
-          "home": 1.89,
-          "away": 1.91
+          "home": 1.85,
+          "away": 1.95
         },
         {
           "line": -1.5,
-          "home": 4.8,
-          "away": 1.18
+          "home": 4.7,
+          "away": 1.19
         },
         {
           "line": -1,
-          "home": 3.85,
-          "away": 1.26
+          "home": 3.7,
+          "away": 1.28
         }
       ],
       "corners": {
@@ -5805,7 +5718,7 @@
           {
             "line": 9.5,
             "over": 2.6,
-            "under": 1.44
+            "under": 1.45
           },
           {
             "line": 6.5,
@@ -5839,8 +5752,8 @@
           },
           {
             "line": 8.5,
-            "over": 2,
-            "under": 1.74
+            "over": 1.98,
+            "under": 1.75
           }
         ]
       }
@@ -15341,8 +15254,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.6,
-        "away": 1.5
+        "home": 2.32,
+        "away": 1.61
       }
     },
     {
