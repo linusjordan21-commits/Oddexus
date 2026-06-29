@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:50:30.890Z",
+  "updatedAt": "2026-06-29T05:53:01.632Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 193,
-  "skippedNoOdds": 0,
+  "uniqueEvents": 195,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 20207,
+  "durationMs": 20298,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T05:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3.55,
-        "draw": 5.5,
-        "away": 1.5
-      }
-    },
-    {
-      "eventId": "1028181497",
-      "title": "Tottenham (bodyaoo) - Chelsea (exhausted)",
-      "homeTeam": "Tottenham (bodyaoo)",
-      "awayTeam": "Chelsea (exhausted)",
-      "startTime": "2026-06-29T05:48:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 4.3,
-        "draw": 7,
-        "away": 1.35
+        "home": 1.3,
+        "draw": 4.6,
+        "away": 7.5
       }
     },
     {
@@ -1532,6 +1519,106 @@
           "line": 4.5,
           "over": 1.04,
           "under": 7.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028185426",
+      "title": "Torino (Voron) - Bologna FC (Jur_Kr)",
+      "homeTeam": "Torino (Voron)",
+      "awayTeam": "Bologna FC (Jur_Kr)",
+      "startTime": "2026-06-29T06:10:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.45,
+        "draw": 7,
+        "away": 1.71
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.19,
+          "under": 3.75
+        },
+        {
+          "line": 10.5,
+          "over": 3.75,
+          "under": 1.19
+        },
+        {
+          "line": 9.5,
+          "over": 2.6,
+          "under": 1.38
+        },
+        {
+          "line": 8.5,
+          "over": 1.86,
+          "under": 1.81
+        },
+        {
+          "line": 5.5,
+          "over": 1.07,
+          "under": 6.1
+        },
+        {
+          "line": 7.5,
+          "over": 1.45,
+          "under": 2.43
+        },
+        {
+          "line": 11.5,
+          "over": 6.25,
+          "under": 1.06
+        }
+      ]
+    },
+    {
+      "eventId": "1028185427",
+      "title": "Udinese (TOMMY) - Fiorentina (T3RZ)",
+      "homeTeam": "Udinese (TOMMY)",
+      "awayTeam": "Fiorentina (T3RZ)",
+      "startTime": "2026-06-29T06:10:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 4.5,
+        "draw": 8,
+        "away": 1.24
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 1.81,
+          "under": 1.86
+        },
+        {
+          "line": 6.5,
+          "over": 1.17,
+          "under": 3.9
+        },
+        {
+          "line": 10.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 9.5,
+          "over": 2.5,
+          "under": 1.42
+        },
+        {
+          "line": 11.5,
+          "over": 5.8,
+          "under": 1.07
+        },
+        {
+          "line": 5.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 7.5,
+          "over": 1.41,
+          "under": 2.55
         }
       ]
     },
@@ -14339,8 +14426,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.33,
-        "away": 3.2
+        "home": 1.32,
+        "away": 3.3
       }
     },
     {
@@ -14561,7 +14648,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.17,
-        "away": 4.75
+        "away": 4.8
       }
     },
     {
@@ -14652,7 +14739,7 @@
       "sport": "tennis",
       "odds": {
         "home": 3.3,
-        "away": 1.32
+        "away": 1.3
       }
     },
     {
@@ -15301,8 +15388,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.17,
-        "away": 1.66
+        "home": 2.16,
+        "away": 1.67
       }
     },
     {
@@ -15315,7 +15402,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.74,
-        "away": 2.04
+        "away": 2.05
       }
     },
     {
@@ -15327,8 +15414,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.4,
-        "away": 2.88
+        "home": 1.38,
+        "away": 2.9
       }
     },
     {
