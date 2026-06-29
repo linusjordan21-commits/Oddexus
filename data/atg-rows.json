@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T06:46:20.613Z",
+  "updatedAt": "2026-06-29T06:48:49.927Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 210,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 211,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 17708,
+  "durationMs": 17596,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028181293",
-      "title": "Marseille (Lumix) - Paris (borees)",
-      "homeTeam": "Marseille (Lumix)",
-      "awayTeam": "Paris (borees)",
-      "startTime": "2026-06-29T06:40:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.1,
-        "away": 2.75
-      }
-    },
-    {
-      "eventId": "1028181423",
-      "title": "Nice (Pavlinho19) - Monaco (Rodja)",
-      "homeTeam": "Nice (Pavlinho19)",
-      "awayTeam": "Monaco (Rodja)",
-      "startTime": "2026-06-29T06:40:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.23,
-        "draw": 6.1,
-        "away": 7
-      }
-    },
-    {
       "eventId": "1028181506",
       "title": "Arsenal (TikitakaMaster) - Chelsea (exhausted)",
       "homeTeam": "Arsenal (TikitakaMaster)",
@@ -1018,9 +992,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.23,
-        "draw": 8,
-        "away": 5.6
+        "home": 1.32,
+        "draw": 6.5,
+        "away": 4.8
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.71,
-        "draw": 4.8,
-        "away": 2.85
+        "home": 2.43,
+        "draw": 4.25,
+        "away": 2
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T06:42:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.43,
-        "draw": 6.4,
-        "away": 3.7
+        "home": 1.54,
+        "draw": 5.1,
+        "away": 3.45
       }
     },
     {
@@ -1057,42 +1031,10 @@
       "startTime": "2026-06-29T06:48:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.02,
-        "draw": 3.65,
-        "away": 2.63
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.47,
-          "under": 2.38
-        },
-        {
-          "line": 6.5,
-          "over": 3.15,
-          "under": 1.26
-        },
-        {
-          "line": 7.5,
-          "over": 5.3,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.16,
-          "under": 4.1
-        },
-        {
-          "line": 5.5,
-          "over": 2.02,
-          "under": 1.68
-        }
-      ]
+        "home": 1.58,
+        "draw": 3.95,
+        "away": 3.9
+      }
     },
     {
       "eventId": "1028183545",
@@ -1102,42 +1044,10 @@
       "startTime": "2026-06-29T06:48:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.28,
-        "draw": 4.35,
-        "away": 2.08
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.56,
-          "under": 2.23
-        },
-        {
-          "line": 4.5,
-          "over": 1.21,
-          "under": 3.55
-        },
-        {
-          "line": 6.5,
-          "over": 2.12,
-          "under": 1.6
-        },
-        {
-          "line": 8.5,
-          "over": 5.4,
-          "under": 1.09
-        },
-        {
-          "line": 7.5,
-          "over": 3.2,
-          "under": 1.26
-        },
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 6.75
-        }
-      ]
+        "home": 2.32,
+        "draw": 4.2,
+        "away": 2.1
+      }
     },
     {
       "eventId": "1028185433",
@@ -5084,6 +4994,46 @@
           "line": 2.5,
           "over": 1.41,
           "under": 2.55
+        }
+      ]
+    },
+    {
+      "eventId": "1028188488",
+      "title": "PPJ/Lauttasaari - Atlantis FC/PM",
+      "homeTeam": "PPJ/Lauttasaari",
+      "awayTeam": "Atlantis FC/PM",
+      "startTime": "2026-06-30T17:00:00Z",
+      "league": "Kolmonen",
+      "odds": {
+        "home": 1.54,
+        "draw": 4.4,
+        "away": 4
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 4.8,
+          "under": 1.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.41,
+          "under": 2.48
+        },
+        {
+          "line": 4.5,
+          "over": 1.98,
+          "under": 1.65
+        },
+        {
+          "line": 2.5,
+          "over": 1.13,
+          "under": 4.35
+        },
+        {
+          "line": 5.5,
+          "over": 3.05,
+          "under": 1.28
         }
       ]
     },
@@ -15015,8 +14965,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.03,
-        "away": 12
+        "home": 1.04,
+        "away": 11.5
       }
     },
     {
