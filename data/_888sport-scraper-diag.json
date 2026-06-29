@@ -1,18 +1,29 @@
 {
-  "ranAt": "2026-06-29T05:13:51.044Z",
+  "ranAt": "2026-06-29T05:23:51.832Z",
   "catalogs": 5,
   "builtEvents": 25,
   "notes": [],
   "wsRecon": {
     "murl": "https://www.888sport.se/football/iceland/icelandic-urvalsdeild/akranes-vs-fram/",
     "wsUrls": [
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-5c7071b3-50a0-42c7-876b-e1d3d74941fb",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-5c7071b3-50a0-42c7-876b-e1d3d74941fb",
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-b411b87d-444a-4171-b28a-7494ad0dc801",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-b411b87d-444a-4171-b28a-7494ad0dc801"
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-0e153a25-c74f-43f2-a7c6-bec587ea45db",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-0e153a25-c74f-43f2-a7c6-bec587ea45db",
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-6b5e893d-56d6-4a85-8315-4dafb9419fe7",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-6b5e893d-56d6-4a85-8315-4dafb9419fe7"
     ],
-    "frameCount": 0,
-    "frames": []
+    "frameCount": 12,
+    "frames": [
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba2681b2-737a-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844453}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba695226-737a-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844464}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba73a17c-737a-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba766ae2-737a-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba4d8b22-737a-11f1-9122-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844453}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba9934d2-737a-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:23:57\",\"guid\":\"ba9df7a6-737a-11f1-9122-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:24:00\",\"guid\":\"bc0f2d44-737a-11f1-af92-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844464}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:24:00\",\"guid\":\"bc653c5c-737a-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 05:24:00\",\"guid\":\"bc6a24e2-737a-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7844451}]}"
+    ]
   },
   "droppedOutsideWindow": 5
 }
