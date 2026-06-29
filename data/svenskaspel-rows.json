@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T22:36:06.342Z",
+  "updatedAt": "2026-06-29T22:40:04.888Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 213,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 212,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 18148,
+  "durationMs": 17869,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,32 +985,6 @@
       ]
     },
     {
-      "eventId": "1028186406",
-      "title": "Bologna (Kavviro) - Roma (volvo)",
-      "homeTeam": "Bologna (Kavviro)",
-      "awayTeam": "Roma (volvo)",
-      "startTime": "2026-06-29T22:29:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.6,
-        "draw": 2.75,
-        "away": 7
-      }
-    },
-    {
-      "eventId": "1028186429",
-      "title": "Sassuolo (Nightxx) - Napoli (tohi4)",
-      "homeTeam": "Sassuolo (Nightxx)",
-      "awayTeam": "Napoli (tohi4)",
-      "startTime": "2026-06-29T22:29:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 12,
-        "draw": 6.1,
-        "away": 1.16
-      }
-    },
-    {
       "eventId": "1028186389",
       "title": "Racing Club (saportj) - River Plate (Kosta)",
       "homeTeam": "Racing Club (saportj)",
@@ -1018,22 +992,9 @@
       "startTime": "2026-06-29T22:30:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 3.4,
-        "draw": 5,
-        "away": 1.56
-      }
-    },
-    {
-      "eventId": "1028185684",
-      "title": "Villarreal (Galikooo) - Sevilla (Int1liGenT)",
-      "homeTeam": "Villarreal (Galikooo)",
-      "awayTeam": "Sevilla (Int1liGenT)",
-      "startTime": "2026-06-29T22:31:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 5,
-        "draw": 8.5,
-        "away": 1.25
+        "home": 2.35,
+        "draw": 3.55,
+        "away": 2.25
       }
     },
     {
@@ -1044,9 +1005,9 @@
       "startTime": "2026-06-29T22:32:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.38,
-        "draw": 6.75,
-        "away": 4
+        "home": 1.86,
+        "draw": 4.5,
+        "away": 2.6
       }
     },
     {
@@ -1252,50 +1213,45 @@
       "startTime": "2026-06-29T22:48:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.49,
+        "home": 1.56,
         "draw": 6.5,
-        "away": 3.05
+        "away": 2.95
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.11,
-          "under": 4.8
+          "over": 1.19,
+          "under": 3.75
         },
         {
           "line": 4.5,
-          "over": 1.01,
-          "under": 9.5
+          "over": 1.05,
+          "under": 6.75
         },
         {
           "line": 10.5,
-          "over": 4.75,
-          "under": 1.12
-        },
-        {
-          "line": 11.5,
-          "over": 8,
-          "under": 1.02
+          "over": 6.25,
+          "under": 1.06
         },
         {
           "line": 9.5,
-          "over": 3.1,
-          "under": 1.27
+          "over": 3.95,
+          "under": 1.17
         },
         {
           "line": 8.5,
-          "over": 2.15,
-          "under": 1.6
+          "over": 2.55,
+          "under": 1.4
         },
         {
           "line": 6.5,
-          "over": 1.28,
-          "under": 3.05
+          "over": 1.42,
+          "under": 2.5
         },
         {
           "line": 7.5,
-          "over": 1.64,
-          "under": 2.06
+          "over": 1.9,
+          "under": 1.76
         }
       ]
     },
@@ -2344,43 +2300,43 @@
         "totals": [
           {
             "line": 9.5,
-            "over": 2.3,
-            "under": 1.56
+            "over": 2.23,
+            "under": 1.58
           },
           {
             "line": 12.5,
-            "over": 5.75,
-            "under": 1.11
+            "over": 5.5,
+            "under": 1.12
           },
           {
             "line": 7.5,
-            "over": 1.48,
-            "under": 2.5
+            "over": 1.45,
+            "under": 2.6
           },
           {
             "line": 5.5,
-            "over": 1.13,
-            "under": 5.2
+            "over": 1.12,
+            "under": 5.4
           },
           {
             "line": 10.5,
-            "over": 3.05,
-            "under": 1.34
+            "over": 2.9,
+            "under": 1.36
           },
           {
             "line": 11.5,
-            "over": 4.1,
-            "under": 1.2
+            "over": 4,
+            "under": 1.21
           },
           {
             "line": 8.5,
-            "over": 1.81,
-            "under": 1.91
+            "over": 1.77,
+            "under": 1.96
           },
           {
             "line": 6.5,
-            "over": 1.26,
-            "under": 3.5
+            "over": 1.25,
+            "under": 3.65
           }
         ]
       }
@@ -5754,9 +5710,9 @@
       "startTime": "2026-07-03T03:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 2.07,
-        "draw": 3.25,
-        "away": 4.1
+        "home": 2.06,
+        "draw": 3.3,
+        "away": 4.3
       },
       "totals": [
         {
@@ -5767,7 +5723,7 @@
         {
           "line": 3.5,
           "over": 4,
-          "under": 1.25
+          "under": 1.26
         },
         {
           "line": 0.5,
@@ -5786,50 +5742,50 @@
         },
         {
           "line": 2.5,
-          "over": 2.18,
-          "under": 1.7
+          "over": 2.17,
+          "under": 1.71
         }
       ],
       "ah": [
         {
           "line": -0.5,
-          "home": 2,
-          "away": 1.8
+          "home": 1.98,
+          "away": 1.83
         },
         {
           "line": 0.5,
-          "home": 1.26,
-          "away": 3.85
+          "home": 1.25,
+          "away": 3.95
         },
         {
           "line": -0.75,
-          "home": 2.35,
-          "away": 1.58
+          "home": 2.3,
+          "away": 1.62
         },
         {
           "line": -1.5,
-          "home": 3.85,
-          "away": 1.26
+          "home": 3.75,
+          "away": 1.27
         },
         {
           "line": -1,
-          "home": 3,
-          "away": 1.38
+          "home": 2.95,
+          "away": 1.4
         },
         {
           "line": 0.25,
-          "home": 1.33,
-          "away": 3.3
+          "home": 1.3,
+          "away": 3.4
         },
         {
           "line": -0.25,
-          "home": 1.73,
-          "away": 2.1
+          "home": 1.7,
+          "away": 2.15
         },
         {
           "line": -1.75,
-          "home": 5,
-          "away": 1.17
+          "home": 4.9,
+          "away": 1.18
         },
         {
           "line": -2.5,
@@ -5838,26 +5794,26 @@
         },
         {
           "line": -1.25,
-          "home": 3.45,
-          "away": 1.3
+          "home": 3.35,
+          "away": 1.32
         },
         {
           "line": -2,
           "home": 7.5,
-          "away": 1.08
+          "away": 1.09
         },
         {
           "line": -2.25,
           "home": 8,
-          "away": 1.07
+          "away": 1.08
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 13.5,
-            "over": 6.5,
-            "under": 1.08
+            "over": 6.4,
+            "under": 1.09
           },
           {
             "line": 10.5,
@@ -9205,6 +9161,97 @@
       ]
     },
     {
+      "eventId": "1026658668",
+      "title": "Liaoning Shenyang Urban - Chongqing Tonglianglong",
+      "homeTeam": "Liaoning Shenyang Urban",
+      "awayTeam": "Chongqing Tonglianglong",
+      "startTime": "2026-07-04T11:00:00Z",
+      "league": "Super League",
+      "odds": {
+        "home": 2.08,
+        "draw": 3.3,
+        "away": 3.4
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 6.4,
+          "under": 1.07
+        },
+        {
+          "line": 2.5,
+          "over": 1.98,
+          "under": 1.72
+        },
+        {
+          "line": 3.5,
+          "over": 3.45,
+          "under": 1.26
+        },
+        {
+          "line": 1.5,
+          "over": 1.3,
+          "under": 3.1
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.5,
+          "home": 2,
+          "away": 1.7
+        },
+        {
+          "line": -1.5,
+          "home": 3.8,
+          "away": 1.22
+        },
+        {
+          "line": -1.25,
+          "home": 3.4,
+          "away": 1.26
+        },
+        {
+          "line": 0.5,
+          "home": 1.3,
+          "away": 3.2
+        },
+        {
+          "line": -1,
+          "home": 3,
+          "away": 1.32
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 12.5,
+            "over": 3.55,
+            "under": 1.24
+          },
+          {
+            "line": 9.5,
+            "over": 1.72,
+            "under": 1.97
+          },
+          {
+            "line": 10.5,
+            "over": 2.12,
+            "under": 1.62
+          },
+          {
+            "line": 11.5,
+            "over": 2.75,
+            "under": 1.38
+          },
+          {
+            "line": 8.5,
+            "over": 1.44,
+            "under": 2.55
+          }
+        ]
+      }
+    },
+    {
       "eventId": "1026658706",
       "title": "Qingdao West Coast FC - Shanghai Port",
       "homeTeam": "Qingdao West Coast FC",
@@ -12456,30 +12503,30 @@
       "startTime": "2026-07-04T22:00:00Z",
       "league": "USL Championship",
       "odds": {
-        "home": 1.68,
-        "draw": 3.65,
-        "away": 4.2
+        "home": 1.56,
+        "draw": 3.85,
+        "away": 4.75
       },
       "totals": [
         {
           "line": 2.5,
-          "over": 1.58,
-          "under": 2.12
+          "over": 1.56,
+          "under": 2.18
         },
         {
           "line": 1.5,
-          "over": 1.17,
-          "under": 4.1
+          "over": 1.16,
+          "under": 4.2
         },
         {
           "line": 4.5,
-          "over": 4.25,
-          "under": 1.16
+          "over": 4.1,
+          "under": 1.17
         },
         {
           "line": 3.5,
-          "over": 2.45,
-          "under": 1.45
+          "over": 2.38,
+          "under": 1.47
         }
       ]
     },
@@ -15645,6 +15692,19 @@
       }
     },
     {
+      "eventId": "1028196563",
+      "title": "Rafael Giotis - Dimitris Azoidis",
+      "homeTeam": "Rafael Giotis",
+      "awayTeam": "Dimitris Azoidis",
+      "startTime": "2026-06-30T09:00:00Z",
+      "league": "Kayseri",
+      "sport": "tennis",
+      "odds": {
+        "home": 4.2,
+        "away": 1.19
+      }
+    },
+    {
       "eventId": "1028193963",
       "title": "Sarah van Emst - Lavinia Tanasie",
       "homeTeam": "Sarah van Emst",
@@ -16894,6 +16954,6 @@
     }
   ],
   "basketEventsCount": 10,
-  "tennisEventsCount": 131,
+  "tennisEventsCount": 132,
   "lastError": null
 }
