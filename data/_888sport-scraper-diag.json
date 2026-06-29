@@ -1,26 +1,28 @@
 {
-  "ranAt": "2026-06-29T12:53:57.239Z",
+  "ranAt": "2026-06-29T13:03:57.125Z",
   "catalogs": 5,
   "builtEvents": 23,
   "notes": [],
   "wsRecon": {
     "murl": "https://www.888sport.se/football/iceland/icelandic-urvalsdeild/akranes-vs-fram/",
     "wsUrls": [
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-c0a613fc-d48c-429e-99cd-e92348eb6651",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-c0a613fc-d48c-429e-99cd-e92348eb6651"
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-dba6d6dc-1919-4760-aa2f-fa42cb71b69f",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-dba6d6dc-1919-4760-aa2f-fa42cb71b69f",
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-1d2d708b-d78f-4f2f-a6cd-d830fa130e0b",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-1d2d708b-d78f-4f2f-a6cd-d830fa130e0b"
     ],
     "frameCount": 12,
     "frames": [
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:03\",\"guid\":\"9b2d7434-73b9-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846284}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:03\",\"guid\":\"9b2eaef8-73b9-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846284}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:03\",\"guid\":\"9b4489bc-73b9-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[{\"name\":\"Matchvinnare\",\"selections\":{\"16774065068\":{\"fraction_price\":\"9\\/1\",\"price\":10.0,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":1,\"extra_info\":null,\"name\":\"Colombia (Carlos)\",\"decimal_price\":10.0,\"tradable\":true,\"sp_only\":false,\"outcome\":\"UNSETTLED\",\"type\":\"1\",\"order\":1000},\"16774065067\":{\"fraction_price\":\"11\\/5\",\"price\":3.2,\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":2,\"extra_info\":null,\"",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:03\",\"guid\":\"9b6b6e1a-73b9-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846272}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:03\",\"guid\":\"9b6f5584-73b9-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846272}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:04\",\"guid\":\"9bbc8d40-73b9-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846271}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:04\",\"guid\":\"9bbf8932-73b9-11f1-b4b6-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846271}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:04\",\"guid\":\"9bff669c-73b9-11f1-b3c4-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846283}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:04\",\"guid\":\"9c038632-73b9-11f1-9740-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846283}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 12:54:08\",\"guid\":\"9e4051aa-73b9-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846269}]}"
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:03\",\"guid\":\"00b17ff2-73bb-11f1-9c5c-02e9fc75fbe9\"},\"events\":[{\"event_type\":\"NORMAL\",\"market_suspended\":null,\"tradable\":0,\"suspended\":false,\"active\":1,\"is_inplay\":false,\"markets\":[{\"name\":\"Matchvinnare\",\"selections\":{\"16773398929\":{\"fraction_price\":\"1\\/5\",\"price\":\"1.200\",\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":1,\"extra_info\":{},\"name\":\"Al-Arabi Kuwait\",\"decimal_price\":\"1.200\",\"tradable\":true,\"sp_only\":false,\"outcome\":\"UNSETTLED\",\"type\":\"1\",\"order\":1000},\"16773398931\":{\"fraction_price\":\"4\\/1\",\"price\":\"5.000\",\"specialoddsvalue\":\"\",\"suspended\":false,\"active\":true,\"selection_type_id\":2,\"extra_info\":{}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:04\",\"guid\":\"013a93b4-73bb-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846315}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:05\",\"guid\":\"02135532-73bb-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846320}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:06\",\"guid\":\"025cb8da-73bb-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846318}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:06\",\"guid\":\"02616bdc-73bb-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846318}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:06\",\"guid\":\"02ab9bb2-73bb-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846320}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:06\",\"guid\":\"02b08fd2-73bb-11f1-8b8c-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846320}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:07\",\"guid\":\"0303a0b4-73bb-11f1-961f-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846315}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:09\",\"guid\":\"0436cf9c-73bb-11f1-b125-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846315}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 13:04:09\",\"guid\":\"043b1aac-73bb-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846315}]}"
     ]
   },
   "droppedOutsideWindow": 6
