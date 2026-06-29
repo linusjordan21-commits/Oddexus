@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:12:32.197Z",
+  "updatedAt": "2026-06-29T05:15:01.543Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 188,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 186,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 14796,
+  "durationMs": 14681,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1028181438",
-      "title": "Stuttgart (borees) - Frankfurt (Rodja)",
-      "homeTeam": "Stuttgart (borees)",
-      "awayTeam": "Frankfurt (Rodja)",
-      "startTime": "2026-06-29T05:06:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 10,
-        "draw": 6.5,
-        "away": 1.17
-      }
-    },
-    {
       "eventId": "1028183537",
       "title": "Roma (MeLToSik) - Fenerbahce (Revange)",
       "homeTeam": "Roma (MeLToSik)",
@@ -1005,9 +992,9 @@
       "startTime": "2026-06-29T05:12:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.6,
-        "draw": 2.7,
-        "away": 1.98
+        "home": 29,
+        "draw": 8,
+        "away": 1.08
       }
     },
     {
@@ -1018,22 +1005,9 @@
       "startTime": "2026-06-29T05:12:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2,
-        "draw": 5.3,
+        "home": 2.02,
+        "draw": 5.2,
         "away": 2.2
-      }
-    },
-    {
-      "eventId": "1028183542",
-      "title": "Porto (Jekunam) - Salzburg (sane4ek8)",
-      "homeTeam": "Porto (Jekunam)",
-      "awayTeam": "Salzburg (sane4ek8)",
-      "startTime": "2026-06-29T05:12:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.43,
-        "draw": 4.7,
-        "away": 1.93
       }
     },
     {
@@ -1047,47 +1021,50 @@
         "home": 2.85,
         "draw": 5.8,
         "away": 1.63
+      }
+    },
+    {
+      "eventId": "1028181451",
+      "title": "Leipzig (Ganger_29) - B Dortmund (Pavlinho19)",
+      "homeTeam": "Leipzig (Ganger_29)",
+      "awayTeam": "B Dortmund (Pavlinho19)",
+      "startTime": "2026-06-29T05:18:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.35,
+        "draw": 5.1,
+        "away": 1.93
       },
       "totals": [
         {
-          "line": 6.5,
-          "over": 1.13,
-          "under": 4.6
-        },
-        {
-          "line": 12.5,
-          "over": 8,
-          "under": 1.03
-        },
-        {
-          "line": 11.5,
-          "over": 4.8,
-          "under": 1.11
-        },
-        {
           "line": 8.5,
-          "over": 1.64,
-          "under": 2.05
+          "over": 7,
+          "under": 1.04
         },
         {
-          "line": 10.5,
-          "over": 3.1,
-          "under": 1.27
+          "line": 4.5,
+          "over": 1.3,
+          "under": 2.95
         },
         {
-          "line": 5.5,
-          "over": 1.03,
-          "under": 8
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5.2
+        },
+        {
+          "line": 6.5,
+          "over": 2.5,
+          "under": 1.42
         },
         {
           "line": 7.5,
-          "over": 1.32,
-          "under": 2.85
+          "over": 4.1,
+          "under": 1.16
         },
         {
-          "line": 9.5,
-          "over": 2.2,
-          "under": 1.54
+          "line": 5.5,
+          "over": 1.77,
+          "under": 1.9
         }
       ]
     },
@@ -14686,6 +14663,19 @@
       }
     },
     {
+      "eventId": "1028181699",
+      "title": "Lorenzo Esquici - Carter Craig",
+      "homeTeam": "Lorenzo Esquici",
+      "awayTeam": "Carter Craig",
+      "startTime": "2026-06-29T15:00:00Z",
+      "league": "USA - Boca Raton",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.74,
+        "away": 1.96
+      }
+    },
+    {
       "eventId": "1028181683",
       "title": "Lucie Pawlak - Isabella Maria Serban",
       "homeTeam": "Lucie Pawlak",
@@ -14696,6 +14686,19 @@
       "odds": {
         "home": 3.1,
         "away": 1.3
+      }
+    },
+    {
+      "eventId": "1028181023",
+      "title": "Lachlan Gaskell - Conor Flynn",
+      "homeTeam": "Lachlan Gaskell",
+      "awayTeam": "Conor Flynn",
+      "startTime": "2026-06-29T15:10:00Z",
+      "league": "USA - Boca Raton",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.58,
+        "away": 2.18
       }
     },
     {
@@ -14908,6 +14911,6 @@
     }
   ],
   "basketEventsCount": 3,
-  "tennisEventsCount": 109,
+  "tennisEventsCount": 111,
   "lastError": null
 }
