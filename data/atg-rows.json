@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T08:35:24.627Z",
+  "updatedAt": "2026-06-29T08:37:55.030Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 111,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 112,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 10909,
+  "durationMs": 11194,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,58 +985,6 @@
       ]
     },
     {
-      "eventId": "1028185465",
-      "title": "Lille (TOMMY) - Strasbourg (Voron)",
-      "homeTeam": "Lille (TOMMY)",
-      "awayTeam": "Strasbourg (Voron)",
-      "startTime": "2026-06-29T08:26:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 26,
-        "draw": 13,
-        "away": 1.04
-      }
-    },
-    {
-      "eventId": "1028185485",
-      "title": "Germany (Mqrkkkkkk) - Curacao (Shark)",
-      "homeTeam": "Germany (Mqrkkkkkk)",
-      "awayTeam": "Curacao (Shark)",
-      "startTime": "2026-06-29T08:26:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2.06,
-        "draw": 3.05,
-        "away": 2.95
-      }
-    },
-    {
-      "eventId": "1028181455",
-      "title": "Nice (Pavlinho19) - Lyon (Ganger_29)",
-      "homeTeam": "Nice (Pavlinho19)",
-      "awayTeam": "Lyon (Ganger_29)",
-      "startTime": "2026-06-29T08:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 6,
-        "draw": 4.1,
-        "away": 1.41
-      }
-    },
-    {
-      "eventId": "1028181440",
-      "title": "Marseille (Lumix) - Monaco (Rodja)",
-      "homeTeam": "Marseille (Lumix)",
-      "awayTeam": "Monaco (Rodja)",
-      "startTime": "2026-06-29T08:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.27,
-        "draw": 4.4,
-        "away": 10
-      }
-    },
-    {
       "eventId": "1028185814",
       "title": "Juventus (FanFan) - Roma (savinho)",
       "homeTeam": "Juventus (FanFan)",
@@ -1044,9 +992,9 @@
       "startTime": "2026-06-29T08:30:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3.1,
-        "draw": 3.7,
-        "away": 1.8
+        "home": 5,
+        "draw": 3.95,
+        "away": 1.47
       }
     },
     {
@@ -1057,9 +1005,9 @@
       "startTime": "2026-06-29T08:31:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.5,
-        "draw": 2.16,
-        "away": 3.45
+        "home": 1.83,
+        "draw": 2.2,
+        "away": 7.5
       }
     },
     {
@@ -1070,9 +1018,9 @@
       "startTime": "2026-06-29T08:31:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.43,
-        "draw": 2.85,
-        "away": 2.55
+        "home": 1.48,
+        "draw": 3.15,
+        "away": 8
       }
     },
     {
@@ -1083,9 +1031,9 @@
       "startTime": "2026-06-29T08:34:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.63,
-        "draw": 3.55,
-        "away": 4
+        "home": 1.27,
+        "draw": 4.6,
+        "away": 9
       }
     },
     {
@@ -1096,9 +1044,9 @@
       "startTime": "2026-06-29T08:34:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.88,
-        "draw": 3.7,
-        "away": 2.88
+        "home": 1.78,
+        "draw": 3.35,
+        "away": 3.45
       }
     },
     {
@@ -1808,6 +1756,56 @@
           "line": 7.5,
           "over": 4.5,
           "under": 1.16
+        }
+      ]
+    },
+    {
+      "eventId": "1028183558",
+      "title": "Spanien (Jekunam) - Netherlands (Revange)",
+      "homeTeam": "Spanien (Jekunam)",
+      "awayTeam": "Netherlands (Revange)",
+      "startTime": "2026-06-29T08:58:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.1,
+        "draw": 4.6,
+        "away": 1.66
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 2.45,
+          "under": 1.47
+        },
+        {
+          "line": 2.5,
+          "over": 1.02,
+          "under": 12.5
+        },
+        {
+          "line": 8.5,
+          "over": 7,
+          "under": 1.08
+        },
+        {
+          "line": 3.5,
+          "over": 1.12,
+          "under": 5.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.73,
+          "under": 1.96
+        },
+        {
+          "line": 4.5,
+          "over": 1.34,
+          "under": 3
+        },
+        {
+          "line": 7.5,
+          "over": 3.85,
+          "under": 1.22
         }
       ]
     },
@@ -2783,6 +2781,111 @@
           "line": 8.5,
           "over": 4.4,
           "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028181325",
+      "title": "Qatar (KraftVK) - Norway (nikkitta)",
+      "homeTeam": "Qatar (KraftVK)",
+      "awayTeam": "Norway (nikkitta)",
+      "startTime": "2026-06-29T09:27:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.74,
+        "draw": 4,
+        "away": 3.15
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.18,
+          "under": 4.25
+        },
+        {
+          "line": 7.5,
+          "over": 5,
+          "under": 1.14
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 9
+        },
+        {
+          "line": 4.5,
+          "over": 1.48,
+          "under": 2.45
+        },
+        {
+          "line": 6.5,
+          "over": 3,
+          "under": 1.34
+        },
+        {
+          "line": 5.5,
+          "over": 1.98,
+          "under": 1.71
+        },
+        {
+          "line": 8.5,
+          "over": 9.5,
+          "under": 1.04
+        }
+      ]
+    },
+    {
+      "eventId": "1028181263",
+      "title": "Saudiarabien (Bomb1to) - Sverige (LaikingDast)",
+      "homeTeam": "Saudiarabien (Bomb1to)",
+      "awayTeam": "Sverige (LaikingDast)",
+      "startTime": "2026-06-29T09:27:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.58,
+        "draw": 3.8,
+        "away": 4.1
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.26,
+          "under": 3.45
+        },
+        {
+          "line": 9.5,
+          "over": 10,
+          "under": 1.03
+        },
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 7
+        },
+        {
+          "line": 2.5,
+          "over": 1.01,
+          "under": 16
+        },
+        {
+          "line": 6.5,
+          "over": 2.17,
+          "under": 1.6
+        },
+        {
+          "line": 8.5,
+          "over": 5.6,
+          "under": 1.11
+        },
+        {
+          "line": 7.5,
+          "over": 3.2,
+          "under": 1.3
+        },
+        {
+          "line": 5.5,
+          "over": 1.56,
+          "under": 2.25
         }
       ]
     },
@@ -5949,8 +6052,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.32,
-        "away": 3.2
+        "home": 1.27,
+        "away": 3.55
       }
     },
     {
@@ -5962,8 +6065,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.63,
-        "away": 2.18
+        "home": 1.46,
+        "away": 2.6
       }
     },
     {
@@ -5975,8 +6078,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.07,
-        "away": 7.5
+        "home": 1.08,
+        "away": 6.75
       }
     },
     {
@@ -5988,8 +6091,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 2.02,
-        "away": 1.73
+        "home": 2.45,
+        "away": 1.5
       }
     },
     {
@@ -6001,8 +6104,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.64,
-        "away": 2.17
+        "home": 1.42,
+        "away": 2.7
       }
     },
     {
