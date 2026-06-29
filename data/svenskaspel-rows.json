@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:37:50.422Z",
+  "updatedAt": "2026-06-29T02:40:20.386Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 187,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 189,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 14834,
+  "durationMs": 14621,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.18,
-        "draw": 4.75,
-        "away": 26
+        "home": 1.14,
+        "draw": 5.4,
+        "away": 41
       }
     },
     {
@@ -1005,22 +1005,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.75,
-        "draw": 3.45,
-        "away": 4
-      }
-    },
-    {
-      "eventId": "1028174153",
-      "title": "Juventus (maggett0) - B Dortmund (SpeciAL)",
-      "homeTeam": "Juventus (maggett0)",
-      "awayTeam": "B Dortmund (SpeciAL)",
-      "startTime": "2026-06-29T02:32:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 7.5,
-        "draw": 3,
-        "away": 1.5
+        "home": 2.88,
+        "draw": 3.2,
+        "away": 2.2
       }
     },
     {
@@ -1031,47 +1018,10 @@
       "startTime": "2026-06-29T02:38:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3.75,
-        "draw": 5.3,
-        "away": 1.43
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.15,
-          "under": 4.25
-        },
-        {
-          "line": 7.5,
-          "over": 1.77,
-          "under": 1.89
-        },
-        {
-          "line": 6.5,
-          "over": 1.37,
-          "under": 2.65
-        },
-        {
-          "line": 8.5,
-          "over": 2.43,
-          "under": 1.45
-        },
-        {
-          "line": 10.5,
-          "over": 5.8,
-          "under": 1.07
-        },
-        {
-          "line": 4.5,
-          "over": 1.03,
-          "under": 8
-        },
-        {
-          "line": 9.5,
-          "over": 3.65,
-          "under": 1.2
-        }
-      ]
+        "home": 5.4,
+        "draw": 6.1,
+        "away": 1.3
+      }
     },
     {
       "eventId": "1028173791",
@@ -1081,47 +1031,10 @@
       "startTime": "2026-06-29T02:38:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.02,
-        "draw": 4.4,
-        "away": 2.38
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.47,
-          "under": 2.38
-        },
-        {
-          "line": 5.5,
-          "over": 1.2,
-          "under": 3.65
-        },
-        {
-          "line": 7.5,
-          "over": 1.95,
-          "under": 1.72
-        },
-        {
-          "line": 10.5,
-          "over": 7,
-          "under": 1.04
-        },
-        {
-          "line": 4.5,
-          "over": 1.06,
-          "under": 6.4
-        },
-        {
-          "line": 9.5,
-          "over": 4.1,
-          "under": 1.16
-        },
-        {
-          "line": 8.5,
-          "over": 2.75,
-          "under": 1.35
-        }
-      ]
+        "home": 1.98,
+        "draw": 4.35,
+        "away": 2.4
+      }
     },
     {
       "eventId": "1028174549",
@@ -1131,47 +1044,10 @@
       "startTime": "2026-06-29T02:38:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 3.05,
-        "draw": 5,
-        "away": 1.64
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 2.5,
-          "under": 1.42
-        },
-        {
-          "line": 4.5,
-          "over": 1.14,
-          "under": 4.4
-        },
-        {
-          "line": 8.5,
-          "over": 3.8,
-          "under": 1.19
-        },
-        {
-          "line": 3.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 5.5,
-          "over": 1.37,
-          "under": 2.65
-        },
-        {
-          "line": 9.5,
-          "over": 6.25,
-          "under": 1.06
-        },
-        {
-          "line": 6.5,
-          "over": 1.8,
-          "under": 1.87
-        }
-      ]
+        "home": 4.5,
+        "draw": 5.6,
+        "away": 1.38
+      }
     },
     {
       "eventId": "1028174521",
@@ -1265,6 +1141,111 @@
           "line": 2.5,
           "over": 1.05,
           "under": 6.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028173792",
+      "title": "Benfica (Galikooo) - Tottenham (abr4m_5)",
+      "homeTeam": "Benfica (Galikooo)",
+      "awayTeam": "Tottenham (abr4m_5)",
+      "startTime": "2026-06-29T02:52:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.64,
+        "draw": 5.2,
+        "away": 3
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 8.5,
+          "over": 1.8,
+          "under": 1.86
+        },
+        {
+          "line": 6.5,
+          "over": 1.17,
+          "under": 3.9
+        },
+        {
+          "line": 9.5,
+          "over": 2.45,
+          "under": 1.43
+        },
+        {
+          "line": 7.5,
+          "over": 1.4,
+          "under": 2.55
+        },
+        {
+          "line": 12.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 11.5,
+          "over": 5.6,
+          "under": 1.08
+        },
+        {
+          "line": 10.5,
+          "over": 3.6,
+          "under": 1.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028173793",
+      "title": "Feyenoord (drksd3) - Lille (luxiqq)",
+      "homeTeam": "Feyenoord (drksd3)",
+      "awayTeam": "Lille (luxiqq)",
+      "startTime": "2026-06-29T02:52:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.72,
+        "draw": 6.1,
+        "away": 2.55
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 9.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 7.5,
+          "over": 1.79,
+          "under": 1.88
+        },
+        {
+          "line": 10.5,
+          "over": 5.8,
+          "under": 1.07
+        },
+        {
+          "line": 5.5,
+          "over": 1.16,
+          "under": 4.1
+        },
+        {
+          "line": 6.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 8.5,
+          "over": 2.4,
+          "under": 1.46
         }
       ]
     },
