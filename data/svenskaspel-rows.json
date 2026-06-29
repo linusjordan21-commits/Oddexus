@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T14:24:26.409Z",
+  "updatedAt": "2026-06-29T14:28:26.953Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 173,
-  "skippedNoOdds": 5,
+  "uniqueEvents": 174,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 13839,
+  "durationMs": 14234,
   "events": [
     {
       "eventId": "1028072415",
@@ -1625,6 +1625,61 @@
       ]
     },
     {
+      "eventId": "1028186042",
+      "title": "Germany (Cevuu) - Frankrike (Bjela)",
+      "homeTeam": "Germany (Cevuu)",
+      "awayTeam": "Frankrike (Bjela)",
+      "startTime": "2026-06-29T14:54:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 1.93,
+        "draw": 4.2,
+        "away": 2.55
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 1.71,
+          "under": 1.97
+        },
+        {
+          "line": 5.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 7.5,
+          "over": 1.34,
+          "under": 2.8
+        },
+        {
+          "line": 9.5,
+          "over": 2.25,
+          "under": 1.52
+        },
+        {
+          "line": 10.5,
+          "over": 3.2,
+          "under": 1.26
+        },
+        {
+          "line": 6.5,
+          "over": 1.15,
+          "under": 4.25
+        },
+        {
+          "line": 11.5,
+          "over": 4.8,
+          "under": 1.11
+        },
+        {
+          "line": 12.5,
+          "over": 8,
+          "under": 1.03
+        }
+      ]
+    },
+    {
       "eventId": "1028186069",
       "title": "Napoli (Hristian05) - Bologna (Totti)",
       "homeTeam": "Napoli (Hristian05)",
@@ -1785,6 +1840,96 @@
       ]
     },
     {
+      "eventId": "1028186033",
+      "title": "Salzburg (Linox) - Roma (lzrn)",
+      "homeTeam": "Salzburg (Linox)",
+      "awayTeam": "Roma (lzrn)",
+      "startTime": "2026-06-29T15:04:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.3,
+        "draw": 4.5,
+        "away": 2.05
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 6.5,
+          "over": 4.7,
+          "under": 1.12
+        },
+        {
+          "line": 3.5,
+          "over": 1.33,
+          "under": 2.8
+        },
+        {
+          "line": 4.5,
+          "over": 1.83,
+          "under": 1.84
+        },
+        {
+          "line": 5.5,
+          "over": 2.85,
+          "under": 1.33
+        },
+        {
+          "line": 7.5,
+          "over": 9.5,
+          "under": 1.01
+        }
+      ]
+    },
+    {
+      "eventId": "1028186115",
+      "title": "Aston Villa (hit) - Porto (chevare)",
+      "homeTeam": "Aston Villa (hit)",
+      "awayTeam": "Porto (chevare)",
+      "startTime": "2026-06-29T15:04:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.05,
+        "draw": 3.35,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.5
+        },
+        {
+          "line": 5.5,
+          "over": 1.71,
+          "under": 1.96
+        },
+        {
+          "line": 7.5,
+          "over": 3.95,
+          "under": 1.17
+        },
+        {
+          "line": 8.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 4.5,
+          "over": 1.32,
+          "under": 2.85
+        },
+        {
+          "line": 6.5,
+          "over": 2.55,
+          "under": 1.41
+        }
+      ]
+    },
+    {
       "eventId": "1027882261",
       "title": "Futbolo Akademija Siauliai - FK Transinvest",
       "homeTeam": "Futbolo Akademija Siauliai",
@@ -1884,8 +2029,8 @@
         },
         {
           "line": 1.5,
-          "over": 1.33,
-          "under": 3.4
+          "over": 1.34,
+          "under": 3.35
         },
         {
           "line": 4.5,
@@ -1946,7 +2091,7 @@
         },
         {
           "line": -2.5,
-          "home": 6.5,
+          "home": 6.75,
           "away": 1.11
         },
         {
@@ -1979,8 +2124,8 @@
           },
           {
             "line": 8.5,
-            "over": 1.95,
-            "under": 1.78
+            "over": 1.93,
+            "under": 1.79
           },
           {
             "line": 6.5,
@@ -1994,7 +2139,7 @@
           },
           {
             "line": 10.5,
-            "over": 3.4,
+            "over": 3.35,
             "under": 1.28
           },
           {
@@ -12493,8 +12638,8 @@
       "league": "FIBA VM-kval - Asien",
       "sport": "basketball",
       "odds": {
-        "home": 1.01,
-        "away": 12
+        "home": 1.18,
+        "away": 4.5
       }
     },
     {
@@ -12532,8 +12677,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 2.15,
-        "away": 1.63
+        "home": 2.33,
+        "away": 1.53
       }
     },
     {
@@ -12638,8 +12783,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.25,
-        "away": 1.33
+        "home": 3.05,
+        "away": 1.37
       }
     },
     {
@@ -12651,8 +12796,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.92,
-        "away": 1.86
+        "home": 1.4,
+        "away": 2.9
       }
     },
     {
@@ -12677,8 +12822,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.72,
-        "away": 2.08
+        "home": 1.53,
+        "away": 2.48
       }
     },
     {
@@ -12690,21 +12835,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 10,
-        "away": 1.04
-      }
-    },
-    {
-      "eventId": "1028182036",
-      "title": "Esteban Talavera Cortes - Mateo Luis Alvarez Sarmiento",
-      "homeTeam": "Esteban Talavera Cortes",
-      "awayTeam": "Mateo Luis Alvarez Sarmiento",
-      "startTime": "2026-06-29T12:39:00Z",
-      "league": "Getxo",
-      "sport": "tennis",
-      "odds": {
-        "home": 10.5,
-        "away": 1.02
+        "home": 9,
+        "away": 1.06
       }
     },
     {
@@ -12729,8 +12861,8 @@
       "league": "Getxo",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.08
+        "home": 6.5,
+        "away": 1.09
       }
     },
     {
@@ -12742,7 +12874,7 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 6.4,
+        "home": 6.25,
         "away": 1.11
       }
     },
@@ -12755,8 +12887,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.02,
-        "away": 21
+        "home": 1.01,
+        "away": 29
       }
     },
     {
@@ -12768,8 +12900,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.09
+        "home": 7.5,
+        "away": 1.08
       }
     },
     {
@@ -12781,8 +12913,8 @@
       "league": "Ajaccio",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7
+        "home": 1.06,
+        "away": 7.5
       }
     },
     {
@@ -12794,8 +12926,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.95,
-        "away": 1.38
+        "home": 3.05,
+        "away": 1.37
       }
     },
     {
@@ -12807,8 +12939,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.02,
-        "away": 11
+        "home": 1.1,
+        "away": 6.1
       }
     },
     {
@@ -12825,19 +12957,6 @@
       }
     },
     {
-      "eventId": "1028191826",
-      "title": "Anja Wildgruber - Kailey Evans",
-      "homeTeam": "Anja Wildgruber",
-      "awayTeam": "Kailey Evans",
-      "startTime": "2026-06-29T13:20:00Z",
-      "league": "Stuttgart-Vaihingen",
-      "sport": "tennis",
-      "odds": {
-        "home": 12,
-        "away": 1.02
-      }
-    },
-    {
       "eventId": "1028183160",
       "title": "Jeffrey Fradkin - Rodrigo Leal",
       "homeTeam": "Jeffrey Fradkin",
@@ -12846,8 +12965,8 @@
       "league": "Figueira da Foz",
       "sport": "tennis",
       "odds": {
-        "home": 2.65,
-        "away": 1.43
+        "home": 2.55,
+        "away": 1.47
       }
     },
     {
@@ -12859,8 +12978,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.16,
-        "away": 4.7
+        "home": 1.2,
+        "away": 4.2
       }
     },
     {
@@ -12872,8 +12991,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.64,
-        "away": 2.23
+        "home": 1.45,
+        "away": 2.7
       }
     },
     {
@@ -12898,8 +13017,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.48,
-        "away": 1.5
+        "home": 2.55,
+        "away": 1.47
       }
     },
     {
@@ -12911,8 +13030,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.48,
-        "away": 1.52
+        "home": 2.38,
+        "away": 1.57
       }
     },
     {
@@ -12924,8 +13043,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.67,
-        "away": 2.12
+        "home": 1.79,
+        "away": 1.96
       }
     },
     {
@@ -12937,8 +13056,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 2.6,
-        "away": 1.46
+        "home": 3.3,
+        "away": 1.3
       }
     },
     {
@@ -12950,8 +13069,8 @@
       "league": "Umag",
       "sport": "tennis",
       "odds": {
-        "home": 4.6,
-        "away": 1.17
+        "home": 3.35,
+        "away": 1.29
       }
     },
     {
@@ -12963,8 +13082,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.22,
-        "away": 4.1
+        "home": 1.25,
+        "away": 3.75
       }
     },
     {
@@ -12976,7 +13095,7 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.47,
+        "home": 1.48,
         "away": 2.55
       }
     },
@@ -12989,8 +13108,8 @@
       "league": "Umag",
       "sport": "tennis",
       "odds": {
-        "home": 3.3,
-        "away": 1.3
+        "home": 2.38,
+        "away": 1.53
       }
     },
     {
@@ -13002,8 +13121,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.72,
-        "away": 2.02
+        "home": 1.74,
+        "away": 2
       }
     },
     {
@@ -13015,8 +13134,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.32,
-        "away": 3.15
+        "home": 1.41,
+        "away": 2.75
       }
     },
     {
@@ -13028,8 +13147,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 6.75
+        "home": 1.14,
+        "away": 5.5
       }
     },
     {
@@ -13041,8 +13160,8 @@
       "league": "Umag",
       "sport": "tennis",
       "odds": {
-        "home": 3.4,
-        "away": 1.28
+        "home": 2.55,
+        "away": 1.46
       }
     },
     {
@@ -13055,7 +13174,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.03,
-        "away": 10
+        "away": 10.5
       }
     },
     {
@@ -13067,8 +13186,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.12,
-        "away": 1.7
+        "home": 2.4,
+        "away": 1.56
       }
     },
     {
@@ -13080,8 +13199,8 @@
       "league": "Getxo",
       "sport": "tennis",
       "odds": {
-        "home": 1.41,
-        "away": 2.7
+        "home": 1.4,
+        "away": 2.75
       }
     },
     {
@@ -13093,8 +13212,8 @@
       "league": "Aix-les-Bains",
       "sport": "tennis",
       "odds": {
-        "home": 1.35,
-        "away": 3
+        "home": 1.19,
+        "away": 4.3
       }
     },
     {
@@ -13106,8 +13225,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 3.2,
-        "away": 1.3
+        "home": 4.25,
+        "away": 1.19
       }
     },
     {
@@ -13119,8 +13238,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.7,
-        "away": 2.07
+        "home": 1.41,
+        "away": 2.7
       }
     },
     {
@@ -13132,8 +13251,21 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.38,
-        "away": 2.88
+        "home": 1.27,
+        "away": 3.6
+      }
+    },
+    {
+      "eventId": "1028180422",
+      "title": "Tristan Berard - Alexander Watanabe Eriksson",
+      "homeTeam": "Tristan Berard",
+      "awayTeam": "Alexander Watanabe Eriksson",
+      "startTime": "2026-06-29T14:22:00Z",
+      "league": "Ajaccio",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.55,
+        "away": 2.32
       }
     },
     {
@@ -13141,11 +13273,11 @@
       "title": "Hugo Gaston - Stefanos Tsitsipas",
       "homeTeam": "Hugo Gaston",
       "awayTeam": "Stefanos Tsitsipas",
-      "startTime": "2026-06-29T14:30:00Z",
+      "startTime": "2026-06-29T14:25:00Z",
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.63,
+        "home": 2.6,
         "away": 1.48
       }
     },
@@ -13160,6 +13292,19 @@
       "odds": {
         "home": 1.4,
         "away": 3
+      }
+    },
+    {
+      "eventId": "1028155325",
+      "title": "Claire Liu - Hanne Vandewinkel",
+      "homeTeam": "Claire Liu",
+      "awayTeam": "Hanne Vandewinkel",
+      "startTime": "2026-06-29T14:35:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.68,
+        "away": 2.18
       }
     },
     {
@@ -13587,8 +13732,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.24,
-        "away": 4
+        "home": 1.25,
+        "away": 3.95
       }
     },
     {
@@ -13743,8 +13888,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.16,
-        "away": 1.67
+        "home": 2.4,
+        "away": 1.54
       }
     },
     {
