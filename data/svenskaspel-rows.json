@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:47:50.785Z",
+  "updatedAt": "2026-06-29T02:50:20.839Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 191,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 190,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 14963,
+  "durationMs": 14932,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1026389416",
-      "title": "Orlando City B - Columbus Crew II",
-      "homeTeam": "Orlando City B",
-      "awayTeam": "Columbus Crew II",
-      "startTime": "2026-06-29T00:57:00Z",
-      "league": "MLS Next Pro",
-      "odds": {
-        "home": 25,
-        "draw": 1.04,
-        "away": 13
-      }
-    },
-    {
       "eventId": "1026389412",
       "title": "Los Angeles FC II - Houston Dynamo II",
       "homeTeam": "Los Angeles FC II",
@@ -1005,22 +992,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.45,
-        "draw": 3,
-        "away": 2.7
-      }
-    },
-    {
-      "eventId": "1028173791",
-      "title": "Benfica (Galikooo) - Bayer 04 (Yeti)",
-      "homeTeam": "Benfica (Galikooo)",
-      "awayTeam": "Bayer 04 (Yeti)",
-      "startTime": "2026-06-29T02:38:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 2.43,
-        "draw": 2.63,
-        "away": 2.75
+        "home": 5.6,
+        "draw": 3.2,
+        "away": 1.61
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T02:38:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 17,
-        "draw": 7.5,
-        "away": 1.1
+        "home": 10.5,
+        "draw": 4.2,
+        "away": 1.29
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T02:44:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.43,
-        "draw": 4.3,
-        "away": 1.98
+        "home": 1.18,
+        "draw": 6.4,
+        "away": 9.5
       }
     },
     {
@@ -1057,9 +1031,9 @@
       "startTime": "2026-06-29T02:44:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.98,
+        "home": 4.4,
         "draw": 4.4,
-        "away": 2.4
+        "away": 1.48
       }
     },
     {
