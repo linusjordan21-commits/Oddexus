@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:35:05.553Z",
+  "updatedAt": "2026-06-29T02:37:34.865Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 201,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 199,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 15607,
+  "durationMs": 15812,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.22,
-        "draw": 4.3,
-        "away": 19
+        "home": 1.18,
+        "draw": 4.75,
+        "away": 26
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T02:03:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 1.74,
-        "draw": 3.55,
-        "away": 3.9
+        "home": 1.75,
+        "draw": 3.45,
+        "away": 4
       }
     },
     {
@@ -1018,22 +1018,9 @@
       "startTime": "2026-06-29T02:32:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 6,
-        "draw": 3.3,
-        "away": 1.52
-      }
-    },
-    {
-      "eventId": "1028174522",
-      "title": "Man City (GanGsta_Panda) - Sporting CP (Noltzer)",
-      "homeTeam": "Man City (GanGsta_Panda)",
-      "awayTeam": "Sporting CP (Noltzer)",
-      "startTime": "2026-06-29T02:32:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.28,
-        "draw": 5.6,
-        "away": 6.25
+        "home": 3.6,
+        "draw": 2.38,
+        "away": 2.2
       }
     },
     {
@@ -1044,47 +1031,10 @@
       "startTime": "2026-06-29T02:35:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.73,
-        "draw": 5.75,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.74,
-          "under": 1.94
-        },
-        {
-          "line": 3.5,
-          "over": 1.12,
-          "under": 5.4
-        },
-        {
-          "line": 4.5,
-          "over": 1.33,
-          "under": 3.05
-        },
-        {
-          "line": 2.5,
-          "over": 1.02,
-          "under": 13
-        },
-        {
-          "line": 6.5,
-          "over": 2.43,
-          "under": 1.48
-        },
-        {
-          "line": 7.5,
-          "over": 4,
-          "under": 1.2
-        },
-        {
-          "line": 8.5,
-          "over": 7,
-          "under": 1.07
-        }
-      ]
+        "home": 1.78,
+        "draw": 5.3,
+        "away": 2.55
+      }
     },
     {
       "eventId": "1028178549",
@@ -1094,42 +1044,10 @@
       "startTime": "2026-06-29T02:35:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.88,
-        "draw": 4.8,
-        "away": 1.71
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 2.35,
-          "under": 1.52
-        },
-        {
-          "line": 4.5,
-          "over": 1.63,
-          "under": 2.1
-        },
-        {
-          "line": 6.5,
-          "over": 3.75,
-          "under": 1.23
-        },
-        {
-          "line": 2.5,
-          "over": 1.07,
-          "under": 7.5
-        },
-        {
-          "line": 7.5,
-          "over": 6.75,
-          "under": 1.08
-        },
-        {
-          "line": 3.5,
-          "over": 1.27,
-          "under": 3.4
-        }
-      ]
+        "home": 4.9,
+        "draw": 5.25,
+        "away": 1.37
+      }
     },
     {
       "eventId": "1028173790",
@@ -1428,6 +1346,51 @@
           "line": 2.5,
           "over": 1.05,
           "under": 6.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028178539",
+      "title": "Man City (Simaponika) - Boca Juniors (volvo)",
+      "homeTeam": "Man City (Simaponika)",
+      "awayTeam": "Boca Juniors (volvo)",
+      "startTime": "2026-06-29T02:47:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.75,
+        "draw": 4.9,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 4.6,
+          "under": 1.16
+        },
+        {
+          "line": 3.5,
+          "over": 1.37,
+          "under": 2.85
+        },
+        {
+          "line": 2.5,
+          "over": 1.11,
+          "under": 5.8
+        },
+        {
+          "line": 7.5,
+          "over": 9,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 2.75,
+          "under": 1.4
+        },
+        {
+          "line": 4.5,
+          "over": 1.8,
+          "under": 1.87
         }
       ]
     },
