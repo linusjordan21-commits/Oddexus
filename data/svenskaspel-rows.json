@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:36:06.016Z",
+  "updatedAt": "2026-06-29T20:40:06.801Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 215,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 216,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 17588,
+  "durationMs": 18290,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,35 +992,9 @@
       "startTime": "2026-06-29T19:16:00Z",
       "league": "Úrvalsdeild",
       "odds": {
-        "home": 41,
-        "draw": 11.5,
+        "home": 51,
+        "draw": 12.5,
         "away": 1.03
-      }
-    },
-    {
-      "eventId": "1028185647",
-      "title": "River Plate (abr4m_5) - Racing Club (Int1liGenT)",
-      "homeTeam": "River Plate (abr4m_5)",
-      "awayTeam": "Racing Club (Int1liGenT)",
-      "startTime": "2026-06-29T20:28:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 4.6,
-        "draw": 4.3,
-        "away": 1.47
-      }
-    },
-    {
-      "eventId": "1028185648",
-      "title": "Estudiantes L.P. (luxiqq) - Independiente (Galikooo)",
-      "homeTeam": "Estudiantes L.P. (luxiqq)",
-      "awayTeam": "Independiente (Galikooo)",
-      "startTime": "2026-06-29T20:28:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 17,
-        "draw": 11,
-        "away": 1.06
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.41,
-        "draw": 4.2,
-        "away": 8
+        "home": 1.42,
+        "draw": 4.1,
+        "away": 8.5
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T20:32:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.61,
-        "draw": 4.1,
-        "away": 3.6
+        "home": 1.45,
+        "draw": 3.95,
+        "away": 5.3
       }
     },
     {
@@ -1057,9 +1031,9 @@
       "startTime": "2026-06-29T20:34:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 7,
-        "draw": 6.75,
-        "away": 1.21
+        "home": 15,
+        "draw": 7.5,
+        "away": 1.11
       }
     },
     {
@@ -1777,6 +1751,96 @@
           "line": 9.5,
           "over": 4.75,
           "under": 1.12
+        }
+      ]
+    },
+    {
+      "eventId": "1028186343",
+      "title": "Benfica (Kray) - Sporting CP (Kodak)",
+      "homeTeam": "Benfica (Kray)",
+      "awayTeam": "Sporting CP (Kodak)",
+      "startTime": "2026-06-29T21:10:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.72,
+        "draw": 4.4,
+        "away": 2.95
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 6.5,
+          "over": 2.4,
+          "under": 1.46
+        },
+        {
+          "line": 7.5,
+          "over": 3.8,
+          "under": 1.18
+        },
+        {
+          "line": 4.5,
+          "over": 1.28,
+          "under": 3.05
+        },
+        {
+          "line": 5.5,
+          "over": 1.68,
+          "under": 2
+        },
+        {
+          "line": 8.5,
+          "over": 6.75,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028186355",
+      "title": "Porto (Inquisitor) - Vitoria SC (OG)",
+      "homeTeam": "Porto (Inquisitor)",
+      "awayTeam": "Vitoria SC (OG)",
+      "startTime": "2026-06-29T21:10:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.68,
+        "draw": 3.6,
+        "away": 3.7
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 4.5,
+          "over": 1.49,
+          "under": 2.32
+        },
+        {
+          "line": 7.5,
+          "over": 5.4,
+          "under": 1.09
+        },
+        {
+          "line": 6.5,
+          "over": 3.25,
+          "under": 1.25
+        },
+        {
+          "line": 3.5,
+          "over": 1.16,
+          "under": 4
+        },
+        {
+          "line": 5.5,
+          "over": 2.07,
+          "under": 1.63
         }
       ]
     },
@@ -14685,8 +14749,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 2.2,
-        "away": 1.58
+        "home": 2.12,
+        "away": 1.64
       }
     },
     {
@@ -14830,8 +14894,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7.5
+        "home": 1.1,
+        "away": 6.75
       }
     },
     {
@@ -14843,8 +14907,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 1.73,
-        "away": 2.02
+        "home": 1.57,
+        "away": 2.32
       }
     },
     {
@@ -14856,8 +14920,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.04,
-        "away": 1.71
+        "home": 2.14,
+        "away": 1.65
       }
     },
     {
