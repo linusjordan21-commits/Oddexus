@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T05:38:03.729Z",
+  "updatedAt": "2026-06-29T05:40:34.859Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 189,
-  "skippedNoOdds": 1,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 19221,
+  "durationMs": 19498,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,35 +992,9 @@
       "startTime": "2026-06-29T05:30:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.43,
-        "draw": 4.5,
-        "away": 1.95
-      }
-    },
-    {
-      "eventId": "1028181422",
-      "title": "Frankfurt (Rodja) - B Dortmund (Pavlinho19)",
-      "homeTeam": "Frankfurt (Rodja)",
-      "awayTeam": "B Dortmund (Pavlinho19)",
-      "startTime": "2026-06-29T05:30:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 51,
-        "draw": 15,
-        "away": 1.02
-      }
-    },
-    {
-      "eventId": "1028181424",
-      "title": "Stuttgart (borees) - Bayern Munchen (Lumix)",
-      "homeTeam": "Stuttgart (borees)",
-      "awayTeam": "Bayern Munchen (Lumix)",
-      "startTime": "2026-06-29T05:30:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.2,
-        "away": 2.23
+        "home": 5.3,
+        "draw": 4.75,
+        "away": 1.38
       }
     },
     {
@@ -1031,9 +1005,9 @@
       "startTime": "2026-06-29T05:36:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.87,
-        "draw": 3.8,
-        "away": 2.85
+        "home": 3.2,
+        "draw": 3.35,
+        "away": 1.86
       }
     },
     {
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T05:36:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.88,
-        "draw": 2.85,
-        "away": 2.18
+        "home": 3.05,
+        "draw": 2.48,
+        "away": 2.38
       }
     },
     {
@@ -1191,6 +1165,61 @@
           "line": 6.5,
           "over": 2.75,
           "under": 1.35
+        }
+      ]
+    },
+    {
+      "eventId": "1028181497",
+      "title": "Tottenham (bodyaoo) - Chelsea (exhausted)",
+      "homeTeam": "Tottenham (bodyaoo)",
+      "awayTeam": "Chelsea (exhausted)",
+      "startTime": "2026-06-29T05:48:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.38,
+        "draw": 5.8,
+        "away": 1.83
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.12,
+          "under": 4.7
+        },
+        {
+          "line": 5.5,
+          "over": 1.02,
+          "under": 8
+        },
+        {
+          "line": 8.5,
+          "over": 1.64,
+          "under": 2.08
+        },
+        {
+          "line": 9.5,
+          "over": 2.18,
+          "under": 1.56
+        },
+        {
+          "line": 12.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 10.5,
+          "over": 3,
+          "under": 1.29
+        },
+        {
+          "line": 7.5,
+          "over": 1.3,
+          "under": 2.95
+        },
+        {
+          "line": 11.5,
+          "over": 4.7,
+          "under": 1.12
         }
       ]
     },
@@ -1683,14 +1712,14 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.38,
+        "home": 1.37,
         "draw": 4.9,
-        "away": 11
+        "away": 10.5
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 12,
+          "over": 11.5,
           "under": 1.04
         },
         {
@@ -1705,25 +1734,25 @@
         },
         {
           "line": 1.5,
-          "over": 1.25,
-          "under": 4.1
+          "over": 1.24,
+          "under": 4.2
         },
         {
           "line": 3.5,
-          "over": 3,
-          "under": 1.4
+          "over": 2.95,
+          "under": 1.41
         },
         {
           "line": 2.5,
-          "over": 1.8,
+          "over": 1.79,
           "under": 2.04
         }
       ],
       "ah": [
         {
           "line": -1.5,
-          "home": 1.97,
-          "away": 1.83
+          "home": 1.96,
+          "away": 1.84
         },
         {
           "line": -3.5,
@@ -1732,48 +1761,48 @@
         },
         {
           "line": -2.25,
-          "home": 3.2,
-          "away": 1.34
+          "home": 3.15,
+          "away": 1.35
         },
         {
           "line": -1.75,
-          "home": 2.25,
-          "away": 1.63
+          "home": 2.23,
+          "away": 1.64
         },
         {
           "line": -2.75,
           "home": 4.5,
-          "away": 1.2
+          "away": 1.21
         },
         {
           "line": -3,
           "home": 6.5,
-          "away": 1.11
+          "away": 1.12
         },
         {
           "line": -0.75,
-          "home": 1.41,
-          "away": 2.85
+          "home": 1.4,
+          "away": 2.88
         },
         {
           "line": -1.25,
-          "home": 1.75,
-          "away": 2.05
+          "home": 1.74,
+          "away": 2.07
         },
         {
           "line": -2.5,
-          "home": 3.6,
-          "away": 1.29
+          "home": 3.55,
+          "away": 1.3
         },
         {
           "line": -0.5,
-          "home": 1.35,
-          "away": 3.2
+          "home": 1.34,
+          "away": 3.25
         },
         {
           "line": -1,
-          "home": 1.52,
-          "away": 2.48
+          "home": 1.5,
+          "away": 2.5
         },
         {
           "line": -3.25,
@@ -1783,7 +1812,7 @@
         {
           "line": -2,
           "home": 2.8,
-          "away": 1.42
+          "away": 1.43
         }
       ],
       "corners": {
@@ -1820,7 +1849,7 @@
           },
           {
             "line": 11.5,
-            "over": 3.65,
+            "over": 3.6,
             "under": 1.25
           },
           {
@@ -4667,8 +4696,8 @@
       "startTime": "2026-07-02T23:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.84,
-        "draw": 3.55,
+        "home": 1.82,
+        "draw": 3.65,
         "away": 5.1
       },
       "totals": [
@@ -4684,8 +4713,8 @@
         },
         {
           "line": 1.5,
-          "over": 1.35,
-          "under": 3.25
+          "over": 1.36,
+          "under": 3.2
         },
         {
           "line": 5.5,
@@ -4694,7 +4723,7 @@
         },
         {
           "line": 3.5,
-          "over": 3.95,
+          "over": 4,
           "under": 1.26
         },
         {
@@ -4712,7 +4741,7 @@
         {
           "line": -1.25,
           "home": 2.85,
-          "away": 1.42
+          "away": 1.43
         },
         {
           "line": -2.5,
@@ -4731,8 +4760,8 @@
         },
         {
           "line": -0.5,
-          "home": 1.77,
-          "away": 2.04
+          "home": 1.76,
+          "away": 2.06
         },
         {
           "line": 0.5,
@@ -4752,7 +4781,7 @@
         {
           "line": -0.75,
           "home": 2,
-          "away": 1.8
+          "away": 1.81
         },
         {
           "line": 0.25,
@@ -4761,8 +4790,8 @@
         },
         {
           "line": -0.25,
-          "home": 1.54,
-          "away": 2.48
+          "home": 1.53,
+          "away": 2.5
         }
       ],
       "corners": {
@@ -4774,12 +4803,12 @@
           },
           {
             "line": 11.5,
-            "over": 4.6,
-            "under": 1.16
+            "over": 4.5,
+            "under": 1.17
           },
           {
             "line": 8.5,
-            "over": 1.92,
+            "over": 1.91,
             "under": 1.81
           },
           {
