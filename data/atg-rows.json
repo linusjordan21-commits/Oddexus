@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T17:59:21.217Z",
+  "updatedAt": "2026-06-29T18:03:21.236Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 250,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 248,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 19081,
+  "durationMs": 19066,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T17:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 3.7,
+        "home": 3.8,
         "draw": 2.95,
-        "away": 2.17
+        "away": 2.15
       }
     },
     {
@@ -1005,8 +1005,8 @@
       "startTime": "2026-06-29T17:30:00Z",
       "league": "Premier League",
       "odds": {
-        "home": 1.83,
-        "draw": 3.1,
+        "home": 1.85,
+        "draw": 3.05,
         "away": 4.2
       }
     },
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T17:30:00Z",
       "league": "Premier League",
       "odds": {
-        "home": 1.38,
-        "draw": 4.25,
-        "away": 6.75
+        "home": 1.11,
+        "draw": 7.5,
+        "away": 15
       }
     },
     {
@@ -1031,61 +1031,9 @@
       "startTime": "2026-06-29T17:31:00Z",
       "league": "Premier League",
       "odds": {
-        "home": 2.38,
-        "draw": 2.95,
-        "away": 2.85
-      }
-    },
-    {
-      "eventId": "1028186208",
-      "title": "Arsenal (Cevuu) - Juventus (Peconi)",
-      "homeTeam": "Arsenal (Cevuu)",
-      "awayTeam": "Juventus (Peconi)",
-      "startTime": "2026-06-29T17:48:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 8,
-        "draw": 3.4,
-        "away": 1.43
-      }
-    },
-    {
-      "eventId": "1028193094",
-      "title": "Porto (Duka) - Fenerbahce (Decade)",
-      "homeTeam": "Porto (Duka)",
-      "awayTeam": "Fenerbahce (Decade)",
-      "startTime": "2026-06-29T17:52:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 8.5,
-        "draw": 4.1,
-        "away": 1.33
-      }
-    },
-    {
-      "eventId": "1028186269",
-      "title": "Marocko (Sena) - Spanien (Cofi111)",
-      "homeTeam": "Marocko (Sena)",
-      "awayTeam": "Spanien (Cofi111)",
-      "startTime": "2026-06-29T17:55:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 12,
-        "draw": 11,
-        "away": 1.09
-      }
-    },
-    {
-      "eventId": "1028186272",
-      "title": "Portugal (pikalicaaa) - Mexico (Dicca)",
-      "homeTeam": "Portugal (pikalicaaa)",
-      "awayTeam": "Mexico (Dicca)",
-      "startTime": "2026-06-29T17:55:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.07,
-        "draw": 10,
-        "away": 19
+        "home": 2.5,
+        "draw": 2.85,
+        "away": 2.8
       }
     },
     {
@@ -1096,35 +1044,9 @@
       "startTime": "2026-06-29T17:58:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.57,
-        "draw": 4.7,
-        "away": 3.45
-      }
-    },
-    {
-      "eventId": "1028185602",
-      "title": "Lecce (djamik) - Juventus (TOMMY)",
-      "homeTeam": "Lecce (djamik)",
-      "awayTeam": "Juventus (TOMMY)",
-      "startTime": "2026-06-29T17:58:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.64,
-        "draw": 4.35,
-        "away": 3.35
-      }
-    },
-    {
-      "eventId": "1028185603",
-      "title": "Inter (Voron) - Bologna FC (luxiqq)",
-      "homeTeam": "Inter (Voron)",
-      "awayTeam": "Bologna FC (luxiqq)",
-      "startTime": "2026-06-29T17:58:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.28,
-        "draw": 6.4,
-        "away": 5.4
+        "home": 2.08,
+        "draw": 3.6,
+        "away": 2.55
       }
     },
     {
@@ -2268,6 +2190,61 @@
       ]
     },
     {
+      "eventId": "1028186253",
+      "title": "Spanien (Cofi111) - Mexico (Dicca)",
+      "homeTeam": "Spanien (Cofi111)",
+      "awayTeam": "Mexico (Dicca)",
+      "startTime": "2026-06-29T18:31:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.05,
+        "draw": 6.25,
+        "away": 2.04
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.65,
+          "under": 2.08
+        },
+        {
+          "line": 8.5,
+          "over": 3.45,
+          "under": 1.26
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 11
+        },
+        {
+          "line": 7.5,
+          "over": 2.32,
+          "under": 1.52
+        },
+        {
+          "line": 4.5,
+          "over": 1.11,
+          "under": 5.6
+        },
+        {
+          "line": 5.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 10.5,
+          "over": 10.5,
+          "under": 1.03
+        },
+        {
+          "line": 9.5,
+          "over": 6,
+          "under": 1.1
+        }
+      ]
+    },
+    {
       "eventId": "1028185609",
       "title": "Inter (Voron) - Lazio (Jur_Kr)",
       "homeTeam": "Inter (Voron)",
@@ -2435,9 +2412,9 @@
       "startTime": "2026-06-29T18:54:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 2.4,
+        "home": 2.55,
         "draw": 4.5,
-        "away": 1.96
+        "away": 1.88
       },
       "totals": [
         {
@@ -2448,12 +2425,12 @@
         {
           "line": 5.5,
           "over": 1.41,
-          "under": 2.65
+          "under": 2.7
         },
         {
           "line": 4.5,
-          "over": 1.18,
-          "under": 4.35
+          "over": 1.17,
+          "under": 4.4
         },
         {
           "line": 3.5,
@@ -2462,7 +2439,7 @@
         },
         {
           "line": 9.5,
-          "over": 6.25,
+          "over": 6.5,
           "under": 1.09
         },
         {
@@ -2472,13 +2449,13 @@
         },
         {
           "line": 10.5,
-          "over": 11.5,
+          "over": 12,
           "under": 1.02
         },
         {
           "line": 8.5,
-          "over": 3.8,
-          "under": 1.23
+          "over": 3.85,
+          "under": 1.22
         }
       ]
     },
@@ -2490,45 +2467,45 @@
       "startTime": "2026-06-29T18:54:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.43,
-        "draw": 4.6,
-        "away": 1.93
+        "home": 2.38,
+        "draw": 4.7,
+        "away": 1.96
       },
       "totals": [
         {
           "line": 10.5,
-          "over": 8.5,
-          "under": 1.02
+          "over": 7.5,
+          "under": 1.03
         },
         {
           "line": 9.5,
-          "over": 4.9,
-          "under": 1.11
+          "over": 4.5,
+          "under": 1.13
         },
         {
           "line": 7.5,
-          "over": 2.14,
-          "under": 1.58
+          "over": 2.05,
+          "under": 1.64
         },
         {
           "line": 5.5,
-          "over": 1.25,
-          "under": 3.25
+          "over": 1.24,
+          "under": 3.35
         },
         {
           "line": 4.5,
-          "over": 1.08,
-          "under": 5.5
+          "over": 1.07,
+          "under": 5.75
         },
         {
           "line": 6.5,
-          "over": 1.57,
-          "under": 2.17
+          "over": 1.56,
+          "under": 2.23
         },
         {
           "line": 8.5,
-          "over": 3.1,
-          "under": 1.27
+          "over": 2.9,
+          "under": 1.3
         }
       ]
     },
@@ -2540,50 +2517,50 @@
       "startTime": "2026-06-29T18:54:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.35,
-        "draw": 5,
-        "away": 1.93
+        "home": 2.5,
+        "draw": 4.8,
+        "away": 1.86
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.11,
-          "under": 4.8
+          "over": 1.12,
+          "under": 4.75
         },
         {
           "line": 6.5,
           "over": 1.3,
-          "under": 3
+          "under": 2.95
         },
         {
           "line": 8.5,
-          "over": 2.17,
-          "under": 1.56
+          "over": 2.2,
+          "under": 1.55
         },
         {
           "line": 4.5,
           "over": 1.01,
-          "under": 9.5
+          "under": 9
         },
         {
           "line": 9.5,
-          "over": 3.1,
+          "over": 3.15,
           "under": 1.27
         },
         {
           "line": 7.5,
-          "over": 1.63,
+          "over": 1.64,
           "under": 2.06
         },
         {
           "line": 10.5,
-          "over": 4.75,
-          "under": 1.12
+          "over": 5,
+          "under": 1.11
         },
         {
           "line": 11.5,
-          "over": 8,
-          "under": 1.03
+          "over": 8.5,
+          "under": 1.02
         }
       ]
     },
@@ -2595,50 +2572,50 @@
       "startTime": "2026-06-29T18:54:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 3.65,
-        "draw": 5.1,
-        "away": 1.5
+        "home": 3.55,
+        "draw": 5.25,
+        "away": 1.52
       },
       "totals": [
         {
           "line": 7.5,
-          "over": 1.43,
-          "under": 2.6
+          "over": 1.42,
+          "under": 2.65
         },
         {
           "line": 6.5,
-          "over": 1.21,
-          "under": 3.95
+          "over": 1.19,
+          "under": 4.1
         },
         {
           "line": 5.5,
-          "over": 1.08,
-          "under": 7
+          "over": 1.07,
+          "under": 7.5
         },
         {
           "line": 9.5,
-          "over": 2.4,
+          "over": 2.38,
           "under": 1.5
         },
         {
           "line": 10.5,
-          "over": 3.5,
-          "under": 1.25
+          "over": 3.45,
+          "under": 1.27
         },
         {
           "line": 8.5,
-          "over": 1.8,
-          "under": 1.88
+          "over": 1.78,
+          "under": 1.9
         },
         {
           "line": 12.5,
-          "over": 9.5,
+          "over": 9,
           "under": 1.04
         },
         {
           "line": 11.5,
-          "over": 5.6,
-          "under": 1.11
+          "over": 5.3,
+          "under": 1.12
         }
       ]
     },
@@ -7611,9 +7588,9 @@
       "startTime": "2026-07-02T23:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.76,
-        "draw": 3.7,
-        "away": 5.25
+        "home": 1.79,
+        "draw": 3.6,
+        "away": 5
       },
       "totals": [
         {
@@ -8139,19 +8116,19 @@
       "startTime": "2026-07-03T03:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.94,
-        "draw": 3.45,
-        "away": 4.35
+        "home": 2.04,
+        "draw": 3.3,
+        "away": 4.2
       },
       "totals": [
         {
           "line": 4.5,
-          "over": 8,
+          "over": 8.5,
           "under": 1.08
         },
         {
           "line": 3.5,
-          "over": 3.95,
+          "over": 4,
           "under": 1.26
         },
         {
@@ -8161,80 +8138,80 @@
         },
         {
           "line": 5.5,
-          "over": 16,
+          "over": 17,
           "under": 1.01
         },
         {
           "line": 1.5,
-          "over": 1.35,
-          "under": 3.25
+          "over": 1.36,
+          "under": 3.2
         },
         {
           "line": 2.5,
-          "over": 2.14,
-          "under": 1.73
+          "over": 2.17,
+          "under": 1.71
         }
       ],
       "ah": [
         {
           "line": -0.5,
-          "home": 1.89,
-          "away": 1.91
+          "home": 1.97,
+          "away": 1.83
         },
         {
           "line": 0.5,
-          "home": 1.24,
-          "away": 4
+          "home": 1.25,
+          "away": 3.9
         },
         {
           "line": -0.75,
-          "home": 2.18,
-          "away": 1.68
+          "home": 2.3,
+          "away": 1.62
         },
         {
           "line": -1.5,
-          "home": 3.55,
-          "away": 1.29
+          "home": 3.8,
+          "away": 1.27
         },
         {
           "line": -1,
-          "home": 2.75,
-          "away": 1.45
+          "home": 2.95,
+          "away": 1.4
         },
         {
           "line": 0.25,
-          "home": 1.29,
-          "away": 3.55
+          "home": 1.32,
+          "away": 3.4
         },
         {
           "line": -0.25,
-          "home": 1.64,
-          "away": 2.25
+          "home": 1.7,
+          "away": 2.15
         },
         {
           "line": -1.75,
-          "home": 4.6,
-          "away": 1.2
+          "home": 4.9,
+          "away": 1.18
         },
         {
           "line": -2.5,
-          "home": 8,
-          "away": 1.08
+          "home": 8.5,
+          "away": 1.07
         },
         {
           "line": -1.25,
-          "home": 3.15,
-          "away": 1.35
+          "home": 3.35,
+          "away": 1.32
         },
         {
           "line": -2,
-          "home": 7,
-          "away": 1.1
+          "home": 7.5,
+          "away": 1.09
         },
         {
           "line": -2.25,
-          "home": 7.5,
-          "away": 1.09
+          "home": 8,
+          "away": 1.08
         }
       ],
       "corners": {
@@ -8246,8 +8223,8 @@
           },
           {
             "line": 10.5,
-            "over": 2.63,
-            "under": 1.44
+            "over": 2.65,
+            "under": 1.43
           },
           {
             "line": 6.5,
@@ -8256,17 +8233,17 @@
           },
           {
             "line": 12.5,
-            "over": 4.7,
-            "under": 1.16
+            "over": 4.8,
+            "under": 1.15
           },
           {
             "line": 9.5,
-            "over": 2.04,
-            "under": 1.71
+            "over": 2.05,
+            "under": 1.7
           },
           {
             "line": 11.5,
-            "over": 3.5,
+            "over": 3.55,
             "under": 1.26
           },
           {
@@ -10482,150 +10459,150 @@
       "startTime": "2026-07-03T22:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.16,
-        "draw": 9,
-        "away": 20
+        "home": 1.17,
+        "draw": 8.5,
+        "away": 19
       },
       "totals": [
         {
           "line": 1.5,
-          "over": 1.2,
-          "under": 4.7
+          "over": 1.21,
+          "under": 4.5
         },
         {
           "line": 4.5,
-          "over": 5.1,
-          "under": 1.17
+          "over": 5.4,
+          "under": 1.16
         },
         {
           "line": 3.5,
-          "over": 2.75,
-          "under": 1.47
+          "over": 2.88,
+          "under": 1.43
         },
         {
           "line": 2.5,
-          "over": 1.65,
-          "under": 2.25
+          "over": 1.7,
+          "under": 2.18
         },
         {
           "line": 5.5,
-          "over": 10.5,
-          "under": 1.05
+          "over": 11,
+          "under": 1.04
         },
         {
           "line": 0.5,
           "over": 1.02,
-          "under": 15
+          "under": 14
         }
       ],
       "ah": [
         {
           "line": -2.5,
-          "home": 2.4,
-          "away": 1.57
+          "home": 2.55,
+          "away": 1.52
         },
         {
           "line": -3,
-          "home": 3.75,
-          "away": 1.27
+          "home": 4,
+          "away": 1.24
         },
         {
           "line": -2.75,
-          "home": 2.85,
-          "away": 1.42
+          "home": 3.05,
+          "away": 1.38
         },
         {
           "line": -1.25,
-          "home": 1.35,
-          "away": 3.2
+          "home": 1.38,
+          "away": 3
         },
         {
           "line": -0.75,
-          "home": 1.16,
-          "away": 5.3
+          "home": 1.17,
+          "away": 4.9
         },
         {
           "line": -3.5,
-          "home": 4.5,
-          "away": 1.2
+          "home": 4.8,
+          "away": 1.18
         },
         {
           "line": -1,
-          "home": 1.19,
-          "away": 4.7
+          "home": 1.21,
+          "away": 4.4
         },
         {
           "line": -1.5,
-          "home": 1.5,
-          "away": 2.55
+          "home": 1.56,
+          "away": 2.43
         },
         {
           "line": -0.5,
-          "home": 1.13,
-          "away": 5.8
+          "home": 1.15,
+          "away": 5.5
         },
         {
           "line": -2.25,
-          "home": 2.12,
-          "away": 1.71
+          "home": 2.23,
+          "away": 1.65
         },
         {
           "line": -3.25,
-          "home": 4.1,
-          "away": 1.23
+          "home": 4.4,
+          "away": 1.21
         },
         {
           "line": -1.75,
-          "home": 1.64,
-          "away": 2.25
+          "home": 1.7,
+          "away": 2.15
         },
         {
           "line": -2,
-          "home": 1.85,
-          "away": 1.96
+          "home": 1.94,
+          "away": 1.87
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 11.5,
-            "over": 4.2,
-            "under": 1.19
+            "over": 4.3,
+            "under": 1.18
           },
           {
             "line": 5.5,
             "over": 1.15,
-            "under": 4.9
+            "under": 4.8
           },
           {
             "line": 8.5,
-            "over": 1.88,
-            "under": 1.85
+            "over": 1.9,
+            "under": 1.82
           },
           {
             "line": 10.5,
-            "over": 3.15,
-            "under": 1.32
+            "over": 3.2,
+            "under": 1.3
           },
           {
             "line": 12.5,
-            "over": 5.75,
-            "under": 1.11
+            "over": 5.8,
+            "under": 1.1
           },
           {
             "line": 9.5,
-            "over": 2.4,
-            "under": 1.52
+            "over": 2.43,
+            "under": 1.5
           },
           {
             "line": 6.5,
             "over": 1.3,
-            "under": 3.25
+            "under": 3.2
           },
           {
             "line": 7.5,
-            "over": 1.53,
-            "under": 2.38
+            "over": 1.54,
+            "under": 2.35
           }
         ]
       }
@@ -10783,9 +10760,9 @@
       "startTime": "2026-07-04T01:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.49,
-        "draw": 4.1,
-        "away": 8.5
+        "home": 1.52,
+        "draw": 4,
+        "away": 8
       },
       "totals": [
         {
@@ -10795,133 +10772,128 @@
         },
         {
           "line": 3.5,
-          "over": 4.1,
-          "under": 1.25
+          "over": 4.25,
+          "under": 1.23
         },
         {
           "line": 0.5,
           "over": 1.07,
-          "under": 9
-        },
-        {
-          "line": 5.5,
-          "over": 18,
-          "under": 1.01
+          "under": 8.5
         },
         {
           "line": 2.5,
-          "over": 2.17,
-          "under": 1.7
+          "over": 2.23,
+          "under": 1.68
         },
         {
           "line": 1.5,
-          "over": 1.37,
-          "under": 3.15
+          "over": 1.38,
+          "under": 3.1
         }
       ],
       "ah": [
         {
           "line": -2.5,
-          "home": 4.8,
-          "away": 1.18
+          "home": 5.1,
+          "away": 1.17
         },
         {
           "line": -0.5,
-          "home": 1.45,
-          "away": 2.75
+          "home": 1.49,
+          "away": 2.63
         },
         {
           "line": -0.25,
-          "home": 1.29,
-          "away": 3.55
+          "home": 1.32,
+          "away": 3.4
         },
         {
           "line": -1,
-          "home": 1.78,
-          "away": 2.02
+          "home": 1.86,
+          "away": 1.94
         },
         {
           "line": -2,
-          "home": 3.9,
-          "away": 1.25
+          "home": 4.2,
+          "away": 1.23
         },
         {
           "line": 0.5,
-          "home": 1.09,
-          "away": 7.5
+          "home": 1.1,
+          "away": 7
         },
         {
           "line": -0.75,
-          "home": 1.58,
-          "away": 2.38
+          "home": 1.63,
+          "away": 2.28
         },
         {
           "line": -2.25,
-          "home": 4.35,
-          "away": 1.21
+          "home": 4.6,
+          "away": 1.19
         },
         {
           "line": 0.25,
-          "home": 1.11,
-          "away": 6.5
+          "home": 1.12,
+          "away": 6.25
         },
         {
           "line": -1.5,
-          "home": 2.4,
-          "away": 1.57
+          "home": 2.5,
+          "away": 1.53
         },
         {
           "line": -1.25,
-          "home": 2.1,
-          "away": 1.74
+          "home": 2.18,
+          "away": 1.68
         },
         {
           "line": -1.75,
-          "home": 2.9,
-          "away": 1.41
+          "home": 3.05,
+          "away": 1.38
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 9.5,
-            "over": 2.55,
-            "under": 1.46
+            "over": 2.6,
+            "under": 1.45
           },
           {
             "line": 12.5,
-            "over": 6.4,
-            "under": 1.09
+            "over": 6.5,
+            "under": 1.08
           },
           {
             "line": 8.5,
-            "over": 1.98,
-            "under": 1.76
+            "over": 2,
+            "under": 1.74
           },
           {
             "line": 11.5,
-            "over": 4.7,
-            "under": 1.16
+            "over": 4.8,
+            "under": 1.15
           },
           {
             "line": 10.5,
-            "over": 3.4,
-            "under": 1.28
+            "over": 3.5,
+            "under": 1.27
           },
           {
             "line": 7.5,
-            "over": 1.58,
-            "under": 2.23
+            "over": 1.61,
+            "under": 2.2
           },
           {
             "line": 5.5,
             "over": 1.17,
-            "under": 4.5
+            "under": 4.4
           },
           {
             "line": 6.5,
-            "over": 1.33,
-            "under": 3.05
+            "over": 1.34,
+            "under": 3
           }
         ]
       }
@@ -15772,8 +15744,8 @@
       "league": "WNBA",
       "sport": "basketball",
       "odds": {
-        "home": 1.74,
-        "away": 2.12
+        "home": 1.75,
+        "away": 2.1
       }
     },
     {
@@ -15826,8 +15798,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.65,
-        "away": 2.23
+        "home": 1.85,
+        "away": 1.93
       }
     },
     {
@@ -15839,21 +15811,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7.5
-      }
-    },
-    {
-      "eventId": "1028155293",
-      "title": "Peyton Stearns - Nikola Bartunkova",
-      "homeTeam": "Peyton Stearns",
-      "awayTeam": "Nikola Bartunkova",
-      "startTime": "2026-06-29T15:30:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.29,
-        "away": 3.55
+        "home": 1.11,
+        "away": 6.4
       }
     },
     {
@@ -15865,8 +15824,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.34,
-        "away": 3.1
+        "home": 1.55,
+        "away": 2.35
       }
     },
     {
@@ -15878,8 +15837,8 @@
       "league": "Quito",
       "sport": "tennis",
       "odds": {
-        "home": 23,
-        "away": 1.01
+        "home": 19,
+        "away": 1.02
       }
     },
     {
@@ -15891,8 +15850,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 13,
-        "away": 1.03
+        "home": 15,
+        "away": 1.02
       }
     },
     {
@@ -15904,8 +15863,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.14,
-        "away": 5.5
+        "home": 1.12,
+        "away": 6.1
       }
     },
     {
@@ -15917,8 +15876,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 7.5,
-        "away": 1.06
+        "home": 9,
+        "away": 1.04
       }
     },
     {
@@ -15930,8 +15889,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.63,
-        "away": 2.18
+        "home": 1.44,
+        "away": 2.65
       }
     },
     {
@@ -15943,8 +15902,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.45,
-        "away": 1.3
+        "home": 5.25,
+        "away": 1.15
       }
     },
     {
@@ -15969,8 +15928,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.15,
-        "away": 5.2
+        "home": 1.36,
+        "away": 3.1
       }
     },
     {
@@ -15982,8 +15941,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.6,
-        "away": 1.28
+        "home": 3.5,
+        "away": 1.29
       }
     },
     {
@@ -15995,8 +15954,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.55,
-        "away": 1.29
+        "home": 3.7,
+        "away": 1.27
       }
     },
     {
@@ -16008,8 +15967,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.13,
-        "away": 5.75
+        "home": 1.18,
+        "away": 4.7
       }
     },
     {
@@ -16034,8 +15993,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.18,
-        "away": 4.7
+        "home": 1.36,
+        "away": 3.1
       }
     },
     {
@@ -16047,8 +16006,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 9.5
+        "home": 1.04,
+        "away": 10
       }
     },
     {
@@ -16060,8 +16019,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 11,
-        "away": 1.04
+        "home": 14,
+        "away": 1.03
       }
     },
     {
@@ -16069,7 +16028,7 @@
       "title": "Anastasia Gasanova - Emiliana Arango",
       "homeTeam": "Anastasia Gasanova",
       "awayTeam": "Emiliana Arango",
-      "startTime": "2026-06-29T18:05:00Z",
+      "startTime": "2026-06-29T18:10:00Z",
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
@@ -16082,7 +16041,7 @@
       "title": "Felipe Jose Rivadeneira Gallegos - Luis Carlos Alvarez Valdes",
       "homeTeam": "Felipe Jose Rivadeneira Gallegos",
       "awayTeam": "Luis Carlos Alvarez Valdes",
-      "startTime": "2026-06-29T18:05:00Z",
+      "startTime": "2026-06-29T18:10:00Z",
       "league": "Quito",
       "sport": "tennis",
       "odds": {
@@ -16095,7 +16054,7 @@
       "title": "Jessica Bouzas Maneiro - Anastasia Potapova",
       "homeTeam": "Jessica Bouzas Maneiro",
       "awayTeam": "Anastasia Potapova",
-      "startTime": "2026-06-29T18:05:00Z",
+      "startTime": "2026-06-29T18:10:00Z",
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
@@ -16108,7 +16067,7 @@
       "title": "Francesca Jones - Diane Parry",
       "homeTeam": "Francesca Jones",
       "awayTeam": "Diane Parry",
-      "startTime": "2026-06-29T18:05:00Z",
+      "startTime": "2026-06-29T18:10:00Z",
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
@@ -17444,6 +17403,6 @@
     }
   ],
   "basketEventsCount": 8,
-  "tennisEventsCount": 125,
+  "tennisEventsCount": 124,
   "lastError": null
 }
