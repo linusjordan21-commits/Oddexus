@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:29:08.495Z",
+  "updatedAt": "2026-06-29T01:31:37.966Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 184,
+  "uniqueEvents": 183,
   "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 14304,
+  "durationMs": 14311,
   "events": [
     {
       "eventId": "1028072415",
@@ -985,19 +985,6 @@
       ]
     },
     {
-      "eventId": "1027586549",
-      "title": "Puerto Montt - Concepción",
-      "homeTeam": "Puerto Montt",
-      "awayTeam": "Concepción",
-      "startTime": "2026-06-29T00:00:00Z",
-      "league": "Copa Chile",
-      "odds": {
-        "home": 1.02,
-        "draw": 15,
-        "away": 61
-      }
-    },
-    {
       "eventId": "1026389376",
       "title": "Minnesota United FC II - Tacoma Defiance",
       "homeTeam": "Minnesota United FC II",
@@ -1005,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.7,
-        "draw": 2.63,
-        "away": 2.8
+        "home": 2.6,
+        "draw": 2.48,
+        "away": 3.05
       }
     },
     {
@@ -1018,8 +1005,8 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 2.5,
-        "draw": 3.1,
+        "home": 2.6,
+        "draw": 3.05,
         "away": 2.55
       }
     },
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T01:26:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.47,
-        "draw": 5.4,
-        "away": 3.8
+        "home": 1.19,
+        "draw": 7,
+        "away": 7.5
       }
     },
     {
@@ -1044,9 +1031,9 @@
       "startTime": "2026-06-29T01:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.88,
-        "draw": 4.75,
-        "away": 2.48
+        "home": 1.15,
+        "draw": 7.5,
+        "away": 9
       }
     },
     {
@@ -1057,9 +1044,9 @@
       "startTime": "2026-06-29T01:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.28,
-        "draw": 4.4,
-        "away": 2.07
+        "home": 5.2,
+        "draw": 5.25,
+        "away": 1.35
       }
     },
     {
@@ -13240,6 +13227,19 @@
   ],
   "eventsBasket": [
     {
+      "eventId": "1027860469",
+      "title": "Mets de Guaynabo - Gigantes De Carolina",
+      "homeTeam": "Mets de Guaynabo",
+      "awayTeam": "Gigantes De Carolina",
+      "startTime": "2026-06-29T00:14:00Z",
+      "league": "Baloncesto Superior Nacional",
+      "sport": "basketball",
+      "odds": {
+        "home": 13,
+        "away": 1.02
+      }
+    },
+    {
       "eventId": "1027545013",
       "title": "Iran - Syrien",
       "homeTeam": "Iran",
@@ -15257,7 +15257,7 @@
       }
     }
   ],
-  "basketEventsCount": 3,
+  "basketEventsCount": 4,
   "tennisEventsCount": 152,
   "lastError": null
 }
