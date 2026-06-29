@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T21:30:42.899Z",
+  "updatedAt": "2026-06-29T21:41:00.985Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -32,7 +32,19 @@
         "draw": 2.75,
         "away": 2.22
       },
-      "foundBy": "France"
+      "foundBy": "France",
+      "totals": [
+        {
+          "line": 0.5,
+          "over": 1.14,
+          "under": 5
+        },
+        {
+          "line": 1.5,
+          "over": 1.64,
+          "under": 2.13
+        }
+      ]
     },
     {
       "eventId": "f-N3lcjIQAT0ul6jl3os4SvQ",
@@ -194,6 +206,19 @@
       "foundBy": "Universidad Catolica"
     },
     {
+      "eventId": "f-hvNRFfwlT0SYro1QRtKveA",
+      "title": "Ecuador (Hawk) - Ivory Coast (Vito)",
+      "homeTeam": "Ecuador (Hawk)",
+      "awayTeam": "Ivory Coast (Vito)",
+      "startTime": "2026-06-29T21:30:00.000Z",
+      "odds": {
+        "home": 1.75,
+        "draw": 3.6,
+        "away": 3.5
+      },
+      "foundBy": "Ivory Coast"
+    },
+    {
       "eventId": "f-SiXYVbL_W0Sv1W3JFvQiOA",
       "title": "Treaty United - Kerry FC",
       "homeTeam": "Treaty United",
@@ -217,7 +242,36 @@
         "draw": 3.3,
         "away": 2.85
       },
-      "foundBy": "Audax Italiano"
+      "foundBy": "Audax Italiano",
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 2.95,
+          "under": 1.37
+        },
+        {
+          "line": 1.5,
+          "over": 1.25,
+          "under": 3.65
+        }
+      ],
+      "ah": [
+        {
+          "line": 0.5,
+          "home": 1.38,
+          "away": 2.7
+        },
+        {
+          "line": -0.5,
+          "home": 2.26,
+          "away": 1.55
+        },
+        {
+          "line": -1.5,
+          "home": 4.1,
+          "away": 1.18
+        }
+      ]
     },
     {
       "eventId": "f-D8FRFSiMhkqaU9GxZtsvkA",
@@ -301,6 +355,33 @@
       ]
     },
     {
+      "eventId": "f-jg7luHSnkkC5IwDhQdtJ6g",
+      "title": "Japan (Gael) - Netherlands (Eric)",
+      "homeTeam": "Japan (Gael)",
+      "awayTeam": "Netherlands (Eric)",
+      "startTime": "2026-06-29T22:30:00.000Z",
+      "odds": {
+        "home": 3.7,
+        "draw": 7,
+        "away": 1.42
+      },
+      "foundBy": "Netherlands",
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 2,
+          "under": 1.62
+        }
+      ],
+      "ah": [
+        {
+          "line": 1.5,
+          "home": 1.82,
+          "away": 1.82
+        }
+      ]
+    },
+    {
       "eventId": "f-p8TpKHr-rU6grxMLiYUOtQ",
       "title": "Portugal - Kroatien",
       "homeTeam": "Portugal",
@@ -308,8 +389,8 @@
       "startTime": "2026-07-02T23:00:00.000Z",
       "odds": {
         "home": 1.82,
-        "draw": 3.55,
-        "away": 4.9
+        "draw": 3.6,
+        "away": 4.85
       },
       "foundBy": "Portugal"
     },
@@ -324,7 +405,19 @@
         "draw": 3,
         "away": 3.6
       },
-      "foundBy": "Botafogo PB"
+      "foundBy": "Botafogo PB",
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.54,
+          "under": 2.32
+        },
+        {
+          "line": 0.5,
+          "over": 1.11,
+          "under": 5.6
+        }
+      ]
     },
     {
       "eventId": "f-d0kLH16qg0q97sB6BETFdA",
@@ -452,7 +545,75 @@
         "draw": 2.95,
         "away": 3.35
       },
-      "foundBy": "Lyn"
+      "foundBy": "Lyn",
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.4,
+          "under": 2.8
+        },
+        {
+          "line": 3.5,
+          "over": 4,
+          "under": 1.22
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.75,
+          "home": 2.7,
+          "away": 1.43
+        },
+        {
+          "line": 0,
+          "home": 1.58,
+          "away": 2.28
+        },
+        {
+          "line": -0.5,
+          "home": 2.25,
+          "away": 1.6
+        },
+        {
+          "line": 0.25,
+          "home": 1.41,
+          "away": 2.75
+        },
+        {
+          "line": -0.25,
+          "home": 1.92,
+          "away": 1.82
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 12.5,
+            "over": 3.5,
+            "under": 1.25
+          },
+          {
+            "line": 8.5,
+            "over": 1.35,
+            "under": 2.92
+          },
+          {
+            "line": 11.5,
+            "over": 2.62,
+            "under": 1.42
+          },
+          {
+            "line": 10.5,
+            "over": 2,
+            "under": 1.7
+          },
+          {
+            "line": 9.5,
+            "over": 1.6,
+            "under": 2.15
+          }
+        ]
+      }
     },
     {
       "eventId": "f-GGhAlwoXrUaSaoDjIyTSyw",
@@ -620,7 +781,14 @@
         "draw": 8.2,
         "away": 1.1
       },
-      "foundBy": "HJK Helsinki"
+      "foundBy": "HJK Helsinki",
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.93,
+          "under": 1.78
+        }
+      ]
     },
     {
       "eventId": "f-3z4YkPIhfUiozovGaDqqsQ",
@@ -762,22 +930,9 @@
       "awayTeam": "DR Kongo",
       "startTime": "2026-07-01T16:00:00.000Z",
       "odds": {
-        "home": 1.29,
+        "home": 1.28,
         "draw": 5.25,
-        "away": 13.5
-      },
-      "foundBy": "England"
-    },
-    {
-      "eventId": "f-GHi_hd6YV0qygqPVRI4z1g",
-      "title": "England (Delpiero) - Bosnia And Herzegovina (Razvan)",
-      "homeTeam": "England (Delpiero)",
-      "awayTeam": "Bosnia And Herzegovina (Razvan)",
-      "startTime": "2026-06-29T21:15:00.000Z",
-      "odds": {
-        "home": 1.01,
-        "draw": 9,
-        "away": 100
+        "away": 15
       },
       "foundBy": "England"
     },
@@ -792,18 +947,30 @@
         "draw": 3.55,
         "away": 6.2
       },
-      "foundBy": "Caxias"
+      "foundBy": "Caxias",
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.36,
+          "under": 2.9
+        },
+        {
+          "line": 3.5,
+          "over": 3.7,
+          "under": 1.23
+        }
+      ]
     },
     {
-      "eventId": "f-cgjW7oShyk-Caig3sKlTGw",
-      "title": "Tunisia (Sarafi) - Switzerland (Walnut)",
-      "homeTeam": "Tunisia (Sarafi)",
-      "awayTeam": "Switzerland (Walnut)",
-      "startTime": "2026-06-29T21:15:00.000Z",
+      "eventId": "f-mjiEhVVU2kuNlFlFL0gC1w",
+      "title": "Switzerland (Walnut) - Germany (Cyclop)",
+      "homeTeam": "Switzerland (Walnut)",
+      "awayTeam": "Germany (Cyclop)",
+      "startTime": "2026-06-29T21:30:00.000Z",
       "odds": {
-        "home": 100,
-        "draw": 5.5,
-        "away": 1.07
+        "home": 10,
+        "draw": 3.6,
+        "away": 1.35
       },
       "foundBy": "Switzerland"
     },
@@ -857,7 +1024,19 @@
         "draw": 4.75,
         "away": 10
       },
-      "foundBy": "Liepaja"
+      "foundBy": "Liepaja",
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 2.15,
+          "under": 1.65
+        },
+        {
+          "line": 4.5,
+          "over": 3.6,
+          "under": 1.25
+        }
+      ]
     },
     {
       "eventId": "f-mgQMV3Rv20mGbbrWrUwU7g",
@@ -921,7 +1100,19 @@
         "draw": 3.1,
         "away": 2.1
       },
-      "foundBy": "Central Espanol"
+      "foundBy": "Central Espanol",
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.35,
+          "under": 2.95
+        },
+        {
+          "line": 3.5,
+          "over": 3.65,
+          "under": 1.24
+        }
+      ]
     },
     {
       "eventId": "f-dH1BqsMWlEWkROqpzexqZA",
@@ -1056,17 +1247,17 @@
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 192532,
+    "runMs": 202015,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-29T21:30:42.899Z"
+    "decidedAt": "2026-06-29T21:41:00.985Z"
   },
   "_linesDiag": {
     "ran": true,
-    "withTotals": 12,
-    "withAh": 4,
+    "withTotals": 21,
+    "withAh": 7,
     "nearest": 30,
-    "ms": 18
+    "ms": 22
   },
   "_linesProbe": {
     "hasLinesPage": true,
@@ -1080,19 +1271,19 @@
     "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-D8FRFSiMhkqaU9GxZtsvkA\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 200,
     "gid": "MTG2W",
+    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-sOFr6SuReUKzMfHfvBGzKA\",",
     "fullCatalogStatus": 200,
     "fullCatalogKeys": [
       "MW3W|Matchresultat",
       "MTG2W|Totalt antal mål",
       "MAHCP|Asiatiska handikapp"
     ],
-    "cornerKeys": [],
-    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-sOFr6SuReUKzMfHfvBGzKA\","
+    "cornerKeys": []
   },
   "_oddsProbe": {
     "via": "inpage",
     "status": 200,
     "hasLinesPage": true,
-    "bodyHead": "{\r\n  \"data\": {},\r\n  \"referenceId\": \"57f06775-2177-4a89-927a-34cc9839de7e\"\r\n}"
+    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-mVniD"
   }
 }
