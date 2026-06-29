@@ -1,30 +1,30 @@
 {
-  "ranAt": "2026-06-29T17:38:15.792Z",
+  "ranAt": "2026-06-29T18:15:38.401Z",
   "catalogs": 5,
-  "builtEvents": 23,
+  "builtEvents": 18,
   "notes": [
     "tf 3days: HTTP 400"
   ],
   "wsRecon": {
     "murl": "https://www.888sport.se/football/iceland/icelandic-urvalsdeild/akranes-vs-fram/",
     "wsUrls": [
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-a9fca396-3192-4595-8ca6-e48415b07102",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-a9fca396-3192-4595-8ca6-e48415b07102",
-      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-d1245435-fa2d-4708-b2dd-a79bc0fe8ce4",
-      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-d1245435-fa2d-4708-b2dd-a79bc0fe8ce4"
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-e2a59b87-b716-4a7a-a8a2-e627d55c19e9",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-e2a59b87-b716-4a7a-a8a2-e627d55c19e9",
+      "wss://spectate-ws-general.888sport.se/?clientInstanceId=spectate_client-1437afdc-c60e-41bd-aee2-5d3537404c05",
+      "wss://spectate-ws-live-data.888sport.se/?clientInstanceId=spectate_client-1437afdc-c60e-41bd-aee2-5d3537404c05"
     ],
     "frameCount": 12,
     "frames": [
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"52913058-73e1-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"52874ef8-73e1-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"529723be-73e1-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846840}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"529b331e-73e1-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846840}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"52ab878c-73e1-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"52d309c4-73e1-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846849}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:21\",\"guid\":\"52d702c2-73e1-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846849}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:22\",\"guid\":\"52fc78b8-73e1-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846849}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:22\",\"guid\":\"5371611e-73e1-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
-      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 17:38:23\",\"guid\":\"5397f284-73e1-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}"
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8b5a5900-73e6-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8b77fd34-73e6-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[{\"name\":\"Matchvinnare\",\"selections\":{},\"tradable\":true,\"restrict_cashout\":false,\"default_line_selections\":[],\"suspended\":false,\"group_names\":[],\"active\":true,\"selection_schema\":1,\"id\":1632241,\"extra_info\":null}],\"id\":7831151}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8b9f0514-73e6-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846914}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8bc6d120-73e6-11f1-bf73-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7846914}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8baf8b0a-73e6-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:44\",\"guid\":\"8bb663e4-73e6-11f1-b1b2-06a9a4054507\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:45\",\"guid\":\"8c166050-73e6-11f1-9197-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7841426}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:45\",\"guid\":\"8c1c3e58-73e6-11f1-97a4-02e9fc75fbe9\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7831151}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:45\",\"guid\":\"8c255b6e-73e6-11f1-8784-067c20b5d68f\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7841345}]}",
+      "{\"action\":\"price_update\",\"meta\":{\"timestamp\":\"2026-06-29 18:15:45\",\"guid\":\"8c312c96-73e6-11f1-b4b6-0a9b3c6b0f23\"},\"events\":[{\"event_type\":null,\"market_suspended\":null,\"tradable\":true,\"suspended\":false,\"active\":true,\"is_inplay\":true,\"markets\":[],\"id\":7841345}]}"
     ]
   },
   "droppedOutsideWindow": 0
