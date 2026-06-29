@@ -131,9 +131,11 @@ const MAX_LEAGUES = Number(process.env.COOLBET_MAX_LEAGUES) || 20; // tak mot cr
 // Kostnadsoptimering: ETT Scrapfly-render (=30 credits) besöker FLERA ligor via
 // client-side-navigering (pushState+popstate → ingen reload → storen rensas ej →
 // Pusher-prenumerationer ackumuleras). Credit-kostnad är per ANROP, ej per liga.
-// 11000 (2026-06-29): 6000 var för kort — SPA-storen hann inte fylla flatCategories
-// (→ "ingen flatCategories i store" → katalog=0). Med 11-12s läses 64 ligor/219 matcher.
-const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 11000;           // SPA-boot + store-fyllnad
+// 14000 (2026-06-29): 6000 var för kort — SPA-storen hann inte fylla flatCategories
+// (→ "ingen flatCategories i store" → katalog=0). Mätt: 11s misslyckas, 12s läser 64
+// ligor/219 matcher → flaky race vid ~11-12s. 14s ger marginal; ryms i Scrapflys 90s-
+// budget (14 boot + 24 init + 4×(6+5) chunks = 82s). Höj via COOLBET_BOOT_MS vid behov.
+const BOOT_MS = Number(process.env.COOLBET_BOOT_MS) || 14000;          // SPA-boot + store-fyllnad
 const PUSHER_MS = Number(process.env.COOLBET_PUSHER_MS) || 6000;        // Pusher-fyllnad/liga
 const LEAGUES_PER_CALL = Number(process.env.COOLBET_LEAGUES_PER_CALL) || 4; // ligor/render
 // VIKTIGT: Scrapfly RESERVERAR varje execute-stegs hela timeout i förväg och summan
