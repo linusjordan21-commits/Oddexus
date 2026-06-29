@@ -32,7 +32,7 @@ jobs:
     # ~62 min: kortare pass (LOOP_MAX 55 min) → den förköade efterföljaren tar
     # över rent var ~55:e min, OCH en LOST-RUNNER-zombie (in_progress men gör
     # inget) reklameras av jobb-timeouten inom ~62 min i stället för 5h17m.
-    timeout-minutes: 317
+    timeout-minutes: 30
 
     permissions:
       contents: write
@@ -130,7 +130,7 @@ jobs:
           # sker bara var 5:e min → FÄRRE commits än förr = stabilare, inte
           # mindre. Failar databasen faller appen automatiskt tillbaka på
           # GitHub-vägen (5 min färsk, under 10-min-gaten).
-          LOOP_MAX_SECONDS=18000           # ~5h pass (stabilt, få omstarter — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=1500           # ~5h pass (stabilt, få omstarter — reapern städar ev. zombie inom ~25 min)
           # ── PINNACLE-CADENS-EXPERIMENT ──────────────────────────────────────
           # Adaptiv fetch-cadens: startar på 25s och trappar ned (25→20→15→10)
           # efter en frisk svit, backar UPP ett steg vid block-/degraderings-

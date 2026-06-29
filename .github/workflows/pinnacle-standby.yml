@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     # ~5h17m aktiv loop, ren exit med marginal till 6h job-max. Köad restart
     # (schedule/push) tar över → kontinuerlig redundans.
-    timeout-minutes: 317
+    timeout-minutes: 30
 
     permissions:
       contents: write
@@ -87,7 +87,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000     # ~5h
+          LOOP_MAX_SECONDS=1500     # ~5h
           CHECK_SECONDS=45           # kolla färskhet ~var 45:e sekund
           STALE_THRESHOLD=480        # Primären DB-speglar var ~30:e s men COMMITTAR bara var
                                      # 5:e min (steg 4) — standbyn mäter COMMIT-åldern, så

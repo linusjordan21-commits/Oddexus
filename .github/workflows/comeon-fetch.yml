@@ -33,7 +33,7 @@ jobs:
     # ~5h17m: self-sustaining loop (ComeOn är långsam ~13-16 min/körning, så en
     # keepalive-dispatch hinner nästan bli stale innan den är klar — egen loop är
     # robustare). Avslutar rent med marginal till 6h job-max; köad restart tar över.
-    timeout-minutes: 317
+    timeout-minutes: 30
 
     permissions:
       contents: write
@@ -74,7 +74,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=1500   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
           CADENCE_SECONDS=900      # ~15 min cadens (run ~13-16 min) << 30-min-tröskel
           START_EPOCH=$(date +%s)
           iter=0

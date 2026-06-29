@@ -34,7 +34,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 317 # ~5h17m self-loop (marginal till 6h job-max)
+    timeout-minutes: 30 # ~5h17m self-loop (marginal till 6h job-max)
     permissions:
       contents: write
       actions: write # self-redispatch via workflow_dispatch (bulletproof anti-stale)
@@ -112,7 +112,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # self-redispatch (workflow_dispatch via API)
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000   # ~5h pass
+          LOOP_MAX_SECONDS=1500   # ~5h pass
           # SHARP-KÄLLA: måste vara mycket färsk. FETCH var ~20s (≈ Pinnacle) → DB speglas
           # varje scrape (admin/valuebets läser DB, inte git-filen). GIT-commit bara var
           # COMMIT_INTERVAL för att inte flooda main (per-iter-commit → contention → stale-

@@ -49,7 +49,7 @@ jobs:
     # ~5h17m: self-sustaining loop kör ~5h och avslutar rent med marginal till
     # 6h job-max. En köad restart (schedule/push) tar över → kontinuerlig
     # täckning oberoende av GitHub:s throttlade schedule.
-    timeout-minutes: 317
+    timeout-minutes: 30
 
     permissions:
       contents: write
@@ -160,7 +160,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=1500   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
           CADENCE_SECONDS=600      # EXPERIMENT 2026-06-11: 15→10 min. Run tar ~6.5 min så det
                                    # ryms. Bevaka Cloudflare-signaler (context-failure / 0 events)
                                    # — vid block: backa till 900.
