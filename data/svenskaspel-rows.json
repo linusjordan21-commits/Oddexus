@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T03:03:17.003Z",
+  "updatedAt": "2026-06-29T03:05:47.286Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 187,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 185,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 16595,
+  "durationMs": 16662,
   "events": [
     {
       "eventId": "1028072415",
@@ -998,19 +998,6 @@
       }
     },
     {
-      "eventId": "1028174143",
-      "title": "Arsenal (Gaga) - Sporting CP (Noltzer)",
-      "homeTeam": "Arsenal (Gaga)",
-      "awayTeam": "Sporting CP (Noltzer)",
-      "startTime": "2026-06-29T02:56:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.41,
-        "draw": 3.7,
-        "away": 7
-      }
-    },
-    {
       "eventId": "1028174555",
       "title": "Atleti (nicky) - Barcelona (Solya)",
       "homeTeam": "Atleti (nicky)",
@@ -1018,22 +1005,9 @@
       "startTime": "2026-06-29T02:56:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 5.6,
-        "draw": 5.25,
-        "away": 1.33
-      }
-    },
-    {
-      "eventId": "1028174498",
-      "title": "Juventus (maggett0) - Man City (GanGsta_Panda)",
-      "homeTeam": "Juventus (maggett0)",
-      "awayTeam": "Man City (GanGsta_Panda)",
-      "startTime": "2026-06-29T02:56:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.85,
-        "draw": 2.3,
-        "away": 2.7
+        "home": 2.95,
+        "draw": 2.8,
+        "away": 2.2
       }
     },
     {
@@ -1128,6 +1102,51 @@
           "line": 3.5,
           "over": 1.04,
           "under": 7
+        }
+      ]
+    },
+    {
+      "eventId": "1028174518",
+      "title": "Man City (GanGsta_Panda) - Arsenal (Gaga)",
+      "homeTeam": "Man City (GanGsta_Panda)",
+      "awayTeam": "Arsenal (Gaga)",
+      "startTime": "2026-06-29T03:08:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.28,
+        "draw": 4.7,
+        "away": 2.04
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.32,
+          "under": 2.85
+        },
+        {
+          "line": 6.5,
+          "over": 2.6,
+          "under": 1.4
+        },
+        {
+          "line": 8.5,
+          "over": 7.5,
+          "under": 1.03
+        },
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5
+        },
+        {
+          "line": 7.5,
+          "over": 4.3,
+          "under": 1.14
+        },
+        {
+          "line": 5.5,
+          "over": 1.8,
+          "under": 1.86
         }
       ]
     },
@@ -13707,8 +13726,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.84,
-        "away": 1.96
+        "home": 1.93,
+        "away": 1.87
       }
     },
     {
