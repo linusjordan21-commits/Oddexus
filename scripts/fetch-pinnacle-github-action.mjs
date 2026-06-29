@@ -93,7 +93,12 @@ function trimMatchup(matchup) {
 // Marknadstyper vi behåller. moneyline (1X2/ML) som förr + total (O/U) + spread
 // (Asian Handicap för fotboll / point spread). Linjevärdet ligger per pris i
 // `points` (total-linje resp. handikapp) och MÅSTE bevaras för line-matching.
-const KEPT_MARKET_TYPES = new Set(["moneyline", "spread", "total"]);
+// team_total tillagd 2026-06-29 (referens-only, +rader, höjer matchnings-taket). Motorn
+// auto-genererar BARA valuebets från moneyline (vite.config:16441) + bySport-loopen mappar
+// bara moneyline/total/spread → team_total fångas men skapar aldrig valuebets (ingen falsk EV).
+// Vi fångar även `key` för team_total (Pinnacles market-key kodar vilket lag = home/away) så
+// vi kan parsa lag-dimensionen korrekt senare. Inga extra API-anrop (samma markets-svar).
+const KEPT_MARKET_TYPES = new Set(["moneyline", "spread", "total", "team_total"]);
 
 function trimMarket(market) {
   if (!market || typeof market !== "object") return null;
@@ -130,6 +135,9 @@ function trimMarket(market) {
     matchupId: market.matchupId,
     type,
     period: market.period, // 0 = full match, 1 = första halvlek (1H)
+    // team_total: fånga Pinnacles market-key (kodar vilket lag, t.ex. ".../home"/".../away")
+    // så lag-dimensionen kan parsas korrekt senare. Endast team_total → ingen payload-bloat.
+    ...(type === "team_total" && market.key ? { key: market.key } : {}),
     ...(type === "moneyline" ? {} : { isAlternate: !!market.isAlternate }),
     limit: pinnacleLimit,
     prices: Array.isArray(market.prices)

@@ -16216,7 +16216,7 @@ type PinnacleMatchup = {
 
 type PinnacleMarket = {
   matchupId?: number;
-  type?: "moneyline" | "spread" | "total";
+  type?: "moneyline" | "spread" | "total" | "team_total";
   key?: string;
   period?: number;
   isAlternate?: boolean;
