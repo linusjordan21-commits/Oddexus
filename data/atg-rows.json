@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T04:08:43.520Z",
+  "updatedAt": "2026-06-29T04:11:13.799Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 202,
-  "skippedNoOdds": 0,
+  "uniqueEvents": 204,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 21619,
+  "durationMs": 21813,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T04:00:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 6,
-        "draw": 5.8,
-        "away": 1.29
-      }
-    },
-    {
-      "eventId": "1028174302",
-      "title": "Croatia (A1ose) - Tyskland (SPACE)",
-      "homeTeam": "Croatia (A1ose)",
-      "awayTeam": "Tyskland (SPACE)",
-      "startTime": "2026-06-29T04:02:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 36,
-        "draw": 10.5,
-        "away": 1.05
+        "home": 21,
+        "draw": 8,
+        "away": 1.09
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T04:08:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.24,
-        "draw": 8,
-        "away": 5.4
+        "home": 2.08,
+        "draw": 5,
+        "away": 2.15
       }
     },
     {
@@ -1031,9 +1018,9 @@
       "startTime": "2026-06-29T04:08:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.16,
-        "draw": 4.5,
-        "away": 2.16
+        "home": 6,
+        "draw": 5.75,
+        "away": 1.29
       }
     },
     {
@@ -1568,6 +1555,101 @@
           "line": 8.5,
           "over": 2.55,
           "under": 1.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028174098",
+      "title": "Tjeckien (R0ge) - Tyskland (SPACE)",
+      "homeTeam": "Tjeckien (R0ge)",
+      "awayTeam": "Tyskland (SPACE)",
+      "startTime": "2026-06-29T04:38:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.96,
+        "draw": 4.6,
+        "away": 2.4
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 5.8,
+          "under": 1.1
+        },
+        {
+          "line": 1.5,
+          "over": 1.02,
+          "under": 12
+        },
+        {
+          "line": 2.5,
+          "over": 1.15,
+          "under": 4.75
+        },
+        {
+          "line": 4.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 7.5,
+          "over": 12,
+          "under": 1.02
+        },
+        {
+          "line": 3.5,
+          "over": 1.48,
+          "under": 2.45
+        },
+        {
+          "line": 5.5,
+          "over": 3.25,
+          "under": 1.29
+        }
+      ]
+    },
+    {
+      "eventId": "1028181421",
+      "title": "Stuttgart (borees) - B Dortmund (Pavlinho19)",
+      "homeTeam": "Stuttgart (borees)",
+      "awayTeam": "B Dortmund (Pavlinho19)",
+      "startTime": "2026-06-29T04:42:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.63,
+        "draw": 5.5,
+        "away": 1.74
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 2.9,
+          "under": 1.32
+        },
+        {
+          "line": 5.5,
+          "over": 1.98,
+          "under": 1.71
+        },
+        {
+          "line": 8.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 3.5,
+          "over": 1.15,
+          "under": 4.2
+        },
+        {
+          "line": 7.5,
+          "over": 5.1,
+          "under": 1.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.41,
+          "under": 2.55
         }
       ]
     },
@@ -13980,8 +14062,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.26,
-        "away": 3.45
+        "home": 1.19,
+        "away": 4.2
       }
     },
     {
@@ -14448,8 +14530,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.42,
-        "away": 2.85
+        "home": 1.48,
+        "away": 2.65
       }
     },
     {
