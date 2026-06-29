@@ -434,7 +434,11 @@ function isProdAuth(): boolean {
 
 function isAdminUsername(username: string): boolean {
   const creds = getAuthCredentials();
-  return creds?.username === username;
+  if (!creds) return false;
+  // Case-insensitivt + trimmat — MÅSTE matcha app-user-storens normalisering
+  // (getAppUserByUsername lowercasar+trimmar). Annars kan en case-variant ("Linus" vs admin
+  // "linus") smita förbi reservationen vid skapande/login. (hardening 2026-06-29)
+  return creds.username.trim().toLowerCase() === username.trim().toLowerCase();
 }
 
 /** Returns { ok, user } or null if not authenticated. */
@@ -448,17 +452,24 @@ function getAuthFromRequest(req: IncomingMessage): { user: string } | null {
   const payload = verifySessionToken(token, secret);
   if (!payload) return null;
 
+  // Det env/admin-konfigurerade användarnamnet är RESERVERAT: det autentiseras ALLTID mot
+  // admin-creds (admin-auth.json/env), aldrig mot en app-user med samma namn. Utan detta
+  // låser en av misstag skapad app-user med admin-namnet (t.ex. "linus" med högre
+  // sessionVersion eller active=false) ut admin permanent — admins env-mintade cookie (v=0)
+  // avvisas av app-userns version (0 < 1) → 401 på varje anrop.
+  // (root cause 2026-06-29: kollision env-admin ⟷ app-user med samma namn. Måste matcha
+  // login-handlerns reservation så login och validering aldrig är oeniga om identiteten.)
+  const creds = getAuthCredentials();
+  if (creds && isAdminUsername(payload.u)) {
+    if (payload.v < creds.sessionVersion) return null;
+    return { user: creds.username };
+  }
+
   const appUser = getAppUserByUsername(payload.u);
   if (appUser) {
     if (!appUser.active) return null;
     if (payload.v < appUser.sessionVersion) return null;
     return { user: appUser.username };
-  }
-
-  const creds = getAuthCredentials();
-  if (creds && payload.u === creds.username) {
-    if (payload.v < creds.sessionVersion) return null;
-    return { user: creds.username };
   }
   return null;
 }
@@ -1126,7 +1137,12 @@ async function authLoginDevApi(req: IncomingMessage, res: ServerResponse, next: 
     return;
   }
 
-  const appUser = verifyAppUserLogin(username, password);
+  // Reserverat admin-användarnamn hoppar över app-user-login: det autentiseras BARA mot
+  // admin-creds (nedan). Annars skulle en kolliderande app-user med admin-namnet kunna logga
+  // in med sitt eget lösenord och — via env-first-reservationen i getAuthFromRequest —
+  // eskalera till admin. Måste spegla valideringens reservation. (root cause 2026-06-29)
+  const isReservedAdminName = isAdminUsername(username);
+  const appUser = isReservedAdminName ? null : verifyAppUserLogin(username, password);
   if (appUser) {
     resetAuthRateLimit(req);
     const token = signSessionToken(

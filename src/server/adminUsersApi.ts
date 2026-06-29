@@ -415,6 +415,13 @@ export async function adminUsersApi(
       sendJson(res, 400, { ok: false, error: "username and password required" });
       return;
     }
+    // Det env/admin-konfigurerade användarnamnet är RESERVERAT. En app-user med samma namn
+    // kolliderar med admin-identiteten i auth-valideringen och låser ut admin permanent
+    // (root cause 2026-06-29: så här uppstod den ursprungliga lockouten). Blockera här.
+    if (ctx.isAdminUsername(username.trim())) {
+      sendJson(res, 400, { ok: false, error: "username reserved (admin) — välj ett annat" });
+      return;
+    }
     const pwErr = validateNewPassword(password);
     if (pwErr) {
       sendJson(res, 400, { ok: false, error: pwErr });
