@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T16:40:44.478Z",
+  "updatedAt": "2026-06-29T16:55:39.940Z",
   "source": "github-actions",
   "partial": false,
   "queryStrategy": "pinnacle-home-team",
@@ -2409,15 +2409,15 @@
       "startTs": 1782760500,
       "startTime": "2026-06-29T19:15:00.000Z",
       "odds": {
-        "home": 1.2,
-        "draw": 6.9,
-        "away": 8.4
+        "home": 1.24,
+        "draw": 6.5,
+        "away": 7.3
       },
       "totals": [
         {
           "line": 4,
-          "over": 1.82,
-          "under": 1.88
+          "over": 1.83,
+          "under": 1.87
         },
         {
           "line": 3,
@@ -2438,43 +2438,38 @@
           "line": 5,
           "over": 3.1,
           "under": 1.32
-        },
-        {
-          "line": 5.5,
-          "over": 3.65,
-          "under": 1.24
         }
       ],
       "ah": [
         {
+          "line": -0.5,
+          "home": 1.25,
+          "away": 3.57
+        },
+        {
           "line": -2.5,
-          "home": 2.2,
-          "away": 1.6
+          "home": 2.39,
+          "away": 1.51
         },
         {
           "line": -2,
-          "home": 1.79,
-          "away": 1.91
+          "home": 1.94,
+          "away": 1.76
         },
         {
           "line": -1,
-          "home": 1.27,
-          "away": 3.4
+          "home": 1.33,
+          "away": 3.05
         },
         {
           "line": -1.5,
-          "home": 1.52,
-          "away": 2.37
+          "home": 1.62,
+          "away": 2.15
         },
         {
           "line": -3,
-          "home": 3,
-          "away": 1.34
-        },
-        {
-          "line": -3.5,
-          "home": 3.57,
-          "away": 1.25
+          "home": 3.4,
+          "away": 1.27
         }
       ],
       "foundBy": "Afturelding"
@@ -3029,9 +3024,9 @@
       "startTs": 1782752400,
       "startTime": "2026-06-29T17:00:00.000Z",
       "odds": {
-        "home": 1.8,
-        "draw": 3.51,
-        "away": 5.1
+        "home": 1.75,
+        "draw": 3.57,
+        "away": 5.5
       },
       "foundBy": "Brazil"
     },
@@ -3127,9 +3122,9 @@
       "startTs": 1782754200,
       "startTime": "2026-06-29T17:30:00.000Z",
       "odds": {
-        "home": 2.78,
-        "draw": 3.64,
-        "away": 2.15
+        "home": 2.76,
+        "draw": 3.71,
+        "away": 2.14
       },
       "foundBy": "Vikingur Gota"
     }
@@ -3145,8 +3140,8 @@
       "league": null,
       "sport": "basketball",
       "odds": {
-        "home": 1.33,
-        "away": 2.74
+        "home": 1.31,
+        "away": 2.83
       },
       "foundBy": "Piratas de Quebradillas"
     },
@@ -3194,6 +3189,21 @@
         "away": 2.62
       },
       "foundBy": "Southland Sharks"
+    },
+    {
+      "gameId": 30161295,
+      "title": "Club Sportivo Escobar - Almagro Esperanza",
+      "homeTeam": "Club Sportivo Escobar",
+      "awayTeam": "Almagro Esperanza",
+      "startTs": 1782775800,
+      "startTime": "2026-06-29T23:30:00.000Z",
+      "league": null,
+      "sport": "basketball",
+      "odds": {
+        "home": 1.27,
+        "away": 3.05
+      },
+      "foundBy": "Sportivo Escobar"
     },
     {
       "gameId": 30165825,
@@ -3425,9 +3435,9 @@
   ],
   "_tuning": {
     "limitUsed": 120,
-    "runMs": 191316,
+    "runMs": 187138,
     "deadlineMs": 1020000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-29T16:40:44.479Z"
+    "decidedAt": "2026-06-29T16:55:39.940Z"
   }
 }
