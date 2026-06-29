@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T02:02:05.164Z",
+  "updatedAt": "2026-06-29T02:04:35.390Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 189,
-  "skippedNoOdds": 0,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 16348,
+  "durationMs": 16082,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 41,
-        "draw": 5.4,
-        "away": 1.14
+        "home": 9,
+        "draw": 1.17,
+        "away": 7.5
       }
     },
     {
@@ -1005,63 +1005,10 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 6.4,
-        "draw": 3.65,
-        "away": 1.47
-      }
-    },
-    {
-      "eventId": "1028173785",
-      "title": "Lille (luxiqq) - Bayer 04 (Yeti)",
-      "homeTeam": "Lille (luxiqq)",
-      "awayTeam": "Bayer 04 (Yeti)",
-      "startTime": "2026-06-29T01:56:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 5,
-        "draw": 4.4,
+        "home": 7,
+        "draw": 3.75,
         "away": 1.43
       }
-    },
-    {
-      "eventId": "1026389412",
-      "title": "Los Angeles FC II - Houston Dynamo II",
-      "homeTeam": "Los Angeles FC II",
-      "awayTeam": "Houston Dynamo II",
-      "startTime": "2026-06-29T02:02:00Z",
-      "league": "MLS Next Pro",
-      "odds": {
-        "home": 2.63,
-        "draw": 3.5,
-        "away": 2.25
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.11,
-          "under": 5
-        },
-        {
-          "line": 2.5,
-          "over": 1.43,
-          "under": 2.5
-        },
-        {
-          "line": 5.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 3.4,
-          "under": 1.24
-        },
-        {
-          "line": 3.5,
-          "over": 2.08,
-          "under": 1.62
-        }
-      ]
     },
     {
       "eventId": "1028174553",
@@ -1071,9 +1018,22 @@
       "startTime": "2026-06-29T02:02:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.16,
+        "home": 3,
         "draw": 4.5,
-        "away": 2.17
+        "away": 1.7
+      }
+    },
+    {
+      "eventId": "1026389412",
+      "title": "Los Angeles FC II - Houston Dynamo II",
+      "homeTeam": "Los Angeles FC II",
+      "awayTeam": "Houston Dynamo II",
+      "startTime": "2026-06-29T02:03:00Z",
+      "league": "MLS Next Pro",
+      "odds": {
+        "home": 2.63,
+        "draw": 3.55,
+        "away": 2.23
       }
     },
     {
@@ -1084,8 +1044,8 @@
       "startTime": "2026-06-29T02:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.5,
-        "draw": 3.2,
+        "home": 2.45,
+        "draw": 3.3,
         "away": 2.25
       }
     },
@@ -13910,8 +13870,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.97,
-        "away": 1.84
+        "home": 1.8,
+        "away": 2
       }
     },
     {
