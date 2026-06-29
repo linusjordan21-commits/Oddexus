@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T21:44:06.323Z",
+  "updatedAt": "2026-06-29T21:48:07.071Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 219,
+  "uniqueEvents": 217,
   "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 18414,
+  "durationMs": 18467,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,22 +992,9 @@
       "startTime": "2026-06-29T20:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 2.6,
-        "draw": 2.6,
-        "away": 3.35
-      }
-    },
-    {
-      "eventId": "1028186347",
-      "title": "River Plate (Kosta) - Racing Club (saportj)",
-      "homeTeam": "River Plate (Kosta)",
-      "awayTeam": "Racing Club (saportj)",
-      "startTime": "2026-06-29T21:36:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.54,
-        "draw": 4.5,
-        "away": 3.8
+        "home": 1.61,
+        "draw": 2.8,
+        "away": 11.5
       }
     },
     {
@@ -1018,9 +1005,9 @@
       "startTime": "2026-06-29T21:38:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.09,
-        "draw": 9.5,
-        "away": 13
+        "home": 1.12,
+        "draw": 7,
+        "away": 15
       }
     },
     {
@@ -1031,100 +1018,10 @@
       "startTime": "2026-06-29T21:38:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.23,
-        "draw": 6.5,
-        "away": 6.5
+        "home": 1.22,
+        "draw": 5.1,
+        "away": 10
       }
-    },
-    {
-      "eventId": "1028186365",
-      "title": "Porto (Inquisitor) - Benfica (Kray)",
-      "homeTeam": "Porto (Inquisitor)",
-      "awayTeam": "Benfica (Kray)",
-      "startTime": "2026-06-29T21:46:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.23,
-        "draw": 3.65,
-        "away": 2.33
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.33,
-          "under": 2.8
-        },
-        {
-          "line": 7.5,
-          "over": 4.1,
-          "under": 1.16
-        },
-        {
-          "line": 6.5,
-          "over": 2.6,
-          "under": 1.38
-        },
-        {
-          "line": 8.5,
-          "over": 7.5,
-          "under": 1.03
-        },
-        {
-          "line": 3.5,
-          "over": 1.1,
-          "under": 5.1
-        },
-        {
-          "line": 5.5,
-          "over": 1.77,
-          "under": 1.89
-        }
-      ]
-    },
-    {
-      "eventId": "1028186367",
-      "title": "Braga (hotShot) - Sporting CP (Kodak)",
-      "homeTeam": "Braga (hotShot)",
-      "awayTeam": "Sporting CP (Kodak)",
-      "startTime": "2026-06-29T21:46:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.05,
-        "draw": 4.35,
-        "away": 2.33
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 2.35,
-          "under": 1.48
-        },
-        {
-          "line": 4.5,
-          "over": 1.6,
-          "under": 2.12
-        },
-        {
-          "line": 7.5,
-          "over": 6.75,
-          "under": 1.05
-        },
-        {
-          "line": 6.5,
-          "over": 3.65,
-          "under": 1.2
-        },
-        {
-          "line": 3.5,
-          "over": 1.23,
-          "under": 3.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.04,
-          "under": 7
-        }
-      ]
     },
     {
       "eventId": "1028193868",
@@ -1931,6 +1828,51 @@
           "line": 5.5,
           "over": 3.8,
           "under": 1.18
+        }
+      ]
+    },
+    {
+      "eventId": "1028186429",
+      "title": "Sassuolo (Nightxx) - Napoli (tohi4)",
+      "homeTeam": "Sassuolo (Nightxx)",
+      "awayTeam": "Napoli (tohi4)",
+      "startTime": "2026-06-29T22:29:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.94,
+        "draw": 4.6,
+        "away": 2.43
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.13,
+          "under": 4.5
+        },
+        {
+          "line": 6.5,
+          "over": 2.85,
+          "under": 1.32
+        },
+        {
+          "line": 8.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 5.5,
+          "over": 1.92,
+          "under": 1.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.38,
+          "under": 2.63
+        },
+        {
+          "line": 7.5,
+          "over": 4.8,
+          "under": 1.11
         }
       ]
     },
@@ -15433,6 +15375,19 @@
       }
     },
     {
+      "eventId": "1028193983",
+      "title": "Lars Wagenaar - Abel Forger",
+      "homeTeam": "Lars Wagenaar",
+      "awayTeam": "Abel Forger",
+      "startTime": "2026-06-30T08:00:00Z",
+      "league": "Amstelveen",
+      "sport": "tennis",
+      "odds": {
+        "home": 5.5,
+        "away": 1.11
+      }
+    },
+    {
       "eventId": "1028193597",
       "title": "Stephanie Judith Visscher - Kira Pavlova",
       "homeTeam": "Stephanie Judith Visscher",
@@ -16773,6 +16728,6 @@
     }
   ],
   "basketEventsCount": 10,
-  "tennisEventsCount": 126,
+  "tennisEventsCount": 127,
   "lastError": null
 }
