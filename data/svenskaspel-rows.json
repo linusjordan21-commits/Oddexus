@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T18:32:05.664Z",
+  "updatedAt": "2026-06-29T18:36:05.067Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 208,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 212,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 17345,
+  "durationMs": 17160,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T17:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 2.5,
-        "draw": 1.83,
-        "away": 8.5
+        "home": 2.55,
+        "draw": 1.77,
+        "away": 9.5
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T17:30:00Z",
       "league": "Premier League",
       "odds": {
-        "home": 1.04,
-        "draw": 11.5,
-        "away": 31
+        "home": 1.03,
+        "draw": 14,
+        "away": 46
       }
     },
     {
@@ -1020,7 +1020,7 @@
       "odds": {
         "home": 1.08,
         "draw": 8.5,
-        "away": 18
+        "away": 20
       }
     },
     {
@@ -1032,34 +1032,8 @@
       "league": "Premier League",
       "odds": {
         "home": 6.5,
-        "draw": 3.5,
-        "away": 1.49
-      }
-    },
-    {
-      "eventId": "1028186191",
-      "title": "Arsenal (Cevuu) - Sporting CP (Bjela)",
-      "homeTeam": "Arsenal (Cevuu)",
-      "awayTeam": "Sporting CP (Bjela)",
-      "startTime": "2026-06-29T18:24:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 5.6,
-        "draw": 5.6,
-        "away": 1.3
-      }
-    },
-    {
-      "eventId": "1028186216",
-      "title": "Juventus (Peconi) - Man City (Paka)",
-      "homeTeam": "Juventus (Peconi)",
-      "awayTeam": "Man City (Paka)",
-      "startTime": "2026-06-29T18:24:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 3.65,
-        "draw": 4.2,
-        "away": 1.6
+        "draw": 3.35,
+        "away": 1.52
       }
     },
     {
@@ -1070,9 +1044,9 @@
       "startTime": "2026-06-29T18:26:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 18,
-        "draw": 12.5,
-        "away": 1.05
+        "home": 2.7,
+        "draw": 3.15,
+        "away": 2.15
       }
     },
     {
@@ -1083,9 +1057,9 @@
       "startTime": "2026-06-29T18:26:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.21,
-        "draw": 6,
-        "away": 8.5
+        "home": 2.25,
+        "draw": 2.7,
+        "away": 2.95
       }
     },
     {
@@ -1096,42 +1070,10 @@
       "startTime": "2026-06-29T18:34:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.5,
+        "home": 1.9,
         "draw": 3.1,
-        "away": 2.3
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.04,
-          "under": 7
-        },
-        {
-          "line": 7.5,
-          "over": 3.15,
-          "under": 1.26
-        },
-        {
-          "line": 5.5,
-          "over": 1.52,
-          "under": 2.28
-        },
-        {
-          "line": 8.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 1.22,
-          "under": 3.5
-        },
-        {
-          "line": 6.5,
-          "over": 2.17,
-          "under": 1.57
-        }
-      ]
+        "away": 3.35
+      }
     },
     {
       "eventId": "1028186301",
@@ -1141,37 +1083,10 @@
       "startTime": "2026-06-29T18:34:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.32,
-        "draw": 4.3,
-        "away": 2.07
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.42,
-          "under": 2.5
-        },
-        {
-          "line": 2.5,
-          "over": 1.11,
-          "under": 4.8
-        },
-        {
-          "line": 4.5,
-          "over": 2,
-          "under": 1.68
-        },
-        {
-          "line": 6.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 5.5,
-          "over": 3.2,
-          "under": 1.26
-        }
-      ]
+        "home": 1.3,
+        "draw": 5.6,
+        "away": 5.8
+      }
     },
     {
       "eventId": "1028193097",
@@ -3031,6 +2946,216 @@
           "line": 9.5,
           "over": 4.8,
           "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028185656",
+      "title": "Independiente (Galikooo) - Boca Juniors (drksd3)",
+      "homeTeam": "Independiente (Galikooo)",
+      "awayTeam": "Boca Juniors (drksd3)",
+      "startTime": "2026-06-29T21:24:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.38,
+        "draw": 4.6,
+        "away": 4.6
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 1.53,
+          "under": 2.25
+        },
+        {
+          "line": 9.5,
+          "over": 2.85,
+          "under": 1.32
+        },
+        {
+          "line": 5.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 8.5,
+          "over": 2.06,
+          "under": 1.64
+        },
+        {
+          "line": 6.5,
+          "over": 1.25,
+          "under": 3.25
+        },
+        {
+          "line": 11.5,
+          "over": 7,
+          "under": 1.04
+        },
+        {
+          "line": 10.5,
+          "over": 4.35,
+          "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028185655",
+      "title": "Estudiantes L.P. (luxiqq) - River Plate (abr4m_5)",
+      "homeTeam": "Estudiantes L.P. (luxiqq)",
+      "awayTeam": "River Plate (abr4m_5)",
+      "startTime": "2026-06-29T21:24:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.75,
+        "draw": 5.5,
+        "away": 1.41
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.13,
+          "under": 4.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.33,
+          "under": 2.85
+        },
+        {
+          "line": 9.5,
+          "over": 3.4,
+          "under": 1.23
+        },
+        {
+          "line": 11.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 7.5,
+          "over": 1.71,
+          "under": 1.97
+        },
+        {
+          "line": 10.5,
+          "over": 5.4,
+          "under": 1.09
+        },
+        {
+          "line": 8.5,
+          "over": 2.3,
+          "under": 1.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028185657",
+      "title": "Racing Club (Int1liGenT) - River Plate (abr4m_5)",
+      "homeTeam": "Racing Club (Int1liGenT)",
+      "awayTeam": "River Plate (abr4m_5)",
+      "startTime": "2026-06-29T21:38:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.82,
+        "draw": 5.1,
+        "away": 2.5
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 10.5,
+          "over": 3.65,
+          "under": 1.2
+        },
+        {
+          "line": 6.5,
+          "over": 1.18,
+          "under": 3.85
+        },
+        {
+          "line": 9.5,
+          "over": 2.5,
+          "under": 1.42
+        },
+        {
+          "line": 8.5,
+          "over": 1.84,
+          "under": 1.83
+        },
+        {
+          "line": 7.5,
+          "over": 1.43,
+          "under": 2.48
+        },
+        {
+          "line": 11.5,
+          "over": 6,
+          "under": 1.07
+        }
+      ]
+    },
+    {
+      "eventId": "1028185658",
+      "title": "Independiente (Galikooo) - Estudiantes L.P. (luxiqq)",
+      "homeTeam": "Independiente (Galikooo)",
+      "awayTeam": "Estudiantes L.P. (luxiqq)",
+      "startTime": "2026-06-29T21:38:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.35,
+        "draw": 6.75,
+        "away": 3.8
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.01,
+          "under": 9
+        },
+        {
+          "line": 7.5,
+          "over": 1.67,
+          "under": 2
+        },
+        {
+          "line": 5.5,
+          "over": 1.13,
+          "under": 4.6
+        },
+        {
+          "line": 6.5,
+          "over": 1.32,
+          "under": 2.88
+        },
+        {
+          "line": 9.5,
+          "over": 3.3,
+          "under": 1.25
+        },
+        {
+          "line": 11.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 10.5,
+          "over": 5,
+          "under": 1.1
+        },
+        {
+          "line": 8.5,
+          "over": 2.23,
+          "under": 1.53
         }
       ]
     },
@@ -14378,8 +14503,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.24,
-        "away": 3.95
+        "home": 1.3,
+        "away": 3.4
       }
     },
     {
@@ -14391,8 +14516,8 @@
       "league": "Umag",
       "sport": "tennis",
       "odds": {
-        "home": 3.2,
-        "away": 1.3
+        "home": 2.35,
+        "away": 1.54
       }
     },
     {
@@ -14404,8 +14529,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.52,
-        "away": 2.48
+        "home": 1.5,
+        "away": 2.55
       }
     },
     {
@@ -14417,8 +14542,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.32,
-        "away": 1.55
+        "home": 1.82,
+        "away": 1.91
       }
     },
     {
@@ -14430,8 +14555,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 8,
-        "away": 1.05
+        "home": 5.8,
+        "away": 1.1
       }
     },
     {
@@ -14443,8 +14568,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8.5
+        "home": 1.07,
+        "away": 7
       }
     },
     {
@@ -14456,8 +14581,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 1.58,
-        "away": 2.28
+        "home": 1.5,
+        "away": 2.48
       }
     },
     {
@@ -14469,8 +14594,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.07,
-        "away": 7.5
+        "home": 1.03,
+        "away": 12.5
       }
     },
     {
@@ -14482,8 +14607,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 2.9,
-        "away": 1.4
+        "home": 2.6,
+        "away": 1.48
       }
     },
     {
@@ -14495,8 +14620,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 2.9,
-        "away": 1.38
+        "home": 2.07,
+        "away": 1.71
       }
     },
     {
@@ -14508,8 +14633,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.19,
-        "away": 4.7
+        "home": 1.12,
+        "away": 6
       }
     },
     {
@@ -14521,8 +14646,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 6.25,
-        "away": 1.11
+        "home": 5.75,
+        "away": 1.13
       }
     },
     {
@@ -14534,7 +14659,7 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
+        "home": 2.33,
         "away": 1.58
       }
     },
@@ -14547,8 +14672,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.33,
-        "away": 3.25
+        "home": 1.19,
+        "away": 4.7
       }
     },
     {
@@ -14560,8 +14685,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.27,
-        "away": 3.7
+        "home": 1.1,
+        "away": 7
       }
     },
     {
@@ -14573,8 +14698,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.02,
-        "away": 17
+        "home": 1.03,
+        "away": 14
       }
     },
     {
@@ -14599,8 +14724,8 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.08
+        "home": 5.4,
+        "away": 1.12
       }
     },
     {
@@ -14612,8 +14737,8 @@
       "league": "Ajaccio",
       "sport": "tennis",
       "odds": {
-        "home": 2.07,
-        "away": 1.68
+        "home": 1.75,
+        "away": 1.98
       }
     },
     {
@@ -14625,8 +14750,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 2.25,
-        "away": 1.63
+        "home": 2.12,
+        "away": 1.7
       }
     },
     {
@@ -14638,8 +14763,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.71,
-        "away": 2.12
+        "home": 2.04,
+        "away": 1.76
       }
     },
     {
@@ -14651,8 +14776,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 4.25,
-        "away": 1.21
+        "home": 5.1,
+        "away": 1.16
       }
     },
     {
@@ -14664,8 +14789,8 @@
       "league": "Quito",
       "sport": "tennis",
       "odds": {
-        "home": 9,
-        "away": 1.05
+        "home": 10,
+        "away": 1.04
       }
     },
     {
@@ -14677,21 +14802,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.15,
-        "away": 4.9
-      }
-    },
-    {
-      "eventId": "1028190028",
-      "title": "Alvaro Ariel Frutos Alonso - Agustin Mastri",
-      "homeTeam": "Alvaro Ariel Frutos Alonso",
-      "awayTeam": "Agustin Mastri",
-      "startTime": "2026-06-29T18:40:00Z",
-      "league": "USA - Boca Raton",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.84,
-        "away": 1.84
+        "home": 1.23,
+        "away": 3.9
       }
     },
     {
@@ -14699,12 +14811,25 @@
       "title": "Lucas Kimelman - Andrew Kotzen",
       "homeTeam": "Lucas Kimelman",
       "awayTeam": "Andrew Kotzen",
-      "startTime": "2026-06-29T18:40:00Z",
+      "startTime": "2026-06-29T18:36:00Z",
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 1.43,
-        "away": 2.6
+        "home": 1.44,
+        "away": 2.65
+      }
+    },
+    {
+      "eventId": "1028190028",
+      "title": "Alvaro Ariel Frutos Alonso - Agustin Mastri",
+      "homeTeam": "Alvaro Ariel Frutos Alonso",
+      "awayTeam": "Agustin Mastri",
+      "startTime": "2026-06-29T18:45:00Z",
+      "league": "USA - Boca Raton",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.64,
+        "away": 2.08
       }
     },
     {
