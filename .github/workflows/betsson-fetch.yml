@@ -160,7 +160,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
           CADENCE_SECONDS=600      # EXPERIMENT 2026-06-11: 15→10 min. Run tar ~6.5 min så det
                                    # ryms. Bevaka Cloudflare-signaler (context-failure / 0 events)
                                    # — vid block: backa till 900.

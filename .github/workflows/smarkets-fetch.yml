@@ -65,7 +65,7 @@ jobs:
         run: |
           # OBS: medvetet INTE 'set -e' — en enskild iteration får aldrig döda
           # hela loopen. Varje steg är individuellt feltolerant.
-          LOOP_MAX_SECONDS=18000           # ~5h aktiv loop
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))           # ~5h aktiv loop
           CADENCE_SECONDS=60               # fetch + DB-spegling var ~60:e s
           COMMIT_INTERVAL_SECONDS=300      # GitHub-commit (reserv-väg) var 5:e min
           START_EPOCH=$(date +%s)

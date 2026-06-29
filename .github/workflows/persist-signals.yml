@@ -45,7 +45,7 @@ jobs:
           VALUEBETS_INTERNAL_TOKEN: ${{ secrets.VALUEBETS_INTERNAL_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          LOOP_MAX_SECONDS=18000
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))
           CADENCE_SECONDS=300       # var 5:e minut
           START_EPOCH=$(date +%s)
           iter=0

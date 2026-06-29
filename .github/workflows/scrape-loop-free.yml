@@ -51,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000     # ~5h
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))     # ~5h
           CYCLE_SECONDS=240          # mål: ~4 min/cykel (atg+svenskaspel+altenar+kambi)
           START_EPOCH=$(date +%s)
           iter=0

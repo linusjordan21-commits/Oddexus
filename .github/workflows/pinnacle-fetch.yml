@@ -130,7 +130,7 @@ jobs:
           # sker bara var 5:e min → FÄRRE commits än förr = stabilare, inte
           # mindre. Failar databasen faller appen automatiskt tillbaka på
           # GitHub-vägen (5 min färsk, under 10-min-gaten).
-          LOOP_MAX_SECONDS=18000           # ~5h pass (stabilt, få omstarter — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))           # ~5h pass (stabilt, få omstarter — reapern städar ev. zombie inom ~25 min)
           # ── PINNACLE-CADENS-EXPERIMENT ──────────────────────────────────────
           # Adaptiv fetch-cadens: startar på 25s och trappar ned (25→20→15→10)
           # efter en frisk svit, backar UPP ett steg vid block-/degraderings-

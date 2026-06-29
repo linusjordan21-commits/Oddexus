@@ -74,7 +74,7 @@ jobs:
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
           # INTE 'set -e' — en iteration får aldrig döda loopen.
-          LOOP_MAX_SECONDS=18000   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
+          LOOP_MAX_SECONDS=$((14400 + RANDOM % 3600))   # ~5h pass (stabilt — reapern städar ev. zombie inom ~25 min)
           CADENCE_SECONDS=900      # ~15 min cadens (run ~13-16 min) << 30-min-tröskel
           START_EPOCH=$(date +%s)
           iter=0
