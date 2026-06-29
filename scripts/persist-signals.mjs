@@ -33,13 +33,24 @@ const INTERNAL_TOKEN = (process.env.VALUEBETS_INTERNAL_TOKEN || process.env.SUPA
 
 async function fetchValuebets() {
   const url = `${BASE}/api/valuebets?hours=${HOURS}`;
+  console.log(`[persist-debug] fetch ${url} (token ${INTERNAL_TOKEN ? "satt" : "SAKNAS"})`);
   const controller = new AbortController();
   const t = setTimeout(() => controller.abort(), 90000);
+  const t0 = Date.now();
   try {
     const res = await fetch(url, { headers: { Accept: "application/json", "User-Agent": "persist-signals", "X-Internal-Token": INTERNAL_TOKEN }, signal: controller.signal });
+    const dur = Date.now() - t0;
+    console.log(`[persist-debug] HTTP ${res.status} på ${dur}ms`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const json = await res.json();
-    return Array.isArray(json?.valueBets) ? json.valueBets : Array.isArray(json) ? json : [];
+    const text = await res.text();
+    console.log(`[persist-debug] response ${text.length} bytes`);
+    const json = JSON.parse(text);
+    const vbs = Array.isArray(json?.valueBets) ? json.valueBets : Array.isArray(json) ? json : [];
+    console.log(`[persist-debug] valuebets i response: ${vbs.length}${json?.note ? ` | note: ${json.note}` : ""}`);
+    return vbs;
+  } catch (e) {
+    console.error(`[persist-debug] fetch FEL efter ${Date.now() - t0}ms: ${e.name}: ${e.message}`);
+    throw e;
   } finally {
     clearTimeout(t);
   }

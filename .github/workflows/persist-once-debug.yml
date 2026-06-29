@@ -1,0 +1,36 @@
+name: Persist Once Debug
+
+# Kontrollerad debug: kör persist-signals.mjs EN gång (ingen loop) med full
+# instrumentering → identifierar exakt varför persist inte skriver signals.
+# workflow_dispatch only. concurrency så bara en debug-run åt gången.
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: persist-once-debug
+  cancel-in-progress: false
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install dependencies
+        run: npm install --include=dev
+      - name: Persist ONCE (no loop, full debug)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          VALUEBETS_URL: ${{ vars.VALUEBETS_URL }}
+          VALUEBETS_INTERNAL_TOKEN: ${{ secrets.VALUEBETS_INTERNAL_TOKEN }}
+        run: |
+          echo "=== persist-once START $(date -u +%FT%TZ) | commit ${GITHUB_SHA:0:8} ==="
+          /usr/bin/time -v npx vite-node scripts/persist-signals.mjs 2>&1 || echo "persist exit=$?"
+          echo "=== persist-once SLUT $(date -u +%FT%TZ) ==="
