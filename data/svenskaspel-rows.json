@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T20:04:07.734Z",
+  "updatedAt": "2026-06-29T20:08:06.417Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 215,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 218,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 18964,
+  "durationMs": 18181,
   "events": [
     {
       "eventId": "1028072415",
@@ -1011,55 +1011,16 @@
       }
     },
     {
-      "eventId": "1028186298",
-      "title": "B Dortmund (Uchihax) - Sporting CP (Bjela)",
-      "homeTeam": "B Dortmund (Uchihax)",
-      "awayTeam": "Sporting CP (Bjela)",
-      "startTime": "2026-06-29T19:56:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 3,
-        "draw": 4.2,
-        "away": 1.75
-      }
-    },
-    {
-      "eventId": "1028186282",
-      "title": "Chelsea (Linox) - Liverpool (Animal)",
-      "homeTeam": "Chelsea (Linox)",
-      "awayTeam": "Liverpool (Animal)",
-      "startTime": "2026-06-29T19:58:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.38,
-        "draw": 3.6,
-        "away": 2.2
-      }
-    },
-    {
-      "eventId": "1028186299",
-      "title": "Arsenal (lzrn) - Tottenham (chevare)",
-      "homeTeam": "Arsenal (lzrn)",
-      "awayTeam": "Tottenham (chevare)",
-      "startTime": "2026-06-29T19:58:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 13,
-        "draw": 4.6,
-        "away": 1.23
-      }
-    },
-    {
       "eventId": "1028185643",
       "title": "Boca Juniors (drksd3) - Estudiantes L.P. (luxiqq)",
       "homeTeam": "Boca Juniors (drksd3)",
       "awayTeam": "Estudiantes L.P. (luxiqq)",
-      "startTime": "2026-06-29T20:00:00Z",
+      "startTime": "2026-06-29T20:01:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.83,
-        "draw": 5.75,
-        "away": 2.4
+        "home": 1.14,
+        "draw": 8.5,
+        "away": 8.5
       }
     },
     {
@@ -1067,12 +1028,12 @@
       "title": "Independiente (Galikooo) - Racing Club (Int1liGenT)",
       "homeTeam": "Independiente (Galikooo)",
       "awayTeam": "Racing Club (Int1liGenT)",
-      "startTime": "2026-06-29T20:00:00Z",
+      "startTime": "2026-06-29T20:01:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 4.2,
-        "draw": 9,
-        "away": 1.3
+        "home": 1.24,
+        "draw": 8,
+        "away": 5.6
       }
     },
     {
@@ -1083,42 +1044,10 @@
       "startTime": "2026-06-29T20:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.78,
-        "draw": 3.2,
-        "away": 3.65
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.27,
-          "under": 3.15
-        },
-        {
-          "line": 3.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 6.5,
-          "over": 2.35,
-          "under": 1.48
-        },
-        {
-          "line": 7.5,
-          "over": 3.5,
-          "under": 1.21
-        },
-        {
-          "line": 8.5,
-          "over": 6.5,
-          "under": 1.05
-        },
-        {
-          "line": 5.5,
-          "over": 1.6,
-          "under": 2.12
-        }
-      ]
+        "home": 1.49,
+        "draw": 3.35,
+        "away": 6.25
+      }
     },
     {
       "eventId": "1028193853",
@@ -1128,42 +1057,10 @@
       "startTime": "2026-06-29T20:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.35,
-        "draw": 4.9,
-        "away": 1.93
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 4.5,
-          "over": 1.49,
-          "under": 2.33
-        },
-        {
-          "line": 5.5,
-          "over": 2.14,
-          "under": 1.58
-        },
-        {
-          "line": 3.5,
-          "over": 1.18,
-          "under": 3.85
-        },
-        {
-          "line": 6.5,
-          "over": 3.25,
-          "under": 1.25
-        },
-        {
-          "line": 7.5,
-          "over": 5.75,
-          "under": 1.08
-        }
-      ]
+        "home": 1.63,
+        "draw": 4.25,
+        "away": 3.45
+      }
     },
     {
       "eventId": "1028186350",
@@ -1512,6 +1409,51 @@
           "line": 7.5,
           "over": 8.5,
           "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028193846",
+      "title": "Barcelona (maggett0) - Athletic Club (Noltzer)",
+      "homeTeam": "Barcelona (maggett0)",
+      "awayTeam": "Athletic Club (Noltzer)",
+      "startTime": "2026-06-29T20:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.05,
+        "draw": 4.1,
+        "away": 2.38
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.29,
+          "under": 3
+        },
+        {
+          "line": 5.5,
+          "over": 1.71,
+          "under": 1.96
+        },
+        {
+          "line": 7.5,
+          "over": 3.9,
+          "under": 1.18
+        },
+        {
+          "line": 6.5,
+          "over": 2.48,
+          "under": 1.43
+        },
+        {
+          "line": 8.5,
+          "over": 7,
+          "under": 1.05
+        },
+        {
+          "line": 3.5,
+          "over": 1.09,
+          "under": 5.4
         }
       ]
     },
@@ -1968,6 +1910,186 @@
           "line": 12.5,
           "over": 7.5,
           "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028186362",
+      "title": "Braga (hotShot) - Benfica (Kray)",
+      "homeTeam": "Braga (hotShot)",
+      "awayTeam": "Benfica (Kray)",
+      "startTime": "2026-06-29T20:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.2,
+        "draw": 4.1,
+        "away": 2.2
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.38,
+          "under": 1.47
+        },
+        {
+          "line": 3.5,
+          "over": 1.23,
+          "under": 3.35
+        },
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.64,
+          "under": 2.08
+        },
+        {
+          "line": 7.5,
+          "over": 7,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 3.8,
+          "under": 1.18
+        }
+      ]
+    },
+    {
+      "eventId": "1028186366",
+      "title": "Vitoria SC (OG) - Sporting CP (Kodak)",
+      "homeTeam": "Vitoria SC (OG)",
+      "awayTeam": "Sporting CP (Kodak)",
+      "startTime": "2026-06-29T20:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.6,
+        "draw": 4.5,
+        "away": 1.85
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 6.5,
+          "over": 2.7,
+          "under": 1.36
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.02
+        },
+        {
+          "line": 7.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 3.5,
+          "over": 1.11,
+          "under": 4.8
+        },
+        {
+          "line": 5.5,
+          "over": 1.86,
+          "under": 1.8
+        }
+      ]
+    },
+    {
+      "eventId": "1028193855",
+      "title": "Athletic Club (Noltzer) - Atleti (SpeciAL)",
+      "homeTeam": "Athletic Club (Noltzer)",
+      "awayTeam": "Atleti (SpeciAL)",
+      "startTime": "2026-06-29T20:40:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.2,
+        "draw": 5.75,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 6,
+          "under": 1.07
+        },
+        {
+          "line": 7.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 6.5,
+          "over": 2.28,
+          "under": 1.52
+        },
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 5.8
+        },
+        {
+          "line": 5.5,
+          "over": 1.63,
+          "under": 2.07
+        },
+        {
+          "line": 4.5,
+          "over": 1.25,
+          "under": 3.25
+        }
+      ]
+    },
+    {
+      "eventId": "1028193847",
+      "title": "Barcelona (maggett0) - Real Madrid (Gaga)",
+      "homeTeam": "Barcelona (maggett0)",
+      "awayTeam": "Real Madrid (Gaga)",
+      "startTime": "2026-06-29T20:40:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.28,
+        "draw": 4.25,
+        "away": 2.12
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 4.5,
+          "over": 1.6,
+          "under": 2.12
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 5.5,
+          "over": 2.33,
+          "under": 1.49
+        },
+        {
+          "line": 6.5,
+          "over": 3.75,
+          "under": 1.19
+        },
+        {
+          "line": 7.5,
+          "over": 7,
+          "under": 1.04
         }
       ]
     },
@@ -5941,8 +6063,8 @@
       "startTime": "2026-07-02T19:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.32,
-        "draw": 5.3,
+        "home": 1.3,
+        "draw": 5.4,
         "away": 13
       },
       "totals": [
@@ -5953,8 +6075,8 @@
         },
         {
           "line": 4.5,
-          "over": 6.1,
-          "under": 1.13
+          "over": 6,
+          "under": 1.14
         },
         {
           "line": 0.5,
@@ -5963,8 +6085,8 @@
         },
         {
           "line": 2.5,
-          "over": 1.83,
-          "under": 2
+          "over": 1.82,
+          "under": 2.02
         },
         {
           "line": 5.5,
@@ -5973,88 +6095,88 @@
         },
         {
           "line": 3.5,
-          "over": 3.15,
-          "under": 1.37
+          "over": 3.1,
+          "under": 1.38
         }
       ],
       "ah": [
         {
           "line": -1,
-          "home": 1.44,
-          "away": 2.8
+          "home": 1.42,
+          "away": 2.85
         },
         {
           "line": -0.5,
-          "home": 1.29,
-          "away": 3.6
+          "home": 1.28,
+          "away": 3.65
         },
         {
           "line": -3,
           "home": 5.8,
-          "away": 1.13
+          "away": 1.14
         },
         {
           "line": -1.75,
-          "home": 2.15,
-          "away": 1.7
+          "home": 2.1,
+          "away": 1.73
         },
         {
           "line": -3.5,
-          "home": 6.75,
-          "away": 1.1
+          "home": 6.5,
+          "away": 1.11
         },
         {
           "line": -1.25,
-          "home": 1.66,
-          "away": 2.2
+          "home": 1.64,
+          "away": 2.25
         },
         {
           "line": -2,
-          "home": 2.63,
-          "away": 1.48
+          "home": 2.55,
+          "away": 1.5
         },
         {
           "line": -3.25,
-          "home": 6.4,
+          "home": 6.25,
           "away": 1.12
         },
         {
           "line": -2.5,
-          "home": 3.35,
-          "away": 1.32
+          "home": 3.3,
+          "away": 1.33
         },
         {
           "line": -0.75,
-          "home": 1.35,
-          "away": 3.2
+          "home": 1.34,
+          "away": 3.25
         },
         {
           "line": -1.5,
-          "home": 1.88,
-          "away": 1.92
+          "home": 1.86,
+          "away": 1.94
         },
         {
           "line": -2.75,
-          "home": 4.2,
+          "home": 4.1,
           "away": 1.23
         },
         {
           "line": -2.25,
-          "home": 3,
-          "away": 1.38
+          "home": 2.95,
+          "away": 1.4
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 7.5,
-            "over": 1.42,
+            "over": 1.41,
             "under": 2.7
           },
           {
             "line": 6.5,
-            "over": 1.23,
-            "under": 3.8
+            "over": 1.22,
+            "under": 3.85
           },
           {
             "line": 11.5,
@@ -6073,18 +6195,18 @@
           },
           {
             "line": 9.5,
-            "over": 2.1,
-            "under": 1.67
+            "over": 2.08,
+            "under": 1.68
           },
           {
             "line": 13.5,
-            "over": 6.5,
-            "under": 1.07
+            "over": 6.4,
+            "under": 1.09
           },
           {
             "line": 8.5,
-            "over": 1.7,
-            "under": 2.06
+            "over": 1.68,
+            "under": 2.07
           },
           {
             "line": 5.5,
@@ -14932,8 +15054,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.28,
-        "away": 3.6
+        "home": 1.3,
+        "away": 3.45
       }
     },
     {
@@ -14958,8 +15080,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 2.28,
-        "away": 1.58
+        "home": 2.48,
+        "away": 1.5
       }
     },
     {
@@ -14971,8 +15093,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 4.75,
-        "away": 1.16
+        "home": 5.3,
+        "away": 1.13
       }
     },
     {
@@ -14997,8 +15119,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 4.6,
-        "away": 1.17
+        "home": 5.1,
+        "away": 1.15
       }
     },
     {
@@ -15010,8 +15132,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.18,
-        "away": 1.65
+        "home": 2.43,
+        "away": 1.54
       }
     },
     {
@@ -15543,8 +15665,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.5,
-        "away": 2.6
+        "home": 1.58,
+        "away": 2.35
       }
     },
     {
@@ -16259,7 +16381,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.3,
-        "away": 3.45
+        "away": 3.5
       }
     },
     {
