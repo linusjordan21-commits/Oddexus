@@ -1,4 +1,4 @@
-name: VBET Odds Fetch
+name: VBET + Paf Odds Fetch (Mullvad-loop)
 
 # Fetchar 1X2-odds från VBET via swarm-WebSocket-protokollet. Render-IP
 # OCH GitHub Actions Azure-IPs är båda blockerade av Cloudflare WAF för
@@ -198,6 +198,23 @@ jobs:
                 sleep $((attempt * 5))
               done
               if [ "$PUSHED" = "1" ]; then NO_PROGRESS_STREAK=0; else NO_PROGRESS_STREAK=$((NO_PROGRESS_STREAK + 1)); fi
+            fi
+
+            # ── Paf (konsoliderad hit 2026-06-29): lätt Kambi-search-API (~99s, 4 brands).
+            # Behöver ingen egen VPN men funkar fint via den uppsatta SE-tunneln. Körs i
+            # SAMMA loop så paf inte tar en egen GitHub-slot (headroom). Egen workflow
+            # (paf-brand-fetch.yml) avstängd. Påverkar BARA vbet+paf — inte sharps/betsson/
+            # comeon/free/paid. paf-success räknas som progress (loopen dör ej om vbet failar).
+            timeout -k 30 200 node scripts/fetch-paf-brand-github-action.mjs || echo "::warning::iter $iter paf exit!=0/timeout — cache bevarad"
+            git add data/paf-brand-rows.json
+            if ! git diff --staged --quiet; then
+              git commit -m "chore(paf-brand): refresh prewarm cache ($(date -u +%FT%TZ))" || true
+              for attempt in 1 2 3 4 5 6; do
+                timeout 60 git fetch origin main >/dev/null 2>&1 || true
+                timeout 60 git rebase --autostash origin/main >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+                if timeout 120 git push origin HEAD:main >/dev/null 2>&1; then echo "iter $iter: paf push OK"; NO_PROGRESS_STREAK=0; break; fi
+                sleep $((attempt * 5))
+              done
             fi
             echo "::endgroup::"
             if [ "$NO_PROGRESS_STREAK" -ge 3 ]; then

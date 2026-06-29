@@ -142,7 +142,10 @@ const SOURCES = [
     id: "paf-brand",
     name: "Paf-brand group",
     type: "foreign_bookmaker_group",
-    workflow: "paf-brand-fetch.yml",
+    // Konsoliderad in i vbet-loopen 2026-06-29 (delar SE-VPN-slot). Pekar på vbet-fetch
+    // så keepalive ser paf som täckt av en kontinuerlig loop (hasActiveRun → ingen separat
+    // dispatch). Standalone paf-brand-fetch.yml avstängd.
+    workflow: "vbet-fetch.yml",
     dataFile: "paf-brand-rows.json",
     statusFile: null,
     staleAfterSec: 60 * 60,
