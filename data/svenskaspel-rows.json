@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:57:04.800Z",
+  "updatedAt": "2026-06-29T01:59:35.327Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 190,
-  "skippedNoOdds": 2,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 16118,
+  "durationMs": 16324,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 20,
-        "draw": 4.5,
-        "away": 1.21
+        "home": 25,
+        "draw": 4.7,
+        "away": 1.18
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-29T00:57:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 6.75,
-        "draw": 3.75,
-        "away": 1.44
+        "home": 6.5,
+        "draw": 3.7,
+        "away": 1.46
       }
     },
     {
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T01:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.92,
-        "draw": 3,
-        "away": 3.35
+        "home": 2.5,
+        "draw": 2.04,
+        "away": 3.8
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T01:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.95,
-        "draw": 4.4,
-        "away": 1.73
+        "home": 4.4,
+        "draw": 4.75,
+        "away": 1.44
       }
     },
     {
@@ -1289,6 +1289,51 @@
           "line": 2.5,
           "over": 1.1,
           "under": 5.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028174496",
+      "title": "B Dortmund (SpeciAL) - Man City (GanGsta_Panda)",
+      "homeTeam": "B Dortmund (SpeciAL)",
+      "awayTeam": "Man City (GanGsta_Panda)",
+      "startTime": "2026-06-29T02:20:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 1.68,
+        "draw": 5.5,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.12,
+          "under": 4.75
+        },
+        {
+          "line": 7.5,
+          "over": 4.6,
+          "under": 1.13
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.02
+        },
+        {
+          "line": 4.5,
+          "over": 1.35,
+          "under": 2.75
+        },
+        {
+          "line": 5.5,
+          "over": 1.88,
+          "under": 1.78
+        },
+        {
+          "line": 6.5,
+          "over": 2.7,
+          "under": 1.36
         }
       ]
     },
@@ -1830,17 +1875,17 @@
         },
         {
           "line": -2.25,
-          "home": 2.75,
+          "home": 2.7,
           "away": 1.45
         },
         {
           "line": -1.75,
-          "home": 2.02,
+          "home": 2,
           "away": 1.79
         },
         {
           "line": -2.75,
-          "home": 3.75,
+          "home": 3.7,
           "away": 1.27
         },
         {
@@ -1860,7 +1905,7 @@
         },
         {
           "line": -2.5,
-          "home": 3.05,
+          "home": 3,
           "away": 1.38
         },
         {
@@ -1880,7 +1925,7 @@
         },
         {
           "line": -2,
-          "home": 2.4,
+          "home": 2.38,
           "away": 1.57
         }
       ],
