@@ -218,7 +218,7 @@ var o={};
 try{
   var st=(window.stores&&window.stores.sports)||null;
   var fc=st?val(st.flatCategories):null;
-  if(!Array.isArray(fc)){o.err='ingen flatCategories i store';window.__matches=[];window.__slugs=[];window.__odds={};window.__i=0;return JSON.stringify(o);}
+  if(!Array.isArray(fc)){o.err='ingen flatCategories i store';try{o.storeKeys=window.stores?Object.keys(window.stores):'no window.stores';o.sportsKeys=st?Object.keys(st):'no window.stores.sports';o.fcType=typeof (st&&st.flatCategories);}catch(e){o.storeProbeErr=String(e).slice(0,120);}window.__matches=[];window.__slugs=[];window.__odds={};window.__i=0;return JSON.stringify(o);}
   var leagues=fc.filter(function(c){return /^fotboll(\\/|$)/i.test(String(c&&c.fullSlug||''))&&(c.matches_count||0)>0;}).map(function(c){return {id:c.id,fullSlug:c.fullSlug,name:c.name,n:c.matches_count};});
   o.leagueCount=leagues.length;
   // parallell fetch (concurrency 12) av fo-category per liga → alla matcher.
@@ -318,6 +318,9 @@ async function main() {
   diag.slug = nav.slug ?? null;
   diag.slugs = nav.slugs ?? null;
   diag.probe = nav.probe ?? null;
+  diag.storeKeys = nav.storeKeys ?? null;     // diag: vilka nycklar finns på window.stores nu?
+  diag.sportsKeys = nav.sportsKeys ?? null;   // diag: vilka nycklar på window.stores.sports? (hitta var flatCategories tog vägen)
+  diag.fcType = nav.fcType ?? null;
   diag.marketTypes = Array.isArray(nav.marketTypes) ? nav.marketTypes.slice(0, 40) : null;
   diag.ahSample = nav.ahSample || null;
   if (nav.err) diag.notes.push(`nav-fel: ${nav.err}`);
