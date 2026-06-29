@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T19:24:07.494Z",
+  "updatedAt": "2026-06-29T19:28:04.852Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 210,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 211,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 18377,
+  "durationMs": 17490,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,8 +992,8 @@
       "startTime": "2026-06-29T19:16:00Z",
       "league": "Úrvalsdeild",
       "odds": {
-        "home": 2.63,
-        "draw": 3.7,
+        "home": 2.7,
+        "draw": 3.65,
         "away": 2.1
       }
     },
@@ -1005,7 +1005,7 @@
       "startTime": "2026-06-29T19:16:00Z",
       "league": "1. Deild",
       "odds": {
-        "home": 1.08,
+        "home": 1.07,
         "draw": 10,
         "away": 16
       }
@@ -1018,9 +1018,9 @@
       "startTime": "2026-06-29T19:20:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.38,
-        "draw": 4.2,
-        "away": 2.04
+        "home": 1.97,
+        "draw": 3.7,
+        "away": 2.7
       }
     },
     {
@@ -1031,9 +1031,9 @@
       "startTime": "2026-06-29T19:20:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.12,
-        "draw": 4.5,
-        "away": 2.23
+        "home": 4.6,
+        "draw": 4.8,
+        "away": 1.43
       }
     },
     {
@@ -1044,9 +1044,9 @@
       "startTime": "2026-06-29T19:22:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 5.6,
-        "draw": 5.6,
-        "away": 1.32
+        "home": 2.75,
+        "draw": 3.35,
+        "away": 2.04
       }
     },
     {
@@ -1057,9 +1057,9 @@
       "startTime": "2026-06-29T19:22:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.58,
-        "draw": 7.5,
-        "away": 2.8
+        "home": 2.95,
+        "draw": 6.5,
+        "away": 1.57
       }
     },
     {
@@ -1070,9 +1070,9 @@
       "startTime": "2026-06-29T19:22:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.92,
-        "draw": 4.9,
-        "away": 2.4
+        "home": 2.06,
+        "draw": 3.8,
+        "away": 2.5
       }
     },
     {
@@ -1083,9 +1083,9 @@
       "startTime": "2026-06-29T19:22:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 5.5,
-        "draw": 3.65,
-        "away": 1.49
+        "home": 2.65,
+        "draw": 2.25,
+        "away": 2.95
       }
     },
     {
@@ -1695,6 +1695,151 @@
           "line": 2.5,
           "over": 1.02,
           "under": 8
+        }
+      ]
+    },
+    {
+      "eventId": "1028186298",
+      "title": "B Dortmund (Uchihax) - Sporting CP (Bjela)",
+      "homeTeam": "B Dortmund (Uchihax)",
+      "awayTeam": "Sporting CP (Bjela)",
+      "startTime": "2026-06-29T19:56:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 1.78,
+        "draw": 5.5,
+        "away": 2.55
+      },
+      "totals": [
+        {
+          "line": 9.5,
+          "over": 2.32,
+          "under": 1.49
+        },
+        {
+          "line": 5.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 8.5,
+          "over": 1.7,
+          "under": 1.97
+        },
+        {
+          "line": 12.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 7.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 10.5,
+          "over": 3.25,
+          "under": 1.25
+        },
+        {
+          "line": 11.5,
+          "over": 5.1,
+          "under": 1.1
+        },
+        {
+          "line": 6.5,
+          "over": 1.15,
+          "under": 4.25
+        }
+      ]
+    },
+    {
+      "eventId": "1028186282",
+      "title": "Chelsea (Linox) - Liverpool (Animal)",
+      "homeTeam": "Chelsea (Linox)",
+      "awayTeam": "Liverpool (Animal)",
+      "startTime": "2026-06-29T19:58:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.23,
+        "draw": 5.1,
+        "away": 2.02
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 2.5,
+          "over": 1.01,
+          "under": 9.5
+        },
+        {
+          "line": 3.5,
+          "over": 1.16,
+          "under": 4.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.43,
+          "under": 2.48
+        },
+        {
+          "line": 6.5,
+          "over": 3,
+          "under": 1.29
+        },
+        {
+          "line": 7.5,
+          "over": 5.3,
+          "under": 1.09
+        }
+      ]
+    },
+    {
+      "eventId": "1028186299",
+      "title": "Arsenal (lzrn) - Tottenham (chevare)",
+      "homeTeam": "Arsenal (lzrn)",
+      "awayTeam": "Tottenham (chevare)",
+      "startTime": "2026-06-29T19:58:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.6,
+        "draw": 3.25,
+        "away": 2.16
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.28,
+          "under": 3.1
+        },
+        {
+          "line": 7.5,
+          "over": 3.65,
+          "under": 1.2
+        },
+        {
+          "line": 6.5,
+          "over": 2.43,
+          "under": 1.45
+        },
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 6
+        },
+        {
+          "line": 5.5,
+          "over": 1.64,
+          "under": 2.06
+        },
+        {
+          "line": 8.5,
+          "over": 6.75,
+          "under": 1.05
         }
       ]
     },
@@ -14428,19 +14573,6 @@
   ],
   "eventsTennis": [
     {
-      "eventId": "1028155324",
-      "title": "Dayana Yastremska - Aoi Ito",
-      "homeTeam": "Dayana Yastremska",
-      "awayTeam": "Aoi Ito",
-      "startTime": "2026-06-29T16:56:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.13,
-        "away": 5.6
-      }
-    },
-    {
       "eventId": "1028155328",
       "title": "Solana Sierra - Anna Bondar",
       "homeTeam": "Solana Sierra",
@@ -14449,8 +14581,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 6,
-        "away": 1.12
+        "home": 3.05,
+        "away": 1.36
       }
     },
     {
@@ -14462,8 +14594,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.28,
-        "away": 1.61
+        "home": 2.8,
+        "away": 1.43
       }
     },
     {
@@ -14475,8 +14607,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.09,
-        "away": 7
+        "home": 1.08,
+        "away": 7.5
       }
     },
     {
@@ -14488,8 +14620,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7.5
+        "home": 1.13,
+        "away": 5.75
       }
     },
     {
@@ -14501,8 +14633,8 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 2.55,
-        "away": 1.46
+        "home": 3.05,
+        "away": 1.34
       }
     },
     {
@@ -14514,8 +14646,21 @@
       "league": "Ajaccio",
       "sport": "tennis",
       "odds": {
-        "home": 1.52,
-        "away": 2.43
+        "home": 1.42,
+        "away": 2.7
+      }
+    },
+    {
+      "eventId": "1028155327",
+      "title": "Jessica Bouzas Maneiro - Anastasia Potapova",
+      "homeTeam": "Jessica Bouzas Maneiro",
+      "awayTeam": "Anastasia Potapova",
+      "startTime": "2026-06-29T18:08:00Z",
+      "league": "Wimbledon Damsingel",
+      "sport": "tennis",
+      "odds": {
+        "home": 13,
+        "away": 1.03
       }
     },
     {
@@ -14527,7 +14672,7 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 11,
+        "home": 10,
         "away": 1.04
       }
     },
@@ -14540,7 +14685,7 @@
       "league": "Quito",
       "sport": "tennis",
       "odds": {
-        "home": 17,
+        "home": 16,
         "away": 1.02
       }
     },
@@ -14553,8 +14698,8 @@
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
-        "home": 2.02,
-        "away": 1.74
+        "home": 2.17,
+        "away": 1.64
       }
     },
     {
@@ -14566,8 +14711,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 3,
-        "away": 1.35
+        "home": 3.2,
+        "away": 1.32
       }
     },
     {
@@ -14579,21 +14724,21 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.53,
-        "away": 2.35
+        "home": 1.88,
+        "away": 1.84
       }
     },
     {
-      "eventId": "1028185722",
-      "title": "Savannah Broadus - Brandy Walker",
-      "homeTeam": "Savannah Broadus",
-      "awayTeam": "Brandy Walker",
-      "startTime": "2026-06-29T19:10:00Z",
-      "league": "Cary",
+      "eventId": "1028183345",
+      "title": "Mikail Alimli - Riccardo Ciulli",
+      "homeTeam": "Mikail Alimli",
+      "awayTeam": "Riccardo Ciulli",
+      "startTime": "2026-06-29T19:16:00Z",
+      "league": "Ajaccio",
       "sport": "tennis",
       "odds": {
-        "home": 1.01,
-        "away": 13
+        "home": 1.02,
+        "away": 11
       }
     },
     {
@@ -14601,7 +14746,7 @@
       "title": "Alvaro Ariel Frutos Alonso - Agustin Mastri",
       "homeTeam": "Alvaro Ariel Frutos Alonso",
       "awayTeam": "Agustin Mastri",
-      "startTime": "2026-06-29T19:30:00Z",
+      "startTime": "2026-06-29T19:35:00Z",
       "league": "USA - Boca Raton",
       "sport": "tennis",
       "odds": {
@@ -15325,6 +15470,19 @@
       }
     },
     {
+      "eventId": "1028194978",
+      "title": "Matthew Summers - Mario Gonzalez Fernandez",
+      "homeTeam": "Matthew Summers",
+      "awayTeam": "Mario Gonzalez Fernandez",
+      "startTime": "2026-06-30T10:00:00Z",
+      "league": "Figueira da Foz",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.8,
+        "away": 1.38
+      }
+    },
+    {
       "eventId": "1028155326",
       "title": "Tereza Valentova - Karolina Pliskova",
       "homeTeam": "Tereza Valentova",
@@ -15387,6 +15545,19 @@
       "odds": {
         "home": 1.24,
         "away": 3.6
+      }
+    },
+    {
+      "eventId": "1028191811",
+      "title": "Michele Ribecai - Daniele Rapagnetta",
+      "homeTeam": "Michele Ribecai",
+      "awayTeam": "Daniele Rapagnetta",
+      "startTime": "2026-06-30T11:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 4,
+        "away": 1.23
       }
     },
     {
@@ -15858,6 +16029,32 @@
       }
     },
     {
+      "eventId": "1028191809",
+      "title": "Elmer Moller - Norbert Gombos",
+      "homeTeam": "Elmer Moller",
+      "awayTeam": "Norbert Gombos",
+      "startTime": "2026-06-30T14:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.4,
+        "away": 2.85
+      }
+    },
+    {
+      "eventId": "1028191814",
+      "title": "Oriol Roca Batalla - Pierluigi Basile",
+      "homeTeam": "Oriol Roca Batalla",
+      "awayTeam": "Pierluigi Basile",
+      "startTime": "2026-06-30T14:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.35,
+        "away": 3.1
+      }
+    },
+    {
       "eventId": "1028155419",
       "title": "Alex Molcan - Daniel Altmaier",
       "homeTeam": "Alex Molcan",
@@ -15879,8 +16076,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.23,
-        "away": 4.1
+        "home": 1.27,
+        "away": 3.75
       }
     },
     {
@@ -15920,6 +16117,19 @@
       "odds": {
         "home": 1.41,
         "away": 2.9
+      }
+    },
+    {
+      "eventId": "1028177630",
+      "title": "Filippo Romano - Marco Cecchinato",
+      "homeTeam": "Filippo Romano",
+      "awayTeam": "Marco Cecchinato",
+      "startTime": "2026-06-30T14:00:00Z",
+      "league": "Milan",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.63,
+        "away": 1.46
       }
     },
     {
@@ -16093,6 +16303,6 @@
     }
   ],
   "basketEventsCount": 8,
-  "tennisEventsCount": 128,
+  "tennisEventsCount": 133,
   "lastError": null
 }
