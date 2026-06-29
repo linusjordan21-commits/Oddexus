@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-29T01:52:04.912Z",
+  "updatedAt": "2026-06-29T01:54:35.574Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 190,
+  "uniqueEvents": 189,
   "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 16196,
+  "durationMs": 16218,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-29T00:17:00Z",
       "league": "MLS Next Pro",
       "odds": {
-        "home": 14,
-        "draw": 4.1,
-        "away": 1.26
+        "home": 18,
+        "draw": 4.4,
+        "away": 1.21
       }
     },
     {
@@ -1011,32 +1011,6 @@
       }
     },
     {
-      "eventId": "1028173782",
-      "title": "Tottenham (abr4m_5) - Benfica (Galikooo)",
-      "homeTeam": "Tottenham (abr4m_5)",
-      "awayTeam": "Benfica (Galikooo)",
-      "startTime": "2026-06-29T01:42:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 29,
-        "draw": 9,
-        "away": 1.07
-      }
-    },
-    {
-      "eventId": "1028173783",
-      "title": "Lille (luxiqq) - Feyenoord (drksd3)",
-      "homeTeam": "Lille (luxiqq)",
-      "awayTeam": "Feyenoord (drksd3)",
-      "startTime": "2026-06-29T01:42:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 2.63,
-        "draw": 3.3,
-        "away": 2.14
-      }
-    },
-    {
       "eventId": "1028174531",
       "title": "Real Madrid (zaha) - Atleti (nicky)",
       "homeTeam": "Real Madrid (zaha)",
@@ -1044,9 +1018,9 @@
       "startTime": "2026-06-29T01:44:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 1.9,
-        "draw": 3.65,
-        "away": 2.85
+        "home": 1.38,
+        "draw": 4.1,
+        "away": 6.4
       }
     },
     {
@@ -1057,42 +1031,10 @@
       "startTime": "2026-06-29T01:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.66,
-        "draw": 4,
-        "away": 3.45
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 7,
-          "under": 1.04
-        },
-        {
-          "line": 4.5,
-          "over": 1.63,
-          "under": 2.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.05,
-          "under": 6.75
-        },
-        {
-          "line": 5.5,
-          "over": 2.35,
-          "under": 1.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.23,
-          "under": 3.4
-        },
-        {
-          "line": 6.5,
-          "over": 3.85,
-          "under": 1.18
-        }
-      ]
+        "home": 1.76,
+        "draw": 3.6,
+        "away": 3.3
+      }
     },
     {
       "eventId": "1028173785",
@@ -1381,6 +1323,51 @@
           "line": 11.5,
           "over": 9,
           "under": 1.01
+        }
+      ]
+    },
+    {
+      "eventId": "1028174287",
+      "title": "Real Madrid (SPACE) - Bayern Munchen (DangerDim77)",
+      "homeTeam": "Real Madrid (SPACE)",
+      "awayTeam": "Bayern Munchen (DangerDim77)",
+      "startTime": "2026-06-29T02:16:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.65,
+        "draw": 5.25,
+        "away": 1.75
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 2.55,
+          "under": 1.4
+        },
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5.1
+        },
+        {
+          "line": 7.5,
+          "over": 4.2,
+          "under": 1.15
+        },
+        {
+          "line": 8.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 4.5,
+          "over": 1.32,
+          "under": 2.9
+        },
+        {
+          "line": 5.5,
+          "over": 1.79,
+          "under": 1.87
         }
       ]
     },
