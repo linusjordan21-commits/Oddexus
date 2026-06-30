@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T08:05:34.492Z",
+  "updatedAt": "2026-06-30T08:10:20.852Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 325,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 342,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 32620,
+  "durationMs": 34154,
   "events": [
     {
       "eventId": "1027976814",
@@ -3410,58 +3410,6 @@
       ]
     },
     {
-      "eventId": "1028192699",
-      "title": "Atleti (v1nniePuh) - Paris (zoyir)",
-      "homeTeam": "Atleti (v1nniePuh)",
-      "awayTeam": "Paris (zoyir)",
-      "startTime": "2026-06-30T07:56:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.21,
-        "draw": 6,
-        "away": 8.5
-      }
-    },
-    {
-      "eventId": "1028192691",
-      "title": "Bayern Munchen (bodyaoo) - Real Madrid (flamez)",
-      "homeTeam": "Bayern Munchen (bodyaoo)",
-      "awayTeam": "Real Madrid (flamez)",
-      "startTime": "2026-06-30T07:56:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 2.7,
-        "draw": 3.2,
-        "away": 2.14
-      }
-    },
-    {
-      "eventId": "1028197240",
-      "title": "Monaco (Voron) - Stade Rennais FC (Terry14)",
-      "homeTeam": "Monaco (Voron)",
-      "awayTeam": "Stade Rennais FC (Terry14)",
-      "startTime": "2026-06-30T07:58:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.65,
-        "away": 2.1
-      }
-    },
-    {
-      "eventId": "1028197239",
-      "title": "Lille (femzzi) - Nice (TOMMY)",
-      "homeTeam": "Lille (femzzi)",
-      "awayTeam": "Nice (TOMMY)",
-      "startTime": "2026-06-30T07:58:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.63,
-        "draw": 6.25,
-        "away": 2.8
-      }
-    },
-    {
       "eventId": "1028192925",
       "title": "Lyon (Lumix) - Nice (Hyper)",
       "homeTeam": "Lyon (Lumix)",
@@ -3469,9 +3417,9 @@
       "startTime": "2026-06-30T08:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.48,
-        "draw": 3.65,
-        "away": 2.12
+        "home": 1.24,
+        "draw": 4.9,
+        "away": 9.5
       }
     },
     {
@@ -3482,47 +3430,10 @@
       "startTime": "2026-06-30T08:06:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.4,
+        "home": 4.5,
         "draw": 6.25,
-        "away": 3.6
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.04,
-          "under": 7
-        },
-        {
-          "line": 6.5,
-          "over": 1.42,
-          "under": 2.5
-        },
-        {
-          "line": 8.5,
-          "over": 2.6,
-          "under": 1.38
-        },
-        {
-          "line": 9.5,
-          "over": 3.95,
-          "under": 1.17
-        },
-        {
-          "line": 5.5,
-          "over": 1.18,
-          "under": 3.8
-        },
-        {
-          "line": 10.5,
-          "over": 6.4,
-          "under": 1.06
-        },
-        {
-          "line": 7.5,
-          "over": 1.89,
-          "under": 1.78
-        }
-      ]
+        "away": 1.35
+      }
     },
     {
       "eventId": "1028197766",
@@ -3532,47 +3443,10 @@
       "startTime": "2026-06-30T08:06:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.35,
-        "draw": 6.5,
-        "away": 1.79
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.49,
-          "under": 2.32
-        },
-        {
-          "line": 8.5,
-          "over": 4.6,
-          "under": 1.12
-        },
-        {
-          "line": 4.5,
-          "over": 1.18,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 6.75
-        },
-        {
-          "line": 7.5,
-          "over": 3,
-          "under": 1.29
-        },
-        {
-          "line": 9.5,
-          "over": 8,
-          "under": 1.03
-        },
-        {
-          "line": 6.5,
-          "over": 1.98,
-          "under": 1.71
-        }
-      ]
+        "home": 1.66,
+        "draw": 5.8,
+        "away": 2.75
+      }
     },
     {
       "eventId": "1028192750",
@@ -3582,47 +3456,10 @@
       "startTime": "2026-06-30T08:07:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.45,
-        "draw": 2.95,
-        "away": 2.45
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.93,
-          "under": 1.75
-        },
-        {
-          "line": 8.5,
-          "over": 9.5,
-          "under": 1.01
-        },
-        {
-          "line": 3.5,
-          "over": 1.13,
-          "under": 4.5
-        },
-        {
-          "line": 7.5,
-          "over": 4.75,
-          "under": 1.12
-        },
-        {
-          "line": 6.5,
-          "over": 3,
-          "under": 1.29
-        },
-        {
-          "line": 2.5,
-          "over": 1.01,
-          "under": 9
-        },
-        {
-          "line": 4.5,
-          "over": 1.44,
-          "under": 2.45
-        }
-      ]
+        "home": 1.44,
+        "draw": 3.6,
+        "away": 6.75
+      }
     },
     {
       "eventId": "1028192755",
@@ -3632,42 +3469,10 @@
       "startTime": "2026-06-30T08:07:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.15,
-        "draw": 4.4,
-        "away": 1.67
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.38,
-          "under": 2.63
-        },
-        {
-          "line": 5.5,
-          "over": 1.89,
-          "under": 1.77
-        },
-        {
-          "line": 7.5,
-          "over": 4.6,
-          "under": 1.12
-        },
-        {
-          "line": 6.5,
-          "over": 2.8,
-          "under": 1.33
-        },
-        {
-          "line": 3.5,
-          "over": 1.13,
-          "under": 4.5
-        },
-        {
-          "line": 8.5,
-          "over": 8.5,
-          "under": 1.02
-        }
-      ]
+        "home": 5.2,
+        "draw": 5,
+        "away": 1.37
+      }
     },
     {
       "eventId": "1028197241",
@@ -4610,6 +4415,51 @@
       ]
     },
     {
+      "eventId": "1028192752",
+      "title": "Juventus (mko1919) - Roma (KraftVK)",
+      "homeTeam": "Juventus (mko1919)",
+      "awayTeam": "Roma (KraftVK)",
+      "startTime": "2026-06-30T08:43:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.4,
+        "draw": 4.2,
+        "away": 2.04
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.06,
+          "under": 6.4
+        },
+        {
+          "line": 4.5,
+          "over": 1.23,
+          "under": 3.35
+        },
+        {
+          "line": 5.5,
+          "over": 1.58,
+          "under": 2.14
+        },
+        {
+          "line": 6.5,
+          "over": 2.23,
+          "under": 1.54
+        },
+        {
+          "line": 8.5,
+          "over": 5.8,
+          "under": 1.07
+        },
+        {
+          "line": 7.5,
+          "over": 3.4,
+          "under": 1.23
+        }
+      ]
+    },
+    {
       "eventId": "1028197769",
       "title": "Real Sociedad (Double_S) - Atlético Madrid (zyX)",
       "homeTeam": "Real Sociedad (Double_S)",
@@ -5301,6 +5151,911 @@
           "line": 6.5,
           "over": 1.98,
           "under": 1.71
+        }
+      ]
+    },
+    {
+      "eventId": "1028197253",
+      "title": "Marseille (T3RZ) - Lille (femzzi)",
+      "homeTeam": "Marseille (T3RZ)",
+      "awayTeam": "Lille (femzzi)",
+      "startTime": "2026-06-30T09:36:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.28,
+        "draw": 5.5,
+        "away": 1.92
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.03,
+          "under": 7.5
+        },
+        {
+          "line": 8.5,
+          "over": 1.68,
+          "under": 2
+        },
+        {
+          "line": 10.5,
+          "over": 3.2,
+          "under": 1.25
+        },
+        {
+          "line": 6.5,
+          "over": 1.14,
+          "under": 4.35
+        },
+        {
+          "line": 7.5,
+          "over": 1.34,
+          "under": 2.75
+        },
+        {
+          "line": 9.5,
+          "over": 2.28,
+          "under": 1.52
+        },
+        {
+          "line": 12.5,
+          "over": 8,
+          "under": 1.02
+        },
+        {
+          "line": 11.5,
+          "over": 5,
+          "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028197254",
+      "title": "Monaco (Voron) - Nice (TOMMY)",
+      "homeTeam": "Monaco (Voron)",
+      "awayTeam": "Nice (TOMMY)",
+      "startTime": "2026-06-30T09:36:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.71,
+        "draw": 5.75,
+        "away": 2.65
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 8.5,
+          "over": 2.43,
+          "under": 1.45
+        },
+        {
+          "line": 6.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 7.5,
+          "over": 1.8,
+          "under": 1.87
+        },
+        {
+          "line": 9.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 10.5,
+          "over": 5.75,
+          "under": 1.07
+        },
+        {
+          "line": 5.5,
+          "over": 1.15,
+          "under": 4.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028197777",
+      "title": "Atlético Madrid (zyX) - Valencia (FanFan)",
+      "homeTeam": "Atlético Madrid (zyX)",
+      "awayTeam": "Valencia (FanFan)",
+      "startTime": "2026-06-30T09:40:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 6.4,
+        "draw": 10,
+        "away": 1.13
+      },
+      "totals": [
+        {
+          "line": 11.5,
+          "over": 7,
+          "under": 1.04
+        },
+        {
+          "line": 10.5,
+          "over": 4.2,
+          "under": 1.15
+        },
+        {
+          "line": 9.5,
+          "over": 2.75,
+          "under": 1.34
+        },
+        {
+          "line": 8.5,
+          "over": 1.97,
+          "under": 1.71
+        },
+        {
+          "line": 5.5,
+          "over": 1.08,
+          "under": 5.75
+        },
+        {
+          "line": 6.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 7.5,
+          "over": 1.55,
+          "under": 2.25
+        }
+      ]
+    },
+    {
+      "eventId": "1028197778",
+      "title": "Sevilla (savinho) - Barcelona (M1HEPAJI)",
+      "homeTeam": "Sevilla (savinho)",
+      "awayTeam": "Barcelona (M1HEPAJI)",
+      "startTime": "2026-06-30T09:40:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.47,
+        "draw": 5.3,
+        "away": 3.5
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.3,
+          "under": 2.95
+        },
+        {
+          "line": 5.5,
+          "over": 1.75,
+          "under": 1.93
+        },
+        {
+          "line": 6.5,
+          "over": 2.45,
+          "under": 1.44
+        },
+        {
+          "line": 7.5,
+          "over": 3.8,
+          "under": 1.18
+        },
+        {
+          "line": 8.5,
+          "over": 6.4,
+          "under": 1.06
+        }
+      ]
+    },
+    {
+      "eventId": "1028197779",
+      "title": "Atlético Madrid (zyX) - Real Sociedad (Double_S)",
+      "homeTeam": "Atlético Madrid (zyX)",
+      "awayTeam": "Real Sociedad (Double_S)",
+      "startTime": "2026-06-30T09:54:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.35,
+        "draw": 6.25,
+        "away": 1.43
+      },
+      "totals": [
+        {
+          "line": 9.5,
+          "over": 3,
+          "under": 1.29
+        },
+        {
+          "line": 11.5,
+          "over": 7.5,
+          "under": 1.03
+        },
+        {
+          "line": 5.5,
+          "over": 1.1,
+          "under": 5.2
+        },
+        {
+          "line": 8.5,
+          "over": 2.08,
+          "under": 1.62
+        },
+        {
+          "line": 7.5,
+          "over": 1.58,
+          "under": 2.15
+        },
+        {
+          "line": 10.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 6.5,
+          "over": 1.26,
+          "under": 3.2
+        }
+      ]
+    },
+    {
+      "eventId": "1028197780",
+      "title": "Barcelona (M1HEPAJI) - Valencia (FanFan)",
+      "homeTeam": "Barcelona (M1HEPAJI)",
+      "awayTeam": "Valencia (FanFan)",
+      "startTime": "2026-06-30T09:54:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 9.5,
+        "draw": 9,
+        "away": 1.08
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 7.5,
+          "over": 3.05,
+          "under": 1.28
+        },
+        {
+          "line": 9.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 4.5,
+          "over": 1.2,
+          "under": 3.6
+        },
+        {
+          "line": 6.5,
+          "over": 2.07,
+          "under": 1.63
+        },
+        {
+          "line": 5.5,
+          "over": 1.52,
+          "under": 2.28
+        },
+        {
+          "line": 8.5,
+          "over": 4.9,
+          "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028197273",
+      "title": "Athletic Club (Terry14) - Valencia (TOMMY)",
+      "homeTeam": "Athletic Club (Terry14)",
+      "awayTeam": "Valencia (TOMMY)",
+      "startTime": "2026-06-30T10:00:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.56,
+        "draw": 4.9,
+        "away": 3.45
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 7.5,
+          "over": 1.65,
+          "under": 2.04
+        },
+        {
+          "line": 8.5,
+          "over": 2.25,
+          "under": 1.52
+        },
+        {
+          "line": 6.5,
+          "over": 1.32,
+          "under": 2.85
+        },
+        {
+          "line": 5.5,
+          "over": 1.12,
+          "under": 4.7
+        },
+        {
+          "line": 9.5,
+          "over": 3.25,
+          "under": 1.25
+        },
+        {
+          "line": 11.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 10.5,
+          "over": 5.1,
+          "under": 1.1
+        }
+      ]
+    },
+    {
+      "eventId": "1028197272",
+      "title": "Real Betis (T3RZ) - Atlético Madrid (Voron)",
+      "homeTeam": "Real Betis (T3RZ)",
+      "awayTeam": "Atlético Madrid (Voron)",
+      "startTime": "2026-06-30T10:00:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.38,
+        "draw": 7,
+        "away": 3.55
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 9.5,
+          "over": 2.38,
+          "under": 1.47
+        },
+        {
+          "line": 5.5,
+          "over": 1.04,
+          "under": 7.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.15,
+          "under": 4.25
+        },
+        {
+          "line": 8.5,
+          "over": 1.73,
+          "under": 1.94
+        },
+        {
+          "line": 12.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 11.5,
+          "over": 5.4,
+          "under": 1.09
+        },
+        {
+          "line": 10.5,
+          "over": 3.4,
+          "under": 1.23
+        }
+      ]
+    },
+    {
+      "eventId": "1028197781",
+      "title": "Sevilla (savinho) - Real Sociedad (Double_S)",
+      "homeTeam": "Sevilla (savinho)",
+      "awayTeam": "Real Sociedad (Double_S)",
+      "startTime": "2026-06-30T10:08:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.48,
+        "draw": 4.2,
+        "away": 1.97
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.66,
+          "under": 2.05
+        },
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 7.5,
+          "over": 3.5,
+          "under": 1.22
+        },
+        {
+          "line": 8.5,
+          "over": 5.8,
+          "under": 1.07
+        },
+        {
+          "line": 4.5,
+          "over": 1.27,
+          "under": 3.15
+        },
+        {
+          "line": 6.5,
+          "over": 2.32,
+          "under": 1.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028197782",
+      "title": "Barcelona (M1HEPAJI) - Atlético Madrid (zyX)",
+      "homeTeam": "Barcelona (M1HEPAJI)",
+      "awayTeam": "Atlético Madrid (zyX)",
+      "startTime": "2026-06-30T10:08:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3,
+        "draw": 5.6,
+        "away": 1.6
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.1,
+          "under": 5.2
+        },
+        {
+          "line": 5.5,
+          "over": 1.3,
+          "under": 2.95
+        },
+        {
+          "line": 6.5,
+          "over": 1.65,
+          "under": 2.05
+        },
+        {
+          "line": 7.5,
+          "over": 2.28,
+          "under": 1.5
+        },
+        {
+          "line": 8.5,
+          "over": 3.3,
+          "under": 1.24
+        },
+        {
+          "line": 10.5,
+          "over": 9.5,
+          "under": 1.01
+        },
+        {
+          "line": 9.5,
+          "over": 5.5,
+          "under": 1.08
+        }
+      ]
+    },
+    {
+      "eventId": "1028197275",
+      "title": "Real Betis (T3RZ) - Athletic Club (Terry14)",
+      "homeTeam": "Real Betis (T3RZ)",
+      "awayTeam": "Athletic Club (Terry14)",
+      "startTime": "2026-06-30T10:14:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.89,
+        "draw": 5.3,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.22,
+          "under": 3.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 6.25
+        },
+        {
+          "line": 6.5,
+          "over": 1.49,
+          "under": 2.32
+        },
+        {
+          "line": 9.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 7.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 10.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 8.5,
+          "over": 2.85,
+          "under": 1.32
+        }
+      ]
+    },
+    {
+      "eventId": "1028197274",
+      "title": "Real Sociedad (femzzi) - Atlético Madrid (Voron)",
+      "homeTeam": "Real Sociedad (femzzi)",
+      "awayTeam": "Atlético Madrid (Voron)",
+      "startTime": "2026-06-30T10:14:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.43,
+        "draw": 6.75,
+        "away": 3.25
+      },
+      "totals": [
+        {
+          "line": 9.5,
+          "over": 2.14,
+          "under": 1.58
+        },
+        {
+          "line": 12.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 10.5,
+          "over": 2.95,
+          "under": 1.3
+        },
+        {
+          "line": 11.5,
+          "over": 4.6,
+          "under": 1.13
+        },
+        {
+          "line": 6.5,
+          "over": 1.11,
+          "under": 4.9
+        },
+        {
+          "line": 7.5,
+          "over": 1.29,
+          "under": 3
+        },
+        {
+          "line": 5.5,
+          "over": 1.02,
+          "under": 8.5
+        },
+        {
+          "line": 8.5,
+          "over": 1.63,
+          "under": 2.1
+        }
+      ]
+    },
+    {
+      "eventId": "1028197784",
+      "title": "Valencia (FanFan) - Sevilla (savinho)",
+      "homeTeam": "Valencia (FanFan)",
+      "awayTeam": "Sevilla (savinho)",
+      "startTime": "2026-06-30T10:22:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.28,
+        "draw": 6.75,
+        "away": 4.5
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 3.4,
+          "under": 1.23
+        },
+        {
+          "line": 6.5,
+          "over": 2.25,
+          "under": 1.53
+        },
+        {
+          "line": 4.5,
+          "over": 1.26,
+          "under": 3.2
+        },
+        {
+          "line": 3.5,
+          "over": 1.08,
+          "under": 5.6
+        },
+        {
+          "line": 8.5,
+          "over": 5.5,
+          "under": 1.08
+        },
+        {
+          "line": 5.5,
+          "over": 1.65,
+          "under": 2.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028197783",
+      "title": "Barcelona (M1HEPAJI) - Real Sociedad (Double_S)",
+      "homeTeam": "Barcelona (M1HEPAJI)",
+      "awayTeam": "Real Sociedad (Double_S)",
+      "startTime": "2026-06-30T10:22:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 4.6,
+        "draw": 9.5,
+        "away": 1.21
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.22,
+          "under": 3.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 6.5,
+          "over": 1.47,
+          "under": 2.38
+        },
+        {
+          "line": 7.5,
+          "over": 1.98,
+          "under": 1.71
+        },
+        {
+          "line": 8.5,
+          "over": 2.75,
+          "under": 1.34
+        },
+        {
+          "line": 9.5,
+          "over": 4.35,
+          "under": 1.14
+        },
+        {
+          "line": 10.5,
+          "over": 7,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028197277",
+      "title": "Atlético Madrid (Voron) - Athletic Club (Terry14)",
+      "homeTeam": "Atlético Madrid (Voron)",
+      "awayTeam": "Athletic Club (Terry14)",
+      "startTime": "2026-06-30T10:28:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.45,
+        "draw": 4.8,
+        "away": 1.9
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 6.5,
+          "over": 1.45,
+          "under": 2.43
+        },
+        {
+          "line": 9.5,
+          "over": 4,
+          "under": 1.16
+        },
+        {
+          "line": 10.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 1.19,
+          "under": 3.7
+        },
+        {
+          "line": 8.5,
+          "over": 2.63,
+          "under": 1.38
+        },
+        {
+          "line": 7.5,
+          "over": 1.91,
+          "under": 1.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028197276",
+      "title": "Real Sociedad (femzzi) - Valencia (TOMMY)",
+      "homeTeam": "Real Sociedad (femzzi)",
+      "awayTeam": "Valencia (TOMMY)",
+      "startTime": "2026-06-30T10:28:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.4,
+        "draw": 9,
+        "away": 3.1
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 1.49,
+          "under": 2.32
+        },
+        {
+          "line": 11.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 10.5,
+          "over": 3.95,
+          "under": 1.17
+        },
+        {
+          "line": 5.5,
+          "over": 1.07,
+          "under": 6
+        },
+        {
+          "line": 9.5,
+          "over": 2.7,
+          "under": 1.36
+        },
+        {
+          "line": 6.5,
+          "over": 1.2,
+          "under": 3.65
+        },
+        {
+          "line": 8.5,
+          "over": 1.92,
+          "under": 1.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028197786",
+      "title": "Valencia (FanFan) - Real Sociedad (Double_S)",
+      "homeTeam": "Valencia (FanFan)",
+      "awayTeam": "Real Sociedad (Double_S)",
+      "startTime": "2026-06-30T10:36:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.38,
+        "draw": 6.4,
+        "away": 3.6
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 1.9,
+          "under": 1.76
+        },
+        {
+          "line": 9.5,
+          "over": 4,
+          "under": 1.16
+        },
+        {
+          "line": 8.5,
+          "over": 2.6,
+          "under": 1.38
+        },
+        {
+          "line": 10.5,
+          "over": 6.5,
+          "under": 1.06
+        },
+        {
+          "line": 4.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 6.5,
+          "over": 1.42,
+          "under": 2.48
+        },
+        {
+          "line": 5.5,
+          "over": 1.18,
+          "under": 3.8
+        }
+      ]
+    },
+    {
+      "eventId": "1028197788",
+      "title": "Atlético Madrid (zyX) - Sevilla (savinho)",
+      "homeTeam": "Atlético Madrid (zyX)",
+      "awayTeam": "Sevilla (savinho)",
+      "startTime": "2026-06-30T10:36:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.33,
+        "draw": 6.5,
+        "away": 1.81
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 4.5,
+          "under": 1.13
+        },
+        {
+          "line": 6.5,
+          "over": 1.98,
+          "under": 1.7
+        },
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.18,
+          "under": 3.8
+        },
+        {
+          "line": 7.5,
+          "over": 2.95,
+          "under": 1.3
+        },
+        {
+          "line": 5.5,
+          "over": 1.5,
+          "under": 2.3
+        },
+        {
+          "line": 9.5,
+          "over": 8.5,
+          "under": 1.02
         }
       ]
     },
@@ -19913,8 +20668,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 2.06,
-        "away": 1.7
+        "home": 2.6,
+        "away": 1.44
       }
     },
     {
@@ -19926,8 +20681,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 3.8,
-        "away": 1.23
+        "home": 3,
+        "away": 1.34
       }
     },
     {
@@ -19957,19 +20712,6 @@
       }
     },
     {
-      "eventId": "1028190339",
-      "title": "Shinji Hazawa - Koki Matsuda",
-      "homeTeam": "Shinji Hazawa",
-      "awayTeam": "Koki Matsuda",
-      "startTime": "2026-06-30T06:25:00Z",
-      "league": "Tokyo",
-      "sport": "tennis",
-      "odds": {
-        "home": 12,
-        "away": 1.03
-      }
-    },
-    {
       "eventId": "1028194102",
       "title": "Dmitrii Shirokii - Maj Premzl",
       "homeTeam": "Dmitrii Shirokii",
@@ -19978,8 +20720,8 @@
       "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 6.75
+        "home": 1.05,
+        "away": 8.5
       }
     },
     {
@@ -20004,8 +20746,8 @@
       "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 1.68,
-        "away": 2.07
+        "home": 1.93,
+        "away": 1.8
       }
     },
     {
@@ -20030,8 +20772,8 @@
       "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 1.01,
-        "away": 12
+        "home": 1.02,
+        "away": 11
       }
     },
     {
@@ -20043,8 +20785,8 @@
       "league": "Tjeckien",
       "sport": "tennis",
       "odds": {
-        "home": 5.5,
-        "away": 1.13
+        "home": 7,
+        "away": 1.08
       }
     },
     {
@@ -20056,8 +20798,8 @@
       "league": "Store",
       "sport": "tennis",
       "odds": {
-        "home": 5.8,
-        "away": 1.11
+        "home": 3.85,
+        "away": 1.23
       }
     },
     {
@@ -20069,8 +20811,8 @@
       "league": "Store",
       "sport": "tennis",
       "odds": {
-        "home": 1.54,
-        "away": 2.35
+        "home": 1.66,
+        "away": 2.12
       }
     },
     {
@@ -20082,8 +20824,8 @@
       "league": "Store",
       "sport": "tennis",
       "odds": {
-        "home": 1.91,
-        "away": 1.81
+        "home": 1.52,
+        "away": 2.4
       }
     },
     {
@@ -20095,8 +20837,21 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.36,
-        "away": 2.95
+        "home": 1.16,
+        "away": 4.75
+      }
+    },
+    {
+      "eventId": "1028192487",
+      "title": "Adela Polakovicova - Emilija Tverijonaite",
+      "homeTeam": "Adela Polakovicova",
+      "awayTeam": "Emilija Tverijonaite",
+      "startTime": "2026-06-30T07:10:00Z",
+      "league": "Mogyorod",
+      "sport": "tennis",
+      "odds": {
+        "home": 11.5,
+        "away": 1.02
       }
     },
     {
@@ -20108,8 +20863,8 @@
       "league": "Store",
       "sport": "tennis",
       "odds": {
-        "home": 2.65,
-        "away": 1.43
+        "home": 5.1,
+        "away": 1.14
       }
     },
     {
@@ -20126,19 +20881,6 @@
       }
     },
     {
-      "eventId": "1028192351",
-      "title": "S Mert Ozdemir - Daniel Blazka",
-      "homeTeam": "S Mert Ozdemir",
-      "awayTeam": "Daniel Blazka",
-      "startTime": "2026-06-30T07:14:00Z",
-      "league": "Kayseri",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.04,
-        "away": 8.5
-      }
-    },
-    {
       "eventId": "1028177623",
       "title": "Francesco Maestrelli - Ognjen Milic",
       "homeTeam": "Francesco Maestrelli",
@@ -20147,8 +20889,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 2.05,
-        "away": 1.73
+        "home": 2.38,
+        "away": 1.55
       }
     },
     {
@@ -20160,8 +20902,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.32,
-        "away": 3.3
+        "home": 1.21,
+        "away": 4.1
       }
     },
     {
@@ -20173,8 +20915,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.3,
-        "away": 3.2
+        "home": 1.14,
+        "away": 5.1
       }
     },
     {
@@ -20186,8 +20928,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 3.25,
-        "away": 1.33
+        "home": 3.95,
+        "away": 1.23
       }
     },
     {
@@ -20199,8 +20941,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.46,
-        "away": 2.55
+        "home": 1.53,
+        "away": 2.35
       }
     },
     {
@@ -20212,8 +20954,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.71,
-        "away": 2.02
+        "home": 1.64,
+        "away": 2.14
       }
     },
     {
@@ -20226,7 +20968,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.11,
-        "away": 5.6
+        "away": 5.8
       }
     },
     {
@@ -20238,7 +20980,7 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 1.27,
+        "home": 1.26,
         "away": 3.5
       }
     },
@@ -20251,8 +20993,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 2.8,
-        "away": 1.42
+        "home": 2.95,
+        "away": 1.38
       }
     },
     {
@@ -20264,8 +21006,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.23,
-        "away": 1.58
+        "home": 2.08,
+        "away": 1.68
       }
     },
     {
@@ -20277,8 +21019,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 5.6,
-        "away": 1.11
+        "home": 7,
+        "away": 1.07
       }
     },
     {
@@ -20290,8 +21032,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 1.44,
-        "away": 2.63
+        "home": 1.46,
+        "away": 2.55
       }
     },
     {
@@ -20308,16 +21050,68 @@
       }
     },
     {
-      "eventId": "1028198595",
-      "title": "Maxim Shin - Cagan Efe Tufekci",
-      "homeTeam": "Maxim Shin",
-      "awayTeam": "Cagan Efe Tufekci",
-      "startTime": "2026-06-30T08:10:00Z",
-      "league": "Kayseri",
+      "eventId": "1028193437",
+      "title": "Jonathan Mridha - Julius Maximilian Haus",
+      "homeTeam": "Jonathan Mridha",
+      "awayTeam": "Julius Maximilian Haus",
+      "startTime": "2026-06-30T08:08:00Z",
+      "league": "Marburg",
       "sport": "tennis",
       "odds": {
-        "home": 1.26,
-        "away": 3.5
+        "home": 1.05,
+        "away": 8.5
+      }
+    },
+    {
+      "eventId": "1028193434",
+      "title": "Dominik Recek - Georgi Georgiev",
+      "homeTeam": "Dominik Recek",
+      "awayTeam": "Georgi Georgiev",
+      "startTime": "2026-06-30T08:09:00Z",
+      "league": "Marburg",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.57,
+        "away": 2.28
+      }
+    },
+    {
+      "eventId": "1028193435",
+      "title": "Karl Friberg - Jim Hendrikx",
+      "homeTeam": "Karl Friberg",
+      "awayTeam": "Jim Hendrikx",
+      "startTime": "2026-06-30T08:09:00Z",
+      "league": "Marburg",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.28,
+        "away": 3.4
+      }
+    },
+    {
+      "eventId": "1028193436",
+      "title": "Pepijn Bastiaansen - Ben Patrick Ostheimer",
+      "homeTeam": "Pepijn Bastiaansen",
+      "awayTeam": "Ben Patrick Ostheimer",
+      "startTime": "2026-06-30T08:09:00Z",
+      "league": "Marburg",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.14,
+        "away": 5.1
+      }
+    },
+    {
+      "eventId": "1028190415",
+      "title": "S. Matsuoka/Y. Oki - K. Isomura/Y. Jeong",
+      "homeTeam": "S. Matsuoka/Y. Oki",
+      "awayTeam": "K. Isomura/Y. Jeong",
+      "startTime": "2026-06-30T08:10:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.7,
+        "away": 1.24
       }
     },
     {
@@ -21760,7 +22554,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.05,
-        "away": 10
+        "away": 9.5
       }
     },
     {
@@ -22558,6 +23352,6 @@
     }
   ],
   "basketEventsCount": 8,
-  "tennisEventsCount": 204,
+  "tennisEventsCount": 207,
   "lastError": null
 }
