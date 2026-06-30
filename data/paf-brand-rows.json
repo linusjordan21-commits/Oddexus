@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T08:20:39.943Z",
+  "updatedAt": "2026-06-30T08:34:54.705Z",
   "source": "github-actions",
   "bookmaker": "paf-brand",
   "displayName": "Paf brand group (X3000 / Golden Bull / 1x2 / Speedybet)",
@@ -8,47 +8,33 @@
   "queryCount": 74,
   "brandsFetched": 4,
   "brandsFailed": 0,
-  "totalEvents": 744,
-  "durationMs": 108774,
+  "totalEvents": 743,
+  "durationMs": 109434,
   "note": "Search-based prewarm cache — coverage depends on configured queries. Live-fallback (per-match search) handles cache misses for obscure leagues.",
   "byBrand": {
     "x3000": {
       "displayName": "X3000",
       "baseUrl": "https://www.x3000.com",
-      "updatedAt": "2026-06-30T08:19:18.783Z",
+      "updatedAt": "2026-06-30T08:33:32.684Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 186,
-      "durationMs": 27611,
+      "durationMs": 27410,
       "events": [
         {
-          "eventId": "1028072415",
-          "title": "Arsenal - Coventry City",
-          "homeTeam": "Arsenal",
-          "awayTeam": "Coventry City",
-          "startTime": "2026-08-21T19:00:00Z",
+          "eventId": "1028072408",
+          "title": "Fulham - Chelsea",
+          "homeTeam": "Fulham",
+          "awayTeam": "Chelsea",
+          "startTime": "2026-08-24T19:00:00Z",
           "league": "Premier League",
           "odds": {
-            "home": 1.16,
-            "draw": 7.5,
-            "away": 13
+            "home": 3.25,
+            "draw": 3.6,
+            "away": 2.04
           },
-          "matchedQuery": "arsenal"
-        },
-        {
-          "eventId": "1028135663",
-          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
-          "homeTeam": "Club Comunicaciones (ARG)",
-          "awayTeam": "Arsenal de Sarandí",
-          "startTime": "2026-07-04T18:00:00Z",
-          "league": "Primera B Metropolitana",
-          "odds": {
-            "home": 2.95,
-            "draw": 2.95,
-            "away": 2.3
-          },
-          "matchedQuery": "arsenal"
+          "matchedQuery": "chelsea"
         },
         {
           "eventId": "1028072418",
@@ -79,18 +65,32 @@
           "matchedQuery": "manchester"
         },
         {
-          "eventId": "1028072408",
-          "title": "Fulham - Chelsea",
-          "homeTeam": "Fulham",
-          "awayTeam": "Chelsea",
-          "startTime": "2026-08-24T19:00:00Z",
+          "eventId": "1028072415",
+          "title": "Arsenal - Coventry City",
+          "homeTeam": "Arsenal",
+          "awayTeam": "Coventry City",
+          "startTime": "2026-08-21T19:00:00Z",
           "league": "Premier League",
           "odds": {
-            "home": 3.25,
-            "draw": 3.6,
-            "away": 2.04
+            "home": 1.16,
+            "draw": 7.5,
+            "away": 13
           },
-          "matchedQuery": "chelsea"
+          "matchedQuery": "arsenal"
+        },
+        {
+          "eventId": "1028135663",
+          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
+          "homeTeam": "Club Comunicaciones (ARG)",
+          "awayTeam": "Arsenal de Sarandí",
+          "startTime": "2026-07-04T18:00:00Z",
+          "league": "Primera B Metropolitana",
+          "odds": {
+            "home": 2.95,
+            "draw": 2.95,
+            "away": 2.3
+          },
+          "matchedQuery": "arsenal"
         },
         {
           "eventId": "1028072409",
@@ -119,6 +119,20 @@
             "away": 2.55
           },
           "matchedQuery": "tottenham"
+        },
+        {
+          "eventId": "1028072413",
+          "title": "Nottingham - Leeds",
+          "homeTeam": "Nottingham",
+          "awayTeam": "Leeds",
+          "startTime": "2026-08-22T14:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.4,
+            "away": 3.1
+          },
+          "matchedQuery": "leeds"
         },
         {
           "eventId": "1027586481",
@@ -169,20 +183,6 @@
             "away": 3.5
           },
           "matchedQuery": "everton"
-        },
-        {
-          "eventId": "1028072413",
-          "title": "Nottingham - Leeds",
-          "homeTeam": "Nottingham",
-          "awayTeam": "Leeds",
-          "startTime": "2026-08-22T14:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.2,
-            "draw": 3.4,
-            "away": 3.1
-          },
-          "matchedQuery": "leeds"
         },
         {
           "eventId": "1028147717",
@@ -293,7 +293,7 @@
             "draw": 3.6,
             "away": 2.85
           },
-          "matchedQuery": "brighton"
+          "matchedQuery": "aston villa"
         },
         {
           "eventId": "1028147753",
@@ -2072,53 +2072,11 @@
           "startTime": "2026-06-30T08:26:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 1.61,
-            "draw": 6.75,
-            "away": 2.75
+            "home": 10,
+            "draw": 9.5,
+            "away": 1.12
           },
-          "matchedQuery": "finland",
-          "totals": [
-            {
-              "line": 5.5,
-              "over": 1.11,
-              "under": 5.75
-            },
-            {
-              "line": 10.5,
-              "over": 4.2,
-              "under": 1.19
-            },
-            {
-              "line": 9.5,
-              "over": 2.8,
-              "under": 1.38
-            },
-            {
-              "line": 7.5,
-              "over": 1.54,
-              "under": 2.28
-            },
-            {
-              "line": 6.5,
-              "over": 1.26,
-              "under": 3.5
-            },
-            {
-              "line": 8.5,
-              "over": 1.96,
-              "under": 1.73
-            },
-            {
-              "line": 12.5,
-              "over": 12,
-              "under": 1.02
-            },
-            {
-              "line": 11.5,
-              "over": 7,
-              "under": 1.07
-            }
-          ]
+          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197268",
@@ -2189,16 +2147,16 @@
           "startTime": "2026-06-30T09:22:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 3.5,
-            "draw": 8,
-            "away": 1.41
+            "home": 3.3,
+            "draw": 8.5,
+            "away": 1.44
           },
           "matchedQuery": "finland",
           "totals": [
             {
               "line": 5.5,
-              "over": 1.23,
-              "under": 3.75
+              "over": 1.24,
+              "under": 3.6
             },
             {
               "line": 9.5,
@@ -2212,18 +2170,18 @@
             },
             {
               "line": 4.5,
-              "over": 1.07,
-              "under": 7
+              "over": 1.08,
+              "under": 6.75
             },
             {
               "line": 6.5,
-              "over": 1.47,
-              "under": 2.48
+              "over": 1.49,
+              "under": 2.43
             },
             {
               "line": 8.5,
               "over": 2.65,
-              "under": 1.42
+              "under": 1.41
             },
             {
               "line": 11.5,
@@ -2232,24 +2190,10 @@
             },
             {
               "line": 7.5,
-              "over": 1.94,
-              "under": 1.75
+              "over": 1.96,
+              "under": 1.73
             }
           ]
-        },
-        {
-          "eventId": "1028197115",
-          "title": "Portugal (Mqrkkkkkk) - Finland (desicom)",
-          "homeTeam": "Portugal (Mqrkkkkkk)",
-          "awayTeam": "Finland (desicom)",
-          "startTime": "2026-06-30T08:12:00Z",
-          "league": "CLA World Cup (2x5 min)",
-          "odds": {
-            "home": 1.23,
-            "draw": 8.5,
-            "away": 5.5
-          },
-          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197118",
@@ -3081,6 +3025,42 @@
           "matchedQuery": "premier league"
         },
         {
+          "eventId": "1027384080",
+          "title": "Defence Force SC (ETP) - Hadiya Hosaena",
+          "homeTeam": "Defence Force SC (ETP)",
+          "awayTeam": "Hadiya Hosaena",
+          "startTime": "2026-07-03T13:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.98,
+            "draw": 3.05,
+            "away": 3.55
+          },
+          "matchedQuery": "premier league",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4,
+              "under": 1.18
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.53
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.4
+            }
+          ]
+        },
+        {
           "eventId": "1027370979",
           "title": "Ethiopia Nigd Bank - Bahir Dar FC",
           "homeTeam": "Ethiopia Nigd Bank",
@@ -3121,7 +3101,7 @@
           "title": "Fasil Kenema SC - Ethiopian Medhin",
           "homeTeam": "Fasil Kenema SC",
           "awayTeam": "Ethiopian Medhin",
-          "startTime": "2026-07-03T15:00:00Z",
+          "startTime": "2026-07-01T15:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -3157,7 +3137,7 @@
           "title": "Hawassa Kima FC - Adama City",
           "homeTeam": "Hawassa Kima FC",
           "awayTeam": "Adama City",
-          "startTime": "2026-07-04T10:00:00Z",
+          "startTime": "2026-07-02T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.12,
@@ -3193,7 +3173,7 @@
           "title": "Mekele 70 Enderta FC - Negelle Arsi",
           "homeTeam": "Mekele 70 Enderta FC",
           "awayTeam": "Negelle Arsi",
-          "startTime": "2026-07-03T10:00:00Z",
+          "startTime": "2026-07-01T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -3243,7 +3223,7 @@
           "title": "Wolaitta Dicha SC - Ethiopian Coffee SC",
           "homeTeam": "Wolaitta Dicha SC",
           "awayTeam": "Ethiopian Coffee SC",
-          "startTime": "2026-07-02T12:00:00Z",
+          "startTime": "2026-07-03T13:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.05,
@@ -4996,20 +4976,6 @@
           "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1028000165",
-          "title": "Sarmiento - Boca Juniors",
-          "homeTeam": "Sarmiento",
-          "awayTeam": "Boca Juniors",
-          "startTime": "2026-07-17T00:45:00Z",
-          "league": "Copa Argentina",
-          "odds": {
-            "home": 4.3,
-            "draw": 3.8,
-            "away": 1.7
-          },
-          "matchedQuery": "boca juniors"
-        },
-        {
           "eventId": "1028000164",
           "title": "River Plate - Aldosivi",
           "homeTeam": "River Plate",
@@ -5038,6 +5004,20 @@
           "matchedQuery": "river plate"
         },
         {
+          "eventId": "1028000165",
+          "title": "Sarmiento - Boca Juniors",
+          "homeTeam": "Sarmiento",
+          "awayTeam": "Boca Juniors",
+          "startTime": "2026-07-17T00:45:00Z",
+          "league": "Copa Argentina",
+          "odds": {
+            "home": 4.3,
+            "draw": 3.8,
+            "away": 1.7
+          },
+          "matchedQuery": "boca juniors"
+        },
+        {
           "eventId": "1027797392",
           "title": "Palmeiras-SP - Fortaleza-CE",
           "homeTeam": "Palmeiras-SP",
@@ -5052,20 +5032,6 @@
           "matchedQuery": "palmeiras"
         },
         {
-          "eventId": "1027797385",
-          "title": "Vasco da Gama-RJ - Fluminense-RJ",
-          "homeTeam": "Vasco da Gama-RJ",
-          "awayTeam": "Fluminense-RJ",
-          "startTime": "2026-08-01T20:30:00Z",
-          "league": "Copa do Brasil",
-          "odds": {
-            "home": 2.48,
-            "draw": 3.1,
-            "away": 2.63
-          },
-          "matchedQuery": "fluminense"
-        },
-        {
           "eventId": "1027797391",
           "title": "Santos-SP - Remo-PA",
           "homeTeam": "Santos-SP",
@@ -5078,6 +5044,20 @@
             "away": 4.75
           },
           "matchedQuery": "santos"
+        },
+        {
+          "eventId": "1027797385",
+          "title": "Vasco da Gama-RJ - Fluminense-RJ",
+          "homeTeam": "Vasco da Gama-RJ",
+          "awayTeam": "Fluminense-RJ",
+          "startTime": "2026-08-01T20:30:00Z",
+          "league": "Copa do Brasil",
+          "odds": {
+            "home": 2.48,
+            "draw": 3.1,
+            "away": 2.63
+          },
+          "matchedQuery": "fluminense"
         },
         {
           "eventId": "1027797393",
@@ -5127,12 +5107,12 @@
     "goldenbull": {
       "displayName": "Golden Bull",
       "baseUrl": "https://www.goldenbull.se",
-      "updatedAt": "2026-06-30T08:19:45.746Z",
+      "updatedAt": "2026-06-30T08:33:59.795Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 186,
-      "durationMs": 26963,
+      "durationMs": 27111,
       "events": [
         {
           "eventId": "1028072418",
@@ -5163,20 +5143,6 @@
           "matchedQuery": "manchester"
         },
         {
-          "eventId": "1028072408",
-          "title": "Fulham - Chelsea",
-          "homeTeam": "Fulham",
-          "awayTeam": "Chelsea",
-          "startTime": "2026-08-24T19:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 3.25,
-            "draw": 3.6,
-            "away": 2.04
-          },
-          "matchedQuery": "chelsea"
-        },
-        {
           "eventId": "1028072415",
           "title": "Arsenal - Coventry City",
           "homeTeam": "Arsenal",
@@ -5203,6 +5169,20 @@
             "away": 2.3
           },
           "matchedQuery": "arsenal"
+        },
+        {
+          "eventId": "1028072408",
+          "title": "Fulham - Chelsea",
+          "homeTeam": "Fulham",
+          "awayTeam": "Chelsea",
+          "startTime": "2026-08-24T19:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 3.25,
+            "draw": 3.6,
+            "away": 2.04
+          },
+          "matchedQuery": "chelsea"
         },
         {
           "eventId": "1028072409",
@@ -5939,6 +5919,20 @@
           "matchedQuery": "napoli"
         },
         {
+          "eventId": "1027911059",
+          "title": "Roma - Fiorentina",
+          "homeTeam": "Roma",
+          "awayTeam": "Fiorentina",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 6.1
+          },
+          "matchedQuery": "fiorentina"
+        },
+        {
           "eventId": "1027911063",
           "title": "Bologna - Lazio",
           "homeTeam": "Bologna",
@@ -5953,18 +5947,18 @@
           "matchedQuery": "lazio"
         },
         {
-          "eventId": "1027911059",
-          "title": "Roma - Fiorentina",
-          "homeTeam": "Roma",
-          "awayTeam": "Fiorentina",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "eventId": "1027118159",
+          "title": "Liga de Portoviejo - 9 De Octubre FC",
+          "homeTeam": "Liga de Portoviejo",
+          "awayTeam": "9 De Octubre FC",
+          "startTime": "2026-07-04T21:30:00Z",
+          "league": "Serie B",
           "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 6.1
+            "home": 2.63,
+            "draw": 2.88,
+            "away": 2.6
           },
-          "matchedQuery": "roma"
+          "matchedQuery": "porto"
         },
         {
           "eventId": "1027828720",
@@ -6020,20 +6014,6 @@
               "under": 4.7
             }
           ]
-        },
-        {
-          "eventId": "1027118159",
-          "title": "Liga de Portoviejo - 9 De Octubre FC",
-          "homeTeam": "Liga de Portoviejo",
-          "awayTeam": "9 De Octubre FC",
-          "startTime": "2026-07-04T21:30:00Z",
-          "league": "Serie B",
-          "odds": {
-            "home": 2.63,
-            "draw": 2.88,
-            "away": 2.6
-          },
-          "matchedQuery": "porto"
         },
         {
           "eventId": "1028163544",
@@ -7184,53 +7164,11 @@
           "startTime": "2026-06-30T08:26:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 1.61,
-            "draw": 6.75,
-            "away": 2.75
+            "home": 10,
+            "draw": 9.5,
+            "away": 1.12
           },
-          "matchedQuery": "finland",
-          "totals": [
-            {
-              "line": 5.5,
-              "over": 1.11,
-              "under": 5.75
-            },
-            {
-              "line": 10.5,
-              "over": 4.2,
-              "under": 1.19
-            },
-            {
-              "line": 9.5,
-              "over": 2.8,
-              "under": 1.38
-            },
-            {
-              "line": 7.5,
-              "over": 1.54,
-              "under": 2.28
-            },
-            {
-              "line": 6.5,
-              "over": 1.26,
-              "under": 3.5
-            },
-            {
-              "line": 8.5,
-              "over": 1.96,
-              "under": 1.73
-            },
-            {
-              "line": 12.5,
-              "over": 12,
-              "under": 1.02
-            },
-            {
-              "line": 11.5,
-              "over": 7,
-              "under": 1.07
-            }
-          ]
+          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197268",
@@ -7301,16 +7239,16 @@
           "startTime": "2026-06-30T09:22:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 3.5,
-            "draw": 8,
-            "away": 1.41
+            "home": 3.3,
+            "draw": 8.5,
+            "away": 1.44
           },
           "matchedQuery": "finland",
           "totals": [
             {
               "line": 5.5,
-              "over": 1.23,
-              "under": 3.75
+              "over": 1.24,
+              "under": 3.6
             },
             {
               "line": 9.5,
@@ -7324,18 +7262,18 @@
             },
             {
               "line": 4.5,
-              "over": 1.07,
-              "under": 7
+              "over": 1.08,
+              "under": 6.75
             },
             {
               "line": 6.5,
-              "over": 1.47,
-              "under": 2.48
+              "over": 1.49,
+              "under": 2.43
             },
             {
               "line": 8.5,
               "over": 2.65,
-              "under": 1.42
+              "under": 1.41
             },
             {
               "line": 11.5,
@@ -7344,24 +7282,10 @@
             },
             {
               "line": 7.5,
-              "over": 1.94,
-              "under": 1.75
+              "over": 1.96,
+              "under": 1.73
             }
           ]
-        },
-        {
-          "eventId": "1028197115",
-          "title": "Portugal (Mqrkkkkkk) - Finland (desicom)",
-          "homeTeam": "Portugal (Mqrkkkkkk)",
-          "awayTeam": "Finland (desicom)",
-          "startTime": "2026-06-30T08:12:00Z",
-          "league": "CLA World Cup (2x5 min)",
-          "odds": {
-            "home": 1.23,
-            "draw": 8.5,
-            "away": 5.5
-          },
-          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197118",
@@ -8193,6 +8117,42 @@
           "matchedQuery": "premier league"
         },
         {
+          "eventId": "1027384080",
+          "title": "Defence Force SC (ETP) - Hadiya Hosaena",
+          "homeTeam": "Defence Force SC (ETP)",
+          "awayTeam": "Hadiya Hosaena",
+          "startTime": "2026-07-03T13:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.98,
+            "draw": 3.05,
+            "away": 3.55
+          },
+          "matchedQuery": "premier league",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4,
+              "under": 1.18
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.53
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.4
+            }
+          ]
+        },
+        {
           "eventId": "1027370979",
           "title": "Ethiopia Nigd Bank - Bahir Dar FC",
           "homeTeam": "Ethiopia Nigd Bank",
@@ -8233,7 +8193,7 @@
           "title": "Fasil Kenema SC - Ethiopian Medhin",
           "homeTeam": "Fasil Kenema SC",
           "awayTeam": "Ethiopian Medhin",
-          "startTime": "2026-07-03T15:00:00Z",
+          "startTime": "2026-07-01T15:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -8269,7 +8229,7 @@
           "title": "Hawassa Kima FC - Adama City",
           "homeTeam": "Hawassa Kima FC",
           "awayTeam": "Adama City",
-          "startTime": "2026-07-04T10:00:00Z",
+          "startTime": "2026-07-02T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.12,
@@ -8305,7 +8265,7 @@
           "title": "Mekele 70 Enderta FC - Negelle Arsi",
           "homeTeam": "Mekele 70 Enderta FC",
           "awayTeam": "Negelle Arsi",
-          "startTime": "2026-07-03T10:00:00Z",
+          "startTime": "2026-07-01T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -8355,7 +8315,7 @@
           "title": "Wolaitta Dicha SC - Ethiopian Coffee SC",
           "homeTeam": "Wolaitta Dicha SC",
           "awayTeam": "Ethiopian Coffee SC",
-          "startTime": "2026-07-02T12:00:00Z",
+          "startTime": "2026-07-03T13:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.05,
@@ -8385,717 +8345,6 @@
               "under": 1.15
             }
           ]
-        },
-        {
-          "eventId": "1027510086",
-          "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
-          "homeTeam": "FK Atmosfera Mazeikiai",
-          "awayTeam": "BE1 Nfa",
-          "startTime": "2026-07-01T16:00:00Z",
-          "league": "1 Lyga",
-          "odds": {
-            "home": 2.6,
-            "draw": 3.35,
-            "away": 2.35
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 2.43,
-              "under": 1.45
-            },
-            {
-              "line": 2.5,
-              "over": 1.58,
-              "under": 2.15
-            },
-            {
-              "line": 1.5,
-              "over": 1.16,
-              "under": 4.2
-            },
-            {
-              "line": 4.5,
-              "over": 4.2,
-              "under": 1.16
-            }
-          ]
-        },
-        {
-          "eventId": "1027510088",
-          "title": "FK Vilnus BFA - Ekranas",
-          "homeTeam": "FK Vilnus BFA",
-          "awayTeam": "Ekranas",
-          "startTime": "2026-07-02T16:00:00Z",
-          "league": "1 Lyga",
-          "odds": {
-            "home": 1.82,
-            "draw": 3.4,
-            "away": 3.75
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 4.5,
-              "over": 5.2,
-              "under": 1.1
-            },
-            {
-              "line": 1.5,
-              "over": 1.24,
-              "under": 3.4
-            },
-            {
-              "line": 2.5,
-              "over": 1.78,
-              "under": 1.86
-            },
-            {
-              "line": 3.5,
-              "over": 2.95,
-              "under": 1.32
-            }
-          ]
-        },
-        {
-          "eventId": "1027510085",
-          "title": "Šiauliai II - FK Tauras Tauragė",
-          "homeTeam": "Šiauliai II",
-          "awayTeam": "FK Tauras Tauragė",
-          "startTime": "2026-07-01T15:00:00Z",
-          "league": "1 Lyga",
-          "odds": {
-            "home": 6,
-            "draw": 4.75,
-            "away": 1.37
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 4.5,
-              "over": 2.63,
-              "under": 1.38
-            },
-            {
-              "line": 5.5,
-              "over": 4.25,
-              "under": 1.16
-            },
-            {
-              "line": 2.5,
-              "over": 1.27,
-              "under": 3.2
-            },
-            {
-              "line": 1.5,
-              "over": 1.07,
-              "under": 6.5
-            },
-            {
-              "line": 3.5,
-              "over": 1.72,
-              "under": 1.93
-            }
-          ]
-        },
-        {
-          "eventId": "1027510083",
-          "title": "Žalgiris Vilnius II - Hegelmann Litauen Kaunas B",
-          "homeTeam": "Žalgiris Vilnius II",
-          "awayTeam": "Hegelmann Litauen Kaunas B",
-          "startTime": "2026-07-02T15:00:00Z",
-          "league": "1 Lyga",
-          "odds": {
-            "home": 1.54,
-            "draw": 4,
-            "away": 4.75
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.12,
-              "under": 4.9
-            },
-            {
-              "line": 4.5,
-              "over": 3.55,
-              "under": 1.23
-            },
-            {
-              "line": 3.5,
-              "over": 2.12,
-              "under": 1.6
-            },
-            {
-              "line": 5.5,
-              "over": 6,
-              "under": 1.08
-            },
-            {
-              "line": 2.5,
-              "over": 1.43,
-              "under": 2.48
-            }
-          ]
-        },
-        {
-          "eventId": "1027882252",
-          "title": "Džiugas Telšiai - FK Kauno Zalgiris",
-          "homeTeam": "Džiugas Telšiai",
-          "awayTeam": "FK Kauno Zalgiris",
-          "startTime": "2026-07-03T16:00:00Z",
-          "league": "A Lyga",
-          "odds": {
-            "home": 4.6,
-            "draw": 3.5,
-            "away": 1.58
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 2.95,
-              "under": 1.3
-            },
-            {
-              "line": 1.5,
-              "over": 1.24,
-              "under": 3.4
-            },
-            {
-              "line": 2.5,
-              "over": 1.79,
-              "under": 1.85
-            },
-            {
-              "line": 4.5,
-              "over": 5.2,
-              "under": 1.1
-            }
-          ]
-        },
-        {
-          "eventId": "1027882254",
-          "title": "FK Panevezys - Hegelmann Litauen Kaunas",
-          "homeTeam": "FK Panevezys",
-          "awayTeam": "Hegelmann Litauen Kaunas",
-          "startTime": "2026-07-04T13:00:00Z",
-          "league": "A Lyga",
-          "odds": {
-            "home": 2.35,
-            "draw": 3,
-            "away": 2.63
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1028147688",
-          "title": "Barnsley - Wigan Athletic",
-          "homeTeam": "Barnsley",
-          "awayTeam": "Wigan Athletic",
-          "startTime": "2026-08-08T16:00:00Z",
-          "league": "EFL Cup",
-          "odds": {
-            "home": 2.12,
-            "draw": 3.25,
-            "away": 3.05
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1028143576",
-          "title": "Cambridge United - Wigan Athletic",
-          "homeTeam": "Cambridge United",
-          "awayTeam": "Wigan Athletic",
-          "startTime": "2026-08-15T14:00:00Z",
-          "league": "League One",
-          "odds": {
-            "home": 2.38,
-            "draw": 3.1,
-            "away": 2.75
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548117",
-          "title": "Aucas - Guayaquil City FC",
-          "homeTeam": "Aucas",
-          "awayTeam": "Guayaquil City FC",
-          "startTime": "2026-07-12T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 1.42,
-            "draw": 4.2,
-            "away": 7.5
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548185",
-          "title": "Club Leones del Norte - Universidad Católica (ECU)",
-          "homeTeam": "Club Leones del Norte",
-          "awayTeam": "Universidad Católica (ECU)",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 3.85,
-            "draw": 3.3,
-            "away": 1.93
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548115",
-          "title": "Delfin SC - Emelec",
-          "homeTeam": "Delfin SC",
-          "awayTeam": "Emelec",
-          "startTime": "2026-07-02T00:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2.8,
-            "draw": 2.88,
-            "away": 2.65
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.48,
-              "under": 2.43
-            },
-            {
-              "line": 2.5,
-              "over": 2.55,
-              "under": 1.45
-            },
-            {
-              "line": 3.5,
-              "over": 4.8,
-              "under": 1.14
-            },
-            {
-              "line": 0.5,
-              "over": 1.09,
-              "under": 5.8
-            }
-          ]
-        },
-        {
-          "eventId": "1026548152",
-          "title": "Deportivo Cuenca - Aucas",
-          "homeTeam": "Deportivo Cuenca",
-          "awayTeam": "Aucas",
-          "startTime": "2026-07-12T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2.65,
-            "draw": 3.15,
-            "away": 2.55
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548162",
-          "title": "Guayaquil City FC - Delfin SC",
-          "homeTeam": "Guayaquil City FC",
-          "awayTeam": "Delfin SC",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2.2,
-            "draw": 2.9,
-            "away": 3.55
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548177",
-          "title": "Independiente del Valle - Manta FC",
-          "homeTeam": "Independiente del Valle",
-          "awayTeam": "Manta FC",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 1.23,
-            "draw": 5.6,
-            "away": 11.5
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548126",
-          "title": "LDU Quito - Libertad Loja",
-          "homeTeam": "LDU Quito",
-          "awayTeam": "Libertad Loja",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 1.34,
-            "draw": 4.8,
-            "away": 8
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548183",
-          "title": "Libertad Loja - Club Leones del Norte",
-          "homeTeam": "Libertad Loja",
-          "awayTeam": "Club Leones del Norte",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2,
-            "draw": 3.15,
-            "away": 3.8
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548118",
-          "title": "Macará - LDU Quito",
-          "homeTeam": "Macará",
-          "awayTeam": "LDU Quito",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 3.15,
-            "draw": 3.15,
-            "away": 2.23
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548164",
-          "title": "Manta FC - Orense SC",
-          "homeTeam": "Manta FC",
-          "awayTeam": "Orense SC",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2.55,
-            "draw": 3.05,
-            "away": 2.75
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548156",
-          "title": "Mushuc Runa - Independiente del Valle",
-          "homeTeam": "Mushuc Runa",
-          "awayTeam": "Independiente del Valle",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 3.2,
-            "draw": 3.35,
-            "away": 2.12
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548189",
-          "title": "Orense SC - Técnico Universitario",
-          "homeTeam": "Orense SC",
-          "awayTeam": "Técnico Universitario",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 1.91,
-            "draw": 3.25,
-            "away": 3.95
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548160",
-          "title": "Técnico Universitario - Macará",
-          "homeTeam": "Técnico Universitario",
-          "awayTeam": "Macará",
-          "startTime": "2026-07-12T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 2.25,
-            "draw": 3.05,
-            "away": 3.25
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026548192",
-          "title": "Universidad Católica (ECU) - Mushuc Runa",
-          "homeTeam": "Universidad Católica (ECU)",
-          "awayTeam": "Mushuc Runa",
-          "startTime": "2026-07-05T20:00:00Z",
-          "league": "Liga Pro",
-          "odds": {
-            "home": 1.47,
-            "draw": 4.35,
-            "away": 5.8
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026409247",
-          "title": "FC Nõmme United - Nõmme Kalju",
-          "homeTeam": "FC Nõmme United",
-          "awayTeam": "Nõmme Kalju",
-          "startTime": "2026-07-03T16:00:00Z",
-          "league": "Premium Liiga",
-          "odds": {
-            "home": 4.8,
-            "draw": 4.25,
-            "away": 1.52
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 5.5,
-              "over": 5.6,
-              "under": 1.08
-            },
-            {
-              "line": 4.5,
-              "over": 3.25,
-              "under": 1.26
-            },
-            {
-              "line": 2.5,
-              "over": 1.37,
-              "under": 2.7
-            },
-            {
-              "line": 1.5,
-              "over": 1.08,
-              "under": 5.5
-            },
-            {
-              "line": 3.5,
-              "over": 1.98,
-              "under": 1.68
-            }
-          ],
-          "ah": [
-            {
-              "line": 0.5,
-              "home": 2.32,
-              "away": 1.53
-            },
-            {
-              "line": 1.5,
-              "home": 1.52,
-              "away": 2.33
-            },
-            {
-              "line": -0.5,
-              "home": 4.4,
-              "away": 1.16
-            },
-            {
-              "line": -0.25,
-              "home": 4,
-              "away": 1.19
-            },
-            {
-              "line": 1,
-              "home": 1.83,
-              "away": 1.85
-            },
-            {
-              "line": 2.25,
-              "home": 1.22,
-              "away": 3.75
-            },
-            {
-              "line": 2.5,
-              "home": 1.19,
-              "away": 4.1
-            },
-            {
-              "line": 2,
-              "home": 1.25,
-              "away": 3.45
-            }
-          ]
-        },
-        {
-          "eventId": "1026409249",
-          "title": "JK Narva Trans - Levadia Tallinn",
-          "homeTeam": "JK Narva Trans",
-          "awayTeam": "Levadia Tallinn",
-          "startTime": "2026-07-04T16:00:00Z",
-          "league": "Premium Liiga",
-          "odds": {
-            "home": 14,
-            "draw": 6.75,
-            "away": 1.14
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026409259",
-          "title": "Kuressaare FC - Flora Tallinn",
-          "homeTeam": "Kuressaare FC",
-          "awayTeam": "Flora Tallinn",
-          "startTime": "2026-07-02T16:00:00Z",
-          "league": "Premium Liiga",
-          "odds": {
-            "home": 7,
-            "draw": 4.7,
-            "away": 1.34
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.11,
-              "under": 4.9
-            },
-            {
-              "line": 3.5,
-              "over": 2.18,
-              "under": 1.56
-            },
-            {
-              "line": 5.5,
-              "over": 6.4,
-              "under": 1.05
-            },
-            {
-              "line": 4.5,
-              "over": 3.65,
-              "under": 1.21
-            },
-            {
-              "line": 2.5,
-              "over": 1.45,
-              "under": 2.43
-            }
-          ],
-          "ah": [
-            {
-              "line": 1.5,
-              "home": 1.72,
-              "away": 1.98
-            },
-            {
-              "line": 2.5,
-              "home": 1.27,
-              "away": 3.35
-            },
-            {
-              "line": 1,
-              "home": 2.28,
-              "away": 1.54
-            },
-            {
-              "line": 0.5,
-              "home": 2.88,
-              "away": 1.35
-            },
-            {
-              "line": 2.25,
-              "home": 1.32,
-              "away": 3.05
-            },
-            {
-              "line": 2,
-              "home": 1.38,
-              "away": 2.75
-            }
-          ]
-        },
-        {
-          "eventId": "1026409251",
-          "title": "Paide Linnameeskond - Vaprus Pärnu",
-          "homeTeam": "Paide Linnameeskond",
-          "awayTeam": "Vaprus Pärnu",
-          "startTime": "2026-07-04T16:00:00Z",
-          "league": "Premium Liiga",
-          "odds": {
-            "home": 1.46,
-            "draw": 4.25,
-            "away": 5.6
-          },
-          "matchedQuery": "la liga"
-        },
-        {
-          "eventId": "1026658668",
-          "title": "Liaoning Shenyang Urban - Chongqing Tonglianglong",
-          "homeTeam": "Liaoning Shenyang Urban",
-          "awayTeam": "Chongqing Tonglianglong",
-          "startTime": "2026-07-04T11:00:00Z",
-          "league": "Super League",
-          "odds": {
-            "home": 2.08,
-            "draw": 3.3,
-            "away": 3.4
-          },
-          "matchedQuery": "la liga",
-          "totals": [
-            {
-              "line": 4.5,
-              "over": 6.4,
-              "under": 1.07
-            },
-            {
-              "line": 2.5,
-              "over": 1.98,
-              "under": 1.72
-            },
-            {
-              "line": 3.5,
-              "over": 3.45,
-              "under": 1.26
-            },
-            {
-              "line": 1.5,
-              "over": 1.3,
-              "under": 3.1
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.5,
-              "home": 2,
-              "away": 1.7
-            },
-            {
-              "line": -1.5,
-              "home": 3.8,
-              "away": 1.22
-            },
-            {
-              "line": -1.25,
-              "home": 3.4,
-              "away": 1.26
-            },
-            {
-              "line": 0.5,
-              "home": 1.3,
-              "away": 3.2
-            },
-            {
-              "line": -1,
-              "home": 3,
-              "away": 1.32
-            }
-          ]
-        },
-        {
-          "eventId": "1026090150",
-          "title": "Las Vegas Lights FC - El Paso Locomotive FC",
-          "homeTeam": "Las Vegas Lights FC",
-          "awayTeam": "El Paso Locomotive FC",
-          "startTime": "2026-07-05T02:30:00Z",
-          "league": "USL Championship",
-          "odds": {
-            "home": 2.63,
-            "draw": 3.25,
-            "away": 2.35
-          },
-          "matchedQuery": "la liga"
         },
         {
           "eventId": "1025985711",
@@ -9896,6 +9145,717 @@
               "under": 1.17
             }
           ]
+        },
+        {
+          "eventId": "1027510086",
+          "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
+          "homeTeam": "FK Atmosfera Mazeikiai",
+          "awayTeam": "BE1 Nfa",
+          "startTime": "2026-07-01T16:00:00Z",
+          "league": "1 Lyga",
+          "odds": {
+            "home": 2.6,
+            "draw": 3.35,
+            "away": 2.35
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 2.43,
+              "under": 1.45
+            },
+            {
+              "line": 2.5,
+              "over": 1.58,
+              "under": 2.15
+            },
+            {
+              "line": 1.5,
+              "over": 1.16,
+              "under": 4.2
+            },
+            {
+              "line": 4.5,
+              "over": 4.2,
+              "under": 1.16
+            }
+          ]
+        },
+        {
+          "eventId": "1027510088",
+          "title": "FK Vilnus BFA - Ekranas",
+          "homeTeam": "FK Vilnus BFA",
+          "awayTeam": "Ekranas",
+          "startTime": "2026-07-02T16:00:00Z",
+          "league": "1 Lyga",
+          "odds": {
+            "home": 1.82,
+            "draw": 3.4,
+            "away": 3.75
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 4.5,
+              "over": 5.2,
+              "under": 1.1
+            },
+            {
+              "line": 1.5,
+              "over": 1.24,
+              "under": 3.4
+            },
+            {
+              "line": 2.5,
+              "over": 1.78,
+              "under": 1.86
+            },
+            {
+              "line": 3.5,
+              "over": 2.95,
+              "under": 1.32
+            }
+          ]
+        },
+        {
+          "eventId": "1027510085",
+          "title": "Šiauliai II - FK Tauras Tauragė",
+          "homeTeam": "Šiauliai II",
+          "awayTeam": "FK Tauras Tauragė",
+          "startTime": "2026-07-01T15:00:00Z",
+          "league": "1 Lyga",
+          "odds": {
+            "home": 6,
+            "draw": 4.75,
+            "away": 1.37
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 4.5,
+              "over": 2.63,
+              "under": 1.38
+            },
+            {
+              "line": 5.5,
+              "over": 4.25,
+              "under": 1.16
+            },
+            {
+              "line": 2.5,
+              "over": 1.27,
+              "under": 3.2
+            },
+            {
+              "line": 1.5,
+              "over": 1.07,
+              "under": 6.5
+            },
+            {
+              "line": 3.5,
+              "over": 1.72,
+              "under": 1.93
+            }
+          ]
+        },
+        {
+          "eventId": "1027510083",
+          "title": "Žalgiris Vilnius II - Hegelmann Litauen Kaunas B",
+          "homeTeam": "Žalgiris Vilnius II",
+          "awayTeam": "Hegelmann Litauen Kaunas B",
+          "startTime": "2026-07-02T15:00:00Z",
+          "league": "1 Lyga",
+          "odds": {
+            "home": 1.54,
+            "draw": 4,
+            "away": 4.75
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.12,
+              "under": 4.9
+            },
+            {
+              "line": 4.5,
+              "over": 3.55,
+              "under": 1.23
+            },
+            {
+              "line": 3.5,
+              "over": 2.12,
+              "under": 1.6
+            },
+            {
+              "line": 5.5,
+              "over": 6,
+              "under": 1.08
+            },
+            {
+              "line": 2.5,
+              "over": 1.43,
+              "under": 2.48
+            }
+          ]
+        },
+        {
+          "eventId": "1027882252",
+          "title": "Džiugas Telšiai - FK Kauno Zalgiris",
+          "homeTeam": "Džiugas Telšiai",
+          "awayTeam": "FK Kauno Zalgiris",
+          "startTime": "2026-07-03T16:00:00Z",
+          "league": "A Lyga",
+          "odds": {
+            "home": 4.6,
+            "draw": 3.5,
+            "away": 1.58
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 2.95,
+              "under": 1.3
+            },
+            {
+              "line": 1.5,
+              "over": 1.24,
+              "under": 3.4
+            },
+            {
+              "line": 2.5,
+              "over": 1.79,
+              "under": 1.85
+            },
+            {
+              "line": 4.5,
+              "over": 5.2,
+              "under": 1.1
+            }
+          ]
+        },
+        {
+          "eventId": "1027882254",
+          "title": "FK Panevezys - Hegelmann Litauen Kaunas",
+          "homeTeam": "FK Panevezys",
+          "awayTeam": "Hegelmann Litauen Kaunas",
+          "startTime": "2026-07-04T13:00:00Z",
+          "league": "A Lyga",
+          "odds": {
+            "home": 2.35,
+            "draw": 3,
+            "away": 2.63
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1028147688",
+          "title": "Barnsley - Wigan Athletic",
+          "homeTeam": "Barnsley",
+          "awayTeam": "Wigan Athletic",
+          "startTime": "2026-08-08T16:00:00Z",
+          "league": "EFL Cup",
+          "odds": {
+            "home": 2.12,
+            "draw": 3.25,
+            "away": 3.05
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1028143576",
+          "title": "Cambridge United - Wigan Athletic",
+          "homeTeam": "Cambridge United",
+          "awayTeam": "Wigan Athletic",
+          "startTime": "2026-08-15T14:00:00Z",
+          "league": "League One",
+          "odds": {
+            "home": 2.38,
+            "draw": 3.1,
+            "away": 2.75
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548117",
+          "title": "Aucas - Guayaquil City FC",
+          "homeTeam": "Aucas",
+          "awayTeam": "Guayaquil City FC",
+          "startTime": "2026-07-12T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 1.42,
+            "draw": 4.2,
+            "away": 7.5
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548185",
+          "title": "Club Leones del Norte - Universidad Católica (ECU)",
+          "homeTeam": "Club Leones del Norte",
+          "awayTeam": "Universidad Católica (ECU)",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 3.85,
+            "draw": 3.3,
+            "away": 1.93
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548115",
+          "title": "Delfin SC - Emelec",
+          "homeTeam": "Delfin SC",
+          "awayTeam": "Emelec",
+          "startTime": "2026-07-02T00:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2.8,
+            "draw": 2.88,
+            "away": 2.65
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.48,
+              "under": 2.43
+            },
+            {
+              "line": 2.5,
+              "over": 2.55,
+              "under": 1.45
+            },
+            {
+              "line": 3.5,
+              "over": 4.8,
+              "under": 1.14
+            },
+            {
+              "line": 0.5,
+              "over": 1.09,
+              "under": 5.8
+            }
+          ]
+        },
+        {
+          "eventId": "1026548152",
+          "title": "Deportivo Cuenca - Aucas",
+          "homeTeam": "Deportivo Cuenca",
+          "awayTeam": "Aucas",
+          "startTime": "2026-07-12T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2.65,
+            "draw": 3.15,
+            "away": 2.55
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548162",
+          "title": "Guayaquil City FC - Delfin SC",
+          "homeTeam": "Guayaquil City FC",
+          "awayTeam": "Delfin SC",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2.2,
+            "draw": 2.9,
+            "away": 3.55
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548177",
+          "title": "Independiente del Valle - Manta FC",
+          "homeTeam": "Independiente del Valle",
+          "awayTeam": "Manta FC",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 1.23,
+            "draw": 5.6,
+            "away": 11.5
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548126",
+          "title": "LDU Quito - Libertad Loja",
+          "homeTeam": "LDU Quito",
+          "awayTeam": "Libertad Loja",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 1.34,
+            "draw": 4.8,
+            "away": 8
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548183",
+          "title": "Libertad Loja - Club Leones del Norte",
+          "homeTeam": "Libertad Loja",
+          "awayTeam": "Club Leones del Norte",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2,
+            "draw": 3.15,
+            "away": 3.8
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548118",
+          "title": "Macará - LDU Quito",
+          "homeTeam": "Macará",
+          "awayTeam": "LDU Quito",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 3.15,
+            "draw": 3.15,
+            "away": 2.23
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548164",
+          "title": "Manta FC - Orense SC",
+          "homeTeam": "Manta FC",
+          "awayTeam": "Orense SC",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2.55,
+            "draw": 3.05,
+            "away": 2.75
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548156",
+          "title": "Mushuc Runa - Independiente del Valle",
+          "homeTeam": "Mushuc Runa",
+          "awayTeam": "Independiente del Valle",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 3.2,
+            "draw": 3.35,
+            "away": 2.12
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548189",
+          "title": "Orense SC - Técnico Universitario",
+          "homeTeam": "Orense SC",
+          "awayTeam": "Técnico Universitario",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 1.91,
+            "draw": 3.25,
+            "away": 3.95
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548160",
+          "title": "Técnico Universitario - Macará",
+          "homeTeam": "Técnico Universitario",
+          "awayTeam": "Macará",
+          "startTime": "2026-07-12T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.05,
+            "away": 3.25
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026548192",
+          "title": "Universidad Católica (ECU) - Mushuc Runa",
+          "homeTeam": "Universidad Católica (ECU)",
+          "awayTeam": "Mushuc Runa",
+          "startTime": "2026-07-05T20:00:00Z",
+          "league": "Liga Pro",
+          "odds": {
+            "home": 1.47,
+            "draw": 4.35,
+            "away": 5.8
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026409247",
+          "title": "FC Nõmme United - Nõmme Kalju",
+          "homeTeam": "FC Nõmme United",
+          "awayTeam": "Nõmme Kalju",
+          "startTime": "2026-07-03T16:00:00Z",
+          "league": "Premium Liiga",
+          "odds": {
+            "home": 4.8,
+            "draw": 4.25,
+            "away": 1.52
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 5.5,
+              "over": 5.6,
+              "under": 1.08
+            },
+            {
+              "line": 4.5,
+              "over": 3.25,
+              "under": 1.26
+            },
+            {
+              "line": 2.5,
+              "over": 1.37,
+              "under": 2.7
+            },
+            {
+              "line": 1.5,
+              "over": 1.08,
+              "under": 5.5
+            },
+            {
+              "line": 3.5,
+              "over": 1.98,
+              "under": 1.68
+            }
+          ],
+          "ah": [
+            {
+              "line": 0.5,
+              "home": 2.32,
+              "away": 1.53
+            },
+            {
+              "line": 1.5,
+              "home": 1.52,
+              "away": 2.33
+            },
+            {
+              "line": -0.5,
+              "home": 4.4,
+              "away": 1.16
+            },
+            {
+              "line": -0.25,
+              "home": 4,
+              "away": 1.19
+            },
+            {
+              "line": 1,
+              "home": 1.83,
+              "away": 1.85
+            },
+            {
+              "line": 2.25,
+              "home": 1.22,
+              "away": 3.75
+            },
+            {
+              "line": 2.5,
+              "home": 1.19,
+              "away": 4.1
+            },
+            {
+              "line": 2,
+              "home": 1.25,
+              "away": 3.45
+            }
+          ]
+        },
+        {
+          "eventId": "1026409249",
+          "title": "JK Narva Trans - Levadia Tallinn",
+          "homeTeam": "JK Narva Trans",
+          "awayTeam": "Levadia Tallinn",
+          "startTime": "2026-07-04T16:00:00Z",
+          "league": "Premium Liiga",
+          "odds": {
+            "home": 14,
+            "draw": 6.75,
+            "away": 1.14
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026409259",
+          "title": "Kuressaare FC - Flora Tallinn",
+          "homeTeam": "Kuressaare FC",
+          "awayTeam": "Flora Tallinn",
+          "startTime": "2026-07-02T16:00:00Z",
+          "league": "Premium Liiga",
+          "odds": {
+            "home": 7,
+            "draw": 4.7,
+            "away": 1.34
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.11,
+              "under": 4.9
+            },
+            {
+              "line": 3.5,
+              "over": 2.18,
+              "under": 1.56
+            },
+            {
+              "line": 5.5,
+              "over": 6.4,
+              "under": 1.05
+            },
+            {
+              "line": 4.5,
+              "over": 3.65,
+              "under": 1.21
+            },
+            {
+              "line": 2.5,
+              "over": 1.45,
+              "under": 2.43
+            }
+          ],
+          "ah": [
+            {
+              "line": 1.5,
+              "home": 1.72,
+              "away": 1.98
+            },
+            {
+              "line": 2.5,
+              "home": 1.27,
+              "away": 3.35
+            },
+            {
+              "line": 1,
+              "home": 2.28,
+              "away": 1.54
+            },
+            {
+              "line": 0.5,
+              "home": 2.88,
+              "away": 1.35
+            },
+            {
+              "line": 2.25,
+              "home": 1.32,
+              "away": 3.05
+            },
+            {
+              "line": 2,
+              "home": 1.38,
+              "away": 2.75
+            }
+          ]
+        },
+        {
+          "eventId": "1026409251",
+          "title": "Paide Linnameeskond - Vaprus Pärnu",
+          "homeTeam": "Paide Linnameeskond",
+          "awayTeam": "Vaprus Pärnu",
+          "startTime": "2026-07-04T16:00:00Z",
+          "league": "Premium Liiga",
+          "odds": {
+            "home": 1.46,
+            "draw": 4.25,
+            "away": 5.6
+          },
+          "matchedQuery": "la liga"
+        },
+        {
+          "eventId": "1026658668",
+          "title": "Liaoning Shenyang Urban - Chongqing Tonglianglong",
+          "homeTeam": "Liaoning Shenyang Urban",
+          "awayTeam": "Chongqing Tonglianglong",
+          "startTime": "2026-07-04T11:00:00Z",
+          "league": "Super League",
+          "odds": {
+            "home": 2.08,
+            "draw": 3.3,
+            "away": 3.4
+          },
+          "matchedQuery": "la liga",
+          "totals": [
+            {
+              "line": 4.5,
+              "over": 6.4,
+              "under": 1.07
+            },
+            {
+              "line": 2.5,
+              "over": 1.98,
+              "under": 1.72
+            },
+            {
+              "line": 3.5,
+              "over": 3.45,
+              "under": 1.26
+            },
+            {
+              "line": 1.5,
+              "over": 1.3,
+              "under": 3.1
+            }
+          ],
+          "ah": [
+            {
+              "line": -0.5,
+              "home": 2,
+              "away": 1.7
+            },
+            {
+              "line": -1.5,
+              "home": 3.8,
+              "away": 1.22
+            },
+            {
+              "line": -1.25,
+              "home": 3.4,
+              "away": 1.26
+            },
+            {
+              "line": 0.5,
+              "home": 1.3,
+              "away": 3.2
+            },
+            {
+              "line": -1,
+              "home": 3,
+              "away": 1.32
+            }
+          ]
+        },
+        {
+          "eventId": "1026090150",
+          "title": "Las Vegas Lights FC - El Paso Locomotive FC",
+          "homeTeam": "Las Vegas Lights FC",
+          "awayTeam": "El Paso Locomotive FC",
+          "startTime": "2026-07-05T02:30:00Z",
+          "league": "USL Championship",
+          "odds": {
+            "home": 2.63,
+            "draw": 3.25,
+            "away": 2.35
+          },
+          "matchedQuery": "la liga"
         },
         {
           "eventId": "1027831555",
@@ -10164,20 +10124,6 @@
           "matchedQuery": "palmeiras"
         },
         {
-          "eventId": "1027797385",
-          "title": "Vasco da Gama-RJ - Fluminense-RJ",
-          "homeTeam": "Vasco da Gama-RJ",
-          "awayTeam": "Fluminense-RJ",
-          "startTime": "2026-08-01T20:30:00Z",
-          "league": "Copa do Brasil",
-          "odds": {
-            "home": 2.48,
-            "draw": 3.1,
-            "away": 2.63
-          },
-          "matchedQuery": "fluminense"
-        },
-        {
           "eventId": "1027797391",
           "title": "Santos-SP - Remo-PA",
           "homeTeam": "Santos-SP",
@@ -10192,18 +10138,18 @@
           "matchedQuery": "santos"
         },
         {
-          "eventId": "1027797393",
-          "title": "Mirassol-SP - Grêmio",
-          "homeTeam": "Mirassol-SP",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-08-02T21:00:00Z",
+          "eventId": "1027797385",
+          "title": "Vasco da Gama-RJ - Fluminense-RJ",
+          "homeTeam": "Vasco da Gama-RJ",
+          "awayTeam": "Fluminense-RJ",
+          "startTime": "2026-08-01T20:30:00Z",
           "league": "Copa do Brasil",
           "odds": {
-            "home": 2.18,
+            "home": 2.48,
             "draw": 3.1,
-            "away": 3.05
+            "away": 2.63
           },
-          "matchedQuery": "gremio"
+          "matchedQuery": "fluminense"
         },
         {
           "eventId": "1026389396",
@@ -10218,6 +10164,20 @@
             "away": 1.77
           },
           "matchedQuery": "mls"
+        },
+        {
+          "eventId": "1027797393",
+          "title": "Mirassol-SP - Grêmio",
+          "homeTeam": "Mirassol-SP",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-08-02T21:00:00Z",
+          "league": "Copa do Brasil",
+          "odds": {
+            "home": 2.18,
+            "draw": 3.1,
+            "away": 3.05
+          },
+          "matchedQuery": "gremio"
         },
         {
           "eventId": "1028136775",
@@ -10239,41 +10199,13 @@
     "oneTwo": {
       "displayName": "1x2",
       "baseUrl": "https://www.1x2.se",
-      "updatedAt": "2026-06-30T08:20:12.799Z",
+      "updatedAt": "2026-06-30T08:34:26.940Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 186,
-      "durationMs": 27053,
+      "durationMs": 27144,
       "events": [
-        {
-          "eventId": "1028072415",
-          "title": "Arsenal - Coventry City",
-          "homeTeam": "Arsenal",
-          "awayTeam": "Coventry City",
-          "startTime": "2026-08-21T19:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 1.16,
-            "draw": 7.5,
-            "away": 13
-          },
-          "matchedQuery": "arsenal"
-        },
-        {
-          "eventId": "1028135663",
-          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
-          "homeTeam": "Club Comunicaciones (ARG)",
-          "awayTeam": "Arsenal de Sarandí",
-          "startTime": "2026-07-04T18:00:00Z",
-          "league": "Primera B Metropolitana",
-          "odds": {
-            "home": 2.95,
-            "draw": 2.95,
-            "away": 2.3
-          },
-          "matchedQuery": "arsenal"
-        },
         {
           "eventId": "1028072418",
           "title": "Hull - Manchester United",
@@ -10301,6 +10233,34 @@
             "away": 6.25
           },
           "matchedQuery": "manchester"
+        },
+        {
+          "eventId": "1028072415",
+          "title": "Arsenal - Coventry City",
+          "homeTeam": "Arsenal",
+          "awayTeam": "Coventry City",
+          "startTime": "2026-08-21T19:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.16,
+            "draw": 7.5,
+            "away": 13
+          },
+          "matchedQuery": "arsenal"
+        },
+        {
+          "eventId": "1028135663",
+          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
+          "homeTeam": "Club Comunicaciones (ARG)",
+          "awayTeam": "Arsenal de Sarandí",
+          "startTime": "2026-07-04T18:00:00Z",
+          "league": "Primera B Metropolitana",
+          "odds": {
+            "home": 2.95,
+            "draw": 2.95,
+            "away": 2.3
+          },
+          "matchedQuery": "arsenal"
         },
         {
           "eventId": "1028072408",
@@ -10343,6 +10303,20 @@
             "away": 2.25
           },
           "matchedQuery": "liverpool"
+        },
+        {
+          "eventId": "1028072413",
+          "title": "Nottingham - Leeds",
+          "homeTeam": "Nottingham",
+          "awayTeam": "Leeds",
+          "startTime": "2026-08-22T14:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.4,
+            "away": 3.1
+          },
+          "matchedQuery": "leeds"
         },
         {
           "eventId": "1027586481",
@@ -10393,20 +10367,6 @@
             "away": 3.5
           },
           "matchedQuery": "everton"
-        },
-        {
-          "eventId": "1028072413",
-          "title": "Nottingham - Leeds",
-          "homeTeam": "Nottingham",
-          "awayTeam": "Leeds",
-          "startTime": "2026-08-22T14:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.2,
-            "draw": 3.4,
-            "away": 3.1
-          },
-          "matchedQuery": "leeds"
         },
         {
           "eventId": "1028147717",
@@ -11051,20 +11011,6 @@
           "matchedQuery": "napoli"
         },
         {
-          "eventId": "1027911059",
-          "title": "Roma - Fiorentina",
-          "homeTeam": "Roma",
-          "awayTeam": "Fiorentina",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 6.1
-          },
-          "matchedQuery": "roma"
-        },
-        {
           "eventId": "1027911063",
           "title": "Bologna - Lazio",
           "homeTeam": "Bologna",
@@ -11077,6 +11023,20 @@
             "away": 3.5
           },
           "matchedQuery": "lazio"
+        },
+        {
+          "eventId": "1027911059",
+          "title": "Roma - Fiorentina",
+          "homeTeam": "Roma",
+          "awayTeam": "Fiorentina",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 6.1
+          },
+          "matchedQuery": "fiorentina"
         },
         {
           "eventId": "1027118159",
@@ -12296,53 +12256,11 @@
           "startTime": "2026-06-30T08:26:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 1.61,
-            "draw": 6.75,
-            "away": 2.75
+            "home": 10,
+            "draw": 9.5,
+            "away": 1.12
           },
-          "matchedQuery": "finland",
-          "totals": [
-            {
-              "line": 5.5,
-              "over": 1.11,
-              "under": 5.75
-            },
-            {
-              "line": 10.5,
-              "over": 4.2,
-              "under": 1.19
-            },
-            {
-              "line": 9.5,
-              "over": 2.8,
-              "under": 1.38
-            },
-            {
-              "line": 7.5,
-              "over": 1.54,
-              "under": 2.28
-            },
-            {
-              "line": 6.5,
-              "over": 1.26,
-              "under": 3.5
-            },
-            {
-              "line": 8.5,
-              "over": 1.96,
-              "under": 1.73
-            },
-            {
-              "line": 12.5,
-              "over": 12,
-              "under": 1.02
-            },
-            {
-              "line": 11.5,
-              "over": 7,
-              "under": 1.07
-            }
-          ]
+          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197268",
@@ -12413,16 +12331,16 @@
           "startTime": "2026-06-30T09:22:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 3.5,
-            "draw": 8,
-            "away": 1.41
+            "home": 3.3,
+            "draw": 8.5,
+            "away": 1.44
           },
           "matchedQuery": "finland",
           "totals": [
             {
               "line": 5.5,
-              "over": 1.23,
-              "under": 3.75
+              "over": 1.24,
+              "under": 3.6
             },
             {
               "line": 9.5,
@@ -12436,18 +12354,18 @@
             },
             {
               "line": 4.5,
-              "over": 1.07,
-              "under": 7
+              "over": 1.08,
+              "under": 6.75
             },
             {
               "line": 6.5,
-              "over": 1.47,
-              "under": 2.48
+              "over": 1.49,
+              "under": 2.43
             },
             {
               "line": 8.5,
               "over": 2.65,
-              "under": 1.42
+              "under": 1.41
             },
             {
               "line": 11.5,
@@ -12456,24 +12374,10 @@
             },
             {
               "line": 7.5,
-              "over": 1.94,
-              "under": 1.75
+              "over": 1.96,
+              "under": 1.73
             }
           ]
-        },
-        {
-          "eventId": "1028197115",
-          "title": "Portugal (Mqrkkkkkk) - Finland (desicom)",
-          "homeTeam": "Portugal (Mqrkkkkkk)",
-          "awayTeam": "Finland (desicom)",
-          "startTime": "2026-06-30T08:12:00Z",
-          "league": "CLA World Cup (2x5 min)",
-          "odds": {
-            "home": 1.23,
-            "draw": 8.5,
-            "away": 5.5
-          },
-          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197118",
@@ -13305,6 +13209,42 @@
           "matchedQuery": "premier league"
         },
         {
+          "eventId": "1027384080",
+          "title": "Defence Force SC (ETP) - Hadiya Hosaena",
+          "homeTeam": "Defence Force SC (ETP)",
+          "awayTeam": "Hadiya Hosaena",
+          "startTime": "2026-07-03T13:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.98,
+            "draw": 3.05,
+            "away": 3.55
+          },
+          "matchedQuery": "premier league",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4,
+              "under": 1.18
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.53
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.4
+            }
+          ]
+        },
+        {
           "eventId": "1027370979",
           "title": "Ethiopia Nigd Bank - Bahir Dar FC",
           "homeTeam": "Ethiopia Nigd Bank",
@@ -13345,7 +13285,7 @@
           "title": "Fasil Kenema SC - Ethiopian Medhin",
           "homeTeam": "Fasil Kenema SC",
           "awayTeam": "Ethiopian Medhin",
-          "startTime": "2026-07-03T15:00:00Z",
+          "startTime": "2026-07-01T15:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -13381,7 +13321,7 @@
           "title": "Hawassa Kima FC - Adama City",
           "homeTeam": "Hawassa Kima FC",
           "awayTeam": "Adama City",
-          "startTime": "2026-07-04T10:00:00Z",
+          "startTime": "2026-07-02T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.12,
@@ -13417,7 +13357,7 @@
           "title": "Mekele 70 Enderta FC - Negelle Arsi",
           "homeTeam": "Mekele 70 Enderta FC",
           "awayTeam": "Negelle Arsi",
-          "startTime": "2026-07-03T10:00:00Z",
+          "startTime": "2026-07-01T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -13467,7 +13407,7 @@
           "title": "Wolaitta Dicha SC - Ethiopian Coffee SC",
           "homeTeam": "Wolaitta Dicha SC",
           "awayTeam": "Ethiopian Coffee SC",
-          "startTime": "2026-07-02T12:00:00Z",
+          "startTime": "2026-07-03T13:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.05,
@@ -15010,104 +14950,6 @@
           ]
         },
         {
-          "eventId": "1027826394",
-          "title": "Boca Juniors - O'Higgins",
-          "homeTeam": "Boca Juniors",
-          "awayTeam": "O'Higgins",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 8
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828712",
-          "title": "Club Bolívar - Grêmio",
-          "homeTeam": "Club Bolívar",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.66,
-            "draw": 4.25,
-            "away": 4.25
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828730",
-          "title": "Independiente Medellín - Vasco da Gama-RJ",
-          "homeTeam": "Independiente Medellín",
-          "awayTeam": "Vasco da Gama-RJ",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 2.5,
-            "draw": 3.25,
-            "away": 2.75
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826399",
-          "title": "Independiente Santa Fe - Caracas FC",
-          "homeTeam": "Independiente Santa Fe",
-          "awayTeam": "Caracas FC",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.54,
-            "draw": 3.85,
-            "away": 6
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826400",
-          "title": "Lanús - Cienciano Cusco",
-          "homeTeam": "Lanús",
-          "awayTeam": "Cienciano Cusco",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.32,
-            "draw": 5.2,
-            "away": 8
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826396",
-          "title": "Nacional de Montevideo - Tigre",
-          "homeTeam": "Nacional de Montevideo",
-          "awayTeam": "Tigre",
-          "startTime": "2026-07-21T22:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.84,
-            "draw": 3.5,
-            "away": 4.1
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828737",
-          "title": "UCV FC - Santos-SP",
-          "homeTeam": "UCV FC",
-          "awayTeam": "Santos-SP",
-          "startTime": "2026-07-22T00:30:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 3.85,
-            "draw": 4.1,
-            "away": 1.75
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
           "eventId": "1027831555",
           "title": "Cruzeiro-MG - Flamengo-RJ",
           "homeTeam": "Cruzeiro-MG",
@@ -15218,6 +15060,104 @@
             "away": 3.25
           },
           "matchedQuery": "libertadores"
+        },
+        {
+          "eventId": "1027826394",
+          "title": "Boca Juniors - O'Higgins",
+          "homeTeam": "Boca Juniors",
+          "awayTeam": "O'Higgins",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 8
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027828712",
+          "title": "Club Bolívar - Grêmio",
+          "homeTeam": "Club Bolívar",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 1.66,
+            "draw": 4.25,
+            "away": 4.25
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027828730",
+          "title": "Independiente Medellín - Vasco da Gama-RJ",
+          "homeTeam": "Independiente Medellín",
+          "awayTeam": "Vasco da Gama-RJ",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 2.5,
+            "draw": 3.25,
+            "away": 2.75
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027826399",
+          "title": "Independiente Santa Fe - Caracas FC",
+          "homeTeam": "Independiente Santa Fe",
+          "awayTeam": "Caracas FC",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 1.54,
+            "draw": 3.85,
+            "away": 6
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027826400",
+          "title": "Lanús - Cienciano Cusco",
+          "homeTeam": "Lanús",
+          "awayTeam": "Cienciano Cusco",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 1.32,
+            "draw": 5.2,
+            "away": 8
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027826396",
+          "title": "Nacional de Montevideo - Tigre",
+          "homeTeam": "Nacional de Montevideo",
+          "awayTeam": "Tigre",
+          "startTime": "2026-07-21T22:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 1.84,
+            "draw": 3.5,
+            "away": 4.1
+          },
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027828737",
+          "title": "UCV FC - Santos-SP",
+          "homeTeam": "UCV FC",
+          "awayTeam": "Santos-SP",
+          "startTime": "2026-07-22T00:30:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 3.85,
+            "draw": 4.1,
+            "away": 1.75
+          },
+          "matchedQuery": "sudamericana"
         },
         {
           "eventId": "1028000165",
@@ -15351,12 +15291,12 @@
     "speedybet": {
       "displayName": "Speedybet",
       "baseUrl": "https://www.speedybet.com",
-      "updatedAt": "2026-06-30T08:20:39.943Z",
+      "updatedAt": "2026-06-30T08:34:54.705Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
-      "eventsFound": 186,
-      "durationMs": 27144,
+      "eventsFound": 185,
+      "durationMs": 27765,
       "events": [
         {
           "eventId": "1028072408",
@@ -15429,20 +15369,6 @@
           "matchedQuery": "arsenal"
         },
         {
-          "eventId": "1028072409",
-          "title": "Newcastle United - Liverpool",
-          "homeTeam": "Newcastle United",
-          "awayTeam": "Liverpool",
-          "startTime": "2026-08-23T15:30:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.75,
-            "draw": 3.8,
-            "away": 2.25
-          },
-          "matchedQuery": "liverpool"
-        },
-        {
           "eventId": "1028072416",
           "title": "Brentford - Tottenham",
           "homeTeam": "Brentford",
@@ -15455,6 +15381,20 @@
             "away": 2.55
           },
           "matchedQuery": "tottenham"
+        },
+        {
+          "eventId": "1028072409",
+          "title": "Newcastle United - Liverpool",
+          "homeTeam": "Newcastle United",
+          "awayTeam": "Liverpool",
+          "startTime": "2026-08-23T15:30:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 2.75,
+            "draw": 3.8,
+            "away": 2.25
+          },
+          "matchedQuery": "liverpool"
         },
         {
           "eventId": "1027586481",
@@ -15937,6 +15877,20 @@
           "matchedQuery": "milan"
         },
         {
+          "eventId": "1027911062",
+          "title": "Genoa - Napoli",
+          "homeTeam": "Genoa",
+          "awayTeam": "Napoli",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 5,
+            "draw": 3.35,
+            "away": 1.63
+          },
+          "matchedQuery": "napoli"
+        },
+        {
           "eventId": "1025985659",
           "title": "Internacional-RS - Cruzeiro-MG",
           "homeTeam": "Internacional-RS",
@@ -16071,96 +16025,18 @@
           "matchedQuery": "inter"
         },
         {
-          "eventId": "1026756377",
-          "title": "Caxias-RS - Anápolis-GO",
-          "homeTeam": "Caxias-RS",
-          "awayTeam": "Anápolis-GO",
-          "startTime": "2026-06-30T22:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.58,
-            "draw": 3.45,
-            "away": 5.4
-          },
-          "matchedQuery": "napoli",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.38,
-              "under": 2.7
-            },
-            {
-              "line": 2.5,
-              "over": 2.2,
-              "under": 1.58
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.19
-            },
-            {
-              "line": 0.5,
-              "over": 1.05,
-              "under": 6.75
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.75,
-              "home": 1.77,
-              "away": 1.92
-            },
-            {
-              "line": -1.5,
-              "home": 2.8,
-              "away": 1.37
-            },
-            {
-              "line": 0.25,
-              "home": 1.16,
-              "away": 4.4
-            },
-            {
-              "line": -1.25,
-              "home": 2.48,
-              "away": 1.47
-            },
-            {
-              "line": -0.5,
-              "home": 1.58,
-              "away": 2.2
-            },
-            {
-              "line": -1,
-              "home": 2.1,
-              "away": 1.64
-            },
-            {
-              "line": 0.5,
-              "home": 1.13,
-              "away": 4.9
-            },
-            {
-              "line": -0.25,
-              "home": 1.38,
-              "away": 2.7
-            }
-          ]
-        },
-        {
-          "eventId": "1027911062",
-          "title": "Genoa - Napoli",
-          "homeTeam": "Genoa",
-          "awayTeam": "Napoli",
+          "eventId": "1027911059",
+          "title": "Roma - Fiorentina",
+          "homeTeam": "Roma",
+          "awayTeam": "Fiorentina",
           "startTime": "2026-08-22T13:00:00Z",
           "league": "Serie A",
           "odds": {
-            "home": 5,
-            "draw": 3.35,
-            "away": 1.63
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 6.1
           },
-          "matchedQuery": "napoli"
+          "matchedQuery": "roma"
         },
         {
           "eventId": "1027911063",
@@ -16177,18 +16053,59 @@
           "matchedQuery": "lazio"
         },
         {
-          "eventId": "1027911059",
-          "title": "Roma - Fiorentina",
-          "homeTeam": "Roma",
-          "awayTeam": "Fiorentina",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "eventId": "1027828720",
+          "title": "Sporting Cristal - RB Bragantino-SP",
+          "homeTeam": "Sporting Cristal",
+          "awayTeam": "RB Bragantino-SP",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 6.1
+            "home": 3,
+            "draw": 3.4,
+            "away": 2.25
           },
-          "matchedQuery": "roma"
+          "matchedQuery": "sporting"
+        },
+        {
+          "eventId": "1026090143",
+          "title": "Loudoun United FC - Sporting Jax",
+          "homeTeam": "Loudoun United FC",
+          "awayTeam": "Sporting Jax",
+          "startTime": "2026-07-03T23:00:00Z",
+          "league": "USL Championship",
+          "odds": {
+            "home": 1.5,
+            "draw": 4.1,
+            "away": 5
+          },
+          "matchedQuery": "sporting",
+          "totals": [
+            {
+              "line": 2.5,
+              "over": 1.46,
+              "under": 2.4
+            },
+            {
+              "line": 3.5,
+              "over": 2.16,
+              "under": 1.57
+            },
+            {
+              "line": 5.5,
+              "over": 6.1,
+              "under": 1.07
+            },
+            {
+              "line": 4.5,
+              "over": 3.6,
+              "under": 1.22
+            },
+            {
+              "line": 1.5,
+              "over": 1.13,
+              "under": 4.7
+            }
+          ]
         },
         {
           "eventId": "1027118159",
@@ -16696,61 +16613,6 @@
               "line": 3.5,
               "over": 2.32,
               "under": 1.5
-            }
-          ]
-        },
-        {
-          "eventId": "1027828720",
-          "title": "Sporting Cristal - RB Bragantino-SP",
-          "homeTeam": "Sporting Cristal",
-          "awayTeam": "RB Bragantino-SP",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 3,
-            "draw": 3.4,
-            "away": 2.25
-          },
-          "matchedQuery": "sporting"
-        },
-        {
-          "eventId": "1026090143",
-          "title": "Loudoun United FC - Sporting Jax",
-          "homeTeam": "Loudoun United FC",
-          "awayTeam": "Sporting Jax",
-          "startTime": "2026-07-03T23:00:00Z",
-          "league": "USL Championship",
-          "odds": {
-            "home": 1.5,
-            "draw": 4.1,
-            "away": 5
-          },
-          "matchedQuery": "sporting",
-          "totals": [
-            {
-              "line": 2.5,
-              "over": 1.46,
-              "under": 2.4
-            },
-            {
-              "line": 3.5,
-              "over": 2.16,
-              "under": 1.57
-            },
-            {
-              "line": 5.5,
-              "over": 6.1,
-              "under": 1.07
-            },
-            {
-              "line": 4.5,
-              "over": 3.6,
-              "under": 1.22
-            },
-            {
-              "line": 1.5,
-              "over": 1.13,
-              "under": 4.7
             }
           ]
         },
@@ -17408,53 +17270,11 @@
           "startTime": "2026-06-30T08:26:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 1.61,
-            "draw": 6.75,
-            "away": 2.75
+            "home": 18,
+            "draw": 12.5,
+            "away": 1.05
           },
-          "matchedQuery": "finland",
-          "totals": [
-            {
-              "line": 5.5,
-              "over": 1.11,
-              "under": 5.75
-            },
-            {
-              "line": 10.5,
-              "over": 4.2,
-              "under": 1.19
-            },
-            {
-              "line": 9.5,
-              "over": 2.8,
-              "under": 1.38
-            },
-            {
-              "line": 7.5,
-              "over": 1.54,
-              "under": 2.28
-            },
-            {
-              "line": 6.5,
-              "over": 1.26,
-              "under": 3.5
-            },
-            {
-              "line": 8.5,
-              "over": 1.96,
-              "under": 1.73
-            },
-            {
-              "line": 12.5,
-              "over": 12,
-              "under": 1.02
-            },
-            {
-              "line": 11.5,
-              "over": 7,
-              "under": 1.07
-            }
-          ]
+          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197268",
@@ -17525,16 +17345,16 @@
           "startTime": "2026-06-30T09:22:00Z",
           "league": "CLA World Cup (2x5 min)",
           "odds": {
-            "home": 3.5,
-            "draw": 8,
-            "away": 1.41
+            "home": 3.3,
+            "draw": 8.5,
+            "away": 1.44
           },
           "matchedQuery": "finland",
           "totals": [
             {
               "line": 5.5,
-              "over": 1.23,
-              "under": 3.75
+              "over": 1.24,
+              "under": 3.6
             },
             {
               "line": 9.5,
@@ -17548,18 +17368,18 @@
             },
             {
               "line": 4.5,
-              "over": 1.07,
-              "under": 7
+              "over": 1.08,
+              "under": 6.75
             },
             {
               "line": 6.5,
-              "over": 1.47,
-              "under": 2.48
+              "over": 1.49,
+              "under": 2.43
             },
             {
               "line": 8.5,
               "over": 2.65,
-              "under": 1.42
+              "under": 1.41
             },
             {
               "line": 11.5,
@@ -17568,24 +17388,10 @@
             },
             {
               "line": 7.5,
-              "over": 1.94,
-              "under": 1.75
+              "over": 1.96,
+              "under": 1.73
             }
           ]
-        },
-        {
-          "eventId": "1028197115",
-          "title": "Portugal (Mqrkkkkkk) - Finland (desicom)",
-          "homeTeam": "Portugal (Mqrkkkkkk)",
-          "awayTeam": "Finland (desicom)",
-          "startTime": "2026-06-30T08:12:00Z",
-          "league": "CLA World Cup (2x5 min)",
-          "odds": {
-            "home": 1.23,
-            "draw": 8.5,
-            "away": 5.5
-          },
-          "matchedQuery": "finland"
         },
         {
           "eventId": "1028197118",
@@ -18322,7 +18128,24 @@
             "draw": 3.65,
             "away": 4.9
           },
-          "matchedQuery": "premier league"
+          "matchedQuery": "premier league",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 2.88,
+              "under": 1.36
+            },
+            {
+              "line": 1.5,
+              "over": 1.23,
+              "under": 3.7
+            },
+            {
+              "line": 2.5,
+              "over": 1.75,
+              "under": 1.97
+            }
+          ]
         },
         {
           "eventId": "1028190194",
@@ -18417,6 +18240,42 @@
           "matchedQuery": "premier league"
         },
         {
+          "eventId": "1027384080",
+          "title": "Defence Force SC (ETP) - Hadiya Hosaena",
+          "homeTeam": "Defence Force SC (ETP)",
+          "awayTeam": "Hadiya Hosaena",
+          "startTime": "2026-07-03T13:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.98,
+            "draw": 3.05,
+            "away": 3.55
+          },
+          "matchedQuery": "premier league",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4,
+              "under": 1.18
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.53
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.4
+            }
+          ]
+        },
+        {
           "eventId": "1027370979",
           "title": "Ethiopia Nigd Bank - Bahir Dar FC",
           "homeTeam": "Ethiopia Nigd Bank",
@@ -18457,7 +18316,7 @@
           "title": "Fasil Kenema SC - Ethiopian Medhin",
           "homeTeam": "Fasil Kenema SC",
           "awayTeam": "Ethiopian Medhin",
-          "startTime": "2026-07-03T15:00:00Z",
+          "startTime": "2026-07-01T15:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -18493,7 +18352,7 @@
           "title": "Hawassa Kima FC - Adama City",
           "homeTeam": "Hawassa Kima FC",
           "awayTeam": "Adama City",
-          "startTime": "2026-07-04T10:00:00Z",
+          "startTime": "2026-07-02T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.12,
@@ -18529,7 +18388,7 @@
           "title": "Mekele 70 Enderta FC - Negelle Arsi",
           "homeTeam": "Mekele 70 Enderta FC",
           "awayTeam": "Negelle Arsi",
-          "startTime": "2026-07-03T10:00:00Z",
+          "startTime": "2026-07-01T12:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 3.2,
@@ -18579,7 +18438,7 @@
           "title": "Wolaitta Dicha SC - Ethiopian Coffee SC",
           "homeTeam": "Wolaitta Dicha SC",
           "awayTeam": "Ethiopian Coffee SC",
-          "startTime": "2026-07-02T12:00:00Z",
+          "startTime": "2026-07-03T13:00:00Z",
           "league": "Premier League",
           "odds": {
             "home": 2.05,
