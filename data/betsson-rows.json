@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T07:50:47.388Z",
+  "updatedAt": "2026-06-30T08:00:59.882Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -79,9 +79,9 @@
       "awayTeam": "La Luz FC Reserves",
       "startTime": "2026-06-30T17:00:00.000Z",
       "odds": {
-        "home": 4,
-        "draw": 3.35,
-        "away": 1.8
+        "home": 4.2,
+        "draw": 3.45,
+        "away": 1.75
       },
       "foundBy": "Central Espanol"
     },
@@ -92,9 +92,9 @@
       "awayTeam": "Shamrock Rovers",
       "startTime": "2026-07-03T18:45:00.000Z",
       "odds": {
-        "home": 5.4,
-        "draw": 3.95,
-        "away": 1.58
+        "home": 5.6,
+        "draw": 4.1,
+        "away": 1.55
       },
       "foundBy": "Sligo Rovers"
     },
@@ -118,9 +118,9 @@
       "awayTeam": "Coquimbo",
       "startTime": "2026-07-01T22:00:00.000Z",
       "odds": {
-        "home": 3.15,
-        "draw": 3.05,
-        "away": 2.3
+        "home": 3.1,
+        "draw": 3.15,
+        "away": 2.28
       },
       "foundBy": "Deportes Limache"
     },
@@ -385,17 +385,31 @@
       "foundBy": "Raith Rovers"
     },
     {
-      "eventId": "f-9PAXJFmA6kyCN8-BZzYdcg",
-      "title": "France (Beckham) - Ivory Coast (Alexander)",
-      "homeTeam": "France (Beckham)",
+      "eventId": "f-EbkGtONjAki7XYyGzEbyJw",
+      "title": "Norway (Oliver) - Ivory Coast (Alexander)",
+      "homeTeam": "Norway (Oliver)",
       "awayTeam": "Ivory Coast (Alexander)",
-      "startTime": "2026-06-30T07:45:00.000Z",
+      "startTime": "2026-06-30T08:15:00.000Z",
       "odds": {
-        "home": 3.4,
-        "draw": 4.1,
-        "away": 1.7
+        "home": 1.68,
+        "draw": 6.5,
+        "away": 2.7
       },
-      "foundBy": "Ivory Coast"
+      "foundBy": "Ivory Coast",
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 2,
+          "under": 1.62
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.5,
+          "home": 1.69,
+          "away": 1.96
+        }
+      ]
     },
     {
       "eventId": "f-nzr9EhaaGkGDuWBuxJc9Zg",
@@ -421,33 +435,6 @@
           "line": -0.5,
           "home": 1.94,
           "away": 1.71
-        }
-      ]
-    },
-    {
-      "eventId": "f-EbkGtONjAki7XYyGzEbyJw",
-      "title": "Norway (Oliver) - Ivory Coast (Alexander)",
-      "homeTeam": "Norway (Oliver)",
-      "awayTeam": "Ivory Coast (Alexander)",
-      "startTime": "2026-06-30T08:15:00.000Z",
-      "odds": {
-        "home": 1.68,
-        "draw": 6.5,
-        "away": 2.7
-      },
-      "foundBy": "Ivory Coast",
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 2,
-          "under": 1.62
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.69,
-          "away": 1.96
         }
       ]
     },
@@ -485,9 +472,9 @@
       "awayTeam": "Young Africans (TAN)",
       "startTime": "2026-06-30T13:00:00.000Z",
       "odds": {
-        "home": 11,
+        "home": 10,
         "draw": 5.4,
-        "away": 1.21
+        "away": 1.22
       },
       "foundBy": "JKT Tanzania"
     },
@@ -528,19 +515,7 @@
         "draw": 3.45,
         "away": 1.95
       },
-      "foundBy": "Sunshine Coast Wanderers",
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.44,
-          "under": 1.49
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4.3
-        }
-      ]
+      "foundBy": "Sunshine Coast Wanderers"
     },
     {
       "eventId": "f-ZW3QsGAvCkKVLv-VO9iUvg",
@@ -549,9 +524,9 @@
       "awayTeam": "Waterford",
       "startTime": "2026-07-03T18:45:00.000Z",
       "odds": {
-        "home": 1.45,
-        "draw": 4.4,
-        "away": 6.4
+        "home": 1.43,
+        "draw": 4.6,
+        "away": 6.6
       },
       "foundBy": "Derry City"
     },
@@ -562,9 +537,9 @@
       "awayTeam": "HJK Helsinki",
       "startTime": "2026-06-30T16:00:00.000Z",
       "odds": {
-        "home": 18,
-        "draw": 9.2,
-        "away": 1.07
+        "home": 19,
+        "draw": 9.4,
+        "away": 1.06
       },
       "foundBy": "HJK Helsinki"
     },
@@ -594,19 +569,6 @@
           "away": 1.77
         }
       ]
-    },
-    {
-      "eventId": "f-ZACGqSANKUyCmLlQ8ir1-g",
-      "title": "Mexico (Cezar) - Sweden (Kai)",
-      "homeTeam": "Mexico (Cezar)",
-      "awayTeam": "Sweden (Kai)",
-      "startTime": "2026-06-30T07:45:00.000Z",
-      "odds": {
-        "home": 10,
-        "draw": 6,
-        "away": 1.16
-      },
-      "foundBy": "Mexico"
     },
     {
       "eventId": "f-3WuFMMOYiU6ucNlxA3nBug",
@@ -735,9 +697,9 @@
       "awayTeam": "Canuelas FC",
       "startTime": "2026-06-30T18:00:00.000Z",
       "odds": {
-        "home": 3.75,
+        "home": 4.1,
         "draw": 2.95,
-        "away": 2.05
+        "away": 1.92
       },
       "foundBy": "France"
     },
@@ -761,9 +723,9 @@
       "awayTeam": "SD Galway",
       "startTime": "2026-07-03T18:45:00.000Z",
       "odds": {
-        "home": 1.43,
-        "draw": 4.5,
-        "away": 6.6
+        "home": 1.41,
+        "draw": 4.7,
+        "away": 6.8
       },
       "foundBy": "France"
     },
@@ -892,22 +854,10 @@
       "startTime": "2026-06-30T09:30:00.000Z",
       "odds": {
         "home": 1.6,
-        "draw": 3.9,
-        "away": 4.7
+        "draw": 4,
+        "away": 4.6
       },
-      "foundBy": "Gold Coast Knights",
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.45
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 4.1
-        }
-      ]
+      "foundBy": "Gold Coast Knights"
     },
     {
       "eventId": "f-UxO22ka_7kymzqW0Js9XzQ",
@@ -1060,8 +1010,8 @@
       "startTime": "2026-07-02T16:00:00.000Z",
       "odds": {
         "home": 1.85,
-        "draw": 4,
-        "away": 3.65
+        "draw": 3.95,
+        "away": 3.8
       },
       "foundBy": "Lyn"
     },
@@ -1200,17 +1150,17 @@
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 198882,
+    "runMs": 209252,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-30T07:50:47.388Z"
+    "decidedAt": "2026-06-30T08:00:59.882Z"
   },
   "_linesDiag": {
     "ran": true,
-    "withTotals": 10,
+    "withTotals": 8,
     "withAh": 7,
     "nearest": 30,
-    "ms": 19
+    "ms": 20
   },
   "_linesProbe": {
     "hasLinesPage": true,
@@ -1221,10 +1171,10 @@
       "MTG2W",
       "MAHCP"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-NlGMfx2xtE-yAOO3Q87fOQ\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-EbkGtONjAki7XYyGzEbyJw\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 200,
     "gid": "MTG2W",
-    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-EbkGtONjAki7XYyGzEbyJw\",",
+    "accBodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MTG2W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-NlGMfx2xtE-yAOO3Q87fOQ\",",
     "fullCatalogStatus": 200,
     "fullCatalogKeys": [
       "MW3W|Matchresultat",
@@ -1237,6 +1187,6 @@
     "via": "inpage",
     "status": 200,
     "hasLinesPage": true,
-    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-dH1Bq"
+    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-HfqGP"
   }
 }
