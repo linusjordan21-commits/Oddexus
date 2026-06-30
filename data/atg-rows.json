@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T05:56:28.763Z",
+  "updatedAt": "2026-06-30T06:00:28.925Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 196,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 198,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 19526,
+  "durationMs": 19277,
   "events": [
     {
       "eventId": "1027976814",
@@ -3410,32 +3410,6 @@
       ]
     },
     {
-      "eventId": "1028192682",
-      "title": "Liverpool (v1nniePuh) - Tottenham (flamez)",
-      "homeTeam": "Liverpool (v1nniePuh)",
-      "awayTeam": "Tottenham (flamez)",
-      "startTime": "2026-06-30T05:48:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.67,
-        "draw": 3.8,
-        "away": 3.55
-      }
-    },
-    {
-      "eventId": "1028192685",
-      "title": "Arsenal (bodyaoo) - Man City (Frantsuz)",
-      "homeTeam": "Arsenal (bodyaoo)",
-      "awayTeam": "Man City (Frantsuz)",
-      "startTime": "2026-06-30T05:48:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.6,
-        "draw": 4.4,
-        "away": 3.5
-      }
-    },
-    {
       "eventId": "1028192915",
       "title": "Stuttgart (KaLuBa) - Frankfurt (borees)",
       "homeTeam": "Stuttgart (KaLuBa)",
@@ -3443,9 +3417,9 @@
       "startTime": "2026-06-30T05:54:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.54,
-        "draw": 3.1,
-        "away": 6.5
+        "home": 1.58,
+        "draw": 2.55,
+        "away": 10.5
       }
     },
     {
@@ -3456,9 +3430,9 @@
       "startTime": "2026-06-30T05:54:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.81,
-        "draw": 3.6,
-        "away": 3.15
+        "home": 1.21,
+        "draw": 5,
+        "away": 12
       }
     },
     {
@@ -3469,9 +3443,35 @@
       "startTime": "2026-06-30T05:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.7,
+        "home": 1.46,
         "draw": 5.75,
-        "away": 1.7
+        "away": 3.75
+      }
+    },
+    {
+      "eventId": "1028197095",
+      "title": "Argentina (aloha) - Algeria (desicom)",
+      "homeTeam": "Argentina (aloha)",
+      "awayTeam": "Algeria (desicom)",
+      "startTime": "2026-06-30T05:56:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.61,
+        "draw": 6.25,
+        "away": 2.85
+      }
+    },
+    {
+      "eventId": "1028197054",
+      "title": "Atalanta (femzzi) - Inter (T3RZ)",
+      "homeTeam": "Atalanta (femzzi)",
+      "awayTeam": "Inter (T3RZ)",
+      "startTime": "2026-06-30T05:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.85,
+        "draw": 5.75,
+        "away": 1.45
       }
     },
     {
@@ -3482,47 +3482,10 @@
       "startTime": "2026-06-30T05:57:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 3.2,
-        "draw": 4.5,
-        "away": 1.65
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.46,
-          "under": 2.5
-        },
-        {
-          "line": 2.5,
-          "over": 1.04,
-          "under": 9.5
-        },
-        {
-          "line": 6.5,
-          "over": 2.95,
-          "under": 1.35
-        },
-        {
-          "line": 3.5,
-          "over": 1.18,
-          "under": 4.35
-        },
-        {
-          "line": 5.5,
-          "over": 1.96,
-          "under": 1.73
-        },
-        {
-          "line": 7.5,
-          "over": 5.1,
-          "under": 1.13
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.04
-        }
-      ]
+        "home": 5.6,
+        "draw": 4.9,
+        "away": 1.35
+      }
     },
     {
       "eventId": "1028192720",
@@ -3532,142 +3495,10 @@
       "startTime": "2026-06-30T05:57:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.4,
-        "draw": 2.85,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 6,
-          "under": 1.1
-        },
-        {
-          "line": 4.5,
-          "over": 1.62,
-          "under": 2.12
-        },
-        {
-          "line": 6.5,
-          "over": 3.65,
-          "under": 1.24
-        },
-        {
-          "line": 8.5,
-          "over": 13,
-          "under": 1.02
-        },
-        {
-          "line": 2.5,
-          "over": 1.07,
-          "under": 7
-        },
-        {
-          "line": 3.5,
-          "over": 1.22,
-          "under": 3.8
-        },
-        {
-          "line": 5.5,
-          "over": 2.18,
-          "under": 1.58
-        }
-      ]
-    },
-    {
-      "eventId": "1028197740",
-      "title": "Manchester United (FanFan) - Liverpool (zyX)",
-      "homeTeam": "Manchester United (FanFan)",
-      "awayTeam": "Liverpool (zyX)",
-      "startTime": "2026-06-30T06:00:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.13,
-        "draw": 10,
-        "away": 6.4
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.18,
-          "under": 3.85
-        },
-        {
-          "line": 5.5,
-          "over": 1.06,
-          "under": 6.4
-        },
-        {
-          "line": 7.5,
-          "over": 1.42,
-          "under": 2.5
-        },
-        {
-          "line": 10.5,
-          "over": 3.65,
-          "under": 1.2
-        },
-        {
-          "line": 9.5,
-          "over": 2.55,
-          "under": 1.41
-        },
-        {
-          "line": 8.5,
-          "over": 1.83,
-          "under": 1.83
-        },
-        {
-          "line": 11.5,
-          "over": 6,
-          "under": 1.07
-        }
-      ]
-    },
-    {
-      "eventId": "1028197744",
-      "title": "PSG (M1HEPAJI) - Manchester City (savinho)",
-      "homeTeam": "PSG (M1HEPAJI)",
-      "awayTeam": "Manchester City (savinho)",
-      "startTime": "2026-06-30T06:00:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 3.25,
-        "draw": 5.2,
-        "away": 1.58
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 4.3,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.13,
-          "under": 4.5
-        },
-        {
-          "line": 4.5,
-          "over": 1.36,
-          "under": 2.7
-        },
-        {
-          "line": 8.5,
-          "over": 7.5,
-          "under": 1.03
-        },
-        {
-          "line": 5.5,
-          "over": 1.85,
-          "under": 1.82
-        },
-        {
-          "line": 6.5,
-          "over": 2.65,
-          "under": 1.37
-        }
-      ]
+        "home": 4.2,
+        "draw": 2.75,
+        "away": 1.84
+      }
     },
     {
       "eventId": "1028195791",
@@ -3677,87 +3508,10 @@
       "startTime": "2026-06-30T06:00:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.04,
-        "draw": 3.95,
-        "away": 2.45
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.25,
-          "under": 3.25
-        },
-        {
-          "line": 3.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 5.5,
-          "over": 1.63,
-          "under": 2.1
-        },
-        {
-          "line": 6.5,
-          "over": 2.3,
-          "under": 1.5
-        },
-        {
-          "line": 7.5,
-          "over": 3.5,
-          "under": 1.21
-        },
-        {
-          "line": 8.5,
-          "over": 6,
-          "under": 1.07
-        }
-      ]
-    },
-    {
-      "eventId": "1028195750",
-      "title": "Aston Villa (MeLToSik) - Roma (BlackStar98)",
-      "homeTeam": "Aston Villa (MeLToSik)",
-      "awayTeam": "Roma (BlackStar98)",
-      "startTime": "2026-06-30T06:00:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 5.1,
+        "home": 2.05,
         "draw": 4,
-        "away": 1.46
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.04,
-          "under": 7
-        },
-        {
-          "line": 3.5,
-          "over": 1.19,
-          "under": 3.7
-        },
-        {
-          "line": 4.5,
-          "over": 1.55,
-          "under": 2.2
-        },
-        {
-          "line": 6.5,
-          "over": 3.5,
-          "under": 1.22
-        },
-        {
-          "line": 5.5,
-          "over": 2.17,
-          "under": 1.57
-        },
-        {
-          "line": 7.5,
-          "over": 6,
-          "under": 1.07
-        }
-      ]
+        "away": 2.43
+      }
     },
     {
       "eventId": "1028192665",
@@ -4705,6 +4459,51 @@
       ]
     },
     {
+      "eventId": "1028195752",
+      "title": "Roma (BlackStar98) - Fenerbahce (sane4ek8)",
+      "homeTeam": "Roma (BlackStar98)",
+      "awayTeam": "Fenerbahce (sane4ek8)",
+      "startTime": "2026-06-30T06:24:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2,
+        "draw": 3.2,
+        "away": 2.95
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.06,
+          "under": 1.63
+        },
+        {
+          "line": 6.5,
+          "over": 3.3,
+          "under": 1.24
+        },
+        {
+          "line": 7.5,
+          "over": 5.5,
+          "under": 1.08
+        },
+        {
+          "line": 3.5,
+          "over": 1.17,
+          "under": 4
+        },
+        {
+          "line": 4.5,
+          "over": 1.5,
+          "under": 2.3
+        },
+        {
+          "line": 2.5,
+          "over": 1.03,
+          "under": 8
+        }
+      ]
+    },
+    {
       "eventId": "1028192684",
       "title": "Man City (Frantsuz) - Tottenham (flamez)",
       "homeTeam": "Man City (Frantsuz)",
@@ -5016,6 +4815,101 @@
           "line": 7.5,
           "over": 2.32,
           "under": 1.49
+        }
+      ]
+    },
+    {
+      "eventId": "1028192728",
+      "title": "Spain (LaikingDast) - Portugal (nikkitta)",
+      "homeTeam": "Spain (LaikingDast)",
+      "awayTeam": "Portugal (nikkitta)",
+      "startTime": "2026-06-30T06:33:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.48,
+        "draw": 3.1,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.06,
+          "under": 7.5
+        },
+        {
+          "line": 6.5,
+          "over": 3.4,
+          "under": 1.27
+        },
+        {
+          "line": 3.5,
+          "over": 1.21,
+          "under": 3.95
+        },
+        {
+          "line": 7.5,
+          "over": 5.5,
+          "under": 1.12
+        },
+        {
+          "line": 4.5,
+          "over": 1.56,
+          "under": 2.25
+        },
+        {
+          "line": 5.5,
+          "over": 2.1,
+          "under": 1.63
+        },
+        {
+          "line": 8.5,
+          "over": 11,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028192722",
+      "title": "Argentina (mko1919) - Mexiko (KraftVK)",
+      "homeTeam": "Argentina (mko1919)",
+      "awayTeam": "Mexiko (KraftVK)",
+      "startTime": "2026-06-30T06:33:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.6,
+        "away": 1.95
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.7,
+          "under": 2
+        },
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5.8
+        },
+        {
+          "line": 4.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 7.5,
+          "over": 3.75,
+          "under": 1.23
+        },
+        {
+          "line": 8.5,
+          "over": 6.75,
+          "under": 1.08
+        },
+        {
+          "line": 6.5,
+          "over": 2.43,
+          "under": 1.48
         }
       ]
     },
@@ -9350,8 +9244,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.74,
-        "away": 2
+        "home": 2.16,
+        "away": 1.63
       }
     },
     {
@@ -10039,8 +9933,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.37,
-        "away": 3.1
+        "home": 1.45,
+        "away": 2.75
       }
     },
     {
@@ -10169,8 +10063,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.67,
-        "away": 2.2
+        "home": 1.63,
+        "away": 2.28
       }
     },
     {
@@ -10208,8 +10102,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.68,
-        "away": 2.17
+        "home": 1.74,
+        "away": 2.08
       }
     },
     {
