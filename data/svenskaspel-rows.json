@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T00:52:31.445Z",
+  "updatedAt": "2026-06-30T00:56:29.763Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -12,7 +12,7 @@
   "uniqueEvents": 218,
   "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 19579,
+  "durationMs": 18926,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,9 +992,9 @@
       "startTime": "2026-06-30T00:50:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.04,
-        "draw": 5.1,
-        "away": 2.18
+        "home": 1.74,
+        "draw": 4.5,
+        "away": 2.88
       }
     },
     {
@@ -1005,9 +1005,9 @@
       "startTime": "2026-06-30T00:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.25,
-        "draw": 2.75,
-        "away": 2.88
+        "home": 1.7,
+        "draw": 2.7,
+        "away": 5.75
       }
     },
     {
@@ -1018,117 +1018,10 @@
       "startTime": "2026-06-30T00:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 1.57,
-        "draw": 4.6,
-        "away": 3.55
+        "home": 1.76,
+        "draw": 3.55,
+        "away": 3.4
       }
-    },
-    {
-      "eventId": "1028151439",
-      "title": "Nederländerna - Marocko",
-      "homeTeam": "Nederländerna",
-      "awayTeam": "Marocko",
-      "startTime": "2026-06-30T01:00:00Z",
-      "league": "VM 2026",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.15,
-        "away": 3.5
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 15,
-          "under": 1.02
-        },
-        {
-          "line": 3.5,
-          "over": 3.7,
-          "under": 1.29
-        },
-        {
-          "line": 2.5,
-          "over": 2.1,
-          "under": 1.76
-        },
-        {
-          "line": 1.5,
-          "over": 1.33,
-          "under": 3.35
-        },
-        {
-          "line": 0.5,
-          "over": 1.06,
-          "under": 9.5
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.09
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 4.6,
-          "away": 1.19
-        },
-        {
-          "line": 0.5,
-          "home": 1.34,
-          "away": 3.25
-        },
-        {
-          "line": 1.5,
-          "home": 1.09,
-          "away": 7.5
-        },
-        {
-          "line": -1,
-          "home": 3.7,
-          "away": 1.27
-        },
-        {
-          "line": 1.25,
-          "home": 1.1,
-          "away": 7
-        },
-        {
-          "line": -0.25,
-          "home": 1.96,
-          "away": 1.85
-        },
-        {
-          "line": -1.25,
-          "home": 4.2,
-          "away": 1.22
-        },
-        {
-          "line": -0.5,
-          "home": 2.3,
-          "away": 1.62
-        },
-        {
-          "line": -0.75,
-          "home": 2.75,
-          "away": 1.44
-        },
-        {
-          "line": 1,
-          "home": 1.11,
-          "away": 6.5
-        },
-        {
-          "line": 0.25,
-          "home": 1.44,
-          "away": 2.8
-        },
-        {
-          "line": 0.75,
-          "home": 1.23,
-          "away": 4.2
-        }
-      ]
     },
     {
       "eventId": "1028185759",
@@ -1234,6 +1127,157 @@
           "under": 3.5
         }
       ]
+    },
+    {
+      "eventId": "1028151439",
+      "title": "Nederländerna - Marocko",
+      "homeTeam": "Nederländerna",
+      "awayTeam": "Marocko",
+      "startTime": "2026-06-30T01:05:00Z",
+      "league": "VM 2026",
+      "odds": {
+        "home": 2.38,
+        "draw": 3.15,
+        "away": 3.45
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 15,
+          "under": 1.02
+        },
+        {
+          "line": 3.5,
+          "over": 3.75,
+          "under": 1.28
+        },
+        {
+          "line": 2.5,
+          "over": 2.1,
+          "under": 1.76
+        },
+        {
+          "line": 1.5,
+          "over": 1.34,
+          "under": 3.35
+        },
+        {
+          "line": 0.5,
+          "over": 1.07,
+          "under": 9
+        },
+        {
+          "line": 4.5,
+          "over": 7.5,
+          "under": 1.09
+        }
+      ],
+      "ah": [
+        {
+          "line": -1.5,
+          "home": 4.6,
+          "away": 1.19
+        },
+        {
+          "line": 0.5,
+          "home": 1.34,
+          "away": 3.25
+        },
+        {
+          "line": 1.5,
+          "home": 1.09,
+          "away": 7.5
+        },
+        {
+          "line": -1,
+          "home": 3.7,
+          "away": 1.27
+        },
+        {
+          "line": 1.25,
+          "home": 1.1,
+          "away": 7
+        },
+        {
+          "line": -0.25,
+          "home": 1.96,
+          "away": 1.85
+        },
+        {
+          "line": -1.25,
+          "home": 4.2,
+          "away": 1.23
+        },
+        {
+          "line": -0.5,
+          "home": 2.28,
+          "away": 1.62
+        },
+        {
+          "line": -0.75,
+          "home": 2.75,
+          "away": 1.45
+        },
+        {
+          "line": 1,
+          "home": 1.11,
+          "away": 6.4
+        },
+        {
+          "line": 0.25,
+          "home": 1.44,
+          "away": 2.8
+        },
+        {
+          "line": 0.75,
+          "home": 1.23,
+          "away": 4.1
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 9.5,
+            "over": 2.32,
+            "under": 1.55
+          },
+          {
+            "line": 12.5,
+            "over": 5.75,
+            "under": 1.11
+          },
+          {
+            "line": 7.5,
+            "over": 1.49,
+            "under": 2.48
+          },
+          {
+            "line": 5.5,
+            "over": 1.13,
+            "under": 5.2
+          },
+          {
+            "line": 10.5,
+            "over": 3.05,
+            "under": 1.33
+          },
+          {
+            "line": 11.5,
+            "over": 4.1,
+            "under": 1.2
+          },
+          {
+            "line": 8.5,
+            "over": 1.82,
+            "under": 1.9
+          },
+          {
+            "line": 6.5,
+            "over": 1.27,
+            "under": 3.45
+          }
+        ]
+      }
     },
     {
       "eventId": "1028185761",
@@ -1548,40 +1592,40 @@
       "startTime": "2026-06-30T01:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2,
-        "draw": 3.6,
-        "away": 2.7
+        "home": 1.91,
+        "draw": 3.7,
+        "away": 2.85
       },
       "totals": [
         {
           "line": 5.5,
-          "over": 1.07,
-          "under": 6.1
+          "over": 1.06,
+          "under": 6.25
         },
         {
           "line": 9.5,
-          "over": 2.6,
-          "under": 1.38
+          "over": 2.55,
+          "under": 1.4
         },
         {
           "line": 6.5,
-          "over": 1.23,
-          "under": 3.4
+          "over": 1.21,
+          "under": 3.55
         },
         {
           "line": 7.5,
-          "over": 1.47,
-          "under": 2.38
+          "over": 1.45,
+          "under": 2.43
         },
         {
           "line": 10.5,
-          "over": 4,
-          "under": 1.16
+          "over": 3.95,
+          "under": 1.17
         },
         {
           "line": 8.5,
-          "over": 1.95,
-          "under": 1.72
+          "over": 1.92,
+          "under": 1.75
         },
         {
           "line": 11.5,
@@ -1958,45 +2002,45 @@
       "startTime": "2026-06-30T03:06:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.7,
-        "draw": 3.7,
-        "away": 1.97
+        "home": 2.85,
+        "draw": 3.75,
+        "away": 1.88
       },
       "totals": [
         {
           "line": 6.5,
-          "over": 1.22,
-          "under": 3.45
+          "over": 1.21,
+          "under": 3.55
         },
         {
           "line": 9.5,
-          "over": 2.65,
-          "under": 1.37
+          "over": 2.55,
+          "under": 1.4
         },
         {
           "line": 7.5,
-          "over": 1.46,
-          "under": 2.38
+          "over": 1.44,
+          "under": 2.45
         },
         {
           "line": 8.5,
-          "over": 1.96,
-          "under": 1.71
+          "over": 1.91,
+          "under": 1.75
         },
         {
           "line": 5.5,
-          "over": 1.07,
-          "under": 6
+          "over": 1.06,
+          "under": 6.25
         },
         {
           "line": 10.5,
-          "over": 4.1,
-          "under": 1.16
+          "over": 3.9,
+          "under": 1.18
         },
         {
           "line": 11.5,
-          "over": 6.4,
-          "under": 1.06
+          "over": 6.1,
+          "under": 1.07
         }
       ]
     },
@@ -15385,8 +15429,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 1.19,
-        "away": 4
+        "home": 1.11,
+        "away": 5.4
       }
     },
     {
@@ -15411,8 +15455,8 @@
       "league": "Baloncesto Superior Nacional",
       "sport": "basketball",
       "odds": {
-        "home": 1.94,
-        "away": 1.75
+        "home": 1.96,
+        "away": 1.73
       }
     },
     {
@@ -15530,8 +15574,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.64,
-        "away": 2.2
+        "home": 1.58,
+        "away": 2.33
       }
     },
     {
@@ -15543,8 +15587,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.32,
-        "away": 3.25
+        "home": 1.06,
+        "away": 8
       }
     },
     {
@@ -15556,21 +15600,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.22,
-        "away": 4.1
-      }
-    },
-    {
-      "eventId": "1028190337",
-      "title": "Taisei Ichikawa - Hunter Heck",
-      "homeTeam": "Taisei Ichikawa",
-      "awayTeam": "Hunter Heck",
-      "startTime": "2026-06-30T00:56:00Z",
-      "league": "Tokyo",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.88,
-        "away": 1.36
+        "home": 1.1,
+        "away": 6.4
       }
     },
     {
@@ -15584,6 +15615,19 @@
       "odds": {
         "home": 1.21,
         "away": 4.2
+      }
+    },
+    {
+      "eventId": "1028190337",
+      "title": "Taisei Ichikawa - Hunter Heck",
+      "homeTeam": "Taisei Ichikawa",
+      "awayTeam": "Hunter Heck",
+      "startTime": "2026-06-30T01:01:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.88,
+        "away": 1.36
       }
     },
     {
@@ -15831,6 +15875,19 @@
       "odds": {
         "home": 1.43,
         "away": 2.63
+      }
+    },
+    {
+      "eventId": "1028194111",
+      "title": "Darya Velikova - Samantha Imbo Nloga",
+      "homeTeam": "Darya Velikova",
+      "awayTeam": "Samantha Imbo Nloga",
+      "startTime": "2026-06-30T08:00:00Z",
+      "league": "Kursumlijska Banja",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.07,
+        "away": 6.5
       }
     },
     {
@@ -16432,6 +16489,19 @@
       }
     },
     {
+      "eventId": "1028192866",
+      "title": "Tuncay Duran - Mathys Picard",
+      "homeTeam": "Tuncay Duran",
+      "awayTeam": "Mathys Picard",
+      "startTime": "2026-06-30T10:30:00Z",
+      "league": "Monastir",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.54,
+        "away": 2.32
+      }
+    },
+    {
       "eventId": "1028192867",
       "title": "Andrea Colombo - Ali Yazdani",
       "homeTeam": "Andrea Colombo",
@@ -16442,6 +16512,19 @@
       "odds": {
         "home": 2.85,
         "away": 1.37
+      }
+    },
+    {
+      "eventId": "1028192869",
+      "title": "Ibrahim Snoussi - Benjamin Gusic Wan",
+      "homeTeam": "Ibrahim Snoussi",
+      "awayTeam": "Benjamin Gusic Wan",
+      "startTime": "2026-06-30T10:30:00Z",
+      "league": "Monastir",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.5,
+        "away": 1.47
       }
     },
     {
@@ -17343,6 +17426,6 @@
     }
   ],
   "basketEventsCount": 9,
-  "tennisEventsCount": 142,
+  "tennisEventsCount": 145,
   "lastError": null
 }
