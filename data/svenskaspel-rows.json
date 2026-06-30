@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:28:35.517Z",
+  "updatedAt": "2026-06-30T03:32:36.871Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -10,9 +10,9 @@
   "failedRegions": 0,
   "totalRegions": 8,
   "uniqueEvents": 252,
-  "skippedNoOdds": 3,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 21255,
+  "durationMs": 21418,
   "events": [
     {
       "eventId": "1027976814",
@@ -116,6 +116,41 @@
           "line": 2.5,
           "over": 1.81,
           "under": 1.91
+        }
+      ]
+    },
+    {
+      "eventId": "1028147712",
+      "title": "Burton Albion - Blackburn Rovers",
+      "homeTeam": "Burton Albion",
+      "awayTeam": "Blackburn Rovers",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.2,
+        "away": 2.06
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.3,
+          "under": 3.25
+        },
+        {
+          "line": 3.5,
+          "over": 3.7,
+          "under": 1.24
+        },
+        {
+          "line": 4.5,
+          "over": 8,
+          "under": 1.05
+        },
+        {
+          "line": 2.5,
+          "over": 2.02,
+          "under": 1.72
         }
       ]
     },
@@ -1450,44 +1485,7 @@
         "home": 3.5,
         "draw": 4.8,
         "away": 1.56
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 1.92,
-          "under": 1.75
-        },
-        {
-          "line": 4.5,
-          "over": 1.05,
-          "under": 6.75
-        },
-        {
-          "line": 10.5,
-          "over": 6.5,
-          "under": 1.05
-        },
-        {
-          "line": 5.5,
-          "over": 1.19,
-          "under": 3.7
-        },
-        {
-          "line": 8.5,
-          "over": 2.65,
-          "under": 1.37
-        },
-        {
-          "line": 6.5,
-          "over": 1.45,
-          "under": 2.43
-        },
-        {
-          "line": 9.5,
-          "over": 4,
-          "under": 1.17
-        }
-      ]
+      }
     },
     {
       "eventId": "1028193921",
@@ -1497,42 +1495,10 @@
       "startTime": "2026-06-30T03:32:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.14,
-        "draw": 4.6,
-        "away": 2.16
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 4.7,
-          "under": 1.12
-        },
-        {
-          "line": 5.5,
-          "over": 1.89,
-          "under": 1.78
-        },
-        {
-          "line": 3.5,
-          "over": 1.12,
-          "under": 4.7
-        },
-        {
-          "line": 4.5,
-          "over": 1.36,
-          "under": 2.7
-        },
-        {
-          "line": 8.5,
-          "over": 8.5,
-          "under": 1.02
-        },
-        {
-          "line": 6.5,
-          "over": 2.8,
-          "under": 1.34
-        }
-      ]
+        "home": 2.12,
+        "draw": 4.5,
+        "away": 2.2
+      }
     },
     {
       "eventId": "1028193931",
@@ -17022,7 +16988,7 @@
       "sport": "basketball",
       "odds": {
         "home": 1.71,
-        "away": 2.17
+        "away": 2.16
       }
     },
     {
@@ -17114,8 +17080,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 6
+        "home": 2.85,
+        "away": 1.38
       }
     },
     {
@@ -17127,21 +17093,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 5.6,
-        "away": 1.12
-      }
-    },
-    {
-      "eventId": "1028190353",
-      "title": "Jialan Cai - Junlu Sun",
-      "homeTeam": "Jialan Cai",
-      "awayTeam": "Junlu Sun",
-      "startTime": "2026-06-30T02:08:00Z",
-      "league": "Maanshan",
-      "sport": "tennis",
-      "odds": {
-        "home": 13,
-        "away": 1.01
+        "home": 3.85,
+        "away": 1.23
       }
     },
     {
@@ -17179,8 +17132,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.93,
-        "away": 1.79
+        "home": 2.6,
+        "away": 1.45
       }
     },
     {
@@ -17192,8 +17145,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 2.35,
-        "away": 1.54
+        "home": 2.15,
+        "away": 1.64
       }
     },
     {
@@ -17205,8 +17158,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 3.95,
-        "away": 1.22
+        "home": 4.25,
+        "away": 1.19
       }
     },
     {
@@ -17231,8 +17184,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.87,
-        "away": 1.85
+        "home": 1.76,
+        "away": 1.97
       }
     },
     {
@@ -18271,8 +18224,8 @@
       "league": "Figueira da Foz",
       "sport": "tennis",
       "odds": {
-        "home": 3.5,
-        "away": 1.25
+        "home": 3.75,
+        "away": 1.23
       }
     },
     {
@@ -19681,6 +19634,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 200,
+  "tennisEventsCount": 199,
   "lastError": null
 }
