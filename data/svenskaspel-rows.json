@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T02:48:27.505Z",
+  "updatedAt": "2026-06-30T02:52:27.746Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 217,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 215,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 18026,
+  "durationMs": 18156,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,99 +992,10 @@
       "startTime": "2026-06-30T00:59:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.19,
-        "draw": 5.2,
-        "away": 36
+        "home": 1.14,
+        "draw": 6,
+        "away": 67
       }
-    },
-    {
-      "eventId": "1028186495",
-      "title": "Atleti (zaha) - Real Madrid (Kosta)",
-      "homeTeam": "Atleti (zaha)",
-      "awayTeam": "Real Madrid (Kosta)",
-      "startTime": "2026-06-30T02:38:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.93,
-        "draw": 2.9,
-        "away": 3.5
-      }
-    },
-    {
-      "eventId": "1028185773",
-      "title": "Feyenoord (Int1liGenT) - Chelsea (abr4m_5)",
-      "homeTeam": "Feyenoord (Int1liGenT)",
-      "awayTeam": "Chelsea (abr4m_5)",
-      "startTime": "2026-06-30T02:38:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.47,
-        "draw": 3.9,
-        "away": 5.1
-      }
-    },
-    {
-      "eventId": "1028193925",
-      "title": "Arsenal (Noltzer) - Man City (Gaga)",
-      "homeTeam": "Arsenal (Noltzer)",
-      "awayTeam": "Man City (Gaga)",
-      "startTime": "2026-06-30T02:44:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 1.6,
-        "draw": 4,
-        "away": 3.85
-      }
-    },
-    {
-      "eventId": "1028185775",
-      "title": "Liverpool (Galikooo) - Chelsea (abr4m_5)",
-      "homeTeam": "Liverpool (Galikooo)",
-      "awayTeam": "Chelsea (abr4m_5)",
-      "startTime": "2026-06-30T02:52:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.68,
-        "draw": 5,
-        "away": 2.9
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 1.45,
-          "under": 2.43
-        },
-        {
-          "line": 5.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 10.5,
-          "over": 3.85,
-          "under": 1.18
-        },
-        {
-          "line": 11.5,
-          "over": 6.25,
-          "under": 1.06
-        },
-        {
-          "line": 6.5,
-          "over": 1.2,
-          "under": 3.65
-        },
-        {
-          "line": 8.5,
-          "over": 1.9,
-          "under": 1.77
-        },
-        {
-          "line": 9.5,
-          "over": 2.6,
-          "under": 1.4
-        }
-      ]
     },
     {
       "eventId": "1028193926",
@@ -15349,8 +15260,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.56,
-        "away": 2.32
+        "home": 1.53,
+        "away": 2.38
       }
     },
     {
@@ -15362,8 +15273,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.19,
-        "away": 4.3
+        "home": 1.35,
+        "away": 3
       }
     },
     {
@@ -15375,8 +15286,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.57,
-        "away": 2.28
+        "home": 1.56,
+        "away": 2.3
       }
     },
     {
@@ -15388,8 +15299,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 2.08,
-        "away": 1.68
+        "home": 2.14,
+        "away": 1.64
       }
     },
     {
@@ -15401,8 +15312,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 3.1,
-        "away": 1.33
+        "home": 4.2,
+        "away": 1.2
       }
     },
     {
@@ -15414,8 +15325,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.47,
-        "away": 2.55
+        "home": 1.41,
+        "away": 2.75
       }
     },
     {
@@ -15427,8 +15338,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8
+        "home": 1.02,
+        "away": 11
       }
     },
     {
@@ -15453,8 +15364,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.19,
-        "away": 4.35
+        "home": 1.14,
+        "away": 5.2
       }
     },
     {
@@ -15466,8 +15377,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 4.35,
-        "away": 1.18
+        "home": 3.75,
+        "away": 1.24
       }
     },
     {
