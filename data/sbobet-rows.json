@@ -1,52 +1,7 @@
 {
-  "updatedAt": "2026-06-30T03:48:58.574Z",
+  "updatedAt": "2026-06-30T03:50:35.823Z",
   "source": "github-actions-dom-scrape",
   "events": {
-    "tn:football::e-spain::e-usa::2026-06-30T03:50:00.000Z": {
-      "sbobetEventId": "tn:football::e-spain::e-usa::2026-06-30T03:50:00.000Z",
-      "sport": "football",
-      "homeTeam": "e-Spain (CROWN)",
-      "awayTeam": "e-USA (MARS)",
-      "startTime": "2026-06-30T03:50:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "695265928",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.15
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 3.1
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.95
-            }
-          ]
-        },
-        {
-          "oddsId": "695265935",
-          "marketType": "AH",
-          "scope": "full",
-          "line": -0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.12
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.61
-            }
-          ]
-        }
-      ]
-    },
     "tn:football::e-france::e-new zealand::2026-06-30T03:53:00.000Z": {
       "sbobetEventId": "tn:football::e-france::e-new zealand::2026-06-30T03:53:00.000Z",
       "sport": "football",
@@ -56,7 +11,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "695266434",
+          "oddsId": "702060472",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -73,6 +28,22 @@
               "decimalOdds": 1.55
             }
           ]
+        },
+        {
+          "oddsId": "702060488",
+          "marketType": "AH",
+          "scope": "full",
+          "line": 0.5,
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 2.28
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 1.52
+            }
+          ]
         }
       ]
     },
@@ -85,7 +56,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "695266987",
+          "oddsId": "702061025",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -105,42 +76,16 @@
         }
       ]
     },
-    "tn:football::e-france::e-new zealand::2026-06-30T03:50:00.000Z": {
-      "sbobetEventId": "tn:football::e-france::e-new zealand::2026-06-30T03:50:00.000Z",
-      "sport": "football",
-      "homeTeam": "e-France (JAEGER)",
-      "awayTeam": "e-New Zealand (AGENT)",
-      "startTime": "2026-06-30T03:50:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "695266450",
-          "marketType": "AH",
-          "scope": "full",
-          "line": 0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.28
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.52
-            }
-          ]
-        }
-      ]
-    },
-    "tn:football::e-paris sg::e-manchester city::2026-06-30T03:50:00.000Z": {
-      "sbobetEventId": "tn:football::e-paris sg::e-manchester city::2026-06-30T03:50:00.000Z",
+    "tn:football::e-paris sg::e-manchester city::2026-06-30T03:53:00.000Z": {
+      "sbobetEventId": "tn:football::e-paris sg::e-manchester city::2026-06-30T03:53:00.000Z",
       "sport": "football",
       "homeTeam": "e-Paris SG (RESISTANCE)",
       "awayTeam": "e-Manchester City (DANTE)",
-      "startTime": "2026-06-30T03:50:00.000Z",
+      "startTime": "2026-06-30T03:53:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "695266999",
+          "oddsId": "702061037",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -165,11 +110,11 @@
       "https://www.sbobet.com/en/euro/basketball",
       "https://www.sbobet.com/en/euro/baseball"
     ],
-    "rawRows": 15,
-    "events": 5,
-    "markets": 6,
-    "ahMarkets": 3,
-    "ml1x2Markets": 3,
-    "durationMs": 6392
+    "rawRows": 10,
+    "events": 3,
+    "markets": 4,
+    "ahMarkets": 2,
+    "ml1x2Markets": 2,
+    "durationMs": 6464
   }
 }
