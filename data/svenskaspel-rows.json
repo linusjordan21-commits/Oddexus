@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:52:38.357Z",
+  "updatedAt": "2026-06-30T03:56:37.947Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 271,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 272,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 22952,
+  "durationMs": 23007,
   "events": [
     {
       "eventId": "1027976814",
@@ -2217,42 +2217,10 @@
       "startTime": "2026-06-30T03:56:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.4,
-        "draw": 5.6,
-        "away": 1.47
-      },
-      "totals": [
-        {
-          "line": 8.5,
-          "over": 5.3,
-          "under": 1.09
-        },
-        {
-          "line": 6.5,
-          "over": 2.1,
-          "under": 1.61
-        },
-        {
-          "line": 4.5,
-          "over": 1.19,
-          "under": 3.7
-        },
-        {
-          "line": 3.5,
-          "over": 1.05,
-          "under": 7
-        },
-        {
-          "line": 7.5,
-          "over": 3.2,
-          "under": 1.26
-        },
-        {
-          "line": 5.5,
-          "over": 1.53,
-          "under": 2.25
-        }
-      ]
+        "home": 3.35,
+        "draw": 5.75,
+        "away": 1.52
+      }
     },
     {
       "eventId": "1028192689",
@@ -2301,6 +2269,126 @@
           "line": 7.5,
           "over": 1.44,
           "under": 2.45
+        }
+      ]
+    },
+    {
+      "eventId": "1028193924",
+      "title": "Arsenal (Noltzer) - Man City (Gaga)",
+      "homeTeam": "Arsenal (Noltzer)",
+      "awayTeam": "Man City (Gaga)",
+      "startTime": "2026-06-30T04:08:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.17,
+        "draw": 4.5,
+        "away": 2.15
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 4.35,
+          "under": 1.14
+        },
+        {
+          "line": 3.5,
+          "over": 1.11,
+          "under": 4.9
+        },
+        {
+          "line": 5.5,
+          "over": 1.84,
+          "under": 1.82
+        },
+        {
+          "line": 4.5,
+          "over": 1.34,
+          "under": 2.8
+        },
+        {
+          "line": 6.5,
+          "over": 2.65,
+          "under": 1.37
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028192635",
+      "title": "Man City (Frantsuz) - Arsenal (bodyaoo)",
+      "homeTeam": "Man City (Frantsuz)",
+      "awayTeam": "Arsenal (bodyaoo)",
+      "startTime": "2026-06-30T04:18:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 1.96,
+        "draw": 4.25,
+        "away": 2.48
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 1.4,
+          "under": 2.55
+        }
+      ]
+    },
+    {
+      "eventId": "1028192661",
+      "title": "Tottenham (flamez) - Liverpool (v1nniePuh)",
+      "homeTeam": "Tottenham (flamez)",
+      "awayTeam": "Liverpool (v1nniePuh)",
+      "startTime": "2026-06-30T04:18:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.23,
+        "draw": 4.4,
+        "away": 2.12
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.03,
+          "under": 8
+        },
+        {
+          "line": 7.5,
+          "over": 1.3,
+          "under": 2.95
+        },
+        {
+          "line": 8.5,
+          "over": 1.63,
+          "under": 2.06
+        },
+        {
+          "line": 6.5,
+          "over": 1.13,
+          "under": 4.6
+        },
+        {
+          "line": 12.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 10.5,
+          "over": 3.05,
+          "under": 1.28
+        },
+        {
+          "line": 9.5,
+          "over": 2.15,
+          "under": 1.58
+        },
+        {
+          "line": 11.5,
+          "over": 4.6,
+          "under": 1.13
         }
       ]
     },
@@ -17744,8 +17832,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 3.15,
-        "away": 1.32
+        "home": 3,
+        "away": 1.35
       }
     },
     {
@@ -17757,8 +17845,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 6.4,
-        "away": 1.09
+        "home": 8,
+        "away": 1.06
       }
     },
     {
@@ -17770,8 +17858,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.83,
-        "away": 1.89
+        "home": 1.81,
+        "away": 1.92
       }
     },
     {
@@ -17783,8 +17871,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.3,
-        "away": 3.2
+        "home": 1.64,
+        "away": 2.14
       }
     },
     {
@@ -17796,8 +17884,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.78,
-        "away": 1.95
+        "home": 1.89,
+        "away": 1.83
       }
     },
     {
@@ -17809,8 +17897,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 4.1,
-        "away": 1.2
+        "home": 6,
+        "away": 1.1
       }
     },
     {
@@ -17822,8 +17910,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8.5
+        "home": 1.1,
+        "away": 6.1
       }
     },
     {
@@ -17835,8 +17923,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 2.1,
-        "away": 1.66
+        "home": 1.94,
+        "away": 1.79
       }
     },
     {
@@ -17848,8 +17936,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.01,
-        "away": 13
+        "home": 1.03,
+        "away": 10
       }
     },
     {
@@ -17861,8 +17949,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.2,
-        "away": 4.2
+        "home": 1.21,
+        "away": 4.1
       }
     },
     {
@@ -17874,8 +17962,21 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.74,
-        "away": 2
+        "home": 1.75,
+        "away": 1.98
+      }
+    },
+    {
+      "eventId": "1028190355",
+      "title": "Wenfei Yu - Marianna Shikhanova",
+      "homeTeam": "Wenfei Yu",
+      "awayTeam": "Marianna Shikhanova",
+      "startTime": "2026-06-30T03:50:00Z",
+      "league": "Maanshan",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.44,
+        "away": 2.63
       }
     },
     {
@@ -18823,8 +18924,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.53,
-        "away": 2.5
+        "home": 1.56,
+        "away": 2.43
       }
     },
     {
@@ -19447,8 +19548,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.25,
-        "away": 3.9
+        "home": 1.28,
+        "away": 3.7
       }
     },
     {
@@ -20337,6 +20438,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 202,
+  "tennisEventsCount": 203,
   "lastError": null
 }
