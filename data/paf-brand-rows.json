@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T01:19:41.487Z",
+  "updatedAt": "2026-06-30T01:34:41.513Z",
   "source": "github-actions",
   "bookmaker": "paf-brand",
   "displayName": "Paf brand group (X3000 / Golden Bull / 1x2 / Speedybet)",
@@ -9,47 +9,19 @@
   "brandsFetched": 4,
   "brandsFailed": 0,
   "totalEvents": 672,
-  "durationMs": 106862,
+  "durationMs": 107001,
   "note": "Search-based prewarm cache — coverage depends on configured queries. Live-fallback (per-match search) handles cache misses for obscure leagues.",
   "byBrand": {
     "x3000": {
       "displayName": "X3000",
       "baseUrl": "https://www.x3000.com",
-      "updatedAt": "2026-06-30T01:18:21.614Z",
+      "updatedAt": "2026-06-30T01:33:21.281Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 168,
-      "durationMs": 26985,
+      "durationMs": 26765,
       "events": [
-        {
-          "eventId": "1028072415",
-          "title": "Arsenal - Coventry City",
-          "homeTeam": "Arsenal",
-          "awayTeam": "Coventry City",
-          "startTime": "2026-08-21T19:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 1.16,
-            "draw": 7.5,
-            "away": 13
-          },
-          "matchedQuery": "arsenal"
-        },
-        {
-          "eventId": "1028135663",
-          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
-          "homeTeam": "Club Comunicaciones (ARG)",
-          "awayTeam": "Arsenal de Sarandí",
-          "startTime": "2026-07-04T18:00:00Z",
-          "league": "Primera B Metropolitana",
-          "odds": {
-            "home": 2.95,
-            "draw": 2.95,
-            "away": 2.3
-          },
-          "matchedQuery": "arsenal"
-        },
         {
           "eventId": "1028072418",
           "title": "Hull - Manchester United",
@@ -77,6 +49,34 @@
             "away": 6.25
           },
           "matchedQuery": "manchester"
+        },
+        {
+          "eventId": "1028072415",
+          "title": "Arsenal - Coventry City",
+          "homeTeam": "Arsenal",
+          "awayTeam": "Coventry City",
+          "startTime": "2026-08-21T19:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.16,
+            "draw": 7.5,
+            "away": 13
+          },
+          "matchedQuery": "arsenal"
+        },
+        {
+          "eventId": "1028135663",
+          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
+          "homeTeam": "Club Comunicaciones (ARG)",
+          "awayTeam": "Arsenal de Sarandí",
+          "startTime": "2026-07-04T18:00:00Z",
+          "league": "Primera B Metropolitana",
+          "odds": {
+            "home": 2.95,
+            "draw": 2.95,
+            "away": 2.3
+          },
+          "matchedQuery": "arsenal"
         },
         {
           "eventId": "1028072408",
@@ -743,6 +743,20 @@
           "matchedQuery": "napoli"
         },
         {
+          "eventId": "1027911059",
+          "title": "Roma - Fiorentina",
+          "homeTeam": "Roma",
+          "awayTeam": "Fiorentina",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 6.1
+          },
+          "matchedQuery": "roma"
+        },
+        {
           "eventId": "1027911063",
           "title": "Bologna - Lazio",
           "homeTeam": "Bologna",
@@ -757,18 +771,18 @@
           "matchedQuery": "lazio"
         },
         {
-          "eventId": "1027911059",
-          "title": "Roma - Fiorentina",
-          "homeTeam": "Roma",
-          "awayTeam": "Fiorentina",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "eventId": "1027118159",
+          "title": "Liga de Portoviejo - 9 De Octubre FC",
+          "homeTeam": "Liga de Portoviejo",
+          "awayTeam": "9 De Octubre FC",
+          "startTime": "2026-07-04T21:30:00Z",
+          "league": "Serie B",
           "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 6.1
+            "home": 2.63,
+            "draw": 2.88,
+            "away": 2.6
           },
-          "matchedQuery": "roma"
+          "matchedQuery": "porto"
         },
         {
           "eventId": "1027828720",
@@ -826,20 +840,6 @@
           ]
         },
         {
-          "eventId": "1027118159",
-          "title": "Liga de Portoviejo - 9 De Octubre FC",
-          "homeTeam": "Liga de Portoviejo",
-          "awayTeam": "9 De Octubre FC",
-          "startTime": "2026-07-04T21:30:00Z",
-          "league": "Serie B",
-          "odds": {
-            "home": 2.63,
-            "draw": 2.88,
-            "away": 2.6
-          },
-          "matchedQuery": "porto"
-        },
-        {
           "eventId": "1028163544",
           "title": "Frankrike - Sverige",
           "homeTeam": "Frankrike",
@@ -892,8 +892,8 @@
             },
             {
               "line": -1.75,
-              "home": 1.93,
-              "away": 1.87
+              "home": 1.92,
+              "away": 1.88
             },
             {
               "line": -1,
@@ -918,12 +918,12 @@
             {
               "line": -2.75,
               "home": 3.4,
-              "away": 1.3
+              "away": 1.32
             },
             {
               "line": -3.25,
               "home": 4.9,
-              "away": 1.17
+              "away": 1.18
             },
             {
               "line": -3.5,
@@ -933,7 +933,7 @@
             {
               "line": -1.5,
               "home": 1.74,
-              "away": 2.08
+              "away": 2.1
             },
             {
               "line": -0.75,
@@ -1403,7 +1403,7 @@
             {
               "line": 1.5,
               "home": 1.26,
-              "away": 3.8
+              "away": 3.85
             },
             {
               "line": -0.5,
@@ -1423,7 +1423,7 @@
             {
               "line": 0.5,
               "home": 1.8,
-              "away": 2
+              "away": 2.02
             },
             {
               "line": 2,
@@ -1432,13 +1432,13 @@
             },
             {
               "line": 1.75,
-              "home": 1.18,
+              "home": 1.17,
               "away": 4.9
             },
             {
               "line": -0.25,
               "home": 3.1,
-              "away": 1.36
+              "away": 1.37
             }
           ]
         },
@@ -3023,6 +3023,806 @@
           ]
         },
         {
+          "eventId": "1025985711",
+          "title": "Botafogo-RJ - Santos-SP",
+          "homeTeam": "Botafogo-RJ",
+          "awayTeam": "Santos-SP",
+          "startTime": "2026-07-16T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.86,
+            "draw": 3.2,
+            "away": 3.85
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985672",
+          "title": "Chapecoense-SC - Flamengo-RJ",
+          "homeTeam": "Chapecoense-SC",
+          "awayTeam": "Flamengo-RJ",
+          "startTime": "2026-07-23T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 6.75,
+            "draw": 4.25,
+            "away": 1.38
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985658",
+          "title": "Corinthians-SP - Remo-PA",
+          "homeTeam": "Corinthians-SP",
+          "awayTeam": "Remo-PA",
+          "startTime": "2026-07-23T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.5,
+            "draw": 3.7,
+            "away": 5.8
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985662",
+          "title": "Coritiba-PR - Palmeiras-SP",
+          "homeTeam": "Coritiba-PR",
+          "awayTeam": "Palmeiras-SP",
+          "startTime": "2026-07-24T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 3.85,
+            "draw": 3.15,
+            "away": 1.87
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985700",
+          "title": "Fluminense-RJ - RB Bragantino-SP",
+          "homeTeam": "Fluminense-RJ",
+          "awayTeam": "RB Bragantino-SP",
+          "startTime": "2026-07-18T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.7,
+            "draw": 3.35,
+            "away": 4.5
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985652",
+          "title": "Mirassol-SP - Grêmio",
+          "homeTeam": "Mirassol-SP",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-07-17T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 2,
+            "draw": 3.2,
+            "away": 3.4
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985670",
+          "title": "Vitória-BA - Vasco da Gama-RJ",
+          "homeTeam": "Vitória-BA",
+          "awayTeam": "Vasco da Gama-RJ",
+          "startTime": "2026-07-16T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 2.33,
+            "draw": 3.05,
+            "away": 2.8
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591429",
+          "title": "Botafogo-SP - Avaí-SC",
+          "homeTeam": "Botafogo-SP",
+          "awayTeam": "Avaí-SC",
+          "startTime": "2026-07-06T22:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.3,
+            "away": 3.9
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591324",
+          "title": "Botafogo-SP - CRB-AL",
+          "homeTeam": "Botafogo-SP",
+          "awayTeam": "CRB-AL",
+          "startTime": "2026-06-30T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.28,
+            "draw": 3.05,
+            "away": 3.3
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 4.2,
+              "under": 1.2
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.6
+            },
+            {
+              "line": 4.5,
+              "over": 9,
+              "under": 1.04
+            },
+            {
+              "line": 0.5,
+              "over": 1.06,
+              "under": 8
+            },
+            {
+              "line": 1.5,
+              "over": 1.38,
+              "under": 2.85
+            }
+          ],
+          "ah": [
+            {
+              "line": -1.25,
+              "home": 4.1,
+              "away": 1.21
+            },
+            {
+              "line": -0.25,
+              "home": 1.92,
+              "away": 1.85
+            },
+            {
+              "line": -1.5,
+              "home": 4.6,
+              "away": 1.18
+            },
+            {
+              "line": 0.5,
+              "home": 1.33,
+              "away": 3.2
+            },
+            {
+              "line": -0.5,
+              "home": 2.23,
+              "away": 1.62
+            },
+            {
+              "line": 1.25,
+              "home": 1.09,
+              "away": 6.75
+            },
+            {
+              "line": 0.25,
+              "home": 1.43,
+              "away": 2.75
+            },
+            {
+              "line": -0.75,
+              "home": 2.7,
+              "away": 1.44
+            },
+            {
+              "line": 1.5,
+              "home": 1.08,
+              "away": 7
+            },
+            {
+              "line": 0.75,
+              "home": 1.22,
+              "away": 4.1
+            },
+            {
+              "line": -1,
+              "home": 3.65,
+              "away": 1.26
+            },
+            {
+              "line": 1,
+              "home": 1.1,
+              "away": 6.25
+            }
+          ]
+        },
+        {
+          "eventId": "1026591446",
+          "title": "Criciúma-SC - Sport Recife-PE",
+          "homeTeam": "Criciúma-SC",
+          "awayTeam": "Sport Recife-PE",
+          "startTime": "2026-07-04T19:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.88,
+            "draw": 3.4,
+            "away": 4.1
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591386",
+          "title": "Cuiabá-MT - América-MG",
+          "homeTeam": "Cuiabá-MT",
+          "awayTeam": "América-MG",
+          "startTime": "2026-07-02T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.15,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.46,
+              "under": 2.55
+            },
+            {
+              "line": 3.5,
+              "over": 4.9,
+              "under": 1.15
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 7
+            },
+            {
+              "line": 4.5,
+              "over": 10.5,
+              "under": 1.02
+            },
+            {
+              "line": 2.5,
+              "over": 2.48,
+              "under": 1.49
+            }
+          ],
+          "ah": [
+            {
+              "line": -0.5,
+              "home": 1.93,
+              "away": 1.83
+            },
+            {
+              "line": -1.25,
+              "home": 3.4,
+              "away": 1.3
+            },
+            {
+              "line": -1.5,
+              "home": 3.8,
+              "away": 1.24
+            },
+            {
+              "line": 0.5,
+              "home": 1.23,
+              "away": 4
+            },
+            {
+              "line": 0.25,
+              "home": 1.29,
+              "away": 3.5
+            },
+            {
+              "line": -1,
+              "home": 2.95,
+              "away": 1.38
+            },
+            {
+              "line": -0.25,
+              "home": 1.66,
+              "away": 2.17
+            },
+            {
+              "line": -0.75,
+              "home": 2.25,
+              "away": 1.61
+            }
+          ]
+        },
+        {
+          "eventId": "1026591450",
+          "title": "Fortaleza-CE - Ponte Preta-SP",
+          "homeTeam": "Fortaleza-CE",
+          "awayTeam": "Ponte Preta-SP",
+          "startTime": "2026-07-03T00:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.36,
+            "draw": 4.6,
+            "away": 8.5
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 0.5,
+              "over": 1.02,
+              "under": 10.5
+            },
+            {
+              "line": 4.5,
+              "over": 6,
+              "under": 1.1
+            },
+            {
+              "line": 2.5,
+              "over": 1.79,
+              "under": 1.94
+            },
+            {
+              "line": 3.5,
+              "over": 3.05,
+              "under": 1.34
+            },
+            {
+              "line": 1.5,
+              "over": 1.24,
+              "under": 3.75
+            },
+            {
+              "line": 5.5,
+              "over": 11.5,
+              "under": 1.01
+            }
+          ],
+          "ah": [
+            {
+              "line": -2,
+              "home": 3.05,
+              "away": 1.36
+            },
+            {
+              "line": -0.5,
+              "home": 1.36,
+              "away": 3.05
+            },
+            {
+              "line": -3,
+              "home": 6.75,
+              "away": 1.09
+            },
+            {
+              "line": -1.75,
+              "home": 2.4,
+              "away": 1.54
+            },
+            {
+              "line": -2.5,
+              "home": 3.75,
+              "away": 1.25
+            },
+            {
+              "line": -1.5,
+              "home": 2.07,
+              "away": 1.72
+            },
+            {
+              "line": 0.5,
+              "home": 1.08,
+              "away": 7.5
+            },
+            {
+              "line": -3.5,
+              "home": 7.5,
+              "away": 1.07
+            },
+            {
+              "line": -2.75,
+              "home": 4.75,
+              "away": 1.17
+            },
+            {
+              "line": 0.25,
+              "home": 1.09,
+              "away": 6.75
+            },
+            {
+              "line": -1.25,
+              "home": 1.82,
+              "away": 1.94
+            },
+            {
+              "line": -0.75,
+              "home": 1.44,
+              "away": 2.7
+            },
+            {
+              "line": -3.25,
+              "home": 7,
+              "away": 1.08
+            },
+            {
+              "line": -0.25,
+              "home": 1.23,
+              "away": 3.95
+            },
+            {
+              "line": -2.25,
+              "home": 3.4,
+              "away": 1.3
+            },
+            {
+              "line": -1,
+              "home": 1.57,
+              "away": 2.33
+            }
+          ]
+        },
+        {
+          "eventId": "1026591444",
+          "title": "Goiás-GO - Ceará-CE",
+          "homeTeam": "Goiás-GO",
+          "awayTeam": "Ceará-CE",
+          "startTime": "2026-07-04T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.28,
+            "draw": 3.1,
+            "away": 3.15
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591447",
+          "title": "Londrina-PR - CRB-AL",
+          "homeTeam": "Londrina-PR",
+          "awayTeam": "CRB-AL",
+          "startTime": "2026-07-04T19:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.8,
+            "draw": 3.3,
+            "away": 2.43
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591391",
+          "title": "Vila Nova-GO - FC São Bernardo-SP",
+          "homeTeam": "Vila Nova-GO",
+          "awayTeam": "FC São Bernardo-SP",
+          "startTime": "2026-07-06T22:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.85,
+            "draw": 3.4,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756414",
+          "title": "AD Confianca-SE - Barra-SC",
+          "homeTeam": "AD Confianca-SE",
+          "awayTeam": "Barra-SC",
+          "startTime": "2026-07-04T22:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.23,
+            "draw": 2.85,
+            "away": 3.25
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756405",
+          "title": "Botafogo-PB - Brusque-SC",
+          "homeTeam": "Botafogo-PB",
+          "awayTeam": "Brusque-SC",
+          "startTime": "2026-06-30T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2,
+            "draw": 3,
+            "away": 3.6
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 2.5,
+              "over": 2.28,
+              "under": 1.55
+            },
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.65
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.19
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.5
+            }
+          ],
+          "ah": [
+            {
+              "line": -1.5,
+              "home": 3.85,
+              "away": 1.21
+            },
+            {
+              "line": -1.25,
+              "home": 3.45,
+              "away": 1.25
+            },
+            {
+              "line": -0.5,
+              "home": 1.98,
+              "away": 1.72
+            },
+            {
+              "line": 0.5,
+              "home": 1.25,
+              "away": 3.45
+            },
+            {
+              "line": -0.25,
+              "home": 1.71,
+              "away": 1.98
+            },
+            {
+              "line": -0.75,
+              "home": 2.33,
+              "away": 1.52
+            },
+            {
+              "line": -1,
+              "home": 3.05,
+              "away": 1.32
+            },
+            {
+              "line": 0.25,
+              "home": 1.32,
+              "away": 3
+            }
+          ]
+        },
+        {
+          "eventId": "1026756407",
+          "title": "Ferroviária-SP - Caxias-RS",
+          "homeTeam": "Ferroviária-SP",
+          "awayTeam": "Caxias-RS",
+          "startTime": "2026-07-04T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.38,
+            "draw": 2.85,
+            "away": 3.25
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756389",
+          "title": "Guarani-SP - Floresta-CE",
+          "homeTeam": "Guarani-SP",
+          "awayTeam": "Floresta-CE",
+          "startTime": "2026-07-04T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.52,
+            "draw": 3.65,
+            "away": 5.75
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756341",
+          "title": "Maringá-PR - Volta Redonda-RJ",
+          "homeTeam": "Maringá-PR",
+          "awayTeam": "Volta Redonda-RJ",
+          "startTime": "2026-07-04T22:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.72,
+            "draw": 3.45,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756326",
+          "title": "Santa Cruz-PE - Ituano-SP",
+          "homeTeam": "Santa Cruz-PE",
+          "awayTeam": "Ituano-SP",
+          "startTime": "2026-07-05T00:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.16,
+            "draw": 3.05,
+            "away": 3.15
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756378",
+          "title": "Volta Redonda-RJ - Amazonas-AM",
+          "homeTeam": "Volta Redonda-RJ",
+          "awayTeam": "Amazonas-AM",
+          "startTime": "2026-06-30T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.83,
+            "draw": 3.05,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 4.6,
+              "under": 1.15
+            },
+            {
+              "line": 0.5,
+              "over": 1.09,
+              "under": 6
+            },
+            {
+              "line": 1.5,
+              "over": 1.46,
+              "under": 2.48
+            },
+            {
+              "line": 2.5,
+              "over": 2.48,
+              "under": 1.47
+            }
+          ],
+          "ah": [
+            {
+              "line": 0.5,
+              "home": 1.2,
+              "away": 4
+            },
+            {
+              "line": -0.75,
+              "home": 2.1,
+              "away": 1.63
+            },
+            {
+              "line": -1.5,
+              "home": 3.45,
+              "away": 1.25
+            },
+            {
+              "line": -1,
+              "home": 2.65,
+              "away": 1.4
+            },
+            {
+              "line": -0.5,
+              "home": 1.82,
+              "away": 1.86
+            },
+            {
+              "line": -0.25,
+              "home": 1.57,
+              "away": 2.2
+            },
+            {
+              "line": 0.25,
+              "home": 1.24,
+              "away": 3.5
+            },
+            {
+              "line": -1.25,
+              "home": 3.05,
+              "away": 1.3
+            }
+          ]
+        },
+        {
+          "eventId": "1027911064",
+          "title": "Atalanta - Sassuolo",
+          "homeTeam": "Atalanta",
+          "awayTeam": "Sassuolo",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.47,
+            "draw": 4.1,
+            "away": 5.4
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911056",
+          "title": "Parma - Cagliari",
+          "homeTeam": "Parma",
+          "awayTeam": "Cagliari",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 2.5,
+            "draw": 2.88,
+            "away": 2.75
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911061",
+          "title": "Udinese - Como",
+          "homeTeam": "Udinese",
+          "awayTeam": "Como",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 4.3,
+            "draw": 3.3,
+            "away": 1.74
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911060",
+          "title": "Venezia - Lecce",
+          "homeTeam": "Venezia",
+          "awayTeam": "Lecce",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 2.23,
+            "draw": 3.05,
+            "away": 3.05
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027118147",
+          "title": "CD Cuenca Juniors - San Antonio FC de Cotacachi",
+          "homeTeam": "CD Cuenca Juniors",
+          "awayTeam": "San Antonio FC de Cotacachi",
+          "startTime": "2026-07-03T18:00:00Z",
+          "league": "Serie B",
+          "odds": {
+            "home": 1.87,
+            "draw": 3.1,
+            "away": 4
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.25
+            },
+            {
+              "line": 2.5,
+              "over": 2.25,
+              "under": 1.53
+            },
+            {
+              "line": 1.5,
+              "over": 1.41,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.17
+            }
+          ]
+        },
+        {
           "eventId": "1027510086",
           "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
           "homeTeam": "FK Atmosfera Mazeikiai",
@@ -3710,806 +4510,6 @@
               "line": -1,
               "home": 3,
               "away": 1.32
-            }
-          ]
-        },
-        {
-          "eventId": "1025985711",
-          "title": "Botafogo-RJ - Santos-SP",
-          "homeTeam": "Botafogo-RJ",
-          "awayTeam": "Santos-SP",
-          "startTime": "2026-07-16T22:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 1.86,
-            "draw": 3.2,
-            "away": 3.85
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985672",
-          "title": "Chapecoense-SC - Flamengo-RJ",
-          "homeTeam": "Chapecoense-SC",
-          "awayTeam": "Flamengo-RJ",
-          "startTime": "2026-07-23T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 6.75,
-            "draw": 4.25,
-            "away": 1.38
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985658",
-          "title": "Corinthians-SP - Remo-PA",
-          "homeTeam": "Corinthians-SP",
-          "awayTeam": "Remo-PA",
-          "startTime": "2026-07-23T22:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 1.5,
-            "draw": 3.7,
-            "away": 5.8
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985662",
-          "title": "Coritiba-PR - Palmeiras-SP",
-          "homeTeam": "Coritiba-PR",
-          "awayTeam": "Palmeiras-SP",
-          "startTime": "2026-07-24T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 3.85,
-            "draw": 3.15,
-            "away": 1.87
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985700",
-          "title": "Fluminense-RJ - RB Bragantino-SP",
-          "homeTeam": "Fluminense-RJ",
-          "awayTeam": "RB Bragantino-SP",
-          "startTime": "2026-07-18T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 1.7,
-            "draw": 3.35,
-            "away": 4.5
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985652",
-          "title": "Mirassol-SP - Grêmio",
-          "homeTeam": "Mirassol-SP",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-07-17T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 2,
-            "draw": 3.2,
-            "away": 3.4
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985670",
-          "title": "Vitória-BA - Vasco da Gama-RJ",
-          "homeTeam": "Vitória-BA",
-          "awayTeam": "Vasco da Gama-RJ",
-          "startTime": "2026-07-16T22:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 2.33,
-            "draw": 3.05,
-            "away": 2.8
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591429",
-          "title": "Botafogo-SP - Avaí-SC",
-          "homeTeam": "Botafogo-SP",
-          "awayTeam": "Avaí-SC",
-          "startTime": "2026-07-06T22:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.95,
-            "draw": 3.3,
-            "away": 3.9
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591324",
-          "title": "Botafogo-SP - CRB-AL",
-          "homeTeam": "Botafogo-SP",
-          "awayTeam": "CRB-AL",
-          "startTime": "2026-06-30T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.28,
-            "draw": 3.05,
-            "away": 3.3
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 4.35,
-              "under": 1.19
-            },
-            {
-              "line": 2.5,
-              "over": 2.28,
-              "under": 1.57
-            },
-            {
-              "line": 4.5,
-              "over": 9,
-              "under": 1.04
-            },
-            {
-              "line": 0.5,
-              "over": 1.06,
-              "under": 7.5
-            },
-            {
-              "line": 1.5,
-              "over": 1.4,
-              "under": 2.8
-            }
-          ],
-          "ah": [
-            {
-              "line": -1.25,
-              "home": 4.1,
-              "away": 1.21
-            },
-            {
-              "line": -0.25,
-              "home": 1.92,
-              "away": 1.85
-            },
-            {
-              "line": -1.5,
-              "home": 4.6,
-              "away": 1.18
-            },
-            {
-              "line": 0.5,
-              "home": 1.33,
-              "away": 3.2
-            },
-            {
-              "line": -0.5,
-              "home": 2.23,
-              "away": 1.62
-            },
-            {
-              "line": 1.25,
-              "home": 1.09,
-              "away": 6.75
-            },
-            {
-              "line": 0.25,
-              "home": 1.43,
-              "away": 2.75
-            },
-            {
-              "line": -0.75,
-              "home": 2.7,
-              "away": 1.44
-            },
-            {
-              "line": 1.5,
-              "home": 1.08,
-              "away": 7.5
-            },
-            {
-              "line": 0.75,
-              "home": 1.22,
-              "away": 4.1
-            },
-            {
-              "line": -1,
-              "home": 3.7,
-              "away": 1.26
-            },
-            {
-              "line": 1,
-              "home": 1.1,
-              "away": 6.25
-            }
-          ]
-        },
-        {
-          "eventId": "1026591446",
-          "title": "Criciúma-SC - Sport Recife-PE",
-          "homeTeam": "Criciúma-SC",
-          "awayTeam": "Sport Recife-PE",
-          "startTime": "2026-07-04T19:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.88,
-            "draw": 3.4,
-            "away": 4.1
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591386",
-          "title": "Cuiabá-MT - América-MG",
-          "homeTeam": "Cuiabá-MT",
-          "awayTeam": "América-MG",
-          "startTime": "2026-07-02T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.95,
-            "draw": 3.15,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.46,
-              "under": 2.55
-            },
-            {
-              "line": 3.5,
-              "over": 4.9,
-              "under": 1.15
-            },
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 7
-            },
-            {
-              "line": 4.5,
-              "over": 10.5,
-              "under": 1.02
-            },
-            {
-              "line": 2.5,
-              "over": 2.48,
-              "under": 1.49
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.5,
-              "home": 1.93,
-              "away": 1.83
-            },
-            {
-              "line": -1.25,
-              "home": 3.4,
-              "away": 1.3
-            },
-            {
-              "line": -1.5,
-              "home": 3.8,
-              "away": 1.24
-            },
-            {
-              "line": 0.5,
-              "home": 1.23,
-              "away": 4
-            },
-            {
-              "line": 0.25,
-              "home": 1.29,
-              "away": 3.5
-            },
-            {
-              "line": -1,
-              "home": 2.95,
-              "away": 1.38
-            },
-            {
-              "line": -0.25,
-              "home": 1.66,
-              "away": 2.17
-            },
-            {
-              "line": -0.75,
-              "home": 2.25,
-              "away": 1.61
-            }
-          ]
-        },
-        {
-          "eventId": "1026591450",
-          "title": "Fortaleza-CE - Ponte Preta-SP",
-          "homeTeam": "Fortaleza-CE",
-          "awayTeam": "Ponte Preta-SP",
-          "startTime": "2026-07-03T00:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.36,
-            "draw": 4.6,
-            "away": 8.5
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 0.5,
-              "over": 1.02,
-              "under": 10.5
-            },
-            {
-              "line": 4.5,
-              "over": 6,
-              "under": 1.1
-            },
-            {
-              "line": 2.5,
-              "over": 1.79,
-              "under": 1.94
-            },
-            {
-              "line": 3.5,
-              "over": 3.05,
-              "under": 1.34
-            },
-            {
-              "line": 1.5,
-              "over": 1.24,
-              "under": 3.75
-            },
-            {
-              "line": 5.5,
-              "over": 11.5,
-              "under": 1.01
-            }
-          ],
-          "ah": [
-            {
-              "line": -2,
-              "home": 3.05,
-              "away": 1.36
-            },
-            {
-              "line": -0.5,
-              "home": 1.36,
-              "away": 3.05
-            },
-            {
-              "line": -3,
-              "home": 6.75,
-              "away": 1.09
-            },
-            {
-              "line": -1.75,
-              "home": 2.4,
-              "away": 1.54
-            },
-            {
-              "line": -2.5,
-              "home": 3.75,
-              "away": 1.25
-            },
-            {
-              "line": -1.5,
-              "home": 2.07,
-              "away": 1.72
-            },
-            {
-              "line": 0.5,
-              "home": 1.08,
-              "away": 7.5
-            },
-            {
-              "line": -3.5,
-              "home": 7.5,
-              "away": 1.07
-            },
-            {
-              "line": -2.75,
-              "home": 4.75,
-              "away": 1.17
-            },
-            {
-              "line": 0.25,
-              "home": 1.09,
-              "away": 6.75
-            },
-            {
-              "line": -1.25,
-              "home": 1.82,
-              "away": 1.94
-            },
-            {
-              "line": -0.75,
-              "home": 1.44,
-              "away": 2.7
-            },
-            {
-              "line": -3.25,
-              "home": 7,
-              "away": 1.08
-            },
-            {
-              "line": -0.25,
-              "home": 1.23,
-              "away": 3.95
-            },
-            {
-              "line": -2.25,
-              "home": 3.4,
-              "away": 1.3
-            },
-            {
-              "line": -1,
-              "home": 1.57,
-              "away": 2.33
-            }
-          ]
-        },
-        {
-          "eventId": "1026591444",
-          "title": "Goiás-GO - Ceará-CE",
-          "homeTeam": "Goiás-GO",
-          "awayTeam": "Ceará-CE",
-          "startTime": "2026-07-04T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.28,
-            "draw": 3.1,
-            "away": 3.15
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591447",
-          "title": "Londrina-PR - CRB-AL",
-          "homeTeam": "Londrina-PR",
-          "awayTeam": "CRB-AL",
-          "startTime": "2026-07-04T19:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.8,
-            "draw": 3.3,
-            "away": 2.43
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591391",
-          "title": "Vila Nova-GO - FC São Bernardo-SP",
-          "homeTeam": "Vila Nova-GO",
-          "awayTeam": "FC São Bernardo-SP",
-          "startTime": "2026-07-06T22:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.85,
-            "draw": 3.4,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756414",
-          "title": "AD Confianca-SE - Barra-SC",
-          "homeTeam": "AD Confianca-SE",
-          "awayTeam": "Barra-SC",
-          "startTime": "2026-07-04T22:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.23,
-            "draw": 2.85,
-            "away": 3.25
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756405",
-          "title": "Botafogo-PB - Brusque-SC",
-          "homeTeam": "Botafogo-PB",
-          "awayTeam": "Brusque-SC",
-          "startTime": "2026-06-30T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2,
-            "draw": 3,
-            "away": 3.6
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 2.5,
-              "over": 2.28,
-              "under": 1.55
-            },
-            {
-              "line": 1.5,
-              "over": 1.4,
-              "under": 2.65
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.19
-            },
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 6.5
-            }
-          ],
-          "ah": [
-            {
-              "line": -1.5,
-              "home": 3.85,
-              "away": 1.21
-            },
-            {
-              "line": -1.25,
-              "home": 3.45,
-              "away": 1.25
-            },
-            {
-              "line": -0.5,
-              "home": 1.98,
-              "away": 1.72
-            },
-            {
-              "line": 0.5,
-              "home": 1.25,
-              "away": 3.45
-            },
-            {
-              "line": -0.25,
-              "home": 1.71,
-              "away": 1.98
-            },
-            {
-              "line": -0.75,
-              "home": 2.33,
-              "away": 1.52
-            },
-            {
-              "line": -1,
-              "home": 3.05,
-              "away": 1.32
-            },
-            {
-              "line": 0.25,
-              "home": 1.32,
-              "away": 3
-            }
-          ]
-        },
-        {
-          "eventId": "1026756407",
-          "title": "Ferroviária-SP - Caxias-RS",
-          "homeTeam": "Ferroviária-SP",
-          "awayTeam": "Caxias-RS",
-          "startTime": "2026-07-04T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.38,
-            "draw": 2.85,
-            "away": 3.25
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756389",
-          "title": "Guarani-SP - Floresta-CE",
-          "homeTeam": "Guarani-SP",
-          "awayTeam": "Floresta-CE",
-          "startTime": "2026-07-04T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.52,
-            "draw": 3.65,
-            "away": 5.75
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756341",
-          "title": "Maringá-PR - Volta Redonda-RJ",
-          "homeTeam": "Maringá-PR",
-          "awayTeam": "Volta Redonda-RJ",
-          "startTime": "2026-07-04T22:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.72,
-            "draw": 3.45,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756326",
-          "title": "Santa Cruz-PE - Ituano-SP",
-          "homeTeam": "Santa Cruz-PE",
-          "awayTeam": "Ituano-SP",
-          "startTime": "2026-07-05T00:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.16,
-            "draw": 3.05,
-            "away": 3.15
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756378",
-          "title": "Volta Redonda-RJ - Amazonas-AM",
-          "homeTeam": "Volta Redonda-RJ",
-          "awayTeam": "Amazonas-AM",
-          "startTime": "2026-06-30T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.83,
-            "draw": 3.05,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 4.6,
-              "under": 1.15
-            },
-            {
-              "line": 0.5,
-              "over": 1.09,
-              "under": 6
-            },
-            {
-              "line": 1.5,
-              "over": 1.46,
-              "under": 2.48
-            },
-            {
-              "line": 2.5,
-              "over": 2.48,
-              "under": 1.47
-            }
-          ],
-          "ah": [
-            {
-              "line": 0.5,
-              "home": 1.2,
-              "away": 4
-            },
-            {
-              "line": -0.75,
-              "home": 2.1,
-              "away": 1.63
-            },
-            {
-              "line": -1.5,
-              "home": 3.45,
-              "away": 1.25
-            },
-            {
-              "line": -1,
-              "home": 2.65,
-              "away": 1.4
-            },
-            {
-              "line": -0.5,
-              "home": 1.82,
-              "away": 1.86
-            },
-            {
-              "line": -0.25,
-              "home": 1.57,
-              "away": 2.2
-            },
-            {
-              "line": 0.25,
-              "home": 1.24,
-              "away": 3.5
-            },
-            {
-              "line": -1.25,
-              "home": 3.05,
-              "away": 1.3
-            }
-          ]
-        },
-        {
-          "eventId": "1027911064",
-          "title": "Atalanta - Sassuolo",
-          "homeTeam": "Atalanta",
-          "awayTeam": "Sassuolo",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 1.47,
-            "draw": 4.1,
-            "away": 5.4
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1027911056",
-          "title": "Parma - Cagliari",
-          "homeTeam": "Parma",
-          "awayTeam": "Cagliari",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 2.5,
-            "draw": 2.88,
-            "away": 2.75
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1027911061",
-          "title": "Udinese - Como",
-          "homeTeam": "Udinese",
-          "awayTeam": "Como",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 4.3,
-            "draw": 3.3,
-            "away": 1.74
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1027911060",
-          "title": "Venezia - Lecce",
-          "homeTeam": "Venezia",
-          "awayTeam": "Lecce",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 2.23,
-            "draw": 3.05,
-            "away": 3.05
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1027118147",
-          "title": "CD Cuenca Juniors - San Antonio FC de Cotacachi",
-          "homeTeam": "CD Cuenca Juniors",
-          "awayTeam": "San Antonio FC de Cotacachi",
-          "startTime": "2026-07-03T18:00:00Z",
-          "league": "Serie B",
-          "odds": {
-            "home": 1.87,
-            "draw": 3.1,
-            "away": 4
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 6.25
-            },
-            {
-              "line": 2.5,
-              "over": 2.25,
-              "under": 1.53
-            },
-            {
-              "line": 1.5,
-              "over": 1.41,
-              "under": 2.6
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.17
             }
           ]
         },
@@ -4827,12 +4827,12 @@
     "goldenbull": {
       "displayName": "Golden Bull",
       "baseUrl": "https://www.goldenbull.se",
-      "updatedAt": "2026-06-30T01:18:48.065Z",
+      "updatedAt": "2026-06-30T01:33:47.817Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 168,
-      "durationMs": 26451,
+      "durationMs": 26536,
       "events": [
         {
           "eventId": "1028072418",
@@ -4863,20 +4863,6 @@
           "matchedQuery": "manchester"
         },
         {
-          "eventId": "1028072408",
-          "title": "Fulham - Chelsea",
-          "homeTeam": "Fulham",
-          "awayTeam": "Chelsea",
-          "startTime": "2026-08-24T19:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 3.25,
-            "draw": 3.6,
-            "away": 2.04
-          },
-          "matchedQuery": "chelsea"
-        },
-        {
           "eventId": "1028072415",
           "title": "Arsenal - Coventry City",
           "homeTeam": "Arsenal",
@@ -4905,6 +4891,20 @@
           "matchedQuery": "arsenal"
         },
         {
+          "eventId": "1028072408",
+          "title": "Fulham - Chelsea",
+          "homeTeam": "Fulham",
+          "awayTeam": "Chelsea",
+          "startTime": "2026-08-24T19:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 3.25,
+            "draw": 3.6,
+            "away": 2.04
+          },
+          "matchedQuery": "chelsea"
+        },
+        {
           "eventId": "1028072416",
           "title": "Brentford - Tottenham",
           "homeTeam": "Brentford",
@@ -4931,6 +4931,20 @@
             "away": 2.25
           },
           "matchedQuery": "liverpool"
+        },
+        {
+          "eventId": "1028072413",
+          "title": "Nottingham - Leeds",
+          "homeTeam": "Nottingham",
+          "awayTeam": "Leeds",
+          "startTime": "2026-08-22T14:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.4,
+            "away": 3.1
+          },
+          "matchedQuery": "leeds"
         },
         {
           "eventId": "1027586481",
@@ -4981,20 +4995,6 @@
             "away": 3.5
           },
           "matchedQuery": "everton"
-        },
-        {
-          "eventId": "1028072413",
-          "title": "Nottingham - Leeds",
-          "homeTeam": "Nottingham",
-          "awayTeam": "Leeds",
-          "startTime": "2026-08-22T14:00:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.2,
-            "draw": 3.4,
-            "away": 3.1
-          },
-          "matchedQuery": "leeds"
         },
         {
           "eventId": "1028102523",
@@ -5329,98 +5329,6 @@
           "matchedQuery": "milan"
         },
         {
-          "eventId": "1026756377",
-          "title": "Caxias-RS - Anápolis-GO",
-          "homeTeam": "Caxias-RS",
-          "awayTeam": "Anápolis-GO",
-          "startTime": "2026-06-30T22:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.58,
-            "draw": 3.45,
-            "away": 5.4
-          },
-          "matchedQuery": "napoli",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.38,
-              "under": 2.7
-            },
-            {
-              "line": 2.5,
-              "over": 2.2,
-              "under": 1.58
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.19
-            },
-            {
-              "line": 0.5,
-              "over": 1.05,
-              "under": 6.75
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.75,
-              "home": 1.77,
-              "away": 1.92
-            },
-            {
-              "line": -1.5,
-              "home": 2.8,
-              "away": 1.37
-            },
-            {
-              "line": 0.25,
-              "home": 1.16,
-              "away": 4.4
-            },
-            {
-              "line": -1.25,
-              "home": 2.48,
-              "away": 1.47
-            },
-            {
-              "line": -0.5,
-              "home": 1.58,
-              "away": 2.2
-            },
-            {
-              "line": -1,
-              "home": 2.1,
-              "away": 1.64
-            },
-            {
-              "line": 0.5,
-              "home": 1.13,
-              "away": 4.9
-            },
-            {
-              "line": -0.25,
-              "home": 1.38,
-              "away": 2.7
-            }
-          ]
-        },
-        {
-          "eventId": "1027911062",
-          "title": "Genoa - Napoli",
-          "homeTeam": "Genoa",
-          "awayTeam": "Napoli",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 5,
-            "draw": 3.35,
-            "away": 1.63
-          },
-          "matchedQuery": "napoli"
-        },
-        {
           "eventId": "1025985659",
           "title": "Internacional-RS - Cruzeiro-MG",
           "homeTeam": "Internacional-RS",
@@ -5555,18 +5463,96 @@
           "matchedQuery": "inter"
         },
         {
-          "eventId": "1027911059",
-          "title": "Roma - Fiorentina",
-          "homeTeam": "Roma",
-          "awayTeam": "Fiorentina",
+          "eventId": "1026756377",
+          "title": "Caxias-RS - Anápolis-GO",
+          "homeTeam": "Caxias-RS",
+          "awayTeam": "Anápolis-GO",
+          "startTime": "2026-06-30T22:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.58,
+            "draw": 3.45,
+            "away": 5.4
+          },
+          "matchedQuery": "napoli",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.38,
+              "under": 2.7
+            },
+            {
+              "line": 2.5,
+              "over": 2.2,
+              "under": 1.58
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.19
+            },
+            {
+              "line": 0.5,
+              "over": 1.05,
+              "under": 6.75
+            }
+          ],
+          "ah": [
+            {
+              "line": -0.75,
+              "home": 1.77,
+              "away": 1.92
+            },
+            {
+              "line": -1.5,
+              "home": 2.8,
+              "away": 1.37
+            },
+            {
+              "line": 0.25,
+              "home": 1.16,
+              "away": 4.4
+            },
+            {
+              "line": -1.25,
+              "home": 2.48,
+              "away": 1.47
+            },
+            {
+              "line": -0.5,
+              "home": 1.58,
+              "away": 2.2
+            },
+            {
+              "line": -1,
+              "home": 2.1,
+              "away": 1.64
+            },
+            {
+              "line": 0.5,
+              "home": 1.13,
+              "away": 4.9
+            },
+            {
+              "line": -0.25,
+              "home": 1.38,
+              "away": 2.7
+            }
+          ]
+        },
+        {
+          "eventId": "1027911062",
+          "title": "Genoa - Napoli",
+          "homeTeam": "Genoa",
+          "awayTeam": "Napoli",
           "startTime": "2026-08-22T13:00:00Z",
           "league": "Serie A",
           "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 6.1
+            "home": 5,
+            "draw": 3.35,
+            "away": 1.63
           },
-          "matchedQuery": "roma"
+          "matchedQuery": "napoli"
         },
         {
           "eventId": "1027911063",
@@ -5581,6 +5567,75 @@
             "away": 3.5
           },
           "matchedQuery": "lazio"
+        },
+        {
+          "eventId": "1027911059",
+          "title": "Roma - Fiorentina",
+          "homeTeam": "Roma",
+          "awayTeam": "Fiorentina",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 6.1
+          },
+          "matchedQuery": "roma"
+        },
+        {
+          "eventId": "1027828720",
+          "title": "Sporting Cristal - RB Bragantino-SP",
+          "homeTeam": "Sporting Cristal",
+          "awayTeam": "RB Bragantino-SP",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 3,
+            "draw": 3.4,
+            "away": 2.25
+          },
+          "matchedQuery": "sporting"
+        },
+        {
+          "eventId": "1026090143",
+          "title": "Loudoun United FC - Sporting Jax",
+          "homeTeam": "Loudoun United FC",
+          "awayTeam": "Sporting Jax",
+          "startTime": "2026-07-03T23:00:00Z",
+          "league": "USL Championship",
+          "odds": {
+            "home": 1.5,
+            "draw": 4.1,
+            "away": 5
+          },
+          "matchedQuery": "sporting",
+          "totals": [
+            {
+              "line": 2.5,
+              "over": 1.46,
+              "under": 2.4
+            },
+            {
+              "line": 3.5,
+              "over": 2.16,
+              "under": 1.57
+            },
+            {
+              "line": 5.5,
+              "over": 6.1,
+              "under": 1.07
+            },
+            {
+              "line": 4.5,
+              "over": 3.6,
+              "under": 1.22
+            },
+            {
+              "line": 1.5,
+              "over": 1.13,
+              "under": 4.7
+            }
+          ]
         },
         {
           "eventId": "1027118159",
@@ -5649,8 +5704,8 @@
             },
             {
               "line": -1.75,
-              "home": 1.93,
-              "away": 1.87
+              "home": 1.92,
+              "away": 1.88
             },
             {
               "line": -1,
@@ -5675,12 +5730,12 @@
             {
               "line": -2.75,
               "home": 3.4,
-              "away": 1.3
+              "away": 1.32
             },
             {
               "line": -3.25,
               "home": 4.9,
-              "away": 1.17
+              "away": 1.18
             },
             {
               "line": -3.5,
@@ -5690,7 +5745,7 @@
             {
               "line": -1.5,
               "home": 1.74,
-              "away": 2.08
+              "away": 2.1
             },
             {
               "line": -0.75,
@@ -6092,61 +6147,6 @@
           ]
         },
         {
-          "eventId": "1027828720",
-          "title": "Sporting Cristal - RB Bragantino-SP",
-          "homeTeam": "Sporting Cristal",
-          "awayTeam": "RB Bragantino-SP",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 3,
-            "draw": 3.4,
-            "away": 2.25
-          },
-          "matchedQuery": "sporting"
-        },
-        {
-          "eventId": "1026090143",
-          "title": "Loudoun United FC - Sporting Jax",
-          "homeTeam": "Loudoun United FC",
-          "awayTeam": "Sporting Jax",
-          "startTime": "2026-07-03T23:00:00Z",
-          "league": "USL Championship",
-          "odds": {
-            "home": 1.5,
-            "draw": 4.1,
-            "away": 5
-          },
-          "matchedQuery": "sporting",
-          "totals": [
-            {
-              "line": 2.5,
-              "over": 1.46,
-              "under": 2.4
-            },
-            {
-              "line": 3.5,
-              "over": 2.16,
-              "under": 1.57
-            },
-            {
-              "line": 5.5,
-              "over": 6.1,
-              "under": 1.07
-            },
-            {
-              "line": 4.5,
-              "over": 3.6,
-              "under": 1.22
-            },
-            {
-              "line": 1.5,
-              "over": 1.13,
-              "under": 4.7
-            }
-          ]
-        },
-        {
           "eventId": "1028160926",
           "title": "Elfenbenskusten - Norge",
           "homeTeam": "Elfenbenskusten",
@@ -6215,7 +6215,7 @@
             {
               "line": 1.5,
               "home": 1.26,
-              "away": 3.8
+              "away": 3.85
             },
             {
               "line": -0.5,
@@ -6235,7 +6235,7 @@
             {
               "line": 0.5,
               "home": 1.8,
-              "away": 2
+              "away": 2.02
             },
             {
               "line": 2,
@@ -6244,13 +6244,13 @@
             },
             {
               "line": 1.75,
-              "home": 1.18,
+              "home": 1.17,
               "away": 4.9
             },
             {
               "line": -0.25,
               "home": 3.1,
-              "away": 1.36
+              "away": 1.37
             }
           ]
         },
@@ -7962,13 +7962,13 @@
           "totals": [
             {
               "line": 3.5,
-              "over": 4.35,
-              "under": 1.19
+              "over": 4.2,
+              "under": 1.2
             },
             {
               "line": 2.5,
-              "over": 2.28,
-              "under": 1.57
+              "over": 2.23,
+              "under": 1.6
             },
             {
               "line": 4.5,
@@ -7978,12 +7978,12 @@
             {
               "line": 0.5,
               "over": 1.06,
-              "under": 7.5
+              "under": 8
             },
             {
               "line": 1.5,
-              "over": 1.4,
-              "under": 2.8
+              "over": 1.38,
+              "under": 2.85
             }
           ],
           "ah": [
@@ -8030,7 +8030,7 @@
             {
               "line": 1.5,
               "home": 1.08,
-              "away": 7.5
+              "away": 7
             },
             {
               "line": 0.75,
@@ -8039,7 +8039,7 @@
             },
             {
               "line": -1,
-              "home": 3.7,
+              "home": 3.65,
               "away": 1.26
             },
             {
@@ -9592,20 +9592,6 @@
           "matchedQuery": "fluminense"
         },
         {
-          "eventId": "1027797393",
-          "title": "Mirassol-SP - Grêmio",
-          "homeTeam": "Mirassol-SP",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-08-02T21:00:00Z",
-          "league": "Copa do Brasil",
-          "odds": {
-            "home": 2.18,
-            "draw": 3.1,
-            "away": 3.05
-          },
-          "matchedQuery": "gremio"
-        },
-        {
           "eventId": "1026389396",
           "title": "North Texas SC - St. Louis CITY FC II",
           "homeTeam": "North Texas SC",
@@ -9618,6 +9604,20 @@
             "away": 1.77
           },
           "matchedQuery": "mls"
+        },
+        {
+          "eventId": "1027797393",
+          "title": "Mirassol-SP - Grêmio",
+          "homeTeam": "Mirassol-SP",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-08-02T21:00:00Z",
+          "league": "Copa do Brasil",
+          "odds": {
+            "home": 2.18,
+            "draw": 3.1,
+            "away": 3.05
+          },
+          "matchedQuery": "gremio"
         },
         {
           "eventId": "1028136775",
@@ -9639,13 +9639,41 @@
     "oneTwo": {
       "displayName": "1x2",
       "baseUrl": "https://www.1x2.se",
-      "updatedAt": "2026-06-30T01:19:14.607Z",
+      "updatedAt": "2026-06-30T01:34:14.531Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 168,
-      "durationMs": 26542,
+      "durationMs": 26714,
       "events": [
+        {
+          "eventId": "1028072415",
+          "title": "Arsenal - Coventry City",
+          "homeTeam": "Arsenal",
+          "awayTeam": "Coventry City",
+          "startTime": "2026-08-21T19:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 1.16,
+            "draw": 7.5,
+            "away": 13
+          },
+          "matchedQuery": "arsenal"
+        },
+        {
+          "eventId": "1028135663",
+          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
+          "homeTeam": "Club Comunicaciones (ARG)",
+          "awayTeam": "Arsenal de Sarandí",
+          "startTime": "2026-07-04T18:00:00Z",
+          "league": "Primera B Metropolitana",
+          "odds": {
+            "home": 2.95,
+            "draw": 2.95,
+            "away": 2.3
+          },
+          "matchedQuery": "arsenal"
+        },
         {
           "eventId": "1028072408",
           "title": "Fulham - Chelsea",
@@ -9689,32 +9717,18 @@
           "matchedQuery": "manchester"
         },
         {
-          "eventId": "1028072415",
-          "title": "Arsenal - Coventry City",
-          "homeTeam": "Arsenal",
-          "awayTeam": "Coventry City",
-          "startTime": "2026-08-21T19:00:00Z",
+          "eventId": "1028072409",
+          "title": "Newcastle United - Liverpool",
+          "homeTeam": "Newcastle United",
+          "awayTeam": "Liverpool",
+          "startTime": "2026-08-23T15:30:00Z",
           "league": "Premier League",
           "odds": {
-            "home": 1.16,
-            "draw": 7.5,
-            "away": 13
+            "home": 2.75,
+            "draw": 3.8,
+            "away": 2.25
           },
-          "matchedQuery": "arsenal"
-        },
-        {
-          "eventId": "1028135663",
-          "title": "Club Comunicaciones (ARG) - Arsenal de Sarandí",
-          "homeTeam": "Club Comunicaciones (ARG)",
-          "awayTeam": "Arsenal de Sarandí",
-          "startTime": "2026-07-04T18:00:00Z",
-          "league": "Primera B Metropolitana",
-          "odds": {
-            "home": 2.95,
-            "draw": 2.95,
-            "away": 2.3
-          },
-          "matchedQuery": "arsenal"
+          "matchedQuery": "liverpool"
         },
         {
           "eventId": "1028072416",
@@ -9729,20 +9743,6 @@
             "away": 2.55
           },
           "matchedQuery": "tottenham"
-        },
-        {
-          "eventId": "1028072409",
-          "title": "Newcastle United - Liverpool",
-          "homeTeam": "Newcastle United",
-          "awayTeam": "Liverpool",
-          "startTime": "2026-08-23T15:30:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.75,
-            "draw": 3.8,
-            "away": 2.25
-          },
-          "matchedQuery": "liverpool"
         },
         {
           "eventId": "1028072413",
@@ -10127,112 +10127,6 @@
           "matchedQuery": "juventus"
         },
         {
-          "eventId": "1027911058",
-          "title": "Torino - AC Milan",
-          "homeTeam": "Torino",
-          "awayTeam": "AC Milan",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 4.2,
-            "draw": 3.55,
-            "away": 1.7
-          },
-          "matchedQuery": "milan"
-        },
-        {
-          "eventId": "1026756377",
-          "title": "Caxias-RS - Anápolis-GO",
-          "homeTeam": "Caxias-RS",
-          "awayTeam": "Anápolis-GO",
-          "startTime": "2026-06-30T22:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.58,
-            "draw": 3.45,
-            "away": 5.4
-          },
-          "matchedQuery": "napoli",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.38,
-              "under": 2.7
-            },
-            {
-              "line": 2.5,
-              "over": 2.2,
-              "under": 1.58
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.19
-            },
-            {
-              "line": 0.5,
-              "over": 1.05,
-              "under": 6.75
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.75,
-              "home": 1.77,
-              "away": 1.92
-            },
-            {
-              "line": -1.5,
-              "home": 2.8,
-              "away": 1.37
-            },
-            {
-              "line": 0.25,
-              "home": 1.16,
-              "away": 4.4
-            },
-            {
-              "line": -1.25,
-              "home": 2.48,
-              "away": 1.47
-            },
-            {
-              "line": -0.5,
-              "home": 1.58,
-              "away": 2.2
-            },
-            {
-              "line": -1,
-              "home": 2.1,
-              "away": 1.64
-            },
-            {
-              "line": 0.5,
-              "home": 1.13,
-              "away": 4.9
-            },
-            {
-              "line": -0.25,
-              "home": 1.38,
-              "away": 2.7
-            }
-          ]
-        },
-        {
-          "eventId": "1027911062",
-          "title": "Genoa - Napoli",
-          "homeTeam": "Genoa",
-          "awayTeam": "Napoli",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 5,
-            "draw": 3.35,
-            "away": 1.63
-          },
-          "matchedQuery": "napoli"
-        },
-        {
           "eventId": "1025985659",
           "title": "Internacional-RS - Cruzeiro-MG",
           "homeTeam": "Internacional-RS",
@@ -10365,6 +10259,112 @@
             "away": 4.75
           },
           "matchedQuery": "inter"
+        },
+        {
+          "eventId": "1027911058",
+          "title": "Torino - AC Milan",
+          "homeTeam": "Torino",
+          "awayTeam": "AC Milan",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 4.2,
+            "draw": 3.55,
+            "away": 1.7
+          },
+          "matchedQuery": "milan"
+        },
+        {
+          "eventId": "1026756377",
+          "title": "Caxias-RS - Anápolis-GO",
+          "homeTeam": "Caxias-RS",
+          "awayTeam": "Anápolis-GO",
+          "startTime": "2026-06-30T22:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.58,
+            "draw": 3.45,
+            "away": 5.4
+          },
+          "matchedQuery": "napoli",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.38,
+              "under": 2.7
+            },
+            {
+              "line": 2.5,
+              "over": 2.2,
+              "under": 1.58
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.19
+            },
+            {
+              "line": 0.5,
+              "over": 1.05,
+              "under": 6.75
+            }
+          ],
+          "ah": [
+            {
+              "line": -0.75,
+              "home": 1.77,
+              "away": 1.92
+            },
+            {
+              "line": -1.5,
+              "home": 2.8,
+              "away": 1.37
+            },
+            {
+              "line": 0.25,
+              "home": 1.16,
+              "away": 4.4
+            },
+            {
+              "line": -1.25,
+              "home": 2.48,
+              "away": 1.47
+            },
+            {
+              "line": -0.5,
+              "home": 1.58,
+              "away": 2.2
+            },
+            {
+              "line": -1,
+              "home": 2.1,
+              "away": 1.64
+            },
+            {
+              "line": 0.5,
+              "home": 1.13,
+              "away": 4.9
+            },
+            {
+              "line": -0.25,
+              "home": 1.38,
+              "away": 2.7
+            }
+          ]
+        },
+        {
+          "eventId": "1027911062",
+          "title": "Genoa - Napoli",
+          "homeTeam": "Genoa",
+          "awayTeam": "Napoli",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 5,
+            "draw": 3.35,
+            "away": 1.63
+          },
+          "matchedQuery": "napoli"
         },
         {
           "eventId": "1027911059",
@@ -10516,8 +10516,8 @@
             },
             {
               "line": -1.75,
-              "home": 1.93,
-              "away": 1.87
+              "home": 1.92,
+              "away": 1.88
             },
             {
               "line": -1,
@@ -10542,12 +10542,12 @@
             {
               "line": -2.75,
               "home": 3.4,
-              "away": 1.3
+              "away": 1.32
             },
             {
               "line": -3.25,
               "home": 4.9,
-              "away": 1.17
+              "away": 1.18
             },
             {
               "line": -3.5,
@@ -10557,7 +10557,7 @@
             {
               "line": -1.5,
               "home": 1.74,
-              "away": 2.08
+              "away": 2.1
             },
             {
               "line": -0.75,
@@ -11027,7 +11027,7 @@
             {
               "line": 1.5,
               "home": 1.26,
-              "away": 3.8
+              "away": 3.85
             },
             {
               "line": -0.5,
@@ -11047,7 +11047,7 @@
             {
               "line": 0.5,
               "home": 1.8,
-              "away": 2
+              "away": 2.02
             },
             {
               "line": 2,
@@ -11056,13 +11056,13 @@
             },
             {
               "line": 1.75,
-              "home": 1.18,
+              "home": 1.17,
               "away": 4.9
             },
             {
               "line": -0.25,
               "home": 3.1,
-              "away": 1.36
+              "away": 1.37
             }
           ]
         },
@@ -12774,13 +12774,13 @@
           "totals": [
             {
               "line": 3.5,
-              "over": 4.35,
-              "under": 1.19
+              "over": 4.2,
+              "under": 1.2
             },
             {
               "line": 2.5,
-              "over": 2.28,
-              "under": 1.57
+              "over": 2.23,
+              "under": 1.6
             },
             {
               "line": 4.5,
@@ -12790,12 +12790,12 @@
             {
               "line": 0.5,
               "over": 1.06,
-              "under": 7.5
+              "under": 8
             },
             {
               "line": 1.5,
-              "over": 1.4,
-              "under": 2.8
+              "over": 1.38,
+              "under": 2.85
             }
           ],
           "ah": [
@@ -12842,7 +12842,7 @@
             {
               "line": 1.5,
               "home": 1.08,
-              "away": 7.5
+              "away": 7
             },
             {
               "line": 0.75,
@@ -12851,7 +12851,7 @@
             },
             {
               "line": -1,
-              "home": 3.7,
+              "home": 3.65,
               "away": 1.26
             },
             {
@@ -14451,12 +14451,12 @@
     "speedybet": {
       "displayName": "Speedybet",
       "baseUrl": "https://www.speedybet.com",
-      "updatedAt": "2026-06-30T01:19:41.487Z",
+      "updatedAt": "2026-06-30T01:34:41.512Z",
       "queriesTried": 74,
       "queriesSucceeded": 74,
       "queriesFailed": 0,
       "eventsFound": 168,
-      "durationMs": 26879,
+      "durationMs": 26981,
       "events": [
         {
           "eventId": "1028072408",
@@ -14529,20 +14529,6 @@
           "matchedQuery": "arsenal"
         },
         {
-          "eventId": "1028072409",
-          "title": "Newcastle United - Liverpool",
-          "homeTeam": "Newcastle United",
-          "awayTeam": "Liverpool",
-          "startTime": "2026-08-23T15:30:00Z",
-          "league": "Premier League",
-          "odds": {
-            "home": 2.75,
-            "draw": 3.8,
-            "away": 2.25
-          },
-          "matchedQuery": "liverpool"
-        },
-        {
           "eventId": "1028072416",
           "title": "Brentford - Tottenham",
           "homeTeam": "Brentford",
@@ -14557,18 +14543,18 @@
           "matchedQuery": "tottenham"
         },
         {
-          "eventId": "1028072413",
-          "title": "Nottingham - Leeds",
-          "homeTeam": "Nottingham",
-          "awayTeam": "Leeds",
-          "startTime": "2026-08-22T14:00:00Z",
+          "eventId": "1028072409",
+          "title": "Newcastle United - Liverpool",
+          "homeTeam": "Newcastle United",
+          "awayTeam": "Liverpool",
+          "startTime": "2026-08-23T15:30:00Z",
           "league": "Premier League",
           "odds": {
-            "home": 2.2,
-            "draw": 3.4,
-            "away": 3.1
+            "home": 2.75,
+            "draw": 3.8,
+            "away": 2.25
           },
-          "matchedQuery": "leeds"
+          "matchedQuery": "liverpool"
         },
         {
           "eventId": "1027586481",
@@ -14619,6 +14605,20 @@
             "away": 3.5
           },
           "matchedQuery": "everton"
+        },
+        {
+          "eventId": "1028072413",
+          "title": "Nottingham - Leeds",
+          "homeTeam": "Nottingham",
+          "awayTeam": "Leeds",
+          "startTime": "2026-08-22T14:00:00Z",
+          "league": "Premier League",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.4,
+            "away": 3.1
+          },
+          "matchedQuery": "leeds"
         },
         {
           "eventId": "1028102523",
@@ -14939,20 +14939,6 @@
           "matchedQuery": "juventus"
         },
         {
-          "eventId": "1027911058",
-          "title": "Torino - AC Milan",
-          "homeTeam": "Torino",
-          "awayTeam": "AC Milan",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 4.2,
-            "draw": 3.55,
-            "away": 1.7
-          },
-          "matchedQuery": "milan"
-        },
-        {
           "eventId": "1025985659",
           "title": "Internacional-RS - Cruzeiro-MG",
           "homeTeam": "Internacional-RS",
@@ -15179,18 +15165,18 @@
           "matchedQuery": "napoli"
         },
         {
-          "eventId": "1027911063",
-          "title": "Bologna - Lazio",
-          "homeTeam": "Bologna",
-          "awayTeam": "Lazio",
+          "eventId": "1027911058",
+          "title": "Torino - AC Milan",
+          "homeTeam": "Torino",
+          "awayTeam": "AC Milan",
           "startTime": "2026-08-22T13:00:00Z",
           "league": "Serie A",
           "odds": {
-            "home": 1.98,
-            "draw": 3.1,
-            "away": 3.5
+            "home": 4.2,
+            "draw": 3.55,
+            "away": 1.7
           },
-          "matchedQuery": "lazio"
+          "matchedQuery": "milan"
         },
         {
           "eventId": "1027911059",
@@ -15205,6 +15191,20 @@
             "away": 6.1
           },
           "matchedQuery": "roma"
+        },
+        {
+          "eventId": "1027911063",
+          "title": "Bologna - Lazio",
+          "homeTeam": "Bologna",
+          "awayTeam": "Lazio",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.98,
+            "draw": 3.1,
+            "away": 3.5
+          },
+          "matchedQuery": "lazio"
         },
         {
           "eventId": "1027118159",
@@ -15328,8 +15328,8 @@
             },
             {
               "line": -1.75,
-              "home": 1.93,
-              "away": 1.87
+              "home": 1.92,
+              "away": 1.88
             },
             {
               "line": -1,
@@ -15354,12 +15354,12 @@
             {
               "line": -2.75,
               "home": 3.4,
-              "away": 1.3
+              "away": 1.32
             },
             {
               "line": -3.25,
               "home": 4.9,
-              "away": 1.17
+              "away": 1.18
             },
             {
               "line": -3.5,
@@ -15369,7 +15369,7 @@
             {
               "line": -1.5,
               "home": 1.74,
-              "away": 2.08
+              "away": 2.1
             },
             {
               "line": -0.75,
@@ -15839,7 +15839,7 @@
             {
               "line": 1.5,
               "home": 1.26,
-              "away": 3.8
+              "away": 3.85
             },
             {
               "line": -0.5,
@@ -15859,7 +15859,7 @@
             {
               "line": 0.5,
               "home": 1.8,
-              "away": 2
+              "away": 2.02
             },
             {
               "line": 2,
@@ -15868,13 +15868,13 @@
             },
             {
               "line": 1.75,
-              "home": 1.18,
+              "home": 1.17,
               "away": 4.9
             },
             {
               "line": -0.25,
               "home": 3.1,
-              "away": 1.36
+              "away": 1.37
             }
           ]
         },
@@ -17459,6 +17459,806 @@
           ]
         },
         {
+          "eventId": "1025985711",
+          "title": "Botafogo-RJ - Santos-SP",
+          "homeTeam": "Botafogo-RJ",
+          "awayTeam": "Santos-SP",
+          "startTime": "2026-07-16T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.86,
+            "draw": 3.2,
+            "away": 3.85
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985672",
+          "title": "Chapecoense-SC - Flamengo-RJ",
+          "homeTeam": "Chapecoense-SC",
+          "awayTeam": "Flamengo-RJ",
+          "startTime": "2026-07-23T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 6.75,
+            "draw": 4.25,
+            "away": 1.38
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985658",
+          "title": "Corinthians-SP - Remo-PA",
+          "homeTeam": "Corinthians-SP",
+          "awayTeam": "Remo-PA",
+          "startTime": "2026-07-23T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.5,
+            "draw": 3.7,
+            "away": 5.8
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985662",
+          "title": "Coritiba-PR - Palmeiras-SP",
+          "homeTeam": "Coritiba-PR",
+          "awayTeam": "Palmeiras-SP",
+          "startTime": "2026-07-24T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 3.85,
+            "draw": 3.15,
+            "away": 1.87
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985700",
+          "title": "Fluminense-RJ - RB Bragantino-SP",
+          "homeTeam": "Fluminense-RJ",
+          "awayTeam": "RB Bragantino-SP",
+          "startTime": "2026-07-18T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 1.7,
+            "draw": 3.35,
+            "away": 4.5
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985652",
+          "title": "Mirassol-SP - Grêmio",
+          "homeTeam": "Mirassol-SP",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-07-17T00:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 2,
+            "draw": 3.2,
+            "away": 3.4
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1025985670",
+          "title": "Vitória-BA - Vasco da Gama-RJ",
+          "homeTeam": "Vitória-BA",
+          "awayTeam": "Vasco da Gama-RJ",
+          "startTime": "2026-07-16T22:30:00Z",
+          "league": "Brasileirao Serie A",
+          "odds": {
+            "home": 2.33,
+            "draw": 3.05,
+            "away": 2.8
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591429",
+          "title": "Botafogo-SP - Avaí-SC",
+          "homeTeam": "Botafogo-SP",
+          "awayTeam": "Avaí-SC",
+          "startTime": "2026-07-06T22:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.3,
+            "away": 3.9
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591324",
+          "title": "Botafogo-SP - CRB-AL",
+          "homeTeam": "Botafogo-SP",
+          "awayTeam": "CRB-AL",
+          "startTime": "2026-06-30T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.28,
+            "draw": 3.05,
+            "away": 3.3
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 4.2,
+              "under": 1.2
+            },
+            {
+              "line": 2.5,
+              "over": 2.23,
+              "under": 1.6
+            },
+            {
+              "line": 4.5,
+              "over": 9,
+              "under": 1.04
+            },
+            {
+              "line": 0.5,
+              "over": 1.06,
+              "under": 8
+            },
+            {
+              "line": 1.5,
+              "over": 1.38,
+              "under": 2.85
+            }
+          ],
+          "ah": [
+            {
+              "line": -1.25,
+              "home": 4.1,
+              "away": 1.21
+            },
+            {
+              "line": -0.25,
+              "home": 1.92,
+              "away": 1.85
+            },
+            {
+              "line": -1.5,
+              "home": 4.6,
+              "away": 1.18
+            },
+            {
+              "line": 0.5,
+              "home": 1.33,
+              "away": 3.2
+            },
+            {
+              "line": -0.5,
+              "home": 2.23,
+              "away": 1.62
+            },
+            {
+              "line": 1.25,
+              "home": 1.09,
+              "away": 6.75
+            },
+            {
+              "line": 0.25,
+              "home": 1.43,
+              "away": 2.75
+            },
+            {
+              "line": -0.75,
+              "home": 2.7,
+              "away": 1.44
+            },
+            {
+              "line": 1.5,
+              "home": 1.08,
+              "away": 7
+            },
+            {
+              "line": 0.75,
+              "home": 1.22,
+              "away": 4.1
+            },
+            {
+              "line": -1,
+              "home": 3.65,
+              "away": 1.26
+            },
+            {
+              "line": 1,
+              "home": 1.1,
+              "away": 6.25
+            }
+          ]
+        },
+        {
+          "eventId": "1026591446",
+          "title": "Criciúma-SC - Sport Recife-PE",
+          "homeTeam": "Criciúma-SC",
+          "awayTeam": "Sport Recife-PE",
+          "startTime": "2026-07-04T19:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.88,
+            "draw": 3.4,
+            "away": 4.1
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591386",
+          "title": "Cuiabá-MT - América-MG",
+          "homeTeam": "Cuiabá-MT",
+          "awayTeam": "América-MG",
+          "startTime": "2026-07-02T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.15,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 1.5,
+              "over": 1.46,
+              "under": 2.55
+            },
+            {
+              "line": 3.5,
+              "over": 4.9,
+              "under": 1.15
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 7
+            },
+            {
+              "line": 4.5,
+              "over": 10.5,
+              "under": 1.02
+            },
+            {
+              "line": 2.5,
+              "over": 2.48,
+              "under": 1.49
+            }
+          ],
+          "ah": [
+            {
+              "line": -0.5,
+              "home": 1.93,
+              "away": 1.83
+            },
+            {
+              "line": -1.25,
+              "home": 3.4,
+              "away": 1.3
+            },
+            {
+              "line": -1.5,
+              "home": 3.8,
+              "away": 1.24
+            },
+            {
+              "line": 0.5,
+              "home": 1.23,
+              "away": 4
+            },
+            {
+              "line": 0.25,
+              "home": 1.29,
+              "away": 3.5
+            },
+            {
+              "line": -1,
+              "home": 2.95,
+              "away": 1.38
+            },
+            {
+              "line": -0.25,
+              "home": 1.66,
+              "away": 2.17
+            },
+            {
+              "line": -0.75,
+              "home": 2.25,
+              "away": 1.61
+            }
+          ]
+        },
+        {
+          "eventId": "1026591450",
+          "title": "Fortaleza-CE - Ponte Preta-SP",
+          "homeTeam": "Fortaleza-CE",
+          "awayTeam": "Ponte Preta-SP",
+          "startTime": "2026-07-03T00:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.36,
+            "draw": 4.6,
+            "away": 8.5
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 0.5,
+              "over": 1.02,
+              "under": 10.5
+            },
+            {
+              "line": 4.5,
+              "over": 6,
+              "under": 1.1
+            },
+            {
+              "line": 2.5,
+              "over": 1.79,
+              "under": 1.94
+            },
+            {
+              "line": 3.5,
+              "over": 3.05,
+              "under": 1.34
+            },
+            {
+              "line": 1.5,
+              "over": 1.24,
+              "under": 3.75
+            },
+            {
+              "line": 5.5,
+              "over": 11.5,
+              "under": 1.01
+            }
+          ],
+          "ah": [
+            {
+              "line": -2,
+              "home": 3.05,
+              "away": 1.36
+            },
+            {
+              "line": -0.5,
+              "home": 1.36,
+              "away": 3.05
+            },
+            {
+              "line": -3,
+              "home": 6.75,
+              "away": 1.09
+            },
+            {
+              "line": -1.75,
+              "home": 2.4,
+              "away": 1.54
+            },
+            {
+              "line": -2.5,
+              "home": 3.75,
+              "away": 1.25
+            },
+            {
+              "line": -1.5,
+              "home": 2.07,
+              "away": 1.72
+            },
+            {
+              "line": 0.5,
+              "home": 1.08,
+              "away": 7.5
+            },
+            {
+              "line": -3.5,
+              "home": 7.5,
+              "away": 1.07
+            },
+            {
+              "line": -2.75,
+              "home": 4.75,
+              "away": 1.17
+            },
+            {
+              "line": 0.25,
+              "home": 1.09,
+              "away": 6.75
+            },
+            {
+              "line": -1.25,
+              "home": 1.82,
+              "away": 1.94
+            },
+            {
+              "line": -0.75,
+              "home": 1.44,
+              "away": 2.7
+            },
+            {
+              "line": -3.25,
+              "home": 7,
+              "away": 1.08
+            },
+            {
+              "line": -0.25,
+              "home": 1.23,
+              "away": 3.95
+            },
+            {
+              "line": -2.25,
+              "home": 3.4,
+              "away": 1.3
+            },
+            {
+              "line": -1,
+              "home": 1.57,
+              "away": 2.33
+            }
+          ]
+        },
+        {
+          "eventId": "1026591444",
+          "title": "Goiás-GO - Ceará-CE",
+          "homeTeam": "Goiás-GO",
+          "awayTeam": "Ceará-CE",
+          "startTime": "2026-07-04T23:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.28,
+            "draw": 3.1,
+            "away": 3.15
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591447",
+          "title": "Londrina-PR - CRB-AL",
+          "homeTeam": "Londrina-PR",
+          "awayTeam": "CRB-AL",
+          "startTime": "2026-07-04T19:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 2.8,
+            "draw": 3.3,
+            "away": 2.43
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026591391",
+          "title": "Vila Nova-GO - FC São Bernardo-SP",
+          "homeTeam": "Vila Nova-GO",
+          "awayTeam": "FC São Bernardo-SP",
+          "startTime": "2026-07-06T22:00:00Z",
+          "league": "Brasileirao Serie B",
+          "odds": {
+            "home": 1.85,
+            "draw": 3.4,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756414",
+          "title": "AD Confianca-SE - Barra-SC",
+          "homeTeam": "AD Confianca-SE",
+          "awayTeam": "Barra-SC",
+          "startTime": "2026-07-04T22:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.23,
+            "draw": 2.85,
+            "away": 3.25
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756405",
+          "title": "Botafogo-PB - Brusque-SC",
+          "homeTeam": "Botafogo-PB",
+          "awayTeam": "Brusque-SC",
+          "startTime": "2026-06-30T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2,
+            "draw": 3,
+            "away": 3.6
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 2.5,
+              "over": 2.28,
+              "under": 1.55
+            },
+            {
+              "line": 1.5,
+              "over": 1.4,
+              "under": 2.65
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.19
+            },
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.5
+            }
+          ],
+          "ah": [
+            {
+              "line": -1.5,
+              "home": 3.85,
+              "away": 1.21
+            },
+            {
+              "line": -1.25,
+              "home": 3.45,
+              "away": 1.25
+            },
+            {
+              "line": -0.5,
+              "home": 1.98,
+              "away": 1.72
+            },
+            {
+              "line": 0.5,
+              "home": 1.25,
+              "away": 3.45
+            },
+            {
+              "line": -0.25,
+              "home": 1.71,
+              "away": 1.98
+            },
+            {
+              "line": -0.75,
+              "home": 2.33,
+              "away": 1.52
+            },
+            {
+              "line": -1,
+              "home": 3.05,
+              "away": 1.32
+            },
+            {
+              "line": 0.25,
+              "home": 1.32,
+              "away": 3
+            }
+          ]
+        },
+        {
+          "eventId": "1026756407",
+          "title": "Ferroviária-SP - Caxias-RS",
+          "homeTeam": "Ferroviária-SP",
+          "awayTeam": "Caxias-RS",
+          "startTime": "2026-07-04T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.38,
+            "draw": 2.85,
+            "away": 3.25
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756389",
+          "title": "Guarani-SP - Floresta-CE",
+          "homeTeam": "Guarani-SP",
+          "awayTeam": "Floresta-CE",
+          "startTime": "2026-07-04T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.52,
+            "draw": 3.65,
+            "away": 5.75
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756341",
+          "title": "Maringá-PR - Volta Redonda-RJ",
+          "homeTeam": "Maringá-PR",
+          "awayTeam": "Volta Redonda-RJ",
+          "startTime": "2026-07-04T22:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.72,
+            "draw": 3.45,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756326",
+          "title": "Santa Cruz-PE - Ituano-SP",
+          "homeTeam": "Santa Cruz-PE",
+          "awayTeam": "Ituano-SP",
+          "startTime": "2026-07-05T00:00:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 2.16,
+            "draw": 3.05,
+            "away": 3.15
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1026756378",
+          "title": "Volta Redonda-RJ - Amazonas-AM",
+          "homeTeam": "Volta Redonda-RJ",
+          "awayTeam": "Amazonas-AM",
+          "startTime": "2026-06-30T23:30:00Z",
+          "league": "Brasileirao Serie C",
+          "odds": {
+            "home": 1.83,
+            "draw": 3.05,
+            "away": 4.2
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 3.5,
+              "over": 4.6,
+              "under": 1.15
+            },
+            {
+              "line": 0.5,
+              "over": 1.09,
+              "under": 6
+            },
+            {
+              "line": 1.5,
+              "over": 1.46,
+              "under": 2.48
+            },
+            {
+              "line": 2.5,
+              "over": 2.48,
+              "under": 1.47
+            }
+          ],
+          "ah": [
+            {
+              "line": 0.5,
+              "home": 1.2,
+              "away": 4
+            },
+            {
+              "line": -0.75,
+              "home": 2.1,
+              "away": 1.63
+            },
+            {
+              "line": -1.5,
+              "home": 3.45,
+              "away": 1.25
+            },
+            {
+              "line": -1,
+              "home": 2.65,
+              "away": 1.4
+            },
+            {
+              "line": -0.5,
+              "home": 1.82,
+              "away": 1.86
+            },
+            {
+              "line": -0.25,
+              "home": 1.57,
+              "away": 2.2
+            },
+            {
+              "line": 0.25,
+              "home": 1.24,
+              "away": 3.5
+            },
+            {
+              "line": -1.25,
+              "home": 3.05,
+              "away": 1.3
+            }
+          ]
+        },
+        {
+          "eventId": "1027911064",
+          "title": "Atalanta - Sassuolo",
+          "homeTeam": "Atalanta",
+          "awayTeam": "Sassuolo",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 1.47,
+            "draw": 4.1,
+            "away": 5.4
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911056",
+          "title": "Parma - Cagliari",
+          "homeTeam": "Parma",
+          "awayTeam": "Cagliari",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 2.5,
+            "draw": 2.88,
+            "away": 2.75
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911061",
+          "title": "Udinese - Como",
+          "homeTeam": "Udinese",
+          "awayTeam": "Como",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 4.3,
+            "draw": 3.3,
+            "away": 1.74
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027911060",
+          "title": "Venezia - Lecce",
+          "homeTeam": "Venezia",
+          "awayTeam": "Lecce",
+          "startTime": "2026-08-22T13:00:00Z",
+          "league": "Serie A",
+          "odds": {
+            "home": 2.23,
+            "draw": 3.05,
+            "away": 3.05
+          },
+          "matchedQuery": "serie a"
+        },
+        {
+          "eventId": "1027118147",
+          "title": "CD Cuenca Juniors - San Antonio FC de Cotacachi",
+          "homeTeam": "CD Cuenca Juniors",
+          "awayTeam": "San Antonio FC de Cotacachi",
+          "startTime": "2026-07-03T18:00:00Z",
+          "league": "Serie B",
+          "odds": {
+            "home": 1.87,
+            "draw": 3.1,
+            "away": 4
+          },
+          "matchedQuery": "serie a",
+          "totals": [
+            {
+              "line": 0.5,
+              "over": 1.07,
+              "under": 6.25
+            },
+            {
+              "line": 2.5,
+              "over": 2.25,
+              "under": 1.53
+            },
+            {
+              "line": 1.5,
+              "over": 1.41,
+              "under": 2.6
+            },
+            {
+              "line": 3.5,
+              "over": 4.1,
+              "under": 1.17
+            }
+          ]
+        },
+        {
           "eventId": "1027510086",
           "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
           "homeTeam": "FK Atmosfera Mazeikiai",
@@ -18150,804 +18950,102 @@
           ]
         },
         {
-          "eventId": "1025985711",
-          "title": "Botafogo-RJ - Santos-SP",
-          "homeTeam": "Botafogo-RJ",
-          "awayTeam": "Santos-SP",
-          "startTime": "2026-07-16T22:30:00Z",
-          "league": "Brasileirao Serie A",
+          "eventId": "1027826394",
+          "title": "Boca Juniors - O'Higgins",
+          "homeTeam": "Boca Juniors",
+          "awayTeam": "O'Higgins",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 1.86,
-            "draw": 3.2,
-            "away": 3.85
+            "home": 1.44,
+            "draw": 3.95,
+            "away": 8
           },
-          "matchedQuery": "serie a"
+          "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1025985672",
-          "title": "Chapecoense-SC - Flamengo-RJ",
-          "homeTeam": "Chapecoense-SC",
-          "awayTeam": "Flamengo-RJ",
-          "startTime": "2026-07-23T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 6.75,
-            "draw": 4.25,
-            "away": 1.38
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985658",
-          "title": "Corinthians-SP - Remo-PA",
-          "homeTeam": "Corinthians-SP",
-          "awayTeam": "Remo-PA",
-          "startTime": "2026-07-23T22:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 1.5,
-            "draw": 3.7,
-            "away": 5.8
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985662",
-          "title": "Coritiba-PR - Palmeiras-SP",
-          "homeTeam": "Coritiba-PR",
-          "awayTeam": "Palmeiras-SP",
-          "startTime": "2026-07-24T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 3.85,
-            "draw": 3.15,
-            "away": 1.87
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985700",
-          "title": "Fluminense-RJ - RB Bragantino-SP",
-          "homeTeam": "Fluminense-RJ",
-          "awayTeam": "RB Bragantino-SP",
-          "startTime": "2026-07-18T00:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 1.7,
-            "draw": 3.35,
-            "away": 4.5
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1025985652",
-          "title": "Mirassol-SP - Grêmio",
-          "homeTeam": "Mirassol-SP",
+          "eventId": "1027828712",
+          "title": "Club Bolívar - Grêmio",
+          "homeTeam": "Club Bolívar",
           "awayTeam": "Grêmio",
-          "startTime": "2026-07-17T00:30:00Z",
-          "league": "Brasileirao Serie A",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 2,
-            "draw": 3.2,
-            "away": 3.4
+            "home": 1.66,
+            "draw": 4.25,
+            "away": 4.25
           },
-          "matchedQuery": "serie a"
+          "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1025985670",
-          "title": "Vitória-BA - Vasco da Gama-RJ",
-          "homeTeam": "Vitória-BA",
+          "eventId": "1027828730",
+          "title": "Independiente Medellín - Vasco da Gama-RJ",
+          "homeTeam": "Independiente Medellín",
           "awayTeam": "Vasco da Gama-RJ",
-          "startTime": "2026-07-16T22:30:00Z",
-          "league": "Brasileirao Serie A",
-          "odds": {
-            "home": 2.33,
-            "draw": 3.05,
-            "away": 2.8
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591429",
-          "title": "Botafogo-SP - Avaí-SC",
-          "homeTeam": "Botafogo-SP",
-          "awayTeam": "Avaí-SC",
-          "startTime": "2026-07-06T22:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.95,
-            "draw": 3.3,
-            "away": 3.9
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591324",
-          "title": "Botafogo-SP - CRB-AL",
-          "homeTeam": "Botafogo-SP",
-          "awayTeam": "CRB-AL",
-          "startTime": "2026-06-30T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.28,
-            "draw": 3.05,
-            "away": 3.3
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 4.35,
-              "under": 1.19
-            },
-            {
-              "line": 2.5,
-              "over": 2.28,
-              "under": 1.57
-            },
-            {
-              "line": 4.5,
-              "over": 9,
-              "under": 1.04
-            },
-            {
-              "line": 0.5,
-              "over": 1.06,
-              "under": 7.5
-            },
-            {
-              "line": 1.5,
-              "over": 1.4,
-              "under": 2.8
-            }
-          ],
-          "ah": [
-            {
-              "line": -1.25,
-              "home": 4.1,
-              "away": 1.21
-            },
-            {
-              "line": -0.25,
-              "home": 1.92,
-              "away": 1.85
-            },
-            {
-              "line": -1.5,
-              "home": 4.6,
-              "away": 1.18
-            },
-            {
-              "line": 0.5,
-              "home": 1.33,
-              "away": 3.2
-            },
-            {
-              "line": -0.5,
-              "home": 2.23,
-              "away": 1.62
-            },
-            {
-              "line": 1.25,
-              "home": 1.09,
-              "away": 6.75
-            },
-            {
-              "line": 0.25,
-              "home": 1.43,
-              "away": 2.75
-            },
-            {
-              "line": -0.75,
-              "home": 2.7,
-              "away": 1.44
-            },
-            {
-              "line": 1.5,
-              "home": 1.08,
-              "away": 7.5
-            },
-            {
-              "line": 0.75,
-              "home": 1.22,
-              "away": 4.1
-            },
-            {
-              "line": -1,
-              "home": 3.7,
-              "away": 1.26
-            },
-            {
-              "line": 1,
-              "home": 1.1,
-              "away": 6.25
-            }
-          ]
-        },
-        {
-          "eventId": "1026591446",
-          "title": "Criciúma-SC - Sport Recife-PE",
-          "homeTeam": "Criciúma-SC",
-          "awayTeam": "Sport Recife-PE",
-          "startTime": "2026-07-04T19:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.88,
-            "draw": 3.4,
-            "away": 4.1
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591386",
-          "title": "Cuiabá-MT - América-MG",
-          "homeTeam": "Cuiabá-MT",
-          "awayTeam": "América-MG",
-          "startTime": "2026-07-02T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.95,
-            "draw": 3.15,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 1.5,
-              "over": 1.46,
-              "under": 2.55
-            },
-            {
-              "line": 3.5,
-              "over": 4.9,
-              "under": 1.15
-            },
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 7
-            },
-            {
-              "line": 4.5,
-              "over": 10.5,
-              "under": 1.02
-            },
-            {
-              "line": 2.5,
-              "over": 2.48,
-              "under": 1.49
-            }
-          ],
-          "ah": [
-            {
-              "line": -0.5,
-              "home": 1.93,
-              "away": 1.83
-            },
-            {
-              "line": -1.25,
-              "home": 3.4,
-              "away": 1.3
-            },
-            {
-              "line": -1.5,
-              "home": 3.8,
-              "away": 1.24
-            },
-            {
-              "line": 0.5,
-              "home": 1.23,
-              "away": 4
-            },
-            {
-              "line": 0.25,
-              "home": 1.29,
-              "away": 3.5
-            },
-            {
-              "line": -1,
-              "home": 2.95,
-              "away": 1.38
-            },
-            {
-              "line": -0.25,
-              "home": 1.66,
-              "away": 2.17
-            },
-            {
-              "line": -0.75,
-              "home": 2.25,
-              "away": 1.61
-            }
-          ]
-        },
-        {
-          "eventId": "1026591450",
-          "title": "Fortaleza-CE - Ponte Preta-SP",
-          "homeTeam": "Fortaleza-CE",
-          "awayTeam": "Ponte Preta-SP",
-          "startTime": "2026-07-03T00:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.36,
-            "draw": 4.6,
-            "away": 8.5
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 0.5,
-              "over": 1.02,
-              "under": 10.5
-            },
-            {
-              "line": 4.5,
-              "over": 6,
-              "under": 1.1
-            },
-            {
-              "line": 2.5,
-              "over": 1.79,
-              "under": 1.94
-            },
-            {
-              "line": 3.5,
-              "over": 3.05,
-              "under": 1.34
-            },
-            {
-              "line": 1.5,
-              "over": 1.24,
-              "under": 3.75
-            },
-            {
-              "line": 5.5,
-              "over": 11.5,
-              "under": 1.01
-            }
-          ],
-          "ah": [
-            {
-              "line": -2,
-              "home": 3.05,
-              "away": 1.36
-            },
-            {
-              "line": -0.5,
-              "home": 1.36,
-              "away": 3.05
-            },
-            {
-              "line": -3,
-              "home": 6.75,
-              "away": 1.09
-            },
-            {
-              "line": -1.75,
-              "home": 2.4,
-              "away": 1.54
-            },
-            {
-              "line": -2.5,
-              "home": 3.75,
-              "away": 1.25
-            },
-            {
-              "line": -1.5,
-              "home": 2.07,
-              "away": 1.72
-            },
-            {
-              "line": 0.5,
-              "home": 1.08,
-              "away": 7.5
-            },
-            {
-              "line": -3.5,
-              "home": 7.5,
-              "away": 1.07
-            },
-            {
-              "line": -2.75,
-              "home": 4.75,
-              "away": 1.17
-            },
-            {
-              "line": 0.25,
-              "home": 1.09,
-              "away": 6.75
-            },
-            {
-              "line": -1.25,
-              "home": 1.82,
-              "away": 1.94
-            },
-            {
-              "line": -0.75,
-              "home": 1.44,
-              "away": 2.7
-            },
-            {
-              "line": -3.25,
-              "home": 7,
-              "away": 1.08
-            },
-            {
-              "line": -0.25,
-              "home": 1.23,
-              "away": 3.95
-            },
-            {
-              "line": -2.25,
-              "home": 3.4,
-              "away": 1.3
-            },
-            {
-              "line": -1,
-              "home": 1.57,
-              "away": 2.33
-            }
-          ]
-        },
-        {
-          "eventId": "1026591444",
-          "title": "Goiás-GO - Ceará-CE",
-          "homeTeam": "Goiás-GO",
-          "awayTeam": "Ceará-CE",
-          "startTime": "2026-07-04T23:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.28,
-            "draw": 3.1,
-            "away": 3.15
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591447",
-          "title": "Londrina-PR - CRB-AL",
-          "homeTeam": "Londrina-PR",
-          "awayTeam": "CRB-AL",
-          "startTime": "2026-07-04T19:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 2.8,
-            "draw": 3.3,
-            "away": 2.43
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026591391",
-          "title": "Vila Nova-GO - FC São Bernardo-SP",
-          "homeTeam": "Vila Nova-GO",
-          "awayTeam": "FC São Bernardo-SP",
-          "startTime": "2026-07-06T22:00:00Z",
-          "league": "Brasileirao Serie B",
-          "odds": {
-            "home": 1.85,
-            "draw": 3.4,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756414",
-          "title": "AD Confianca-SE - Barra-SC",
-          "homeTeam": "AD Confianca-SE",
-          "awayTeam": "Barra-SC",
-          "startTime": "2026-07-04T22:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.23,
-            "draw": 2.85,
-            "away": 3.25
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756405",
-          "title": "Botafogo-PB - Brusque-SC",
-          "homeTeam": "Botafogo-PB",
-          "awayTeam": "Brusque-SC",
-          "startTime": "2026-06-30T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2,
-            "draw": 3,
-            "away": 3.6
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 2.5,
-              "over": 2.28,
-              "under": 1.55
-            },
-            {
-              "line": 1.5,
-              "over": 1.4,
-              "under": 2.65
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.19
-            },
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 6.5
-            }
-          ],
-          "ah": [
-            {
-              "line": -1.5,
-              "home": 3.85,
-              "away": 1.21
-            },
-            {
-              "line": -1.25,
-              "home": 3.45,
-              "away": 1.25
-            },
-            {
-              "line": -0.5,
-              "home": 1.98,
-              "away": 1.72
-            },
-            {
-              "line": 0.5,
-              "home": 1.25,
-              "away": 3.45
-            },
-            {
-              "line": -0.25,
-              "home": 1.71,
-              "away": 1.98
-            },
-            {
-              "line": -0.75,
-              "home": 2.33,
-              "away": 1.52
-            },
-            {
-              "line": -1,
-              "home": 3.05,
-              "away": 1.32
-            },
-            {
-              "line": 0.25,
-              "home": 1.32,
-              "away": 3
-            }
-          ]
-        },
-        {
-          "eventId": "1026756407",
-          "title": "Ferroviária-SP - Caxias-RS",
-          "homeTeam": "Ferroviária-SP",
-          "awayTeam": "Caxias-RS",
-          "startTime": "2026-07-04T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.38,
-            "draw": 2.85,
-            "away": 3.25
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756389",
-          "title": "Guarani-SP - Floresta-CE",
-          "homeTeam": "Guarani-SP",
-          "awayTeam": "Floresta-CE",
-          "startTime": "2026-07-04T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.52,
-            "draw": 3.65,
-            "away": 5.75
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756341",
-          "title": "Maringá-PR - Volta Redonda-RJ",
-          "homeTeam": "Maringá-PR",
-          "awayTeam": "Volta Redonda-RJ",
-          "startTime": "2026-07-04T22:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.72,
-            "draw": 3.45,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756326",
-          "title": "Santa Cruz-PE - Ituano-SP",
-          "homeTeam": "Santa Cruz-PE",
-          "awayTeam": "Ituano-SP",
-          "startTime": "2026-07-05T00:00:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 2.16,
-            "draw": 3.05,
-            "away": 3.15
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1026756378",
-          "title": "Volta Redonda-RJ - Amazonas-AM",
-          "homeTeam": "Volta Redonda-RJ",
-          "awayTeam": "Amazonas-AM",
-          "startTime": "2026-06-30T23:30:00Z",
-          "league": "Brasileirao Serie C",
-          "odds": {
-            "home": 1.83,
-            "draw": 3.05,
-            "away": 4.2
-          },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 3.5,
-              "over": 4.6,
-              "under": 1.15
-            },
-            {
-              "line": 0.5,
-              "over": 1.09,
-              "under": 6
-            },
-            {
-              "line": 1.5,
-              "over": 1.46,
-              "under": 2.48
-            },
-            {
-              "line": 2.5,
-              "over": 2.48,
-              "under": 1.47
-            }
-          ],
-          "ah": [
-            {
-              "line": 0.5,
-              "home": 1.2,
-              "away": 4
-            },
-            {
-              "line": -0.75,
-              "home": 2.1,
-              "away": 1.63
-            },
-            {
-              "line": -1.5,
-              "home": 3.45,
-              "away": 1.25
-            },
-            {
-              "line": -1,
-              "home": 2.65,
-              "away": 1.4
-            },
-            {
-              "line": -0.5,
-              "home": 1.82,
-              "away": 1.86
-            },
-            {
-              "line": -0.25,
-              "home": 1.57,
-              "away": 2.2
-            },
-            {
-              "line": 0.25,
-              "home": 1.24,
-              "away": 3.5
-            },
-            {
-              "line": -1.25,
-              "home": 3.05,
-              "away": 1.3
-            }
-          ]
-        },
-        {
-          "eventId": "1027911064",
-          "title": "Atalanta - Sassuolo",
-          "homeTeam": "Atalanta",
-          "awayTeam": "Sassuolo",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
-          "odds": {
-            "home": 1.47,
-            "draw": 4.1,
-            "away": 5.4
-          },
-          "matchedQuery": "serie a"
-        },
-        {
-          "eventId": "1027911056",
-          "title": "Parma - Cagliari",
-          "homeTeam": "Parma",
-          "awayTeam": "Cagliari",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
             "home": 2.5,
-            "draw": 2.88,
+            "draw": 3.25,
             "away": 2.75
           },
-          "matchedQuery": "serie a"
+          "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1027911061",
-          "title": "Udinese - Como",
-          "homeTeam": "Udinese",
-          "awayTeam": "Como",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "eventId": "1027826399",
+          "title": "Independiente Santa Fe - Caracas FC",
+          "homeTeam": "Independiente Santa Fe",
+          "awayTeam": "Caracas FC",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 4.3,
-            "draw": 3.3,
-            "away": 1.74
+            "home": 1.54,
+            "draw": 3.85,
+            "away": 6
           },
-          "matchedQuery": "serie a"
+          "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1027911060",
-          "title": "Venezia - Lecce",
-          "homeTeam": "Venezia",
-          "awayTeam": "Lecce",
-          "startTime": "2026-08-22T13:00:00Z",
-          "league": "Serie A",
+          "eventId": "1027826400",
+          "title": "Lanús - Cienciano Cusco",
+          "homeTeam": "Lanús",
+          "awayTeam": "Cienciano Cusco",
+          "startTime": "2026-07-22T00:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 2.23,
-            "draw": 3.05,
-            "away": 3.05
+            "home": 1.32,
+            "draw": 5.2,
+            "away": 8
           },
-          "matchedQuery": "serie a"
+          "matchedQuery": "sudamericana"
         },
         {
-          "eventId": "1027118147",
-          "title": "CD Cuenca Juniors - San Antonio FC de Cotacachi",
-          "homeTeam": "CD Cuenca Juniors",
-          "awayTeam": "San Antonio FC de Cotacachi",
-          "startTime": "2026-07-03T18:00:00Z",
-          "league": "Serie B",
+          "eventId": "1027826396",
+          "title": "Nacional de Montevideo - Tigre",
+          "homeTeam": "Nacional de Montevideo",
+          "awayTeam": "Tigre",
+          "startTime": "2026-07-21T22:00:00Z",
+          "league": "Copa Sudamericana",
           "odds": {
-            "home": 1.87,
-            "draw": 3.1,
-            "away": 4
+            "home": 1.84,
+            "draw": 3.5,
+            "away": 4.1
           },
-          "matchedQuery": "serie a",
-          "totals": [
-            {
-              "line": 0.5,
-              "over": 1.07,
-              "under": 6.25
-            },
-            {
-              "line": 2.5,
-              "over": 2.25,
-              "under": 1.53
-            },
-            {
-              "line": 1.5,
-              "over": 1.41,
-              "under": 2.6
-            },
-            {
-              "line": 3.5,
-              "over": 4.1,
-              "under": 1.17
-            }
-          ]
+          "matchedQuery": "sudamericana"
+        },
+        {
+          "eventId": "1027828737",
+          "title": "UCV FC - Santos-SP",
+          "homeTeam": "UCV FC",
+          "awayTeam": "Santos-SP",
+          "startTime": "2026-07-22T00:30:00Z",
+          "league": "Copa Sudamericana",
+          "odds": {
+            "home": 3.85,
+            "draw": 4.1,
+            "away": 1.75
+          },
+          "matchedQuery": "sudamericana"
         },
         {
           "eventId": "1027831555",
@@ -19062,104 +19160,6 @@
           "matchedQuery": "libertadores"
         },
         {
-          "eventId": "1027826394",
-          "title": "Boca Juniors - O'Higgins",
-          "homeTeam": "Boca Juniors",
-          "awayTeam": "O'Higgins",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.44,
-            "draw": 3.95,
-            "away": 8
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828712",
-          "title": "Club Bolívar - Grêmio",
-          "homeTeam": "Club Bolívar",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.66,
-            "draw": 4.25,
-            "away": 4.25
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828730",
-          "title": "Independiente Medellín - Vasco da Gama-RJ",
-          "homeTeam": "Independiente Medellín",
-          "awayTeam": "Vasco da Gama-RJ",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 2.5,
-            "draw": 3.25,
-            "away": 2.75
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826399",
-          "title": "Independiente Santa Fe - Caracas FC",
-          "homeTeam": "Independiente Santa Fe",
-          "awayTeam": "Caracas FC",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.54,
-            "draw": 3.85,
-            "away": 6
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826400",
-          "title": "Lanús - Cienciano Cusco",
-          "homeTeam": "Lanús",
-          "awayTeam": "Cienciano Cusco",
-          "startTime": "2026-07-22T00:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.32,
-            "draw": 5.2,
-            "away": 8
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027826396",
-          "title": "Nacional de Montevideo - Tigre",
-          "homeTeam": "Nacional de Montevideo",
-          "awayTeam": "Tigre",
-          "startTime": "2026-07-21T22:00:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 1.84,
-            "draw": 3.5,
-            "away": 4.1
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
-          "eventId": "1027828737",
-          "title": "UCV FC - Santos-SP",
-          "homeTeam": "UCV FC",
-          "awayTeam": "Santos-SP",
-          "startTime": "2026-07-22T00:30:00Z",
-          "league": "Copa Sudamericana",
-          "odds": {
-            "home": 3.85,
-            "draw": 4.1,
-            "away": 1.75
-          },
-          "matchedQuery": "sudamericana"
-        },
-        {
           "eventId": "1028139188",
           "title": "Club Oriental De Futbol - CA River Plate (URU)",
           "homeTeam": "Club Oriental De Futbol",
@@ -19216,20 +19216,6 @@
           "matchedQuery": "fluminense"
         },
         {
-          "eventId": "1027797393",
-          "title": "Mirassol-SP - Grêmio",
-          "homeTeam": "Mirassol-SP",
-          "awayTeam": "Grêmio",
-          "startTime": "2026-08-02T21:00:00Z",
-          "league": "Copa do Brasil",
-          "odds": {
-            "home": 2.18,
-            "draw": 3.1,
-            "away": 3.05
-          },
-          "matchedQuery": "gremio"
-        },
-        {
           "eventId": "1026389396",
           "title": "North Texas SC - St. Louis CITY FC II",
           "homeTeam": "North Texas SC",
@@ -19242,6 +19228,20 @@
             "away": 1.77
           },
           "matchedQuery": "mls"
+        },
+        {
+          "eventId": "1027797393",
+          "title": "Mirassol-SP - Grêmio",
+          "homeTeam": "Mirassol-SP",
+          "awayTeam": "Grêmio",
+          "startTime": "2026-08-02T21:00:00Z",
+          "league": "Copa do Brasil",
+          "odds": {
+            "home": 2.18,
+            "draw": 3.1,
+            "away": 3.05
+          },
+          "matchedQuery": "gremio"
         },
         {
           "eventId": "1028136775",
