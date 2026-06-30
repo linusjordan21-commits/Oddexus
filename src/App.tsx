@@ -5,7 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SettingsProvider } from "@/lib/settings/SettingsContext";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import { ProtectedRoute, AdminOnlyRoute, ValuebetsRoute, FeatureRoute } from "@/components/ProtectedRoute";
 import { UserMenu } from "@/components/UserMenu";
 import { SiteBackground } from "@/components/SiteBackground";
@@ -20,6 +20,7 @@ const OddsDrops = lazy(() => import("./pages/OddsDrops.tsx"));
 const Settings = lazy(() => import("./pages/Settings.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 const Login = lazy(() => import("./pages/Login.tsx"));
+const Landing = lazy(() => import("./pages/Landing.tsx"));
 const Admin = lazy(() => import("./pages/Admin.tsx"));
 const Autoclicker = lazy(() => import("./pages/Autoclicker.tsx"));
 const Athena = lazy(() => import("./pages/Athena.tsx"));
@@ -54,6 +55,17 @@ const feature = (f: "bonusFinder" | "bonusOptimizer" | "athena", element: JSX.El
   <FeatureRoute feature={f}>{element}</FeatureRoute>
 );
 
+/**
+ * Root "/": publik landningssida (Landing) för utloggade, vanliga system-gridden (Home)
+ * för inloggade. Inloggade ser fortfarande Home, så interna "tillbaka till /"-länkar
+ * fortsätter funka.
+ */
+function RootGate(): JSX.Element {
+  const { isAuthenticated, isLoading } = useAuth();
+  if (isLoading) return routeFallback;
+  return isAuthenticated ? <Home /> : <Landing />;
+}
+
 const App = () => (
   <SettingsProvider>
     <QueryClientProvider client={queryClient}>
@@ -75,10 +87,10 @@ const App = () => (
                 <Route path="/billing" element={protect(<Billing />)} />
                 <Route path="/under-construction" element={protect(<UnderConstruction />)} />
 
-                {/* / Home visas för ALLA inloggade — kunder ser hela menyn så plattformen
-                  * känns större, men icke-autoclicker-länkarna har "Kommer snart"-badge
-                  * och redirectas till /under-construction vid klick. */}
-                <Route path="/" element={protect(<Home />)} />
+                {/* "/" → publik landningssida (Landing) för utloggade, system-gridden (Home)
+                  * för inloggade. Inloggade ser hela menyn; icke-öppna länkar har
+                  * "Kommer snart"-badge och redirectas till /under-construction vid klick. */}
+                <Route path="/" element={<RootGate />} />
 
                 {/* ADMIN-ONLY — vanliga kunder redirectas till /under-construction */}
                 <Route path="/welcome-bonus" element={adminOnly(<Index />)} />

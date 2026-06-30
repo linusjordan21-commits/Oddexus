@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# Oddexus autoclicker — setup för Mac/Linux.
-# Skapar en virtuell Python-miljö, installerar Playwright och bot-Chrome.
+# Oddexus bot (kund-version) — setup för Mac/Linux.
+# Skapar en virtuell Python-miljö och installerar Playwright + bot-Chrome.
+# (Installerar bara verktygen som behövs — själva boten hämtas från servern vid körning.)
 set -e
 
 cd "$(dirname "$0")"
-echo "=== Oddexus autoclicker setup ==="
+echo "=== Oddexus bot setup ==="
 
 # Hitta en lämplig Python (helst 3.11+, annars 3.9+)
 PY=""
@@ -44,6 +45,6 @@ echo "Laddar ner bot-Chrome (Chromium)…"
 python -m playwright install chromium
 
 echo ""
-echo "✓ Klart! Starta botten med:"
+echo "✓ Klart! Starta boten med:"
 echo "    bash run.sh"
-echo "  (eller: source .venv/bin/activate && python playwright_bot.py)"
+echo "  (eller dubbelklicka Starta-boten.command)"

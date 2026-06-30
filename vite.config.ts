@@ -37,6 +37,8 @@ import {
   autoclickerHealthApi,
   autoclickerStatusApi,
   botLicenseApi,
+  findActiveLicenseForUsername,
+  readBotCode,
   initAutoclickerStorage,
 } from "./src/server/autoclickerLicense";
 import { adminUsersApi } from "./src/server/adminUsersApi";
@@ -17644,6 +17646,37 @@ function matchedBettingApiPlugin(appBase: string) {
       middlewares.use(authMeDevApi);
       middlewares.use(autoclickerHealthApi);
       middlewares.use((req, res, next) => { void botLicenseApi(req, res, next); });
+      // Bot-kod till KUND-loadern: kräver inloggning + AKTIV licens. Serverar
+      // autoclicker/playwright_bot.py i minnet → kunden har aldrig bot-koden lokalt.
+      middlewares.use((req, res, next) => {
+        const url = (req.url ?? "").split("?")[0];
+        if (url !== "/api/bot/code") { next(); return; }
+        res.setHeader("Cache-Control", "no-store");
+        const auth = getAuthFromRequest(req);
+        if (!auth) {
+          res.statusCode = 401;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.end(JSON.stringify({ ok: false, error: "Not authenticated" }));
+          return;
+        }
+        const allowed = isAdminUsername(auth.user) || findActiveLicenseForUsername(auth.user) !== null;
+        if (!allowed) {
+          res.statusCode = 403;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.end(JSON.stringify({ ok: false, error: "No active membership" }));
+          return;
+        }
+        try {
+          const code = readBotCode();
+          res.statusCode = 200;
+          res.setHeader("Content-Type", "text/plain; charset=utf-8");
+          res.end(code);
+        } catch {
+          res.statusCode = 500;
+          res.setHeader("Content-Type", "application/json; charset=utf-8");
+          res.end(JSON.stringify({ ok: false, error: "Bot code unavailable" }));
+        }
+      });
       // Oautentiserad diagnostik — MÅSTE ligga före auth-gaten för att vara nåbar.
       middlewares.use(internalPingDevApi);
       // Auth gate — blocks /api/* except PUBLIC_API_PATHS + /api/auth/*

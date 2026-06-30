@@ -25,21 +25,33 @@ import {
 } from "./persistentStorage";
 import { makeZip } from "./miniZip";
 
-/** Distributionsfiler som ingår i autoclicker-share.zip (källkoden ligger i autoclicker/). */
+/**
+ * Distributionsfiler som ingår i autoclicker-share.zip (källkoden ligger i autoclicker/).
+ * OBS: playwright_bot.py ingår INTE — bot-koden serveras separat via /api/bot/code och körs
+ * i minnet hos kunden (aldrig på disk). Nedladdningen innehåller bara "loadern" som loggar
+ * in + hämtar boten. Saknad fil i listan hoppas tyst över av zip-byggaren.
+ */
 const AUTOCLICKER_DIST_FILES = [
-  "playwright_bot.py",
-  "license_client.py",
-  "sites.json",
-  "requirements.txt",
+  "loader.py",
+  "Starta-boten.command",
   "setup.sh",
   "run.sh",
-  "setup-windows.bat",
-  "run-windows.bat",
+  "sites.json",
+  "requirements.txt",
   "README.txt",
 ];
 
 function autoclickerSourceDir(): string {
   return process.env.AUTOCLICKER_SOURCE_DIR?.trim() || path.resolve(process.cwd(), "autoclicker");
+}
+
+/**
+ * Läser bot-koden (playwright_bot.py) som serveras till aktiva medlemmar via /api/bot/code.
+ * Koden bor ENBART på servern — kund-loadern får den i minnet vid körning, aldrig på disk.
+ * Så finns ingen bot-kod lokalt hos kunden att köra/sprida om kontrollen tas bort.
+ */
+export function readBotCode(): string {
+  return fs.readFileSync(path.join(autoclickerSourceDir(), "playwright_bot.py"), "utf-8");
 }
 
 /** Custom error så API kan returnera 503 istället för 500 vid storage-misconfig. */
