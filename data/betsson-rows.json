@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T07:20:49.461Z",
+  "updatedAt": "2026-06-30T07:31:09.209Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -54,22 +54,9 @@
       "awayTeam": "Ivory Coast (Alexander)",
       "startTime": "2026-06-30T07:45:00.000Z",
       "odds": {
-        "home": 1.95,
-        "draw": 5,
+        "home": 2,
+        "draw": 4.8,
         "away": 2.45
-      },
-      "foundBy": "France"
-    },
-    {
-      "eventId": "f-NlGMfx2xtE-yAOO3Q87fOQ",
-      "title": "Mexico (Cezar) - France (Beckham)",
-      "homeTeam": "Mexico (Cezar)",
-      "awayTeam": "France (Beckham)",
-      "startTime": "2026-06-30T08:00:00.000Z",
-      "odds": {
-        "home": 2.8,
-        "draw": 5,
-        "away": 1.75
       },
       "foundBy": "France"
     },
@@ -87,6 +74,19 @@
       "foundBy": "France"
     },
     {
+      "eventId": "f-NlGMfx2xtE-yAOO3Q87fOQ",
+      "title": "Mexico (Cezar) - France (Beckham)",
+      "homeTeam": "Mexico (Cezar)",
+      "awayTeam": "France (Beckham)",
+      "startTime": "2026-06-30T08:00:00.000Z",
+      "odds": {
+        "home": 2.8,
+        "draw": 5,
+        "away": 1.75
+      },
+      "foundBy": "France"
+    },
+    {
       "eventId": "f-fABIOSWMi02gV-fQm-FsZA",
       "title": "CA Claypole - Canuelas FC",
       "homeTeam": "CA Claypole",
@@ -94,8 +94,8 @@
       "startTime": "2026-06-30T18:00:00.000Z",
       "odds": {
         "home": 3.6,
-        "draw": 2.9,
-        "away": 2.1
+        "draw": 2.85,
+        "away": 2.15
       },
       "foundBy": "France"
     },
@@ -210,9 +210,9 @@
       "awayTeam": "Ogre United",
       "startTime": "2026-06-30T16:00:00.000Z",
       "odds": {
-        "home": 1.33,
+        "home": 1.36,
         "draw": 4.75,
-        "away": 8.5
+        "away": 7.5
       },
       "foundBy": "Liepaja"
     },
@@ -275,9 +275,9 @@
       "awayTeam": "Liverpool Montevideo",
       "startTime": "2026-06-30T13:00:00.000Z",
       "odds": {
-        "home": 1.47,
+        "home": 1.45,
         "draw": 4.2,
-        "away": 5.6
+        "away": 5.8
       },
       "foundBy": "Penarol"
     },
@@ -316,7 +316,7 @@
       "odds": {
         "home": 1.2,
         "draw": 5.4,
-        "away": 13
+        "away": 12
       },
       "foundBy": "Lyn"
     },
@@ -789,19 +789,6 @@
       "foundBy": "HJK Helsinki"
     },
     {
-      "eventId": "f-048V9CKbwUmcBRkL3sJ8sA",
-      "title": "Qatar (Eminem) - Belgium (Titan)",
-      "homeTeam": "Qatar (Eminem)",
-      "awayTeam": "Belgium (Titan)",
-      "startTime": "2026-06-30T07:15:00.000Z",
-      "odds": {
-        "home": 1.52,
-        "draw": 4.1,
-        "away": 4.4
-      },
-      "foundBy": "Belgium"
-    },
-    {
       "eventId": "f-wn4HCipuGk-ID3VEPLBK-Q",
       "title": "Drogheda United - FC Bohemians",
       "homeTeam": "Drogheda United",
@@ -969,42 +956,16 @@
         "away": 4.7
       },
       "foundBy": "Gold Coast Knights"
-    },
-    {
-      "eventId": "f-WY9a2ZJE-UyiehND7V1FHA",
-      "title": "SD Raiders FC - Sydney FC Youth",
-      "homeTeam": "SD Raiders FC",
-      "awayTeam": "Sydney FC Youth",
-      "startTime": "2026-06-30T10:00:00.000Z",
-      "odds": {
-        "home": 2.45,
-        "draw": 3.4,
-        "away": 2.5
-      },
-      "foundBy": "SD Raiders"
-    },
-    {
-      "eventId": "f-Ub1X266cvUydNWoQ6yYfIw",
-      "title": "Resistencia FC - Encarnacion FC",
-      "homeTeam": "Resistencia FC",
-      "awayTeam": "Encarnacion FC",
-      "startTime": "2026-06-30T18:30:00.000Z",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.2,
-        "away": 3.15
-      },
-      "foundBy": "Resistencia"
     }
   ],
   "eventsBasket": [],
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 205609,
+    "runMs": 203389,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-30T07:20:49.461Z"
+    "decidedAt": "2026-06-30T07:31:09.209Z"
   },
   "_linesDiag": {
     "ran": true,
@@ -1022,7 +983,7 @@
       "MTG2W",
       "MAHCP"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-9PAXJFmA6kyCN8-BZzYdcg\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-ZACGqSANKUyCmLlQ8ir1-g\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 403,
     "gid": "MTG2W",
     "accBodyHead": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content",
