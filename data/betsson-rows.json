@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T00:48:38.573Z",
+  "updatedAt": "2026-06-30T00:59:03.910Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -85,6 +85,19 @@
         "away": 3.8
       },
       "foundBy": "USA"
+    },
+    {
+      "eventId": "f-yCCUfYJxZ0e6yINWguHQvA",
+      "title": "Spain (Cyclop) - South Africa (Sarafi)",
+      "homeTeam": "Spain (Cyclop)",
+      "awayTeam": "South Africa (Sarafi)",
+      "startTime": "2026-06-30T00:45:00.000Z",
+      "odds": {
+        "home": 11,
+        "draw": 3.45,
+        "away": 1.34
+      },
+      "foundBy": "Spain"
     },
     {
       "eventId": "f-fABIOSWMi02gV-fQm-FsZA",
@@ -204,6 +217,19 @@
       "foundBy": "LDU Quito"
     },
     {
+      "eventId": "f-QMGvTBEw50GcMVUNG6EgwA",
+      "title": "Australia (Razvan) - Netherlands (Tifosi)",
+      "homeTeam": "Australia (Razvan)",
+      "awayTeam": "Netherlands (Tifosi)",
+      "startTime": "2026-06-30T00:45:00.000Z",
+      "odds": {
+        "home": 1.25,
+        "draw": 3.6,
+        "away": 20
+      },
+      "foundBy": "Australia"
+    },
+    {
       "eventId": "f-zVyuMCyHPUeUEjsvZlIe4w",
       "title": "Loudoun United Fc - Sporting Jax",
       "homeTeam": "Loudoun United Fc",
@@ -228,6 +254,19 @@
         "away": 7.6
       },
       "foundBy": "Washington Spirit"
+    },
+    {
+      "eventId": "f-XeYe-tL9mEq3FsyOg2NFCw",
+      "title": "Mexico (Walnut) - Saudi Arabia (Vito)",
+      "homeTeam": "Mexico (Walnut)",
+      "awayTeam": "Saudi Arabia (Vito)",
+      "startTime": "2026-06-30T00:45:00.000Z",
+      "odds": {
+        "home": 100,
+        "draw": 9,
+        "away": 1.01
+      },
+      "foundBy": "Mexico"
     },
     {
       "eventId": "f-ZkfCK-25zEClD4huzzfv5A",
@@ -269,41 +308,15 @@
       "foundBy": "Botafogo SP"
     },
     {
-      "eventId": "f-W2N8an7YE02dMVs_OoOg3A",
-      "title": "Morocco (William) - Netherlands (Kaizen)",
-      "homeTeam": "Morocco (William)",
-      "awayTeam": "Netherlands (Kaizen)",
-      "startTime": "2026-06-30T00:35:00.000Z",
-      "odds": {
-        "home": 10,
-        "draw": 1.09,
-        "away": 9
-      },
-      "foundBy": "Netherlands"
-    },
-    {
       "eventId": "f-hmqGpyeaO0iatkUFhrN2pQ",
       "title": "Netherlands (Kaizen) - Brazil (George)",
       "homeTeam": "Netherlands (Kaizen)",
       "awayTeam": "Brazil (George)",
       "startTime": "2026-06-30T00:50:00.000Z",
       "odds": {
-        "home": 2.4,
-        "draw": 5.2,
-        "away": 1.95
-      },
-      "foundBy": "Netherlands"
-    },
-    {
-      "eventId": "f-pRyYeoptNU2b5kMuAxop2g",
-      "title": "Netherlands (Kaizen) - Japan (Kristof)",
-      "homeTeam": "Netherlands (Kaizen)",
-      "awayTeam": "Japan (Kristof)",
-      "startTime": "2026-06-30T01:20:00.000Z",
-      "odds": {
-        "home": 2.25,
-        "draw": 5.2,
-        "away": 2.05
+        "home": 1.58,
+        "draw": 3.9,
+        "away": 4.4
       },
       "foundBy": "Netherlands"
     },
@@ -347,53 +360,87 @@
       "foundBy": "Birmingham Legion"
     },
     {
-      "eventId": "f-EmPzn3TE-UOLrlfH1L5keA",
-      "title": "PK-35 Vantaa - HJK Helsinki",
-      "homeTeam": "PK-35 Vantaa",
-      "awayTeam": "HJK Helsinki",
-      "startTime": "2026-06-30T16:00:00.000Z",
+      "eventId": "f-qksyGjfoKECHEnevUV_IAw",
+      "title": "Sunshine Coast Wanderers FC - Olympic FC Brisbane",
+      "homeTeam": "Sunshine Coast Wanderers FC",
+      "awayTeam": "Olympic FC Brisbane",
+      "startTime": "2026-06-30T09:30:00.000Z",
       "odds": {
-        "home": 14,
-        "draw": 8.2,
-        "away": 1.1
+        "home": 3.65,
+        "draw": 3.45,
+        "away": 1.85
       },
-      "foundBy": "HJK Helsinki"
+      "foundBy": "Sunshine Coast Wanderers"
     }
   ],
   "eventsBasket": [],
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 223817,
+    "runMs": 243968,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-30T00:48:38.573Z"
+    "decidedAt": "2026-06-30T00:59:03.910Z"
   },
   "_linesDiag": {
     "ran": true,
     "withTotals": 0,
     "withAh": 0,
-    "nearest": 26,
-    "ms": 25
+    "nearest": 24,
+    "ms": 28
   },
   "_linesProbe": {
     "hasLinesPage": true,
     "evStatus": 200,
-    "nSummaries": 3,
+    "nSummaries": 20,
     "sumKeys": [
       "MW3W",
+      "MTG2W25",
       "MTG2W",
-      "MAHCP"
+      "M3WHCP",
+      "1HTG",
+      "T2HGOU",
+      "BTTS",
+      "DC",
+      "MW2W",
+      "MW3W1H",
+      "FTCSALT",
+      "HTG",
+      "ATG",
+      "CS1H10W",
+      "1HDC",
+      "ENOGM5G",
+      "OENG",
+      "HTOENG",
+      "m-f-QMrPH2-2JkavBTK0WDYzZA-2HOE",
+      "gi-1462946189"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-pRyYeoptNU2b5kMuAxop2g\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-QMrPH2-2JkavBTK0WDYzZA\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 403,
     "gid": "MTG2W",
     "accBodyHead": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content",
     "fullCatalogStatus": 200,
     "fullCatalogKeys": [
       "MW3W|Matchresultat",
+      "MTG2W25|Totalt antal mål",
       "MTG2W|Totalt antal mål",
-      "MAHCP|Asiatiska handikapp"
+      "M3WHCP|Handikapp (3-vägs)",
+      "1HTG|1:a halvlek - Antal mål",
+      "T2HGOU|2:a halvlek - Antal mål",
+      "BTTS|Båda lagen gör mål",
+      "DC|Dubbelchans",
+      "MW2W|Insatsen tillbaka vid oavgjort",
+      "MW3W1H|Halvtidsresultat",
+      "FTCSALT|Rätt resultat",
+      "HTG|Totalt antal mål för Gold Coast Knights",
+      "ATG|Totalt antal mål för Lions FC",
+      "CS1H10W|1:a halvlek - Korrekt resultat (max 4 mål)",
+      "1HDC|1:a halvlek - Dubbelchans",
+      "ENOGM5G|Exakt antal mål (max 5)",
+      "OENG|Totalt antal mål - udda eller jämnt",
+      "HTOENG|1:a halvlek - Totalt antal mål - udda eller jämnt",
+      "m-f-QMrPH2-2JkavBTK0WDYzZA-2HOE|2:a halvlek - Udda/jämnt",
+      "gi-1462946189|Pre-Built Combinations"
     ],
     "cornerKeys": []
   },
@@ -401,6 +448,6 @@
     "via": "inpage",
     "status": 200,
     "hasLinesPage": true,
-    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-fPIDK"
+    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-fXsox"
   }
 }
