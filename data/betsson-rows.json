@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T06:50:06.241Z",
+  "updatedAt": "2026-06-30T07:00:17.359Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -85,6 +85,33 @@
         "away": 6.6
       },
       "foundBy": "France"
+    },
+    {
+      "eventId": "f-9PAXJFmA6kyCN8-BZzYdcg",
+      "title": "France (Beckham) - Ivory Coast (Alexander)",
+      "homeTeam": "France (Beckham)",
+      "awayTeam": "Ivory Coast (Alexander)",
+      "startTime": "2026-06-30T07:45:00.000Z",
+      "odds": {
+        "home": 1.95,
+        "draw": 5,
+        "away": 2.45
+      },
+      "foundBy": "France",
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.6,
+          "under": 2.05
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.5,
+          "home": 1.96,
+          "away": 1.7
+        }
+      ]
     },
     {
       "eventId": "f-jscxomyukkWNlcz3m7T9Pw",
@@ -202,33 +229,6 @@
         "away": 1.15
       },
       "foundBy": "Liepaja"
-    },
-    {
-      "eventId": "f-9PAXJFmA6kyCN8-BZzYdcg",
-      "title": "France (Beckham) - Ivory Coast (Alexander)",
-      "homeTeam": "France (Beckham)",
-      "awayTeam": "Ivory Coast (Alexander)",
-      "startTime": "2026-06-30T07:45:00.000Z",
-      "odds": {
-        "home": 1.95,
-        "draw": 5,
-        "away": 2.45
-      },
-      "foundBy": "Ivory Coast",
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.6,
-          "under": 2.05
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.96,
-          "away": 1.7
-        }
-      ]
     },
     {
       "eventId": "f-nUcFPGQMwUiPYSfKmHRjkw",
@@ -782,8 +782,8 @@
       "awayTeam": "Edinburgh City FC",
       "startTime": "2026-06-30T18:30:00.000Z",
       "odds": {
-        "home": 1.2,
-        "draw": 6,
+        "home": 1.22,
+        "draw": 5.5,
         "away": 13
       },
       "foundBy": "Raith Rovers"
@@ -808,9 +808,9 @@
       "awayTeam": "Egypt (Shaolin)",
       "startTime": "2026-06-30T06:45:00.000Z",
       "odds": {
-        "home": 2.35,
-        "draw": 3.6,
-        "away": 2.4
+        "home": 1.06,
+        "draw": 6,
+        "away": 100
       },
       "foundBy": "Belgium"
     },
@@ -890,19 +890,7 @@
         "draw": 3.8,
         "away": 2.32
       },
-      "foundBy": "Logan Lightning",
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 3,
-          "under": 1.33
-        },
-        {
-          "line": 3.5,
-          "over": 1.91,
-          "under": 1.79
-        }
-      ]
+      "foundBy": "Logan Lightning"
     },
     {
       "eventId": "f-Gg947Y6PKUmOC_fu1Y7YyQ",
@@ -1052,9 +1040,9 @@
       "awayTeam": "Encarnacion FC",
       "startTime": "2026-06-30T18:30:00.000Z",
       "odds": {
-        "home": 2.1,
+        "home": 2.12,
         "draw": 3.2,
-        "away": 3.25
+        "away": 3.15
       },
       "foundBy": "Resistencia"
     },
@@ -1089,14 +1077,14 @@
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 183599,
+    "runMs": 191779,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-30T06:50:06.241Z"
+    "decidedAt": "2026-06-30T07:00:17.359Z"
   },
   "_linesDiag": {
     "ran": true,
-    "withTotals": 7,
+    "withTotals": 6,
     "withAh": 2,
     "nearest": 30,
     "ms": 19
@@ -1126,6 +1114,6 @@
     "via": "inpage",
     "status": 200,
     "hasLinesPage": true,
-    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-HfqGP"
+    "bodyHead": "{\r\n  \"data\": {\r\n    \"accordions\": {\r\n      \"MW3W\": {\r\n        \"markets\": [\r\n          {\r\n            \"eventId\": \"f-5pUAC"
   }
 }
