@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T05:18:56.621Z",
+  "updatedAt": "2026-06-30T05:28:53.663Z",
   "source": "github-actions",
   "queryStrategy": "pinnacle-home-team",
   "queryLookaheadHours": 96,
@@ -28,9 +28,9 @@
       "awayTeam": "Ivory Coast (Jack)",
       "startTime": "2026-06-30T05:15:00.000Z",
       "odds": {
-        "home": 3.1,
-        "draw": 3.6,
-        "away": 1.9
+        "home": 40,
+        "draw": 4.6,
+        "away": 1.14
       },
       "foundBy": "Ivory Coast"
     },
@@ -184,9 +184,9 @@
       "awayTeam": "HJK Helsinki",
       "startTime": "2026-06-30T16:00:00.000Z",
       "odds": {
-        "home": 14,
-        "draw": 8.8,
-        "away": 1.09
+        "home": 17,
+        "draw": 9.2,
+        "away": 1.08
       },
       "foundBy": "HJK Helsinki"
     },
@@ -380,8 +380,8 @@
       "startTime": "2026-06-30T15:00:00.000Z",
       "odds": {
         "home": 1.2,
-        "draw": 5.5,
-        "away": 15
+        "draw": 6,
+        "away": 13
       },
       "foundBy": "RFS"
     },
@@ -815,19 +815,6 @@
       "foundBy": "France"
     },
     {
-      "eventId": "f-2utlh8F_R0y-tm6Gwjjedw",
-      "title": "Norway (Snail) - France (Titan)",
-      "homeTeam": "Norway (Snail)",
-      "awayTeam": "France (Titan)",
-      "startTime": "2026-06-30T05:15:00.000Z",
-      "odds": {
-        "home": 2.35,
-        "draw": 3.45,
-        "away": 2.45
-      },
-      "foundBy": "France"
-    },
-    {
       "eventId": "f-jscxomyukkWNlcz3m7T9Pw",
       "title": "HFX Wanderers FC - Atletico Ottawa",
       "homeTeam": "HFX Wanderers FC",
@@ -837,6 +824,19 @@
         "home": 2.65,
         "draw": 3.1,
         "away": 2.5
+      },
+      "foundBy": "France"
+    },
+    {
+      "eventId": "f-2utlh8F_R0y-tm6Gwjjedw",
+      "title": "Norway (Snail) - France (Titan)",
+      "homeTeam": "Norway (Snail)",
+      "awayTeam": "France (Titan)",
+      "startTime": "2026-06-30T05:15:00.000Z",
+      "odds": {
+        "home": 4,
+        "draw": 1.58,
+        "away": 4.1
       },
       "foundBy": "France"
     },
@@ -917,42 +917,16 @@
         "away": 22
       },
       "foundBy": "Argentina"
-    },
-    {
-      "eventId": "f-n4YfNMdN7kqHNQSfIWH-wQ",
-      "title": "Forge FC Hamilton - Vancouver FC",
-      "homeTeam": "Forge FC Hamilton",
-      "awayTeam": "Vancouver FC",
-      "startTime": "2026-07-01T17:00:00.000Z",
-      "odds": {
-        "home": 1.52,
-        "draw": 3.7,
-        "away": 5.6
-      },
-      "foundBy": "Forge"
-    },
-    {
-      "eventId": "f-RiMk2t9RJkG7WOToo8lAzA",
-      "title": "Ranheim - Stabæk",
-      "homeTeam": "Ranheim",
-      "awayTeam": "Stabæk",
-      "startTime": "2026-07-03T17:00:00.000Z",
-      "odds": {
-        "home": 2.7,
-        "draw": 3.95,
-        "away": 2.28
-      },
-      "foundBy": "Ranheim"
     }
   ],
   "eventsBasket": [],
   "eventsTennis": [],
   "_tuning": {
     "limitUsed": 200,
-    "runMs": 203658,
+    "runMs": 199648,
     "deadlineMs": 660000,
     "hitDeadline": false,
-    "decidedAt": "2026-06-30T05:18:56.621Z"
+    "decidedAt": "2026-06-30T05:28:53.663Z"
   },
   "_linesDiag": {
     "ran": true,
@@ -984,10 +958,10 @@
       "ENOGM5G",
       "OENG",
       "HTOENG",
-      "m-f-yFbHoXouB06yN8x5LXs38w-2HOE",
+      "m-f-qksyGjfoKECHEnevUV_IAw-2HOE",
       "gi-1462946189"
     ],
-    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-yFbHoXouB06yN8x5LXs38w\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
+    "evBodyHead": "{\r\n  \"skeleton\": {\r\n    \"eventId\": \"f-qksyGjfoKECHEnevUV_IAw\"\r\n  },\r\n  \"topics\": {\r\n    \"markets\": [\r\n      \"?obg/sportsbook/transient/marke",
     "accStatus": 403,
     "gid": "MTG2W",
     "accBodyHead": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content",
@@ -1004,14 +978,14 @@
       "MW2W|Insatsen tillbaka vid oavgjort",
       "MW3W1H|Halvtidsresultat",
       "FTCSALT|Rätt resultat",
-      "HTG|Totalt antal mål för Eastern Suburbs FC",
-      "ATG|Totalt antal mål för Gold Coast United FC",
+      "HTG|Totalt antal mål för Sunshine Coast Wanderers FC",
+      "ATG|Totalt antal mål för Olympic FC Brisbane",
       "CS1H10W|1:a halvlek - Korrekt resultat (max 4 mål)",
       "1HDC|1:a halvlek - Dubbelchans",
       "ENOGM5G|Exakt antal mål (max 5)",
       "OENG|Totalt antal mål - udda eller jämnt",
       "HTOENG|1:a halvlek - Totalt antal mål - udda eller jämnt",
-      "m-f-yFbHoXouB06yN8x5LXs38w-2HOE|2:a halvlek - Udda/jämnt",
+      "m-f-qksyGjfoKECHEnevUV_IAw-2HOE|2:a halvlek - Udda/jämnt",
       "gi-1462946189|Pre-Built Combinations"
     ],
     "cornerKeys": []
