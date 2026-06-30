@@ -47,7 +47,7 @@ const ALL_LEAGUE_URLS = [
   "https://sb.prontosport.se/sv/euro/sport/soccer/english-premier-league/104",
 ];
 // Tak så loopen alltid hinner SKRIVA innan deadline (annars kapas körningen → ingen data).
-const URLS = ALL_LEAGUE_URLS.slice(0, Number(process.env.PRONTO_MAX_URLS) || 16);
+const URLS = ALL_LEAGUE_URLS.slice(0, Number(process.env.PRONTO_MAX_URLS) || 12);
 
 // körs IN i sidan: ABM "?tab=all"-listvy renderar 1X2 + totals (+ first-goal/BTTS) per match.
 // Varje match ankras av en event-länk /sv/euro/event/<slug>/<id>. Gå upp till match-containern
