@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:41:07.944Z",
+  "updatedAt": "2026-06-30T03:45:07.750Z",
   "source": "github-actions",
   "bookmaker": "unibet",
   "displayName": "Unibet",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 331,
-  "skippedNoOdds": 5,
+  "uniqueEvents": 334,
+  "skippedNoOdds": 6,
   "skippedNotFootball": 0,
-  "durationMs": 27961,
+  "durationMs": 26516,
   "events": [
     {
       "eventId": "1027976814",
@@ -51,6 +51,19 @@
         "home": 2.75,
         "draw": 3.45,
         "away": 2.17
+      }
+    },
+    {
+      "eventId": "1028147723",
+      "title": "Preston - Huddersfield",
+      "homeTeam": "Preston",
+      "awayTeam": "Huddersfield",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.92,
+        "draw": 3.45,
+        "away": 3.35
       }
     },
     {
@@ -171,6 +184,19 @@
       }
     },
     {
+      "eventId": "1028147728",
+      "title": "Plymouth Argyle - Exeter",
+      "homeTeam": "Plymouth Argyle",
+      "awayTeam": "Exeter",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.55,
+        "draw": 4,
+        "away": 4.7
+      }
+    },
+    {
       "eventId": "1028147729",
       "title": "Bristol City - Walsall",
       "homeTeam": "Bristol City",
@@ -233,6 +259,19 @@
         "home": 2.7,
         "draw": 3.45,
         "away": 2.23
+      }
+    },
+    {
+      "eventId": "1028147689",
+      "title": "Rotherham United - West Bromwich",
+      "homeTeam": "Rotherham United",
+      "awayTeam": "West Bromwich",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 5.4,
+        "draw": 4.4,
+        "away": 1.43
       }
     },
     {
@@ -324,6 +363,19 @@
         "home": 2.6,
         "draw": 3.35,
         "away": 2.35
+      }
+    },
+    {
+      "eventId": "1028147701",
+      "title": "Mansfield Town - Sheffield United",
+      "homeTeam": "Mansfield Town",
+      "awayTeam": "Sheffield United",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 4.7,
+        "draw": 3.75,
+        "away": 1.58
       }
     },
     {
@@ -470,32 +522,6 @@
       }
     },
     {
-      "eventId": "1028186504",
-      "title": "Real Madrid (Kosta) - Atleti (zaha)",
-      "homeTeam": "Real Madrid (Kosta)",
-      "awayTeam": "Atleti (zaha)",
-      "startTime": "2026-06-30T03:32:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 13,
-        "draw": 7,
-        "away": 1.13
-      }
-    },
-    {
-      "eventId": "1028186544",
-      "title": "Man City (volvo) - River Plate (tohi4)",
-      "homeTeam": "Man City (volvo)",
-      "awayTeam": "River Plate (tohi4)",
-      "startTime": "2026-06-30T03:35:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.45,
-        "draw": 4.5,
-        "away": 4.6
-      }
-    },
-    {
       "eventId": "1028186542",
       "title": "Kroatien (hotShot) - Tyskland (OG)",
       "homeTeam": "Kroatien (hotShot)",
@@ -503,9 +529,9 @@
       "startTime": "2026-06-30T03:38:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.23,
-        "draw": 5.2,
-        "away": 9
+        "home": 1.09,
+        "draw": 7,
+        "away": 34
       }
     },
     {
@@ -516,9 +542,9 @@
       "startTime": "2026-06-30T03:38:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 3.3,
-        "draw": 2.65,
-        "away": 2.12
+        "home": 2.85,
+        "draw": 1.93,
+        "away": 3.55
       }
     },
     {
@@ -529,42 +555,10 @@
       "startTime": "2026-06-30T03:44:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.15,
+        "home": 3.1,
         "draw": 4.5,
-        "away": 1.66
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.58,
-          "under": 2.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.23,
-          "under": 3.4
-        },
-        {
-          "line": 7.5,
-          "over": 6.75,
-          "under": 1.05
-        },
-        {
-          "line": 6.5,
-          "over": 3.65,
-          "under": 1.2
-        },
-        {
-          "line": 2.5,
-          "over": 1.04,
-          "under": 7
-        },
-        {
-          "line": 5.5,
-          "over": 2.3,
-          "under": 1.5
-        }
-      ]
+        "away": 1.68
+      }
     },
     {
       "eventId": "1028186539",
@@ -764,40 +758,40 @@
       "startTime": "2026-06-30T03:56:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.2,
-        "draw": 5.75,
-        "away": 1.5
+        "home": 3.4,
+        "draw": 5.6,
+        "away": 1.47
       },
       "totals": [
         {
           "line": 8.5,
-          "over": 5.75,
-          "under": 1.08
+          "over": 5.3,
+          "under": 1.09
         },
         {
           "line": 6.5,
-          "over": 2.2,
-          "under": 1.55
+          "over": 2.1,
+          "under": 1.61
         },
         {
           "line": 4.5,
-          "over": 1.23,
-          "under": 3.4
+          "over": 1.19,
+          "under": 3.7
         },
         {
           "line": 3.5,
-          "over": 1.07,
-          "under": 6.1
+          "over": 1.05,
+          "under": 7
         },
         {
           "line": 7.5,
-          "over": 3.4,
-          "under": 1.23
+          "over": 3.2,
+          "under": 1.26
         },
         {
           "line": 5.5,
-          "over": 1.6,
-          "under": 2.12
+          "over": 1.53,
+          "under": 2.25
         }
       ]
     },
@@ -4214,13 +4208,13 @@
       "ah": [
         {
           "line": -0.5,
-          "home": 2.2,
-          "away": 1.67
+          "home": 2.23,
+          "away": 1.66
         },
         {
           "line": -0.75,
           "home": 2.7,
-          "away": 1.47
+          "away": 1.46
         },
         {
           "line": 0.5,
@@ -4244,7 +4238,7 @@
         },
         {
           "line": -1.5,
-          "home": 4.8,
+          "home": 4.9,
           "away": 1.18
         },
         {
@@ -5392,29 +5386,7 @@
         "home": 2.05,
         "draw": 3,
         "away": 3.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.38,
-          "under": 1.48
-        },
-        {
-          "line": 1.5,
-          "over": 1.43,
-          "under": 2.48
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 6
-        },
-        {
-          "line": 3.5,
-          "over": 4.35,
-          "under": 1.15
-        }
-      ]
+      }
     },
     {
       "eventId": "1027510083",
@@ -5427,34 +5399,7 @@
         "home": 1.54,
         "draw": 4,
         "away": 4.75
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.12,
-          "under": 4.9
-        },
-        {
-          "line": 4.5,
-          "over": 3.55,
-          "under": 1.23
-        },
-        {
-          "line": 3.5,
-          "over": 2.12,
-          "under": 1.6
-        },
-        {
-          "line": 5.5,
-          "over": 6,
-          "under": 1.08
-        },
-        {
-          "line": 2.5,
-          "over": 1.43,
-          "under": 2.48
-        }
-      ]
+      }
     },
     {
       "eventId": "1026971970",
@@ -5467,34 +5412,7 @@
         "home": 1.23,
         "draw": 6.1,
         "away": 7
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.92,
-          "under": 1.7
-        },
-        {
-          "line": 4.5,
-          "over": 1.43,
-          "under": 2.43
-        },
-        {
-          "line": 6.5,
-          "over": 2.8,
-          "under": 1.32
-        },
-        {
-          "line": 7.5,
-          "over": 4.25,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.15,
-          "under": 4
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309697",
@@ -5507,34 +5425,7 @@
         "home": 3.9,
         "draw": 3.85,
         "away": 1.64
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.87,
-          "under": 1.73
-        },
-        {
-          "line": 5.5,
-          "over": 4.9,
-          "under": 1.09
-        },
-        {
-          "line": 4.5,
-          "over": 3,
-          "under": 1.29
-        },
-        {
-          "line": 1.5,
-          "over": 1.06,
-          "under": 5.6
-        },
-        {
-          "line": 2.5,
-          "over": 1.33,
-          "under": 2.8
-        }
-      ]
+      }
     },
     {
       "eventId": "1026504972",
@@ -5547,34 +5438,7 @@
         "home": 1.56,
         "draw": 4.1,
         "away": 4.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.7
-        },
-        {
-          "line": 4.5,
-          "over": 3.15,
-          "under": 1.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 3.5,
-          "over": 1.95,
-          "under": 1.7
-        },
-        {
-          "line": 5.5,
-          "over": 5.25,
-          "under": 1.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1028014547",
@@ -5587,24 +5451,7 @@
         "home": 3.05,
         "draw": 2.32,
         "away": 2.65
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 2.05,
-          "under": 1.64
-        },
-        {
-          "line": 0.5,
-          "over": 1.23,
-          "under": 3.5
-        },
-        {
-          "line": 2.5,
-          "over": 4.2,
-          "under": 1.16
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309601",
@@ -5617,34 +5464,7 @@
         "home": 2.25,
         "draw": 3.45,
         "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.44,
-          "under": 2.4
-        },
-        {
-          "line": 1.5,
-          "over": 1.1,
-          "under": 4.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.14,
-          "under": 1.55
-        },
-        {
-          "line": 5.5,
-          "over": 6,
-          "under": 1.05
-        },
-        {
-          "line": 4.5,
-          "over": 3.55,
-          "under": 1.2
-        }
-      ]
+      }
     },
     {
       "eventId": "1026030375",
@@ -5657,104 +5477,6 @@
         "home": 1.71,
         "draw": 3.9,
         "away": 4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.13,
-          "under": 5
-        },
-        {
-          "line": 3.5,
-          "over": 2.14,
-          "under": 1.61
-        },
-        {
-          "line": 5.5,
-          "over": 6.25,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 3.6,
-          "under": 1.23
-        },
-        {
-          "line": 2.5,
-          "over": 1.45,
-          "under": 2.5
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 2.75,
-          "away": 1.38
-        },
-        {
-          "line": -2.5,
-          "home": 5,
-          "away": 1.13
-        },
-        {
-          "line": -0.5,
-          "home": 1.68,
-          "away": 2.02
-        },
-        {
-          "line": 0.5,
-          "home": 1.22,
-          "away": 3.75
-        },
-        {
-          "line": -2,
-          "home": 4.4,
-          "away": 1.16
-        },
-        {
-          "line": 0.25,
-          "home": 1.26,
-          "away": 3.4
-        },
-        {
-          "line": -1,
-          "home": 2.18,
-          "away": 1.58
-        },
-        {
-          "line": -2.25,
-          "home": 4.7,
-          "away": 1.14
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.66,
-            "under": 2.07
-          },
-          {
-            "line": 13.5,
-            "over": 3.15,
-            "under": 1.3
-          },
-          {
-            "line": 12.5,
-            "over": 2.48,
-            "under": 1.46
-          },
-          {
-            "line": 9.5,
-            "over": 1.41,
-            "under": 2.63
-          },
-          {
-            "line": 11.5,
-            "over": 2,
-            "under": 1.7
-          }
-        ]
       }
     },
     {
@@ -5768,104 +5490,6 @@
         "home": 7,
         "draw": 4.7,
         "away": 1.34
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.11,
-          "under": 4.9
-        },
-        {
-          "line": 3.5,
-          "over": 2.18,
-          "under": 1.56
-        },
-        {
-          "line": 5.5,
-          "over": 6.4,
-          "under": 1.05
-        },
-        {
-          "line": 4.5,
-          "over": 3.65,
-          "under": 1.21
-        },
-        {
-          "line": 2.5,
-          "over": 1.45,
-          "under": 2.43
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 1.72,
-          "away": 1.98
-        },
-        {
-          "line": 2.5,
-          "home": 1.27,
-          "away": 3.35
-        },
-        {
-          "line": 1,
-          "home": 2.28,
-          "away": 1.54
-        },
-        {
-          "line": 0.5,
-          "home": 2.88,
-          "away": 1.35
-        },
-        {
-          "line": 2.25,
-          "home": 1.32,
-          "away": 3.05
-        },
-        {
-          "line": 2,
-          "home": 1.38,
-          "away": 2.75
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 1.23,
-            "under": 3.5
-          },
-          {
-            "line": 14.5,
-            "over": 2.95,
-            "under": 1.33
-          },
-          {
-            "line": 13.5,
-            "over": 2.38,
-            "under": 1.49
-          },
-          {
-            "line": 12.5,
-            "over": 1.94,
-            "under": 1.73
-          },
-          {
-            "line": 15.5,
-            "over": 3.8,
-            "under": 1.2
-          },
-          {
-            "line": 11.5,
-            "over": 1.63,
-            "under": 2.1
-          },
-          {
-            "line": 10.5,
-            "over": 1.4,
-            "under": 2.65
-          }
-        ]
       }
     },
     {
@@ -5879,29 +5503,7 @@
         "home": 1.82,
         "draw": 3.4,
         "away": 3.75
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.1
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.78,
-          "under": 1.86
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.32
-        }
-      ]
+      }
     },
     {
       "eventId": "1026971021",
@@ -5914,29 +5516,7 @@
         "home": 2.6,
         "draw": 3.9,
         "away": 2.08
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 3.15,
-          "under": 1.26
-        },
-        {
-          "line": 3.5,
-          "over": 1.43,
-          "under": 2.43
-        },
-        {
-          "line": 2.5,
-          "over": 1.14,
-          "under": 4.2
-        },
-        {
-          "line": 4.5,
-          "over": 2.02,
-          "under": 1.62
-        }
-      ]
+      }
     },
     {
       "eventId": "1026403186",
@@ -5949,34 +5529,7 @@
         "home": 6.25,
         "draw": 5.4,
         "away": 1.3
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.85,
-          "under": 1.79
-        },
-        {
-          "line": 5.5,
-          "over": 2.75,
-          "under": 1.36
-        },
-        {
-          "line": 3.5,
-          "over": 1.37,
-          "under": 2.7
-        },
-        {
-          "line": 6.5,
-          "over": 4.3,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 1.13,
-          "under": 4.75
-        }
-      ]
+      }
     },
     {
       "eventId": "1028188960",
@@ -5989,29 +5542,7 @@
         "home": 3.1,
         "draw": 2.88,
         "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.5,
-          "under": 1.43
-        },
-        {
-          "line": 3.5,
-          "over": 4.7,
-          "under": 1.13
-        },
-        {
-          "line": 0.5,
-          "over": 1.09,
-          "under": 5.5
-        },
-        {
-          "line": 1.5,
-          "over": 1.49,
-          "under": 2.33
-        }
-      ]
+      }
     },
     {
       "eventId": "1028188961",
@@ -6024,29 +5555,7 @@
         "home": 2.65,
         "draw": 2.85,
         "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.45,
-          "under": 1.44
-        },
-        {
-          "line": 3.5,
-          "over": 4.6,
-          "under": 1.12
-        },
-        {
-          "line": 1.5,
-          "over": 1.47,
-          "under": 2.38
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.6
-        }
-      ]
+      }
     },
     {
       "eventId": "1028188962",
@@ -6059,24 +5568,7 @@
         "home": 2.12,
         "draw": 3.1,
         "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.1,
-          "under": 1.61
-        },
-        {
-          "line": 3.5,
-          "over": 3.7,
-          "under": 1.21
-        },
-        {
-          "line": 1.5,
-          "over": 1.35,
-          "under": 2.8
-        }
-      ]
+      }
     },
     {
       "eventId": "1028188963",
@@ -6102,29 +5594,7 @@
         "home": 1.4,
         "draw": 3.9,
         "away": 7.5
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.55,
-          "under": 1.21
-        },
-        {
-          "line": 4.5,
-          "over": 6.5,
-          "under": 1.04
-        },
-        {
-          "line": 2.5,
-          "over": 2,
-          "under": 1.66
-        },
-        {
-          "line": 1.5,
-          "over": 1.32,
-          "under": 2.95
-        }
-      ]
+      }
     },
     {
       "eventId": "1028188965",
