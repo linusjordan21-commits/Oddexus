@@ -24,12 +24,30 @@ const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 const log = (...a) => console.log("[prontosport]", ...a);
 process.on("unhandledRejection", (e) => log("unhandledRejection:", e?.message ?? e));
 
-// Soccer-vyn + några toppligor (täckning utan att rendera för många sidor).
-const URLS = [
-  "https://sb.prontosport.se/sv/euro/sport/soccer",
+// Liga-URL:er (slug/id upptäckta från /sport/soccer-indexet 2026-06-29 — den GENERELLA
+// soccer-sidan är ett liga-index utan match-länkar → 0 rader, så den är borttagen).
+// ~12s/sida (render+scroll) × deadline 4 min → ~16 sidor ryms; prioriterar ligor i säsong
+// NU (sommar 2026: Sydamerika, Norden, Asien, cuper, VM). Lägg till fler om PRONTO_DEADLINE_MS höjs.
+const ALL_LEAGUE_URLS = [
   "https://sb.prontosport.se/sv/euro/sport/soccer/sweden-allsvenskan/704",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/wc-2026/327579",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/norway-eliteserien/739",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/finland-veikkausliiga/713",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/brazil-serie-a/125",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/brazil-serie-b/36",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/argentina-liga-profesional/5862",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/usa-mls/791",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/denmark-super-league/203",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/copa-libertadores/463",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/copa-sudamericana/124",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/south-korea-k-league-1/675",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/china-super-league/661",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/ireland-premier-division/689",
+  "https://sb.prontosport.se/sv/euro/sport/soccer/iceland-premier-league/1023",
   "https://sb.prontosport.se/sv/euro/sport/soccer/english-premier-league/104",
 ];
+// Tak så loopen alltid hinner SKRIVA innan deadline (annars kapas körningen → ingen data).
+const URLS = ALL_LEAGUE_URLS.slice(0, Number(process.env.PRONTO_MAX_URLS) || 16);
 
 // körs IN i sidan: ABM "?tab=all"-listvy renderar 1X2 + totals (+ first-goal/BTTS) per match.
 // Varje match ankras av en event-länk /sv/euro/event/<slug>/<id>. Gå upp till match-containern

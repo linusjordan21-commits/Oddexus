@@ -26,7 +26,7 @@ const log = (...a) => console.log("[10bet]", ...a);
 // (Scrapfly reserverar exec-timeouts → ~4 ryms under 90s), tak MAX_COMPS över flera
 // renders, prioritera riktig fotboll (esport sist). Recon 2026-06-26.
 const COMPS_PER_RENDER = Number(process.env.TENBET_COMPS_PER_RENDER) || 6;
-const MAX_COMPS = Number(process.env.TENBET_MAX_COMPS) || 18;
+const MAX_COMPS = Number(process.env.TENBET_MAX_COMPS) || 28;
 
 // ACCEPT: klicka cookie-accept, sedan scroll-BURST ~6000px i ETT steg (synkront). Reconen
 // bevisade att en burst + lång ostörd settle (9s) låter widgeten lazy-ladda deltagarnamnen;
@@ -204,7 +204,7 @@ async function main() {
   }
   // Prematch-only inom 24h: tappa redan startade matcher OCH rader utan parsebar
   // starttid (live visar löpande klocka i st f kickoff → okänd starttid = sannolikt live).
-  const win = filterToWindowHours(events, { windowHours: 24, dropUnknown: true });
+  const win = filterToWindowHours(events, { windowHours: 48, dropUnknown: true });
   const kept = win.kept;
   diag.droppedOutsideWindow = win.dropped;
   diag.builtEvents = kept.length;

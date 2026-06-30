@@ -29,11 +29,10 @@ const log = (...a) => console.log("[888sport]", ...a);
 process.on("unhandledRejection", (e) => log("unhandledRejection (ignorerad):", e?.message ?? e));
 
 const PAGE_URL = "https://www.888sport.se/fotboll/";
-// Coverage-audit 2026-06-29: bara today+tomorrow gav ~23 events; Spectate stödjer även
-// "3days" (kommentaren: 3days/week → ~400). Lägg till 3days → fler matchbara matcher.
-// Ogiltig timeframe loggas + hoppas över (rad 144), så detta är säkert. Fönstret breddas
-// 24→48h nedan så de extra matcherna inte filtreras bort direkt.
-const TIMEFRAMES = ["today", "tomorrow", "3days"]; // giltiga Spectate-tidsfönster
+// Spectate getUpcomingEvents/football stödjer BARA "today"/"tomorrow" — "3days" och "week"
+// ger HTTP 400 (verifierat 2026-06-29; en tidigare "3days"-gissning gav bara fel). En bredare
+// horisont kräver ett annat endpoint (separat recon). today+tomorrow ≈ hela tillgängliga fönstret.
+const TIMEFRAMES = ["today", "tomorrow"];
 
 // Bygg kanoniska events ur Spectate-katalogen (events{}→markets{}→selections{}).
 function buildEvents(catalogs) {

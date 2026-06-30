@@ -224,7 +224,7 @@ try{
   // var 500ms tills flatCategories är en icke-tom array (max ~16s), så vi väntar exakt
   // så länge som behövs i st f att gissa. Scenariot är async (await tillåtet här).
   var st=null,fc=null,polls=0;
-  for(polls=0;polls<32;polls++){st=(window.stores&&window.stores.sports)||null;fc=st?val(st.flatCategories):null;if(Array.isArray(fc)&&fc.length)break;await new Promise(function(r){setTimeout(r,500);});}
+  for(polls=0;polls<48;polls++){st=(window.stores&&window.stores.sports)||null;fc=st?val(st.flatCategories):null;if(Array.isArray(fc)&&fc.length)break;await new Promise(function(r){setTimeout(r,500);});}
   o.bootPolls=polls;
   if(!Array.isArray(fc)||!fc.length){o.err='ingen flatCategories i store';try{o.storeKeys=window.stores?Object.keys(window.stores):'no window.stores';o.sportsKeys=st?Object.keys(st):'no window.stores.sports';o.fcType=typeof (st&&st.flatCategories);}catch(e){o.storeProbeErr=String(e).slice(0,120);}window.__matches=[];window.__slugs=[];window.__odds={};window.__i=0;return JSON.stringify(o);}
   var leagues=fc.filter(function(c){return /^fotboll(\\/|$)/i.test(String(c&&c.fullSlug||''))&&(c.matches_count||0)>0;}).map(function(c){return {id:c.id,fullSlug:c.fullSlug,name:c.name,n:c.matches_count};});

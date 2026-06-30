@@ -121,6 +121,22 @@ const BASELINE_QUERIES = [
   "New York", "Toronto",
 ];
 
+// Basket/tennis hade INGEN baseline (bara Pinnacle-härledda queries) → matcher som
+// Pinnacles query-lista (cappad) missade söktes aldrig. Baselines läggs först + dedupas +
+// cappas (buildQueriesForSport), så de fyller luckor utan att spränga budgeten.
+const BASKETBALL_BASELINE_QUERIES = [
+  "Lakers", "Celtics", "Warriors", "Nuggets", "Heat", "Bucks", "Suns", "76ers",
+  "Knicks", "Mavericks", "Clippers", "Nets", "Bulls", "Grizzlies",
+  "Real Madrid", "Barcelona", "Olympiacos", "Panathinaikos", "Fenerbahce",
+  "Monaco", "Maccabi", "Partizan", "Crvena Zvezda", "Zalgiris",
+];
+const TENNIS_BASELINE_QUERIES = [
+  "Alcaraz", "Sinner", "Djokovic", "Zverev", "Medvedev", "Rublev", "Tsitsipas",
+  "Fritz", "Ruud", "Hurkacz", "De Minaur", "Paul", "Shelton", "Musetti",
+  "Sabalenka", "Swiatek", "Gauff", "Rybakina", "Pegula", "Krejcikova",
+  "Jabeur", "Paolini",
+];
+
 function buildQueries(limit = QUERY_LIMIT) {
   return buildQueriesForSport("soccer", limit, BASELINE_QUERIES, ["Brighton", "Aston Villa", "Manchester United"]);
 }
@@ -698,8 +714,8 @@ async function main() {
   // Basket/tennis: rena Pinnacle-drivna queries (ingen fotbolls-baseline). Cap
   // halva soccer-budgeten var så 2-vägs-stegen aldrig äter upp soccer-tiden.
   const TWO_WAY_LIMIT = Math.max(40, Math.floor(effectiveLimit / 2));
-  const basketQueries = buildQueriesForSport("basketball", TWO_WAY_LIMIT);
-  const tennisQueries = buildQueriesForSport("tennis", TWO_WAY_LIMIT);
+  const basketQueries = buildQueriesForSport("basketball", TWO_WAY_LIMIT, BASKETBALL_BASELINE_QUERIES);
+  const tennisQueries = buildQueriesForSport("tennis", TWO_WAY_LIMIT, TENNIS_BASELINE_QUERIES);
   console.log(
     `[vbet-action] Query-strategi: pinnacle-driven (homeTeam, ${QUERY_LOOKAHEAD_HOURS}h fönster, budget ${effectiveLimit}/${QUERY_LIMIT})`,
   );
