@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T10:47:15.845Z",
+  "updatedAt": "2026-06-30T10:51:16.453Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 330,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 333,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 25265,
+  "durationMs": 25760,
   "events": [
     {
       "eventId": "1027976814",
@@ -3375,58 +3375,6 @@
       ]
     },
     {
-      "eventId": "1028195818",
-      "title": "Villarreal (sane4ek8) - Real Madrid (MeLToSik)",
-      "homeTeam": "Villarreal (sane4ek8)",
-      "awayTeam": "Real Madrid (MeLToSik)",
-      "startTime": "2026-06-30T10:42:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 3.7,
-        "draw": 3.1,
-        "away": 1.8
-      }
-    },
-    {
-      "eventId": "1028195824",
-      "title": "Athletic Club (Revange) - Barcelona (BlackStar98)",
-      "homeTeam": "Athletic Club (Revange)",
-      "awayTeam": "Barcelona (BlackStar98)",
-      "startTime": "2026-06-30T10:42:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 21,
-        "draw": 6.1,
-        "away": 1.13
-      }
-    },
-    {
-      "eventId": "1028197278",
-      "title": "Real Sociedad (femzzi) - Athletic Club (Terry14)",
-      "homeTeam": "Real Sociedad (femzzi)",
-      "awayTeam": "Athletic Club (Terry14)",
-      "startTime": "2026-06-30T10:42:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.17,
-        "draw": 7,
-        "away": 9
-      }
-    },
-    {
-      "eventId": "1028197281",
-      "title": "Valencia (TOMMY) - Real Betis (T3RZ)",
-      "homeTeam": "Valencia (TOMMY)",
-      "awayTeam": "Real Betis (T3RZ)",
-      "startTime": "2026-06-30T10:42:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 11,
-        "draw": 11.5,
-        "away": 1.09
-      }
-    },
-    {
       "eventId": "1028192708",
       "title": "Paris (zoyir) - Real Madrid (flamez)",
       "homeTeam": "Paris (zoyir)",
@@ -3435,46 +3383,9 @@
       "league": "eSports Battle (2x6 min)",
       "odds": {
         "home": 2.08,
-        "draw": 4.5,
-        "away": 2.25
-      },
-      "totals": [
-        {
-          "line": 8.5,
-          "over": 1.9,
-          "under": 1.76
-        },
-        {
-          "line": 7.5,
-          "over": 1.46,
-          "under": 2.4
-        },
-        {
-          "line": 9.5,
-          "over": 2.6,
-          "under": 1.4
-        },
-        {
-          "line": 5.5,
-          "over": 1.07,
-          "under": 6
-        },
-        {
-          "line": 6.5,
-          "over": 1.21,
-          "under": 3.55
-        },
-        {
-          "line": 11.5,
-          "over": 6,
-          "under": 1.07
-        },
-        {
-          "line": 10.5,
-          "over": 3.8,
-          "under": 1.19
-        }
-      ]
+        "draw": 4.6,
+        "away": 2.23
+      }
     },
     {
       "eventId": "1028195825",
@@ -3724,15 +3635,15 @@
       "startTime": "2026-06-30T11:06:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.9,
-        "draw": 3.55,
-        "away": 1.66
+        "home": 3.85,
+        "draw": 3.5,
+        "away": 1.67
       },
       "totals": [
         {
           "line": 3.5,
           "over": 1.19,
-          "under": 3.75
+          "under": 3.7
         },
         {
           "line": 2.5,
@@ -3741,18 +3652,18 @@
         },
         {
           "line": 4.5,
-          "over": 1.56,
-          "under": 2.18
+          "over": 1.57,
+          "under": 2.16
         },
         {
           "line": 5.5,
-          "over": 2.18,
-          "under": 1.58
+          "over": 2.2,
+          "under": 1.55
         },
         {
           "line": 7.5,
-          "over": 6,
-          "under": 1.07
+          "over": 6.1,
+          "under": 1.06
         },
         {
           "line": 6.5,
@@ -4403,6 +4314,186 @@
           "line": 3.5,
           "over": 1.08,
           "under": 5.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028192706",
+      "title": "Bayern Munchen (bodyaoo) - Real Madrid (flamez)",
+      "homeTeam": "Bayern Munchen (bodyaoo)",
+      "awayTeam": "Real Madrid (flamez)",
+      "startTime": "2026-06-30T11:26:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.75,
+        "draw": 4.5,
+        "away": 1.78
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.09,
+          "under": 5.4
+        },
+        {
+          "line": 8.5,
+          "over": 1.49,
+          "under": 2.32
+        },
+        {
+          "line": 10.5,
+          "over": 2.63,
+          "under": 1.38
+        },
+        {
+          "line": 11.5,
+          "over": 3.8,
+          "under": 1.18
+        },
+        {
+          "line": 9.5,
+          "over": 1.93,
+          "under": 1.75
+        },
+        {
+          "line": 12.5,
+          "over": 6,
+          "under": 1.07
+        },
+        {
+          "line": 7.5,
+          "over": 1.23,
+          "under": 3.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028192707",
+      "title": "Atleti (v1nniePuh) - Paris (zoyir)",
+      "homeTeam": "Atleti (v1nniePuh)",
+      "awayTeam": "Paris (zoyir)",
+      "startTime": "2026-06-30T11:26:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.17,
+        "draw": 4.8,
+        "away": 2.1
+      },
+      "totals": [
+        {
+          "line": 9.5,
+          "over": 2.8,
+          "under": 1.34
+        },
+        {
+          "line": 5.5,
+          "over": 1.08,
+          "under": 5.5
+        },
+        {
+          "line": 11.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 7.5,
+          "over": 1.55,
+          "under": 2.25
+        },
+        {
+          "line": 10.5,
+          "over": 4.2,
+          "under": 1.15
+        },
+        {
+          "line": 6.5,
+          "over": 1.23,
+          "under": 3.35
+        },
+        {
+          "line": 8.5,
+          "over": 2,
+          "under": 1.68
+        }
+      ]
+    },
+    {
+      "eventId": "1028192971",
+      "title": "Nottm Forest (Hyper) - Man Utd (Lumix)",
+      "homeTeam": "Nottm Forest (Hyper)",
+      "awayTeam": "Man Utd (Lumix)",
+      "startTime": "2026-06-30T11:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.25,
+        "draw": 4,
+        "away": 2.18
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.14,
+          "under": 4.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.95,
+          "under": 1.72
+        },
+        {
+          "line": 8.5,
+          "over": 9,
+          "under": 1.01
+        },
+        {
+          "line": 6.5,
+          "over": 2.9,
+          "under": 1.3
+        },
+        {
+          "line": 7.5,
+          "over": 4.9,
+          "under": 1.11
+        },
+        {
+          "line": 4.5,
+          "over": 1.41,
+          "under": 2.55
+        }
+      ]
+    },
+    {
+      "eventId": "1028192975",
+      "title": "Newcastle (borees) - Brighton (KaLuBa)",
+      "homeTeam": "Newcastle (borees)",
+      "awayTeam": "Brighton (KaLuBa)",
+      "startTime": "2026-06-30T11:34:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3,
+        "draw": 2.7,
+        "away": 2.23
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.71,
+          "under": 1.98
+        },
+        {
+          "line": 6.5,
+          "over": 4,
+          "under": 1.17
+        },
+        {
+          "line": 3.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 7.5,
+          "over": 6.75,
+          "under": 1.05
         }
       ]
     },
@@ -6946,7 +7037,7 @@
         },
         {
           "line": -1,
-          "home": 3.5,
+          "home": 3.55,
           "away": 1.3
         },
         {
@@ -17342,6 +17433,41 @@
       ]
     },
     {
+      "eventId": "1026355548",
+      "title": "Gimpo Citizen - Chungnam Asan",
+      "homeTeam": "Gimpo Citizen",
+      "awayTeam": "Chungnam Asan",
+      "startTime": "2026-07-05T10:30:00Z",
+      "league": "K-League 2",
+      "odds": {
+        "home": 1.97,
+        "draw": 3.15,
+        "away": 3.45
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.3,
+          "under": 3.05
+        },
+        {
+          "line": 3.5,
+          "over": 3.35,
+          "under": 1.25
+        },
+        {
+          "line": 2.5,
+          "over": 1.94,
+          "under": 1.71
+        },
+        {
+          "line": 4.5,
+          "over": 6.1,
+          "under": 1.07
+        }
+      ]
+    },
+    {
       "eventId": "1026355551",
       "title": "Jeonnam Dragons - Busan I Park",
       "homeTeam": "Jeonnam Dragons",
@@ -20088,21 +20214,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.12,
-        "away": 1.65
-      }
-    },
-    {
-      "eventId": "1028194581",
-      "title": "Timeo Trufelli - Justin Lenders",
-      "homeTeam": "Timeo Trufelli",
-      "awayTeam": "Justin Lenders",
-      "startTime": "2026-06-30T08:04:00Z",
-      "league": "Nivelles",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.03,
-        "away": 11
+        "home": 2.63,
+        "away": 1.44
       }
     },
     {
@@ -20114,8 +20227,8 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8.5
+        "home": 1.09,
+        "away": 6.4
       }
     },
     {
@@ -20127,8 +20240,8 @@
       "league": "Monastir",
       "sport": "tennis",
       "odds": {
-        "home": 5.75,
-        "away": 1.12
+        "home": 3.95,
+        "away": 1.22
       }
     },
     {
@@ -20140,8 +20253,21 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.53,
-        "away": 2.38
+        "home": 4.5,
+        "away": 1.18
+      }
+    },
+    {
+      "eventId": "1028194112",
+      "title": "Zi Ying Ruan - Anastasia Mozgaleva",
+      "homeTeam": "Zi Ying Ruan",
+      "awayTeam": "Anastasia Mozgaleva",
+      "startTime": "2026-06-30T08:59:00Z",
+      "league": "Kursumlijska Banja",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.13,
+        "away": 5.3
       }
     },
     {
@@ -20166,8 +20292,8 @@
       "league": "Mogyorod",
       "sport": "tennis",
       "odds": {
-        "home": 1.91,
-        "away": 1.81
+        "home": 1.75,
+        "away": 1.98
       }
     },
     {
@@ -20179,8 +20305,8 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 4,
-        "away": 1.21
+        "home": 7.5,
+        "away": 1.06
       }
     },
     {
@@ -20192,8 +20318,21 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 1.46,
+        "home": 1.47,
         "away": 2.55
+      }
+    },
+    {
+      "eventId": "1028190375",
+      "title": "Hanyi Liu - Yuta Kawahashi",
+      "homeTeam": "Hanyi Liu",
+      "awayTeam": "Yuta Kawahashi",
+      "startTime": "2026-06-30T09:08:00Z",
+      "league": "Wuning",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.27,
+        "away": 3.45
       }
     },
     {
@@ -20205,8 +20344,8 @@
       "league": "Skopje",
       "sport": "tennis",
       "odds": {
-        "home": 1.26,
-        "away": 3.55
+        "home": 1.2,
+        "away": 4.2
       }
     },
     {
@@ -20218,8 +20357,8 @@
       "league": "Marburg",
       "sport": "tennis",
       "odds": {
-        "home": 4.8,
-        "away": 1.16
+        "home": 4.5,
+        "away": 1.17
       }
     },
     {
@@ -20231,8 +20370,8 @@
       "league": "Skopje",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 6.75
+        "home": 1.04,
+        "away": 9.5
       }
     },
     {
@@ -20244,21 +20383,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 4.4,
-        "away": 1.18
-      }
-    },
-    {
-      "eventId": "1028194647",
-      "title": "S. Guinau/W. Vermeer - J. Bult/S. Hofman",
-      "homeTeam": "S. Guinau/W. Vermeer",
-      "awayTeam": "J. Bult/S. Hofman",
-      "startTime": "2026-06-30T09:39:00Z",
-      "league": "Amstelveen",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.34,
-        "away": 3.05
+        "home": 4.1,
+        "away": 1.21
       }
     },
     {
@@ -20283,8 +20409,8 @@
       "league": "Store",
       "sport": "tennis",
       "odds": {
-        "home": 1.61,
-        "away": 2.2
+        "home": 1.53,
+        "away": 2.35
       }
     },
     {
@@ -20296,8 +20422,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 2.8,
-        "away": 1.41
+        "home": 5.25,
+        "away": 1.14
       }
     },
     {
@@ -20309,8 +20435,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 8,
-        "away": 1.05
+        "home": 16,
+        "away": 1.02
       }
     },
     {
@@ -20322,8 +20448,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 7.5,
-        "away": 1.06
+        "home": 4.8,
+        "away": 1.15
       }
     },
     {
@@ -20335,8 +20461,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 5.4,
-        "away": 1.12
+        "home": 6.1,
+        "away": 1.1
       }
     },
     {
@@ -20361,8 +20487,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 2.55,
-        "away": 1.5
+        "home": 1.96,
+        "away": 1.83
       }
     },
     {
@@ -20374,8 +20500,21 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.23,
-        "away": 4
+        "home": 1.3,
+        "away": 3.45
+      }
+    },
+    {
+      "eventId": "1028193601",
+      "title": "Angelina Voloshchuk - Carmen Gallardo Guevara",
+      "homeTeam": "Angelina Voloshchuk",
+      "awayTeam": "Carmen Gallardo Guevara",
+      "startTime": "2026-06-30T10:00:00Z",
+      "league": "Elvas",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.36,
+        "away": 2.95
       }
     },
     {
@@ -20387,8 +20526,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.33,
-        "away": 3.25
+        "home": 1.37,
+        "away": 3.05
       }
     },
     {
@@ -20400,8 +20539,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.87,
-        "away": 1.91
+        "home": 2.15,
+        "away": 1.68
       }
     },
     {
@@ -20413,8 +20552,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.8,
-        "away": 1.98
+        "home": 1.77,
+        "away": 2.02
       }
     },
     {
@@ -20426,8 +20565,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 2.65,
-        "away": 1.47
+        "home": 2.6,
+        "away": 1.49
       }
     },
     {
@@ -20439,8 +20578,8 @@
       "league": "Skopje",
       "sport": "tennis",
       "odds": {
-        "home": 5.2,
-        "away": 1.13
+        "home": 5.5,
+        "away": 1.12
       }
     },
     {
@@ -20452,8 +20591,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 3.85,
-        "away": 1.25
+        "home": 3.65,
+        "away": 1.28
       }
     },
     {
@@ -20465,34 +20604,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 5.75,
-        "away": 1.13
-      }
-    },
-    {
-      "eventId": "1028191813",
-      "title": "Francisco Comesana - Matthew William Donald",
-      "homeTeam": "Francisco Comesana",
-      "awayTeam": "Matthew William Donald",
-      "startTime": "2026-06-30T10:02:00Z",
-      "league": "Milan",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.02,
-        "away": 15
-      }
-    },
-    {
-      "eventId": "1028155333",
-      "title": "Amanda Anisimova - Lina Gjorcheska",
-      "homeTeam": "Amanda Anisimova",
-      "awayTeam": "Lina Gjorcheska",
-      "startTime": "2026-06-30T10:03:00Z",
-      "league": "Wimbledon Damsingel",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.01,
-        "away": 25
+        "home": 3.9,
+        "away": 1.24
       }
     },
     {
@@ -20504,8 +20617,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 5,
-        "away": 1.16
+        "home": 5.6,
+        "away": 1.13
       }
     },
     {
@@ -20517,8 +20630,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 8,
-        "away": 1.07
+        "home": 9.5,
+        "away": 1.05
       }
     },
     {
@@ -20530,8 +20643,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.09
+        "home": 5,
+        "away": 1.17
       }
     },
     {
@@ -20543,8 +20656,34 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.87,
-        "away": 1.91
+        "home": 1.83,
+        "away": 1.96
+      }
+    },
+    {
+      "eventId": "1028194975",
+      "title": "Joao Dinis Silva - Dominique Rolland",
+      "homeTeam": "Joao Dinis Silva",
+      "awayTeam": "Dominique Rolland",
+      "startTime": "2026-06-30T10:04:00Z",
+      "league": "Figueira da Foz",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.05,
+        "away": 1.34
+      }
+    },
+    {
+      "eventId": "1028194974",
+      "title": "Lui Maxted - Nikola Djukic Valera",
+      "homeTeam": "Lui Maxted",
+      "awayTeam": "Nikola Djukic Valera",
+      "startTime": "2026-06-30T10:04:00Z",
+      "league": "Figueira da Foz",
+      "sport": "tennis",
+      "odds": {
+        "home": 11.5,
+        "away": 1.03
       }
     },
     {
@@ -20556,8 +20695,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7.5
+        "home": 1.09,
+        "away": 7
       }
     },
     {
@@ -20574,6 +20713,19 @@
       }
     },
     {
+      "eventId": "1028194978",
+      "title": "Matthew Summers - Mario Gonzalez Fernandez",
+      "homeTeam": "Matthew Summers",
+      "awayTeam": "Mario Gonzalez Fernandez",
+      "startTime": "2026-06-30T10:06:00Z",
+      "league": "Figueira da Foz",
+      "sport": "tennis",
+      "odds": {
+        "home": 4.4,
+        "away": 1.18
+      }
+    },
+    {
       "eventId": "1028194727",
       "title": "Dillon Beckles - Jose Dominguez Alonso",
       "homeTeam": "Dillon Beckles",
@@ -20582,8 +20734,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.82,
-        "away": 1.91
+        "home": 2,
+        "away": 1.74
       }
     },
     {
@@ -20597,6 +20749,19 @@
       "odds": {
         "home": 5.3,
         "away": 1.13
+      }
+    },
+    {
+      "eventId": "1028194106",
+      "title": "George Lazarov - Dusan Obradovic",
+      "homeTeam": "George Lazarov",
+      "awayTeam": "Dusan Obradovic",
+      "startTime": "2026-06-30T10:13:00Z",
+      "league": "Kursumlijska Banja",
+      "sport": "tennis",
+      "odds": {
+        "home": 6.75,
+        "away": 1.08
       }
     },
     {
@@ -20621,8 +20786,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.14,
-        "away": 5
+        "home": 1.05,
+        "away": 8.5
       }
     },
     {
@@ -20634,8 +20799,8 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.49,
-        "away": 2.48
+        "home": 1.29,
+        "away": 3.3
       }
     },
     {
@@ -20647,8 +20812,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.3,
-        "away": 3.4
+        "home": 1.38,
+        "away": 2.9
       }
     },
     {
@@ -20660,8 +20825,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.85,
-        "away": 1.87
+        "home": 2.15,
+        "away": 1.64
       }
     },
     {
@@ -20673,8 +20838,8 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.88,
-        "away": 1.84
+        "home": 2.12,
+        "away": 1.66
       }
     },
     {
@@ -20686,8 +20851,8 @@
       "league": "Stuttgart-Vaihingen",
       "sport": "tennis",
       "odds": {
-        "home": 1.17,
-        "away": 4.6
+        "home": 1.29,
+        "away": 3.35
       }
     },
     {
@@ -20699,8 +20864,21 @@
       "league": "Monastir",
       "sport": "tennis",
       "odds": {
-        "home": 3.1,
-        "away": 1.33
+        "home": 4.2,
+        "away": 1.2
+      }
+    },
+    {
+      "eventId": "1028193961",
+      "title": "Nellie Taraba Wallberg - Seda Baslilar",
+      "homeTeam": "Nellie Taraba Wallberg",
+      "awayTeam": "Seda Baslilar",
+      "startTime": "2026-06-30T10:33:00Z",
+      "league": "Amstelveen",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.06,
+        "away": 8
       }
     },
     {
@@ -20712,8 +20890,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 3.05,
-        "away": 1.36
+        "home": 4.1,
+        "away": 1.22
       }
     },
     {
@@ -20725,8 +20903,8 @@
       "league": "Kayseri",
       "sport": "tennis",
       "odds": {
-        "home": 1.25,
-        "away": 3.6
+        "home": 1.33,
+        "away": 3.05
       }
     },
     {
@@ -20738,8 +20916,8 @@
       "league": "Mogyorod",
       "sport": "tennis",
       "odds": {
-        "home": 2.28,
-        "away": 1.57
+        "home": 2.2,
+        "away": 1.61
       }
     },
     {
@@ -20751,8 +20929,8 @@
       "league": "Tjeckien",
       "sport": "tennis",
       "odds": {
-        "home": 1.15,
-        "away": 5
+        "home": 1.12,
+        "away": 5.5
       }
     },
     {
@@ -20764,8 +20942,8 @@
       "league": "Tjeckien",
       "sport": "tennis",
       "odds": {
-        "home": 4,
-        "away": 1.22
+        "home": 3.9,
+        "away": 1.23
       }
     },
     {
@@ -20782,29 +20960,42 @@
       }
     },
     {
-      "eventId": "1028194329",
-      "title": "Lucie Nguyen Tan - Zoe Ulrich",
-      "homeTeam": "Lucie Nguyen Tan",
-      "awayTeam": "Zoe Ulrich",
-      "startTime": "2026-06-30T10:53:00Z",
-      "league": "Aix-les-Bains",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.09,
-        "away": 6
-      }
-    },
-    {
       "eventId": "1028192498",
       "title": "Marie Mettraux - Lucie Petruzelova",
       "homeTeam": "Marie Mettraux",
       "awayTeam": "Lucie Petruzelova",
-      "startTime": "2026-06-30T10:55:00Z",
+      "startTime": "2026-06-30T10:47:00Z",
       "league": "Mogyorod",
       "sport": "tennis",
       "odds": {
-        "home": 1.87,
-        "away": 1.82
+        "home": 1.9,
+        "away": 1.83
+      }
+    },
+    {
+      "eventId": "1028194329",
+      "title": "Lucie Nguyen Tan - Zoe Ulrich",
+      "homeTeam": "Lucie Nguyen Tan",
+      "awayTeam": "Zoe Ulrich",
+      "startTime": "2026-06-30T10:50:00Z",
+      "league": "Aix-les-Bains",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.1,
+        "away": 5.8
+      }
+    },
+    {
+      "eventId": "1028192499",
+      "title": "Eszter Meri - Maria Golovina",
+      "homeTeam": "Eszter Meri",
+      "awayTeam": "Maria Golovina",
+      "startTime": "2026-06-30T10:51:00Z",
+      "league": "Mogyorod",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.65,
+        "away": 2.1
       }
     },
     {
@@ -20818,6 +21009,19 @@
       "odds": {
         "home": 1.18,
         "away": 4.2
+      }
+    },
+    {
+      "eventId": "1028194577",
+      "title": "Nico Hipfl - Tomohiro Masabayashi",
+      "homeTeam": "Nico Hipfl",
+      "awayTeam": "Tomohiro Masabayashi",
+      "startTime": "2026-06-30T10:57:00Z",
+      "league": "Nivelles",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.06,
+        "away": 7.5
       }
     },
     {
@@ -21947,8 +22151,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.44,
-        "away": 2.8
+        "home": 1.38,
+        "away": 3.05
       }
     },
     {
@@ -22714,8 +22918,8 @@
       "league": "Wimbledon Dubbel",
       "sport": "tennis",
       "odds": {
-        "home": 1.81,
-        "away": 1.96
+        "home": 1.88,
+        "away": 1.88
       }
     },
     {
@@ -23162,6 +23366,6 @@
     }
   ],
   "basketEventsCount": 7,
-  "tennisEventsCount": 239,
+  "tennisEventsCount": 245,
   "lastError": null
 }
