@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:25:05.245Z",
+  "updatedAt": "2026-06-30T03:29:06.120Z",
   "source": "github-actions",
   "bookmaker": "unibet",
   "displayName": "Unibet",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 292,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 325,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 30749,
+  "durationMs": 27453,
   "events": [
     {
       "eventId": "1027976814",
@@ -38,6 +38,84 @@
         "home": 1.77,
         "draw": 3.65,
         "away": 3.75
+      }
+    },
+    {
+      "eventId": "1028147722",
+      "title": "QPR - Millwall",
+      "homeTeam": "QPR",
+      "awayTeam": "Millwall",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.45,
+        "away": 2.17
+      }
+    },
+    {
+      "eventId": "1028147712",
+      "title": "Burton Albion - Blackburn Rovers",
+      "homeTeam": "Burton Albion",
+      "awayTeam": "Blackburn Rovers",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.2,
+        "away": 2.06
+      }
+    },
+    {
+      "eventId": "1028147715",
+      "title": "Burnley - Notts County",
+      "homeTeam": "Burnley",
+      "awayTeam": "Notts County",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.55,
+        "draw": 3.7,
+        "away": 5.2
+      }
+    },
+    {
+      "eventId": "1028147739",
+      "title": "Bristol Rovers - Peterborough",
+      "homeTeam": "Bristol Rovers",
+      "awayTeam": "Peterborough",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.65,
+        "draw": 3.25,
+        "away": 2.35
+      }
+    },
+    {
+      "eventId": "1028147741",
+      "title": "Norwich City - Milton Keynes Dons",
+      "homeTeam": "Norwich City",
+      "awayTeam": "Milton Keynes Dons",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.46,
+        "draw": 4,
+        "away": 5.6
+      }
+    },
+    {
+      "eventId": "1028147729",
+      "title": "Bristol City - Walsall",
+      "homeTeam": "Bristol City",
+      "awayTeam": "Walsall",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.27,
+        "draw": 5.4,
+        "away": 7.5
       }
     },
     {
@@ -67,16 +145,42 @@
       }
     },
     {
-      "eventId": "1028147722",
-      "title": "QPR - Millwall",
-      "homeTeam": "QPR",
-      "awayTeam": "Millwall",
+      "eventId": "1028147754",
+      "title": "Swansea - Birmingham",
+      "homeTeam": "Swansea",
+      "awayTeam": "Birmingham",
       "startTime": "2026-08-08T16:00:00Z",
       "league": "EFL Cup",
       "odds": {
         "home": 2.75,
-        "draw": 3.45,
-        "away": 2.17
+        "draw": 3.35,
+        "away": 2.23
+      }
+    },
+    {
+      "eventId": "1028147750",
+      "title": "Bromley FC - Reading",
+      "homeTeam": "Bromley FC",
+      "awayTeam": "Reading",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.55,
+        "draw": 3.2,
+        "away": 2.45
+      }
+    },
+    {
+      "eventId": "1028147760",
+      "title": "AFC Wimbledon - Newport County",
+      "homeTeam": "AFC Wimbledon",
+      "awayTeam": "Newport County",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.44,
+        "draw": 4.1,
+        "away": 6
       }
     },
     {
@@ -119,19 +223,6 @@
       }
     },
     {
-      "eventId": "1028072417",
-      "title": "Everton - Crystal Palace",
-      "homeTeam": "Everton",
-      "awayTeam": "Crystal Palace",
-      "startTime": "2026-08-22T14:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.02,
-        "draw": 3.45,
-        "away": 3.5
-      }
-    },
-    {
       "eventId": "1028072414",
       "title": "Ipswich Town - Sunderland",
       "homeTeam": "Ipswich Town",
@@ -155,6 +246,19 @@
         "home": 2.2,
         "draw": 3.4,
         "away": 3.1
+      }
+    },
+    {
+      "eventId": "1028072417",
+      "title": "Everton - Crystal Palace",
+      "homeTeam": "Everton",
+      "awayTeam": "Crystal Palace",
+      "startTime": "2026-08-22T14:00:00Z",
+      "league": "Premier League",
+      "odds": {
+        "home": 2.02,
+        "draw": 3.45,
+        "away": 3.5
       }
     },
     {
@@ -223,32 +327,6 @@
       }
     },
     {
-      "eventId": "1028186163",
-      "title": "Real Madrid (Kosta) - Barcelona (saportj)",
-      "homeTeam": "Real Madrid (Kosta)",
-      "awayTeam": "Barcelona (saportj)",
-      "startTime": "2026-06-30T03:14:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 2.48,
-        "draw": 2.8,
-        "away": 2.5
-      }
-    },
-    {
-      "eventId": "1028193930",
-      "title": "Arsenal (Noltzer) - Juventus (SpeciAL)",
-      "homeTeam": "Arsenal (Noltzer)",
-      "awayTeam": "Juventus (SpeciAL)",
-      "startTime": "2026-06-30T03:20:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 3.05,
-        "draw": 4.25,
-        "away": 1.73
-      }
-    },
-    {
       "eventId": "1028186535",
       "title": "Boca Juniors (Grellz) - River Plate (tohi4)",
       "homeTeam": "Boca Juniors (Grellz)",
@@ -256,9 +334,9 @@
       "startTime": "2026-06-30T03:23:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.15,
-        "draw": 5.3,
-        "away": 2.04
+        "home": 1.83,
+        "draw": 3.9,
+        "away": 2.9
       }
     },
     {
@@ -269,9 +347,9 @@
       "startTime": "2026-06-30T03:23:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.53,
-        "draw": 4.35,
-        "away": 4
+        "home": 2.4,
+        "draw": 2.8,
+        "away": 2.6
       }
     },
     {
@@ -282,47 +360,10 @@
       "startTime": "2026-06-30T03:26:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.38,
-        "draw": 3.9,
-        "away": 2.12
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.2,
-          "under": 4.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.05,
-          "under": 8.5
-        },
-        {
-          "line": 8.5,
-          "over": 10.5,
-          "under": 1.03
-        },
-        {
-          "line": 4.5,
-          "over": 1.5,
-          "under": 2.38
-        },
-        {
-          "line": 6.5,
-          "over": 3.1,
-          "under": 1.32
-        },
-        {
-          "line": 7.5,
-          "over": 5.25,
-          "under": 1.13
-        },
-        {
-          "line": 5.5,
-          "over": 2.04,
-          "under": 1.67
-        }
-      ]
+        "home": 2.4,
+        "draw": 3.65,
+        "away": 2.18
+      }
     },
     {
       "eventId": "1028186532",
@@ -332,40 +373,718 @@
       "startTime": "2026-06-30T03:26:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.3,
-        "draw": 3.6,
-        "away": 2.28
+        "home": 1.7,
+        "draw": 3.5,
+        "away": 3.7
+      }
+    },
+    {
+      "eventId": "1028186504",
+      "title": "Real Madrid (Kosta) - Atleti (zaha)",
+      "homeTeam": "Real Madrid (Kosta)",
+      "awayTeam": "Atleti (zaha)",
+      "startTime": "2026-06-30T03:32:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 3.5,
+        "draw": 4.8,
+        "away": 1.56
       },
       "totals": [
         {
-          "line": 2.5,
-          "over": 1.08,
+          "line": 7.5,
+          "over": 1.92,
+          "under": 1.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.05,
           "under": 6.75
         },
+        {
+          "line": 10.5,
+          "over": 6.5,
+          "under": 1.05
+        },
+        {
+          "line": 5.5,
+          "over": 1.19,
+          "under": 3.7
+        },
+        {
+          "line": 8.5,
+          "over": 2.65,
+          "under": 1.37
+        },
+        {
+          "line": 6.5,
+          "over": 1.45,
+          "under": 2.43
+        },
+        {
+          "line": 9.5,
+          "over": 4,
+          "under": 1.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028193921",
+      "title": "Arsenal (Noltzer) - Man City (Gaga)",
+      "homeTeam": "Arsenal (Noltzer)",
+      "awayTeam": "Man City (Gaga)",
+      "startTime": "2026-06-30T03:32:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.14,
+        "draw": 4.6,
+        "away": 2.16
+      },
+      "totals": [
+        {
+          "line": 7.5,
+          "over": 4.7,
+          "under": 1.12
+        },
+        {
+          "line": 5.5,
+          "over": 1.89,
+          "under": 1.78
+        },
+        {
+          "line": 3.5,
+          "over": 1.12,
+          "under": 4.7
+        },
+        {
+          "line": 4.5,
+          "over": 1.36,
+          "under": 2.7
+        },
+        {
+          "line": 8.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 6.5,
+          "over": 2.8,
+          "under": 1.34
+        }
+      ]
+    },
+    {
+      "eventId": "1028186527",
+      "title": "Boca Juniors (Grellz) - Paris (Nightxx)",
+      "homeTeam": "Boca Juniors (Grellz)",
+      "awayTeam": "Paris (Nightxx)",
+      "startTime": "2026-06-30T03:35:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.72,
+        "draw": 4.25,
+        "away": 3.1
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.68,
+          "under": 2.02
+        },
+        {
+          "line": 2.5,
+          "over": 1.09,
+          "under": 6.5
+        },
+        {
+          "line": 6.5,
+          "over": 3.95,
+          "under": 1.21
+        },
+        {
+          "line": 5.5,
+          "over": 2.43,
+          "under": 1.48
+        },
+        {
+          "line": 7.5,
+          "over": 7,
+          "under": 1.07
+        },
+        {
+          "line": 3.5,
+          "over": 1.3,
+          "under": 3.25
+        }
+      ]
+    },
+    {
+      "eventId": "1028186544",
+      "title": "Man City (volvo) - River Plate (tohi4)",
+      "homeTeam": "Man City (volvo)",
+      "awayTeam": "River Plate (tohi4)",
+      "startTime": "2026-06-30T03:35:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.22,
+        "draw": 7.5,
+        "away": 6.4
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 4.3,
+          "under": 1.18
+        },
+        {
+          "line": 9.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 5.5,
+          "over": 1.45,
+          "under": 2.55
+        },
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 8.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.18,
+          "under": 4.25
+        },
+        {
+          "line": 7.5,
+          "over": 2.75,
+          "under": 1.4
+        },
+        {
+          "line": 6.5,
+          "over": 1.89,
+          "under": 1.79
+        }
+      ]
+    },
+    {
+      "eventId": "1028186542",
+      "title": "Kroatien (hotShot) - Tyskland (OG)",
+      "homeTeam": "Kroatien (hotShot)",
+      "awayTeam": "Tyskland (OG)",
+      "startTime": "2026-06-30T03:38:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.95,
+        "draw": 3.4,
+        "away": 2.9
+      },
+      "totals": [
         {
           "line": 3.5,
           "over": 1.27,
           "under": 3.4
         },
         {
-          "line": 4.5,
-          "over": 1.65,
-          "under": 2.07
-        },
-        {
-          "line": 6.5,
-          "over": 3.8,
-          "under": 1.22
-        },
-        {
-          "line": 5.5,
-          "over": 2.33,
-          "under": 1.52
+          "line": 2.5,
+          "over": 1.08,
+          "under": 6.5
         },
         {
           "line": 7.5,
           "over": 6.75,
           "under": 1.08
+        },
+        {
+          "line": 6.5,
+          "over": 3.85,
+          "under": 1.22
+        },
+        {
+          "line": 4.5,
+          "over": 1.67,
+          "under": 2.04
+        },
+        {
+          "line": 5.5,
+          "over": 2.35,
+          "under": 1.52
+        }
+      ]
+    },
+    {
+      "eventId": "1028186530",
+      "title": "Sverige (inquisitor) - Czechia (Kodak)",
+      "homeTeam": "Sverige (inquisitor)",
+      "awayTeam": "Czechia (Kodak)",
+      "startTime": "2026-06-30T03:38:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.08,
+        "draw": 2.9,
+        "away": 3.05
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 8
+        },
+        {
+          "line": 4.5,
+          "over": 1.5,
+          "under": 2.4
+        },
+        {
+          "line": 3.5,
+          "over": 1.17,
+          "under": 4.35
+        },
+        {
+          "line": 5.5,
+          "over": 1.95,
+          "under": 1.73
+        },
+        {
+          "line": 6.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 8.5,
+          "over": 10,
+          "under": 1.03
+        },
+        {
+          "line": 7.5,
+          "over": 5,
+          "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028193931",
+      "title": "Man City (Gaga) - Juventus (SpeciAL)",
+      "homeTeam": "Man City (Gaga)",
+      "awayTeam": "Juventus (SpeciAL)",
+      "startTime": "2026-06-30T03:44:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.15,
+        "draw": 4.5,
+        "away": 1.66
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.58,
+          "under": 2.14
+        },
+        {
+          "line": 3.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 7.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 3.65,
+          "under": 1.2
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 5.5,
+          "over": 2.3,
+          "under": 1.5
+        }
+      ]
+    },
+    {
+      "eventId": "1028186539",
+      "title": "Paris (Nightxx) - Man City (volvo)",
+      "homeTeam": "Paris (Nightxx)",
+      "awayTeam": "Man City (volvo)",
+      "startTime": "2026-06-30T03:47:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.25,
+        "draw": 4.7,
+        "away": 1.62
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.25,
+          "under": 3.6
+        },
+        {
+          "line": 4.5,
+          "over": 1.58,
+          "under": 2.2
+        },
+        {
+          "line": 5.5,
+          "over": 2.25,
+          "under": 1.56
+        },
+        {
+          "line": 7.5,
+          "over": 6.25,
+          "under": 1.09
+        },
+        {
+          "line": 6.5,
+          "over": 3.5,
+          "under": 1.25
+        },
+        {
+          "line": 2.5,
+          "over": 1.06,
+          "under": 8
+        },
+        {
+          "line": 8.5,
+          "over": 12.5,
+          "under": 1.02
+        }
+      ]
+    },
+    {
+      "eventId": "1028186170",
+      "title": "Real Madrid (Kavviro) - Boca Juniors (Grellz)",
+      "homeTeam": "Real Madrid (Kavviro)",
+      "awayTeam": "Boca Juniors (Grellz)",
+      "startTime": "2026-06-30T03:47:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.5,
+        "draw": 4.2,
+        "away": 1.95
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.19,
+          "under": 4.2
+        },
+        {
+          "line": 5.5,
+          "over": 3.7,
+          "under": 1.23
+        },
+        {
+          "line": 4.5,
+          "over": 2.2,
+          "under": 1.58
+        },
+        {
+          "line": 3.5,
+          "over": 1.55,
+          "under": 2.28
+        },
+        {
+          "line": 6.5,
+          "over": 6.75,
+          "under": 1.08
+        }
+      ]
+    },
+    {
+      "eventId": "1028186540",
+      "title": "Sverige (inquisitor) - Tyskland (OG)",
+      "homeTeam": "Sverige (inquisitor)",
+      "awayTeam": "Tyskland (OG)",
+      "startTime": "2026-06-30T03:50:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2,
+        "draw": 3.6,
+        "away": 2.65
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 8.5
+        },
+        {
+          "line": 3.5,
+          "over": 1.2,
+          "under": 4.1
+        },
+        {
+          "line": 4.5,
+          "over": 1.52,
+          "under": 2.33
+        },
+        {
+          "line": 6.5,
+          "over": 3.25,
+          "under": 1.3
+        },
+        {
+          "line": 7.5,
+          "over": 5.4,
+          "under": 1.12
+        },
+        {
+          "line": 5.5,
+          "over": 2.07,
+          "under": 1.66
+        },
+        {
+          "line": 8.5,
+          "over": 10.5,
+          "under": 1.03
+        }
+      ]
+    },
+    {
+      "eventId": "1028186553",
+      "title": "USA (Kray) - Czechia (Kodak)",
+      "homeTeam": "USA (Kray)",
+      "awayTeam": "Czechia (Kodak)",
+      "startTime": "2026-06-30T03:50:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.85,
+        "draw": 4.2,
+        "away": 2.7
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.03,
+          "under": 11
+        },
+        {
+          "line": 3.5,
+          "over": 1.15,
+          "under": 4.8
+        },
+        {
+          "line": 5.5,
+          "over": 1.84,
+          "under": 1.83
+        },
+        {
+          "line": 8.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 4.5,
+          "over": 1.4,
+          "under": 2.7
+        },
+        {
+          "line": 6.5,
+          "over": 2.7,
+          "under": 1.41
+        },
+        {
+          "line": 7.5,
+          "over": 4.35,
+          "under": 1.17
+        }
+      ]
+    },
+    {
+      "eventId": "1028186537",
+      "title": "Arsenal (Noltzer) - Juventus (SpeciAL)",
+      "homeTeam": "Arsenal (Noltzer)",
+      "awayTeam": "Juventus (SpeciAL)",
+      "startTime": "2026-06-30T03:56:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 3.3,
+        "draw": 5.6,
+        "away": 1.49
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 5.75,
+          "under": 1.07
+        },
+        {
+          "line": 6.5,
+          "over": 2.2,
+          "under": 1.57
+        },
+        {
+          "line": 4.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 3.5,
+          "over": 1.06,
+          "under": 6.25
+        },
+        {
+          "line": 7.5,
+          "over": 3.45,
+          "under": 1.22
+        },
+        {
+          "line": 5.5,
+          "over": 1.6,
+          "under": 2.12
+        }
+      ]
+    },
+    {
+      "eventId": "1028186545",
+      "title": "River Plate (tohi4) - Paris (Nightxx)",
+      "homeTeam": "River Plate (tohi4)",
+      "awayTeam": "Paris (Nightxx)",
+      "startTime": "2026-06-30T03:59:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.25,
+        "draw": 5,
+        "away": 2
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.3,
+          "under": 3.25
+        },
+        {
+          "line": 9.5,
+          "over": 12,
+          "under": 1.02
+        },
+        {
+          "line": 8.5,
+          "over": 6.25,
+          "under": 1.09
+        },
+        {
+          "line": 5.5,
+          "over": 1.66,
+          "under": 2.06
+        },
+        {
+          "line": 3.5,
+          "over": 1.1,
+          "under": 5.8
+        },
+        {
+          "line": 6.5,
+          "over": 2.3,
+          "under": 1.54
+        },
+        {
+          "line": 7.5,
+          "over": 3.65,
+          "under": 1.24
+        }
+      ]
+    },
+    {
+      "eventId": "1028186551",
+      "title": "Man City (volvo) - Real Madrid (Kavviro)",
+      "homeTeam": "Man City (volvo)",
+      "awayTeam": "Real Madrid (Kavviro)",
+      "startTime": "2026-06-30T03:59:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.9,
+        "away": 3.15
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.06,
+          "under": 7.5
+        },
+        {
+          "line": 3.5,
+          "over": 1.72,
+          "under": 1.97
+        },
+        {
+          "line": 2.5,
+          "over": 1.28,
+          "under": 3.35
+        },
+        {
+          "line": 4.5,
+          "over": 2.6,
+          "under": 1.43
+        },
+        {
+          "line": 5.5,
+          "over": 4.5,
+          "under": 1.16
+        },
+        {
+          "line": 6.5,
+          "over": 9,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028192689",
+      "title": "Chelsea (zoyir) - Tottenham (flamez)",
+      "homeTeam": "Chelsea (zoyir)",
+      "awayTeam": "Tottenham (flamez)",
+      "startTime": "2026-06-30T04:00:00Z",
+      "league": "eSports Battle (2x6 min)",
+      "odds": {
+        "home": 2.14,
+        "draw": 4.1,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 1.88,
+          "under": 1.78
+        },
+        {
+          "line": 10.5,
+          "over": 3.8,
+          "under": 1.19
+        },
+        {
+          "line": 11.5,
+          "over": 6,
+          "under": 1.07
+        },
+        {
+          "line": 6.5,
+          "over": 1.21,
+          "under": 3.6
+        },
+        {
+          "line": 9.5,
+          "over": 2.55,
+          "under": 1.4
+        },
+        {
+          "line": 5.5,
+          "over": 1.06,
+          "under": 6.1
+        },
+        {
+          "line": 7.5,
+          "over": 1.44,
+          "under": 2.45
         }
       ]
     },
@@ -1981,6 +2700,566 @@
           "line": 7.5,
           "over": 2.32,
           "under": 1.49
+        }
+      ]
+    },
+    {
+      "eventId": "1028197068",
+      "title": "Bologna FC (TOMMY) - Atalanta (femzzi)",
+      "homeTeam": "Bologna FC (TOMMY)",
+      "awayTeam": "Atalanta (femzzi)",
+      "startTime": "2026-06-30T06:38:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3,
+        "draw": 9,
+        "away": 1.42
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.17,
+          "under": 3.9
+        },
+        {
+          "line": 10.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 11.5,
+          "over": 6,
+          "under": 1.07
+        },
+        {
+          "line": 5.5,
+          "over": 1.06,
+          "under": 6.4
+        },
+        {
+          "line": 8.5,
+          "over": 1.83,
+          "under": 1.84
+        },
+        {
+          "line": 7.5,
+          "over": 1.43,
+          "under": 2.48
+        },
+        {
+          "line": 9.5,
+          "over": 2.55,
+          "under": 1.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028197070",
+      "title": "Fiorentina (Terry14) - Juventus (Voron)",
+      "homeTeam": "Fiorentina (Terry14)",
+      "awayTeam": "Juventus (Voron)",
+      "startTime": "2026-06-30T06:38:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.02,
+        "draw": 4.7,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.47,
+          "under": 2.38
+        },
+        {
+          "line": 5.5,
+          "over": 1.2,
+          "under": 3.6
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 6.4
+        },
+        {
+          "line": 8.5,
+          "over": 2.8,
+          "under": 1.34
+        },
+        {
+          "line": 7.5,
+          "over": 1.98,
+          "under": 1.71
+        },
+        {
+          "line": 10.5,
+          "over": 7,
+          "under": 1.04
+        },
+        {
+          "line": 9.5,
+          "over": 4.3,
+          "under": 1.14
+        }
+      ]
+    },
+    {
+      "eventId": "1028197106",
+      "title": "Austria (Mqrkkkkkk) - Argentina (aloha)",
+      "homeTeam": "Austria (Mqrkkkkkk)",
+      "awayTeam": "Argentina (aloha)",
+      "startTime": "2026-06-30T06:38:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.89,
+        "draw": 5.4,
+        "away": 2.33
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.37,
+          "under": 2.85
+        },
+        {
+          "line": 7.5,
+          "over": 1.71,
+          "under": 1.98
+        },
+        {
+          "line": 9.5,
+          "over": 3.4,
+          "under": 1.27
+        },
+        {
+          "line": 8.5,
+          "over": 2.28,
+          "under": 1.55
+        },
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 8.5
+        },
+        {
+          "line": 11.5,
+          "over": 9.5,
+          "under": 1.04
+        },
+        {
+          "line": 5.5,
+          "over": 1.16,
+          "under": 4.5
+        },
+        {
+          "line": 10.5,
+          "over": 5.4,
+          "under": 1.12
+        }
+      ]
+    },
+    {
+      "eventId": "1028197752",
+      "title": "Atlético Madrid (Double_S) - PSG (M1HEPAJI)",
+      "homeTeam": "Atlético Madrid (Double_S)",
+      "awayTeam": "PSG (M1HEPAJI)",
+      "startTime": "2026-06-30T06:42:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.21,
+        "draw": 10,
+        "away": 4.5
+      },
+      "totals": [
+        {
+          "line": 10.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 6.5,
+          "over": 1.44,
+          "under": 2.45
+        },
+        {
+          "line": 7.5,
+          "over": 1.95,
+          "under": 1.72
+        },
+        {
+          "line": 8.5,
+          "over": 2.65,
+          "under": 1.37
+        },
+        {
+          "line": 9.5,
+          "over": 4.2,
+          "under": 1.15
+        },
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 5.5,
+          "over": 1.2,
+          "under": 3.65
+        }
+      ]
+    },
+    {
+      "eventId": "1028197754",
+      "title": "Manchester City (savinho) - Manchester United (FanFan)",
+      "homeTeam": "Manchester City (savinho)",
+      "awayTeam": "Manchester United (FanFan)",
+      "startTime": "2026-06-30T06:42:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 4.5,
+        "draw": 6.75,
+        "away": 1.27
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 1.07,
+          "under": 5.75
+        },
+        {
+          "line": 4.5,
+          "over": 1.24,
+          "under": 3.3
+        },
+        {
+          "line": 6.5,
+          "over": 2.23,
+          "under": 1.54
+        },
+        {
+          "line": 7.5,
+          "over": 3.4,
+          "under": 1.23
+        },
+        {
+          "line": 5.5,
+          "over": 1.61,
+          "under": 2.1
+        },
+        {
+          "line": 8.5,
+          "over": 5.5,
+          "under": 1.08
+        }
+      ]
+    },
+    {
+      "eventId": "1028197072",
+      "title": "Fiorentina (Terry14) - Atalanta (femzzi)",
+      "homeTeam": "Fiorentina (Terry14)",
+      "awayTeam": "Atalanta (femzzi)",
+      "startTime": "2026-06-30T06:52:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.1,
+        "draw": 4.3,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 2.63,
+          "under": 1.38
+        },
+        {
+          "line": 7.5,
+          "over": 1.88,
+          "under": 1.78
+        },
+        {
+          "line": 6.5,
+          "over": 1.43,
+          "under": 2.48
+        },
+        {
+          "line": 9.5,
+          "over": 3.9,
+          "under": 1.17
+        },
+        {
+          "line": 5.5,
+          "over": 1.18,
+          "under": 3.85
+        },
+        {
+          "line": 4.5,
+          "over": 1.05,
+          "under": 6.75
+        },
+        {
+          "line": 10.5,
+          "over": 6.5,
+          "under": 1.06
+        }
+      ]
+    },
+    {
+      "eventId": "1028197074",
+      "title": "Inter (T3RZ) - Bologna FC (TOMMY)",
+      "homeTeam": "Inter (T3RZ)",
+      "awayTeam": "Bologna FC (TOMMY)",
+      "startTime": "2026-06-30T06:52:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.27,
+        "draw": 8,
+        "away": 4.2
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.22,
+          "under": 3.45
+        },
+        {
+          "line": 5.5,
+          "over": 1.08,
+          "under": 5.75
+        },
+        {
+          "line": 11.5,
+          "over": 6.75,
+          "under": 1.05
+        },
+        {
+          "line": 8.5,
+          "over": 1.95,
+          "under": 1.73
+        },
+        {
+          "line": 7.5,
+          "over": 1.52,
+          "under": 2.28
+        },
+        {
+          "line": 10.5,
+          "over": 4.1,
+          "under": 1.16
+        },
+        {
+          "line": 9.5,
+          "over": 2.75,
+          "under": 1.34
+        }
+      ]
+    },
+    {
+      "eventId": "1028197109",
+      "title": "Jordan (Gammi) - Argentina (aloha)",
+      "homeTeam": "Jordan (Gammi)",
+      "awayTeam": "Argentina (aloha)",
+      "startTime": "2026-06-30T06:52:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.61,
+        "draw": 6.75,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.75,
+          "under": 1.94
+        },
+        {
+          "line": 10.5,
+          "over": 10.5,
+          "under": 1.03
+        },
+        {
+          "line": 7.5,
+          "over": 2.45,
+          "under": 1.48
+        },
+        {
+          "line": 4.5,
+          "over": 1.15,
+          "under": 4.7
+        },
+        {
+          "line": 5.5,
+          "over": 1.4,
+          "under": 2.75
+        },
+        {
+          "line": 9.5,
+          "over": 6,
+          "under": 1.1
+        },
+        {
+          "line": 3.5,
+          "over": 1.04,
+          "under": 9
+        },
+        {
+          "line": 8.5,
+          "over": 3.55,
+          "under": 1.25
+        }
+      ]
+    },
+    {
+      "eventId": "1028197110",
+      "title": "Algeria (desicom) - Austria (Mqrkkkkkk)",
+      "homeTeam": "Algeria (desicom)",
+      "awayTeam": "Austria (Mqrkkkkkk)",
+      "startTime": "2026-06-30T06:52:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 3.4,
+        "draw": 8,
+        "away": 1.43
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.44,
+          "under": 2.55
+        },
+        {
+          "line": 7.5,
+          "over": 1.88,
+          "under": 1.8
+        },
+        {
+          "line": 9.5,
+          "over": 3.9,
+          "under": 1.21
+        },
+        {
+          "line": 10.5,
+          "over": 6.25,
+          "under": 1.09
+        },
+        {
+          "line": 11.5,
+          "over": 11,
+          "under": 1.03
+        },
+        {
+          "line": 8.5,
+          "over": 2.55,
+          "under": 1.45
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 7.5
+        },
+        {
+          "line": 5.5,
+          "over": 1.22,
+          "under": 3.85
+        }
+      ]
+    },
+    {
+      "eventId": "1028197755",
+      "title": "Atlético Madrid (Double_S) - Manchester United (FanFan)",
+      "homeTeam": "Atlético Madrid (Double_S)",
+      "awayTeam": "Manchester United (FanFan)",
+      "startTime": "2026-06-30T06:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3,
+        "draw": 6.5,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 10.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 5.5,
+          "over": 1.23,
+          "under": 3.4
+        },
+        {
+          "line": 4.5,
+          "over": 1.06,
+          "under": 6.25
+        },
+        {
+          "line": 7.5,
+          "over": 2.04,
+          "under": 1.65
+        },
+        {
+          "line": 8.5,
+          "over": 2.85,
+          "under": 1.32
+        },
+        {
+          "line": 6.5,
+          "over": 1.5,
+          "under": 2.3
+        },
+        {
+          "line": 9.5,
+          "over": 4.5,
+          "under": 1.13
+        }
+      ]
+    },
+    {
+      "eventId": "1028197756",
+      "title": "Manchester City (savinho) - Liverpool (zyX)",
+      "homeTeam": "Manchester City (savinho)",
+      "awayTeam": "Liverpool (zyX)",
+      "startTime": "2026-06-30T06:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 1.77,
+        "draw": 6.4,
+        "away": 2.43
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.18,
+          "under": 3.9
+        },
+        {
+          "line": 5.5,
+          "over": 1.48,
+          "under": 2.35
+        },
+        {
+          "line": 3.5,
+          "over": 1.05,
+          "under": 7
+        },
+        {
+          "line": 8.5,
+          "over": 4.4,
+          "under": 1.14
+        },
+        {
+          "line": 6.5,
+          "over": 1.96,
+          "under": 1.71
+        },
+        {
+          "line": 7.5,
+          "over": 2.88,
+          "under": 1.32
+        },
+        {
+          "line": 9.5,
+          "over": 8,
+          "under": 1.03
         }
       ]
     },
@@ -5610,29 +6889,7 @@
         "home": 2.45,
         "draw": 3.2,
         "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.55
-        },
-        {
-          "line": 4.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 1.74,
-          "under": 1.91
-        },
-        {
-          "line": 3.5,
-          "over": 2.85,
-          "under": 1.34
-        }
-      ]
+      }
     },
     {
       "eventId": "1026591450",
@@ -5645,169 +6902,6 @@
         "home": 1.36,
         "draw": 4.6,
         "away": 8.5
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.02,
-          "under": 10.5
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.79,
-          "under": 1.94
-        },
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.34
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.75
-        },
-        {
-          "line": 5.5,
-          "over": 11.5,
-          "under": 1.01
-        }
-      ],
-      "ah": [
-        {
-          "line": -2,
-          "home": 3.05,
-          "away": 1.36
-        },
-        {
-          "line": -0.5,
-          "home": 1.36,
-          "away": 3.05
-        },
-        {
-          "line": -3,
-          "home": 6.75,
-          "away": 1.09
-        },
-        {
-          "line": -1.75,
-          "home": 2.4,
-          "away": 1.54
-        },
-        {
-          "line": -2.5,
-          "home": 3.75,
-          "away": 1.25
-        },
-        {
-          "line": -1.5,
-          "home": 2.07,
-          "away": 1.72
-        },
-        {
-          "line": 0.5,
-          "home": 1.08,
-          "away": 7.5
-        },
-        {
-          "line": -3.5,
-          "home": 7.5,
-          "away": 1.07
-        },
-        {
-          "line": -2.75,
-          "home": 4.75,
-          "away": 1.17
-        },
-        {
-          "line": 0.25,
-          "home": 1.09,
-          "away": 6.75
-        },
-        {
-          "line": -1.25,
-          "home": 1.82,
-          "away": 1.94
-        },
-        {
-          "line": -0.75,
-          "home": 1.44,
-          "away": 2.7
-        },
-        {
-          "line": -3.25,
-          "home": 7,
-          "away": 1.08
-        },
-        {
-          "line": -0.25,
-          "home": 1.23,
-          "away": 3.95
-        },
-        {
-          "line": -2.25,
-          "home": 3.4,
-          "away": 1.3
-        },
-        {
-          "line": -1,
-          "home": 1.57,
-          "away": 2.33
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 15.5,
-            "over": 5.8,
-            "under": 1.09
-          },
-          {
-            "line": 10.5,
-            "over": 1.73,
-            "under": 1.96
-          },
-          {
-            "line": 7.5,
-            "over": 1.15,
-            "under": 4.6
-          },
-          {
-            "line": 11.5,
-            "over": 2.12,
-            "under": 1.62
-          },
-          {
-            "line": 14.5,
-            "over": 4.5,
-            "under": 1.16
-          },
-          {
-            "line": 13.5,
-            "over": 3.4,
-            "under": 1.26
-          },
-          {
-            "line": 12.5,
-            "over": 2.65,
-            "under": 1.4
-          },
-          {
-            "line": 9.5,
-            "over": 1.46,
-            "under": 2.5
-          },
-          {
-            "line": 8.5,
-            "over": 1.27,
-            "under": 3.3
-          }
-        ]
       }
     },
     {
@@ -5821,29 +6915,7 @@
         "home": 1.94,
         "draw": 3.3,
         "away": 3.45
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.25,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.78,
-          "under": 1.86
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.45
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.32
-        }
-      ]
+      }
     },
     {
       "eventId": "1028175697",
@@ -5856,129 +6928,6 @@
         "home": 2.02,
         "draw": 3.3,
         "away": 4.25
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 8.5,
-          "under": 1.07
-        },
-        {
-          "line": 3.5,
-          "over": 4,
-          "under": 1.25
-        },
-        {
-          "line": 0.5,
-          "over": 1.07,
-          "under": 9
-        },
-        {
-          "line": 5.5,
-          "over": 18,
-          "under": 1.01
-        },
-        {
-          "line": 1.5,
-          "over": 1.36,
-          "under": 3.2
-        },
-        {
-          "line": 2.5,
-          "over": 2.18,
-          "under": 1.7
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.97,
-          "away": 1.84
-        },
-        {
-          "line": 0.5,
-          "home": 1.25,
-          "away": 4
-        },
-        {
-          "line": -0.75,
-          "home": 2.3,
-          "away": 1.62
-        },
-        {
-          "line": -1.5,
-          "home": 3.8,
-          "away": 1.27
-        },
-        {
-          "line": -1,
-          "home": 2.95,
-          "away": 1.4
-        },
-        {
-          "line": 0.25,
-          "home": 1.3,
-          "away": 3.45
-        },
-        {
-          "line": -0.25,
-          "home": 1.68,
-          "away": 2.17
-        },
-        {
-          "line": -1.25,
-          "home": 3.35,
-          "away": 1.32
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 6.4,
-            "under": 1.09
-          },
-          {
-            "line": 10.5,
-            "over": 2.63,
-            "under": 1.44
-          },
-          {
-            "line": 6.5,
-            "over": 1.21,
-            "under": 4
-          },
-          {
-            "line": 12.5,
-            "over": 4.7,
-            "under": 1.16
-          },
-          {
-            "line": 9.5,
-            "over": 2.05,
-            "under": 1.71
-          },
-          {
-            "line": 11.5,
-            "over": 3.5,
-            "under": 1.27
-          },
-          {
-            "line": 5.5,
-            "over": 1.1,
-            "under": 6.1
-          },
-          {
-            "line": 7.5,
-            "over": 1.38,
-            "under": 2.85
-          },
-          {
-            "line": 8.5,
-            "over": 1.65,
-            "under": 2.12
-          }
-        ]
       }
     },
     {
@@ -5992,29 +6941,7 @@
         "home": 2.6,
         "draw": 3.3,
         "away": 2.3
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.67,
-          "under": 2
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.38
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.13
-        }
-      ]
+      }
     },
     {
       "eventId": "1026390419",
@@ -6027,29 +6954,7 @@
         "home": 1.66,
         "draw": 3.55,
         "away": 4.1
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.13
-        },
-        {
-          "line": 2.5,
-          "over": 1.66,
-          "under": 2.02
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.38
-        }
-      ]
+      }
     },
     {
       "eventId": "1027370983",
@@ -6062,29 +6967,7 @@
         "home": 3.2,
         "draw": 2.8,
         "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.7,
-          "under": 1.38
-        },
-        {
-          "line": 0.5,
-          "over": 1.11,
-          "under": 5.1
-        },
-        {
-          "line": 3.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 1.5,
-          "over": 1.55,
-          "under": 2.2
-        }
-      ]
+      }
     },
     {
       "eventId": "1026658664",
@@ -6097,84 +6980,6 @@
         "home": 2.45,
         "draw": 3.45,
         "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.33,
-          "under": 1.52
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.52,
-          "under": 2.32
-        },
-        {
-          "line": 4.5,
-          "over": 4.1,
-          "under": 1.19
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.46,
-          "away": 2.48
-        },
-        {
-          "line": -0.5,
-          "home": 2.33,
-          "away": 1.52
-        },
-        {
-          "line": -1.25,
-          "home": 4,
-          "away": 1.19
-        },
-        {
-          "line": -1,
-          "home": 3.65,
-          "away": 1.23
-        },
-        {
-          "line": -1.5,
-          "home": 4.35,
-          "away": 1.17
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 3,
-            "under": 1.33
-          },
-          {
-            "line": 8.5,
-            "over": 1.33,
-            "under": 3
-          },
-          {
-            "line": 9.5,
-            "over": 1.56,
-            "under": 2.25
-          },
-          {
-            "line": 10.5,
-            "over": 1.87,
-            "under": 1.81
-          },
-          {
-            "line": 11.5,
-            "over": 2.32,
-            "under": 1.52
-          }
-        ]
       }
     },
     {
@@ -6188,29 +6993,7 @@
         "home": 2.88,
         "draw": 2.75,
         "away": 2.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.8,
-          "under": 1.35
-        },
-        {
-          "line": 1.5,
-          "over": 1.57,
-          "under": 2.16
-        },
-        {
-          "line": 0.5,
-          "over": 1.11,
-          "under": 5.1
-        },
-        {
-          "line": 3.5,
-          "over": 5.3,
-          "under": 1.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1028178062",
@@ -6223,24 +7006,7 @@
         "home": 1.64,
         "draw": 3.25,
         "away": 4.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.06,
-          "under": 1.68
-        },
-        {
-          "line": 3.5,
-          "over": 3.7,
-          "under": 1.24
-        },
-        {
-          "line": 1.5,
-          "over": 1.34,
-          "under": 3
-        }
-      ]
+      }
     },
     {
       "eventId": "1027370981",
@@ -6253,29 +7019,7 @@
         "home": 3.2,
         "draw": 2.8,
         "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.53,
-          "under": 2.25
-        },
-        {
-          "line": 3.5,
-          "over": 5,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 2.65,
-          "under": 1.38
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.25
-        }
-      ]
+      }
     },
     {
       "eventId": "1026229258",
@@ -6288,29 +7032,7 @@
         "home": 2,
         "draw": 3.15,
         "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.2
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.86,
-          "under": 1.79
-        },
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.29
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309695",
@@ -6323,34 +7045,7 @@
         "home": 1.3,
         "draw": 4.9,
         "away": 6.5
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.75,
-          "under": 1.34
-        },
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.28,
-          "under": 3.05
-        },
-        {
-          "line": 3.5,
-          "over": 1.76,
-          "under": 1.84
-        },
-        {
-          "line": 1.5,
-          "over": 1.05,
-          "under": 6.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1026229246",
@@ -6363,29 +7058,7 @@
         "home": 1.84,
         "draw": 3.35,
         "away": 3.4
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.5,
-          "under": 1.42
-        },
-        {
-          "line": 4.5,
-          "over": 4.35,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.17,
-          "under": 4.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.61,
-          "under": 2.08
-        }
-      ]
+      }
     },
     {
       "eventId": "1027882252",
@@ -6398,29 +7071,7 @@
         "home": 4.6,
         "draw": 3.5,
         "away": 1.58
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1028077033",
@@ -6433,34 +7084,7 @@
         "home": 1.17,
         "draw": 6.1,
         "away": 11
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.36,
-          "under": 2.75
-        },
-        {
-          "line": 3.5,
-          "over": 1.96,
-          "under": 1.7
-        },
-        {
-          "line": 4.5,
-          "over": 3.1,
-          "under": 1.28
-        },
-        {
-          "line": 5.5,
-          "over": 5.2,
-          "under": 1.1
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1026030378",
@@ -6473,104 +7097,6 @@
         "home": 2.18,
         "draw": 3.6,
         "away": 2.85
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.5,
-          "under": 2.38
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.75
-        },
-        {
-          "line": 3.5,
-          "over": 2.28,
-          "under": 1.55
-        },
-        {
-          "line": 5.5,
-          "over": 6.75,
-          "under": 1.05
-        },
-        {
-          "line": 4.5,
-          "over": 3.85,
-          "under": 1.21
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 1.12,
-          "away": 5.2
-        },
-        {
-          "line": -1,
-          "home": 3.15,
-          "away": 1.3
-        },
-        {
-          "line": 1,
-          "home": 1.16,
-          "away": 4.5
-        },
-        {
-          "line": -1.5,
-          "home": 3.8,
-          "away": 1.21
-        },
-        {
-          "line": 0.5,
-          "home": 1.38,
-          "away": 2.7
-        },
-        {
-          "line": 1.25,
-          "home": 1.13,
-          "away": 4.9
-        },
-        {
-          "line": -1.25,
-          "home": 3.5,
-          "away": 1.25
-        },
-        {
-          "line": -0.5,
-          "home": 2.12,
-          "away": 1.62
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 2.5,
-            "under": 1.45
-          },
-          {
-            "line": 10.5,
-            "over": 1.98,
-            "under": 1.72
-          },
-          {
-            "line": 9.5,
-            "over": 1.62,
-            "under": 2.12
-          },
-          {
-            "line": 8.5,
-            "over": 1.38,
-            "under": 2.75
-          },
-          {
-            "line": 12.5,
-            "over": 3.25,
-            "under": 1.28
-          }
-        ]
       }
     },
     {
@@ -6584,124 +7110,6 @@
         "home": 1.52,
         "draw": 4.6,
         "away": 4.8
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.28,
-          "under": 3.25
-        },
-        {
-          "line": 4.5,
-          "over": 2.65,
-          "under": 1.41
-        },
-        {
-          "line": 5.5,
-          "over": 4.4,
-          "under": 1.16
-        },
-        {
-          "line": 3.5,
-          "over": 1.73,
-          "under": 1.97
-        },
-        {
-          "line": 1.5,
-          "over": 1.05,
-          "under": 6.75
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.49,
-          "away": 2.4
-        },
-        {
-          "line": -1.25,
-          "home": 1.98,
-          "away": 1.71
-        },
-        {
-          "line": -1.75,
-          "home": 2.55,
-          "away": 1.44
-        },
-        {
-          "line": 0.5,
-          "home": 1.16,
-          "away": 4.4
-        },
-        {
-          "line": 0.25,
-          "home": 1.19,
-          "away": 4
-        },
-        {
-          "line": -0.75,
-          "home": 1.58,
-          "away": 2.16
-        },
-        {
-          "line": -2.25,
-          "home": 3.4,
-          "away": 1.26
-        },
-        {
-          "line": -0.25,
-          "home": 1.36,
-          "away": 2.85
-        },
-        {
-          "line": -2.5,
-          "home": 3.7,
-          "away": 1.23
-        },
-        {
-          "line": -1.5,
-          "home": 2.2,
-          "away": 1.58
-        },
-        {
-          "line": -2,
-          "home": 3.1,
-          "away": 1.3
-        },
-        {
-          "line": -1,
-          "home": 1.76,
-          "away": 1.92
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 2.7,
-            "under": 1.38
-          },
-          {
-            "line": 11.5,
-            "over": 1.78,
-            "under": 1.9
-          },
-          {
-            "line": 12.5,
-            "over": 2.18,
-            "under": 1.58
-          },
-          {
-            "line": 10.5,
-            "over": 1.5,
-            "under": 2.38
-          },
-          {
-            "line": 9.5,
-            "over": 1.3,
-            "under": 3.1
-          }
-        ]
       }
     },
     {
@@ -6715,114 +7123,6 @@
         "home": 4.8,
         "draw": 4.25,
         "away": 1.52
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 3.25,
-          "under": 1.26
-        },
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.7
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 5.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.98,
-          "under": 1.68
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 2.32,
-          "away": 1.53
-        },
-        {
-          "line": 1.5,
-          "home": 1.52,
-          "away": 2.33
-        },
-        {
-          "line": -0.5,
-          "home": 4.4,
-          "away": 1.16
-        },
-        {
-          "line": -0.25,
-          "home": 4,
-          "away": 1.19
-        },
-        {
-          "line": 1,
-          "home": 1.83,
-          "away": 1.85
-        },
-        {
-          "line": 2.25,
-          "home": 1.22,
-          "away": 3.75
-        },
-        {
-          "line": 2.5,
-          "home": 1.19,
-          "away": 4.1
-        },
-        {
-          "line": 2,
-          "home": 1.25,
-          "away": 3.45
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 1.98,
-            "under": 1.71
-          },
-          {
-            "line": 12.5,
-            "over": 2.48,
-            "under": 1.45
-          },
-          {
-            "line": 10.5,
-            "over": 1.64,
-            "under": 2.08
-          },
-          {
-            "line": 9.5,
-            "over": 1.38,
-            "under": 2.7
-          },
-          {
-            "line": 8.5,
-            "over": 1.22,
-            "under": 3.6
-          },
-          {
-            "line": 14.5,
-            "over": 4.1,
-            "under": 1.17
-          },
-          {
-            "line": 13.5,
-            "over": 3.15,
-            "under": 1.28
-          }
-        ]
       }
     },
     {
@@ -6836,124 +7136,6 @@
         "home": 2.65,
         "draw": 3.7,
         "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.35,
-          "under": 2.88
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.75
-        },
-        {
-          "line": 5.5,
-          "over": 5.1,
-          "under": 1.12
-        },
-        {
-          "line": 3.5,
-          "over": 1.9,
-          "under": 1.79
-        },
-        {
-          "line": 4.5,
-          "over": 3,
-          "under": 1.32
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.55,
-          "away": 1.44
-        },
-        {
-          "line": 1.25,
-          "home": 1.24,
-          "away": 3.5
-        },
-        {
-          "line": -1.5,
-          "home": 4.7,
-          "away": 1.15
-        },
-        {
-          "line": -1,
-          "home": 4,
-          "away": 1.19
-        },
-        {
-          "line": 0.5,
-          "home": 1.58,
-          "away": 2.2
-        },
-        {
-          "line": -0.75,
-          "home": 3,
-          "away": 1.32
-        },
-        {
-          "line": 0.25,
-          "home": 1.73,
-          "away": 1.96
-        },
-        {
-          "line": -1.25,
-          "home": 4.35,
-          "away": 1.16
-        },
-        {
-          "line": 1.5,
-          "home": 1.21,
-          "away": 3.85
-        },
-        {
-          "line": 0.75,
-          "home": 1.43,
-          "away": 2.55
-        },
-        {
-          "line": 1,
-          "home": 1.29,
-          "away": 3.2
-        },
-        {
-          "line": -0.25,
-          "home": 2.25,
-          "away": 1.55
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 3.1,
-            "under": 1.3
-          },
-          {
-            "line": 9.5,
-            "over": 1.37,
-            "under": 2.8
-          },
-          {
-            "line": 11.5,
-            "over": 1.92,
-            "under": 1.77
-          },
-          {
-            "line": 10.5,
-            "over": 1.6,
-            "under": 2.16
-          },
-          {
-            "line": 12.5,
-            "over": 2.4,
-            "under": 1.49
-          }
-        ]
       }
     },
     {
@@ -6967,104 +7149,6 @@
         "home": 1.79,
         "draw": 4,
         "away": 4.6
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.66,
-          "under": 2.06
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.95
-        },
-        {
-          "line": 4.5,
-          "over": 4.7,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 2.7,
-          "under": 1.4
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.75,
-          "home": 1.88,
-          "away": 1.8
-        },
-        {
-          "line": 0.5,
-          "home": 1.2,
-          "away": 3.9
-        },
-        {
-          "line": -1.5,
-          "home": 2.8,
-          "away": 1.37
-        },
-        {
-          "line": -1.25,
-          "home": 2.5,
-          "away": 1.45
-        },
-        {
-          "line": -0.5,
-          "home": 1.68,
-          "away": 2.02
-        },
-        {
-          "line": -0.25,
-          "home": 1.5,
-          "away": 2.38
-        },
-        {
-          "line": 0.25,
-          "home": 1.25,
-          "away": 3.5
-        },
-        {
-          "line": -1,
-          "home": 2.2,
-          "away": 1.58
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.79,
-            "under": 1.89
-          },
-          {
-            "line": 13.5,
-            "over": 3.6,
-            "under": 1.23
-          },
-          {
-            "line": 11.5,
-            "over": 2.2,
-            "under": 1.58
-          },
-          {
-            "line": 9.5,
-            "over": 1.5,
-            "under": 2.38
-          },
-          {
-            "line": 8.5,
-            "over": 1.3,
-            "under": 3.15
-          },
-          {
-            "line": 12.5,
-            "over": 2.8,
-            "under": 1.37
-          }
-        ]
       }
     },
     {
@@ -7078,34 +7162,7 @@
         "home": 3.7,
         "draw": 3.9,
         "away": 1.68
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.14
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 3
-        },
-        {
-          "line": 3.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 4.5,
-          "over": 2.75,
-          "under": 1.36
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 6
-        }
-      ]
+      }
     },
     {
       "eventId": "1026305142",
@@ -7118,29 +7175,7 @@
         "home": 2.75,
         "draw": 3.35,
         "away": 2.2
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.62,
-          "under": 2.08
-        },
-        {
-          "line": 4.5,
-          "over": 4.35,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 3.95
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.42
-        }
-      ]
+      }
     },
     {
       "eventId": "1027118147",
@@ -7153,29 +7188,7 @@
         "home": 1.87,
         "draw": 3.1,
         "away": 4
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.07,
-          "under": 6.25
-        },
-        {
-          "line": 2.5,
-          "over": 2.25,
-          "under": 1.53
-        },
-        {
-          "line": 1.5,
-          "over": 1.41,
-          "under": 2.6
-        },
-        {
-          "line": 3.5,
-          "over": 4.1,
-          "under": 1.17
-        }
-      ]
+      }
     },
     {
       "eventId": "1028164518",
@@ -7188,119 +7201,6 @@
         "home": 3.6,
         "draw": 2.9,
         "away": 2.45
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 13,
-          "under": 1.03
-        },
-        {
-          "line": 2.5,
-          "over": 2.8,
-          "under": 1.45
-        },
-        {
-          "line": 1.5,
-          "over": 1.56,
-          "under": 2.48
-        },
-        {
-          "line": 0.5,
-          "over": 1.12,
-          "under": 6.5
-        },
-        {
-          "line": 3.5,
-          "over": 5.75,
-          "under": 1.15
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 1.16,
-          "away": 5.3
-        },
-        {
-          "line": -0.5,
-          "home": 3.35,
-          "away": 1.32
-        },
-        {
-          "line": 1,
-          "home": 1.22,
-          "away": 4.2
-        },
-        {
-          "line": -0.25,
-          "home": 2.85,
-          "away": 1.42
-        },
-        {
-          "line": 1.25,
-          "home": 1.19,
-          "away": 4.75
-        },
-        {
-          "line": 0.75,
-          "home": 1.4,
-          "away": 2.95
-        },
-        {
-          "line": 0.5,
-          "home": 1.58,
-          "away": 2.38
-        },
-        {
-          "line": 0.25,
-          "home": 1.81,
-          "away": 2
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 6.5,
-            "over": 1.3,
-            "under": 3.25
-          },
-          {
-            "line": 8.5,
-            "over": 1.9,
-            "under": 1.82
-          },
-          {
-            "line": 7.5,
-            "over": 1.54,
-            "under": 2.35
-          },
-          {
-            "line": 9.5,
-            "over": 2.48,
-            "under": 1.49
-          },
-          {
-            "line": 12.5,
-            "over": 6.25,
-            "under": 1.09
-          },
-          {
-            "line": 10.5,
-            "over": 3.3,
-            "under": 1.29
-          },
-          {
-            "line": 5.5,
-            "over": 1.15,
-            "under": 4.9
-          },
-          {
-            "line": 11.5,
-            "over": 4.5,
-            "under": 1.17
-          }
-        ]
       }
     },
     {
@@ -7314,119 +7214,6 @@
         "home": 1.49,
         "draw": 4.1,
         "away": 5.8
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.73,
-          "under": 1.97
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.75
-        },
-        {
-          "line": 3.5,
-          "over": 2.85,
-          "under": 1.36
-        },
-        {
-          "line": 4.5,
-          "over": 5,
-          "under": 1.13
-        }
-      ],
-      "ah": [
-        {
-          "line": -2.5,
-          "home": 4.2,
-          "away": 1.18
-        },
-        {
-          "line": -1.5,
-          "home": 2.3,
-          "away": 1.53
-        },
-        {
-          "line": 0.25,
-          "home": 1.14,
-          "away": 4.75
-        },
-        {
-          "line": -1.25,
-          "home": 2.05,
-          "away": 1.66
-        },
-        {
-          "line": -0.75,
-          "home": 1.58,
-          "away": 2.18
-        },
-        {
-          "line": -2,
-          "home": 3.55,
-          "away": 1.24
-        },
-        {
-          "line": -2.25,
-          "home": 3.9,
-          "away": 1.21
-        },
-        {
-          "line": -0.25,
-          "home": 1.32,
-          "away": 3.05
-        },
-        {
-          "line": -1.75,
-          "home": 2.75,
-          "away": 1.38
-        },
-        {
-          "line": -0.5,
-          "home": 1.47,
-          "away": 2.48
-        },
-        {
-          "line": 0.5,
-          "home": 1.12,
-          "away": 5.2
-        },
-        {
-          "line": -1,
-          "home": 1.78,
-          "away": 1.9
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 2,
-            "under": 1.68
-          },
-          {
-            "line": 13.5,
-            "over": 3.1,
-            "under": 1.3
-          },
-          {
-            "line": 12.5,
-            "over": 2.48,
-            "under": 1.45
-          },
-          {
-            "line": 9.5,
-            "over": 1.4,
-            "under": 2.63
-          },
-          {
-            "line": 10.5,
-            "over": 1.65,
-            "under": 2.06
-          }
-        ]
       }
     },
     {
@@ -7440,99 +7227,6 @@
         "home": 4.25,
         "draw": 3.55,
         "away": 1.77
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.87
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.1
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.33
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.25,
-          "home": 1.38,
-          "away": 2.7
-        },
-        {
-          "line": -0.5,
-          "home": 3.9,
-          "away": 1.2
-        },
-        {
-          "line": 1,
-          "home": 1.5,
-          "away": 2.33
-        },
-        {
-          "line": 0.5,
-          "home": 1.97,
-          "away": 1.72
-        },
-        {
-          "line": 0.25,
-          "home": 2.32,
-          "away": 1.52
-        },
-        {
-          "line": 0.75,
-          "home": 1.74,
-          "away": 1.94
-        },
-        {
-          "line": 1.5,
-          "home": 1.32,
-          "away": 3
-        },
-        {
-          "line": -0.25,
-          "home": 3.5,
-          "away": 1.25
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.32,
-            "under": 3
-          },
-          {
-            "line": 11.5,
-            "over": 2.3,
-            "under": 1.52
-          },
-          {
-            "line": 12.5,
-            "over": 2.95,
-            "under": 1.32
-          },
-          {
-            "line": 10.5,
-            "over": 1.85,
-            "under": 1.81
-          },
-          {
-            "line": 9.5,
-            "over": 1.53,
-            "under": 2.28
-          }
-        ]
       }
     },
     {
@@ -7546,99 +7240,6 @@
         "home": 5.4,
         "draw": 3.75,
         "away": 1.6
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.29,
-          "under": 3.2
-        },
-        {
-          "line": 2.5,
-          "over": 1.9,
-          "under": 1.78
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.09
-        },
-        {
-          "line": 3.5,
-          "over": 3.25,
-          "under": 1.28
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 2.23,
-          "away": 1.56
-        },
-        {
-          "line": 1.5,
-          "home": 1.41,
-          "away": 2.63
-        },
-        {
-          "line": 2.25,
-          "home": 1.14,
-          "away": 4.7
-        },
-        {
-          "line": -0.5,
-          "home": 4.8,
-          "away": 1.14
-        },
-        {
-          "line": 2,
-          "home": 1.17,
-          "away": 4.35
-        },
-        {
-          "line": 2.5,
-          "home": 1.13,
-          "away": 5
-        },
-        {
-          "line": -0.25,
-          "home": 4.35,
-          "away": 1.17
-        },
-        {
-          "line": 1,
-          "home": 1.7,
-          "away": 2
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 3.45,
-            "under": 1.25
-          },
-          {
-            "line": 9.5,
-            "over": 1.68,
-            "under": 2.02
-          },
-          {
-            "line": 11.5,
-            "over": 2.65,
-            "under": 1.4
-          },
-          {
-            "line": 8.5,
-            "over": 1.41,
-            "under": 2.63
-          },
-          {
-            "line": 10.5,
-            "over": 2.07,
-            "under": 1.64
-          }
-        ]
       }
     },
     {
@@ -7652,89 +7253,6 @@
         "home": 1.46,
         "draw": 4.2,
         "away": 6.25
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5,
-          "under": 1.13
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2
-        },
-        {
-          "line": 1.5,
-          "over": 1.21,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.75,
-          "under": 1.38
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.44,
-          "away": 2.55
-        },
-        {
-          "line": -2.25,
-          "home": 3.7,
-          "away": 1.22
-        },
-        {
-          "line": -2,
-          "home": 3.35,
-          "away": 1.27
-        },
-        {
-          "line": -2.5,
-          "home": 4,
-          "away": 1.19
-        },
-        {
-          "line": -1.5,
-          "home": 2.23,
-          "away": 1.56
-        },
-        {
-          "line": -1,
-          "home": 1.72,
-          "away": 1.97
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 1.56,
-            "under": 2.23
-          },
-          {
-            "line": 10.5,
-            "over": 1.87,
-            "under": 1.79
-          },
-          {
-            "line": 12.5,
-            "over": 3,
-            "under": 1.32
-          },
-          {
-            "line": 11.5,
-            "over": 2.33,
-            "under": 1.5
-          },
-          {
-            "line": 8.5,
-            "over": 1.34,
-            "under": 2.9
-          }
-        ]
       }
     },
     {
@@ -7748,29 +7266,7 @@
         "home": 1.76,
         "draw": 3.5,
         "away": 3.95
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.88,
-          "under": 1.33
-        },
-        {
-          "line": 1.5,
-          "over": 1.21,
-          "under": 3.55
-        },
-        {
-          "line": 4.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 1.76,
-          "under": 1.89
-        }
-      ]
+      }
     },
     {
       "eventId": "1025975998",
@@ -7783,29 +7279,7 @@
         "home": 3.55,
         "draw": 3.45,
         "away": 1.86
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.4,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 3.95
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.42
-        },
-        {
-          "line": 2.5,
-          "over": 1.62,
-          "under": 2.07
-        }
-      ]
+      }
     },
     {
       "eventId": "1025975994",
@@ -7818,29 +7292,7 @@
         "home": 3.8,
         "draw": 3.35,
         "away": 1.82
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.25,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.83
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1025976006",
@@ -7853,29 +7305,7 @@
         "home": 2.5,
         "draw": 3.15,
         "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.29
-        },
-        {
-          "line": 2.5,
-          "over": 1.86,
-          "under": 1.79
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.3
-        },
-        {
-          "line": 4.5,
-          "over": 5.5,
-          "under": 1.09
-        }
-      ]
+      }
     },
     {
       "eventId": "1025975051",
@@ -7888,99 +7318,6 @@
         "home": 2.14,
         "draw": 3.45,
         "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.75
-        },
-        {
-          "line": 2.5,
-          "over": 1.72,
-          "under": 1.98
-        },
-        {
-          "line": 3.5,
-          "over": 2.75,
-          "under": 1.38
-        },
-        {
-          "line": 4.5,
-          "over": 4.9,
-          "under": 1.13
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.06,
-          "away": 1.66
-        },
-        {
-          "line": -1.5,
-          "home": 3.8,
-          "away": 1.21
-        },
-        {
-          "line": -0.25,
-          "home": 1.81,
-          "away": 1.86
-        },
-        {
-          "line": 0.5,
-          "home": 1.34,
-          "away": 2.95
-        },
-        {
-          "line": -0.75,
-          "home": 2.4,
-          "away": 1.49
-        },
-        {
-          "line": -1.25,
-          "home": 3.45,
-          "away": 1.25
-        },
-        {
-          "line": -1,
-          "home": 3.1,
-          "away": 1.3
-        },
-        {
-          "line": 0.25,
-          "home": 1.43,
-          "away": 2.6
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.41,
-            "under": 2.63
-          },
-          {
-            "line": 9.5,
-            "over": 1.67,
-            "under": 2.02
-          },
-          {
-            "line": 12.5,
-            "over": 3.45,
-            "under": 1.25
-          },
-          {
-            "line": 11.5,
-            "over": 2.63,
-            "under": 1.4
-          },
-          {
-            "line": 10.5,
-            "over": 2.06,
-            "under": 1.64
-          }
-        ]
       }
     },
     {
@@ -7994,34 +7331,7 @@
         "home": 6,
         "draw": 4.4,
         "away": 1.4
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 3.45,
-          "under": 1.24
-        },
-        {
-          "line": 3.5,
-          "over": 2.08,
-          "under": 1.62
-        },
-        {
-          "line": 2.5,
-          "over": 1.43,
-          "under": 2.5
-        },
-        {
-          "line": 1.5,
-          "over": 1.12,
-          "under": 4.9
-        }
-      ]
+      }
     },
     {
       "eventId": "1026435575",
@@ -8034,34 +7344,7 @@
         "home": 2.55,
         "draw": 3.5,
         "away": 2.3
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.47,
-          "under": 2.38
-        },
-        {
-          "line": 5.5,
-          "over": 6.25,
-          "under": 1.07
-        },
-        {
-          "line": 1.5,
-          "over": 1.13,
-          "under": 4.6
-        },
-        {
-          "line": 3.5,
-          "over": 2.18,
-          "under": 1.56
-        },
-        {
-          "line": 4.5,
-          "over": 3.65,
-          "under": 1.21
-        }
-      ]
+      }
     },
     {
       "eventId": "1026435572",
@@ -8074,34 +7357,7 @@
         "home": 3.05,
         "draw": 3.75,
         "away": 1.93
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.33,
-          "under": 2.88
-        },
-        {
-          "line": 3.5,
-          "over": 1.86,
-          "under": 1.79
-        },
-        {
-          "line": 4.5,
-          "over": 2.9,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 5.75
-        },
-        {
-          "line": 5.5,
-          "over": 4.8,
-          "under": 1.12
-        }
-      ]
+      }
     },
     {
       "eventId": "1026435568",
@@ -8114,34 +7370,7 @@
         "home": 3.65,
         "draw": 4,
         "away": 1.7
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.6,
-          "under": 1.4
-        },
-        {
-          "line": 5.5,
-          "over": 4.3,
-          "under": 1.16
-        },
-        {
-          "line": 2.5,
-          "over": 1.27,
-          "under": 3.2
-        },
-        {
-          "line": 1.5,
-          "over": 1.07,
-          "under": 6.5
-        },
-        {
-          "line": 3.5,
-          "over": 1.71,
-          "under": 1.95
-        }
-      ]
+      }
     },
     {
       "eventId": "1027261491",
@@ -8154,34 +7383,7 @@
         "home": 4.9,
         "draw": 4.5,
         "away": 1.44
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 6,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 2.33,
-          "under": 1.49
-        },
-        {
-          "line": 5.5,
-          "over": 3.7,
-          "under": 1.21
-        },
-        {
-          "line": 3.5,
-          "over": 1.58,
-          "under": 2.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.22,
-          "under": 3.6
-        }
-      ]
+      }
     },
     {
       "eventId": "1026403183",
@@ -8194,34 +7396,7 @@
         "home": 2.4,
         "draw": 3.65,
         "away": 2.38
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.8,
-          "under": 1.35
-        },
-        {
-          "line": 1.5,
-          "over": 1.06,
-          "under": 6
-        },
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 3
-        }
-      ]
+      }
     },
     {
       "eventId": "1028163495",
@@ -8234,149 +7409,6 @@
         "home": 1.18,
         "draw": 8,
         "away": 19
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 4.4
-        },
-        {
-          "line": 4.5,
-          "over": 5.5,
-          "under": 1.16
-        },
-        {
-          "line": 3.5,
-          "over": 2.9,
-          "under": 1.43
-        },
-        {
-          "line": 2.5,
-          "over": 1.71,
-          "under": 2.16
-        },
-        {
-          "line": 5.5,
-          "over": 11,
-          "under": 1.04
-        },
-        {
-          "line": 0.5,
-          "over": 1.02,
-          "under": 14
-        }
-      ],
-      "ah": [
-        {
-          "line": -2.5,
-          "home": 2.55,
-          "away": 1.5
-        },
-        {
-          "line": -3,
-          "home": 4.1,
-          "away": 1.24
-        },
-        {
-          "line": -2.75,
-          "home": 3.05,
-          "away": 1.37
-        },
-        {
-          "line": -1.25,
-          "home": 1.38,
-          "away": 3
-        },
-        {
-          "line": -0.75,
-          "home": 1.18,
-          "away": 4.8
-        },
-        {
-          "line": -3.5,
-          "home": 4.9,
-          "away": 1.18
-        },
-        {
-          "line": -1,
-          "home": 1.22,
-          "away": 4.3
-        },
-        {
-          "line": -1.5,
-          "home": 1.56,
-          "away": 2.43
-        },
-        {
-          "line": -0.5,
-          "home": 1.15,
-          "away": 5.4
-        },
-        {
-          "line": -2.25,
-          "home": 2.25,
-          "away": 1.64
-        },
-        {
-          "line": -3.25,
-          "home": 4.5,
-          "away": 1.2
-        },
-        {
-          "line": -1.75,
-          "home": 1.71,
-          "away": 2.14
-        },
-        {
-          "line": -2,
-          "home": 1.95,
-          "away": 1.85
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 4.35,
-            "under": 1.18
-          },
-          {
-            "line": 5.5,
-            "over": 1.15,
-            "under": 4.8
-          },
-          {
-            "line": 8.5,
-            "over": 1.9,
-            "under": 1.82
-          },
-          {
-            "line": 10.5,
-            "over": 3.25,
-            "under": 1.3
-          },
-          {
-            "line": 12.5,
-            "over": 5.8,
-            "under": 1.1
-          },
-          {
-            "line": 9.5,
-            "over": 2.45,
-            "under": 1.5
-          },
-          {
-            "line": 6.5,
-            "over": 1.3,
-            "under": 3.25
-          },
-          {
-            "line": 7.5,
-            "over": 1.54,
-            "under": 2.35
-          }
-        ]
       }
     },
     {
@@ -8390,34 +7422,7 @@
         "home": 1.5,
         "draw": 4.1,
         "away": 5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.46,
-          "under": 2.4
-        },
-        {
-          "line": 3.5,
-          "over": 2.16,
-          "under": 1.57
-        },
-        {
-          "line": 5.5,
-          "over": 6.1,
-          "under": 1.07
-        },
-        {
-          "line": 4.5,
-          "over": 3.6,
-          "under": 1.22
-        },
-        {
-          "line": 1.5,
-          "over": 1.13,
-          "under": 4.7
-        }
-      ]
+      }
     },
     {
       "eventId": "1028125925",
@@ -8430,29 +7435,7 @@
         "home": 2.14,
         "draw": 3.3,
         "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.7,
-          "under": 1.13
-        },
-        {
-          "line": 2.5,
-          "over": 1.67,
-          "under": 2
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.75
-        },
-        {
-          "line": 3.5,
-          "over": 2.65,
-          "under": 1.38
-        }
-      ]
+      }
     },
     {
       "eventId": "1028125924",
@@ -8465,29 +7448,7 @@
         "home": 2.38,
         "draw": 3.2,
         "away": 2.63
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.45
-        },
-        {
-          "line": 3.5,
-          "over": 2.9,
-          "under": 1.33
-        },
-        {
-          "line": 4.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.87
-        }
-      ]
+      }
     },
     {
       "eventId": "1026319097",
@@ -8500,29 +7461,7 @@
         "home": 1.41,
         "draw": 4.1,
         "away": 6.5
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.34
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.6
-        },
-        {
-          "line": 2.5,
-          "over": 1.72,
-          "under": 1.94
-        },
-        {
-          "line": 4.5,
-          "over": 5,
-          "under": 1.11
-        }
-      ]
+      }
     },
     {
       "eventId": "1028174858",
@@ -8535,144 +7474,6 @@
         "home": 1.49,
         "draw": 4.2,
         "away": 9
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 9,
-          "under": 1.07
-        },
-        {
-          "line": 3.5,
-          "over": 4.1,
-          "under": 1.25
-        },
-        {
-          "line": 0.5,
-          "over": 1.07,
-          "under": 9
-        },
-        {
-          "line": 5.5,
-          "over": 18,
-          "under": 1.01
-        },
-        {
-          "line": 2.5,
-          "over": 2.18,
-          "under": 1.7
-        },
-        {
-          "line": 1.5,
-          "over": 1.37,
-          "under": 3.2
-        }
-      ],
-      "ah": [
-        {
-          "line": -2.5,
-          "home": 4.8,
-          "away": 1.18
-        },
-        {
-          "line": -0.5,
-          "home": 1.45,
-          "away": 2.75
-        },
-        {
-          "line": -0.25,
-          "home": 1.29,
-          "away": 3.6
-        },
-        {
-          "line": -1,
-          "home": 1.77,
-          "away": 2.05
-        },
-        {
-          "line": -2,
-          "home": 3.9,
-          "away": 1.26
-        },
-        {
-          "line": 0.5,
-          "home": 1.09,
-          "away": 7.5
-        },
-        {
-          "line": -0.75,
-          "home": 1.57,
-          "away": 2.4
-        },
-        {
-          "line": -2.25,
-          "home": 4.35,
-          "away": 1.21
-        },
-        {
-          "line": 0.25,
-          "home": 1.1,
-          "away": 6.75
-        },
-        {
-          "line": -1.5,
-          "home": 2.38,
-          "away": 1.58
-        },
-        {
-          "line": -1.25,
-          "home": 2.08,
-          "away": 1.75
-        },
-        {
-          "line": -1.75,
-          "home": 2.85,
-          "away": 1.42
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 2.55,
-            "under": 1.47
-          },
-          {
-            "line": 12.5,
-            "over": 6.4,
-            "under": 1.09
-          },
-          {
-            "line": 8.5,
-            "over": 1.97,
-            "under": 1.76
-          },
-          {
-            "line": 11.5,
-            "over": 4.7,
-            "under": 1.16
-          },
-          {
-            "line": 10.5,
-            "over": 3.35,
-            "under": 1.28
-          },
-          {
-            "line": 7.5,
-            "over": 1.58,
-            "under": 2.25
-          },
-          {
-            "line": 5.5,
-            "over": 1.17,
-            "under": 4.5
-          },
-          {
-            "line": 6.5,
-            "over": 1.33,
-            "under": 3.1
-          }
-        ]
       }
     },
     {
@@ -8686,29 +7487,7 @@
         "home": 2.75,
         "draw": 3.25,
         "away": 2.25
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.35
-        },
-        {
-          "line": 4.5,
-          "over": 4.9,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 1.72,
-          "under": 1.93
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.6
-        }
-      ]
+      }
     },
     {
       "eventId": "1026319106",
@@ -8721,29 +7500,7 @@
         "home": 2.45,
         "draw": 3.25,
         "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.55
-        },
-        {
-          "line": 2.5,
-          "over": 1.76,
-          "under": 1.89
-        },
-        {
-          "line": 4.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 3.5,
-          "over": 2.88,
-          "under": 1.33
-        }
-      ]
+      }
     },
     {
       "eventId": "1026390420",
@@ -8756,29 +7513,7 @@
         "home": 2,
         "draw": 3.45,
         "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.33,
-          "under": 1.49
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.3
-        },
-        {
-          "line": 4.5,
-          "over": 3.95,
-          "under": 1.18
-        },
-        {
-          "line": 2.5,
-          "over": 1.54,
-          "under": 2.23
-        }
-      ]
+      }
     },
     {
       "eventId": "1026390422",
@@ -8791,29 +7526,7 @@
         "home": 2.2,
         "draw": 3.35,
         "away": 2.7
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.4,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 1.61,
-          "under": 2.08
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.42
-        }
-      ]
+      }
     },
     {
       "eventId": "1026253383",
@@ -8826,29 +7539,7 @@
         "home": 1.98,
         "draw": 3.4,
         "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.35,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4
-        },
-        {
-          "line": 3.5,
-          "over": 2.5,
-          "under": 1.43
-        },
-        {
-          "line": 2.5,
-          "over": 1.61,
-          "under": 2.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1026253389",
@@ -8861,34 +7552,7 @@
         "home": 4.7,
         "draw": 3.95,
         "away": 1.52
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.16,
-          "under": 1.57
-        },
-        {
-          "line": 4.5,
-          "over": 3.6,
-          "under": 1.22
-        },
-        {
-          "line": 1.5,
-          "over": 1.13,
-          "under": 4.75
-        },
-        {
-          "line": 5.5,
-          "over": 6.1,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.46,
-          "under": 2.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1026390441",
@@ -8901,29 +7565,7 @@
         "home": 4.9,
         "draw": 3.85,
         "away": 1.5
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.45,
-          "under": 1.44
-        },
-        {
-          "line": 2.5,
-          "over": 1.58,
-          "under": 2.14
-        },
-        {
-          "line": 1.5,
-          "over": 1.17,
-          "under": 4.1
-        },
-        {
-          "line": 4.5,
-          "over": 4.2,
-          "under": 1.16
-        }
-      ]
+      }
     },
     {
       "eventId": "1027384077",
@@ -8936,29 +7578,7 @@
         "home": 2.12,
         "draw": 2.9,
         "away": 3.35
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 4.5,
-          "under": 1.14
-        },
-        {
-          "line": 1.5,
-          "over": 1.46,
-          "under": 2.43
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.6
-        },
-        {
-          "line": 2.5,
-          "over": 2.43,
-          "under": 1.45
-        }
-      ]
+      }
     },
     {
       "eventId": "1028189080",
@@ -8971,24 +7591,7 @@
         "home": 1.67,
         "draw": 3.35,
         "away": 4.9
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.95,
-          "under": 1.21
-        },
-        {
-          "line": 2.5,
-          "over": 2.17,
-          "under": 1.61
-        },
-        {
-          "line": 1.5,
-          "over": 1.37,
-          "under": 2.85
-        }
-      ]
+      }
     },
     {
       "eventId": "1026355522",
@@ -9001,29 +7604,7 @@
         "home": 1.83,
         "draw": 3.25,
         "away": 3.9
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.35,
-          "under": 1.25
-        },
-        {
-          "line": 2.5,
-          "over": 1.95,
-          "under": 1.71
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3
-        },
-        {
-          "line": 4.5,
-          "over": 6.1,
-          "under": 1.07
-        }
-      ]
+      }
     },
     {
       "eventId": "1026293765",
@@ -9036,84 +7617,6 @@
         "home": 2.16,
         "draw": 2.95,
         "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.41,
-          "under": 2.55
-        },
-        {
-          "line": 3.5,
-          "over": 4.25,
-          "under": 1.15
-        },
-        {
-          "line": 0.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 2.5,
-          "over": 2.32,
-          "under": 1.5
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 4.3,
-          "away": 1.17
-        },
-        {
-          "line": -0.5,
-          "home": 2.14,
-          "away": 1.61
-        },
-        {
-          "line": -1.25,
-          "home": 3.9,
-          "away": 1.21
-        },
-        {
-          "line": 0.5,
-          "home": 1.3,
-          "away": 3.1
-        },
-        {
-          "line": -1,
-          "home": 3.45,
-          "away": 1.26
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 7.5,
-            "over": 1.5,
-            "under": 2.35
-          },
-          {
-            "line": 6.5,
-            "over": 1.28,
-            "under": 3.25
-          },
-          {
-            "line": 9.5,
-            "over": 2.4,
-            "under": 1.49
-          },
-          {
-            "line": 8.5,
-            "over": 1.86,
-            "under": 1.82
-          },
-          {
-            "line": 10.5,
-            "over": 3.2,
-            "under": 1.29
-          }
-        ]
       }
     },
     {
@@ -9127,84 +7630,6 @@
         "home": 2.75,
         "draw": 2.95,
         "away": 2.43
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.06,
-          "under": 6.1
-        },
-        {
-          "line": 2.5,
-          "over": 2.38,
-          "under": 1.47
-        },
-        {
-          "line": 3.5,
-          "over": 4.6,
-          "under": 1.13
-        },
-        {
-          "line": 1.5,
-          "over": 1.43,
-          "under": 2.5
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.49,
-          "away": 2.4
-        },
-        {
-          "line": -0.5,
-          "home": 2.7,
-          "away": 1.4
-        },
-        {
-          "line": 1.25,
-          "home": 1.15,
-          "away": 4.6
-        },
-        {
-          "line": 1.5,
-          "home": 1.13,
-          "away": 5
-        },
-        {
-          "line": 1,
-          "home": 1.18,
-          "away": 4.2
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 3.95,
-            "under": 1.2
-          },
-          {
-            "line": 10.5,
-            "over": 2.95,
-            "under": 1.34
-          },
-          {
-            "line": 9.5,
-            "over": 2.28,
-            "under": 1.55
-          },
-          {
-            "line": 7.5,
-            "over": 1.47,
-            "under": 2.45
-          },
-          {
-            "line": 8.5,
-            "over": 1.79,
-            "under": 1.89
-          }
-        ]
       }
     },
     {
@@ -9218,79 +7643,6 @@
         "home": 1.67,
         "draw": 3.35,
         "away": 4.6
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.35,
-          "under": 2.8
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.02
-        },
-        {
-          "line": 3.5,
-          "over": 3.95,
-          "under": 1.18
-        },
-        {
-          "line": 2.5,
-          "over": 2.15,
-          "under": 1.58
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.68,
-          "away": 2.02
-        },
-        {
-          "line": 0.5,
-          "home": 1.17,
-          "away": 4.25
-        },
-        {
-          "line": 0.25,
-          "home": 1.21,
-          "away": 3.8
-        },
-        {
-          "line": -1,
-          "home": 2.3,
-          "away": 1.54
-        },
-        {
-          "line": -1.5,
-          "home": 3,
-          "away": 1.32
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 2.43,
-            "under": 1.48
-          },
-          {
-            "line": 10.5,
-            "over": 3.25,
-            "under": 1.28
-          },
-          {
-            "line": 7.5,
-            "over": 1.53,
-            "under": 2.3
-          },
-          {
-            "line": 8.5,
-            "over": 1.89,
-            "under": 1.8
-          }
-        ]
       }
     },
     {
@@ -9304,29 +7656,7 @@
         "home": 4.6,
         "draw": 3.8,
         "away": 1.58
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.54,
-          "under": 2.23
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.25
-        },
-        {
-          "line": 4.5,
-          "over": 3.95,
-          "under": 1.18
-        },
-        {
-          "line": 3.5,
-          "over": 2.33,
-          "under": 1.49
-        }
-      ]
+      }
     },
     {
       "eventId": "1026355297",
@@ -9339,29 +7669,7 @@
         "home": 4.7,
         "draw": 3.55,
         "away": 1.63
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.45
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.32
-        },
-        {
-          "line": 2.5,
-          "over": 1.78,
-          "under": 1.87
-        },
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1028085632",
@@ -9374,29 +7682,7 @@
         "home": 2.45,
         "draw": 3.15,
         "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.88,
-          "under": 1.77
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.2
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.28
-        }
-      ]
+      }
     },
     {
       "eventId": "1026658668",
@@ -9409,84 +7695,6 @@
         "home": 2.08,
         "draw": 3.3,
         "away": 3.4
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.98,
-          "under": 1.72
-        },
-        {
-          "line": 3.5,
-          "over": 3.45,
-          "under": 1.26
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.1
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2,
-          "away": 1.7
-        },
-        {
-          "line": -1.5,
-          "home": 3.8,
-          "away": 1.22
-        },
-        {
-          "line": -1.25,
-          "home": 3.4,
-          "away": 1.26
-        },
-        {
-          "line": 0.5,
-          "home": 1.3,
-          "away": 3.2
-        },
-        {
-          "line": -1,
-          "home": 3,
-          "away": 1.32
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 3.55,
-            "under": 1.24
-          },
-          {
-            "line": 9.5,
-            "over": 1.72,
-            "under": 1.97
-          },
-          {
-            "line": 10.5,
-            "over": 2.12,
-            "under": 1.62
-          },
-          {
-            "line": 11.5,
-            "over": 2.75,
-            "under": 1.38
-          },
-          {
-            "line": 8.5,
-            "over": 1.44,
-            "under": 2.55
-          }
-        ]
       }
     },
     {
@@ -9500,84 +7708,6 @@
         "home": 3,
         "draw": 3.5,
         "away": 2.18
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.02
-        },
-        {
-          "line": 3.5,
-          "over": 2.7,
-          "under": 1.4
-        },
-        {
-          "line": 4.5,
-          "over": 4.8,
-          "under": 1.14
-        },
-        {
-          "line": 1.5,
-          "over": 1.21,
-          "under": 3.8
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 1.2,
-          "away": 3.95
-        },
-        {
-          "line": 0.5,
-          "home": 1.63,
-          "away": 2.1
-        },
-        {
-          "line": -0.5,
-          "home": 2.85,
-          "away": 1.36
-        },
-        {
-          "line": 1,
-          "home": 1.28,
-          "away": 3.2
-        },
-        {
-          "line": 1.25,
-          "home": 1.23,
-          "away": 3.6
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 3.5,
-            "under": 1.25
-          },
-          {
-            "line": 9.5,
-            "over": 1.7,
-            "under": 2
-          },
-          {
-            "line": 11.5,
-            "over": 2.65,
-            "under": 1.41
-          },
-          {
-            "line": 10.5,
-            "over": 2.1,
-            "under": 1.64
-          },
-          {
-            "line": 8.5,
-            "over": 1.42,
-            "under": 2.63
-          }
-        ]
       }
     },
     {
@@ -9591,24 +7721,7 @@
         "home": 2.25,
         "draw": 3.15,
         "away": 3
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.08,
-          "under": 1.67
-        },
-        {
-          "line": 1.5,
-          "over": 1.34,
-          "under": 3
-        },
-        {
-          "line": 3.5,
-          "over": 3.7,
-          "under": 1.23
-        }
-      ]
+      }
     },
     {
       "eventId": "1028131659",
@@ -9621,24 +7734,7 @@
         "home": 5,
         "draw": 3.5,
         "away": 1.63
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.6,
-          "under": 1.25
-        },
-        {
-          "line": 1.5,
-          "over": 1.32,
-          "under": 3.1
-        },
-        {
-          "line": 2.5,
-          "over": 2.02,
-          "under": 1.7
-        }
-      ]
+      }
     },
     {
       "eventId": "1028189081",
@@ -9651,24 +7747,7 @@
         "home": 1.63,
         "draw": 3.45,
         "away": 5.1
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.37,
-          "under": 2.85
-        },
-        {
-          "line": 2.5,
-          "over": 2.15,
-          "under": 1.62
-        },
-        {
-          "line": 3.5,
-          "over": 3.85,
-          "under": 1.22
-        }
-      ]
+      }
     },
     {
       "eventId": "1028189086",
@@ -9681,24 +7760,7 @@
         "home": 1.79,
         "draw": 3.4,
         "away": 4.1
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.97,
-          "under": 1.75
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.15
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.27
-        }
-      ]
+      }
     },
     {
       "eventId": "1026658709",
@@ -9711,104 +7773,6 @@
         "home": 1.71,
         "draw": 4.2,
         "away": 4
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.95
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 6
-        },
-        {
-          "line": 3.5,
-          "over": 1.88,
-          "under": 1.81
-        },
-        {
-          "line": 4.5,
-          "over": 2.95,
-          "under": 1.33
-        },
-        {
-          "line": 5.5,
-          "over": 5,
-          "under": 1.13
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 2.6,
-          "away": 1.42
-        },
-        {
-          "line": -2.5,
-          "home": 4.5,
-          "away": 1.15
-        },
-        {
-          "line": -0.5,
-          "home": 1.67,
-          "away": 2.05
-        },
-        {
-          "line": 0.5,
-          "home": 1.23,
-          "away": 3.7
-        },
-        {
-          "line": 0.25,
-          "home": 1.27,
-          "away": 3.35
-        },
-        {
-          "line": -1,
-          "home": 2.08,
-          "away": 1.64
-        },
-        {
-          "line": -2,
-          "home": 3.95,
-          "away": 1.2
-        },
-        {
-          "line": -2.25,
-          "home": 4.25,
-          "away": 1.17
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.43,
-            "under": 2.6
-          },
-          {
-            "line": 9.5,
-            "over": 1.71,
-            "under": 2
-          },
-          {
-            "line": 10.5,
-            "over": 2.1,
-            "under": 1.63
-          },
-          {
-            "line": 12.5,
-            "over": 3.55,
-            "under": 1.24
-          },
-          {
-            "line": 11.5,
-            "over": 2.7,
-            "under": 1.38
-          }
-        ]
       }
     },
     {
@@ -9822,99 +7786,6 @@
         "home": 1.73,
         "draw": 3.75,
         "away": 4.3
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.41
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.95
-        },
-        {
-          "line": 2.5,
-          "over": 1.66,
-          "under": 2.06
-        },
-        {
-          "line": 4.5,
-          "over": 4.7,
-          "under": 1.15
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.2,
-          "away": 3.95
-        },
-        {
-          "line": -0.5,
-          "home": 1.68,
-          "away": 2.02
-        },
-        {
-          "line": -2.5,
-          "home": 5.3,
-          "away": 1.11
-        },
-        {
-          "line": -2.25,
-          "home": 5,
-          "away": 1.13
-        },
-        {
-          "line": 0.25,
-          "home": 1.24,
-          "away": 3.55
-        },
-        {
-          "line": -1.5,
-          "home": 2.8,
-          "away": 1.36
-        },
-        {
-          "line": -1,
-          "home": 2.2,
-          "away": 1.57
-        },
-        {
-          "line": -2,
-          "home": 4.6,
-          "away": 1.15
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 2.07,
-            "under": 1.65
-          },
-          {
-            "line": 8.5,
-            "over": 1.41,
-            "under": 2.63
-          },
-          {
-            "line": 9.5,
-            "over": 1.68,
-            "under": 2.02
-          },
-          {
-            "line": 12.5,
-            "over": 3.4,
-            "under": 1.26
-          },
-          {
-            "line": 11.5,
-            "over": 2.63,
-            "under": 1.42
-          }
-        ]
       }
     },
     {
@@ -9928,34 +7799,7 @@
         "home": 1.38,
         "draw": 4.75,
         "away": 5.2
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.52,
-          "under": 2.2
-        },
-        {
-          "line": 2.5,
-          "over": 1.17,
-          "under": 3.85
-        },
-        {
-          "line": 6.5,
-          "over": 5.6,
-          "under": 1.06
-        },
-        {
-          "line": 5.5,
-          "over": 3.5,
-          "under": 1.21
-        },
-        {
-          "line": 4.5,
-          "over": 2.2,
-          "under": 1.52
-        }
-      ]
+      }
     },
     {
       "eventId": "1026051188",
@@ -9968,109 +7812,6 @@
         "home": 2.23,
         "draw": 3.4,
         "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.78,
-          "under": 1.9
-        },
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.11
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.33
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.6
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.37,
-          "away": 2.8
-        },
-        {
-          "line": -0.5,
-          "home": 2.17,
-          "away": 1.6
-        },
-        {
-          "line": -1.25,
-          "home": 3.7,
-          "away": 1.22
-        },
-        {
-          "line": -1,
-          "home": 3.35,
-          "away": 1.27
-        },
-        {
-          "line": -0.75,
-          "home": 2.55,
-          "away": 1.43
-        },
-        {
-          "line": -0.25,
-          "home": 1.9,
-          "away": 1.79
-        },
-        {
-          "line": 0.25,
-          "home": 1.47,
-          "away": 2.45
-        },
-        {
-          "line": -1.5,
-          "home": 4.1,
-          "away": 1.19
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.38,
-            "under": 2.75
-          },
-          {
-            "line": 11.5,
-            "over": 2.55,
-            "under": 1.45
-          },
-          {
-            "line": 10.5,
-            "over": 2,
-            "under": 1.7
-          },
-          {
-            "line": 13.5,
-            "over": 4.25,
-            "under": 1.17
-          },
-          {
-            "line": 9.5,
-            "over": 1.63,
-            "under": 2.1
-          },
-          {
-            "line": 12.5,
-            "over": 3.25,
-            "under": 1.28
-          },
-          {
-            "line": 7.5,
-            "over": 1.22,
-            "under": 3.75
-          }
-        ]
       }
     },
     {
@@ -10084,89 +7825,6 @@
         "home": 1.84,
         "draw": 3.9,
         "away": 3.5
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.05,
-          "under": 1.67
-        },
-        {
-          "line": 2.5,
-          "over": 1.41,
-          "under": 2.63
-        },
-        {
-          "line": 1.5,
-          "over": 1.11,
-          "under": 5.3
-        },
-        {
-          "line": 5.5,
-          "over": 5.8,
-          "under": 1.09
-        },
-        {
-          "line": 4.5,
-          "over": 3.4,
-          "under": 1.26
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.28,
-          "away": 3.3
-        },
-        {
-          "line": -0.5,
-          "home": 1.8,
-          "away": 1.88
-        },
-        {
-          "line": -1.5,
-          "home": 3,
-          "away": 1.33
-        },
-        {
-          "line": 0.25,
-          "home": 1.33,
-          "away": 2.95
-        },
-        {
-          "line": -1,
-          "home": 2.4,
-          "away": 1.49
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 2.38,
-            "under": 1.5
-          },
-          {
-            "line": 11.5,
-            "over": 1.92,
-            "under": 1.76
-          },
-          {
-            "line": 10.5,
-            "over": 1.6,
-            "under": 2.17
-          },
-          {
-            "line": 9.5,
-            "over": 1.37,
-            "under": 2.8
-          },
-          {
-            "line": 13.5,
-            "over": 3,
-            "under": 1.33
-          }
-        ]
       }
     },
     {
@@ -10180,24 +7838,7 @@
         "home": 3.05,
         "draw": 3.15,
         "away": 2.05
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.3,
-          "under": 1.29
-        },
-        {
-          "line": 1.5,
-          "over": 1.28,
-          "under": 3.3
-        },
-        {
-          "line": 2.5,
-          "over": 1.91,
-          "under": 1.79
-        }
-      ]
+      }
     },
     {
       "eventId": "1026504971",
@@ -10210,34 +7851,7 @@
         "home": 2.3,
         "draw": 3.55,
         "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.12,
-          "under": 4.8
-        },
-        {
-          "line": 5.5,
-          "over": 5.8,
-          "under": 1.08
-        },
-        {
-          "line": 4.5,
-          "over": 3.45,
-          "under": 1.23
-        },
-        {
-          "line": 2.5,
-          "over": 1.44,
-          "under": 2.48
-        },
-        {
-          "line": 3.5,
-          "over": 2.1,
-          "under": 1.6
-        }
-      ]
+      }
     },
     {
       "eventId": "1027882254",
@@ -10250,29 +7864,7 @@
         "home": 2.35,
         "draw": 3,
         "away": 2.63
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.28,
-          "under": 3.15
-        },
-        {
-          "line": 2.5,
-          "over": 1.9,
-          "under": 1.75
-        },
-        {
-          "line": 3.5,
-          "over": 3.2,
-          "under": 1.27
-        },
-        {
-          "line": 4.5,
-          "over": 5.8,
-          "under": 1.08
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309595",
@@ -10285,34 +7877,7 @@
         "home": 2.8,
         "draw": 3.8,
         "away": 1.97
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.2,
-          "under": 3.55
-        },
-        {
-          "line": 4.5,
-          "over": 2.35,
-          "under": 1.46
-        },
-        {
-          "line": 6.5,
-          "over": 6.25,
-          "under": 1.04
-        },
-        {
-          "line": 3.5,
-          "over": 1.58,
-          "under": 2.08
-        },
-        {
-          "line": 5.5,
-          "over": 3.8,
-          "under": 1.18
-        }
-      ]
+      }
     },
     {
       "eventId": "1026062345",
@@ -10325,129 +7890,6 @@
         "home": 2.65,
         "draw": 3.55,
         "away": 2.75
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.8,
-          "under": 1.88
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.25,
-          "under": 3.45
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.4,
-          "away": 1.49
-        },
-        {
-          "line": 1,
-          "home": 1.18,
-          "away": 4.2
-        },
-        {
-          "line": 1.5,
-          "home": 1.13,
-          "away": 5
-        },
-        {
-          "line": 0.25,
-          "home": 1.58,
-          "away": 2.18
-        },
-        {
-          "line": 1.25,
-          "home": 1.15,
-          "away": 4.6
-        },
-        {
-          "line": -0.25,
-          "home": 2.1,
-          "away": 1.62
-        },
-        {
-          "line": 0.5,
-          "home": 1.46,
-          "away": 2.48
-        },
-        {
-          "line": 0.75,
-          "home": 1.32,
-          "away": 3.05
-        },
-        {
-          "line": -1.5,
-          "home": 4.7,
-          "away": 1.14
-        },
-        {
-          "line": -0.75,
-          "home": 2.9,
-          "away": 1.34
-        },
-        {
-          "line": -1,
-          "home": 3.95,
-          "away": 1.2
-        },
-        {
-          "line": -1.25,
-          "home": 4.35,
-          "away": 1.17
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.97,
-            "under": 1.73
-          },
-          {
-            "line": 9.5,
-            "over": 1.61,
-            "under": 2.14
-          },
-          {
-            "line": 8.5,
-            "over": 1.37,
-            "under": 2.8
-          },
-          {
-            "line": 11.5,
-            "over": 2.48,
-            "under": 1.46
-          },
-          {
-            "line": 12.5,
-            "over": 3.2,
-            "under": 1.29
-          },
-          {
-            "line": 7.5,
-            "over": 1.2,
-            "under": 3.9
-          },
-          {
-            "line": 13.5,
-            "over": 4.2,
-            "under": 1.18
-          }
-        ]
       }
     },
     {
@@ -10461,109 +7903,6 @@
         "home": 3.45,
         "draw": 3.65,
         "away": 2.2
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.3,
-          "under": 1.11
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.6
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.91
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.34
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.25,
-          "home": 1.91,
-          "away": 1.79
-        },
-        {
-          "line": -0.25,
-          "home": 2.7,
-          "away": 1.4
-        },
-        {
-          "line": 1,
-          "home": 1.32,
-          "away": 2.95
-        },
-        {
-          "line": 1.5,
-          "home": 1.23,
-          "away": 3.65
-        },
-        {
-          "line": -0.5,
-          "home": 3.05,
-          "away": 1.32
-        },
-        {
-          "line": 1.25,
-          "home": 1.26,
-          "away": 3.3
-        },
-        {
-          "line": 0.75,
-          "home": 1.5,
-          "away": 2.33
-        },
-        {
-          "line": 0.5,
-          "home": 1.68,
-          "away": 2.04
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.3,
-            "under": 3.1
-          },
-          {
-            "line": 9.5,
-            "over": 1.52,
-            "under": 2.33
-          },
-          {
-            "line": 12.5,
-            "over": 2.88,
-            "under": 1.35
-          },
-          {
-            "line": 10.5,
-            "over": 1.81,
-            "under": 1.88
-          },
-          {
-            "line": 13.5,
-            "over": 3.75,
-            "under": 1.22
-          },
-          {
-            "line": 11.5,
-            "over": 2.25,
-            "under": 1.55
-          },
-          {
-            "line": 7.5,
-            "over": 1.17,
-            "under": 4.35
-          }
-        ]
       }
     },
     {
@@ -10577,29 +7916,7 @@
         "home": 2.48,
         "draw": 3.15,
         "away": 2.48
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.85,
-          "under": 1.79
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.09
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.25
-        },
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.28
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309691",
@@ -10612,34 +7929,7 @@
         "home": 2.33,
         "draw": 3.65,
         "away": 2.38
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.05,
-          "under": 6
-        },
-        {
-          "line": 2.5,
-          "over": 1.28,
-          "under": 3
-        },
-        {
-          "line": 4.5,
-          "over": 2.8,
-          "under": 1.33
-        },
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.11
-        },
-        {
-          "line": 3.5,
-          "over": 1.77,
-          "under": 1.83
-        }
-      ]
+      }
     },
     {
       "eventId": "1028190232",
@@ -10652,24 +7942,7 @@
         "home": 1.52,
         "draw": 3.65,
         "away": 4.9
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.88,
-          "under": 1.36
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.7
-        },
-        {
-          "line": 2.5,
-          "over": 1.75,
-          "under": 1.97
-        }
-      ]
+      }
     },
     {
       "eventId": "1027384078",
@@ -10682,29 +7955,7 @@
         "home": 2.02,
         "draw": 2.88,
         "away": 3.75
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.52,
-          "under": 2.28
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 3.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 2.63,
-          "under": 1.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1028190194",
@@ -10717,24 +7968,7 @@
         "home": 3.15,
         "draw": 3.15,
         "away": 2
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.45,
-          "under": 1.27
-        },
-        {
-          "line": 2.5,
-          "over": 1.97,
-          "under": 1.74
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.15
-        }
-      ]
+      }
     },
     {
       "eventId": "1028086707",
@@ -10747,34 +7981,7 @@
         "home": 2.63,
         "draw": 3.45,
         "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.28,
-          "under": 1.52
-        },
-        {
-          "line": 2.5,
-          "over": 1.5,
-          "under": 2.3
-        },
-        {
-          "line": 5.5,
-          "over": 6.5,
-          "under": 1.04
-        },
-        {
-          "line": 4.5,
-          "over": 3.8,
-          "under": 1.2
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1026305157",
@@ -10787,29 +7994,7 @@
         "home": 2.6,
         "draw": 3.2,
         "away": 2.43
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.29
-        },
-        {
-          "line": 4.5,
-          "over": 5.5,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.83,
-          "under": 1.81
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.3
-        }
-      ]
+      }
     },
     {
       "eventId": "1026504965",
@@ -10822,34 +8007,7 @@
         "home": 3.1,
         "draw": 3.8,
         "away": 1.91
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.75,
-          "under": 1.36
-        },
-        {
-          "line": 5.5,
-          "over": 4.4,
-          "under": 1.15
-        },
-        {
-          "line": 3.5,
-          "over": 1.77,
-          "under": 1.87
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 6.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 3.05
-        }
-      ]
+      }
     },
     {
       "eventId": "1027261493",
@@ -10862,34 +8020,7 @@
         "home": 1.53,
         "draw": 4.3,
         "away": 4.2
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.18,
-          "under": 1.56
-        },
-        {
-          "line": 2.5,
-          "over": 1.19,
-          "under": 3.9
-        },
-        {
-          "line": 6.5,
-          "over": 5.6,
-          "under": 1.09
-        },
-        {
-          "line": 5.5,
-          "over": 3.4,
-          "under": 1.24
-        },
-        {
-          "line": 3.5,
-          "over": 1.52,
-          "under": 2.28
-        }
-      ]
+      }
     },
     {
       "eventId": "1027309612",
@@ -10902,34 +8033,7 @@
         "home": 2.6,
         "draw": 3.65,
         "away": 2.15
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.82,
-          "under": 1.78
-        },
-        {
-          "line": 5.5,
-          "over": 4.7,
-          "under": 1.11
-        },
-        {
-          "line": 4.5,
-          "over": 2.88,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.05,
-          "under": 5.8
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 2.9
-        }
-      ]
+      }
     },
     {
       "eventId": "1026051178",
@@ -10942,104 +8046,6 @@
         "home": 1.67,
         "draw": 3.85,
         "away": 4.3
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 4.35,
-          "under": 1.17
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4.2
-        },
-        {
-          "line": 3.5,
-          "over": 2.48,
-          "under": 1.47
-        },
-        {
-          "line": 2.5,
-          "over": 1.57,
-          "under": 2.2
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.25,
-          "home": 1.47,
-          "away": 2.45
-        },
-        {
-          "line": 0.5,
-          "home": 1.2,
-          "away": 3.95
-        },
-        {
-          "line": -1.25,
-          "home": 2.43,
-          "away": 1.47
-        },
-        {
-          "line": -0.5,
-          "home": 1.65,
-          "away": 2.08
-        },
-        {
-          "line": -1,
-          "home": 2.12,
-          "away": 1.61
-        },
-        {
-          "line": 0.25,
-          "home": 1.24,
-          "away": 3.6
-        },
-        {
-          "line": -1.5,
-          "home": 2.75,
-          "away": 1.38
-        },
-        {
-          "line": -0.75,
-          "home": 1.82,
-          "away": 1.85
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 2.63,
-            "under": 1.41
-          },
-          {
-            "line": 10.5,
-            "over": 1.72,
-            "under": 1.98
-          },
-          {
-            "line": 9.5,
-            "over": 1.45,
-            "under": 2.5
-          },
-          {
-            "line": 8.5,
-            "over": 1.27,
-            "under": 3.35
-          },
-          {
-            "line": 11.5,
-            "over": 2.1,
-            "under": 1.63
-          },
-          {
-            "line": 13.5,
-            "over": 3.4,
-            "under": 1.26
-          }
-        ]
       }
     },
     {
@@ -11053,109 +8059,6 @@
         "home": 3.05,
         "draw": 3.5,
         "away": 2.12
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.42
-        },
-        {
-          "line": 2.5,
-          "over": 1.65,
-          "under": 2.08
-        },
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.1
-        },
-        {
-          "line": 4.5,
-          "over": 4.5,
-          "under": 1.15
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 1.21,
-          "away": 3.8
-        },
-        {
-          "line": 0.5,
-          "home": 1.65,
-          "away": 2.07
-        },
-        {
-          "line": -0.5,
-          "home": 2.88,
-          "away": 1.35
-        },
-        {
-          "line": 1,
-          "home": 1.3,
-          "away": 3.05
-        },
-        {
-          "line": 1.25,
-          "home": 1.25,
-          "away": 3.45
-        },
-        {
-          "line": 0.25,
-          "home": 1.86,
-          "away": 1.83
-        },
-        {
-          "line": -0.25,
-          "home": 2.55,
-          "away": 1.44
-        },
-        {
-          "line": 0.75,
-          "home": 1.48,
-          "away": 2.4
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 1.82,
-            "under": 1.86
-          },
-          {
-            "line": 13.5,
-            "over": 5.2,
-            "under": 1.12
-          },
-          {
-            "line": 12.5,
-            "over": 3.95,
-            "under": 1.2
-          },
-          {
-            "line": 10.5,
-            "over": 2.3,
-            "under": 1.54
-          },
-          {
-            "line": 7.5,
-            "over": 1.29,
-            "under": 3.2
-          },
-          {
-            "line": 8.5,
-            "over": 1.5,
-            "under": 2.38
-          },
-          {
-            "line": 11.5,
-            "over": 2.95,
-            "under": 1.33
-          }
-        ]
       }
     },
     {
@@ -11169,29 +8072,7 @@
         "home": 1.72,
         "draw": 4,
         "away": 3.45
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.2,
-          "under": 1.52
-        },
-        {
-          "line": 5.5,
-          "over": 3.45,
-          "under": 1.21
-        },
-        {
-          "line": 3.5,
-          "over": 1.52,
-          "under": 2.23
-        },
-        {
-          "line": 2.5,
-          "over": 1.17,
-          "under": 3.8
-        }
-      ]
+      }
     },
     {
       "eventId": "1026403188",
@@ -11204,34 +8085,7 @@
         "home": 2.2,
         "draw": 3.65,
         "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.6
-        },
-        {
-          "line": 5.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.85
-        },
-        {
-          "line": 3.5,
-          "over": 1.88,
-          "under": 1.76
-        },
-        {
-          "line": 4.5,
-          "over": 2.95,
-          "under": 1.3
-        }
-      ]
+      }
     },
     {
       "eventId": "1026030400",
@@ -11244,124 +8098,6 @@
         "home": 5.5,
         "draw": 4.5,
         "away": 1.46
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.8
-        },
-        {
-          "line": 3.5,
-          "over": 1.95,
-          "under": 1.74
-        },
-        {
-          "line": 5.5,
-          "over": 5.4,
-          "under": 1.11
-        },
-        {
-          "line": 4.5,
-          "over": 3.2,
-          "under": 1.29
-        },
-        {
-          "line": 1.5,
-          "over": 1.1,
-          "under": 5.6
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 4.9,
-          "away": 1.13
-        },
-        {
-          "line": 1.5,
-          "home": 1.61,
-          "away": 2.15
-        },
-        {
-          "line": 0.25,
-          "home": 3.05,
-          "away": 1.3
-        },
-        {
-          "line": 0.5,
-          "home": 2.55,
-          "away": 1.44
-        },
-        {
-          "line": 0.75,
-          "home": 2.28,
-          "away": 1.54
-        },
-        {
-          "line": 1,
-          "home": 2,
-          "away": 1.7
-        },
-        {
-          "line": 2.25,
-          "home": 1.26,
-          "away": 3.4
-        },
-        {
-          "line": 2,
-          "home": 1.3,
-          "away": 3.1
-        },
-        {
-          "line": 2.5,
-          "home": 1.23,
-          "away": 3.7
-        },
-        {
-          "line": -0.25,
-          "home": 4.5,
-          "away": 1.15
-        },
-        {
-          "line": 1.75,
-          "home": 1.46,
-          "away": 2.48
-        },
-        {
-          "line": 1.25,
-          "home": 1.76,
-          "away": 1.93
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 1.84,
-            "under": 1.84
-          },
-          {
-            "line": 9.5,
-            "over": 1.33,
-            "under": 2.95
-          },
-          {
-            "line": 10.5,
-            "over": 1.54,
-            "under": 2.28
-          },
-          {
-            "line": 13.5,
-            "over": 2.85,
-            "under": 1.36
-          },
-          {
-            "line": 12.5,
-            "over": 2.28,
-            "under": 1.55
-          }
-        ]
       }
     },
     {
@@ -11375,34 +8111,7 @@
         "home": 1.48,
         "draw": 4.4,
         "away": 4.75
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.58,
-          "under": 2.12
-        },
-        {
-          "line": 4.5,
-          "over": 2.33,
-          "under": 1.49
-        },
-        {
-          "line": 2.5,
-          "over": 1.22,
-          "under": 3.6
-        },
-        {
-          "line": 5.5,
-          "over": 3.7,
-          "under": 1.21
-        },
-        {
-          "line": 6.5,
-          "over": 6,
-          "under": 1.08
-        }
-      ]
+      }
     },
     {
       "eventId": "1026051180",
@@ -11415,114 +8124,6 @@
         "home": 1.29,
         "draw": 5.1,
         "away": 8.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.54,
-          "under": 2.3
-        },
-        {
-          "line": 3.5,
-          "over": 2.35,
-          "under": 1.5
-        },
-        {
-          "line": 1.5,
-          "over": 1.15,
-          "under": 4.6
-        },
-        {
-          "line": 4.5,
-          "over": 4.1,
-          "under": 1.19
-        }
-      ],
-      "ah": [
-        {
-          "line": -2.5,
-          "home": 3.05,
-          "away": 1.3
-        },
-        {
-          "line": -2,
-          "home": 2.48,
-          "away": 1.47
-        },
-        {
-          "line": -1.25,
-          "home": 1.63,
-          "away": 2.1
-        },
-        {
-          "line": -2.25,
-          "home": 2.75,
-          "away": 1.38
-        },
-        {
-          "line": -1.75,
-          "home": 2.06,
-          "away": 1.66
-        },
-        {
-          "line": -0.75,
-          "home": 1.34,
-          "away": 2.9
-        },
-        {
-          "line": -0.5,
-          "home": 1.29,
-          "away": 3.25
-        },
-        {
-          "line": -1.5,
-          "home": 1.83,
-          "away": 1.85
-        },
-        {
-          "line": -1,
-          "home": 1.43,
-          "away": 2.6
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.26,
-            "under": 3.4
-          },
-          {
-            "line": 10.5,
-            "over": 1.7,
-            "under": 2
-          },
-          {
-            "line": 12.5,
-            "over": 2.6,
-            "under": 1.42
-          },
-          {
-            "line": 13.5,
-            "over": 3.35,
-            "under": 1.27
-          },
-          {
-            "line": 11.5,
-            "over": 2.08,
-            "under": 1.65
-          },
-          {
-            "line": 9.5,
-            "over": 1.45,
-            "under": 2.55
-          },
-          {
-            "line": 14.5,
-            "over": 4.3,
-            "under": 1.17
-          }
-        ]
       }
     },
     {
@@ -11536,29 +8137,7 @@
         "home": 1.44,
         "draw": 4.2,
         "away": 5.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.3,
-          "under": 1.5
-        },
-        {
-          "line": 2.5,
-          "over": 1.52,
-          "under": 2.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.5
-        },
-        {
-          "line": 4.5,
-          "over": 3.85,
-          "under": 1.19
-        }
-      ]
+      }
     },
     {
       "eventId": "1026435578",
@@ -11571,34 +8150,7 @@
         "home": 1.58,
         "draw": 4.1,
         "away": 4.3
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.95,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.6
-        },
-        {
-          "line": 5.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.85
-        },
-        {
-          "line": 3.5,
-          "over": 1.87,
-          "under": 1.77
-        }
-      ]
+      }
     },
     {
       "eventId": "1026409249",
@@ -11611,119 +8163,6 @@
         "home": 14,
         "draw": 6.75,
         "away": 1.14
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.85
-        },
-        {
-          "line": 3.5,
-          "over": 1.88,
-          "under": 1.76
-        },
-        {
-          "line": 4.5,
-          "over": 3.05,
-          "under": 1.3
-        },
-        {
-          "line": 5.5,
-          "over": 5.1,
-          "under": 1.1
-        },
-        {
-          "line": 1.5,
-          "over": 1.07,
-          "under": 5.8
-        }
-      ],
-      "ah": [
-        {
-          "line": 1.5,
-          "home": 2.43,
-          "away": 1.48
-        },
-        {
-          "line": 2.5,
-          "home": 1.57,
-          "away": 2.23
-        },
-        {
-          "line": 3.5,
-          "home": 1.22,
-          "away": 3.7
-        },
-        {
-          "line": 0.5,
-          "home": 4.5,
-          "away": 1.15
-        },
-        {
-          "line": 2,
-          "home": 1.92,
-          "away": 1.76
-        },
-        {
-          "line": 3,
-          "home": 1.3,
-          "away": 3.15
-        },
-        {
-          "line": 3.25,
-          "home": 1.26,
-          "away": 3.45
-        },
-        {
-          "line": 0.75,
-          "home": 4.2,
-          "away": 1.18
-        },
-        {
-          "line": 1,
-          "home": 3.85,
-          "away": 1.21
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.52,
-            "under": 2.3
-          },
-          {
-            "line": 9.5,
-            "over": 1.32,
-            "under": 3
-          },
-          {
-            "line": 14.5,
-            "over": 3.5,
-            "under": 1.23
-          },
-          {
-            "line": 11.5,
-            "over": 1.8,
-            "under": 1.86
-          },
-          {
-            "line": 8.5,
-            "over": 1.19,
-            "under": 4
-          },
-          {
-            "line": 12.5,
-            "over": 2.2,
-            "under": 1.57
-          },
-          {
-            "line": 13.5,
-            "over": 2.75,
-            "under": 1.37
-          }
-        ]
       }
     },
     {
@@ -11737,104 +8176,6 @@
         "home": 1.46,
         "draw": 4.25,
         "away": 5.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.35,
-          "under": 1.48
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.52,
-          "under": 2.25
-        },
-        {
-          "line": 4.5,
-          "over": 4.1,
-          "under": 1.16
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.46,
-          "away": 2.48
-        },
-        {
-          "line": -2.5,
-          "home": 4,
-          "away": 1.19
-        },
-        {
-          "line": 0.5,
-          "home": 1.13,
-          "away": 5
-        },
-        {
-          "line": -1.5,
-          "home": 2.25,
-          "away": 1.55
-        },
-        {
-          "line": -2,
-          "home": 3.35,
-          "away": 1.27
-        },
-        {
-          "line": -2.25,
-          "home": 3.7,
-          "away": 1.22
-        },
-        {
-          "line": 0.25,
-          "home": 1.15,
-          "away": 4.6
-        },
-        {
-          "line": -1,
-          "home": 1.76,
-          "away": 1.93
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.27,
-            "under": 3.25
-          },
-          {
-            "line": 13.5,
-            "over": 3.5,
-            "under": 1.23
-          },
-          {
-            "line": 12.5,
-            "over": 2.7,
-            "under": 1.38
-          },
-          {
-            "line": 11.5,
-            "over": 2.14,
-            "under": 1.6
-          },
-          {
-            "line": 10.5,
-            "over": 1.74,
-            "under": 1.93
-          },
-          {
-            "line": 9.5,
-            "over": 1.46,
-            "under": 2.43
-          }
-        ]
       }
     },
     {
@@ -11848,89 +8189,6 @@
         "home": 1.81,
         "draw": 3.75,
         "away": 3.75
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.3,
-          "under": 1.54
-        },
-        {
-          "line": 5.5,
-          "over": 7,
-          "under": 1.06
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.7
-        },
-        {
-          "line": 4.5,
-          "over": 4,
-          "under": 1.19
-        },
-        {
-          "line": 2.5,
-          "over": 1.5,
-          "under": 2.35
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.77,
-          "away": 1.92
-        },
-        {
-          "line": -1,
-          "home": 2.35,
-          "away": 1.5
-        },
-        {
-          "line": 0.25,
-          "home": 1.3,
-          "away": 3.15
-        },
-        {
-          "line": 0.5,
-          "home": 1.25,
-          "away": 3.5
-        },
-        {
-          "line": -1.5,
-          "home": 2.95,
-          "away": 1.34
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 3.3,
-            "under": 1.27
-          },
-          {
-            "line": 9.5,
-            "over": 1.43,
-            "under": 2.6
-          },
-          {
-            "line": 12.5,
-            "over": 2.55,
-            "under": 1.43
-          },
-          {
-            "line": 10.5,
-            "over": 1.68,
-            "under": 2.04
-          },
-          {
-            "line": 11.5,
-            "over": 2.05,
-            "under": 1.67
-          }
-        ]
       }
     },
     {
@@ -11944,34 +8202,7 @@
         "home": 2.33,
         "draw": 3.65,
         "away": 2.43
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.7
-        },
-        {
-          "line": 5.5,
-          "over": 5.2,
-          "under": 1.1
-        },
-        {
-          "line": 3.5,
-          "over": 1.92,
-          "under": 1.73
-        },
-        {
-          "line": 4.5,
-          "over": 3.05,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 5.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1028135659",
@@ -11984,29 +8215,7 @@
         "home": 2.7,
         "draw": 2.75,
         "away": 2.65
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.11,
-          "under": 5
-        },
-        {
-          "line": 1.5,
-          "over": 1.57,
-          "under": 2.16
-        },
-        {
-          "line": 2.5,
-          "over": 2.75,
-          "under": 1.36
-        },
-        {
-          "line": 3.5,
-          "over": 5.25,
-          "under": 1.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1026305150",
@@ -12019,29 +8228,7 @@
         "home": 2.08,
         "draw": 3.35,
         "away": 3
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.14
-        },
-        {
-          "line": 2.5,
-          "over": 1.67,
-          "under": 2
-        },
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.38
-        }
-      ]
+      }
     },
     {
       "eventId": "1028139191",
@@ -12054,29 +8241,7 @@
         "home": 1.81,
         "draw": 3.25,
         "away": 4
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.98,
-          "under": 1.68
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3
-        },
-        {
-          "line": 4.5,
-          "over": 6.25,
-          "under": 1.07
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.24
-        }
-      ]
+      }
     },
     {
       "eventId": "1026305155",
@@ -12089,34 +8254,7 @@
         "home": 1.73,
         "draw": 3.6,
         "away": 3.9
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.28,
-          "under": 1.52
-        },
-        {
-          "line": 4.5,
-          "over": 3.85,
-          "under": 1.19
-        },
-        {
-          "line": 2.5,
-          "over": 1.5,
-          "under": 2.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.4
-        },
-        {
-          "line": 5.5,
-          "over": 6.75,
-          "under": 1.06
-        }
-      ]
+      }
     },
     {
       "eventId": "1028135662",
@@ -12129,29 +8267,7 @@
         "home": 2.63,
         "draw": 2.85,
         "away": 2.63
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.4,
-          "under": 1.47
-        },
-        {
-          "line": 3.5,
-          "over": 4.4,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.45,
-          "under": 2.45
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.75
-        }
-      ]
+      }
     },
     {
       "eventId": "1027480843",
@@ -12164,24 +8280,7 @@
         "home": 2.18,
         "draw": 2.95,
         "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.41,
-          "under": 2.55
-        },
-        {
-          "line": 3.5,
-          "over": 4.2,
-          "under": 1.16
-        },
-        {
-          "line": 2.5,
-          "over": 2.3,
-          "under": 1.5
-        }
-      ]
+      }
     },
     {
       "eventId": "1027480841",
@@ -12194,24 +8293,7 @@
         "home": 2.05,
         "draw": 2.88,
         "away": 3.5
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 4.6,
-          "under": 1.13
-        },
-        {
-          "line": 1.5,
-          "over": 1.48,
-          "under": 2.38
-        },
-        {
-          "line": 2.5,
-          "over": 2.48,
-          "under": 1.44
-        }
-      ]
+      }
     },
     {
       "eventId": "1028138826",
@@ -12224,29 +8306,7 @@
         "home": 2.6,
         "draw": 2.8,
         "away": 2.75
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.6,
-          "under": 1.4
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.52,
-          "under": 2.28
-        },
-        {
-          "line": 3.5,
-          "over": 4.9,
-          "under": 1.12
-        }
-      ]
+      }
     },
     {
       "eventId": "1026060175",
@@ -12259,84 +8319,6 @@
         "home": 2.25,
         "draw": 2.8,
         "away": 3.65
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 6.1,
-          "under": 1.08
-        },
-        {
-          "line": 1.5,
-          "over": 1.67,
-          "under": 2.06
-        },
-        {
-          "line": 0.5,
-          "over": 1.14,
-          "under": 4.8
-        },
-        {
-          "line": 2.5,
-          "over": 3.05,
-          "under": 1.32
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.17,
-          "away": 1.6
-        },
-        {
-          "line": 0.5,
-          "home": 1.26,
-          "away": 3.4
-        },
-        {
-          "line": -1.5,
-          "home": 4.7,
-          "away": 1.14
-        },
-        {
-          "line": -1.25,
-          "home": 4.25,
-          "away": 1.18
-        },
-        {
-          "line": -1,
-          "home": 3.75,
-          "away": 1.22
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 2.32,
-            "under": 1.52
-          },
-          {
-            "line": 6.5,
-            "over": 1.27,
-            "under": 3.35
-          },
-          {
-            "line": 8.5,
-            "over": 1.82,
-            "under": 1.86
-          },
-          {
-            "line": 10.5,
-            "over": 3.05,
-            "under": 1.32
-          },
-          {
-            "line": 7.5,
-            "over": 1.49,
-            "under": 2.4
-          }
-        ]
       }
     },
     {
@@ -12350,29 +8332,7 @@
         "home": 2.06,
         "draw": 2.85,
         "away": 3.65
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.7,
-          "under": 1.38
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.2
-        },
-        {
-          "line": 3.5,
-          "over": 5.1,
-          "under": 1.11
-        },
-        {
-          "line": 1.5,
-          "over": 1.55,
-          "under": 2.2
-        }
-      ]
+      }
     },
     {
       "eventId": "1028135661",
@@ -12385,29 +8345,7 @@
         "home": 2.95,
         "draw": 2.9,
         "away": 2.32
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.44,
-          "under": 2.48
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.8
-        },
-        {
-          "line": 2.5,
-          "over": 2.4,
-          "under": 1.47
-        },
-        {
-          "line": 3.5,
-          "over": 4.4,
-          "under": 1.15
-        }
-      ]
+      }
     },
     {
       "eventId": "1028135663",
@@ -12420,29 +8358,7 @@
         "home": 2.95,
         "draw": 2.95,
         "away": 2.3
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 4.1,
-          "under": 1.17
-        },
-        {
-          "line": 0.5,
-          "over": 1.07,
-          "under": 6.5
-        },
-        {
-          "line": 1.5,
-          "over": 1.4,
-          "under": 2.6
-        },
-        {
-          "line": 2.5,
-          "over": 2.25,
-          "under": 1.52
-        }
-      ]
+      }
     },
     {
       "eventId": "1026059691",
@@ -12455,69 +8371,6 @@
         "home": 2.85,
         "draw": 2.8,
         "away": 2.7
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.85,
-          "under": 1.36
-        },
-        {
-          "line": 1.5,
-          "over": 1.58,
-          "under": 2.18
-        },
-        {
-          "line": 3.5,
-          "over": 5.6,
-          "under": 1.1
-        },
-        {
-          "line": 0.5,
-          "over": 1.12,
-          "under": 5.25
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.43,
-          "away": 2.6
-        },
-        {
-          "line": -0.5,
-          "home": 2.7,
-          "away": 1.4
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 7.5,
-            "over": 1.47,
-            "under": 2.45
-          },
-          {
-            "line": 6.5,
-            "over": 1.26,
-            "under": 3.4
-          },
-          {
-            "line": 8.5,
-            "over": 1.81,
-            "under": 1.87
-          },
-          {
-            "line": 9.5,
-            "over": 2.3,
-            "under": 1.53
-          },
-          {
-            "line": 10.5,
-            "over": 3.05,
-            "under": 1.32
-          }
-        ]
       }
     },
     {
@@ -12531,69 +8384,6 @@
         "home": 2.5,
         "draw": 2.7,
         "away": 3.25
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 3.15,
-          "under": 1.3
-        },
-        {
-          "line": 3.5,
-          "over": 6.25,
-          "under": 1.08
-        },
-        {
-          "line": 1.5,
-          "over": 1.68,
-          "under": 2.02
-        },
-        {
-          "line": 0.5,
-          "over": 1.14,
-          "under": 4.75
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.4,
-          "away": 1.49
-        },
-        {
-          "line": 0.5,
-          "home": 1.32,
-          "away": 3.05
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 6.5,
-            "over": 1.27,
-            "under": 3.3
-          },
-          {
-            "line": 9.5,
-            "over": 2.33,
-            "under": 1.52
-          },
-          {
-            "line": 10.5,
-            "over": 3.1,
-            "under": 1.3
-          },
-          {
-            "line": 7.5,
-            "over": 1.5,
-            "under": 2.38
-          },
-          {
-            "line": 8.5,
-            "over": 1.84,
-            "under": 1.84
-          }
-        ]
       }
     },
     {
@@ -12607,84 +8397,6 @@
         "home": 2.16,
         "draw": 3,
         "away": 3.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 5.2,
-          "under": 1.12
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.5
-        },
-        {
-          "line": 1.5,
-          "over": 1.55,
-          "under": 2.25
-        },
-        {
-          "line": 2.5,
-          "over": 2.7,
-          "under": 1.38
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.07,
-          "away": 1.65
-        },
-        {
-          "line": -1.25,
-          "home": 3.85,
-          "away": 1.21
-        },
-        {
-          "line": 0.5,
-          "home": 1.27,
-          "away": 3.35
-        },
-        {
-          "line": -1.5,
-          "home": 4.3,
-          "away": 1.17
-        },
-        {
-          "line": -1,
-          "home": 3.4,
-          "away": 1.26
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 7.5,
-            "over": 1.41,
-            "under": 2.63
-          },
-          {
-            "line": 9.5,
-            "over": 2.12,
-            "under": 1.62
-          },
-          {
-            "line": 8.5,
-            "over": 1.71,
-            "under": 2
-          },
-          {
-            "line": 11.5,
-            "over": 3.65,
-            "under": 1.23
-          },
-          {
-            "line": 10.5,
-            "over": 2.75,
-            "under": 1.38
-          }
-        ]
       }
     },
     {
@@ -12698,84 +8410,6 @@
         "home": 2.48,
         "draw": 2.85,
         "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 5.4,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 2.8,
-          "under": 1.37
-        },
-        {
-          "line": 0.5,
-          "over": 1.11,
-          "under": 5.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.58,
-          "under": 2.18
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.38,
-          "away": 1.5
-        },
-        {
-          "line": -1.5,
-          "home": 5.25,
-          "away": 1.12
-        },
-        {
-          "line": -1.25,
-          "home": 4.8,
-          "away": 1.14
-        },
-        {
-          "line": 0.5,
-          "home": 1.34,
-          "away": 2.9
-        },
-        {
-          "line": -1,
-          "home": 4.3,
-          "away": 1.17
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 2.12,
-            "under": 1.62
-          },
-          {
-            "line": 8.5,
-            "over": 1.7,
-            "under": 2
-          },
-          {
-            "line": 7.5,
-            "over": 1.42,
-            "under": 2.63
-          },
-          {
-            "line": 10.5,
-            "over": 2.75,
-            "under": 1.38
-          },
-          {
-            "line": 11.5,
-            "over": 3.65,
-            "under": 1.23
-          }
-        ]
       }
     },
     {
@@ -12789,84 +8423,6 @@
         "home": 2.1,
         "draw": 2.95,
         "away": 3.8
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.53,
-          "under": 2.32
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.6
-        },
-        {
-          "line": 2.5,
-          "over": 2.63,
-          "under": 1.42
-        },
-        {
-          "line": 3.5,
-          "over": 5,
-          "under": 1.13
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 4.1,
-          "away": 1.18
-        },
-        {
-          "line": -1,
-          "home": 3.25,
-          "away": 1.28
-        },
-        {
-          "line": -1.25,
-          "home": 3.7,
-          "away": 1.22
-        },
-        {
-          "line": -0.5,
-          "home": 2.02,
-          "away": 1.68
-        },
-        {
-          "line": 0.5,
-          "home": 1.25,
-          "away": 3.5
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 9.5,
-            "over": 2.33,
-            "under": 1.52
-          },
-          {
-            "line": 7.5,
-            "over": 1.5,
-            "under": 2.38
-          },
-          {
-            "line": 8.5,
-            "over": 1.84,
-            "under": 1.84
-          },
-          {
-            "line": 10.5,
-            "over": 3.1,
-            "under": 1.3
-          },
-          {
-            "line": 6.5,
-            "over": 1.28,
-            "under": 3.3
-          }
-        ]
       }
     },
     {
@@ -12880,29 +8436,7 @@
         "home": 2.25,
         "draw": 2.8,
         "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 3.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 2.6,
-          "under": 1.4
-        },
-        {
-          "line": 1.5,
-          "over": 1.52,
-          "under": 2.28
-        }
-      ]
+      }
     },
     {
       "eventId": "1025976003",
@@ -12915,29 +8449,7 @@
         "home": 3,
         "draw": 3.15,
         "away": 2.14
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.87,
-          "under": 1.77
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.28
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.09
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.2
-        }
-      ]
+      }
     },
     {
       "eventId": "1026547451",
@@ -12950,24 +8462,7 @@
         "home": 3.65,
         "draw": 3.35,
         "away": 1.97
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.85,
-          "under": 1.85
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.45
-        },
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.32
-        }
-      ]
+      }
     },
     {
       "eventId": "1026591446",
@@ -12980,119 +8475,6 @@
         "home": 1.88,
         "draw": 3.4,
         "away": 4.1
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.06
-        },
-        {
-          "line": 3.5,
-          "over": 3.65,
-          "under": 1.25
-        },
-        {
-          "line": 2.5,
-          "over": 2.02,
-          "under": 1.72
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.25
-        },
-        {
-          "line": 0.5,
-          "over": 1.04,
-          "under": 9
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 1.86,
-          "away": 1.9
-        },
-        {
-          "line": -2.5,
-          "home": 7.5,
-          "away": 1.07
-        },
-        {
-          "line": -1.5,
-          "home": 3.45,
-          "away": 1.29
-        },
-        {
-          "line": -2.25,
-          "home": 7,
-          "away": 1.08
-        },
-        {
-          "line": 0.5,
-          "home": 1.24,
-          "away": 3.9
-        },
-        {
-          "line": -2,
-          "home": 6.5,
-          "away": 1.09
-        },
-        {
-          "line": -1,
-          "home": 2.65,
-          "away": 1.45
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 3.25,
-            "under": 1.28
-          },
-          {
-            "line": 14.5,
-            "over": 4.2,
-            "under": 1.17
-          },
-          {
-            "line": 12.5,
-            "over": 2.55,
-            "under": 1.44
-          },
-          {
-            "line": 7.5,
-            "over": 1.13,
-            "under": 4.9
-          },
-          {
-            "line": 15.5,
-            "over": 5.5,
-            "under": 1.1
-          },
-          {
-            "line": 10.5,
-            "over": 1.67,
-            "under": 2.05
-          },
-          {
-            "line": 8.5,
-            "over": 1.25,
-            "under": 3.5
-          },
-          {
-            "line": 9.5,
-            "over": 1.42,
-            "under": 2.6
-          },
-          {
-            "line": 11.5,
-            "over": 2.02,
-            "under": 1.68
-          }
-        ]
       }
     },
     {
@@ -13106,144 +8488,6 @@
         "home": 2.8,
         "draw": 3.3,
         "away": 2.43
-      },
-      "totals": [
-        {
-          "line": 0.5,
-          "over": 1.03,
-          "under": 9.5
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.07
-        },
-        {
-          "line": 3.5,
-          "over": 3.55,
-          "under": 1.26
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.3
-        },
-        {
-          "line": 2.5,
-          "over": 1.98,
-          "under": 1.75
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.75,
-          "away": 1.42
-        },
-        {
-          "line": 1,
-          "home": 1.23,
-          "away": 3.95
-        },
-        {
-          "line": 0.75,
-          "home": 1.38,
-          "away": 2.88
-        },
-        {
-          "line": -1.5,
-          "home": 6,
-          "away": 1.11
-        },
-        {
-          "line": 0.5,
-          "home": 1.55,
-          "away": 2.38
-        },
-        {
-          "line": 1.5,
-          "home": 1.16,
-          "away": 4.9
-        },
-        {
-          "line": -1,
-          "home": 5,
-          "away": 1.15
-        },
-        {
-          "line": 0.25,
-          "home": 1.73,
-          "away": 2.06
-        },
-        {
-          "line": -0.75,
-          "home": 3.45,
-          "away": 1.29
-        },
-        {
-          "line": -1.25,
-          "home": 5.5,
-          "away": 1.13
-        },
-        {
-          "line": 1.25,
-          "home": 1.19,
-          "away": 4.4
-        },
-        {
-          "line": -0.25,
-          "home": 2.4,
-          "away": 1.54
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 13.5,
-            "over": 3.25,
-            "under": 1.28
-          },
-          {
-            "line": 15.5,
-            "over": 5.5,
-            "under": 1.1
-          },
-          {
-            "line": 12.5,
-            "over": 2.55,
-            "under": 1.45
-          },
-          {
-            "line": 8.5,
-            "over": 1.24,
-            "under": 3.55
-          },
-          {
-            "line": 9.5,
-            "over": 1.41,
-            "under": 2.65
-          },
-          {
-            "line": 14.5,
-            "over": 4.2,
-            "under": 1.17
-          },
-          {
-            "line": 11.5,
-            "over": 2,
-            "under": 1.7
-          },
-          {
-            "line": 10.5,
-            "over": 1.66,
-            "under": 2.07
-          },
-          {
-            "line": 7.5,
-            "over": 1.12,
-            "under": 5
-          }
-        ]
       }
     },
     {
@@ -13257,124 +8501,6 @@
         "home": 1.92,
         "draw": 3.3,
         "away": 4
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.16,
-          "under": 1.64
-        },
-        {
-          "line": 1.5,
-          "over": 1.36,
-          "under": 2.95
-        },
-        {
-          "line": 4.5,
-          "over": 8.5,
-          "under": 1.05
-        },
-        {
-          "line": 0.5,
-          "over": 1.05,
-          "under": 8.5
-        },
-        {
-          "line": 3.5,
-          "over": 4,
-          "under": 1.22
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 3.6,
-          "away": 1.27
-        },
-        {
-          "line": -0.5,
-          "home": 1.9,
-          "away": 1.86
-        },
-        {
-          "line": -1.25,
-          "home": 3.2,
-          "away": 1.33
-        },
-        {
-          "line": 0.25,
-          "home": 1.3,
-          "away": 3.35
-        },
-        {
-          "line": -0.25,
-          "home": 1.65,
-          "away": 2.18
-        },
-        {
-          "line": -0.75,
-          "home": 2.2,
-          "away": 1.64
-        },
-        {
-          "line": 0.5,
-          "home": 1.24,
-          "away": 3.85
-        },
-        {
-          "line": -1,
-          "home": 2.8,
-          "away": 1.41
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 7.5,
-            "over": 1.18,
-            "under": 4.2
-          },
-          {
-            "line": 13.5,
-            "over": 3.9,
-            "under": 1.2
-          },
-          {
-            "line": 10.5,
-            "over": 1.86,
-            "under": 1.82
-          },
-          {
-            "line": 8.5,
-            "over": 1.32,
-            "under": 3
-          },
-          {
-            "line": 6.5,
-            "over": 1.08,
-            "under": 6
-          },
-          {
-            "line": 9.5,
-            "over": 1.54,
-            "under": 2.28
-          },
-          {
-            "line": 14.5,
-            "over": 5.1,
-            "under": 1.12
-          },
-          {
-            "line": 12.5,
-            "over": 3,
-            "under": 1.33
-          },
-          {
-            "line": 11.5,
-            "over": 2.32,
-            "under": 1.53
-          }
-        ]
       }
     },
     {
@@ -13388,29 +8514,7 @@
         "home": 2.7,
         "draw": 3.2,
         "away": 2.35
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.79,
-          "under": 1.86
-        },
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.1
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.45
-        },
-        {
-          "line": 3.5,
-          "over": 2.9,
-          "under": 1.32
-        }
-      ]
+      }
     },
     {
       "eventId": "1028139193",
@@ -13423,29 +8527,7 @@
         "home": 2.12,
         "draw": 2.95,
         "away": 3.35
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 2.35,
-          "under": 1.48
-        },
-        {
-          "line": 1.5,
-          "over": 1.44,
-          "under": 2.48
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.8
-        },
-        {
-          "line": 3.5,
-          "over": 4.25,
-          "under": 1.16
-        }
-      ]
+      }
     },
     {
       "eventId": "1026756356",
@@ -13458,84 +8540,6 @@
         "home": 2.28,
         "draw": 3.05,
         "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 4.1,
-          "under": 1.18
-        },
-        {
-          "line": 2.5,
-          "over": 2.25,
-          "under": 1.55
-        },
-        {
-          "line": 1.5,
-          "over": 1.4,
-          "under": 2.65
-        },
-        {
-          "line": 0.5,
-          "over": 1.07,
-          "under": 6.5
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.18,
-          "away": 1.58
-        },
-        {
-          "line": 0.5,
-          "home": 1.32,
-          "away": 3
-        },
-        {
-          "line": -1.25,
-          "home": 4.1,
-          "away": 1.19
-        },
-        {
-          "line": -1.5,
-          "home": 4.5,
-          "away": 1.16
-        },
-        {
-          "line": -1,
-          "home": 3.6,
-          "away": 1.23
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.3,
-            "under": 3.1
-          },
-          {
-            "line": 10.5,
-            "over": 1.84,
-            "under": 1.84
-          },
-          {
-            "line": 11.5,
-            "over": 2.28,
-            "under": 1.54
-          },
-          {
-            "line": 9.5,
-            "over": 1.53,
-            "under": 2.3
-          },
-          {
-            "line": 12.5,
-            "over": 2.9,
-            "under": 1.35
-          }
-        ]
       }
     },
     {
@@ -13549,84 +8553,6 @@
         "home": 2.5,
         "draw": 2.85,
         "away": 3.05
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.56,
-          "under": 2.25
-        },
-        {
-          "line": 3.5,
-          "over": 5.3,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 2.75,
-          "under": 1.38
-        },
-        {
-          "line": 0.5,
-          "over": 1.11,
-          "under": 5.4
-        }
-      ],
-      "ah": [
-        {
-          "line": -1.5,
-          "home": 5.2,
-          "away": 1.12
-        },
-        {
-          "line": 0.5,
-          "home": 1.35,
-          "away": 2.88
-        },
-        {
-          "line": -0.5,
-          "home": 2.38,
-          "away": 1.5
-        },
-        {
-          "line": -1.25,
-          "home": 4.7,
-          "away": 1.14
-        },
-        {
-          "line": -1,
-          "home": 4.25,
-          "away": 1.17
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 6.5,
-            "over": 1.29,
-            "under": 3.2
-          },
-          {
-            "line": 10.5,
-            "over": 3.2,
-            "under": 1.29
-          },
-          {
-            "line": 7.5,
-            "over": 1.53,
-            "under": 2.3
-          },
-          {
-            "line": 9.5,
-            "over": 2.4,
-            "under": 1.49
-          },
-          {
-            "line": 8.5,
-            "over": 1.89,
-            "under": 1.79
-          }
-        ]
       }
     },
     {
@@ -13640,29 +8566,7 @@
         "home": 2.63,
         "draw": 2.88,
         "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 4.4,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 2.4,
-          "under": 1.47
-        },
-        {
-          "line": 1.5,
-          "over": 1.45,
-          "under": 2.43
-        },
-        {
-          "line": 0.5,
-          "over": 1.08,
-          "under": 5.8
-        }
-      ]
+      }
     },
     {
       "eventId": "1026090159",
@@ -13675,29 +8579,7 @@
         "home": 1.56,
         "draw": 3.85,
         "away": 4.75
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.56,
-          "under": 2.18
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.2
-        },
-        {
-          "line": 4.5,
-          "over": 4.1,
-          "under": 1.17
-        },
-        {
-          "line": 3.5,
-          "over": 2.38,
-          "under": 1.47
-        }
-      ]
+      }
     },
     {
       "eventId": "1026756414",
@@ -13710,84 +8592,6 @@
         "home": 2.23,
         "draw": 2.85,
         "away": 3.25
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.48,
-          "under": 2.43
-        },
-        {
-          "line": 3.5,
-          "over": 4.8,
-          "under": 1.14
-        },
-        {
-          "line": 0.5,
-          "over": 1.09,
-          "under": 5.8
-        },
-        {
-          "line": 2.5,
-          "over": 2.5,
-          "under": 1.45
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.3,
-          "away": 3.15
-        },
-        {
-          "line": -1,
-          "home": 3.7,
-          "away": 1.23
-        },
-        {
-          "line": -1.5,
-          "home": 4.6,
-          "away": 1.15
-        },
-        {
-          "line": -0.5,
-          "home": 2.18,
-          "away": 1.58
-        },
-        {
-          "line": -1.25,
-          "home": 4.1,
-          "away": 1.18
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.85,
-            "under": 1.83
-          },
-          {
-            "line": 8.5,
-            "over": 1.33,
-            "under": 3
-          },
-          {
-            "line": 12.5,
-            "over": 2.95,
-            "under": 1.34
-          },
-          {
-            "line": 11.5,
-            "over": 2.3,
-            "under": 1.53
-          },
-          {
-            "line": 9.5,
-            "over": 1.54,
-            "under": 2.28
-          }
-        ]
       }
     },
     {
@@ -13801,84 +8605,6 @@
         "home": 1.72,
         "draw": 3.45,
         "away": 4.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.45
-        },
-        {
-          "line": 2.5,
-          "over": 1.82,
-          "under": 1.86
-        },
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.3
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.1
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.25,
-          "home": 1.24,
-          "away": 3.55
-        },
-        {
-          "line": -1.5,
-          "home": 2.95,
-          "away": 1.33
-        },
-        {
-          "line": 0.5,
-          "home": 1.2,
-          "away": 3.95
-        },
-        {
-          "line": -0.5,
-          "home": 1.72,
-          "away": 1.98
-        },
-        {
-          "line": -1,
-          "home": 2.32,
-          "away": 1.53
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 10.5,
-            "over": 1.71,
-            "under": 2
-          },
-          {
-            "line": 11.5,
-            "over": 2.08,
-            "under": 1.65
-          },
-          {
-            "line": 9.5,
-            "over": 1.44,
-            "under": 2.55
-          },
-          {
-            "line": 12.5,
-            "over": 2.6,
-            "under": 1.42
-          },
-          {
-            "line": 13.5,
-            "over": 3.35,
-            "under": 1.27
-          }
-        ]
       }
     },
     {
@@ -13892,29 +8618,7 @@
         "home": 2.75,
         "draw": 3.45,
         "away": 2.33
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.45
-        },
-        {
-          "line": 2.5,
-          "over": 1.63,
-          "under": 2.12
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.16
-        },
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.1
-        }
-      ]
+      }
     },
     {
       "eventId": "1026319099",
