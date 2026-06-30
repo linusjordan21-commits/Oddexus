@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:16:31.443Z",
+  "updatedAt": "2026-06-30T03:20:31.506Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 232,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 231,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 19697,
+  "durationMs": 19692,
   "events": [
     {
       "eventId": "1027976814",
@@ -1132,9 +1132,9 @@
       "startTime": "2026-06-30T03:14:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.1,
-        "draw": 4.5,
-        "away": 2.23
+        "home": 2.18,
+        "draw": 3.95,
+        "away": 2.3
       }
     },
     {
@@ -1145,42 +1145,10 @@
       "startTime": "2026-06-30T03:20:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.25,
-        "draw": 5.6,
+        "home": 3.35,
+        "draw": 5.5,
         "away": 1.54
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.58,
-          "under": 2.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.06,
-          "under": 6.25
-        },
-        {
-          "line": 6.5,
-          "over": 2.18,
-          "under": 1.56
-        },
-        {
-          "line": 7.5,
-          "over": 3.4,
-          "under": 1.23
-        },
-        {
-          "line": 8.5,
-          "over": 5.75,
-          "under": 1.07
-        },
-        {
-          "line": 4.5,
-          "over": 1.22,
-          "under": 3.45
-        }
-      ]
+      }
     },
     {
       "eventId": "1028197227",
@@ -8050,9 +8018,9 @@
       "startTime": "2026-07-04T01:30:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.48,
+        "home": 1.49,
         "draw": 4.2,
-        "away": 8.5
+        "away": 9
       },
       "totals": [
         {
@@ -16227,8 +16195,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.55,
-        "away": 2.32
+        "home": 1.22,
+        "away": 4
       }
     },
     {
@@ -16240,8 +16208,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.37,
-        "away": 2.9
+        "home": 4.2,
+        "away": 1.2
       }
     },
     {
@@ -16253,8 +16221,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.72,
-        "away": 2.02
+        "home": 1.5,
+        "away": 2.45
       }
     },
     {
@@ -16266,21 +16234,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 3.25,
-        "away": 1.3
-      }
-    },
-    {
-      "eventId": "1028190353",
-      "title": "Jialan Cai - Junlu Sun",
-      "homeTeam": "Jialan Cai",
-      "awayTeam": "Junlu Sun",
-      "startTime": "2026-06-30T02:08:00Z",
-      "league": "Maanshan",
-      "sport": "tennis",
-      "odds": {
-        "home": 7.5,
-        "away": 1.06
+        "home": 3.75,
+        "away": 1.24
       }
     },
     {
@@ -16292,8 +16247,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.34,
-        "away": 3
+        "home": 1.81,
+        "away": 1.91
       }
     },
     {
@@ -16305,8 +16260,21 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.81,
-        "away": 1.91
+        "home": 2.04,
+        "away": 1.71
+      }
+    },
+    {
+      "eventId": "1028190365",
+      "title": "Yue Xia - Chun-Chien Hou",
+      "homeTeam": "Yue Xia",
+      "awayTeam": "Chun-Chien Hou",
+      "startTime": "2026-06-30T02:26:00Z",
+      "league": "Wuning",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.86,
+        "away": 1.86
       }
     },
     {
@@ -16318,8 +16286,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 3.75,
-        "away": 1.24
+        "home": 3.15,
+        "away": 1.32
       }
     },
     {
@@ -16332,7 +16300,20 @@
       "sport": "tennis",
       "odds": {
         "home": 1.08,
-        "away": 6.75
+        "away": 7
+      }
+    },
+    {
+      "eventId": "1028190350",
+      "title": "Xiaowei Li - Ryeong Gyeong Park",
+      "homeTeam": "Xiaowei Li",
+      "awayTeam": "Ryeong Gyeong Park",
+      "startTime": "2026-06-30T03:20:00Z",
+      "league": "Maanshan",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.43,
+        "away": 1.5
       }
     },
     {
@@ -17358,8 +17339,8 @@
       "league": "Figueira da Foz",
       "sport": "tennis",
       "odds": {
-        "home": 4.1,
-        "away": 1.2
+        "home": 3.05,
+        "away": 1.32
       }
     },
     {
@@ -18580,8 +18561,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 1.93,
-        "away": 1.87
+        "home": 2.12,
+        "away": 1.72
       }
     },
     {
@@ -18755,6 +18736,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 197,
+  "tennisEventsCount": 198,
   "lastError": null
 }
