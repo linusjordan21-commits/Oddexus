@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T08:47:39.752Z",
+  "updatedAt": "2026-06-30T08:51:40.057Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 361,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 363,
+  "skippedNoOdds": 8,
   "skippedNotFootball": 0,
-  "durationMs": 35638,
+  "durationMs": 35832,
   "events": [
     {
       "eventId": "1027976814",
@@ -3410,58 +3410,6 @@
       ]
     },
     {
-      "eventId": "1028197246",
-      "title": "Nice (TOMMY) - Stade Rennais FC (Terry14)",
-      "homeTeam": "Nice (TOMMY)",
-      "awayTeam": "Stade Rennais FC (Terry14)",
-      "startTime": "2026-06-30T08:40:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 5.8,
-        "draw": 4.4,
-        "away": 1.38
-      }
-    },
-    {
-      "eventId": "1028197119",
-      "title": "Portugal (Mqrkkkkkk) - Colombia (Gammi)",
-      "homeTeam": "Portugal (Mqrkkkkkk)",
-      "awayTeam": "Colombia (Gammi)",
-      "startTime": "2026-06-30T08:40:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 1.05,
-        "draw": 11,
-        "away": 23
-      }
-    },
-    {
-      "eventId": "1028197118",
-      "title": "Uzbekistan (Shark) - Finland (desicom)",
-      "homeTeam": "Uzbekistan (Shark)",
-      "awayTeam": "Finland (desicom)",
-      "startTime": "2026-06-30T08:40:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.35,
-        "away": 2.4
-      }
-    },
-    {
-      "eventId": "1028192754",
-      "title": "Sassuolo (LaikingDast) - Bologna (nikkitta)",
-      "homeTeam": "Sassuolo (LaikingDast)",
-      "awayTeam": "Bologna (nikkitta)",
-      "startTime": "2026-06-30T08:43:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 9,
-        "draw": 4.1,
-        "away": 1.32
-      }
-    },
-    {
       "eventId": "1028197769",
       "title": "Real Sociedad (Double_S) - Atlético Madrid (zyX)",
       "homeTeam": "Real Sociedad (Double_S)",
@@ -3469,9 +3417,9 @@
       "startTime": "2026-06-30T08:44:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.3,
-        "draw": 6.75,
-        "away": 4.9
+        "home": 1.02,
+        "draw": 17,
+        "away": 31
       }
     },
     {
@@ -3482,9 +3430,9 @@
       "startTime": "2026-06-30T08:46:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.17,
-        "draw": 3.6,
-        "away": 2.43
+        "home": 1.58,
+        "draw": 3.4,
+        "away": 4.75
       }
     },
     {
@@ -3495,9 +3443,9 @@
       "startTime": "2026-06-30T08:46:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 12.5,
-        "draw": 6.75,
-        "away": 1.14
+        "home": 25,
+        "draw": 8,
+        "away": 1.09
       }
     },
     {
@@ -4256,6 +4204,51 @@
       ]
     },
     {
+      "eventId": "1028192963",
+      "title": "Sweden (Lumix) - Ecuador (borees)",
+      "homeTeam": "Sweden (Lumix)",
+      "awayTeam": "Ecuador (borees)",
+      "startTime": "2026-06-30T09:12:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 2.06,
+        "draw": 4.4,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.72,
+          "under": 1.97
+        },
+        {
+          "line": 3.5,
+          "over": 1.32,
+          "under": 3.1
+        },
+        {
+          "line": 7.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 6.5,
+          "over": 4.2,
+          "under": 1.19
+        },
+        {
+          "line": 2.5,
+          "over": 1.09,
+          "under": 6.4
+        },
+        {
+          "line": 5.5,
+          "over": 2.6,
+          "under": 1.44
+        }
+      ]
+    },
+    {
       "eventId": "1028192964",
       "title": "France (Rodja) - Mexico (Hyper)",
       "homeTeam": "France (Rodja)",
@@ -4357,6 +4350,56 @@
           "line": 8.5,
           "over": 3.65,
           "under": 1.24
+        }
+      ]
+    },
+    {
+      "eventId": "1028192765",
+      "title": "Tjeckien (mko1919) - USA (Uncle)",
+      "homeTeam": "Tjeckien (mko1919)",
+      "awayTeam": "USA (Uncle)",
+      "startTime": "2026-06-30T09:15:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 3.15,
+        "draw": 3.6,
+        "away": 1.81
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.97,
+          "under": 1.72
+        },
+        {
+          "line": 4.5,
+          "over": 1.47,
+          "under": 2.45
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 9
+        },
+        {
+          "line": 6.5,
+          "over": 3,
+          "under": 1.34
+        },
+        {
+          "line": 3.5,
+          "over": 1.17,
+          "under": 4.4
+        },
+        {
+          "line": 8.5,
+          "over": 9.5,
+          "under": 1.04
+        },
+        {
+          "line": 7.5,
+          "over": 5,
+          "under": 1.14
         }
       ]
     },
@@ -20481,8 +20524,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 2.43,
-        "away": 1.53
+        "home": 2.7,
+        "away": 1.45
       }
     },
     {
@@ -20494,8 +20537,8 @@
       "league": "Brasov",
       "sport": "tennis",
       "odds": {
-        "home": 1.77,
-        "away": 2
+        "home": 1.7,
+        "away": 2.1
       }
     },
     {
@@ -20507,8 +20550,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 1.04,
-        "away": 9.5
+        "home": 1.03,
+        "away": 13
       }
     },
     {
@@ -20520,8 +20563,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 1.66,
-        "away": 2.17
+        "home": 1.35,
+        "away": 3.1
       }
     },
     {
@@ -20533,8 +20576,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 6.4,
-        "away": 1.09
+        "home": 5.3,
+        "away": 1.13
       }
     },
     {
@@ -20546,8 +20589,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.06,
-        "away": 8
+        "home": 1.07,
+        "away": 7
       }
     },
     {
@@ -20560,7 +20603,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.03,
-        "away": 12.5
+        "away": 11
       }
     },
     {
@@ -20572,8 +20615,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 9
+        "home": 1.04,
+        "away": 9.5
       }
     },
     {
@@ -20585,8 +20628,8 @@
       "league": "Milan",
       "sport": "tennis",
       "odds": {
-        "home": 2.38,
-        "away": 1.55
+        "home": 2.3,
+        "away": 1.58
       }
     },
     {
@@ -20603,6 +20646,19 @@
       }
     },
     {
+      "eventId": "1028193983",
+      "title": "Lars Wagenaar - Abel Forger",
+      "homeTeam": "Lars Wagenaar",
+      "awayTeam": "Abel Forger",
+      "startTime": "2026-06-30T08:03:00Z",
+      "league": "Amstelveen",
+      "sport": "tennis",
+      "odds": {
+        "home": 10,
+        "away": 1.04
+      }
+    },
+    {
       "eventId": "1028194581",
       "title": "Timeo Trufelli - Justin Lenders",
       "homeTeam": "Timeo Trufelli",
@@ -20611,8 +20667,8 @@
       "league": "Nivelles",
       "sport": "tennis",
       "odds": {
-        "home": 1.81,
-        "away": 1.91
+        "home": 2,
+        "away": 1.73
       }
     },
     {
@@ -20624,8 +20680,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 3.2,
-        "away": 1.3
+        "home": 2.48,
+        "away": 1.49
       }
     },
     {
@@ -20637,8 +20693,8 @@
       "league": "Kursumlijska Banja",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 5.8
+        "home": 1.19,
+        "away": 4.1
       }
     },
     {
@@ -20650,8 +20706,8 @@
       "league": "Elvas",
       "sport": "tennis",
       "odds": {
-        "home": 1.45,
-        "away": 2.6
+        "home": 1.3,
+        "away": 3.25
       }
     },
     {
@@ -20663,47 +20719,8 @@
       "league": "Elvas",
       "sport": "tennis",
       "odds": {
-        "home": 1.61,
-        "away": 2.2
-      }
-    },
-    {
-      "eventId": "1028190374",
-      "title": "Tianhui Zhang - Yan Cheng Chen",
-      "homeTeam": "Tianhui Zhang",
-      "awayTeam": "Yan Cheng Chen",
-      "startTime": "2026-06-30T08:50:00Z",
-      "league": "Wuning",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.75,
-        "away": 1.38
-      }
-    },
-    {
-      "eventId": "1028192600",
-      "title": "Radu Albot - Zsombor Piros",
-      "homeTeam": "Radu Albot",
-      "awayTeam": "Zsombor Piros",
-      "startTime": "2026-06-30T08:55:00Z",
-      "league": "Brasov",
-      "sport": "tennis",
-      "odds": {
-        "home": 3.3,
-        "away": 1.3
-      }
-    },
-    {
-      "eventId": "1028192597",
-      "title": "Keegan Smith - Gabriel Ghetu",
-      "homeTeam": "Keegan Smith",
-      "awayTeam": "Gabriel Ghetu",
-      "startTime": "2026-06-30T08:55:00Z",
-      "league": "Brasov",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.72,
-        "away": 2.07
+        "home": 1.66,
+        "away": 2.12
       }
     },
     {
@@ -20717,6 +20734,32 @@
       "odds": {
         "home": 2.43,
         "away": 1.54
+      }
+    },
+    {
+      "eventId": "1028192600",
+      "title": "Radu Albot - Zsombor Piros",
+      "homeTeam": "Radu Albot",
+      "awayTeam": "Zsombor Piros",
+      "startTime": "2026-06-30T09:00:00Z",
+      "league": "Brasov",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.3,
+        "away": 1.3
+      }
+    },
+    {
+      "eventId": "1028192597",
+      "title": "Keegan Smith - Gabriel Ghetu",
+      "homeTeam": "Keegan Smith",
+      "awayTeam": "Gabriel Ghetu",
+      "startTime": "2026-06-30T09:00:00Z",
+      "league": "Brasov",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.72,
+        "away": 2.07
       }
     },
     {
@@ -21695,19 +21738,6 @@
       }
     },
     {
-      "eventId": "1028192598",
-      "title": "Cezar Cretu - Olle Wallin",
-      "homeTeam": "Cezar Cretu",
-      "awayTeam": "Olle Wallin",
-      "startTime": "2026-06-30T11:10:00Z",
-      "league": "Brasov",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.3,
-        "away": 3.35
-      }
-    },
-    {
       "eventId": "1028190142",
       "title": "Pablo Llamas Ruiz - Zachary Svajda",
       "homeTeam": "Pablo Llamas Ruiz",
@@ -21809,6 +21839,19 @@
       "odds": {
         "home": 2.85,
         "away": 1.42
+      }
+    },
+    {
+      "eventId": "1028192598",
+      "title": "Cezar Cretu - Olle Wallin",
+      "homeTeam": "Cezar Cretu",
+      "awayTeam": "Olle Wallin",
+      "startTime": "2026-06-30T11:20:00Z",
+      "league": "Brasov",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.3,
+        "away": 3.35
       }
     },
     {
