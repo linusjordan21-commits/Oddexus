@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T05:25:16.727Z",
+  "updatedAt": "2026-06-30T05:29:16.241Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 313,
-  "skippedNoOdds": 3,
+  "uniqueEvents": 319,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 31184,
+  "durationMs": 32145,
   "events": [
     {
       "eventId": "1027976814",
@@ -1310,6 +1310,216 @@
       ]
     },
     {
+      "eventId": "1028143578",
+      "title": "Oxford United - Milton Keynes Dons",
+      "homeTeam": "Oxford United",
+      "awayTeam": "Milton Keynes Dons",
+      "startTime": "2026-08-15T11:30:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.12,
+        "draw": 3.1,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.32,
+          "under": 3.15
+        },
+        {
+          "line": 3.5,
+          "over": 3.85,
+          "under": 1.23
+        },
+        {
+          "line": 2.5,
+          "over": 2.06,
+          "under": 1.7
+        }
+      ]
+    },
+    {
+      "eventId": "1028143570",
+      "title": "Notts County - Leicester City",
+      "homeTeam": "Notts County",
+      "awayTeam": "Leicester City",
+      "startTime": "2026-08-15T11:30:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 3.4,
+        "draw": 3.2,
+        "away": 1.98
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.92,
+          "under": 1.81
+        },
+        {
+          "line": 1.5,
+          "over": 1.27,
+          "under": 3.5
+        },
+        {
+          "line": 3.5,
+          "over": 3.4,
+          "under": 1.28
+        }
+      ]
+    },
+    {
+      "eventId": "1028143575",
+      "title": "Reading - Luton Town",
+      "homeTeam": "Reading",
+      "awayTeam": "Luton Town",
+      "startTime": "2026-08-15T11:30:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.4,
+        "away": 2.23
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.82,
+          "under": 1.9
+        },
+        {
+          "line": 3.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.75
+        }
+      ]
+    },
+    {
+      "eventId": "1028143576",
+      "title": "Cambridge United - Wigan Athletic",
+      "homeTeam": "Cambridge United",
+      "awayTeam": "Wigan Athletic",
+      "startTime": "2026-08-15T14:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.38,
+        "draw": 3.1,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.34,
+          "under": 3.05
+        },
+        {
+          "line": 3.5,
+          "over": 3.9,
+          "under": 1.21
+        },
+        {
+          "line": 2.5,
+          "over": 2.14,
+          "under": 1.64
+        }
+      ]
+    },
+    {
+      "eventId": "1028143579",
+      "title": "Burton Albion - Stevenage FC",
+      "homeTeam": "Burton Albion",
+      "awayTeam": "Stevenage FC",
+      "startTime": "2026-08-15T14:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.18,
+        "draw": 3.1,
+        "away": 3.05
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.41,
+          "under": 2.75
+        },
+        {
+          "line": 2.5,
+          "over": 2.35,
+          "under": 1.54
+        },
+        {
+          "line": 3.5,
+          "over": 4.7,
+          "under": 1.16
+        }
+      ]
+    },
+    {
+      "eventId": "1028143580",
+      "title": "Barnsley - Bromley FC",
+      "homeTeam": "Barnsley",
+      "awayTeam": "Bromley FC",
+      "startTime": "2026-08-15T14:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.6,
+        "away": 3.8
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 3.1,
+          "under": 1.32
+        },
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.75
+        },
+        {
+          "line": 2.5,
+          "over": 1.82,
+          "under": 1.9
+        }
+      ]
+    },
+    {
+      "eventId": "1028143571",
+      "title": "Bradford City - Peterborough",
+      "homeTeam": "Bradford City",
+      "awayTeam": "Peterborough",
+      "startTime": "2026-08-15T14:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 1.76,
+        "draw": 3.45,
+        "away": 3.95
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.86,
+          "under": 1.86
+        },
+        {
+          "line": 3.5,
+          "over": 3.25,
+          "under": 1.3
+        },
+        {
+          "line": 1.5,
+          "over": 1.25,
+          "under": 3.65
+        }
+      ]
+    },
+    {
       "eventId": "1028142676",
       "title": "Portsmouth  - QPR",
       "homeTeam": "Portsmouth ",
@@ -1376,6 +1586,36 @@
           "line": 2.5,
           "over": 2.07,
           "under": 1.68
+        }
+      ]
+    },
+    {
+      "eventId": "1028143573",
+      "title": "Blackpool - Wycombe",
+      "homeTeam": "Blackpool",
+      "awayTeam": "Wycombe",
+      "startTime": "2026-08-15T14:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.14,
+        "draw": 3.45,
+        "away": 2.85
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.8
+        },
+        {
+          "line": 3.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 2.5,
+          "over": 1.81,
+          "under": 1.92
         }
       ]
     },
@@ -2630,45 +2870,6 @@
       ]
     },
     {
-      "eventId": "1028197232",
-      "title": "Atalanta (femzzi) - Juventus (Voron)",
-      "homeTeam": "Atalanta (femzzi)",
-      "awayTeam": "Juventus (Voron)",
-      "startTime": "2026-06-30T05:15:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.03,
-        "draw": 12.5,
-        "away": 41
-      }
-    },
-    {
-      "eventId": "1028192914",
-      "title": "Bayern Munchen (Rodja) - Stuttgart (KaLuBa)",
-      "homeTeam": "Bayern Munchen (Rodja)",
-      "awayTeam": "Stuttgart (KaLuBa)",
-      "startTime": "2026-06-30T05:18:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 51,
-        "draw": 6,
-        "away": 1.11
-      }
-    },
-    {
-      "eventId": "1028192936",
-      "title": "B Dortmund (Hyper) - Frankfurt (borees)",
-      "homeTeam": "B Dortmund (Hyper)",
-      "awayTeam": "Frankfurt (borees)",
-      "startTime": "2026-06-30T05:18:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.16,
-        "draw": 3.25,
-        "away": 2.6
-      }
-    },
-    {
       "eventId": "1028195792",
       "title": "Porto (Revange) - Roma (BlackStar98)",
       "homeTeam": "Porto (Revange)",
@@ -2676,9 +2877,9 @@
       "startTime": "2026-06-30T05:24:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3,
-        "draw": 2.6,
-        "away": 2.3
+        "home": 2.12,
+        "draw": 2.48,
+        "away": 3.6
       }
     },
     {
@@ -2689,9 +2890,9 @@
       "startTime": "2026-06-30T05:24:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.32,
-        "draw": 3.35,
-        "away": 2.35
+        "home": 1.68,
+        "draw": 3.1,
+        "away": 4.5
       }
     },
     {
@@ -2702,47 +2903,10 @@
       "startTime": "2026-06-30T05:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.3,
-        "draw": 4.6,
+        "home": 2.28,
+        "draw": 4.7,
         "away": 2.02
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.06,
-          "under": 6.4
-        },
-        {
-          "line": 5.5,
-          "over": 1.2,
-          "under": 3.65
-        },
-        {
-          "line": 8.5,
-          "over": 2.75,
-          "under": 1.35
-        },
-        {
-          "line": 9.5,
-          "over": 4.2,
-          "under": 1.15
-        },
-        {
-          "line": 6.5,
-          "over": 1.5,
-          "under": 2.35
-        },
-        {
-          "line": 7.5,
-          "over": 1.96,
-          "under": 1.71
-        },
-        {
-          "line": 10.5,
-          "over": 7,
-          "under": 1.05
-        }
-      ]
+      }
     },
     {
       "eventId": "1028197046",
@@ -2752,47 +2916,10 @@
       "startTime": "2026-06-30T05:28:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.43,
-        "draw": 9,
+        "home": 1.5,
+        "draw": 8.5,
         "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 10.5,
-          "over": 3.65,
-          "under": 1.2
-        },
-        {
-          "line": 11.5,
-          "over": 6,
-          "under": 1.07
-        },
-        {
-          "line": 9.5,
-          "over": 2.55,
-          "under": 1.4
-        },
-        {
-          "line": 8.5,
-          "over": 1.82,
-          "under": 1.85
-        },
-        {
-          "line": 6.5,
-          "over": 1.17,
-          "under": 3.9
-        },
-        {
-          "line": 5.5,
-          "over": 1.06,
-          "under": 6.4
-        },
-        {
-          "line": 7.5,
-          "over": 1.44,
-          "under": 2.45
-        }
-      ]
+      }
     },
     {
       "eventId": "1028192666",
@@ -2931,6 +3058,96 @@
           "line": 7.5,
           "over": 4.1,
           "under": 1.16
+        }
+      ]
+    },
+    {
+      "eventId": "1028195795",
+      "title": "Aston Villa (MeLToSik) - Porto (Revange)",
+      "homeTeam": "Aston Villa (MeLToSik)",
+      "awayTeam": "Porto (Revange)",
+      "startTime": "2026-06-30T05:36:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 4.6,
+        "draw": 3.7,
+        "away": 1.55
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 2.32,
+          "under": 1.49
+        },
+        {
+          "line": 3.5,
+          "over": 1.22,
+          "under": 3.45
+        },
+        {
+          "line": 2.5,
+          "over": 1.05,
+          "under": 6.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.63,
+          "under": 2.06
+        },
+        {
+          "line": 6.5,
+          "over": 3.8,
+          "under": 1.18
+        },
+        {
+          "line": 7.5,
+          "over": 6.75,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028195753",
+      "title": "Roma (BlackStar98) - Fenerbahce (sane4ek8)",
+      "homeTeam": "Roma (BlackStar98)",
+      "awayTeam": "Fenerbahce (sane4ek8)",
+      "startTime": "2026-06-30T05:36:00Z",
+      "league": "Esports Battle (2x4min)",
+      "odds": {
+        "home": 2.48,
+        "draw": 3.2,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.57,
+          "under": 2.16
+        },
+        {
+          "line": 5.5,
+          "over": 2.2,
+          "under": 1.55
+        },
+        {
+          "line": 2.5,
+          "over": 1.04,
+          "under": 7
+        },
+        {
+          "line": 3.5,
+          "over": 1.2,
+          "under": 3.65
+        },
+        {
+          "line": 6.5,
+          "over": 3.6,
+          "under": 1.2
+        },
+        {
+          "line": 7.5,
+          "over": 6.25,
+          "under": 1.06
         }
       ]
     },
@@ -6248,7 +6465,7 @@
         {
           "line": -0.25,
           "home": 1.86,
-          "away": 1.95
+          "away": 1.94
         },
         {
           "line": -1.5,
@@ -19555,8 +19772,8 @@
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
-        "home": 2.14,
-        "away": 1.65
+        "home": 3.55,
+        "away": 1.26
       }
     },
     {
@@ -19568,21 +19785,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 3.3,
-        "away": 1.3
-      }
-    },
-    {
-      "eventId": "1028190355",
-      "title": "Wenfei Yu - Marianna Shikhanova",
-      "homeTeam": "Wenfei Yu",
-      "awayTeam": "Marianna Shikhanova",
-      "startTime": "2026-06-30T03:50:00Z",
-      "league": "Maanshan",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.07,
-        "away": 7.5
+        "home": 2.7,
+        "away": 1.41
       }
     },
     {
@@ -19594,8 +19798,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.14,
-        "away": 5
+        "home": 1.2,
+        "away": 4.1
       }
     },
     {
@@ -19607,8 +19811,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 6
+        "home": 1.12,
+        "away": 5.6
       }
     },
     {
@@ -21973,8 +22177,8 @@
       "league": "Elvas",
       "sport": "tennis",
       "odds": {
-        "home": 1.43,
-        "away": 2.63
+        "home": 1.54,
+        "away": 2.32
       }
     },
     {
@@ -22083,6 +22287,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 197,
+  "tennisEventsCount": 196,
   "lastError": null
 }
