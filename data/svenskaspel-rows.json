@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T02:32:30.400Z",
+  "updatedAt": "2026-06-30T02:36:29.514Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 222,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 220,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 18641,
+  "durationMs": 18656,
   "events": [
     {
       "eventId": "1028072415",
@@ -992,61 +992,9 @@
       "startTime": "2026-06-30T00:59:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 4.35,
-        "draw": 1.64,
-        "away": 4.35
-      }
-    },
-    {
-      "eventId": "1028186493",
-      "title": "Barcelona (saportj) - Real Madrid (Kosta)",
-      "homeTeam": "Barcelona (saportj)",
-      "awayTeam": "Real Madrid (Kosta)",
-      "startTime": "2026-06-30T02:20:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 2.7,
-        "draw": 2.55,
-        "away": 2.55
-      }
-    },
-    {
-      "eventId": "1028185772",
-      "title": "Liverpool (Galikooo) - Milan (drksd3)",
-      "homeTeam": "Liverpool (Galikooo)",
-      "awayTeam": "Milan (drksd3)",
-      "startTime": "2026-06-30T02:24:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.02,
-        "draw": 16,
-        "away": 35
-      }
-    },
-    {
-      "eventId": "1028186476",
-      "title": "Atleti (Kodak) - Real Madrid (Inquisitor)",
-      "homeTeam": "Atleti (Kodak)",
-      "awayTeam": "Real Madrid (Inquisitor)",
-      "startTime": "2026-06-30T02:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 5.3,
-        "draw": 2.95,
-        "away": 1.64
-      }
-    },
-    {
-      "eventId": "1028186499",
-      "title": "Liverpool (OG) - Paris (hotShot)",
-      "homeTeam": "Liverpool (OG)",
-      "awayTeam": "Paris (hotShot)",
-      "startTime": "2026-06-30T02:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 14,
-        "draw": 5.6,
-        "away": 1.17
+        "home": 1.28,
+        "draw": 4.2,
+        "away": 23
       }
     },
     {
@@ -1057,9 +1005,9 @@
       "startTime": "2026-06-30T02:32:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.1,
-        "draw": 5.8,
-        "away": 1.57
+        "home": 3,
+        "draw": 4.4,
+        "away": 1.71
       }
     },
     {
@@ -1308,56 +1256,6 @@
       ]
     },
     {
-      "eventId": "1028186164",
-      "title": "Atleti (zaha) - Barcelona (saportj)",
-      "homeTeam": "Atleti (zaha)",
-      "awayTeam": "Barcelona (saportj)",
-      "startTime": "2026-06-30T02:56:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.38,
-        "draw": 5,
-        "away": 4.25
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.3,
-          "under": 2.95
-        },
-        {
-          "line": 4.5,
-          "over": 1.11,
-          "under": 4.9
-        },
-        {
-          "line": 7.5,
-          "over": 2.28,
-          "under": 1.52
-        },
-        {
-          "line": 6.5,
-          "over": 1.68,
-          "under": 2.02
-        },
-        {
-          "line": 9.5,
-          "over": 5.5,
-          "under": 1.09
-        },
-        {
-          "line": 10.5,
-          "over": 9.5,
-          "under": 1.01
-        },
-        {
-          "line": 8.5,
-          "over": 3.35,
-          "under": 1.23
-        }
-      ]
-    },
-    {
       "eventId": "1028193926",
       "title": "Man City (Gaga) - Juventus (SpeciAL)",
       "homeTeam": "Man City (Gaga)",
@@ -1366,39 +1264,39 @@
       "league": "Esports Battle (2x4min)",
       "odds": {
         "home": 2.95,
-        "draw": 4.5,
-        "away": 1.72
+        "draw": 4.4,
+        "away": 1.73
       },
       "totals": [
         {
           "line": 2.5,
           "over": 1.05,
-          "under": 6.5
+          "under": 6.75
         },
         {
           "line": 5.5,
-          "over": 2.45,
-          "under": 1.43
+          "over": 2.43,
+          "under": 1.45
         },
         {
           "line": 4.5,
-          "over": 1.65,
-          "under": 2.04
+          "over": 1.64,
+          "under": 2.06
         },
         {
           "line": 3.5,
-          "over": 1.25,
-          "under": 3.2
+          "over": 1.24,
+          "under": 3.3
         },
         {
           "line": 6.5,
-          "over": 4,
-          "under": 1.16
+          "over": 3.85,
+          "under": 1.18
         },
         {
           "line": 7.5,
-          "over": 8,
-          "under": 1.03
+          "over": 7,
+          "under": 1.04
         }
       ]
     },
@@ -8679,6 +8577,117 @@
       }
     },
     {
+      "eventId": "1026658709",
+      "title": "Beijing Guoan - Shandong Taishan",
+      "homeTeam": "Beijing Guoan",
+      "awayTeam": "Shandong Taishan",
+      "startTime": "2026-07-04T11:35:00Z",
+      "league": "Super League",
+      "odds": {
+        "home": 1.71,
+        "draw": 4.2,
+        "away": 4
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.34,
+          "under": 2.95
+        },
+        {
+          "line": 1.5,
+          "over": 1.09,
+          "under": 6
+        },
+        {
+          "line": 3.5,
+          "over": 1.88,
+          "under": 1.81
+        },
+        {
+          "line": 4.5,
+          "over": 2.95,
+          "under": 1.33
+        },
+        {
+          "line": 5.5,
+          "over": 5,
+          "under": 1.13
+        }
+      ],
+      "ah": [
+        {
+          "line": -1.5,
+          "home": 2.6,
+          "away": 1.42
+        },
+        {
+          "line": -2.5,
+          "home": 4.5,
+          "away": 1.15
+        },
+        {
+          "line": -0.5,
+          "home": 1.67,
+          "away": 2.05
+        },
+        {
+          "line": 0.5,
+          "home": 1.23,
+          "away": 3.7
+        },
+        {
+          "line": 0.25,
+          "home": 1.27,
+          "away": 3.35
+        },
+        {
+          "line": -1,
+          "home": 2.08,
+          "away": 1.64
+        },
+        {
+          "line": -2,
+          "home": 3.95,
+          "away": 1.2
+        },
+        {
+          "line": -2.25,
+          "home": 4.25,
+          "away": 1.17
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 8.5,
+            "over": 1.43,
+            "under": 2.6
+          },
+          {
+            "line": 9.5,
+            "over": 1.71,
+            "under": 2
+          },
+          {
+            "line": 10.5,
+            "over": 2.1,
+            "under": 1.63
+          },
+          {
+            "line": 12.5,
+            "over": 3.55,
+            "under": 1.24
+          },
+          {
+            "line": 11.5,
+            "over": 2.7,
+            "under": 1.38
+          }
+        ]
+      }
+    },
+    {
       "eventId": "1026030402",
       "title": "Egersund - Moss",
       "homeTeam": "Egersund",
@@ -15403,8 +15412,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 2.38,
-        "away": 1.53
+        "home": 2.55,
+        "away": 1.46
       }
     },
     {
@@ -15416,8 +15425,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.08,
-        "away": 7
+        "home": 1.05,
+        "away": 8.5
       }
     },
     {
@@ -15429,8 +15438,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.82,
-        "away": 1.9
+        "home": 1.55,
+        "away": 2.32
       }
     },
     {
@@ -15442,8 +15451,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.52,
-        "away": 2.4
+        "home": 1.42,
+        "away": 2.7
       }
     },
     {
@@ -15455,8 +15464,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.52,
-        "away": 2.38
+        "home": 1.81,
+        "away": 1.91
       }
     },
     {
@@ -15468,8 +15477,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.68,
-        "away": 2.08
+        "home": 1.5,
+        "away": 2.43
       }
     },
     {
@@ -15494,8 +15503,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8.5
+        "home": 1.04,
+        "away": 9.5
       }
     },
     {
@@ -15503,25 +15512,12 @@
       "title": "Kosuke Ogura - Sanhui Shin",
       "homeTeam": "Kosuke Ogura",
       "awayTeam": "Sanhui Shin",
-      "startTime": "2026-06-30T02:36:00Z",
+      "startTime": "2026-06-30T02:33:00Z",
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 3.3,
-        "away": 1.28
-      }
-    },
-    {
-      "eventId": "1028190339",
-      "title": "Shinji Hazawa - Koki Matsuda",
-      "homeTeam": "Shinji Hazawa",
-      "awayTeam": "Koki Matsuda",
-      "startTime": "2026-06-30T03:30:00Z",
-      "league": "Tokyo",
-      "sport": "tennis",
-      "odds": {
-        "home": 2.25,
-        "away": 1.57
+        "home": 3.35,
+        "away": 1.29
       }
     },
     {
@@ -15529,12 +15525,25 @@
       "title": "Yusuke Takahashi - Hiromasa Koyama",
       "homeTeam": "Yusuke Takahashi",
       "awayTeam": "Hiromasa Koyama",
-      "startTime": "2026-06-30T03:30:00Z",
+      "startTime": "2026-06-30T03:35:00Z",
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
         "home": 1.23,
         "away": 3.7
+      }
+    },
+    {
+      "eventId": "1028190339",
+      "title": "Shinji Hazawa - Koki Matsuda",
+      "homeTeam": "Shinji Hazawa",
+      "awayTeam": "Koki Matsuda",
+      "startTime": "2026-06-30T03:38:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.25,
+        "away": 1.57
       }
     },
     {
@@ -15793,8 +15802,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.77,
-        "away": 1.93
+        "home": 1.97,
+        "away": 1.74
       }
     },
     {
@@ -16859,8 +16868,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 3.4,
-        "away": 1.32
+        "home": 3.15,
+        "away": 1.36
       }
     },
     {
@@ -17004,6 +17013,19 @@
       "odds": {
         "home": 1.86,
         "away": 1.84
+      }
+    },
+    {
+      "eventId": "1028194774",
+      "title": "Mika Buchnik - Isabella Wong",
+      "homeTeam": "Mika Buchnik",
+      "awayTeam": "Isabella Wong",
+      "startTime": "2026-06-30T12:00:00Z",
+      "league": "Hillcrest",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.23,
+        "away": 1.58
       }
     },
     {
@@ -17775,6 +17797,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 185,
+  "tennisEventsCount": 186,
   "lastError": null
 }
