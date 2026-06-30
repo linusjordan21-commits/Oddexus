@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:40:26.306Z",
+  "updatedAt": "2026-06-30T03:42:39.121Z",
   "source": "github-actions-scrape",
   "events": {
     "35674908": {
@@ -694,36 +694,6 @@
       "competition": null,
       "markets": [
         {
-          "marketId": "1.259276752",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 125.433939038349,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 1.6,
-              "layOdds": 1.73,
-              "backDepth": 37.5,
-              "layDepth": 27.36
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 5.9,
-              "layOdds": 7,
-              "backDepth": 11.08,
-              "layDepth": 20
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 3.55,
-              "layOdds": 4.5,
-              "backDepth": 18.44,
-              "layDepth": 24.23
-            }
-          ]
-        },
-        {
           "marketId": "1.259276705@-3.5",
           "sport": "football",
           "marketType": "AH",
@@ -1224,6 +1194,36 @@
               "layOdds": 1.08,
               "backDepth": 99.91,
               "layDepth": 25
+            }
+          ]
+        },
+        {
+          "marketId": "1.259276752",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 125.433939038349,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 1.6,
+              "layOdds": 1.73,
+              "backDepth": 37.5,
+              "layDepth": 27.36
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 5.9,
+              "layOdds": 7,
+              "backDepth": 11.08,
+              "layDepth": 20
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 3.55,
+              "layOdds": 4.5,
+              "backDepth": 18.44,
+              "layDepth": 24.23
             }
           ]
         },
@@ -2458,60 +2458,6 @@
       "competition": null,
       "markets": [
         {
-          "marketId": "1.259286102",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 5.5,
-              "layOdds": 7.4,
-              "backDepth": 44.44,
-              "layDepth": 120.75
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 1.72,
-              "layOdds": 1.9,
-              "backDepth": 110.84,
-              "layDepth": 81.41
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 3.45,
-              "layOdds": 4.3,
-              "backDepth": 44.61,
-              "layDepth": 176.77
-            }
-          ]
-        },
-        {
-          "marketId": "1.259286107",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 0.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 9.4,
-              "layOdds": 12.5,
-              "backDepth": 11.66,
-              "layDepth": 123.02
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.09,
-              "layOdds": 1.12,
-              "backDepth": 464.05,
-              "layDepth": 97.86
-            }
-          ]
-        },
-        {
           "marketId": "1.259286151@-1.75",
           "sport": "football",
           "marketType": "AH",
@@ -2964,6 +2910,60 @@
               "layOdds": 17.67,
               "backDepth": 58.95,
               "layDepth": 19.78
+            }
+          ]
+        },
+        {
+          "marketId": "1.259286102",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 5.5,
+              "layOdds": 7.4,
+              "backDepth": 44.44,
+              "layDepth": 120.75
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 1.72,
+              "layOdds": 1.9,
+              "backDepth": 110.84,
+              "layDepth": 81.41
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 3.45,
+              "layOdds": 4.3,
+              "backDepth": 44.61,
+              "layDepth": 176.77
+            }
+          ]
+        },
+        {
+          "marketId": "1.259286107",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 0.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 8.4,
+              "layOdds": 12.5,
+              "backDepth": 21.91,
+              "layDepth": 123.02
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.09,
+              "layOdds": 1.12,
+              "backDepth": 464.05,
+              "layDepth": 16.79
             }
           ]
         },
@@ -6778,6 +6778,30 @@
       "competition": null,
       "markets": [
         {
+          "marketId": "1.259301599",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 2.76,
+              "layOdds": 3,
+              "backDepth": 61.61,
+              "layDepth": 80.4
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.5,
+              "layOdds": 1.57,
+              "backDepth": 160.78,
+              "layDepth": 108.42
+            }
+          ]
+        },
+        {
           "marketId": "1.259301613@-2.75",
           "sport": "football",
           "marketType": "AH",
@@ -7380,30 +7404,6 @@
               "layOdds": 1.05,
               "backDepth": 3408,
               "layDepth": 1052.9
-            }
-          ]
-        },
-        {
-          "marketId": "1.259301599",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 2.76,
-              "layOdds": 3,
-              "backDepth": 61.61,
-              "layDepth": 80.4
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.5,
-              "layOdds": 1.57,
-              "backDepth": 160.78,
-              "layDepth": 108.42
             }
           ]
         }
@@ -9412,6 +9412,30 @@
           ]
         },
         {
+          "marketId": "1.259301045",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 2.38,
+              "layOdds": 2.62,
+              "backDepth": 77.58,
+              "layDepth": 104.72
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.61,
+              "layOdds": 1.73,
+              "backDepth": 170.37,
+              "layDepth": 106.81
+            }
+          ]
+        },
+        {
           "marketId": "1.259301059@-2.75",
           "sport": "football",
           "marketType": "AH",
@@ -9960,30 +9984,6 @@
               "layOdds": 37.16,
               "backDepth": 59.53,
               "layDepth": 18.54
-            }
-          ]
-        },
-        {
-          "marketId": "1.259301045",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 2.38,
-              "layOdds": 2.62,
-              "backDepth": 77.58,
-              "layDepth": 104.72
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.61,
-              "layOdds": 1.73,
-              "backDepth": 170.37,
-              "layDepth": 106.81
             }
           ]
         }
@@ -11083,17 +11083,17 @@
           "runners": [
             {
               "selection": "UNDER",
-              "backOdds": 11.5,
+              "backOdds": 11,
               "layOdds": 18,
-              "backDepth": 11.52,
+              "backDepth": 22.25,
               "layDepth": 36
             },
             {
               "selection": "OVER",
               "backOdds": 1.06,
-              "layOdds": 1.09,
+              "layOdds": 1.08,
               "backDepth": 611.26,
-              "layDepth": 23.85
+              "layDepth": 99.69
             }
           ]
         }
@@ -11148,7 +11148,7 @@
               "selection": "UNDER",
               "backOdds": 8.4,
               "layOdds": 11,
-              "backDepth": 16.62,
+              "backDepth": 13.34,
               "layDepth": 24.41
             },
             {
@@ -11156,7 +11156,7 @@
               "backOdds": 1.1,
               "layOdds": 1.12,
               "backDepth": 244.14,
-              "layDepth": 17.5
+              "layDepth": 58.01
             }
           ]
         },
@@ -12300,7 +12300,7 @@
               "backOdds": 2.32,
               "layOdds": 2.44,
               "backDepth": 10.68,
-              "layDepth": 68.27
+              "layDepth": 73.4
             },
             {
               "selection": "AWAY",
@@ -12313,7 +12313,7 @@
               "selection": "DRAW",
               "backOdds": 3.1,
               "layOdds": 3.35,
-              "backDepth": 40.89,
+              "backDepth": 44.89,
               "layDepth": 31.96
             }
           ]
@@ -15551,7 +15551,7 @@
             },
             {
               "selection": "DRAW",
-              "backOdds": 2.92,
+              "backOdds": 2.86,
               "layOdds": 3.5,
               "backDepth": 13.67,
               "layDepth": 126.88
@@ -16602,7 +16602,7 @@
               "backOdds": 1.4,
               "layOdds": 1.41,
               "backDepth": 2900.71,
-              "layDepth": 3427.12
+              "layDepth": 3177.18
             },
             {
               "selection": "AWAY",
@@ -16617,30 +16617,6 @@
               "layOdds": 5.3,
               "backDepth": 377.9,
               "layDepth": 566.65
-            }
-          ]
-        },
-        {
-          "marketId": "1.259464681",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0.6,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.06,
-              "layOdds": 1.07,
-              "backDepth": 14169.2,
-              "layDepth": 366.28
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 15,
-              "layOdds": 17.5,
-              "backDepth": 150.76,
-              "layDepth": 278.43
             }
           ]
         },
@@ -16664,7 +16640,7 @@
               "backOdds": 1.06,
               "layOdds": 1.07,
               "backDepth": 21683.06,
-              "layDepth": 2275.01
+              "layDepth": 4903.51
             }
           ]
         },
@@ -16689,6 +16665,30 @@
               "layOdds": 110,
               "backDepth": 110.78,
               "layDepth": 331.79
+            }
+          ]
+        },
+        {
+          "marketId": "1.259464681",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0.6,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.06,
+              "layOdds": 1.07,
+              "backDepth": 14169.2,
+              "layDepth": 366.28
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 15,
+              "layOdds": 17.5,
+              "backDepth": 150.76,
+              "layDepth": 278.43
             }
           ]
         },
@@ -16751,15 +16751,15 @@
             {
               "selection": "UNDER",
               "backOdds": 4.2,
-              "layOdds": 4.4,
+              "layOdds": 4.5,
               "backDepth": 150.57,
-              "layDepth": 641.8
+              "layDepth": 1761.18
             },
             {
               "selection": "OVER",
               "backOdds": 1.29,
               "layOdds": 1.32,
-              "backDepth": 4840.92,
+              "backDepth": 2660.71,
               "layDepth": 728.95
             }
           ]
@@ -16794,7 +16794,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -4,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16818,7 +16818,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -3.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16842,7 +16842,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -3.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16866,7 +16866,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -3.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16890,7 +16890,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -3,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16903,7 +16903,7 @@
               "selection": "AWAY",
               "backOdds": 1.12,
               "layOdds": 1.14,
-              "backDepth": 2888.24,
+              "backDepth": 2888.22,
               "layDepth": 244.02
             }
           ]
@@ -16914,7 +16914,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16938,7 +16938,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -16962,14 +16962,14 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 3.74,
               "layOdds": 3.86,
               "backDepth": 10.52,
-              "layDepth": 87.58
+              "layDepth": 30.19
             },
             {
               "selection": "AWAY",
@@ -16986,7 +16986,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -17010,20 +17010,20 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 2.56,
-              "layOdds": 2.62,
+              "layOdds": 2.64,
               "backDepth": 43.64,
-              "layDepth": 40.23
+              "layDepth": 58.72
             },
             {
               "selection": "AWAY",
               "backOdds": 1.61,
               "layOdds": 1.64,
-              "backDepth": 154.35,
+              "backDepth": 96.28,
               "layDepth": 68.13
             }
           ]
@@ -17034,20 +17034,20 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 2.19,
-              "layOdds": 2.22,
+              "layOdds": 2.24,
               "backDepth": 158.46,
-              "layDepth": 26.67
+              "layDepth": 41
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.81,
+              "backOdds": 1.8,
               "layOdds": 1.84,
-              "backDepth": 35.71,
+              "backDepth": 202.26,
               "layDepth": 57.58
             }
           ]
@@ -17058,20 +17058,20 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.9,
-              "layOdds": 1.93,
+              "layOdds": 1.94,
               "backDepth": 385.08,
               "layDepth": 45.33
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.07,
+              "backOdds": 2.06,
               "layOdds": 2.1,
-              "backDepth": 48.05,
+              "backDepth": 42.69,
               "layDepth": 63.99
             }
           ]
@@ -17082,7 +17082,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -17106,20 +17106,20 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.48,
               "layOdds": 1.5,
-              "backDepth": 5349.19,
-              "layDepth": 147.08
+              "backDepth": 5351.83,
+              "layDepth": 146.07
             },
             {
               "selection": "AWAY",
               "backOdds": 3,
               "layOdds": 3.05,
-              "backDepth": 73.54,
+              "backDepth": 73.04,
               "layDepth": 892.09
             }
           ]
@@ -17130,13 +17130,13 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.4,
               "layOdds": 1.41,
-              "backDepth": 2900.71,
+              "backDepth": 2899.71,
               "layDepth": 3427.12
             },
             {
@@ -17144,7 +17144,7 @@
               "backOdds": 3.45,
               "layOdds": 3.5,
               "backDepth": 14.87,
-              "layDepth": 1160.28
+              "layDepth": 1159.88
             }
           ]
         },
@@ -17154,21 +17154,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.26,
               "layOdds": 1.28,
-              "backDepth": 21809.72,
-              "layDepth": 8021.29
+              "backDepth": 20391.25,
+              "layDepth": 9483.48
             },
             {
               "selection": "AWAY",
               "backOdds": 4.64,
               "layOdds": 4.75,
               "backDepth": 18.19,
-              "layDepth": 1412.52
+              "layDepth": 1412.03
             }
           ]
         },
@@ -17178,14 +17178,14 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.13,
               "layOdds": 1.15,
-              "backDepth": 15769.55,
-              "layDepth": 19989.03
+              "backDepth": 15065.62,
+              "layDepth": 27247.91
             },
             {
               "selection": "AWAY",
@@ -17202,14 +17202,14 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.11,
               "layOdds": 1.13,
-              "backDepth": 63187.72,
-              "layDepth": 17492.29
+              "backDepth": 62519.05,
+              "layDepth": 22778.44
             },
             {
               "selection": "AWAY",
@@ -17226,14 +17226,14 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.1,
               "layOdds": 1.12,
-              "backDepth": 56782.15,
-              "layDepth": 30012.83
+              "backDepth": 56093.46,
+              "layDepth": 32443.86
             },
             {
               "selection": "AWAY",
@@ -17250,14 +17250,14 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.06,
               "layOdds": 1.08,
-              "backDepth": 47849.6,
-              "layDepth": 18272.39
+              "backDepth": 47848.25,
+              "layDepth": 18272.38
             },
             {
               "selection": "AWAY",
@@ -17274,7 +17274,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -17298,7 +17298,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.25,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -17322,7 +17322,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.5,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -17346,7 +17346,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.75,
-          "matchedVolume": 80086.1229766181,
+          "matchedVolume": 80139.45843446035,
           "runners": [
             {
               "selection": "HOME",
@@ -20224,23 +20224,23 @@
             {
               "selection": "HOME",
               "backOdds": 2.14,
-              "layOdds": 2.38,
+              "layOdds": 2.4,
               "backDepth": 12.85,
-              "layDepth": 11.31
+              "layDepth": 10.93
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.4,
+              "backOdds": 3.3,
               "layOdds": 4.2,
-              "backDepth": 10.06,
-              "layDepth": 17.1
+              "backDepth": 11.77,
+              "layDepth": 17.04
             },
             {
               "selection": "DRAW",
               "backOdds": 3.35,
-              "layOdds": 4.2,
+              "layOdds": 4.1,
               "backDepth": 10.32,
-              "layDepth": 15.42
+              "layDepth": 11.64
             }
           ]
         },
@@ -21281,28 +21281,28 @@
           "sport": "football",
           "marketType": "MATCH_ODDS",
           "scope": "full",
-          "matchedVolume": 537470.4665908568,
+          "matchedVolume": 537613.4256325478,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 3.75,
               "layOdds": 3.8,
-              "backDepth": 477.11,
-              "layDepth": 1132.32
+              "backDepth": 482.11,
+              "layDepth": 1056.76
             },
             {
               "selection": "AWAY",
               "backOdds": 2.22,
               "layOdds": 2.24,
-              "backDepth": 356.68,
-              "layDepth": 4129.09
+              "backDepth": 236.94,
+              "layDepth": 4137.46
             },
             {
               "selection": "DRAW",
               "backOdds": 3.5,
               "layOdds": 3.55,
-              "backDepth": 14724.36,
-              "layDepth": 9261.67
+              "backDepth": 14718.36,
+              "layDepth": 9186.79
             }
           ]
         },
@@ -21366,7 +21366,7 @@
               "selection": "UNDER",
               "backOdds": 1.05,
               "layOdds": 1.06,
-              "backDepth": 26232.77,
+              "backDepth": 26283.45,
               "layDepth": 124.75
             },
             {
@@ -21374,7 +21374,7 @@
               "backOdds": 17.5,
               "layOdds": 21,
               "backDepth": 37.85,
-              "layDepth": 1311.95
+              "layDepth": 1314.61
             }
           ]
         },
@@ -21414,7 +21414,7 @@
               "selection": "UNDER",
               "backOdds": 1.14,
               "layOdds": 1.16,
-              "backDepth": 13469.21,
+              "backDepth": 13097.26,
               "layDepth": 444.54
             },
             {
@@ -21480,7 +21480,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21504,7 +21504,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21528,7 +21528,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21552,7 +21552,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -2,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21576,7 +21576,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21600,7 +21600,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21624,7 +21624,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21637,7 +21637,7 @@
               "selection": "AWAY",
               "backOdds": 1.11,
               "layOdds": 1.13,
-              "backDepth": 9032.21,
+              "backDepth": 9032.12,
               "layDepth": 227.43
             }
           ]
@@ -21648,7 +21648,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": -1,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -21661,7 +21661,7 @@
               "selection": "AWAY",
               "backOdds": 1.12,
               "layOdds": 1.14,
-              "backDepth": 11939.69,
+              "backDepth": 11939.48,
               "layDepth": 25.64
             }
           ]
@@ -21672,20 +21672,20 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 5,
               "layOdds": 5.13,
               "backDepth": 10.51,
-              "layDepth": 256.41
+              "layDepth": 169.69
             },
             {
               "selection": "AWAY",
               "backOdds": 1.24,
               "layOdds": 1.25,
-              "backDepth": 5802.19,
+              "backDepth": 5414.35,
               "layDepth": 42.03
             }
           ]
@@ -21696,21 +21696,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 3.75,
               "layOdds": 3.8,
-              "backDepth": 477.11,
-              "layDepth": 1132.32
+              "backDepth": 482.11,
+              "layDepth": 1056.76
             },
             {
               "selection": "AWAY",
               "backOdds": 1.35,
               "layOdds": 1.37,
-              "backDepth": 62139.44,
-              "layDepth": 1417.51
+              "backDepth": 62177.09,
+              "layDepth": 1445.13
             }
           ]
         },
@@ -21720,21 +21720,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": -0.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 3.21,
               "layOdds": 3.25,
-              "backDepth": 557.43,
-              "layDepth": 243.64
+              "backDepth": 563.27,
+              "layDepth": 161.85
             },
             {
               "selection": "AWAY",
               "backOdds": 1.44,
               "layOdds": 1.46,
-              "backDepth": 3599.71,
-              "layDepth": 9083.65
+              "backDepth": 3397.63,
+              "layDepth": 13704.92
             }
           ]
         },
@@ -21744,21 +21744,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 2.67,
               "layOdds": 2.71,
-              "backDepth": 670.33,
-              "layDepth": 292.19
+              "backDepth": 677.35,
+              "layDepth": 194.1
             },
             {
               "selection": "AWAY",
               "backOdds": 1.58,
               "layOdds": 1.6,
-              "backDepth": 709.02,
-              "layDepth": 1146.25
+              "backDepth": 540.78,
+              "layDepth": 1157.97
             }
           ]
         },
@@ -21768,21 +21768,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 2.09,
               "layOdds": 2.11,
-              "backDepth": 917.87,
-              "layDepth": 375.28
+              "backDepth": 926.84,
+              "layDepth": 249.29
             },
             {
               "selection": "AWAY",
               "backOdds": 1.9,
               "layOdds": 1.92,
-              "backDepth": 416.75,
-              "layDepth": 1284.64
+              "backDepth": 276.85,
+              "layDepth": 1299.47
             }
           ]
         },
@@ -21792,21 +21792,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.81,
               "layOdds": 1.82,
-              "backDepth": 1234.78,
-              "layDepth": 435.07
+              "backDepth": 1245.14,
+              "layDepth": 289.02
             },
             {
               "selection": "AWAY",
               "backOdds": 2.22,
               "layOdds": 2.24,
-              "backDepth": 356.68,
-              "layDepth": 4129.09
+              "backDepth": 236.94,
+              "layDepth": 6662.22
             }
           ]
         },
@@ -21816,21 +21816,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 0.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.6,
               "layOdds": 1.62,
-              "backDepth": 31.28,
-              "layDepth": 707.98
+              "backDepth": 57.3,
+              "layDepth": 470.38
             },
             {
               "selection": "AWAY",
               "backOdds": 2.62,
               "layOdds": 2.67,
-              "backDepth": 437.76,
-              "layDepth": 28.66
+              "backDepth": 290.85,
+              "layDepth": 55.44
             }
           ]
         },
@@ -21840,21 +21840,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.39,
               "layOdds": 1.41,
-              "backDepth": 15.64,
+              "backDepth": 28.64,
               "layDepth": 260.44
             },
             {
               "selection": "AWAY",
               "backOdds": 3.44,
-              "layOdds": 3.59,
+              "layOdds": 3.57,
               "backDepth": 106.75,
-              "layDepth": 10.96
+              "layDepth": 14.37
             }
           ]
         },
@@ -21864,21 +21864,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.32,
               "layOdds": 1.34,
-              "backDepth": 20.62,
+              "backDepth": 39.89,
               "layDepth": 222.7
             },
             {
               "selection": "AWAY",
               "backOdds": 3.94,
-              "layOdds": 4.15,
+              "layOdds": 4.12,
               "backDepth": 75.74,
-              "layDepth": 145.26
+              "layDepth": 11.91
             }
           ]
         },
@@ -21888,13 +21888,13 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.27,
               "layOdds": 1.29,
-              "backDepth": 810.88,
+              "backDepth": 828.48,
               "layDepth": 202.02
             },
             {
@@ -21902,7 +21902,7 @@
               "backOdds": 4.44,
               "layOdds": 4.7,
               "backDepth": 58.7,
-              "layDepth": 112.79
+              "layDepth": 117.58
             }
           ]
         },
@@ -21912,21 +21912,21 @@
           "marketType": "AH",
           "scope": "full",
           "line": 1.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.18,
               "layOdds": 1.21,
-              "backDepth": 7404.23,
-              "layDepth": 2068.36
+              "backDepth": 7478.26,
+              "layDepth": 1680.94
             },
             {
               "selection": "AWAY",
               "backOdds": 5.91,
-              "layOdds": 6.34,
+              "layOdds": 6.3,
               "backDepth": 75.43,
-              "layDepth": 183.02
+              "layDepth": 10.41
             }
           ]
         },
@@ -21936,13 +21936,13 @@
           "marketType": "AH",
           "scope": "full",
           "line": 2,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.1,
               "layOdds": 1.12,
-              "backDepth": 5094.73,
+              "backDepth": 5094.77,
               "layDepth": 581.38
             },
             {
@@ -21950,7 +21950,7 @@
               "backOdds": 9.52,
               "layOdds": 10.52,
               "backDepth": 68.4,
-              "layDepth": 15.63
+              "layDepth": 37.97
             }
           ]
         },
@@ -21960,13 +21960,13 @@
           "marketType": "AH",
           "scope": "full",
           "line": 2.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.09,
               "layOdds": 1.11,
-              "backDepth": 5277.38,
+              "backDepth": 5153.78,
               "layDepth": 551.93
             },
             {
@@ -21984,7 +21984,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 2.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -22008,13 +22008,13 @@
           "marketType": "AH",
           "scope": "full",
           "line": 2.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.05,
               "layOdds": 1.07,
-              "backDepth": 14974.15,
+              "backDepth": 14973.79,
               "layDepth": 1076.45
             },
             {
@@ -22032,7 +22032,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 3,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -22056,7 +22056,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 3.25,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -22080,7 +22080,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 3.5,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -22104,7 +22104,7 @@
           "marketType": "AH",
           "scope": "full",
           "line": 3.75,
-          "matchedVolume": 237801.7108902519,
+          "matchedVolume": 237921.45089025193,
           "runners": [
             {
               "selection": "HOME",
@@ -22199,20 +22199,20 @@
           "sport": "football",
           "marketType": "MATCH_ODDS",
           "scope": "full",
-          "matchedVolume": 607990.5258021915,
+          "matchedVolume": 608012.3944250512,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.3,
               "layOdds": 1.31,
-              "backDepth": 26528.3,
-              "layDepth": 1308.03
+              "backDepth": 26517.37,
+              "layDepth": 1309.58
             },
             {
               "selection": "AWAY",
               "backOdds": 13,
               "layOdds": 13.5,
-              "backDepth": 658.88,
+              "backDepth": 645.88,
               "layDepth": 529.51
             },
             {
@@ -22245,102 +22245,6 @@
               "layOdds": 1.52,
               "backDepth": 82.95,
               "layDepth": 324.77
-            }
-          ]
-        },
-        {
-          "marketId": "1.259532770",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 6.5,
-          "matchedVolume": 3782.3214157700804,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.05,
-              "layOdds": 1.06,
-              "backDepth": 12474.62,
-              "layDepth": 920.87
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 18,
-              "layOdds": 20,
-              "backDepth": 27.36,
-              "layDepth": 292.45
-            }
-          ]
-        },
-        {
-          "marketId": "1.259532772",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 519.9309081542585,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.13,
-              "layOdds": 1.15,
-              "backDepth": 11771.81,
-              "layDepth": 1455.07
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 7.8,
-              "layOdds": 8.4,
-              "backDepth": 196.24,
-              "layDepth": 468.68
-            }
-          ]
-        },
-        {
-          "marketId": "1.259532700",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 1947.94884805466,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.32,
-              "layOdds": 1.35,
-              "backDepth": 6074.73,
-              "layDepth": 581.09
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 3.9,
-              "layOdds": 4.1,
-              "backDepth": 174.05,
-              "layDepth": 770.15
-            }
-          ]
-        },
-        {
-          "marketId": "1.259532703",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 1662.3165359725756,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 6.4,
-              "layOdds": 7,
-              "backDepth": 548.62,
-              "layDepth": 43.37
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.16,
-              "layOdds": 1.18,
-              "backDepth": 13769.72,
-              "layDepth": 93.24
             }
           ]
         },
@@ -22389,6 +22293,102 @@
               "layOdds": 1.04,
               "backDepth": 95343.66,
               "layDepth": 11623.08
+            }
+          ]
+        },
+        {
+          "marketId": "1.259532770",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 6.5,
+          "matchedVolume": 3782.3214157700804,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.05,
+              "layOdds": 1.06,
+              "backDepth": 12550.21,
+              "layDepth": 920.87
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 18,
+              "layOdds": 20,
+              "backDepth": 27.36,
+              "layDepth": 180.95
+            }
+          ]
+        },
+        {
+          "marketId": "1.259532772",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 519.9309081542585,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.13,
+              "layOdds": 1.15,
+              "backDepth": 11975.05,
+              "layDepth": 1455.07
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 7.8,
+              "layOdds": 8.4,
+              "backDepth": 196.24,
+              "layDepth": 496.02
+            }
+          ]
+        },
+        {
+          "marketId": "1.259532700",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 1947.94884805466,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.32,
+              "layOdds": 1.35,
+              "backDepth": 6074.73,
+              "layDepth": 581.09
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 3.9,
+              "layOdds": 4.1,
+              "backDepth": 174.05,
+              "layDepth": 770.15
+            }
+          ]
+        },
+        {
+          "marketId": "1.259532703",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 1662.3165359725756,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 6.4,
+              "layOdds": 7,
+              "backDepth": 550.62,
+              "layDepth": 43.37
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.16,
+              "layOdds": 1.18,
+              "backDepth": 13769.72,
+              "layDepth": 104.42
             }
           ]
         }
@@ -22595,7 +22595,7 @@
               "backOdds": 1.22,
               "layOdds": 1.25,
               "backDepth": 1538.61,
-              "layDepth": 924.05
+              "layDepth": 974.17
             }
           ]
         },
@@ -22619,7 +22619,7 @@
               "backOdds": 1.24,
               "layOdds": 1.28,
               "backDepth": 2283.24,
-              "layDepth": 770.98
+              "layDepth": 819.93
             }
           ]
         },
@@ -22643,7 +22643,7 @@
               "backOdds": 1.28,
               "layOdds": 1.32,
               "backDepth": 2385.22,
-              "layDepth": 1081.32
+              "layDepth": 1137.07
             }
           ]
         },
@@ -22827,7 +22827,7 @@
               "selection": "HOME",
               "backOdds": 1.24,
               "layOdds": 1.27,
-              "backDepth": 18866.25,
+              "backDepth": 18895.69,
               "layDepth": 4380.5
             },
             {
@@ -22851,7 +22851,7 @@
               "selection": "HOME",
               "backOdds": 1.2,
               "layOdds": 1.23,
-              "backDepth": 19239.76,
+              "backDepth": 19499.36,
               "layDepth": 4331.03
             },
             {
@@ -22948,7 +22948,7 @@
               "backOdds": 1.04,
               "layOdds": 1.05,
               "backDepth": 3696.47,
-              "layDepth": 2716.86
+              "layDepth": 3883.71
             },
             {
               "selection": "AWAY",
@@ -22972,7 +22972,7 @@
               "backOdds": 1.04,
               "layOdds": 1.05,
               "backDepth": 1296,
-              "layDepth": 19809.18
+              "layDepth": 20470.76
             },
             {
               "selection": "AWAY",
@@ -22996,7 +22996,7 @@
               "backOdds": 1.02,
               "layOdds": 1.03,
               "backDepth": 37338.68,
-              "layDepth": 5438.98
+              "layDepth": 5438.75
             },
             {
               "selection": "AWAY",
@@ -23075,7 +23075,7 @@
               "backOdds": 1.24,
               "layOdds": 1.27,
               "backDepth": 7276.79,
-              "layDepth": 3134.99
+              "layDepth": 920.43
             }
           ]
         }
@@ -23719,30 +23719,6 @@
           ]
         },
         {
-          "marketId": "1.259534020",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 3.5,
-          "matchedVolume": 33.466421400690926,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.17,
-              "layOdds": 1.19,
-              "backDepth": 10109.6,
-              "layDepth": 69.51
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 6.2,
-              "layOdds": 6.8,
-              "backDepth": 18.88,
-              "layDepth": 789.98
-            }
-          ]
-        },
-        {
           "marketId": "1.259534007",
           "sport": "football",
           "marketType": "TOTALS",
@@ -23787,6 +23763,30 @@
               "layOdds": 18,
               "backDepth": 18.67,
               "layDepth": 106.92
+            }
+          ]
+        },
+        {
+          "marketId": "1.259534020",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 3.5,
+          "matchedVolume": 33.466421400690926,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.17,
+              "layOdds": 1.19,
+              "backDepth": 10109.6,
+              "layDepth": 69.51
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 6.2,
+              "layOdds": 6.8,
+              "backDepth": 18.88,
+              "layDepth": 789.98
             }
           ]
         }
@@ -26938,84 +26938,6 @@
           ]
         },
         {
-          "marketId": "1.259549554",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 7.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.08,
-              "backDepth": 1,
-              "layDepth": 99.05
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 10,
-              "layOdds": 990,
-              "backDepth": 20.98,
-              "layDepth": 8.25
-            }
-          ]
-        },
-        {
-          "marketId": "1.259549558",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 1.68,
-              "layOdds": 1.93,
-              "backDepth": 128.23,
-              "layDepth": 154
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 4.3,
-              "layOdds": 6.8,
-              "backDepth": 69.29,
-              "layDepth": 238.64
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 3.55,
-              "layOdds": 4.8,
-              "backDepth": 78.19,
-              "layDepth": 126.57
-            }
-          ]
-        },
-        {
-          "marketId": "1.259549572",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 4.6,
-              "layOdds": 5.4,
-              "backDepth": 18.44,
-              "layDepth": 59.37
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.23,
-              "layOdds": 1.28,
-              "backDepth": 260.63,
-              "layDepth": 66.42
-            }
-          ]
-        },
-        {
           "marketId": "1.259549562",
           "sport": "football",
           "marketType": "TOTALS",
@@ -27134,6 +27056,84 @@
               "layDepth": 59.86
             }
           ]
+        },
+        {
+          "marketId": "1.259549554",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 7.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.08,
+              "backDepth": 1,
+              "layDepth": 99.05
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 10,
+              "layOdds": 990,
+              "backDepth": 20.98,
+              "layDepth": 8.25
+            }
+          ]
+        },
+        {
+          "marketId": "1.259549558",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 1.68,
+              "layOdds": 1.93,
+              "backDepth": 128.23,
+              "layDepth": 154
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 4.3,
+              "layOdds": 6.8,
+              "backDepth": 69.29,
+              "layDepth": 238.64
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 3.55,
+              "layOdds": 4.8,
+              "backDepth": 78.19,
+              "layDepth": 126.57
+            }
+          ]
+        },
+        {
+          "marketId": "1.259549572",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 4.6,
+              "layOdds": 5.4,
+              "backDepth": 18.44,
+              "layDepth": 59.37
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.23,
+              "layOdds": 1.28,
+              "backDepth": 260.63,
+              "layDepth": 66.42
+            }
+          ]
         }
       ]
     },
@@ -27235,13 +27235,13 @@
               "backOdds": 1.32,
               "layOdds": 1.37,
               "backDepth": 530.76,
-              "layDepth": 273.46
+              "layDepth": 268.32
             },
             {
               "selection": "OVER",
               "backOdds": 3.75,
               "layOdds": 4.1,
-              "backDepth": 77.96,
+              "backDepth": 76.12,
               "layDepth": 55.77
             }
           ]
@@ -29330,28 +29330,28 @@
           "sport": "football",
           "marketType": "MATCH_ODDS",
           "scope": "full",
-          "matchedVolume": 208921.76026009733,
+          "matchedVolume": 214015.1508059227,
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.32,
+              "backOdds": 2.3,
               "layOdds": 2.34,
-              "backDepth": 4920.78,
-              "layDepth": 4043.67
+              "backDepth": 27045.56,
+              "layDepth": 4880.35
             },
             {
               "selection": "AWAY",
               "backOdds": 4.2,
               "layOdds": 4.3,
-              "backDepth": 761.45,
-              "layDepth": 2007.53
+              "backDepth": 739.34,
+              "layDepth": 1891.26
             },
             {
               "selection": "DRAW",
               "backOdds": 2.98,
               "layOdds": 3,
-              "backDepth": 156.04,
-              "layDepth": 964.85
+              "backDepth": 316.93,
+              "layDepth": 946.96
             }
           ]
         },
@@ -29416,7 +29416,7 @@
               "backOdds": 2.44,
               "layOdds": 2.48,
               "backDepth": 18.4,
-              "layDepth": 240.53
+              "layDepth": 243.53
             },
             {
               "selection": "OVER",
@@ -29487,7 +29487,7 @@
               "selection": "UNDER",
               "backOdds": 1.01,
               "layOdds": 1.02,
-              "backDepth": 22069.99,
+              "backDepth": 22067.75,
               "layDepth": 173.85
             },
             {
@@ -29539,30 +29539,6 @@
           ]
         },
         {
-          "marketId": "1.259556565",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 52.461497853388636,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.14,
-              "layOdds": 1.15,
-              "backDepth": 480.55,
-              "layDepth": 624.8
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 7.6,
-              "layOdds": 8.2,
-              "backDepth": 157.2,
-              "layDepth": 429.45
-            }
-          ]
-        },
-        {
           "marketId": "1.259556564",
           "sport": "football",
           "marketType": "TOTALS",
@@ -29607,6 +29583,30 @@
               "layOdds": 1.34,
               "backDepth": 92.6,
               "layDepth": 50
+            }
+          ]
+        },
+        {
+          "marketId": "1.259556565",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 52.461497853388636,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.14,
+              "layOdds": 1.15,
+              "backDepth": 480.55,
+              "layDepth": 624.8
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 7.6,
+              "layOdds": 8.2,
+              "backDepth": 157.2,
+              "layDepth": 429.45
             }
           ]
         },
@@ -29935,7 +29935,7 @@
               "backOdds": 1.44,
               "layOdds": 1.47,
               "backDepth": 2465.26,
-              "layDepth": 2897.6
+              "layDepth": 2897.63
             },
             {
               "selection": "AWAY",
@@ -29958,14 +29958,14 @@
               "selection": "HOME",
               "backOdds": 1.35,
               "layOdds": 1.38,
-              "backDepth": 2726.06,
-              "layDepth": 7663.83
+              "backDepth": 2713.47,
+              "layDepth": 7663.16
             },
             {
               "selection": "AWAY",
               "backOdds": 3.69,
               "layOdds": 3.79,
-              "backDepth": 423.1,
+              "backDepth": 426.61,
               "layDepth": 471.59
             }
           ]
@@ -29983,13 +29983,13 @@
               "backOdds": 1.3,
               "layOdds": 1.31,
               "backDepth": 2115.66,
-              "layDepth": 2394.12
+              "layDepth": 2402.67
             },
             {
               "selection": "AWAY",
               "backOdds": 4.24,
               "layOdds": 4.33,
-              "backDepth": 318.43,
+              "backDepth": 321.07,
               "layDepth": 412.78
             }
           ]
@@ -30006,14 +30006,14 @@
               "selection": "HOME",
               "backOdds": 1.18,
               "layOdds": 1.2,
-              "backDepth": 18118.01,
-              "layDepth": 16704.33
+              "backDepth": 18147.45,
+              "layDepth": 16681.89
             },
             {
               "selection": "AWAY",
               "backOdds": 6.21,
               "layOdds": 6.37,
-              "backDepth": 374.6,
+              "backDepth": 377.71,
               "layDepth": 280.59
             }
           ]
@@ -30079,7 +30079,7 @@
               "backOdds": 1.05,
               "layOdds": 1.07,
               "backDepth": 74145.1,
-              "layDepth": 21041.95
+              "layDepth": 21028.15
             },
             {
               "selection": "AWAY",
@@ -30200,27 +30200,27 @@
           "sport": "football",
           "marketType": "MATCH_ODDS",
           "scope": "full",
-          "matchedVolume": 76178.57341955116,
+          "matchedVolume": 76182.07341955116,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.82,
               "layOdds": 1.83,
-              "backDepth": 1068.44,
-              "layDepth": 47.05
+              "backDepth": 1066.69,
+              "layDepth": 49.05
             },
             {
               "selection": "AWAY",
               "backOdds": 5.3,
               "layOdds": 5.4,
-              "backDepth": 110.01,
+              "backDepth": 110.7,
               "layDepth": 286.05
             },
             {
               "selection": "DRAW",
               "backOdds": 3.7,
               "layOdds": 3.75,
-              "backDepth": 101.73,
+              "backDepth": 102.72,
               "layDepth": 294.06
             }
           ]
@@ -30283,17 +30283,17 @@
           "runners": [
             {
               "selection": "UNDER",
-              "backOdds": 11,
+              "backOdds": 10.5,
               "layOdds": 12.5,
-              "backDepth": 269.62,
-              "layDepth": 754.85
+              "backDepth": 541.73,
+              "layDepth": 979.85
             },
             {
               "selection": "OVER",
               "backOdds": 1.09,
               "layOdds": 1.1,
               "backDepth": 4562.9,
-              "layDepth": 2696.16
+              "layDepth": 74.66
             }
           ]
         },
@@ -30303,21 +30303,21 @@
           "marketType": "TOTALS",
           "scope": "match_total",
           "line": 2.5,
-          "matchedVolume": 2187.2545548048865,
+          "matchedVolume": 2231.8211431818845,
           "runners": [
             {
               "selection": "UNDER",
               "backOdds": 1.83,
-              "layOdds": 1.86,
-              "backDepth": 52.67,
-              "layDepth": 41.62
+              "layOdds": 1.85,
+              "backDepth": 17.23,
+              "layDepth": 39.84
             },
             {
               "selection": "OVER",
-              "backOdds": 2.16,
-              "layOdds": 2.2,
-              "backDepth": 178.07,
-              "layDepth": 29.48
+              "backOdds": 2.18,
+              "layOdds": 2.22,
+              "backDepth": 33.8,
+              "layDepth": 5514.78
             }
           ]
         },
@@ -30388,8 +30388,8 @@
               "selection": "OVER",
               "backOdds": 4,
               "layOdds": 4.4,
-              "backDepth": 311.13,
-              "layDepth": 655.76
+              "backDepth": 312.13,
+              "layDepth": 663.96
             }
           ]
         },
@@ -30412,7 +30412,7 @@
               "selection": "AWAY",
               "backOdds": 1.01,
               "layOdds": 1.05,
-              "backDepth": 14666.49,
+              "backDepth": 14515.58,
               "layDepth": 1710.51
             }
           ]
@@ -30837,7 +30837,7 @@
               "selection": "HOME",
               "backOdds": 1.14,
               "layOdds": 1.16,
-              "backDepth": 5550.28,
+              "backDepth": 5058.2,
               "layDepth": 5070.54
             },
             {
@@ -31105,54 +31105,6 @@
           ]
         },
         {
-          "marketId": "1.259557164",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 0.5,
-          "matchedVolume": 1598.4837636668958,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 9.4,
-              "layOdds": 11,
-              "backDepth": 343.4,
-              "layDepth": 1216.99
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.1,
-              "layOdds": 1.12,
-              "backDepth": 12169.92,
-              "layDepth": 5768.17
-            }
-          ]
-        },
-        {
-          "marketId": "1.259557168",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0.3961671948091142,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.02,
-              "layOdds": 1.04,
-              "backDepth": 16925.5,
-              "layDepth": 2670.26
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 27,
-              "layOdds": 44,
-              "backDepth": 93.3,
-              "layDepth": 11.36
-            }
-          ]
-        },
-        {
           "marketId": "1.259557102",
           "sport": "football",
           "marketType": "TOTALS",
@@ -31388,7 +31340,7 @@
               "backOdds": 1.24,
               "layOdds": 1.28,
               "backDepth": 715.93,
-              "layDepth": 1964.13
+              "layDepth": 1966.34
             }
           ]
         },
@@ -31500,7 +31452,7 @@
               "selection": "HOME",
               "backOdds": 1.69,
               "layOdds": 1.72,
-              "backDepth": 12544.69,
+              "backDepth": 11081.1,
               "layDepth": 250.18
             },
             {
@@ -31751,6 +31703,54 @@
               "layDepth": 25.33
             }
           ]
+        },
+        {
+          "marketId": "1.259557164",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 0.5,
+          "matchedVolume": 1598.4837636668958,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 9.4,
+              "layOdds": 11,
+              "backDepth": 343.4,
+              "layDepth": 1216.99
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.1,
+              "layOdds": 1.12,
+              "backDepth": 12169.92,
+              "layDepth": 5768.17
+            }
+          ]
+        },
+        {
+          "marketId": "1.259557168",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0.3961671948091142,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.02,
+              "layOdds": 1.04,
+              "backDepth": 16925.5,
+              "layDepth": 2670.26
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 27,
+              "layOdds": 44,
+              "backDepth": 93.3,
+              "layDepth": 11.36
+            }
+          ]
         }
       ]
     },
@@ -31851,7 +31851,7 @@
               "selection": "UNDER",
               "backOdds": 3.4,
               "layOdds": 3.55,
-              "backDepth": 218.05,
+              "backDepth": 1046.43,
               "layDepth": 44.22
             },
             {
@@ -31859,7 +31859,7 @@
               "backOdds": 1.4,
               "layOdds": 1.42,
               "backDepth": 17.35,
-              "layDepth": 762.65
+              "layDepth": 2746.09
             }
           ]
         },
@@ -31883,7 +31883,7 @@
               "backOdds": 4,
               "layOdds": 4.3,
               "backDepth": 68.4,
-              "layDepth": 555.23
+              "layDepth": 1209.3
             }
           ]
         },
@@ -32098,7 +32098,7 @@
               "selection": "AWAY",
               "backOdds": 1.16,
               "layOdds": 1.19,
-              "backDepth": 17895.32,
+              "backDepth": 17452.36,
               "layDepth": 833.2
             }
           ]
@@ -32596,13 +32596,13 @@
               "backOdds": 1.04,
               "layOdds": 1.05,
               "backDepth": 10,
-              "layDepth": 2964
+              "layDepth": 2967.77
             },
             {
               "selection": "OVER",
               "backOdds": 22,
               "layOdds": 36,
-              "backDepth": 130.36,
+              "backDepth": 130.54,
               "layDepth": 129.35
             }
           ]
@@ -32621,13 +32621,13 @@
           "sport": "football",
           "marketType": "MATCH_ODDS",
           "scope": "full",
-          "matchedVolume": 112159.08457030597,
+          "matchedVolume": 112161.08457030597,
           "runners": [
             {
               "selection": "HOME",
               "backOdds": 1.34,
               "layOdds": 1.35,
-              "backDepth": 1194,
+              "backDepth": 1193,
               "layDepth": 1648.79
             },
             {
@@ -32785,7 +32785,7 @@
               "selection": "OVER",
               "backOdds": 1.3,
               "layOdds": 1.32,
-              "backDepth": 5045.4,
+              "backDepth": 5022.32,
               "layDepth": 75
             }
           ]
@@ -33115,7 +33115,7 @@
               "backOdds": 1.52,
               "layOdds": 1.55,
               "backDepth": 267.73,
-              "layDepth": 5030.12
+              "layDepth": 5030.16
             },
             {
               "selection": "AWAY",
@@ -33138,7 +33138,7 @@
               "selection": "HOME",
               "backOdds": 1.41,
               "layOdds": 1.43,
-              "backDepth": 1328.16,
+              "backDepth": 1327.05,
               "layDepth": 2709.64
             },
             {
@@ -33162,7 +33162,7 @@
               "selection": "HOME",
               "backOdds": 1.34,
               "layOdds": 1.35,
-              "backDepth": 1194,
+              "backDepth": 1193,
               "layDepth": 1648.79
             },
             {
@@ -33282,7 +33282,7 @@
               "selection": "HOME",
               "backOdds": 1.04,
               "layOdds": 1.06,
-              "backDepth": 41522.24,
+              "backDepth": 41520.44,
               "layDepth": 8195.04
             },
             {
@@ -33402,54 +33402,6 @@
               "layOdds": 3.4,
               "backDepth": 717.45,
               "layDepth": 2106.27
-            }
-          ]
-        },
-        {
-          "marketId": "1.259557912",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 6.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.02,
-              "backDepth": 9072.38,
-              "layDepth": 586.58
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 50,
-              "layOdds": 110,
-              "backDepth": 14.62,
-              "layDepth": 83.3
-            }
-          ]
-        },
-        {
-          "marketId": "1.259557914",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 281.3685314015898,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.03,
-              "layOdds": 1.05,
-              "backDepth": 12642.06,
-              "layDepth": 3468.5
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 21,
-              "layOdds": 36,
-              "backDepth": 173.42,
-              "layDepth": 369.11
             }
           ]
         },
@@ -34090,7 +34042,7 @@
               "backOdds": 1.05,
               "layOdds": 1.06,
               "backDepth": 5002.9,
-              "layDepth": 1788.43
+              "layDepth": 1859.07
             },
             {
               "selection": "AWAY",
@@ -34194,6 +34146,54 @@
               "layOdds": 85.6,
               "backDepth": 14.25,
               "layDepth": 53.17
+            }
+          ]
+        },
+        {
+          "marketId": "1.259557912",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 6.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.02,
+              "backDepth": 9072.38,
+              "layDepth": 586.58
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 50,
+              "layOdds": 110,
+              "backDepth": 14.62,
+              "layDepth": 83.3
+            }
+          ]
+        },
+        {
+          "marketId": "1.259557914",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 281.3685314015898,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.03,
+              "layOdds": 1.05,
+              "backDepth": 12642.06,
+              "layDepth": 3468.5
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 21,
+              "layOdds": 36,
+              "backDepth": 173.42,
+              "layDepth": 369.11
             }
           ]
         }
@@ -34350,30 +34350,6 @@
               "layOdds": 5.1,
               "backDepth": 34.43,
               "layDepth": 29.8
-            }
-          ]
-        },
-        {
-          "marketId": "1.259564290",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 6.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.04,
-              "layOdds": 1.06,
-              "backDepth": 1633.04,
-              "layDepth": 322.76
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 17.5,
-              "layOdds": 24,
-              "backDepth": 19.38,
-              "layDepth": 44.12
             }
           ]
         },
@@ -34750,13 +34726,13 @@
               "backOdds": 1.52,
               "layOdds": 1.62,
               "backDepth": 37.57,
-              "layDepth": 20.16
+              "layDepth": 18.21
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.61,
+              "backOdds": 2.62,
               "layOdds": 2.93,
-              "backDepth": 12.47,
+              "backDepth": 11.24,
               "layDepth": 41.41
             }
           ]
@@ -34774,13 +34750,13 @@
               "backOdds": 1.35,
               "layOdds": 1.42,
               "backDepth": 99.59,
-              "layDepth": 268.34
+              "layDepth": 296.32
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.4,
+              "backOdds": 3.42,
               "layOdds": 3.85,
-              "backDepth": 112.07,
+              "backDepth": 10.83,
               "layDepth": 19.9
             }
           ]
@@ -34796,15 +34772,15 @@
             {
               "selection": "HOME",
               "backOdds": 1.29,
-              "layOdds": 1.36,
+              "layOdds": 1.35,
               "backDepth": 92.58,
-              "layDepth": 803.79
+              "layDepth": 21.16
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.85,
+              "backOdds": 3.84,
               "layOdds": 4.42,
-              "backDepth": 161.74,
+              "backDepth": 95.28,
               "layDepth": 27.15
             }
           ]
@@ -34820,15 +34796,15 @@
             {
               "selection": "HOME",
               "backOdds": 1.25,
-              "layOdds": 1.31,
+              "layOdds": 1.3,
               "backDepth": 90.28,
-              "layDepth": 807.86
+              "layDepth": 17.9
             },
             {
               "selection": "AWAY",
-              "backOdds": 4.3,
+              "backOdds": 4.26,
               "layOdds": 4.99,
-              "backDepth": 80.87,
+              "backDepth": 52.61,
               "layDepth": 22.74
             }
           ]
@@ -34844,15 +34820,15 @@
             {
               "selection": "HOME",
               "backOdds": 1.17,
-              "layOdds": 1.23,
+              "layOdds": 1.22,
               "backDepth": 177.75,
-              "layDepth": 526.77
+              "layDepth": 34.64
             },
             {
               "selection": "AWAY",
-              "backOdds": 5.43,
+              "backOdds": 5.4,
               "layOdds": 6.8,
-              "backDepth": 108.78,
+              "backDepth": 70.75,
               "layDepth": 11.31
             }
           ]
@@ -34870,13 +34846,13 @@
               "backOdds": 1.09,
               "layOdds": 1.15,
               "backDepth": 343.67,
-              "layDepth": 253.43
+              "layDepth": 253.31
             },
             {
               "selection": "AWAY",
-              "backOdds": 7.75,
+              "backOdds": 7.79,
               "layOdds": 12.11,
-              "backDepth": 36.09,
+              "backDepth": 25.39,
               "layDepth": 20.95
             }
           ]
@@ -34894,13 +34870,13 @@
               "backOdds": 1.08,
               "layOdds": 1.14,
               "backDepth": 800.36,
-              "layDepth": 237.51
+              "layDepth": 237.47
             },
             {
               "selection": "AWAY",
-              "backOdds": 8.27,
+              "backOdds": 8.3,
               "layOdds": 13.06,
-              "backDepth": 31.35,
+              "backDepth": 31.25,
               "layDepth": 49.62
             }
           ]
@@ -34917,7 +34893,7 @@
               "selection": "HOME",
               "backOdds": 1.07,
               "layOdds": 1.13,
-              "backDepth": 804.92,
+              "backDepth": 783.16,
               "layDepth": 217.75
             },
             {
@@ -34950,6 +34926,30 @@
               "layOdds": 21,
               "backDepth": 28.43,
               "layDepth": 19.86
+            }
+          ]
+        },
+        {
+          "marketId": "1.259564290",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 6.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.04,
+              "layOdds": 1.06,
+              "backDepth": 1633.04,
+              "layDepth": 322.76
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 17.5,
+              "layOdds": 24,
+              "backDepth": 19.38,
+              "layDepth": 44.12
             }
           ]
         },
@@ -35014,13 +35014,13 @@
               "backOdds": 2.74,
               "layOdds": 3.3,
               "backDepth": 46.05,
-              "layDepth": 116.49
+              "layDepth": 10.66
             },
             {
               "selection": "OVER",
               "backOdds": 1.43,
               "layOdds": 1.57,
-              "backDepth": 324.8,
+              "backDepth": 80.44,
               "layDepth": 13.67
             }
           ]
@@ -36075,8 +36075,8 @@
               "selection": "UNDER",
               "backOdds": 1.53,
               "layOdds": 1.62,
-              "backDepth": 118.06,
-              "layDepth": 119.65
+              "backDepth": 118.09,
+              "layDepth": 220.11
             },
             {
               "selection": "OVER",
@@ -37672,54 +37672,6 @@
       "competition": null,
       "markets": [
         {
-          "marketId": "1.259575710",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.05,
-              "layOdds": 1.07,
-              "backDepth": 713.8,
-              "layDepth": 561.25
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 15,
-              "layOdds": 21,
-              "backDepth": 43.88,
-              "layDepth": 35.69
-            }
-          ]
-        },
-        {
-          "marketId": "1.259575711",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 10,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.03,
-              "backDepth": 390.1,
-              "layDepth": 520.89
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 34,
-              "layOdds": 110,
-              "backDepth": 13.86,
-              "layDepth": 11.59
-            }
-          ]
-        },
-        {
           "marketId": "1.259575718@-2.5",
           "sport": "football",
           "marketType": "AH",
@@ -38320,6 +38272,54 @@
           ]
         },
         {
+          "marketId": "1.259575710",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.05,
+              "layOdds": 1.07,
+              "backDepth": 713.8,
+              "layDepth": 561.25
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 15,
+              "layOdds": 21,
+              "backDepth": 43.88,
+              "layDepth": 35.69
+            }
+          ]
+        },
+        {
+          "marketId": "1.259575711",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 10,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.03,
+              "backDepth": 390.1,
+              "layDepth": 520.89
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 34,
+              "layOdds": 110,
+              "backDepth": 13.86,
+              "layDepth": 11.59
+            }
+          ]
+        },
+        {
           "marketId": "1.259575705",
           "sport": "football",
           "marketType": "MATCH_ODDS",
@@ -38454,126 +38454,6 @@
       "startTime": "2026-07-01T22:00:00.000Z",
       "competition": null,
       "markets": [
-        {
-          "marketId": "1.259569860",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 16.17828913912096,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.8,
-              "layOdds": 2.04,
-              "backDepth": 16.81,
-              "layDepth": 11.59
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.98,
-              "layOdds": 2.24,
-              "backDepth": 11.88,
-              "layDepth": 13.85
-            }
-          ]
-        },
-        {
-          "marketId": "1.259569861",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 3.5,
-          "matchedVolume": 5.12,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.33,
-              "layOdds": 1.41,
-              "backDepth": 42.97,
-              "layDepth": 31.56
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 3.4,
-              "layOdds": 4.1,
-              "backDepth": 13.05,
-              "layDepth": 17.84
-            }
-          ]
-        },
-        {
-          "marketId": "1.259569862",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.12,
-              "layOdds": 1.18,
-              "backDepth": 96.86,
-              "layDepth": 11.74
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.01,
-              "layOdds": 9.4,
-              "backDepth": 119.52,
-              "layDepth": 11.66
-            }
-          ]
-        },
-        {
-          "marketId": "1.259569863",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.04,
-              "layOdds": 1.07,
-              "backDepth": 421.5,
-              "layDepth": 14.89
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.01,
-              "layOdds": 26,
-              "backDepth": 112.66,
-              "layDepth": 17.08
-            }
-          ]
-        },
-        {
-          "marketId": "1.259569864",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 6.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.07,
-              "backDepth": 735.97,
-              "layDepth": 14.89
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.01,
-              "layOdds": 980,
-              "backDepth": 59.62,
-              "layDepth": 15.33
-            }
-          ]
-        },
         {
           "marketId": "1.259569870@-2.75",
           "sport": "football",
@@ -39003,6 +38883,126 @@
               "layOdds": 26,
               "backDepth": 60.44,
               "layDepth": 10.32
+            }
+          ]
+        },
+        {
+          "marketId": "1.259569860",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 16.17828913912096,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.8,
+              "layOdds": 2.04,
+              "backDepth": 16.81,
+              "layDepth": 11.59
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.98,
+              "layOdds": 2.24,
+              "backDepth": 11.88,
+              "layDepth": 13.85
+            }
+          ]
+        },
+        {
+          "marketId": "1.259569861",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 3.5,
+          "matchedVolume": 5.12,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.33,
+              "layOdds": 1.41,
+              "backDepth": 42.97,
+              "layDepth": 31.56
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 3.4,
+              "layOdds": 4.1,
+              "backDepth": 13.05,
+              "layDepth": 17.84
+            }
+          ]
+        },
+        {
+          "marketId": "1.259569862",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.12,
+              "layOdds": 1.18,
+              "backDepth": 96.86,
+              "layDepth": 11.74
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.01,
+              "layOdds": 9.4,
+              "backDepth": 119.52,
+              "layDepth": 11.66
+            }
+          ]
+        },
+        {
+          "marketId": "1.259569863",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.04,
+              "layOdds": 1.07,
+              "backDepth": 421.5,
+              "layDepth": 14.89
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.01,
+              "layOdds": 26,
+              "backDepth": 112.66,
+              "layDepth": 17.08
+            }
+          ]
+        },
+        {
+          "marketId": "1.259569864",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 6.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.07,
+              "backDepth": 735.97,
+              "layDepth": 14.89
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.01,
+              "layOdds": 980,
+              "backDepth": 59.62,
+              "layDepth": 15.33
             }
           ]
         },
@@ -40199,16 +40199,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.58,
-              "layOdds": 1.77,
-              "backDepth": 14.95,
-              "layDepth": 79.82
+              "layOdds": 1.74,
+              "backDepth": 30.3,
+              "layDepth": 29.68
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.29,
-              "layOdds": 2.74,
-              "backDepth": 305.86,
-              "layDepth": 31.91
+              "backOdds": 2.36,
+              "layOdds": 2.73,
+              "backDepth": 10.74,
+              "layDepth": 17.54
             }
           ]
         },
@@ -40223,16 +40223,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.36,
-              "layOdds": 1.54,
-              "backDepth": 27.68,
-              "layDepth": 358.02
+              "layOdds": 1.53,
+              "backDepth": 37.98,
+              "layDepth": 33.03
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.87,
-              "layOdds": 4.08,
-              "backDepth": 101.39,
-              "layDepth": 48.19
+              "backOdds": 2.91,
+              "layOdds": 3.76,
+              "backDepth": 16.82,
+              "layDepth": 13.74
             }
           ]
         },
@@ -40246,17 +40246,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.27,
-              "layOdds": 1.44,
-              "backDepth": 29.64,
-              "layDepth": 557.65
+              "backOdds": 1.29,
+              "layOdds": 1.4,
+              "backDepth": 33.19,
+              "layDepth": 10.49
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.31,
-              "layOdds": 4.8,
-              "backDepth": 101.5,
-              "layDepth": 35.52
+              "backOdds": 3.33,
+              "layOdds": 4.79,
+              "backDepth": 28.37,
+              "layDepth": 11.77
             }
           ]
         },
@@ -40270,17 +40270,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.22,
-              "layOdds": 1.37,
-              "backDepth": 37.35,
-              "layDepth": 427.26
+              "backOdds": 1.24,
+              "layOdds": 1.35,
+              "backDepth": 30.57,
+              "layDepth": 10.88
             },
             {
               "selection": "AWAY",
               "backOdds": 3.75,
               "layOdds": 5.65,
-              "backDepth": 76.06,
-              "layDepth": 18.22
+              "backDepth": 79.81,
+              "layDepth": 18.69
             }
           ]
         },
@@ -40294,17 +40294,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.15,
-              "layOdds": 1.26,
-              "backDepth": 74.65,
-              "layDepth": 780.25
+              "backOdds": 1.16,
+              "layOdds": 1.24,
+              "backDepth": 61.15,
+              "layDepth": 19.94
             },
             {
               "selection": "AWAY",
               "backOdds": 4.97,
               "layOdds": 7.64,
-              "backDepth": 12.42,
-              "layDepth": 11.35
+              "backDepth": 12.65,
+              "layDepth": 11.8
             }
           ]
         },
@@ -40320,15 +40320,15 @@
               "selection": "HOME",
               "backOdds": 1.08,
               "layOdds": 1.14,
-              "backDepth": 382.52,
-              "layDepth": 19.7
+              "backDepth": 779.26,
+              "layDepth": 29.95
             },
             {
               "selection": "AWAY",
-              "backOdds": 7.92,
-              "layOdds": 13.47,
-              "backDepth": 11.51,
-              "layDepth": 20.8
+              "backOdds": 8,
+              "layOdds": 13.37,
+              "backDepth": 18.04,
+              "layDepth": 20.88
             }
           ]
         },
@@ -40344,14 +40344,14 @@
               "selection": "HOME",
               "backOdds": 1.07,
               "layOdds": 1.13,
-              "backDepth": 3292.29,
-              "layDepth": 62.3
+              "backDepth": 3292.5,
+              "layDepth": 266.37
             },
             {
               "selection": "AWAY",
-              "backOdds": 8.66,
+              "backOdds": 8.7,
               "layOdds": 14.36,
-              "backDepth": 23.01,
+              "backDepth": 33.2,
               "layDepth": 29.38
             }
           ]
@@ -41878,126 +41878,6 @@
           ]
         },
         {
-          "marketId": "1.259582865",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 0.5,
-          "matchedVolume": 9.994382404499582,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.02,
-              "layOdds": 13.5,
-              "backDepth": 113.26,
-              "layDepth": 29.92
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.08,
-              "layOdds": 1.13,
-              "backDepth": 373.19,
-              "layDepth": 29.14
-            }
-          ]
-        },
-        {
-          "marketId": "1.259582869",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 2,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.13,
-              "backDepth": 217.43,
-              "layDepth": 24.35
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.01,
-              "layOdds": 970,
-              "backDepth": 217.83,
-              "layDepth": 2.13
-            }
-          ]
-        },
-        {
-          "marketId": "1.259582871",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.67,
-              "layOdds": 1.93,
-              "backDepth": 23.62,
-              "layDepth": 30.49
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 2.08,
-              "layOdds": 2.5,
-              "backDepth": 19.17,
-              "layDepth": 15.79
-            }
-          ]
-        },
-        {
-          "marketId": "1.259582872",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.09,
-              "layOdds": 1.13,
-              "backDepth": 138.64,
-              "layDepth": 19.78
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.02,
-              "layOdds": 12.5,
-              "backDepth": 11.84,
-              "layDepth": 17.13
-            }
-          ]
-        },
-        {
-          "marketId": "1.259582875",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 19.060000000000002,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 2.94,
-              "layOdds": 3.7,
-              "backDepth": 10.93,
-              "layDepth": 14.2
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.38,
-              "layOdds": 1.52,
-              "backDepth": 16.39,
-              "layDepth": 40.59
-            }
-          ]
-        },
-        {
           "marketId": "1.259582817",
           "sport": "football",
           "marketType": "TOTALS",
@@ -42644,6 +42524,126 @@
               "layDepth": 1.24
             }
           ]
+        },
+        {
+          "marketId": "1.259582865",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 0.5,
+          "matchedVolume": 9.994382404499582,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.02,
+              "layOdds": 13.5,
+              "backDepth": 113.26,
+              "layDepth": 29.92
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.08,
+              "layOdds": 1.13,
+              "backDepth": 373.19,
+              "layDepth": 29.14
+            }
+          ]
+        },
+        {
+          "marketId": "1.259582869",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 2,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.13,
+              "backDepth": 217.43,
+              "layDepth": 24.35
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.01,
+              "layOdds": 970,
+              "backDepth": 217.83,
+              "layDepth": 2.13
+            }
+          ]
+        },
+        {
+          "marketId": "1.259582871",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.67,
+              "layOdds": 1.93,
+              "backDepth": 23.62,
+              "layDepth": 30.49
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 2.08,
+              "layOdds": 2.5,
+              "backDepth": 19.17,
+              "layDepth": 15.79
+            }
+          ]
+        },
+        {
+          "marketId": "1.259582872",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.09,
+              "layOdds": 1.13,
+              "backDepth": 138.64,
+              "layDepth": 19.78
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.02,
+              "layOdds": 12.5,
+              "backDepth": 11.84,
+              "layDepth": 17.13
+            }
+          ]
+        },
+        {
+          "marketId": "1.259582875",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 19.060000000000002,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 2.94,
+              "layOdds": 3.7,
+              "backDepth": 10.93,
+              "layDepth": 14.2
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.38,
+              "layOdds": 1.52,
+              "backDepth": 16.39,
+              "layDepth": 40.59
+            }
+          ]
         }
       ]
     },
@@ -43113,14 +43113,14 @@
               "selection": "HOME",
               "backOdds": 1.01,
               "layOdds": 970,
-              "backDepth": 67.32,
+              "backDepth": 67.27,
               "layDepth": 1.6
             },
             {
               "selection": "AWAY",
               "backOdds": 1.01,
               "layOdds": 970,
-              "backDepth": 56.21,
+              "backDepth": 56.16,
               "layDepth": 2.21
             }
           ]
@@ -43137,7 +43137,7 @@
               "selection": "HOME",
               "backOdds": 1.01,
               "layOdds": 970,
-              "backDepth": 165.43,
+              "backDepth": 212.32,
               "layDepth": 2.14
             },
             {
@@ -43145,7 +43145,7 @@
               "backOdds": 1.04,
               "layOdds": 1000,
               "backDepth": 11.12,
-              "layDepth": 2.9
+              "layDepth": 3.37
             }
           ]
         },
@@ -43168,8 +43168,8 @@
               "selection": "AWAY",
               "backOdds": 1.01,
               "layOdds": 970,
-              "backDepth": 54.29,
-              "layDepth": 1.57
+              "backDepth": 54.25,
+              "layDepth": 2.09
             }
           ]
         },
@@ -43260,6 +43260,156 @@
       "startTime": "2026-06-30T18:30:00.000Z",
       "competition": null,
       "markets": [
+        {
+          "marketId": "1.259583548",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 110,
+              "backDepth": 216.6,
+              "layDepth": 5.36
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.21,
+              "layOdds": 110,
+              "backDepth": 11.97,
+              "layDepth": 2.12
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583540",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 10.597248832301874,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 1.17,
+              "layOdds": 1.55,
+              "backDepth": 79.32,
+              "layDepth": 13.15
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 5.5,
+              "layOdds": 100,
+              "backDepth": 13.8,
+              "layDepth": 10.27
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 4.7,
+              "layOdds": 13.5,
+              "backDepth": 12.67,
+              "layDepth": 11.38
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583544",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 0.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.02,
+              "layOdds": 110,
+              "backDepth": 114.21,
+              "layDepth": 4.67
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.01,
+              "layOdds": 2.08,
+              "backDepth": 506.7,
+              "layDepth": 14.69
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583550",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.24,
+              "layOdds": 110,
+              "backDepth": 19.63,
+              "layDepth": 10.23
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.2,
+              "layOdds": 110,
+              "backDepth": 15.78,
+              "layDepth": 10.75
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583551",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.05,
+              "layOdds": 110,
+              "backDepth": 55.45,
+              "layDepth": 5.38
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.21,
+              "layOdds": 55,
+              "backDepth": 11.97,
+              "layDepth": 13.25
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583554",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.47,
+              "layOdds": 110,
+              "backDepth": 10.85,
+              "layDepth": 6.98
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.15,
+              "layOdds": 2.08,
+              "backDepth": 27.55,
+              "layDepth": 14.68
+            }
+          ]
+        },
         {
           "marketId": "1.259583496",
           "sport": "football",
@@ -43451,156 +43601,6 @@
               "layDepth": 10.38
             }
           ]
-        },
-        {
-          "marketId": "1.259583540",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 10.597248832301874,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 1.17,
-              "layOdds": 1.55,
-              "backDepth": 79.32,
-              "layDepth": 13.15
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 5.5,
-              "layOdds": 100,
-              "backDepth": 13.8,
-              "layDepth": 10.27
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 4.7,
-              "layOdds": 13.5,
-              "backDepth": 12.67,
-              "layDepth": 11.38
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583544",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 0.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.02,
-              "layOdds": 110,
-              "backDepth": 114.21,
-              "layDepth": 4.67
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.01,
-              "layOdds": 2.08,
-              "backDepth": 506.7,
-              "layDepth": 14.69
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583550",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.24,
-              "layOdds": 110,
-              "backDepth": 19.63,
-              "layDepth": 10.23
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.2,
-              "layOdds": 110,
-              "backDepth": 15.78,
-              "layDepth": 10.75
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583551",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.05,
-              "layOdds": 110,
-              "backDepth": 55.45,
-              "layDepth": 5.38
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.21,
-              "layOdds": 55,
-              "backDepth": 11.97,
-              "layDepth": 13.25
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583554",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.47,
-              "layOdds": 110,
-              "backDepth": 10.85,
-              "layDepth": 6.98
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.15,
-              "layOdds": 2.08,
-              "backDepth": 27.55,
-              "layDepth": 14.68
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583548",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 110,
-              "backDepth": 216.6,
-              "layDepth": 5.36
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.21,
-              "layOdds": 110,
-              "backDepth": 11.97,
-              "layDepth": 2.12
-            }
-          ]
         }
       ]
     },
@@ -43672,13 +43672,13 @@
               "backOdds": 1.12,
               "layOdds": 1.47,
               "backDepth": 48.2,
-              "layDepth": 13.06
+              "layDepth": 12.89
             },
             {
               "selection": "AWAY",
               "backOdds": 1.09,
               "layOdds": 17.67,
-              "backDepth": 147.45,
+              "backDepth": 144.47,
               "layDepth": 10.75
             }
           ]
@@ -43702,7 +43702,7 @@
               "selection": "AWAY",
               "backOdds": 3.84,
               "layOdds": 15.64,
-              "backDepth": 11.04,
+              "backDepth": 7.25,
               "layDepth": 10.96
             }
           ]
@@ -44266,60 +44266,6 @@
       "competition": null,
       "markets": [
         {
-          "marketId": "1.259583203",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 1.93,
-              "layOdds": 1000,
-              "backDepth": 22.63,
-              "layDepth": 4.86
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 1.22,
-              "layOdds": 3.8,
-              "backDepth": 11.05,
-              "layDepth": 13.88
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 3.7,
-              "layOdds": 1000,
-              "backDepth": 16.65,
-              "layDepth": 3.15
-            }
-          ]
-        },
-        {
-          "marketId": "1.259583217",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.09,
-              "layOdds": 110,
-              "backDepth": 11.35,
-              "layDepth": 4.53
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.13,
-              "layOdds": 1.2,
-              "backDepth": 32.94,
-              "layDepth": 10.33
-            }
-          ]
-        },
-        {
           "marketId": "1.259583211",
           "sport": "football",
           "marketType": "TOTALS",
@@ -44388,6 +44334,60 @@
               "layOdds": 55,
               "backDepth": 42.29,
               "layDepth": 12.5
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583203",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 1.93,
+              "layOdds": 1000,
+              "backDepth": 22.63,
+              "layDepth": 4.86
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 1.22,
+              "layOdds": 3.8,
+              "backDepth": 11.05,
+              "layDepth": 13.88
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 3.7,
+              "layOdds": 1000,
+              "backDepth": 16.65,
+              "layDepth": 3.15
+            }
+          ]
+        },
+        {
+          "marketId": "1.259583217",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.09,
+              "layOdds": 110,
+              "backDepth": 11.35,
+              "layDepth": 4.53
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.13,
+              "layOdds": 1.2,
+              "backDepth": 32.94,
+              "layDepth": 10.33
             }
           ]
         },
@@ -45686,9 +45686,9 @@
             {
               "selection": "AWAY",
               "backOdds": 1.09,
-              "layOdds": 1.98,
+              "layOdds": 2,
               "backDepth": 10.53,
-              "layDepth": 11.21
+              "layDepth": 10.19
             },
             {
               "selection": "DRAW",
@@ -46879,7 +46879,7 @@
               "backOdds": 2.32,
               "layOdds": 2.64,
               "backDepth": 115.95,
-              "layDepth": 180.92
+              "layDepth": 333.35
             },
             {
               "selection": "OVER",
@@ -47070,7 +47070,7 @@
               "selection": "HOME",
               "backOdds": 5.18,
               "layOdds": 6.52,
-              "backDepth": 35.08,
+              "backDepth": 63.26,
               "layDepth": 13.29
             },
             {
@@ -47078,7 +47078,7 @@
               "backOdds": 1.18,
               "layOdds": 1.24,
               "backDepth": 72.94,
-              "layDepth": 161.87
+              "layDepth": 264.65
             }
           ]
         },
@@ -47102,7 +47102,7 @@
               "backOdds": 1.26,
               "layOdds": 1.34,
               "backDepth": 12.69,
-              "layDepth": 46.1
+              "layDepth": 304.48
             }
           ]
         },
@@ -47116,9 +47116,9 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 3.27,
+              "backOdds": 3.3,
               "layOdds": 4.01,
-              "backDepth": 10.54,
+              "backDepth": 75.12,
               "layDepth": 22
             },
             {
@@ -47126,7 +47126,7 @@
               "backOdds": 1.33,
               "layOdds": 1.44,
               "backDepth": 96.08,
-              "layDepth": 24.2
+              "layDepth": 174.71
             }
           ]
         },
@@ -47150,7 +47150,7 @@
               "backOdds": 1.38,
               "layOdds": 1.5,
               "backDepth": 143.67,
-              "layDepth": 27.4
+              "layDepth": 200.64
             }
           ]
         },
@@ -47166,7 +47166,7 @@
               "selection": "HOME",
               "backOdds": 2.73,
               "layOdds": 3.16,
-              "backDepth": 15.33,
+              "backDepth": 18.05,
               "layDepth": 14.45
             },
             {
@@ -47174,7 +47174,7 @@
               "backOdds": 1.46,
               "layOdds": 1.58,
               "backDepth": 31.28,
-              "layDepth": 31.2
+              "layDepth": 57.69
             }
           ]
         },
@@ -47188,17 +47188,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.33,
+              "backOdds": 2.34,
               "layOdds": 2.61,
-              "backDepth": 35.77,
-              "layDepth": 11.03
+              "backDepth": 20,
+              "layDepth": 36.55
             },
             {
               "selection": "AWAY",
               "backOdds": 1.62,
               "layOdds": 1.75,
-              "backDepth": 17.74,
-              "layDepth": 27.9
+              "backDepth": 61.77,
+              "layDepth": 51.56
             }
           ]
         },
@@ -47212,17 +47212,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.09,
-              "layOdds": 2.3,
-              "backDepth": 16.63,
-              "layDepth": 196.92
+              "backOdds": 2.1,
+              "layOdds": 2.28,
+              "backDepth": 15.89,
+              "layDepth": 26.06
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.77,
-              "layOdds": 1.92,
-              "backDepth": 125.7,
-              "layDepth": 18.19
+              "backOdds": 1.78,
+              "layOdds": 1.91,
+              "backDepth": 33.25,
+              "layDepth": 17.47
             }
           ]
         },
@@ -47238,15 +47238,15 @@
               "selection": "HOME",
               "backOdds": 1.88,
               "layOdds": 2.05,
-              "backDepth": 11.09,
-              "layDepth": 12.62
+              "backDepth": 24.16,
+              "layDepth": 45.18
             },
             {
               "selection": "AWAY",
               "backOdds": 1.95,
-              "layOdds": 2.15,
-              "backDepth": 44.78,
-              "layDepth": 27.75
+              "layOdds": 2.14,
+              "backDepth": 50.51,
+              "layDepth": 21.23
             }
           ]
         },
@@ -47262,15 +47262,15 @@
               "selection": "HOME",
               "backOdds": 1.66,
               "layOdds": 1.81,
-              "backDepth": 34.51,
-              "layDepth": 56.8
+              "backDepth": 47.16,
+              "layDepth": 64.55
             },
             {
               "selection": "AWAY",
               "backOdds": 2.24,
               "layOdds": 2.5,
-              "backDepth": 18.6,
-              "layDepth": 13.02
+              "backDepth": 23.73,
+              "layDepth": 21.42
             }
           ]
         },
@@ -47285,16 +47285,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.54,
-              "layOdds": 1.66,
-              "backDepth": 15.41,
-              "layDepth": 56.01
+              "layOdds": 1.65,
+              "backDepth": 25.35,
+              "layDepth": 10.79
             },
             {
               "selection": "AWAY",
               "backOdds": 2.53,
-              "layOdds": 2.86,
-              "backDepth": 12.82,
-              "layDepth": 18.38
+              "layOdds": 2.83,
+              "backDepth": 17.39,
+              "layDepth": 13.79
             }
           ]
         },
@@ -47310,15 +47310,15 @@
               "selection": "HOME",
               "backOdds": 1.46,
               "layOdds": 1.55,
-              "backDepth": 13.38,
-              "layDepth": 13.55
+              "backDepth": 22.01,
+              "layDepth": 21.08
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.81,
-              "layOdds": 3.2,
-              "backDepth": 20.05,
-              "layDepth": 11.2
+              "backOdds": 2.82,
+              "layOdds": 3.15,
+              "backDepth": 11.42,
+              "layDepth": 10.2
             }
           ]
         },
@@ -47334,15 +47334,15 @@
               "selection": "HOME",
               "backOdds": 1.35,
               "layOdds": 1.43,
-              "backDepth": 23.72,
-              "layDepth": 22.58
+              "backDepth": 30.48,
+              "layDepth": 35.13
             },
             {
               "selection": "AWAY",
               "backOdds": 3.32,
-              "layOdds": 3.88,
-              "backDepth": 26.17,
-              "layDepth": 20.48
+              "layOdds": 3.84,
+              "backDepth": 31.56,
+              "layDepth": 10.72
             }
           ]
         },
@@ -47359,13 +47359,13 @@
               "backOdds": 1.24,
               "layOdds": 1.31,
               "backDepth": 15.22,
-              "layDepth": 67.72
+              "layDepth": 105.4
             },
             {
               "selection": "AWAY",
-              "backOdds": 4.22,
+              "backOdds": 4.23,
               "layOdds": 5.38,
-              "backDepth": 56.79,
+              "backDepth": 17.63,
               "layDepth": 11.29
             }
           ]
@@ -47383,7 +47383,7 @@
               "backOdds": 1.21,
               "layOdds": 1.28,
               "backDepth": 18.96,
-              "layDepth": 214.38
+              "layDepth": 214.37
             },
             {
               "selection": "AWAY",
@@ -47635,6 +47635,84 @@
           ]
         },
         {
+          "marketId": "1.259586032",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 7.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.04,
+              "layOdds": 1.07,
+              "backDepth": 2459.9,
+              "layDepth": 247.13
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 15,
+              "layOdds": 22,
+              "backDepth": 27.57,
+              "layDepth": 13.91
+            }
+          ]
+        },
+        {
+          "marketId": "1.259586036",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 354.3424699045247,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 2.08,
+              "layOdds": 2.3,
+              "backDepth": 41.78,
+              "layDepth": 196.91
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 2.8,
+              "layOdds": 3.2,
+              "backDepth": 102.75,
+              "layDepth": 11.2
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 4.4,
+              "layOdds": 5,
+              "backDepth": 63.7,
+              "layDepth": 15.29
+            }
+          ]
+        },
+        {
+          "marketId": "1.259586050",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 11,
+              "layOdds": 13.5,
+              "backDepth": 12.62,
+              "layDepth": 37.69
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.08,
+              "layOdds": 1.1,
+              "backDepth": 471.18,
+              "layDepth": 127.39
+            }
+          ]
+        },
+        {
           "marketId": "1.259586040",
           "sport": "football",
           "marketType": "TOTALS",
@@ -47753,84 +47831,6 @@
               "layDepth": 136.29
             }
           ]
-        },
-        {
-          "marketId": "1.259586032",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 7.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.04,
-              "layOdds": 1.07,
-              "backDepth": 2459.9,
-              "layDepth": 247.13
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 15,
-              "layOdds": 22,
-              "backDepth": 27.57,
-              "layDepth": 13.91
-            }
-          ]
-        },
-        {
-          "marketId": "1.259586036",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 354.3424699045247,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 2.08,
-              "layOdds": 2.3,
-              "backDepth": 41.78,
-              "layDepth": 196.91
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 2.8,
-              "layOdds": 3.2,
-              "backDepth": 102.75,
-              "layDepth": 11.2
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 4.4,
-              "layOdds": 5,
-              "backDepth": 63.7,
-              "layDepth": 15.29
-            }
-          ]
-        },
-        {
-          "marketId": "1.259586050",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 11,
-              "layOdds": 13.5,
-              "backDepth": 12.62,
-              "layDepth": 37.69
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.08,
-              "layOdds": 1.1,
-              "backDepth": 471.18,
-              "layDepth": 127.39
-            }
-          ]
         }
       ]
     },
@@ -47853,14 +47853,14 @@
               "backOdds": 2.02,
               "layOdds": 1000,
               "backDepth": 60.09,
-              "layDepth": 7.6
+              "layDepth": 7.67
             },
             {
               "selection": "AWAY",
               "backOdds": 1.97,
               "layOdds": 1000,
               "backDepth": 14.66,
-              "layDepth": 7.6
+              "layDepth": 7.67
             },
             {
               "selection": "DRAW",
@@ -48706,7 +48706,7 @@
               "selection": "AWAY",
               "backOdds": 1.52,
               "layOdds": 1.73,
-              "backDepth": 59.89,
+              "backDepth": 62.77,
               "layDepth": 53.87
             }
           ]
@@ -48731,7 +48731,7 @@
               "backOdds": 1.62,
               "layOdds": 1.86,
               "backDepth": 35.27,
-              "layDepth": 97.24
+              "layDepth": 114.31
             }
           ]
         },
@@ -48748,13 +48748,13 @@
               "backOdds": 1.97,
               "layOdds": 2.33,
               "backDepth": 21.52,
-              "layDepth": 17.95
+              "layDepth": 17.99
             },
             {
               "selection": "AWAY",
               "backOdds": 1.75,
               "layOdds": 2.03,
-              "backDepth": 25.32,
+              "backDepth": 33.79,
               "layDepth": 20.88
             }
           ]
@@ -48770,16 +48770,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.81,
-              "layOdds": 2.05,
+              "layOdds": 2.04,
               "backDepth": 12.29,
-              "layDepth": 13.25
+              "layDepth": 12.51
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.95,
-              "layOdds": 2.27,
-              "backDepth": 13.83,
-              "layDepth": 46.31
+              "backOdds": 1.96,
+              "layOdds": 2.24,
+              "backDepth": 12.98,
+              "layDepth": 14.53
             }
           ]
         },
@@ -48794,16 +48794,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.67,
-              "layOdds": 1.87,
-              "backDepth": 48.58,
-              "layDepth": 17.15
+              "layOdds": 1.86,
+              "backDepth": 17.65,
+              "layDepth": 11.46
             },
             {
               "selection": "AWAY",
               "backOdds": 2.14,
               "layOdds": 2.49,
-              "backDepth": 14.82,
-              "layDepth": 29.66
+              "backDepth": 13.58,
+              "layDepth": 11.92
             }
           ]
         },
@@ -48819,15 +48819,15 @@
               "selection": "HOME",
               "backOdds": 1.51,
               "layOdds": 1.67,
-              "backDepth": 89.82,
-              "layDepth": 14.46
+              "backDepth": 79.96,
+              "layDepth": 15.8
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.48,
+              "backOdds": 2.49,
               "layOdds": 2.93,
-              "backDepth": 18.29,
-              "layDepth": 32.91
+              "backDepth": 10.5,
+              "layDepth": 15.22
             }
           ]
         },
@@ -48842,16 +48842,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.36,
-              "layOdds": 1.48,
-              "backDepth": 54.54,
-              "layDepth": 29.65
+              "layOdds": 1.49,
+              "backDepth": 78.33,
+              "layDepth": 83.67
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.1,
+              "backOdds": 3.08,
               "layOdds": 3.75,
-              "backDepth": 11.41,
-              "layDepth": 19.78
+              "backDepth": 14.08,
+              "layDepth": 24.84
             }
           ]
         },
@@ -48866,16 +48866,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.31,
-              "layOdds": 1.4,
-              "backDepth": 49.82,
-              "layDepth": 24.78
+              "layOdds": 1.41,
+              "backDepth": 44.05,
+              "layDepth": 24.41
             },
             {
               "selection": "AWAY",
-              "backOdds": 3.46,
+              "backOdds": 3.42,
               "layOdds": 4.23,
-              "backDepth": 12.65,
-              "layDepth": 25.41
+              "backDepth": 32.28,
+              "layDepth": 23.68
             }
           ]
         },
@@ -48890,16 +48890,16 @@
             {
               "selection": "HOME",
               "backOdds": 1.27,
-              "layOdds": 1.35,
-              "backDepth": 10.18,
-              "layDepth": 22.06
+              "layOdds": 1.36,
+              "backDepth": 10.87,
+              "layDepth": 69.25
             },
             {
               "selection": "AWAY",
               "backOdds": 3.8,
-              "layOdds": 4.75,
-              "backDepth": 26.76,
-              "layDepth": 20.48
+              "layOdds": 4.76,
+              "backDepth": 24.64,
+              "layDepth": 11.47
             }
           ]
         },
@@ -48913,17 +48913,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.19,
+              "backOdds": 1.2,
               "layOdds": 1.27,
-              "backDepth": 483.58,
-              "layDepth": 71.92
+              "backDepth": 21.6,
+              "layDepth": 60.56
             },
             {
               "selection": "AWAY",
-              "backOdds": 4.78,
-              "layOdds": 6.13,
-              "backDepth": 11.01,
-              "layDepth": 16.93
+              "backOdds": 4.73,
+              "layOdds": 6.15,
+              "backDepth": 13.56,
+              "layDepth": 16.68
             }
           ]
         },
@@ -48939,15 +48939,15 @@
               "selection": "HOME",
               "backOdds": 1.12,
               "layOdds": 1.18,
-              "backDepth": 255.98,
-              "layDepth": 12.08
+              "backDepth": 256.02,
+              "layDepth": 12.09
             },
             {
               "selection": "AWAY",
               "backOdds": 6.39,
-              "layOdds": 9.28,
-              "backDepth": 25.57,
-              "layDepth": 20.98
+              "layOdds": 9.25,
+              "backDepth": 10.26,
+              "layDepth": 21.02
             }
           ]
         },
@@ -48968,9 +48968,9 @@
             },
             {
               "selection": "AWAY",
-              "backOdds": 6.83,
+              "backOdds": 6.82,
               "layOdds": 9.96,
-              "backDepth": 11.91,
+              "backDepth": 19.47,
               "layDepth": 29.56
             }
           ]
@@ -49210,8 +49210,8 @@
               "selection": "OVER",
               "backOdds": 1.73,
               "layOdds": 2.04,
-              "backDepth": 85.68,
-              "layDepth": 38.63
+              "backDepth": 85.63,
+              "layDepth": 38.67
             }
           ]
         },
@@ -49226,22 +49226,22 @@
               "selection": "HOME",
               "backOdds": 1.67,
               "layOdds": 1.86,
-              "backDepth": 47.58,
+              "backDepth": 17.65,
               "layDepth": 11.46
             },
             {
               "selection": "AWAY",
               "backOdds": 3.8,
               "layOdds": 4.8,
-              "backDepth": 26.76,
-              "layDepth": 37.45
+              "backDepth": 24.64,
+              "layDepth": 20.55
             },
             {
               "selection": "DRAW",
-              "backOdds": 4.5,
-              "layOdds": 5.5,
-              "backDepth": 12.9,
-              "layDepth": 11.12
+              "backOdds": 4.3,
+              "layOdds": 5.7,
+              "backDepth": 22.75,
+              "layDepth": 17.51
             }
           ]
         },
@@ -49423,8 +49423,8 @@
               "selection": "DRAW",
               "backOdds": 3.7,
               "layOdds": 4.8,
-              "backDepth": 27.26,
-              "layDepth": 19.77
+              "backDepth": 26.51,
+              "layDepth": 25.29
             }
           ]
         },
@@ -49440,7 +49440,7 @@
               "selection": "UNDER",
               "backOdds": 1.02,
               "layOdds": 55,
-              "backDepth": 114.19,
+              "backDepth": 114.21,
               "layDepth": 34.37
             },
             {
@@ -49465,13 +49465,13 @@
               "backOdds": 1.01,
               "layOdds": 1.15,
               "backDepth": 1616.02,
-              "layDepth": 29.6
+              "layDepth": 19.76
             },
             {
               "selection": "OVER",
-              "backOdds": 1.01,
+              "backOdds": 6.8,
               "layOdds": 100,
-              "backDepth": 10.88,
+              "backDepth": 11.57,
               "layDepth": 16.68
             }
           ]
@@ -49489,13 +49489,13 @@
               "backOdds": 1.1,
               "layOdds": 1.15,
               "backDepth": 99.84,
-              "layDepth": 24.75
+              "layDepth": 14.8
             },
             {
               "selection": "OVER",
               "backOdds": 6.8,
               "layOdds": 11.5,
-              "backDepth": 10.96,
+              "backDepth": 11.02,
               "layDepth": 24.54
             }
           ]
@@ -49535,15 +49535,15 @@
             {
               "selection": "UNDER",
               "backOdds": 1.25,
-              "layOdds": 1.35,
+              "layOdds": 1.37,
               "backDepth": 39.77,
-              "layDepth": 24.51
+              "layDepth": 81.14
             },
             {
               "selection": "OVER",
-              "backOdds": 3.75,
+              "backOdds": 3.7,
               "layOdds": 5.3,
-              "backDepth": 10.37,
+              "backDepth": 29.99,
               "layDepth": 24.54
             }
           ]
@@ -49559,15 +49559,15 @@
             {
               "selection": "UNDER",
               "backOdds": 3.45,
-              "layOdds": 7,
-              "backDepth": 11.74,
-              "layDepth": 10
+              "layOdds": 7.4,
+              "backDepth": 11.18,
+              "layDepth": 24.34
             },
             {
               "selection": "OVER",
               "backOdds": 1.16,
               "layOdds": 1.24,
-              "backDepth": 122.62,
+              "backDepth": 62.28,
               "layDepth": 19.5
             }
           ]
@@ -49585,13 +49585,13 @@
               "backOdds": 1.01,
               "layOdds": 1.15,
               "backDepth": 826.65,
-              "layDepth": 29.6
+              "layDepth": 19.76
             },
             {
               "selection": "OVER",
-              "backOdds": 1.01,
+              "backOdds": 6.8,
               "layOdds": 110,
-              "backDepth": 5.88,
+              "backDepth": 11.57,
               "layDepth": 8.35
             }
           ]
@@ -49608,15 +49608,15 @@
               "selection": "UNDER",
               "backOdds": 1.59,
               "layOdds": 1.84,
-              "backDepth": 16.72,
-              "layDepth": 28.99
+              "backDepth": 33.39,
+              "layDepth": 19.68
             },
             {
               "selection": "OVER",
-              "backOdds": 2.18,
+              "backOdds": 2.2,
               "layOdds": 2.7,
-              "backDepth": 24.39,
-              "layDepth": 29.3
+              "backDepth": 16.41,
+              "layDepth": 19.74
             }
           ]
         },
@@ -49904,7 +49904,7 @@
               "backOdds": 1.28,
               "layOdds": 1.41,
               "backDepth": 25.04,
-              "layDepth": 44.55
+              "layDepth": 42.55
             }
           ]
         },
@@ -49928,7 +49928,7 @@
               "backOdds": 1.39,
               "layOdds": 1.54,
               "backDepth": 13,
-              "layDepth": 26.06
+              "layDepth": 25.06
             }
           ]
         },
@@ -49942,9 +49942,9 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.52,
+              "backOdds": 2.51,
               "layOdds": 3.18,
-              "backDepth": 19.98,
+              "backDepth": 20.05,
               "layDepth": 37.79
             },
             {
@@ -49952,7 +49952,7 @@
               "backOdds": 1.46,
               "layOdds": 1.66,
               "backDepth": 81.96,
-              "layDepth": 31.65
+              "layDepth": 30.48
             }
           ]
         },
@@ -49966,17 +49966,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.18,
+              "backOdds": 2.17,
               "layOdds": 2.73,
-              "backDepth": 15.02,
+              "backDepth": 14.42,
               "layDepth": 13.21
             },
             {
               "selection": "AWAY",
               "backOdds": 1.58,
-              "layOdds": 1.85,
+              "layOdds": 1.86,
               "backDepth": 22.7,
-              "layDepth": 17.89
+              "layDepth": 17.02
             }
           ]
         },
@@ -49990,17 +49990,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.88,
+              "backOdds": 1.87,
               "layOdds": 2.22,
-              "backDepth": 13.74,
+              "backDepth": 10.03,
               "layDepth": 52.53
             },
             {
               "selection": "AWAY",
               "backOdds": 1.82,
-              "layOdds": 2.14,
+              "layOdds": 2.16,
               "backDepth": 64.01,
-              "layDepth": 15.58
+              "layDepth": 19.92
             }
           ]
         },
@@ -50014,17 +50014,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.69,
+              "backOdds": 1.68,
               "layOdds": 1.97,
-              "backDepth": 15.4,
+              "backDepth": 37.58,
               "layDepth": 76.97
             },
             {
               "selection": "AWAY",
               "backOdds": 2.04,
-              "layOdds": 2.44,
+              "layOdds": 2.46,
               "backDepth": 23.58,
-              "layDepth": 10.77
+              "layDepth": 25.74
             }
           ]
         },
@@ -50040,15 +50040,15 @@
               "selection": "HOME",
               "backOdds": 1.52,
               "layOdds": 1.76,
-              "backDepth": 17.41,
+              "backDepth": 14.24,
               "layDepth": 103.4
             },
             {
               "selection": "AWAY",
               "backOdds": 2.32,
-              "layOdds": 2.93,
+              "layOdds": 2.95,
               "backDepth": 29.32,
-              "layDepth": 14.27
+              "layDepth": 13.1
             }
           ]
         },
@@ -50064,15 +50064,15 @@
               "selection": "HOME",
               "backOdds": 1.34,
               "layOdds": 1.55,
-              "backDepth": 50.43,
+              "backDepth": 20.22,
               "layDepth": 14.94
             },
             {
               "selection": "AWAY",
               "backOdds": 2.81,
-              "layOdds": 3.94,
+              "layOdds": 3.96,
               "backDepth": 16.46,
-              "layDepth": 17.28
+              "layDepth": 14.73
             }
           ]
         },
@@ -50094,9 +50094,9 @@
             {
               "selection": "AWAY",
               "backOdds": 3.19,
-              "layOdds": 4.46,
+              "layOdds": 4.48,
               "backDepth": 11.14,
-              "layDepth": 16.42
+              "layDepth": 29.48
             }
           ]
         },
@@ -50360,7 +50360,7 @@
               "selection": "HOME",
               "backOdds": 9.6,
               "layOdds": 27,
-              "backDepth": 13.22,
+              "backDepth": 14.88,
               "layDepth": 11.33
             },
             {
@@ -50373,9 +50373,9 @@
             {
               "selection": "DRAW",
               "backOdds": 4.9,
-              "layOdds": 7,
+              "layOdds": 6.8,
               "backDepth": 13.1,
-              "layDepth": 12.43
+              "layDepth": 11.66
             }
           ]
         },
@@ -50559,14 +50559,14 @@
               "selection": "HOME",
               "backOdds": 11.26,
               "layOdds": 46.53,
-              "backDepth": 11.34,
+              "backDepth": 12.71,
               "layDepth": 10.85
             },
             {
               "selection": "AWAY",
               "backOdds": 1.02,
               "layOdds": 1.04,
-              "backDepth": 767.3,
+              "backDepth": 760.8,
               "layDepth": 74.31
             }
           ]
@@ -50583,7 +50583,7 @@
               "selection": "HOME",
               "backOdds": 9.7,
               "layOdds": 27,
-              "backDepth": 13.13,
+              "backDepth": 14.75,
               "layDepth": 11.33
             },
             {
@@ -50605,16 +50605,16 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 8.99,
+              "backOdds": 9.37,
               "layOdds": 24.89,
-              "backDepth": 15.01,
-              "layDepth": 12.85
+              "backDepth": 10.69,
+              "layDepth": 12.58
             },
             {
               "selection": "AWAY",
               "backOdds": 1.04,
               "layOdds": 1.08,
-              "backDepth": 697.38,
+              "backDepth": 691.16,
               "layDepth": 54.2
             }
           ]
@@ -50629,10 +50629,10 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 8.28,
+              "backOdds": 8.61,
               "layOdds": 22.78,
-              "backDepth": 17.51,
-              "layDepth": 14.39
+              "backDepth": 12.47,
+              "layDepth": 14.09
             },
             {
               "selection": "AWAY",
@@ -50656,13 +50656,13 @@
               "backOdds": 5.79,
               "layOdds": 8.28,
               "backDepth": 23.51,
-              "layDepth": 16.63
+              "layDepth": 19.39
             },
             {
               "selection": "AWAY",
               "backOdds": 1.14,
               "layOdds": 1.21,
-              "backDepth": 22.47,
+              "backDepth": 63.09,
               "layDepth": 112.87
             }
           ]
@@ -50680,7 +50680,7 @@
               "backOdds": 3.99,
               "layOdds": 5.4,
               "backDepth": 40.05,
-              "layDepth": 14.33
+              "layDepth": 17.5
             },
             {
               "selection": "AWAY",
@@ -50702,15 +50702,15 @@
             {
               "selection": "HOME",
               "backOdds": 3.61,
-              "layOdds": 4.79,
+              "layOdds": 4.69,
               "backDepth": 44.27,
-              "layDepth": 18.39
+              "layDepth": 10.19
             },
             {
               "selection": "AWAY",
               "backOdds": 1.27,
               "layOdds": 1.39,
-              "backDepth": 13.58,
+              "backDepth": 37.01,
               "layDepth": 115.1
             }
           ]
@@ -50726,15 +50726,15 @@
             {
               "selection": "HOME",
               "backOdds": 3.23,
-              "layOdds": 4.17,
+              "layOdds": 4.09,
               "backDepth": 44.41,
-              "layDepth": 12.3
+              "layDepth": 12.47
             },
             {
               "selection": "AWAY",
               "backOdds": 1.32,
               "layOdds": 1.45,
-              "backDepth": 16,
+              "backDepth": 42.08,
               "layDepth": 98.93
             }
           ]
@@ -50758,7 +50758,7 @@
               "selection": "AWAY",
               "backOdds": 1.5,
               "layOdds": 1.71,
-              "backDepth": 76.45,
+              "backDepth": 84.26,
               "layDepth": 38.74
             }
           ]
@@ -51133,26 +51133,74 @@
           ]
         },
         {
-          "marketId": "1.259593623",
+          "marketId": "1.259593618",
           "sport": "football",
           "marketType": "TOTALS",
           "scope": "match_total",
-          "line": 4.5,
+          "line": 6.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.11,
+              "layOdds": 110,
+              "backDepth": 69.17,
+              "layDepth": 6.33
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.05,
+              "layOdds": 21,
+              "backDepth": 15.86,
+              "layDepth": 15.96
+            }
+          ]
+        },
+        {
+          "marketId": "1.259593622",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
           "matchedVolume": 0,
           "runners": [
             {
               "selection": "UNDER",
               "backOdds": 2,
               "layOdds": 110,
-              "backDepth": 103.12,
-              "layDepth": 7.19
+              "backDepth": 109.35,
+              "layDepth": 5.08
             },
             {
               "selection": "OVER",
-              "backOdds": 1.05,
+              "backOdds": 1.04,
               "layOdds": 2,
-              "backDepth": 14.86,
-              "layDepth": 103.16
+              "backDepth": 109.95,
+              "layDepth": 109.62
+            }
+          ]
+        },
+        {
+          "marketId": "1.259593626",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 1.5,
+          "matchedVolume": 2,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 2.02,
+              "layOdds": 110,
+              "backDepth": 12.46,
+              "layDepth": 4.62
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.04,
+              "layOdds": 1.99,
+              "backDepth": 106.63,
+              "layDepth": 12.91
             }
           ]
         },
@@ -51229,74 +51277,26 @@
           ]
         },
         {
-          "marketId": "1.259593618",
+          "marketId": "1.259593623",
           "sport": "football",
           "marketType": "TOTALS",
           "scope": "match_total",
-          "line": 6.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.11,
-              "layOdds": 110,
-              "backDepth": 69.17,
-              "layDepth": 6.33
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.05,
-              "layOdds": 21,
-              "backDepth": 15.86,
-              "layDepth": 15.96
-            }
-          ]
-        },
-        {
-          "marketId": "1.259593622",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
+          "line": 4.5,
           "matchedVolume": 0,
           "runners": [
             {
               "selection": "UNDER",
               "backOdds": 2,
               "layOdds": 110,
-              "backDepth": 109.35,
-              "layDepth": 5.08
+              "backDepth": 103.12,
+              "layDepth": 7.19
             },
             {
               "selection": "OVER",
-              "backOdds": 1.04,
+              "backOdds": 1.05,
               "layOdds": 2,
-              "backDepth": 109.95,
-              "layDepth": 109.62
-            }
-          ]
-        },
-        {
-          "marketId": "1.259593626",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 1.5,
-          "matchedVolume": 2,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 2.02,
-              "layOdds": 110,
-              "backDepth": 12.46,
-              "layDepth": 4.62
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.04,
-              "layOdds": 1.99,
-              "backDepth": 106.63,
-              "layDepth": 12.91
+              "backDepth": 14.86,
+              "layDepth": 103.16
             }
           ]
         }
@@ -51592,17 +51592,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 2.11,
+              "backOdds": 2.14,
               "layOdds": 5.1,
-              "backDepth": 10.47,
+              "backDepth": 10.75,
               "layDepth": 58.02
             },
             {
               "selection": "AWAY",
               "backOdds": 1.24,
-              "layOdds": 1.8,
+              "layOdds": 1.81,
               "backDepth": 238.37,
-              "layDepth": 11.57
+              "layDepth": 11.55
             }
           ]
         },
@@ -51616,17 +51616,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.65,
+              "backOdds": 1.64,
               "layOdds": 5.1,
-              "backDepth": 12.73,
+              "backDepth": 12.63,
               "layDepth": 58.02
             },
             {
               "selection": "AWAY",
               "backOdds": 1.24,
-              "layOdds": 2.54,
+              "layOdds": 2.55,
               "backDepth": 238.37,
-              "layDepth": 9.4
+              "layDepth": 9.31
             }
           ]
         },
@@ -51647,9 +51647,9 @@
             {
               "selection": "AWAY",
               "backOdds": 1.24,
-              "layOdds": 1.8,
+              "layOdds": 1.81,
               "backDepth": 238.37,
-              "layDepth": 11.57
+              "layDepth": 11.55
             },
             {
               "selection": "DRAW",
@@ -52048,84 +52048,6 @@
       "competition": null,
       "markets": [
         {
-          "marketId": "1.259593510",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 110,
-              "backDepth": 223.6,
-              "layDepth": 4.63
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.18,
-              "layOdds": 110,
-              "backDepth": 11.97,
-              "layDepth": 2.12
-            }
-          ]
-        },
-        {
-          "marketId": "1.259593502",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 172.0427340175524,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 1.4,
-              "layOdds": 2.82,
-              "backDepth": 292.92,
-              "layDepth": 18.55
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 2,
-              "layOdds": 10,
-              "backDepth": 12.33,
-              "layDepth": 10.03
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 3.55,
-              "layOdds": 1000,
-              "backDepth": 26.19,
-              "layDepth": 8.01
-            }
-          ]
-        },
-        {
-          "marketId": "1.259593506",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 0.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.02,
-              "layOdds": 55,
-              "backDepth": 114.21,
-              "layDepth": 26.04
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.02,
-              "layOdds": 2.14,
-              "backDepth": 1403.52,
-              "layDepth": 14.79
-            }
-          ]
-        },
-        {
           "marketId": "1.259593458",
           "sport": "football",
           "marketType": "TOTALS",
@@ -52362,6 +52284,84 @@
               "layOdds": 10,
               "backDepth": 12.33,
               "layDepth": 10.03
+            }
+          ]
+        },
+        {
+          "marketId": "1.259593502",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 172.0427340175524,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 1.4,
+              "layOdds": 2.82,
+              "backDepth": 292.92,
+              "layDepth": 18.55
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 2,
+              "layOdds": 10,
+              "backDepth": 12.33,
+              "layDepth": 10.03
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 3.55,
+              "layOdds": 1000,
+              "backDepth": 26.19,
+              "layDepth": 8.01
+            }
+          ]
+        },
+        {
+          "marketId": "1.259593506",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 0.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.02,
+              "layOdds": 55,
+              "backDepth": 114.21,
+              "layDepth": 26.04
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.02,
+              "layOdds": 2.14,
+              "backDepth": 1403.52,
+              "layDepth": 14.79
+            }
+          ]
+        },
+        {
+          "marketId": "1.259593510",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 110,
+              "backDepth": 223.6,
+              "layDepth": 4.63
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.18,
+              "layOdds": 110,
+              "backDepth": 11.97,
+              "layDepth": 2.12
             }
           ]
         },
@@ -52746,7 +52746,7 @@
               "selection": "HOME",
               "backOdds": 1.46,
               "layOdds": 1.61,
-              "backDepth": 47.68,
+              "backDepth": 47.71,
               "layDepth": 34.55
             },
             {
@@ -52754,7 +52754,7 @@
               "backOdds": 2.64,
               "layOdds": 3.16,
               "backDepth": 21.02,
-              "layDepth": 17.91
+              "layDepth": 22.08
             }
           ]
         },
@@ -52770,7 +52770,7 @@
               "selection": "HOME",
               "backOdds": 1.39,
               "layOdds": 1.5,
-              "backDepth": 32.29,
+              "backDepth": 39.82,
               "layDepth": 29.68
             },
             {
@@ -52778,7 +52778,7 @@
               "backOdds": 3.01,
               "layOdds": 3.55,
               "backDepth": 13.73,
-              "layDepth": 11.64
+              "layDepth": 14.59
             }
           ]
         },
@@ -52800,9 +52800,9 @@
             {
               "selection": "AWAY",
               "backOdds": 3.36,
-              "layOdds": 3.99,
+              "layOdds": 3.95,
               "backDepth": 10.15,
-              "layDepth": 10.79
+              "layDepth": 10.82
             }
           ]
         },
@@ -52818,15 +52818,15 @@
               "selection": "HOME",
               "backOdds": 1.24,
               "layOdds": 1.31,
-              "backDepth": 27.21,
+              "backDepth": 37.67,
               "layDepth": 42.06
             },
             {
               "selection": "AWAY",
               "backOdds": 4.32,
-              "layOdds": 5.22,
+              "layOdds": 5.28,
               "backDepth": 12.71,
-              "layDepth": 12.07
+              "layDepth": 13.79
             }
           ]
         },
@@ -52842,7 +52842,7 @@
               "selection": "HOME",
               "backOdds": 1.14,
               "layOdds": 1.19,
-              "backDepth": 16.2,
+              "backDepth": 29.21,
               "layDepth": 42.81
             },
             {
@@ -52866,7 +52866,7 @@
               "selection": "HOME",
               "backOdds": 1.12,
               "layOdds": 1.17,
-              "backDepth": 225.66,
+              "backDepth": 210.7,
               "layDepth": 39.11
             },
             {
@@ -52874,7 +52874,7 @@
               "backOdds": 6.22,
               "layOdds": 9.06,
               "backDepth": 11.49,
-              "layDepth": 28.04
+              "layDepth": 26.18
             }
           ]
         },
@@ -52890,7 +52890,7 @@
               "selection": "HOME",
               "backOdds": 1.11,
               "layOdds": 1.15,
-              "backDepth": 215.06,
+              "backDepth": 200.8,
               "layDepth": 17.97
             },
             {
@@ -52898,7 +52898,7 @@
               "backOdds": 6.53,
               "layOdds": 9.8,
               "backDepth": 11.19,
-              "layDepth": 24.49
+              "layDepth": 22.87
             }
           ]
         },
@@ -52914,7 +52914,7 @@
               "selection": "HOME",
               "backOdds": 1.07,
               "layOdds": 1.1,
-              "backDepth": 815.08,
+              "backDepth": 800.29,
               "layDepth": 34.46
             },
             {
@@ -52922,7 +52922,7 @@
               "backOdds": 8.37,
               "layOdds": 14.46,
               "backDepth": 11.37,
-              "layDepth": 31.01
+              "layDepth": 28.96
             }
           ]
         },
@@ -52938,7 +52938,7 @@
               "selection": "HOME",
               "backOdds": 1.03,
               "layOdds": 1.06,
-              "backDepth": 2006.06,
+              "backDepth": 1979.19,
               "layDepth": 41.32
             },
             {
@@ -52946,7 +52946,7 @@
               "backOdds": 9.99,
               "layOdds": 30.72,
               "backDepth": 8.42,
-              "layDepth": 16.16
+              "layDepth": 21.75
             }
           ]
         },
@@ -52962,7 +52962,7 @@
               "selection": "HOME",
               "backOdds": 1.03,
               "layOdds": 1.05,
-              "backDepth": 1972.11,
+              "backDepth": 1945.7,
               "layDepth": 20.39
             },
             {
@@ -52986,7 +52986,7 @@
               "selection": "HOME",
               "backOdds": 1.03,
               "layOdds": 1.05,
-              "backDepth": 1941.66,
+              "backDepth": 1915.64,
               "layDepth": 39.62
             },
             {
@@ -53089,7 +53089,7 @@
               "selection": "AWAY",
               "backOdds": 1.01,
               "layOdds": 324.42,
-              "backDepth": 182.96,
+              "backDepth": 182.92,
               "layDepth": 10.19
             }
           ]
@@ -53137,13 +53137,13 @@
               "backOdds": 6.4,
               "layOdds": 9.8,
               "backDepth": 11.36,
-              "layDepth": 22.17
+              "layDepth": 24.49
             },
             {
               "selection": "DRAW",
               "backOdds": 5.2,
               "layOdds": 7,
-              "backDepth": 11.22,
+              "backDepth": 13.24,
               "layDepth": 23.7
             }
           ]
@@ -53202,13 +53202,13 @@
           "marketType": "TOTALS",
           "scope": "match_total",
           "line": 5.5,
-          "matchedVolume": 4.46,
+          "matchedVolume": 13.198529116246561,
           "runners": [
             {
               "selection": "UNDER",
               "backOdds": 1.17,
               "layOdds": 1.23,
-              "backDepth": 132.89,
+              "backDepth": 128.52,
               "layDepth": 17.68
             },
             {
@@ -53302,6 +53302,54 @@
       "competition": null,
       "markets": [
         {
+          "marketId": "1.259591660",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.02,
+              "layOdds": 18,
+              "backDepth": 114.59,
+              "layDepth": 11.99
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.06,
+              "layOdds": 110,
+              "backDepth": 203.11,
+              "layDepth": 10.83
+            }
+          ]
+        },
+        {
+          "marketId": "1.259591661",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.04,
+              "layOdds": 18,
+              "backDepth": 22.35,
+              "layDepth": 12.56
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.06,
+              "layOdds": 110,
+              "backDepth": 209.63,
+              "layDepth": 6.66
+            }
+          ]
+        },
+        {
           "marketId": "1.259591654",
           "sport": "football",
           "marketType": "TOTALS",
@@ -53374,54 +53422,6 @@
           ]
         },
         {
-          "marketId": "1.259591660",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.02,
-              "layOdds": 18,
-              "backDepth": 114.59,
-              "layDepth": 11.99
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.06,
-              "layOdds": 110,
-              "backDepth": 203.11,
-              "layDepth": 10.83
-            }
-          ]
-        },
-        {
-          "marketId": "1.259591661",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.04,
-              "layOdds": 18,
-              "backDepth": 22.35,
-              "layDepth": 12.56
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.06,
-              "layOdds": 110,
-              "backDepth": 209.63,
-              "layDepth": 6.66
-            }
-          ]
-        },
-        {
           "marketId": "1.259591606",
           "sport": "football",
           "marketType": "TOTALS",
@@ -53455,17 +53455,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 5.41,
+              "backOdds": 5.49,
               "layOdds": 970,
-              "backDepth": 10.3,
+              "backDepth": 10.27,
               "layDepth": 7.06
             },
             {
               "selection": "AWAY",
               "backOdds": 1.06,
-              "layOdds": 1.21,
+              "layOdds": 1.22,
               "backDepth": 12.68,
-              "layDepth": 15.77
+              "layDepth": 29.52
             }
           ]
         },
@@ -53479,17 +53479,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 4.04,
+              "backOdds": 4.11,
               "layOdds": 970,
-              "backDepth": 11.66,
+              "backDepth": 12.28,
               "layDepth": 3.61
             },
             {
               "selection": "AWAY",
               "backOdds": 1.06,
-              "layOdds": 1.31,
+              "layOdds": 1.3,
               "backDepth": 13.55,
-              "layDepth": 18.3
+              "layDepth": 12.04
             }
           ]
         },
@@ -53505,15 +53505,15 @@
               "selection": "HOME",
               "backOdds": 2.67,
               "layOdds": 970,
-              "backDepth": 10.84,
+              "backDepth": 12.21,
               "layDepth": 2.46
             },
             {
               "selection": "AWAY",
               "backOdds": 1.06,
-              "layOdds": 1.6,
+              "layOdds": 1.59,
               "backDepth": 13.55,
-              "layDepth": 18.42
+              "layDepth": 12.09
             }
           ]
         }
@@ -53665,7 +53665,7 @@
               "selection": "AWAY",
               "backOdds": 1.46,
               "layOdds": 970,
-              "backDepth": 10.66,
+              "backDepth": 10.68,
               "layDepth": 4.47
             }
           ]
@@ -53689,7 +53689,7 @@
               "selection": "AWAY",
               "backOdds": 1.57,
               "layOdds": 9.6,
-              "backDepth": 10.68,
+              "backDepth": 10.69,
               "layDepth": 18.51
             }
           ]
@@ -53707,13 +53707,13 @@
               "backOdds": 1.14,
               "layOdds": 970,
               "backDepth": 14,
-              "layDepth": 5.89
+              "layDepth": 5.9
             },
             {
               "selection": "AWAY",
               "backOdds": 1.01,
               "layOdds": 970,
-              "backDepth": 60.07,
+              "backDepth": 60.08,
               "layDepth": 4.44
             }
           ]
@@ -53878,6 +53878,30 @@
       "competition": null,
       "markets": [
         {
+          "marketId": "1.259592993",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 7.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.07,
+              "backDepth": 698.28,
+              "layDepth": 54.7
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 12.5,
+              "layOdds": 110,
+              "backDepth": 12.92,
+              "layDepth": 7.05
+            }
+          ]
+        },
+        {
           "marketId": "1.259592997",
           "sport": "football",
           "marketType": "MATCH_ODDS",
@@ -53904,30 +53928,6 @@
               "layOdds": 5.4,
               "backDepth": 62.18,
               "layDepth": 56.68
-            }
-          ]
-        },
-        {
-          "marketId": "1.259592993",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 7.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.07,
-              "backDepth": 698.28,
-              "layDepth": 54.7
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 12.5,
-              "layOdds": 110,
-              "backDepth": 12.92,
-              "layDepth": 7.05
             }
           ]
         },
@@ -54870,24 +54870,24 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.57,
-              "layOdds": 5,
-              "backDepth": 18.25,
-              "layDepth": 13.83
+              "backOdds": 1.58,
+              "layOdds": 4.9,
+              "backDepth": 13.63,
+              "layDepth": 11.37
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.93,
-              "layOdds": 1000,
-              "backDepth": 11.01,
-              "layDepth": 9.21
+              "backOdds": 1.94,
+              "layOdds": 16,
+              "backDepth": 11.6,
+              "layDepth": 10.83
             },
             {
               "selection": "DRAW",
               "backOdds": 3.7,
-              "layOdds": 11,
-              "backDepth": 17.29,
-              "layDepth": 11.51
+              "layOdds": 7,
+              "backDepth": 21.88,
+              "layDepth": 11.68
             }
           ]
         },
@@ -55415,7 +55415,7 @@
               "backOdds": 1.54,
               "layOdds": 4.58,
               "backDepth": 3.15,
-              "layDepth": 12.46
+              "layDepth": 12.44
             }
           ]
         },
@@ -55439,7 +55439,7 @@
               "backOdds": 1.92,
               "layOdds": 4.58,
               "backDepth": 11,
-              "layDepth": 12.46
+              "layDepth": 12.44
             }
           ]
         },
@@ -55455,7 +55455,7 @@
               "selection": "HOME",
               "backOdds": 1.19,
               "layOdds": 1.74,
-              "backDepth": 18.2,
+              "backDepth": 18.18,
               "layDepth": 3.18
             },
             {
@@ -55463,7 +55463,7 @@
               "backOdds": 2.36,
               "layOdds": 6.44,
               "backDepth": 2.03,
-              "layDepth": 15.26
+              "layDepth": 15.24
             }
           ]
         },
@@ -55479,7 +55479,7 @@
               "selection": "HOME",
               "backOdds": 1.09,
               "layOdds": 101,
-              "backDepth": 41.97,
+              "backDepth": 41.96,
               "layDepth": 7.6
             },
             {
@@ -55487,7 +55487,7 @@
               "backOdds": 1.01,
               "layOdds": 24.08,
               "backDepth": 5.63,
-              "layDepth": 12.64
+              "layDepth": 12.63
             }
           ]
         },
@@ -55503,7 +55503,7 @@
               "selection": "HOME",
               "backOdds": 1.08,
               "layOdds": 1.42,
-              "backDepth": 73.25,
+              "backDepth": 73.24,
               "layDepth": 12.01
             },
             {
@@ -55511,7 +55511,7 @@
               "backOdds": 3.2,
               "layOdds": 27.04,
               "backDepth": 19.31,
-              "layDepth": 11.71
+              "layDepth": 11.7
             }
           ]
         },
@@ -56256,7 +56256,7 @@
               "selection": "UNDER",
               "backOdds": 1.04,
               "layOdds": 1.08,
-              "backDepth": 230.16,
+              "backDepth": 275.19,
               "layDepth": 28.72
             },
             {
@@ -56264,7 +56264,7 @@
               "backOdds": 7.4,
               "layOdds": 26,
               "backDepth": 4.27,
-              "layDepth": 10.09
+              "layDepth": 12.22
             }
           ]
         },
@@ -57124,6 +57124,60 @@
           ]
         },
         {
+          "marketId": "1.259596939",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 7.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 1.1,
+              "backDepth": 766.09,
+              "layDepth": 123.72
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 11,
+              "layOdds": 110,
+              "backDepth": 12.16,
+              "layDepth": 7.74
+            }
+          ]
+        },
+        {
+          "marketId": "1.259596943",
+          "sport": "football",
+          "marketType": "MATCH_ODDS",
+          "scope": "full",
+          "matchedVolume": 31.95595267745953,
+          "runners": [
+            {
+              "selection": "HOME",
+              "backOdds": 4,
+              "layOdds": 4.7,
+              "backDepth": 23.97,
+              "layDepth": 11.25
+            },
+            {
+              "selection": "AWAY",
+              "backOdds": 1.76,
+              "layOdds": 1.93,
+              "backDepth": 33.54,
+              "layDepth": 56.14
+            },
+            {
+              "selection": "DRAW",
+              "backOdds": 4,
+              "layOdds": 4.8,
+              "backDepth": 11.34,
+              "layDepth": 12.87
+            }
+          ]
+        },
+        {
           "marketId": "1.259596947",
           "sport": "football",
           "marketType": "TOTALS",
@@ -57264,60 +57318,6 @@
               "layOdds": 1.23,
               "backDepth": 16.13,
               "layDepth": 152.23
-            }
-          ]
-        },
-        {
-          "marketId": "1.259596939",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 7.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 1.1,
-              "backDepth": 766.09,
-              "layDepth": 123.72
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 11,
-              "layOdds": 110,
-              "backDepth": 12.16,
-              "layDepth": 7.74
-            }
-          ]
-        },
-        {
-          "marketId": "1.259596943",
-          "sport": "football",
-          "marketType": "MATCH_ODDS",
-          "scope": "full",
-          "matchedVolume": 31.95595267745953,
-          "runners": [
-            {
-              "selection": "HOME",
-              "backOdds": 4,
-              "layOdds": 4.7,
-              "backDepth": 23.97,
-              "layDepth": 11.25
-            },
-            {
-              "selection": "AWAY",
-              "backOdds": 1.76,
-              "layOdds": 1.93,
-              "backDepth": 33.54,
-              "layDepth": 56.14
-            },
-            {
-              "selection": "DRAW",
-              "backOdds": 4,
-              "layOdds": 4.8,
-              "backDepth": 11.34,
-              "layDepth": 12.87
             }
           ]
         },
@@ -57979,6 +57979,78 @@
       "competition": null,
       "markets": [
         {
+          "marketId": "1.259597276",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 5.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.01,
+              "layOdds": 110,
+              "backDepth": 222.7,
+              "layDepth": 6.96
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.17,
+              "layOdds": 110,
+              "backDepth": 33.65,
+              "layDepth": 2.12
+            }
+          ]
+        },
+        {
+          "marketId": "1.259597278",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 2.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.09,
+              "layOdds": 110,
+              "backDepth": 90.4,
+              "layDepth": 4.91
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.17,
+              "layOdds": 21,
+              "backDepth": 27.42,
+              "layDepth": 11.59
+            }
+          ]
+        },
+        {
+          "marketId": "1.259597279",
+          "sport": "football",
+          "marketType": "TOTALS",
+          "scope": "match_total",
+          "line": 4.5,
+          "matchedVolume": 0,
+          "runners": [
+            {
+              "selection": "UNDER",
+              "backOdds": 1.05,
+              "layOdds": 110,
+              "backDepth": 14.77,
+              "layDepth": 6.98
+            },
+            {
+              "selection": "OVER",
+              "backOdds": 1.17,
+              "layOdds": 110,
+              "backDepth": 33.65,
+              "layDepth": 9.3
+            }
+          ]
+        },
+        {
           "marketId": "1.259597224",
           "sport": "football",
           "marketType": "TOTALS",
@@ -58012,17 +58084,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 4.1,
+              "backOdds": 3.6,
               "layOdds": 201,
-              "backDepth": 11.04,
+              "backDepth": 10.74,
               "layDepth": 9.34
             },
             {
               "selection": "AWAY",
               "backOdds": 1.04,
-              "layOdds": 1.31,
+              "layOdds": 1.33,
               "backDepth": 97.02,
-              "layDepth": 12.5
+              "layDepth": 29.09
             }
           ]
         },
@@ -58036,17 +58108,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 4.1,
+              "backOdds": 3.6,
               "layOdds": 101,
-              "backDepth": 11.04,
+              "backDepth": 10.74,
               "layDepth": 9.34
             },
             {
               "selection": "AWAY",
               "backOdds": 1.08,
-              "layOdds": 1.31,
+              "layOdds": 1.33,
               "backDepth": 48.63,
-              "layDepth": 12.5
+              "layDepth": 29.09
             }
           ]
         },
@@ -58062,15 +58134,15 @@
               "selection": "HOME",
               "backOdds": 3.79,
               "layOdds": 40.69,
-              "backDepth": 13.4,
+              "backDepth": 11.2,
               "layDepth": 9.85
             },
             {
               "selection": "AWAY",
               "backOdds": 1.08,
-              "layOdds": 1.33,
+              "layOdds": 1.36,
               "backDepth": 48.63,
-              "layDepth": 13.06
+              "layDepth": 31.82
             }
           ]
         },
@@ -58092,9 +58164,9 @@
             {
               "selection": "AWAY",
               "backOdds": 1.09,
-              "layOdds": 1.38,
+              "layOdds": 1.41,
               "backDepth": 48.18,
-              "layDepth": 15.19
+              "layDepth": 32.74
             }
           ]
         },
@@ -58110,7 +58182,7 @@
               "selection": "HOME",
               "backOdds": 2.6,
               "layOdds": 9.8,
-              "backDepth": 9.09,
+              "backDepth": 6.95,
               "layDepth": 14.56
             },
             {
@@ -58187,9 +58259,9 @@
             {
               "selection": "AWAY",
               "backOdds": 1.23,
-              "layOdds": 1.82,
+              "layOdds": 1.84,
               "backDepth": 28.25,
-              "layDepth": 10.39
+              "layDepth": 10.38
             },
             {
               "selection": "DRAW",
@@ -58221,78 +58293,6 @@
               "layOdds": 12,
               "backDepth": 24.31,
               "layDepth": 16.19
-            }
-          ]
-        },
-        {
-          "marketId": "1.259597276",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 5.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.01,
-              "layOdds": 110,
-              "backDepth": 222.7,
-              "layDepth": 6.96
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.17,
-              "layOdds": 110,
-              "backDepth": 33.65,
-              "layDepth": 2.12
-            }
-          ]
-        },
-        {
-          "marketId": "1.259597278",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 2.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.09,
-              "layOdds": 110,
-              "backDepth": 90.4,
-              "layDepth": 4.91
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.17,
-              "layOdds": 21,
-              "backDepth": 27.42,
-              "layDepth": 11.59
-            }
-          ]
-        },
-        {
-          "marketId": "1.259597279",
-          "sport": "football",
-          "marketType": "TOTALS",
-          "scope": "match_total",
-          "line": 4.5,
-          "matchedVolume": 0,
-          "runners": [
-            {
-              "selection": "UNDER",
-              "backOdds": 1.05,
-              "layOdds": 110,
-              "backDepth": 14.77,
-              "layDepth": 6.98
-            },
-            {
-              "selection": "OVER",
-              "backOdds": 1.17,
-              "layOdds": 110,
-              "backDepth": 33.65,
-              "layDepth": 9.3
             }
           ]
         }
@@ -58605,7 +58605,7 @@
               "backOdds": 2.08,
               "layOdds": 4.5,
               "backDepth": 14.34,
-              "layDepth": 12.41
+              "layDepth": 12.38
             },
             {
               "selection": "AWAY",
@@ -58618,7 +58618,7 @@
               "selection": "DRAW",
               "backOdds": 3.3,
               "layOdds": 6.8,
-              "backDepth": 19.63,
+              "backDepth": 16.87,
               "layDepth": 10.05
             }
           ]
@@ -58691,15 +58691,15 @@
             {
               "selection": "HOME",
               "backOdds": 2.23,
-              "layOdds": 14.2,
-              "backDepth": 21.11,
-              "layDepth": 1.52
+              "layOdds": 37.54,
+              "backDepth": 21.06,
+              "layDepth": 1.6
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.07,
+              "backOdds": 1.02,
               "layOdds": 1.81,
-              "backDepth": 3.99,
+              "backDepth": 4.49,
               "layDepth": 26.13
             }
           ]
@@ -58716,15 +58716,15 @@
               "selection": "HOME",
               "backOdds": 2.08,
               "layOdds": 2.89,
-              "backDepth": 21.46,
-              "layDepth": 22.31
+              "backDepth": 21.33,
+              "layDepth": 22.47
             },
             {
               "selection": "AWAY",
               "backOdds": 1.53,
               "layOdds": 1.92,
-              "backDepth": 40.96,
-              "layDepth": 21.31
+              "backDepth": 40.97,
+              "layDepth": 23.31
             }
           ]
         },
@@ -58738,17 +58738,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.88,
-              "layOdds": 2.32,
-              "backDepth": 20.96,
-              "layDepth": 18.36
+              "backOdds": 1.95,
+              "layOdds": 2.24,
+              "backDepth": 20.91,
+              "layDepth": 19.98
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.75,
-              "layOdds": 2.14,
-              "backDepth": 24.34,
-              "layDepth": 18.41
+              "backOdds": 1.8,
+              "layOdds": 2.06,
+              "backDepth": 24.86,
+              "layDepth": 19.79
             }
           ]
         },
@@ -58762,17 +58762,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.7,
-              "layOdds": 2.1,
-              "backDepth": 35.43,
-              "layDepth": 28.41
+              "backOdds": 1.74,
+              "layOdds": 2.04,
+              "backDepth": 35.17,
+              "layDepth": 29.83
             },
             {
               "selection": "AWAY",
-              "backOdds": 1.91,
-              "layOdds": 2.42,
-              "backDepth": 31.2,
-              "layDepth": 24.93
+              "backOdds": 1.96,
+              "layOdds": 2.34,
+              "backDepth": 31.05,
+              "layDepth": 26.36
             }
           ]
         },
@@ -58786,17 +58786,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.52,
-              "layOdds": 1.87,
-              "backDepth": 153.27,
-              "layDepth": 34.46
+              "backOdds": 1.54,
+              "layOdds": 1.84,
+              "backDepth": 80.09,
+              "layDepth": 33.97
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.14,
-              "layOdds": 2.89,
-              "backDepth": 45.54,
-              "layDepth": 40.21
+              "backOdds": 2.19,
+              "layOdds": 2.83,
+              "backDepth": 28.54,
+              "layDepth": 43.79
             }
           ]
         },
@@ -58810,17 +58810,17 @@
           "runners": [
             {
               "selection": "HOME",
-              "backOdds": 1.45,
-              "layOdds": 1.72,
-              "backDepth": 62.95,
-              "layDepth": 49.47
+              "backOdds": 1.46,
+              "layOdds": 1.7,
+              "backDepth": 11.01,
+              "layDepth": 25.16
             },
             {
               "selection": "AWAY",
-              "backOdds": 2.4,
-              "layOdds": 3.22,
-              "backDepth": 34.63,
-              "layDepth": 27.93
+              "backOdds": 2.42,
+              "layOdds": 3.19,
+              "backDepth": 34.03,
+              "layDepth": 28.39
             }
           ]
         },
@@ -58836,7 +58836,7 @@
               "selection": "HOME",
               "backOdds": 1.39,
               "layOdds": 1.6,
-              "backDepth": 101.96,
+              "backDepth": 106.01,
               "layDepth": 19.76
             },
             {
@@ -58844,7 +58844,7 @@
               "backOdds": 2.66,
               "layOdds": 3.55,
               "backDepth": 23.7,
-              "layDepth": 19.9
+              "layDepth": 21.55
             }
           ]
         },
@@ -58860,7 +58860,7 @@
               "selection": "HOME",
               "backOdds": 1.29,
               "layOdds": 1.46,
-              "backDepth": 95.99,
+              "backDepth": 103.12,
               "layDepth": 67.19
             },
             {
@@ -58868,7 +58868,7 @@
               "backOdds": 3.19,
               "layOdds": 4.44,
               "backDepth": 14.07,
-              "layDepth": 16.59
+              "layDepth": 16.66
             }
           ]
         },
@@ -58884,15 +58884,15 @@
               "selection": "HOME",
               "backOdds": 1.19,
               "layOdds": 1.32,
-              "backDepth": 23.14,
+              "backDepth": 26.82,
               "layDepth": 74.61
             },
             {
               "selection": "AWAY",
               "backOdds": 4.18,
-              "layOdds": 6.32,
+              "layOdds": 6.29,
               "backDepth": 13.36,
-              "layDepth": 38.36
+              "layDepth": 10.13
             }
           ]
         },
@@ -58908,15 +58908,15 @@
               "selection": "HOME",
               "backOdds": 1.17,
               "layOdds": 1.28,
-              "backDepth": 199.13,
+              "backDepth": 199.15,
               "layDepth": 43.89
             },
             {
               "selection": "AWAY",
               "backOdds": 4.64,
-              "layOdds": 6.86,
+              "layOdds": 6.85,
               "backDepth": 10.27,
-              "layDepth": 29.19
+              "layDepth": 20.25
             }
           ]
         },
@@ -59248,9 +59248,9 @@
           "runners": [
             {
               "selection": "UNDER",
-              "backOdds": 3.75,
+              "backOdds": 1.02,
               "layOdds": 6,
-              "backDepth": 11.29,
+              "backDepth": 116.23,
               "layDepth": 19.7
             },
             {
@@ -59258,7 +59258,7 @@
               "backOdds": 1.2,
               "layOdds": 1.32,
               "backDepth": 97.71,
-              "layDepth": 19.63
+              "layDepth": 19.54
             }
           ]
         },
@@ -59315,7 +59315,7 @@
   },
   "summary": {
     "eventCount": 142,
-    "durationMs": 25405,
-    "fetchMs": 1259
+    "durationMs": 23974,
+    "fetchMs": 1274
   }
 }
