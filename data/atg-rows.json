@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-30T03:12:10.433Z",
+  "updatedAt": "2026-06-30T03:16:10.779Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,11 +9,151 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 256,
-  "skippedNoOdds": 2,
+  "uniqueEvents": 260,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 21121,
+  "durationMs": 21692,
   "events": [
+    {
+      "eventId": "1027976814",
+      "title": "Tranmere - Rochdale",
+      "homeTeam": "Tranmere",
+      "awayTeam": "Rochdale",
+      "startTime": "2026-08-01T14:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.6,
+        "away": 2.8
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 6.1,
+          "under": 1.1
+        },
+        {
+          "line": 2.5,
+          "over": 1.77,
+          "under": 1.96
+        },
+        {
+          "line": 3.5,
+          "over": 3.05,
+          "under": 1.34
+        },
+        {
+          "line": 1.5,
+          "over": 1.22,
+          "under": 3.95
+        }
+      ]
+    },
+    {
+      "eventId": "1027976753",
+      "title": "York City - Crawley Town",
+      "homeTeam": "York City",
+      "awayTeam": "Crawley Town",
+      "startTime": "2026-08-03T18:30:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 1.77,
+        "draw": 3.65,
+        "away": 3.75
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.25,
+          "under": 3.65
+        },
+        {
+          "line": 3.5,
+          "over": 3.3,
+          "under": 1.29
+        },
+        {
+          "line": 2.5,
+          "over": 1.86,
+          "under": 1.86
+        },
+        {
+          "line": 4.5,
+          "over": 6.75,
+          "under": 1.08
+        }
+      ]
+    },
+    {
+      "eventId": "1028147688",
+      "title": "Barnsley - Wigan Athletic",
+      "homeTeam": "Barnsley",
+      "awayTeam": "Wigan Athletic",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.12,
+        "draw": 3.25,
+        "away": 3.05
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 3.4,
+          "under": 1.28
+        },
+        {
+          "line": 1.5,
+          "over": 1.27,
+          "under": 3.5
+        },
+        {
+          "line": 4.5,
+          "over": 7,
+          "under": 1.07
+        },
+        {
+          "line": 2.5,
+          "over": 1.91,
+          "under": 1.81
+        }
+      ]
+    },
+    {
+      "eventId": "1028147722",
+      "title": "QPR - Millwall",
+      "homeTeam": "QPR",
+      "awayTeam": "Millwall",
+      "startTime": "2026-08-08T16:00:00Z",
+      "league": "EFL Cup",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.45,
+        "away": 2.17
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.8
+        },
+        {
+          "line": 3.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 4.5,
+          "over": 6.4,
+          "under": 1.09
+        },
+        {
+          "line": 2.5,
+          "over": 1.81,
+          "under": 1.91
+        }
+      ]
+    },
     {
       "eventId": "1028072415",
       "title": "Arsenal - Coventry City",
@@ -985,19 +1125,6 @@
       ]
     },
     {
-      "eventId": "1028185797",
-      "title": "Indonesien (kozak) - Panama (Jackson)",
-      "homeTeam": "Indonesien (kozak)",
-      "awayTeam": "Panama (Jackson)",
-      "startTime": "2026-06-30T03:06:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 4.6,
-        "draw": 6.4,
-        "away": 1.34
-      }
-    },
-    {
       "eventId": "1028185798",
       "title": "Kroatien (Xellark) - England (OP1OT)",
       "homeTeam": "Kroatien (Xellark)",
@@ -1005,22 +1132,9 @@
       "startTime": "2026-06-30T03:06:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.38,
-        "draw": 5.2,
-        "away": 4.8
-      }
-    },
-    {
-      "eventId": "1028185778",
-      "title": "Borussia Dortmund (luxiqq) - Feyenoord (Int1liGenT)",
-      "homeTeam": "Borussia Dortmund (luxiqq)",
-      "awayTeam": "Feyenoord (Int1liGenT)",
-      "startTime": "2026-06-30T03:06:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 9.5,
-        "draw": 8,
-        "away": 1.14
+        "home": 1.43,
+        "draw": 3.45,
+        "away": 7.5
       }
     },
     {
@@ -1031,22 +1145,9 @@
       "startTime": "2026-06-30T03:11:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.68,
-        "draw": 5.3,
-        "away": 2.8
-      }
-    },
-    {
-      "eventId": "1028186528",
-      "title": "River Plate (tohi4) - Real Madrid (Kavviro)",
-      "homeTeam": "River Plate (tohi4)",
-      "awayTeam": "Real Madrid (Kavviro)",
-      "startTime": "2026-06-30T03:11:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 5.4,
-        "draw": 5.4,
-        "away": 1.33
+        "home": 1.87,
+        "draw": 3.95,
+        "away": 2.75
       }
     },
     {
@@ -1057,47 +1158,10 @@
       "startTime": "2026-06-30T03:14:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.75,
-        "draw": 4.5,
-        "away": 1.78
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.05,
-          "under": 9
-        },
-        {
-          "line": 6.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 4.5,
-          "over": 1.5,
-          "under": 2.38
-        },
-        {
-          "line": 8.5,
-          "over": 10.5,
-          "under": 1.03
-        },
-        {
-          "line": 3.5,
-          "over": 1.21,
-          "under": 4
-        },
-        {
-          "line": 5.5,
-          "over": 2.07,
-          "under": 1.65
-        },
-        {
-          "line": 7.5,
-          "over": 5.5,
-          "under": 1.11
-        }
-      ]
+        "home": 4.4,
+        "draw": 4.75,
+        "away": 1.45
+      }
     },
     {
       "eventId": "1028186533",
@@ -1107,47 +1171,10 @@
       "startTime": "2026-06-30T03:14:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.45,
-        "draw": 4.2,
-        "away": 1.98
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 1.16,
-          "under": 4.5
-        },
-        {
-          "line": 5.5,
-          "over": 1.91,
-          "under": 1.77
-        },
-        {
-          "line": 7.5,
-          "over": 4.75,
-          "under": 1.15
-        },
-        {
-          "line": 4.5,
-          "over": 1.44,
-          "under": 2.6
-        },
-        {
-          "line": 2.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 6.5,
-          "over": 2.85,
-          "under": 1.37
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.05
-        }
-      ]
+        "home": 3.8,
+        "draw": 4.4,
+        "away": 1.55
+      }
     },
     {
       "eventId": "1028186163",
@@ -1157,47 +1184,10 @@
       "startTime": "2026-06-30T03:14:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.06,
-        "draw": 4.75,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 2.12,
-          "under": 1.6
-        },
-        {
-          "line": 6.5,
-          "over": 1.56,
-          "under": 2.18
-        },
-        {
-          "line": 4.5,
-          "over": 1.08,
-          "under": 5.75
-        },
-        {
-          "line": 5.5,
-          "over": 1.25,
-          "under": 3.25
-        },
-        {
-          "line": 8.5,
-          "over": 3.05,
-          "under": 1.29
-        },
-        {
-          "line": 10.5,
-          "over": 8,
-          "under": 1.02
-        },
-        {
-          "line": 9.5,
-          "over": 4.75,
-          "under": 1.12
-        }
-      ]
+        "home": 2.14,
+        "draw": 4.5,
+        "away": 2.18
+      }
     },
     {
       "eventId": "1028193930",
@@ -4024,41 +4014,6 @@
       ]
     },
     {
-      "eventId": "1027510086",
-      "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
-      "homeTeam": "FK Atmosfera Mazeikiai",
-      "awayTeam": "BE1 Nfa",
-      "startTime": "2026-07-01T16:00:00Z",
-      "league": "1 Lyga",
-      "odds": {
-        "home": 2.6,
-        "draw": 3.35,
-        "away": 2.35
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.43,
-          "under": 1.45
-        },
-        {
-          "line": 2.5,
-          "over": 1.58,
-          "under": 2.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.2
-        },
-        {
-          "line": 4.5,
-          "over": 4.2,
-          "under": 1.16
-        }
-      ]
-    },
-    {
       "eventId": "1028174897",
       "title": "England - DR Kongo",
       "homeTeam": "England",
@@ -4215,6 +4170,41 @@
       }
     },
     {
+      "eventId": "1027510086",
+      "title": "FK Atmosfera Mazeikiai - BE1 Nfa",
+      "homeTeam": "FK Atmosfera Mazeikiai",
+      "awayTeam": "BE1 Nfa",
+      "startTime": "2026-07-01T16:00:00Z",
+      "league": "1 Lyga",
+      "odds": {
+        "home": 2.6,
+        "draw": 3.35,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 2.43,
+          "under": 1.45
+        },
+        {
+          "line": 2.5,
+          "over": 1.58,
+          "under": 2.15
+        },
+        {
+          "line": 1.5,
+          "over": 1.16,
+          "under": 4.2
+        },
+        {
+          "line": 4.5,
+          "over": 4.2,
+          "under": 1.16
+        }
+      ]
+    },
+    {
       "eventId": "1026438311",
       "title": "Eskilsminne IF - Kristianstads FC",
       "homeTeam": "Eskilsminne IF",
@@ -4320,36 +4310,6 @@
       ]
     },
     {
-      "eventId": "1027948351",
-      "title": "Bonsucesso-RJ - América-RJ",
-      "homeTeam": "Bonsucesso-RJ",
-      "awayTeam": "América-RJ",
-      "startTime": "2026-07-01T17:45:00Z",
-      "league": "Carioca A2",
-      "odds": {
-        "home": 2.63,
-        "draw": 2.85,
-        "away": 2.55
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.43,
-          "under": 2.48
-        },
-        {
-          "line": 3.5,
-          "over": 4.35,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 2.38,
-          "under": 1.48
-        }
-      ]
-    },
-    {
       "eventId": "1027247531",
       "title": "MPS - EIF/2",
       "homeTeam": "MPS",
@@ -4380,6 +4340,36 @@
         {
           "line": 5.5,
           "over": 2.28,
+          "under": 1.48
+        }
+      ]
+    },
+    {
+      "eventId": "1027948351",
+      "title": "Bonsucesso-RJ - América-RJ",
+      "homeTeam": "Bonsucesso-RJ",
+      "awayTeam": "América-RJ",
+      "startTime": "2026-07-01T17:45:00Z",
+      "league": "Carioca A2",
+      "odds": {
+        "home": 2.63,
+        "draw": 2.85,
+        "away": 2.55
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.43,
+          "under": 2.48
+        },
+        {
+          "line": 3.5,
+          "over": 4.35,
+          "under": 1.15
+        },
+        {
+          "line": 2.5,
+          "over": 2.38,
           "under": 1.48
         }
       ]
@@ -4433,7 +4423,7 @@
       "league": "VM 2026",
       "odds": {
         "home": 2.25,
-        "draw": 3.2,
+        "draw": 3.15,
         "away": 3.65
       },
       "totals": [
@@ -4454,7 +4444,7 @@
         },
         {
           "line": 2.5,
-          "over": 2.16,
+          "over": 2.17,
           "under": 1.71
         },
         {
@@ -4476,7 +4466,7 @@
         },
         {
           "line": -1.5,
-          "home": 4.35,
+          "home": 4.4,
           "away": 1.21
         },
         {
@@ -4491,7 +4481,7 @@
         },
         {
           "line": -1.25,
-          "home": 3.9,
+          "home": 3.95,
           "away": 1.25
         },
         {
@@ -5072,6 +5062,46 @@
       ]
     },
     {
+      "eventId": "1026504972",
+      "title": "FC Jazz - KPV Kokkola",
+      "homeTeam": "FC Jazz",
+      "awayTeam": "KPV Kokkola",
+      "startTime": "2026-07-02T16:00:00Z",
+      "league": "Ykkönen",
+      "odds": {
+        "home": 1.56,
+        "draw": 4.1,
+        "away": 4.5
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.37,
+          "under": 2.7
+        },
+        {
+          "line": 4.5,
+          "over": 3.15,
+          "under": 1.28
+        },
+        {
+          "line": 1.5,
+          "over": 1.1,
+          "under": 5.3
+        },
+        {
+          "line": 3.5,
+          "over": 1.95,
+          "under": 1.7
+        },
+        {
+          "line": 5.5,
+          "over": 5.25,
+          "under": 1.1
+        }
+      ]
+    },
+    {
       "eventId": "1026030375",
       "title": "Lyn - Åsane",
       "homeTeam": "Lyn",
@@ -5292,46 +5322,6 @@
           }
         ]
       }
-    },
-    {
-      "eventId": "1026504972",
-      "title": "FC Jazz - KPV Kokkola",
-      "homeTeam": "FC Jazz",
-      "awayTeam": "KPV Kokkola",
-      "startTime": "2026-07-02T16:00:00Z",
-      "league": "Ykkönen",
-      "odds": {
-        "home": 1.56,
-        "draw": 4.1,
-        "away": 4.5
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.7
-        },
-        {
-          "line": 4.5,
-          "over": 3.15,
-          "under": 1.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 3.5,
-          "over": 1.95,
-          "under": 1.7
-        },
-        {
-          "line": 5.5,
-          "over": 5.25,
-          "under": 1.1
-        }
-      ]
     },
     {
       "eventId": "1027510088",
@@ -6845,6 +6835,41 @@
       ]
     },
     {
+      "eventId": "1026229258",
+      "title": "FC KTP - JIPPO Joensuu",
+      "homeTeam": "FC KTP",
+      "awayTeam": "JIPPO Joensuu",
+      "startTime": "2026-07-03T15:30:00Z",
+      "league": "Ykkösliiga",
+      "odds": {
+        "home": 2,
+        "draw": 3.15,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.27,
+          "under": 3.2
+        },
+        {
+          "line": 4.5,
+          "over": 5.6,
+          "under": 1.09
+        },
+        {
+          "line": 2.5,
+          "over": 1.86,
+          "under": 1.79
+        },
+        {
+          "line": 3.5,
+          "over": 3.1,
+          "under": 1.29
+        }
+      ]
+    },
+    {
       "eventId": "1026229246",
       "title": "JäPS - SJK Seinäjoki Akatemia",
       "homeTeam": "JäPS",
@@ -6880,37 +6905,77 @@
       ]
     },
     {
-      "eventId": "1026229258",
-      "title": "FC KTP - JIPPO Joensuu",
-      "homeTeam": "FC KTP",
-      "awayTeam": "JIPPO Joensuu",
-      "startTime": "2026-07-03T15:30:00Z",
-      "league": "Ykkösliiga",
+      "eventId": "1027882252",
+      "title": "Džiugas Telšiai - FK Kauno Zalgiris",
+      "homeTeam": "Džiugas Telšiai",
+      "awayTeam": "FK Kauno Zalgiris",
+      "startTime": "2026-07-03T16:00:00Z",
+      "league": "A Lyga",
       "odds": {
-        "home": 2,
-        "draw": 3.15,
-        "away": 3.2
+        "home": 4.6,
+        "draw": 3.5,
+        "away": 1.58
       },
       "totals": [
         {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.2
+          "line": 3.5,
+          "over": 2.95,
+          "under": 1.3
         },
         {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.09
+          "line": 1.5,
+          "over": 1.24,
+          "under": 3.4
         },
         {
           "line": 2.5,
-          "over": 1.86,
-          "under": 1.79
+          "over": 1.79,
+          "under": 1.85
+        },
+        {
+          "line": 4.5,
+          "over": 5.2,
+          "under": 1.1
+        }
+      ]
+    },
+    {
+      "eventId": "1028077033",
+      "title": "Riga FC - FK Jelgava",
+      "homeTeam": "Riga FC",
+      "awayTeam": "FK Jelgava",
+      "startTime": "2026-07-03T16:00:00Z",
+      "league": "Virsliga",
+      "odds": {
+        "home": 1.17,
+        "draw": 6.1,
+        "away": 11
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.36,
+          "under": 2.75
         },
         {
           "line": 3.5,
+          "over": 1.96,
+          "under": 1.7
+        },
+        {
+          "line": 4.5,
           "over": 3.1,
-          "under": 1.29
+          "under": 1.28
+        },
+        {
+          "line": 5.5,
+          "over": 5.2,
+          "under": 1.1
+        },
+        {
+          "line": 1.5,
+          "over": 1.09,
+          "under": 5.4
         }
       ]
     },
@@ -7278,81 +7343,6 @@
       }
     },
     {
-      "eventId": "1027882252",
-      "title": "Džiugas Telšiai - FK Kauno Zalgiris",
-      "homeTeam": "Džiugas Telšiai",
-      "awayTeam": "FK Kauno Zalgiris",
-      "startTime": "2026-07-03T16:00:00Z",
-      "league": "A Lyga",
-      "odds": {
-        "home": 4.6,
-        "draw": 3.5,
-        "away": 1.58
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.4
-        },
-        {
-          "line": 2.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.1
-        }
-      ]
-    },
-    {
-      "eventId": "1028077033",
-      "title": "Riga FC - FK Jelgava",
-      "homeTeam": "Riga FC",
-      "awayTeam": "FK Jelgava",
-      "startTime": "2026-07-03T16:00:00Z",
-      "league": "Virsliga",
-      "odds": {
-        "home": 1.17,
-        "draw": 6.1,
-        "away": 11
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.36,
-          "under": 2.75
-        },
-        {
-          "line": 3.5,
-          "over": 1.96,
-          "under": 1.7
-        },
-        {
-          "line": 4.5,
-          "over": 3.1,
-          "under": 1.28
-        },
-        {
-          "line": 5.5,
-          "over": 5.2,
-          "under": 1.1
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.4
-        }
-      ]
-    },
-    {
       "eventId": "1026030381",
       "title": "Ranheim - Stabaek",
       "homeTeam": "Ranheim",
@@ -7595,6 +7585,81 @@
       }
     },
     {
+      "eventId": "1027261489",
+      "title": "Hvíti Riddarinn - Dalvík/Reynir",
+      "homeTeam": "Hvíti Riddarinn",
+      "awayTeam": "Dalvík/Reynir",
+      "startTime": "2026-07-03T18:00:00Z",
+      "league": "2. Deild",
+      "odds": {
+        "home": 3.7,
+        "draw": 3.9,
+        "away": 1.68
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 4.5,
+          "under": 1.14
+        },
+        {
+          "line": 2.5,
+          "over": 1.3,
+          "under": 3
+        },
+        {
+          "line": 3.5,
+          "over": 1.79,
+          "under": 1.85
+        },
+        {
+          "line": 4.5,
+          "over": 2.75,
+          "under": 1.36
+        },
+        {
+          "line": 1.5,
+          "over": 1.08,
+          "under": 6
+        }
+      ]
+    },
+    {
+      "eventId": "1026305142",
+      "title": "NSÍ Runavík - KI Klaksvik",
+      "homeTeam": "NSÍ Runavík",
+      "awayTeam": "KI Klaksvik",
+      "startTime": "2026-07-03T18:00:00Z",
+      "league": "Premier League",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.35,
+        "away": 2.2
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.62,
+          "under": 2.08
+        },
+        {
+          "line": 4.5,
+          "over": 4.35,
+          "under": 1.15
+        },
+        {
+          "line": 1.5,
+          "over": 1.18,
+          "under": 3.95
+        },
+        {
+          "line": 3.5,
+          "over": 2.55,
+          "under": 1.42
+        }
+      ]
+    },
+    {
       "eventId": "1028164518",
       "title": "Australien - Egypten",
       "homeTeam": "Australien",
@@ -7719,81 +7784,6 @@
           }
         ]
       }
-    },
-    {
-      "eventId": "1027261489",
-      "title": "Hvíti Riddarinn - Dalvík/Reynir",
-      "homeTeam": "Hvíti Riddarinn",
-      "awayTeam": "Dalvík/Reynir",
-      "startTime": "2026-07-03T18:00:00Z",
-      "league": "2. Deild",
-      "odds": {
-        "home": 3.7,
-        "draw": 3.9,
-        "away": 1.68
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.14
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 3
-        },
-        {
-          "line": 3.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 4.5,
-          "over": 2.75,
-          "under": 1.36
-        },
-        {
-          "line": 1.5,
-          "over": 1.08,
-          "under": 6
-        }
-      ]
-    },
-    {
-      "eventId": "1026305142",
-      "title": "NSÍ Runavík - KI Klaksvik",
-      "homeTeam": "NSÍ Runavík",
-      "awayTeam": "KI Klaksvik",
-      "startTime": "2026-07-03T18:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.35,
-        "away": 2.2
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.62,
-          "under": 2.08
-        },
-        {
-          "line": 4.5,
-          "over": 4.35,
-          "under": 1.15
-        },
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 3.95
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.42
-        }
-      ]
     },
     {
       "eventId": "1025975041",
@@ -8476,46 +8466,6 @@
       }
     },
     {
-      "eventId": "1026403183",
-      "title": "FH Hafnarfjördur - Stjarnan Gardabae",
-      "homeTeam": "FH Hafnarfjördur",
-      "awayTeam": "Stjarnan Gardabae",
-      "startTime": "2026-07-03T19:15:00Z",
-      "league": "Úrvalsdeild",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.65,
-        "away": 2.38
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.8,
-          "under": 1.35
-        },
-        {
-          "line": 1.5,
-          "over": 1.06,
-          "under": 6
-        },
-        {
-          "line": 5.5,
-          "over": 4.5,
-          "under": 1.14
-        },
-        {
-          "line": 3.5,
-          "over": 1.79,
-          "under": 1.85
-        },
-        {
-          "line": 2.5,
-          "over": 1.3,
-          "under": 3
-        }
-      ]
-    },
-    {
       "eventId": "1026435561",
       "title": "Aegir Thorlakshofn - Fylkir",
       "homeTeam": "Aegir Thorlakshofn",
@@ -8712,6 +8662,46 @@
           "line": 2.5,
           "over": 1.22,
           "under": 3.6
+        }
+      ]
+    },
+    {
+      "eventId": "1026403183",
+      "title": "FH Hafnarfjördur - Stjarnan Gardabae",
+      "homeTeam": "FH Hafnarfjördur",
+      "awayTeam": "Stjarnan Gardabae",
+      "startTime": "2026-07-03T19:15:00Z",
+      "league": "Úrvalsdeild",
+      "odds": {
+        "home": 2.4,
+        "draw": 3.65,
+        "away": 2.38
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 2.8,
+          "under": 1.35
+        },
+        {
+          "line": 1.5,
+          "over": 1.06,
+          "under": 6
+        },
+        {
+          "line": 5.5,
+          "over": 4.5,
+          "under": 1.14
+        },
+        {
+          "line": 3.5,
+          "over": 1.79,
+          "under": 1.85
+        },
+        {
+          "line": 2.5,
+          "over": 1.3,
+          "under": 3
         }
       ]
     },
@@ -9518,41 +9508,6 @@
       ]
     },
     {
-      "eventId": "1028085632",
-      "title": "Paju Citizen FC - Yongin FC",
-      "homeTeam": "Paju Citizen FC",
-      "awayTeam": "Yongin FC",
-      "startTime": "2026-07-04T10:30:00Z",
-      "league": "K-League 2",
-      "odds": {
-        "home": 2.45,
-        "draw": 3.15,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.88,
-          "under": 1.77
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.2
-        },
-        {
-          "line": 4.5,
-          "over": 5.6,
-          "under": 1.08
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.28
-        }
-      ]
-    },
-    {
       "eventId": "1026293765",
       "title": "Jeonbuk Motors - Gangwon",
       "homeTeam": "Jeonbuk Motors",
@@ -9891,62 +9846,37 @@
       ]
     },
     {
-      "eventId": "1028131658",
-      "title": "Shenzhen Juniors FC - Nantong Zhiyun",
-      "homeTeam": "Shenzhen Juniors FC",
-      "awayTeam": "Nantong Zhiyun",
-      "startTime": "2026-07-04T11:00:00Z",
-      "league": "League One",
+      "eventId": "1028085632",
+      "title": "Paju Citizen FC - Yongin FC",
+      "homeTeam": "Paju Citizen FC",
+      "awayTeam": "Yongin FC",
+      "startTime": "2026-07-04T10:30:00Z",
+      "league": "K-League 2",
       "odds": {
-        "home": 2.25,
+        "home": 2.45,
         "draw": 3.15,
-        "away": 3
+        "away": 2.6
       },
       "totals": [
         {
           "line": 2.5,
-          "over": 2.08,
-          "under": 1.67
+          "over": 1.88,
+          "under": 1.77
         },
         {
           "line": 1.5,
-          "over": 1.34,
-          "under": 3
+          "over": 1.27,
+          "under": 3.2
+        },
+        {
+          "line": 4.5,
+          "over": 5.6,
+          "under": 1.08
         },
         {
           "line": 3.5,
-          "over": 3.7,
-          "under": 1.23
-        }
-      ]
-    },
-    {
-      "eventId": "1028131659",
-      "title": "Suzhou Dongwu - Guangdong GZ-Power F.C.",
-      "homeTeam": "Suzhou Dongwu",
-      "awayTeam": "Guangdong GZ-Power F.C.",
-      "startTime": "2026-07-04T11:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 5,
-        "draw": 3.5,
-        "away": 1.63
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.6,
-          "under": 1.25
-        },
-        {
-          "line": 1.5,
-          "over": 1.32,
-          "under": 3.1
-        },
-        {
-          "line": 2.5,
-          "over": 2.02,
-          "under": 1.7
+          "over": 3.15,
+          "under": 1.28
         }
       ]
     },
@@ -10131,6 +10061,66 @@
           }
         ]
       }
+    },
+    {
+      "eventId": "1028131658",
+      "title": "Shenzhen Juniors FC - Nantong Zhiyun",
+      "homeTeam": "Shenzhen Juniors FC",
+      "awayTeam": "Nantong Zhiyun",
+      "startTime": "2026-07-04T11:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 2.25,
+        "draw": 3.15,
+        "away": 3
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 2.08,
+          "under": 1.67
+        },
+        {
+          "line": 1.5,
+          "over": 1.34,
+          "under": 3
+        },
+        {
+          "line": 3.5,
+          "over": 3.7,
+          "under": 1.23
+        }
+      ]
+    },
+    {
+      "eventId": "1028131659",
+      "title": "Suzhou Dongwu - Guangdong GZ-Power F.C.",
+      "homeTeam": "Suzhou Dongwu",
+      "awayTeam": "Guangdong GZ-Power F.C.",
+      "startTime": "2026-07-04T11:00:00Z",
+      "league": "League One",
+      "odds": {
+        "home": 5,
+        "draw": 3.5,
+        "away": 1.63
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 3.6,
+          "under": 1.25
+        },
+        {
+          "line": 1.5,
+          "over": 1.32,
+          "under": 3.1
+        },
+        {
+          "line": 2.5,
+          "over": 2.02,
+          "under": 1.7
+        }
+      ]
     },
     {
       "eventId": "1028189081",
@@ -10410,6 +10400,122 @@
       }
     },
     {
+      "eventId": "1026051188",
+      "title": "FC Lahti - Gnistan",
+      "homeTeam": "FC Lahti",
+      "awayTeam": "Gnistan",
+      "startTime": "2026-07-04T12:00:00Z",
+      "league": "Veikkausliiga",
+      "odds": {
+        "home": 2.23,
+        "draw": 3.4,
+        "away": 2.95
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.78,
+          "under": 1.9
+        },
+        {
+          "line": 4.5,
+          "over": 5.4,
+          "under": 1.11
+        },
+        {
+          "line": 3.5,
+          "over": 2.95,
+          "under": 1.33
+        },
+        {
+          "line": 1.5,
+          "over": 1.24,
+          "under": 3.6
+        }
+      ],
+      "ah": [
+        {
+          "line": 0.5,
+          "home": 1.37,
+          "away": 2.8
+        },
+        {
+          "line": -0.5,
+          "home": 2.17,
+          "away": 1.6
+        },
+        {
+          "line": -1.25,
+          "home": 3.7,
+          "away": 1.22
+        },
+        {
+          "line": -1,
+          "home": 3.35,
+          "away": 1.27
+        },
+        {
+          "line": -0.75,
+          "home": 2.55,
+          "away": 1.43
+        },
+        {
+          "line": -0.25,
+          "home": 1.9,
+          "away": 1.79
+        },
+        {
+          "line": 0.25,
+          "home": 1.47,
+          "away": 2.45
+        },
+        {
+          "line": -1.5,
+          "home": 4.1,
+          "away": 1.19
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 8.5,
+            "over": 1.38,
+            "under": 2.75
+          },
+          {
+            "line": 11.5,
+            "over": 2.55,
+            "under": 1.45
+          },
+          {
+            "line": 10.5,
+            "over": 2,
+            "under": 1.7
+          },
+          {
+            "line": 13.5,
+            "over": 4.25,
+            "under": 1.17
+          },
+          {
+            "line": 9.5,
+            "over": 1.63,
+            "under": 2.1
+          },
+          {
+            "line": 12.5,
+            "over": 3.25,
+            "under": 1.28
+          },
+          {
+            "line": 7.5,
+            "over": 1.22,
+            "under": 3.75
+          }
+        ]
+      }
+    },
+    {
       "eventId": "1026030402",
       "title": "Egersund - Moss",
       "homeTeam": "Egersund",
@@ -10536,122 +10642,6 @@
       ]
     },
     {
-      "eventId": "1026051188",
-      "title": "FC Lahti - Gnistan",
-      "homeTeam": "FC Lahti",
-      "awayTeam": "Gnistan",
-      "startTime": "2026-07-04T12:00:00Z",
-      "league": "Veikkausliiga",
-      "odds": {
-        "home": 2.23,
-        "draw": 3.4,
-        "away": 2.95
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.78,
-          "under": 1.9
-        },
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.11
-        },
-        {
-          "line": 3.5,
-          "over": 2.95,
-          "under": 1.33
-        },
-        {
-          "line": 1.5,
-          "over": 1.24,
-          "under": 3.6
-        }
-      ],
-      "ah": [
-        {
-          "line": 0.5,
-          "home": 1.37,
-          "away": 2.8
-        },
-        {
-          "line": -0.5,
-          "home": 2.17,
-          "away": 1.6
-        },
-        {
-          "line": -1.25,
-          "home": 3.7,
-          "away": 1.22
-        },
-        {
-          "line": -1,
-          "home": 3.35,
-          "away": 1.27
-        },
-        {
-          "line": -0.75,
-          "home": 2.55,
-          "away": 1.43
-        },
-        {
-          "line": -0.25,
-          "home": 1.9,
-          "away": 1.79
-        },
-        {
-          "line": 0.25,
-          "home": 1.47,
-          "away": 2.45
-        },
-        {
-          "line": -1.5,
-          "home": 4.1,
-          "away": 1.19
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.38,
-            "under": 2.75
-          },
-          {
-            "line": 11.5,
-            "over": 2.55,
-            "under": 1.45
-          },
-          {
-            "line": 10.5,
-            "over": 2,
-            "under": 1.7
-          },
-          {
-            "line": 13.5,
-            "over": 4.25,
-            "under": 1.17
-          },
-          {
-            "line": 9.5,
-            "over": 1.63,
-            "under": 2.1
-          },
-          {
-            "line": 12.5,
-            "over": 3.25,
-            "under": 1.28
-          },
-          {
-            "line": 7.5,
-            "over": 1.22,
-            "under": 3.75
-          }
-        ]
-      }
-    },
-    {
       "eventId": "1026504971",
       "title": "SalPa - VJS",
       "homeTeam": "SalPa",
@@ -10692,41 +10682,6 @@
       ]
     },
     {
-      "eventId": "1027384078",
-      "title": "Sidama Coffee SC - Ethiopia Electricity",
-      "homeTeam": "Sidama Coffee SC",
-      "awayTeam": "Ethiopia Electricity",
-      "startTime": "2026-07-04T13:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.02,
-        "draw": 2.88,
-        "away": 3.75
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.52,
-          "under": 2.28
-        },
-        {
-          "line": 0.5,
-          "over": 1.1,
-          "under": 5.3
-        },
-        {
-          "line": 3.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 2.63,
-          "under": 1.4
-        }
-      ]
-    },
-    {
       "eventId": "1027882254",
       "title": "FK Panevezys - Hegelmann Litauen Kaunas",
       "homeTeam": "FK Panevezys",
@@ -10758,76 +10713,6 @@
           "line": 4.5,
           "over": 5.8,
           "under": 1.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028190194",
-      "title": "Kyzylzhar Petropavlosvk - Yelimay Semey",
-      "homeTeam": "Kyzylzhar Petropavlosvk",
-      "awayTeam": "Yelimay Semey",
-      "startTime": "2026-07-04T13:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 3.15,
-        "draw": 3.15,
-        "away": 2
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.45,
-          "under": 1.27
-        },
-        {
-          "line": 2.5,
-          "over": 1.97,
-          "under": 1.74
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.15
-        }
-      ]
-    },
-    {
-      "eventId": "1028086707",
-      "title": "BFC Daugavpils - FK Liepāja",
-      "homeTeam": "BFC Daugavpils",
-      "awayTeam": "FK Liepāja",
-      "startTime": "2026-07-04T13:00:00Z",
-      "league": "Virsliga",
-      "odds": {
-        "home": 2.63,
-        "draw": 3.45,
-        "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.28,
-          "under": 1.52
-        },
-        {
-          "line": 2.5,
-          "over": 1.5,
-          "under": 2.3
-        },
-        {
-          "line": 5.5,
-          "over": 6.5,
-          "under": 1.04
-        },
-        {
-          "line": 4.5,
-          "over": 3.8,
-          "under": 1.2
-        },
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 4.4
         }
       ]
     },
@@ -11149,6 +11034,111 @@
       ]
     },
     {
+      "eventId": "1027384078",
+      "title": "Sidama Coffee SC - Ethiopia Electricity",
+      "homeTeam": "Sidama Coffee SC",
+      "awayTeam": "Ethiopia Electricity",
+      "startTime": "2026-07-04T13:00:00Z",
+      "league": "Premier League",
+      "odds": {
+        "home": 2.02,
+        "draw": 2.88,
+        "away": 3.75
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.52,
+          "under": 2.28
+        },
+        {
+          "line": 0.5,
+          "over": 1.1,
+          "under": 5.3
+        },
+        {
+          "line": 3.5,
+          "over": 4.9,
+          "under": 1.12
+        },
+        {
+          "line": 2.5,
+          "over": 2.63,
+          "under": 1.4
+        }
+      ]
+    },
+    {
+      "eventId": "1028190194",
+      "title": "Kyzylzhar Petropavlosvk - Yelimay Semey",
+      "homeTeam": "Kyzylzhar Petropavlosvk",
+      "awayTeam": "Yelimay Semey",
+      "startTime": "2026-07-04T13:00:00Z",
+      "league": "Premier League",
+      "odds": {
+        "home": 3.15,
+        "draw": 3.15,
+        "away": 2
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 3.45,
+          "under": 1.27
+        },
+        {
+          "line": 2.5,
+          "over": 1.97,
+          "under": 1.74
+        },
+        {
+          "line": 1.5,
+          "over": 1.3,
+          "under": 3.15
+        }
+      ]
+    },
+    {
+      "eventId": "1028086707",
+      "title": "BFC Daugavpils - FK Liepāja",
+      "homeTeam": "BFC Daugavpils",
+      "awayTeam": "FK Liepāja",
+      "startTime": "2026-07-04T13:00:00Z",
+      "league": "Virsliga",
+      "odds": {
+        "home": 2.63,
+        "draw": 3.45,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 2.28,
+          "under": 1.52
+        },
+        {
+          "line": 2.5,
+          "over": 1.5,
+          "under": 2.3
+        },
+        {
+          "line": 5.5,
+          "over": 6.5,
+          "under": 1.04
+        },
+        {
+          "line": 4.5,
+          "over": 3.8,
+          "under": 1.2
+        },
+        {
+          "line": 1.5,
+          "over": 1.14,
+          "under": 4.4
+        }
+      ]
+    },
+    {
       "eventId": "1026305157",
       "title": "B36 Tórshavn - Víkingur Gøta",
       "homeTeam": "B36 Tórshavn",
@@ -11222,177 +11212,6 @@
           "under": 3.05
         }
       ]
-    },
-    {
-      "eventId": "1026403188",
-      "title": "ÍA Akranes - Breiðablik",
-      "homeTeam": "ÍA Akranes",
-      "awayTeam": "Breiðablik",
-      "startTime": "2026-07-04T14:00:00Z",
-      "league": "Úrvalsdeild",
-      "odds": {
-        "home": 2.2,
-        "draw": 3.65,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.6
-        },
-        {
-          "line": 5.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.85
-        },
-        {
-          "line": 3.5,
-          "over": 1.88,
-          "under": 1.76
-        },
-        {
-          "line": 4.5,
-          "over": 2.95,
-          "under": 1.3
-        }
-      ]
-    },
-    {
-      "eventId": "1026030400",
-      "title": "Hödd - Strömsgodset",
-      "homeTeam": "Hödd",
-      "awayTeam": "Strömsgodset",
-      "startTime": "2026-07-04T14:00:00Z",
-      "league": "OBOS-ligaen",
-      "odds": {
-        "home": 5.5,
-        "draw": 4.5,
-        "away": 1.46
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.37,
-          "under": 2.8
-        },
-        {
-          "line": 3.5,
-          "over": 1.95,
-          "under": 1.74
-        },
-        {
-          "line": 5.5,
-          "over": 5.4,
-          "under": 1.11
-        },
-        {
-          "line": 4.5,
-          "over": 3.2,
-          "under": 1.29
-        },
-        {
-          "line": 1.5,
-          "over": 1.1,
-          "under": 5.6
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 4.9,
-          "away": 1.13
-        },
-        {
-          "line": 1.5,
-          "home": 1.61,
-          "away": 2.15
-        },
-        {
-          "line": 0.25,
-          "home": 3.05,
-          "away": 1.3
-        },
-        {
-          "line": 0.5,
-          "home": 2.55,
-          "away": 1.44
-        },
-        {
-          "line": 0.75,
-          "home": 2.28,
-          "away": 1.54
-        },
-        {
-          "line": 1,
-          "home": 2,
-          "away": 1.7
-        },
-        {
-          "line": 2.25,
-          "home": 1.26,
-          "away": 3.4
-        },
-        {
-          "line": 2,
-          "home": 1.3,
-          "away": 3.1
-        },
-        {
-          "line": 2.5,
-          "home": 1.23,
-          "away": 3.7
-        },
-        {
-          "line": -0.25,
-          "home": 4.5,
-          "away": 1.15
-        },
-        {
-          "line": 1.75,
-          "home": 1.46,
-          "away": 2.48
-        },
-        {
-          "line": 1.25,
-          "home": 1.76,
-          "away": 1.93
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 11.5,
-            "over": 1.84,
-            "under": 1.84
-          },
-          {
-            "line": 9.5,
-            "over": 1.33,
-            "under": 2.95
-          },
-          {
-            "line": 10.5,
-            "over": 1.54,
-            "under": 2.28
-          },
-          {
-            "line": 13.5,
-            "over": 2.85,
-            "under": 1.36
-          },
-          {
-            "line": 12.5,
-            "over": 2.28,
-            "under": 1.55
-          }
-        ]
-      }
     },
     {
       "eventId": "1027261493",
@@ -11662,6 +11481,177 @@
       }
     },
     {
+      "eventId": "1026403188",
+      "title": "ÍA Akranes - Breiðablik",
+      "homeTeam": "ÍA Akranes",
+      "awayTeam": "Breiðablik",
+      "startTime": "2026-07-04T14:00:00Z",
+      "league": "Úrvalsdeild",
+      "odds": {
+        "home": 2.2,
+        "draw": 3.65,
+        "away": 2.6
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.09,
+          "under": 5.6
+        },
+        {
+          "line": 5.5,
+          "over": 4.9,
+          "under": 1.12
+        },
+        {
+          "line": 2.5,
+          "over": 1.34,
+          "under": 2.85
+        },
+        {
+          "line": 3.5,
+          "over": 1.88,
+          "under": 1.76
+        },
+        {
+          "line": 4.5,
+          "over": 2.95,
+          "under": 1.3
+        }
+      ]
+    },
+    {
+      "eventId": "1026030400",
+      "title": "Hödd - Strömsgodset",
+      "homeTeam": "Hödd",
+      "awayTeam": "Strömsgodset",
+      "startTime": "2026-07-04T14:00:00Z",
+      "league": "OBOS-ligaen",
+      "odds": {
+        "home": 5.5,
+        "draw": 4.5,
+        "away": 1.46
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.37,
+          "under": 2.8
+        },
+        {
+          "line": 3.5,
+          "over": 1.95,
+          "under": 1.74
+        },
+        {
+          "line": 5.5,
+          "over": 5.4,
+          "under": 1.11
+        },
+        {
+          "line": 4.5,
+          "over": 3.2,
+          "under": 1.29
+        },
+        {
+          "line": 1.5,
+          "over": 1.1,
+          "under": 5.6
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.5,
+          "home": 4.9,
+          "away": 1.13
+        },
+        {
+          "line": 1.5,
+          "home": 1.61,
+          "away": 2.15
+        },
+        {
+          "line": 0.25,
+          "home": 3.05,
+          "away": 1.3
+        },
+        {
+          "line": 0.5,
+          "home": 2.55,
+          "away": 1.44
+        },
+        {
+          "line": 0.75,
+          "home": 2.28,
+          "away": 1.54
+        },
+        {
+          "line": 1,
+          "home": 2,
+          "away": 1.7
+        },
+        {
+          "line": 2.25,
+          "home": 1.26,
+          "away": 3.4
+        },
+        {
+          "line": 2,
+          "home": 1.3,
+          "away": 3.1
+        },
+        {
+          "line": 2.5,
+          "home": 1.23,
+          "away": 3.7
+        },
+        {
+          "line": -0.25,
+          "home": 4.5,
+          "away": 1.15
+        },
+        {
+          "line": 1.75,
+          "home": 1.46,
+          "away": 2.48
+        },
+        {
+          "line": 1.25,
+          "home": 1.76,
+          "away": 1.93
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 11.5,
+            "over": 1.84,
+            "under": 1.84
+          },
+          {
+            "line": 9.5,
+            "over": 1.33,
+            "under": 2.95
+          },
+          {
+            "line": 10.5,
+            "over": 1.54,
+            "under": 2.28
+          },
+          {
+            "line": 13.5,
+            "over": 2.85,
+            "under": 1.36
+          },
+          {
+            "line": 12.5,
+            "over": 2.28,
+            "under": 1.55
+          }
+        ]
+      }
+    },
+    {
       "eventId": "1026504963",
       "title": "OLS - FC Inter Turku II",
       "homeTeam": "OLS",
@@ -11854,6 +11844,46 @@
           "line": 4.5,
           "over": 3.85,
           "under": 1.19
+        }
+      ]
+    },
+    {
+      "eventId": "1026435578",
+      "title": "Leiknir Reykjavík - Völsungur",
+      "homeTeam": "Leiknir Reykjavík",
+      "awayTeam": "Völsungur",
+      "startTime": "2026-07-04T16:00:00Z",
+      "league": "1. Deild",
+      "odds": {
+        "home": 1.58,
+        "draw": 4.1,
+        "away": 4.3
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 2.95,
+          "under": 1.3
+        },
+        {
+          "line": 1.5,
+          "over": 1.09,
+          "under": 5.6
+        },
+        {
+          "line": 5.5,
+          "over": 4.9,
+          "under": 1.12
+        },
+        {
+          "line": 2.5,
+          "over": 1.34,
+          "under": 2.85
+        },
+        {
+          "line": 3.5,
+          "over": 1.87,
+          "under": 1.77
         }
       ]
     },
@@ -12227,46 +12257,6 @@
           "line": 1.5,
           "over": 1.08,
           "under": 5.4
-        }
-      ]
-    },
-    {
-      "eventId": "1026435578",
-      "title": "Leiknir Reykjavík - Völsungur",
-      "homeTeam": "Leiknir Reykjavík",
-      "awayTeam": "Völsungur",
-      "startTime": "2026-07-04T16:00:00Z",
-      "league": "1. Deild",
-      "odds": {
-        "home": 1.58,
-        "draw": 4.1,
-        "away": 4.3
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 2.95,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.09,
-          "under": 5.6
-        },
-        {
-          "line": 5.5,
-          "over": 4.9,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.34,
-          "under": 2.85
-        },
-        {
-          "line": 3.5,
-          "over": 1.87,
-          "under": 1.77
         }
       ]
     },
@@ -13089,6 +13079,41 @@
       ]
     },
     {
+      "eventId": "1028139188",
+      "title": "Club Oriental De Futbol - CA River Plate (URU)",
+      "homeTeam": "Club Oriental De Futbol",
+      "awayTeam": "CA River Plate (URU)",
+      "startTime": "2026-07-04T23:00:00Z",
+      "league": "Segunda Division",
+      "odds": {
+        "home": 2.25,
+        "draw": 3.15,
+        "away": 2.85
+      },
+      "totals": [
+        {
+          "line": 3.5,
+          "over": 3.1,
+          "under": 1.29
+        },
+        {
+          "line": 1.5,
+          "over": 1.26,
+          "under": 3.3
+        },
+        {
+          "line": 4.5,
+          "over": 5.5,
+          "under": 1.09
+        },
+        {
+          "line": 2.5,
+          "over": 1.84,
+          "under": 1.8
+        }
+      ]
+    },
+    {
       "eventId": "1028136775",
       "title": "New York Cosmos - Greenville Triumph SC",
       "homeTeam": "New York Cosmos",
@@ -13310,111 +13335,6 @@
       }
     },
     {
-      "eventId": "1028139188",
-      "title": "Club Oriental De Futbol - CA River Plate (URU)",
-      "homeTeam": "Club Oriental De Futbol",
-      "awayTeam": "CA River Plate (URU)",
-      "startTime": "2026-07-04T23:00:00Z",
-      "league": "Segunda Division",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.15,
-        "away": 2.85
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.29
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.3
-        },
-        {
-          "line": 4.5,
-          "over": 5.5,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.84,
-          "under": 1.8
-        }
-      ]
-    },
-    {
-      "eventId": "1028136776",
-      "title": "Fort Wayne - Spokane Velocity FC",
-      "homeTeam": "Fort Wayne",
-      "awayTeam": "Spokane Velocity FC",
-      "startTime": "2026-07-04T23:30:00Z",
-      "league": "USL League 1",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.1,
-        "away": 2.28
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.29,
-          "under": 3.1
-        },
-        {
-          "line": 4.5,
-          "over": 5.8,
-          "under": 1.08
-        },
-        {
-          "line": 3.5,
-          "over": 3.25,
-          "under": 1.27
-        },
-        {
-          "line": 2.5,
-          "over": 1.91,
-          "under": 1.74
-        }
-      ]
-    },
-    {
-      "eventId": "1028136774",
-      "title": "Corpus Christi FC - Chattanooga Red Wolves SC",
-      "homeTeam": "Corpus Christi FC",
-      "awayTeam": "Chattanooga Red Wolves SC",
-      "startTime": "2026-07-04T23:30:00Z",
-      "league": "USL League 1",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.2,
-        "away": 2.3
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.75,
-          "under": 1.89
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.55
-        },
-        {
-          "line": 3.5,
-          "over": 2.85,
-          "under": 1.34
-        },
-        {
-          "line": 4.5,
-          "over": 5,
-          "under": 1.11
-        }
-      ]
-    },
-    {
       "eventId": "1026389403",
       "title": "Chattanooga FC - Inter Miami CF II",
       "homeTeam": "Chattanooga FC",
@@ -13486,6 +13406,76 @@
           "line": 4.5,
           "over": 5.5,
           "under": 1.09
+        }
+      ]
+    },
+    {
+      "eventId": "1028136776",
+      "title": "Fort Wayne - Spokane Velocity FC",
+      "homeTeam": "Fort Wayne",
+      "awayTeam": "Spokane Velocity FC",
+      "startTime": "2026-07-04T23:30:00Z",
+      "league": "USL League 1",
+      "odds": {
+        "home": 2.8,
+        "draw": 3.1,
+        "away": 2.28
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.29,
+          "under": 3.1
+        },
+        {
+          "line": 4.5,
+          "over": 5.8,
+          "under": 1.08
+        },
+        {
+          "line": 3.5,
+          "over": 3.25,
+          "under": 1.27
+        },
+        {
+          "line": 2.5,
+          "over": 1.91,
+          "under": 1.74
+        }
+      ]
+    },
+    {
+      "eventId": "1028136774",
+      "title": "Corpus Christi FC - Chattanooga Red Wolves SC",
+      "homeTeam": "Corpus Christi FC",
+      "awayTeam": "Chattanooga Red Wolves SC",
+      "startTime": "2026-07-04T23:30:00Z",
+      "league": "USL League 1",
+      "odds": {
+        "home": 2.75,
+        "draw": 3.2,
+        "away": 2.3
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.75,
+          "under": 1.89
+        },
+        {
+          "line": 1.5,
+          "over": 1.22,
+          "under": 3.55
+        },
+        {
+          "line": 3.5,
+          "over": 2.85,
+          "under": 1.34
+        },
+        {
+          "line": 4.5,
+          "over": 5,
+          "under": 1.11
         }
       ]
     },
@@ -13770,97 +13760,6 @@
       ]
     },
     {
-      "eventId": "1026293758",
-      "title": "Gimcheon Sangmu FC - Jeju United",
-      "homeTeam": "Gimcheon Sangmu FC",
-      "awayTeam": "Jeju United",
-      "startTime": "2026-07-05T10:30:00Z",
-      "league": "K-League 1",
-      "odds": {
-        "home": 2.33,
-        "draw": 3.05,
-        "away": 2.8
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 6.75,
-          "under": 1.04
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.05
-        },
-        {
-          "line": 2.5,
-          "over": 2,
-          "under": 1.68
-        },
-        {
-          "line": 3.5,
-          "over": 3.5,
-          "under": 1.23
-        }
-      ],
-      "ah": [
-        {
-          "line": -0.5,
-          "home": 2.3,
-          "away": 1.53
-        },
-        {
-          "line": 0.5,
-          "home": 1.38,
-          "away": 2.75
-        },
-        {
-          "line": -1.25,
-          "home": 4.2,
-          "away": 1.18
-        },
-        {
-          "line": -1,
-          "home": 3.75,
-          "away": 1.21
-        },
-        {
-          "line": -1.5,
-          "home": 4.6,
-          "away": 1.15
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 8.5,
-            "over": 1.74,
-            "under": 1.95
-          },
-          {
-            "line": 7.5,
-            "over": 1.44,
-            "under": 2.55
-          },
-          {
-            "line": 10.5,
-            "over": 2.9,
-            "under": 1.35
-          },
-          {
-            "line": 11.5,
-            "over": 3.85,
-            "under": 1.21
-          },
-          {
-            "line": 9.5,
-            "over": 2.23,
-            "under": 1.57
-          }
-        ]
-      }
-    },
-    {
       "eventId": "1026293760",
       "title": "Gwangju FC - Ulsan Hyundai FC",
       "homeTeam": "Gwangju FC",
@@ -14053,6 +13952,97 @@
             "line": 7.5,
             "over": 1.62,
             "under": 2.12
+          }
+        ]
+      }
+    },
+    {
+      "eventId": "1026293758",
+      "title": "Gimcheon Sangmu FC - Jeju United",
+      "homeTeam": "Gimcheon Sangmu FC",
+      "awayTeam": "Jeju United",
+      "startTime": "2026-07-05T10:30:00Z",
+      "league": "K-League 1",
+      "odds": {
+        "home": 2.33,
+        "draw": 3.05,
+        "away": 2.8
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 6.75,
+          "under": 1.04
+        },
+        {
+          "line": 1.5,
+          "over": 1.3,
+          "under": 3.05
+        },
+        {
+          "line": 2.5,
+          "over": 2,
+          "under": 1.68
+        },
+        {
+          "line": 3.5,
+          "over": 3.5,
+          "under": 1.23
+        }
+      ],
+      "ah": [
+        {
+          "line": -0.5,
+          "home": 2.3,
+          "away": 1.53
+        },
+        {
+          "line": 0.5,
+          "home": 1.38,
+          "away": 2.75
+        },
+        {
+          "line": -1.25,
+          "home": 4.2,
+          "away": 1.18
+        },
+        {
+          "line": -1,
+          "home": 3.75,
+          "away": 1.21
+        },
+        {
+          "line": -1.5,
+          "home": 4.6,
+          "away": 1.15
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 8.5,
+            "over": 1.74,
+            "under": 1.95
+          },
+          {
+            "line": 7.5,
+            "over": 1.44,
+            "under": 2.55
+          },
+          {
+            "line": 10.5,
+            "over": 2.9,
+            "under": 1.35
+          },
+          {
+            "line": 11.5,
+            "over": 3.85,
+            "under": 1.21
+          },
+          {
+            "line": 9.5,
+            "over": 2.23,
+            "under": 1.57
           }
         ]
       }
@@ -16398,8 +16388,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 3.85,
-        "away": 1.23
+        "home": 3.75,
+        "away": 1.24
       }
     },
     {
@@ -16420,7 +16410,7 @@
       "title": "Ikumi Yamazaki - Ke Ren",
       "homeTeam": "Ikumi Yamazaki",
       "awayTeam": "Ke Ren",
-      "startTime": "2026-06-30T04:08:00Z",
+      "startTime": "2026-06-30T04:17:00Z",
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
@@ -16433,7 +16423,7 @@
       "title": "Meiling Wang - Zijun Jiang",
       "homeTeam": "Meiling Wang",
       "awayTeam": "Zijun Jiang",
-      "startTime": "2026-06-30T04:10:00Z",
+      "startTime": "2026-06-30T04:19:00Z",
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
@@ -16446,7 +16436,7 @@
       "title": "Junhan Zhang - Anna Snigireva",
       "homeTeam": "Junhan Zhang",
       "awayTeam": "Anna Snigireva",
-      "startTime": "2026-06-30T04:12:00Z",
+      "startTime": "2026-06-30T04:20:00Z",
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
@@ -16459,7 +16449,7 @@
       "title": "Shinji Hazawa - Koki Matsuda",
       "homeTeam": "Shinji Hazawa",
       "awayTeam": "Koki Matsuda",
-      "startTime": "2026-06-30T04:13:00Z",
+      "startTime": "2026-06-30T04:21:00Z",
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
@@ -16472,7 +16462,7 @@
       "title": "Maria Kalyakina - Anastasiia Gureva",
       "homeTeam": "Maria Kalyakina",
       "awayTeam": "Anastasiia Gureva",
-      "startTime": "2026-06-30T04:13:00Z",
+      "startTime": "2026-06-30T04:21:00Z",
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
@@ -16511,7 +16501,7 @@
       "title": "Amirkhamza Nasridinov - Fanming Meng",
       "homeTeam": "Amirkhamza Nasridinov",
       "awayTeam": "Fanming Meng",
-      "startTime": "2026-06-30T05:09:00Z",
+      "startTime": "2026-06-30T05:17:00Z",
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
@@ -16524,7 +16514,7 @@
       "title": "Tianhui Zhang - Yan Cheng Chen",
       "homeTeam": "Tianhui Zhang",
       "awayTeam": "Yan Cheng Chen",
-      "startTime": "2026-06-30T05:10:00Z",
+      "startTime": "2026-06-30T05:19:00Z",
       "league": "Wuning",
       "sport": "tennis",
       "odds": {
@@ -16710,8 +16700,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 1.97,
-        "away": 1.74
+        "home": 2.2,
+        "away": 1.58
       }
     },
     {
@@ -17037,6 +17027,19 @@
       "odds": {
         "home": 1.17,
         "away": 4.75
+      }
+    },
+    {
+      "eventId": "1028177636",
+      "title": "Manas Manoj Dhamne - Ioannis Xilas",
+      "homeTeam": "Manas Manoj Dhamne",
+      "awayTeam": "Ioannis Xilas",
+      "startTime": "2026-06-30T09:10:00Z",
+      "league": "Troyes",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.66,
+        "away": 2.18
       }
     },
     {
@@ -17373,8 +17376,8 @@
       "league": "Figueira da Foz",
       "sport": "tennis",
       "odds": {
-        "home": 3.7,
-        "away": 1.23
+        "home": 4.1,
+        "away": 1.2
       }
     },
     {
@@ -17401,6 +17404,32 @@
       "odds": {
         "home": 2.8,
         "away": 1.38
+      }
+    },
+    {
+      "eventId": "1028192249",
+      "title": "Maxime Chazal - Patrick Zahraj",
+      "homeTeam": "Maxime Chazal",
+      "awayTeam": "Patrick Zahraj",
+      "startTime": "2026-06-30T10:20:00Z",
+      "league": "Troyes",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.5,
+        "away": 2.5
+      }
+    },
+    {
+      "eventId": "1028177640",
+      "title": "Federico Bondioli - Inaki Montes-De La Torre",
+      "homeTeam": "Federico Bondioli",
+      "awayTeam": "Inaki Montes-De La Torre",
+      "startTime": "2026-06-30T10:20:00Z",
+      "league": "Troyes",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.1,
+        "away": 1.35
       }
     },
     {
@@ -17804,6 +17833,19 @@
       "odds": {
         "home": 3.15,
         "away": 1.36
+      }
+    },
+    {
+      "eventId": "1028192253",
+      "title": "Carlo Alberto Caniato - Izan Almazan Valiente",
+      "homeTeam": "Carlo Alberto Caniato",
+      "awayTeam": "Izan Almazan Valiente",
+      "startTime": "2026-06-30T11:30:00Z",
+      "league": "Troyes",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.3,
+        "away": 3.35
       }
     },
     {
@@ -18543,8 +18585,8 @@
       "league": "Wimbledon Damsingel",
       "sport": "tennis",
       "odds": {
-        "home": 2.12,
-        "away": 1.72
+        "home": 1.93,
+        "away": 1.87
       }
     },
     {
@@ -18679,6 +18721,6 @@
     }
   ],
   "basketEventsCount": 6,
-  "tennisEventsCount": 178,
+  "tennisEventsCount": 182,
   "lastError": null
 }
