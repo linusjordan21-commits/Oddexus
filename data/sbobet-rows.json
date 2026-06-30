@@ -1,52 +1,7 @@
 {
-  "updatedAt": "2026-06-30T02:37:32.873Z",
+  "updatedAt": "2026-06-30T02:39:00.597Z",
   "source": "github-actions-dom-scrape",
   "events": {
-    "tn:football::e-ghana::e-scotland::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-ghana::e-scotland::2026-06-30T02:38:00.000Z",
-      "sport": "football",
-      "homeTeam": "e-Ghana (AGENT)",
-      "awayTeam": "e-Scotland (INFERNO)",
-      "startTime": "2026-06-30T02:38:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "696837073",
-          "marketType": "ML_1X2",
-          "scope": "full",
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.25
-            },
-            {
-              "selection": "DRAW",
-              "decimalOdds": 3.75
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 2.45
-            }
-          ]
-        },
-        {
-          "oddsId": "696837083",
-          "marketType": "AH",
-          "scope": "full",
-          "line": -0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 2.23
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.55
-            }
-          ]
-        }
-      ]
-    },
     "tn:football::e-barcelona::e-liverpool::2026-06-30T02:42:00.000Z": {
       "sbobetEventId": "tn:football::e-barcelona::e-liverpool::2026-06-30T02:42:00.000Z",
       "sport": "football",
@@ -56,7 +11,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696838251",
+          "oddsId": "700268366",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -73,6 +28,22 @@
               "decimalOdds": 2
             }
           ]
+        },
+        {
+          "oddsId": "700268381",
+          "marketType": "AH",
+          "scope": "full",
+          "line": 0.5,
+          "runners": [
+            {
+              "selection": "HOME",
+              "decimalOdds": 1.73
+            },
+            {
+              "selection": "AWAY",
+              "decimalOdds": 1.97
+            }
+          ]
         }
       ]
     },
@@ -85,7 +56,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696839271",
+          "oddsId": "700269386",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -114,7 +85,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696840148",
+          "oddsId": "700270263",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -143,7 +114,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696840624",
+          "oddsId": "700270739",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -172,7 +143,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696841359",
+          "oddsId": "700271474",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -201,7 +172,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696846642",
+          "oddsId": "700276757",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -230,7 +201,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696864187",
+          "oddsId": "700294302",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -259,7 +230,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696873238",
+          "oddsId": "700303353",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -288,7 +259,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696875583",
+          "oddsId": "700305698",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -317,7 +288,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696876894",
+          "oddsId": "700307009",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -346,7 +317,7 @@
       "competition": null,
       "markets": [
         {
-          "oddsId": "696878495",
+          "oddsId": "700308610",
           "marketType": "ML_1X2",
           "scope": "full",
           "runners": [
@@ -366,42 +337,16 @@
         }
       ]
     },
-    "tn:football::e-barcelona::e-liverpool::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-barcelona::e-liverpool::2026-06-30T02:38:00.000Z",
-      "sport": "football",
-      "homeTeam": "e-Barcelona (RESISTANCE)",
-      "awayTeam": "e-Liverpool (DANTE)",
-      "startTime": "2026-06-30T02:38:00.000Z",
-      "competition": null,
-      "markets": [
-        {
-          "oddsId": "696838266",
-          "marketType": "AH",
-          "scope": "full",
-          "line": 0.5,
-          "runners": [
-            {
-              "selection": "HOME",
-              "decimalOdds": 1.73
-            },
-            {
-              "selection": "AWAY",
-              "decimalOdds": 1.97
-            }
-          ]
-        }
-      ]
-    },
-    "tn:football::e-spain::e-usa::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-spain::e-usa::2026-06-30T02:38:00.000Z",
+    "tn:football::e-spain::e-usa::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-spain::e-usa::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Spain (ENT)",
       "awayTeam": "e-USA (CHASER)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696839274",
+          "oddsId": "700269389",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -418,16 +363,16 @@
         }
       ]
     },
-    "tn:football::e-ghana::e-usa::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-ghana::e-usa::2026-06-30T02:38:00.000Z",
+    "tn:football::e-ghana::e-usa::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-ghana::e-usa::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Ghana (MARS)",
       "awayTeam": "e-USA (ODYSSEY)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696840150",
+          "oddsId": "700270265",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -444,16 +389,16 @@
         }
       ]
     },
-    "tn:football::e-new zealand::e-france::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-new zealand::e-france::2026-06-30T02:38:00.000Z",
+    "tn:football::e-new zealand::e-france::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-new zealand::e-france::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-New Zealand (AGENT)",
       "awayTeam": "e-France (JAEGER)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696840632",
+          "oddsId": "700270747",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -470,16 +415,16 @@
         }
       ]
     },
-    "tn:football::e-paris sg::e- bayern munchen::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-paris sg::e- bayern munchen::2026-06-30T02:38:00.000Z",
+    "tn:football::e-paris sg::e- bayern munchen::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-paris sg::e- bayern munchen::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Paris SG (RESISTANCE)",
       "awayTeam": "e-FC Bayern Munchen (THREAT)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696841364",
+          "oddsId": "700271479",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -496,16 +441,16 @@
         }
       ]
     },
-    "tn:football::e-spurs::e-newcastle utd::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-spurs::e-newcastle utd::2026-06-30T02:38:00.000Z",
+    "tn:football::e-spurs::e-newcastle utd::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-spurs::e-newcastle utd::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Spurs (ENT)",
       "awayTeam": "e-Newcastle UTD (DECIMATOR)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696846849",
+          "oddsId": "700276964",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -522,16 +467,16 @@
         }
       ]
     },
-    "tn:football::e-germany::e-argentina::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-germany::e-argentina::2026-06-30T02:38:00.000Z",
+    "tn:football::e-germany::e-argentina::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-germany::e-argentina::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Germany (MARS)",
       "awayTeam": "e-Argentina (STORM)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696864341",
+          "oddsId": "700294456",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -548,16 +493,16 @@
         }
       ]
     },
-    "tn:football::e-manchester city::e-real madrid::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-manchester city::e-real madrid::2026-06-30T02:38:00.000Z",
+    "tn:football::e-manchester city::e-real madrid::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-manchester city::e-real madrid::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Manchester City (DANTE)",
       "awayTeam": "e-Real Madrid (GLORY)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696873261",
+          "oddsId": "700303376",
           "marketType": "AH",
           "scope": "full",
           "line": -0.5,
@@ -574,16 +519,16 @@
         }
       ]
     },
-    "tn:football::e-usa::e-spain::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-usa::e-spain::2026-06-30T02:38:00.000Z",
+    "tn:football::e-usa::e-spain::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-usa::e-spain::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-USA (ODYSSEY)",
       "awayTeam": "e-Spain (CROWN)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696875591",
+          "oddsId": "700305706",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -600,16 +545,16 @@
         }
       ]
     },
-    "tn:football::e- bayern munchen::e-manchester city::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e- bayern munchen::e-manchester city::2026-06-30T02:38:00.000Z",
+    "tn:football::e- bayern munchen::e-manchester city::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e- bayern munchen::e-manchester city::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-FC Bayern Munchen (THREAT)",
       "awayTeam": "e-Manchester City (DANTE)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696876902",
+          "oddsId": "700307017",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -626,16 +571,16 @@
         }
       ]
     },
-    "tn:football::e-argentina::e-germany::2026-06-30T02:38:00.000Z": {
-      "sbobetEventId": "tn:football::e-argentina::e-germany::2026-06-30T02:38:00.000Z",
+    "tn:football::e-argentina::e-germany::2026-06-30T02:42:00.000Z": {
+      "sbobetEventId": "tn:football::e-argentina::e-germany::2026-06-30T02:42:00.000Z",
       "sport": "football",
       "homeTeam": "e-Argentina (STORM)",
       "awayTeam": "e-Germany (ODYSSEY)",
-      "startTime": "2026-06-30T02:38:00.000Z",
+      "startTime": "2026-06-30T02:42:00.000Z",
       "competition": null,
       "markets": [
         {
-          "oddsId": "696878500",
+          "oddsId": "700308615",
           "marketType": "AH",
           "scope": "full",
           "line": 0.5,
@@ -660,11 +605,11 @@
       "https://www.sbobet.com/en/euro/basketball",
       "https://www.sbobet.com/en/euro/baseball"
     ],
-    "rawRows": 60,
-    "events": 23,
-    "markets": 24,
-    "ahMarkets": 12,
-    "ml1x2Markets": 12,
-    "durationMs": 6372
+    "rawRows": 55,
+    "events": 21,
+    "markets": 22,
+    "ahMarkets": 11,
+    "ml1x2Markets": 11,
+    "durationMs": 6476
   }
 }
