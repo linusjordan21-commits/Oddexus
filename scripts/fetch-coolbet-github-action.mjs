@@ -234,9 +234,11 @@ try{
   async function worker(){while(idx<leagues.length){var lg=leagues[idx++];try{var j=await fetch(base+'sports/fo-category/?categoryId='+lg.id+'&limit=200&'+Q,H).then(function(r){return r.json()});var acc=[];collect(j.categories||[],acc);for(var k=0;k<acc.length;k++)raw.push(trim(acc[k],lg.fullSlug,lg.name));}catch(e){}}}
   var ws=[];for(var w=0;w<12;w++)ws.push(worker());await Promise.all(ws);
   o.rawMatches=raw.length;
-  // Prematch-only inom 24h: +24h fram, INGEN grace bakåt (live tappas), och skippa
-  // matcher som redan är inplay. Vi följer inga live-matcher just nu.
-  var now=Date.now(),hi=now+24*3600000;
+  // Prematch-only inom 168h/7 dygn: +7d fram, INGEN grace bakåt (live tappas), och skippa
+  // matcher som redan är inplay. Breddat 24h→168h 2026-06-30: under VM-2026 är fönstret
+  // 0-24h nästan tomt (126 live + nästan allt prematch >72h fram) → 24h gav 0 events.
+  // 7d fångar de framtida (VM-)matcherna; alla matchas mot Pinnacle (56d-horisont). Live exkluderas.
+  var now=Date.now(),hi=now+168*3600000;
   var byId={};raw.forEach(function(m){if(m.inplay===true)return;var t=Date.parse(m.match_start||'');if(isFinite(t)&&(t>hi||t<now))return;if(!byId[m.id])byId[m.id]=m;});
   var matches=Object.keys(byId).map(function(k){return byId[k]});
   o.matches=matches;o.matchCount=matches.length;
