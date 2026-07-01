@@ -34,6 +34,7 @@ import { makeZip } from "./miniZip";
 const AUTOCLICKER_DIST_FILES = [
   "loader.py",
   "Starta-boten.command",
+  "Kalibrera-om.command",
   "setup.sh",
   "run.sh",
   "sites.json",

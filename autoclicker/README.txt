@@ -10,13 +10,20 @@ STARTA (Mac)
    (Första gången installeras allt som behövs — det tar några minuter.)
 2. Skriv in ditt användarnamn + lösenord från oddexus.com när det frågas.
    (Du loggar bara in första gången — sedan kommer den ihåg dig.)
-3. Följ stegen i fönstret (logga in på casinona, kalibrera SPIN + SALDO).
+3. Logga in på alla casinon + öppna spelet, klicka sedan € för att starta.
+   Första gången kalibrerar du: klicka på SPIN-knappen + SALDO-siffran på varje sida.
 
 VARJE MÅNAD
 -----------
 Du behöver INTE ladda ner något nytt. Så länge du betalar fungerar samma bot.
 Slutar medlemskapet gälla säger boten till och startar inte förrän du förnyat
 på oddexus.com.
+
+OM BARA EN SIDA SPINNAR (fel kalibrering)
+-----------------------------------------
+Logga in + öppna spelet på ALLA sidor. Dubbelklicka sedan
+"Kalibrera-om.command" och klicka på SPIN-knappen + SALDO-siffran på
+varje sida igen. (Se till att träffa rätt — SPIN och SALDO ska vara olika ställen.)
 
 KRAV
 ----
