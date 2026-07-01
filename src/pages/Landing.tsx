@@ -25,19 +25,31 @@ const whyPoints = [
 export default function Landing() {
   return (
     <div className="relative min-h-screen text-stone-100">
-      {/* Bakgrund — samma bild som förstasidan */}
+      {/* Bakgrund — SAMMA som förstasidan (Home): mörk gradient + Odysseus-konstverk */}
       <div
-        className="fixed inset-0 -z-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/branding/bg-wide.webp?v=2')" }}
-        aria-hidden
-      />
-      <div
-        className="fixed inset-0 -z-10"
+        className="fixed inset-0 -z-20"
         style={{
           background:
-            "radial-gradient(1100px 560px at 72% 6%, rgba(196,154,72,0.18), transparent 60%), " +
-            "linear-gradient(160deg, rgba(8,14,11,0.82) 0%, rgba(6,10,8,0.88) 45%, rgba(4,7,5,0.94) 100%)",
+            "radial-gradient(1100px 560px at 72% 8%, rgba(196,154,72,0.20), transparent 60%), " +
+            "linear-gradient(160deg, #0c1310 0%, #0a0f0d 45%, #060907 100%)",
         }}
+        aria-hidden
+      />
+      {/* Hjälte-konstverk (Odysseus) — uppe till höger, tonas in åt vänster (md+) */}
+      <img
+        src="/branding/home-hero.webp?v=1"
+        alt=""
+        aria-hidden
+        className="pointer-events-none absolute right-0 top-0 -z-10 hidden h-[82vh] max-h-[860px] w-auto select-none opacity-90 md:block"
+        style={{
+          WebkitMaskImage: "linear-gradient(to left, black 55%, transparent 100%)",
+          maskImage: "linear-gradient(to left, black 55%, transparent 100%)",
+        }}
+        draggable={false}
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[82vh] max-h-[860px]"
+        style={{ background: "linear-gradient(to bottom, transparent 60%, rgba(6,9,7,0.9) 100%)" }}
         aria-hidden
       />
 
