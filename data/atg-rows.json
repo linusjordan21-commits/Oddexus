@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T22:37:16.057Z",
+  "updatedAt": "2026-07-01T22:41:14.291Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 362,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 363,
+  "skippedNoOdds": 4,
   "skippedNotFootball": 0,
-  "durationMs": 37200,
+  "durationMs": 35890,
   "events": [
     {
       "eventId": "1027976814",
@@ -3492,9 +3492,9 @@
       "startTime": "2026-07-01T21:58:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 1.64,
-        "draw": 3.1,
-        "away": 5.75
+        "home": 1.68,
+        "draw": 2.95,
+        "away": 5.8
       }
     },
     {
@@ -3505,22 +3505,9 @@
       "startTime": "2026-07-01T22:00:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 3.1,
-        "draw": 2.8,
-        "away": 2.33
-      }
-    },
-    {
-      "eventId": "1028211611",
-      "title": "Real Sociedad (djamik) - Sevilla (Yeti)",
-      "homeTeam": "Real Sociedad (djamik)",
-      "awayTeam": "Sevilla (Yeti)",
-      "startTime": "2026-07-01T22:30:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 8.5,
-        "draw": 6.5,
-        "away": 1.19
+        "home": 3.15,
+        "draw": 2.65,
+        "away": 2.38
       }
     },
     {
@@ -3531,9 +3518,9 @@
       "startTime": "2026-07-01T22:30:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.77,
-        "draw": 5.4,
-        "away": 2.55
+        "home": 1.25,
+        "draw": 5.5,
+        "away": 7.5
       }
     },
     {
@@ -3544,9 +3531,9 @@
       "startTime": "2026-07-01T22:30:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 3.35,
-        "draw": 4.35,
-        "away": 1.64
+        "home": 34,
+        "draw": 10.5,
+        "away": 1.05
       }
     },
     {
@@ -3557,35 +3544,9 @@
       "startTime": "2026-07-01T22:30:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 4.9,
-        "draw": 5.1,
-        "away": 1.38
-      }
-    },
-    {
-      "eventId": "1028212052",
-      "title": "Spain (Inquisitor) - England (hotShot)",
-      "homeTeam": "Spain (Inquisitor)",
-      "awayTeam": "England (hotShot)",
-      "startTime": "2026-07-01T22:32:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.75,
-        "draw": 2.65,
-        "away": 5.3
-      }
-    },
-    {
-      "eventId": "1028212055",
-      "title": "Netherlands (Kray) - Frankrike (OG)",
-      "homeTeam": "Netherlands (Kray)",
-      "awayTeam": "Frankrike (OG)",
-      "startTime": "2026-07-01T22:32:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.2,
-        "away": 2.25
+        "home": 6,
+        "draw": 4.5,
+        "away": 1.36
       }
     },
     {
@@ -4245,6 +4206,51 @@
           "line": 12.5,
           "over": 4.9,
           "under": 1.11
+        }
+      ]
+    },
+    {
+      "eventId": "1028212068",
+      "title": "England (hotShot) - Frankrike (OG)",
+      "homeTeam": "England (hotShot)",
+      "awayTeam": "Frankrike (OG)",
+      "startTime": "2026-07-01T23:08:00Z",
+      "league": "eSports Battle World Cup (2x4 min)",
+      "odds": {
+        "home": 1.96,
+        "draw": 3.6,
+        "away": 2.75
+      },
+      "totals": [
+        {
+          "line": 2.5,
+          "over": 1.1,
+          "under": 5.8
+        },
+        {
+          "line": 3.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 5.5,
+          "over": 2.6,
+          "under": 1.43
+        },
+        {
+          "line": 7.5,
+          "over": 8,
+          "under": 1.06
+        },
+        {
+          "line": 4.5,
+          "over": 1.77,
+          "under": 1.9
+        },
+        {
+          "line": 6.5,
+          "over": 4.4,
+          "under": 1.17
         }
       ]
     },
@@ -20477,8 +20483,21 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.37,
-        "away": 2.88
+        "home": 1.29,
+        "away": 3.3
+      }
+    },
+    {
+      "eventId": "1028212591",
+      "title": "Alexander Guajardo - Matic Kriznik",
+      "homeTeam": "Alexander Guajardo",
+      "awayTeam": "Matic Kriznik",
+      "startTime": "2026-07-01T20:41:00Z",
+      "league": "San Diego",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.03,
+        "away": 11
       }
     },
     {
@@ -20490,21 +20509,8 @@
       "league": "Ajaccio",
       "sport": "tennis",
       "odds": {
-        "home": 1.26,
-        "away": 3.55
-      }
-    },
-    {
-      "eventId": "1028212596",
-      "title": "Alexander Petrov - Ronald Hohmann",
-      "homeTeam": "Alexander Petrov",
-      "awayTeam": "Ronald Hohmann",
-      "startTime": "2026-07-01T21:22:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 4.25,
-        "away": 1.19
+        "home": 1.29,
+        "away": 3.3
       }
     },
     {
@@ -20516,8 +20522,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.93,
-        "away": 1.8
+        "home": 2.2,
+        "away": 1.61
       }
     },
     {
@@ -20529,8 +20535,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.07,
-        "away": 7
+        "home": 1.06,
+        "away": 7.5
       }
     },
     {
@@ -20542,8 +20548,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 6,
-        "away": 1.1
+        "home": 6.5,
+        "away": 1.08
       }
     },
     {
@@ -20555,8 +20561,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 5.6,
-        "away": 1.11
+        "home": 4.6,
+        "away": 1.16
       }
     },
     {
@@ -20564,7 +20570,7 @@
       "title": "Daniil Glinka - Edward Winter",
       "homeTeam": "Daniil Glinka",
       "awayTeam": "Edward Winter",
-      "startTime": "2026-07-01T22:45:00Z",
+      "startTime": "2026-07-01T22:50:00Z",
       "league": "Cary",
       "sport": "tennis",
       "odds": {
