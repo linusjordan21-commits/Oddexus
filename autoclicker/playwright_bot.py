@@ -65,6 +65,7 @@ CHROME_ARGS = [
 POLL_INTERVAL = 0.01        # hur ofta saldot läses (s) — TÄTT, för att fånga snabba
                             # vinst(UPP)→insats(NER)-sekvenser utan att missa spin
 MAX_WAIT_READS = 95         # ~2,8s stiltje innan vi kollar efter avbrott (skalat mot tätare poll)
+SPIN_INTERVAL = 0.2         # liten paus mellan spin-klick (gentare mot casinot, mindre blockering)
 START_READ_TRIES = 60       # försök att läsa startsaldot
 EPS = 0.001                 # minsta saldoändring som räknas
 RELOAD_GRACE = 3.0          # paus efter omladdning så spelet hinner ladda klart
@@ -591,40 +592,36 @@ async def click_button_robust(page: Page, texts: list[str]):
     return None
 
 
+# Knappar som får klickas när saldot står stilla — SNÄV lista med bara de RIKTIGA knapparna.
+# Generiska ord (ja/start/starta/stäng/close/samla/collect/continue + "gratisspinn"/"free spins"
+# ensamt som matchar menyflikar) togs bort 2026-06-30: de träffade cookie-rutor/menyer/promos
+# och gav spuriösa klick som över tid navigerade bort sidorna → blanka GoGo/Expekt.
+FREE_SPIN_TEXTS = ["starta gratisspinn", "starta gratisspin", "starta gratis spinn", "starta free spins"]
+ONEH_CONTINUE_TEXTS = ["fortsätt spela", "fortsätt", "fortsätt session"]
+
+
 async def handle_interruption(
     page: Page,
     label: str,
     bx: float,
     by: float,
     prev: float,
-    continue_texts: list[str],
+    continue_texts: list[str],  # kvar för bakåtkomp — används EJ längre (se FREE_SPIN_TEXTS)
     reload_texts: list[str],
     ack_texts: list[str],
 ) -> tuple[bool, float]:
     """
-    Hanterar avbrott när saldot står stilla:
-      • Free-spin-knappar ("STARTA GRATISSPINN", Start/Samla/Fortsätt) → klickas via
-        Playwright (trusted element-klick — träffsäkert).
-      • 1h-kontrollen → kryssa FÖRST i "förstår"-rutan, klicka SEDAN Fortsätt.
-      • Fel-/OK-popup → klicka OK + ladda om sidan.
+    Hanterar avbrott när saldot står stilla — klickar BARA de riktiga knapparna:
+      • Free spins → klickas ENDAST när exakt "STARTA GRATISSPINN" (m.fl. varianter) syns.
+      • 1h-kontrollen → ENDAST om "förstår"-rutan finns: kryssa i den + klicka Fortsätt.
+      • Fel-/OK-popup → klicka OK + ladda om.
+    Inga generiska ord klickas längre → inga spuriösa klick → sidorna navigeras inte bort.
     Returnerar (hanterade_något, nytt_saldo).
     """
-    # 1) Fortsätt-/free spin-knappar (inkl. "STARTA GRATISSPINN")
-    pos = await find_button(page, continue_texts)
+    # 1) Free spins — klickas BARA när den EXAKTA "STARTA GRATISSPINN"-knappen syns.
+    pos = await find_button(page, FREE_SPIN_TEXTS)
     if pos:
-        # Om en "förstår"-ruta finns (1h-kontrollen) måste den kryssas i FÖRST,
-        # annars är Fortsätt-knappen ofta inaktiv.
-        ack = await find_ack_box(page, ack_texts)
-        if ack:
-            print(f"[{label}] 1h-kontroll — kryssar i \"förstår\"-rutan först.")
-            try:
-                await page.mouse.click(ack["x"], ack["y"])
-            except Exception:
-                pass
-            await asyncio.sleep(0.3)
-            pos = await find_button(page, continue_texts) or pos
-
-        print(f"[{label}] Klickar \"{pos['text']}\".")
+        print(f"[{label}] Klickar \"{pos['text']}\" (free spins).")
         try:
             await page.mouse.click(pos["x"], pos["y"])
         except Exception:
@@ -633,7 +630,26 @@ async def handle_interruption(
         b = await read_balance(page, bx, by)
         return True, (b if b is not None else prev)
 
-    # 2) OK-/fel-popup — klicka OK och ladda om
+    # 2) 1h-kontrollen — ENDAST om "förstår"-rutan finns: kryssa i den, klicka sedan Fortsätt.
+    ack = await find_ack_box(page, ack_texts)
+    if ack:
+        print(f"[{label}] 1h-kontroll — kryssar i \"förstår\"-rutan + fortsätter.")
+        try:
+            await page.mouse.click(ack["x"], ack["y"])
+        except Exception:
+            pass
+        await asyncio.sleep(0.3)
+        pos = await find_button(page, ONEH_CONTINUE_TEXTS)
+        if pos:
+            try:
+                await page.mouse.click(pos["x"], pos["y"])
+            except Exception:
+                pass
+        await asyncio.sleep(0.6)
+        b = await read_balance(page, bx, by)
+        return True, (b if b is not None else prev)
+
+    # 3) OK-/fel-popup — klicka OK och ladda om
     pos = await find_button(page, reload_texts)
     if pos:
         print(f"[{label}] Popup upptäckt — klickar \"{pos['text']}\" och laddar om sidan.")
@@ -832,6 +848,9 @@ async def run_site(
             if turnover >= target:
                 break
 
+        # Liten paus mellan spin-klick så vi inte hamrar (gentare mot casinot + mindre risk
+        # för blockering/blank sida). Justera SPIN_INTERVAL överst vid behov.
+        await asyncio.sleep(SPIN_INTERVAL)
         # Klicka på spin-knappen. Ett klick är inte ett spin — det räknas först
         # när saldot faktiskt minskar.
         try:
