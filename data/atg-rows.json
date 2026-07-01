@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T23:49:15.753Z",
+  "updatedAt": "2026-07-01T23:53:15.452Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 361,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 359,
+  "skippedNoOdds": 5,
   "skippedNotFootball": 0,
-  "durationMs": 37251,
+  "durationMs": 37286,
   "events": [
     {
       "eventId": "1027976814",
@@ -3472,19 +3472,6 @@
       ]
     },
     {
-      "eventId": "1027586493",
-      "title": "Cobresal - La Serena",
-      "homeTeam": "Cobresal",
-      "awayTeam": "La Serena",
-      "startTime": "2026-07-01T21:58:00Z",
-      "league": "Copa Chile",
-      "odds": {
-        "home": 8.5,
-        "draw": 1.09,
-        "away": 17
-      }
-    },
-    {
       "eventId": "1027586463",
       "title": "Deportes Limache - Coquimbo Unido",
       "homeTeam": "Deportes Limache",
@@ -3492,9 +3479,22 @@
       "startTime": "2026-07-01T22:00:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 41,
-        "draw": 5,
-        "away": 1.16
+        "home": 8,
+        "draw": 1.13,
+        "away": 11
+      }
+    },
+    {
+      "eventId": "1028102523",
+      "title": "Chattanooga Red Wolves SC - Westchester SC",
+      "homeTeam": "Chattanooga Red Wolves SC",
+      "awayTeam": "Westchester SC",
+      "startTime": "2026-07-01T23:07:00Z",
+      "league": "USL League 1",
+      "odds": {
+        "home": 1.8,
+        "draw": 2.75,
+        "away": 5.4
       }
     },
     {
@@ -3508,84 +3508,6 @@
         "home": 1.71,
         "draw": 4.25,
         "away": 3.1
-      }
-    },
-    {
-      "eventId": "1028211473",
-      "title": "Qatar (Yoru) - Kanada (OP1OT)",
-      "homeTeam": "Qatar (Yoru)",
-      "awayTeam": "Kanada (OP1OT)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.5,
-        "away": 1.98
-      }
-    },
-    {
-      "eventId": "1028211621",
-      "title": "Sevilla (Yeti) - Real Sociedad (djamik)",
-      "homeTeam": "Sevilla (Yeti)",
-      "awayTeam": "Real Sociedad (djamik)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 7.5,
-        "draw": 5.2,
-        "away": 1.26
-      }
-    },
-    {
-      "eventId": "1028211622",
-      "title": "Valencia (luxiqq) - Real Madrid (drksd3)",
-      "homeTeam": "Valencia (luxiqq)",
-      "awayTeam": "Real Madrid (drksd3)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.54,
-        "draw": 4.8,
-        "away": 3.6
-      }
-    },
-    {
-      "eventId": "1028212369",
-      "title": "River Plate (zaha) - Boca Juniors (Stenido)",
-      "homeTeam": "River Plate (zaha)",
-      "awayTeam": "Boca Juniors (Stenido)",
-      "startTime": "2026-07-01T23:42:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.73,
-        "draw": 5.2,
-        "away": 2.7
-      }
-    },
-    {
-      "eventId": "1028212063",
-      "title": "Netherlands (Kray) - England (hotShot)",
-      "homeTeam": "Netherlands (Kray)",
-      "awayTeam": "England (hotShot)",
-      "startTime": "2026-07-01T23:44:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 3.55,
-        "draw": 3.65,
-        "away": 1.7
-      }
-    },
-    {
-      "eventId": "1028212192",
-      "title": "Argentina (Kodak) - Frankrike (OG)",
-      "homeTeam": "Argentina (Kodak)",
-      "awayTeam": "Frankrike (OG)",
-      "startTime": "2026-07-01T23:44:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.52,
-        "draw": 4,
-        "away": 4.4
       }
     },
     {
@@ -16802,15 +16724,15 @@
       "startTime": "2026-07-05T12:00:00Z",
       "league": "Allsvenskan",
       "odds": {
-        "home": 2.45,
-        "draw": 3.35,
+        "home": 2.43,
+        "draw": 3.4,
         "away": 3.15
       },
       "totals": [
         {
           "line": 1.5,
-          "over": 1.21,
-          "under": 3.85
+          "over": 1.22,
+          "under": 3.75
         },
         {
           "line": 3.5,
@@ -16837,7 +16759,7 @@
         {
           "line": 0.5,
           "home": 1.36,
-          "away": 2.8
+          "away": 2.85
         },
         {
           "line": -1.25,
@@ -16846,13 +16768,13 @@
         },
         {
           "line": -1,
-          "home": 3.5,
+          "home": 3.45,
           "away": 1.25
         },
         {
           "line": 0.25,
           "home": 1.47,
-          "away": 2.45
+          "away": 2.48
         },
         {
           "line": -0.75,
@@ -16866,21 +16788,21 @@
         },
         {
           "line": -0.25,
-          "home": 1.95,
-          "away": 1.74
+          "home": 1.94,
+          "away": 1.75
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 11.5,
-            "over": 2.04,
-            "under": 1.67
+            "over": 2.02,
+            "under": 1.68
           },
           {
             "line": 8.5,
-            "over": 1.25,
-            "under": 3.5
+            "over": 1.24,
+            "under": 3.55
           },
           {
             "line": 9.5,
@@ -16889,7 +16811,7 @@
           },
           {
             "line": 10.5,
-            "over": 1.68,
+            "over": 1.67,
             "under": 2.04
           },
           {
@@ -16904,7 +16826,7 @@
           },
           {
             "line": 14.5,
-            "over": 4.35,
+            "over": 4.3,
             "under": 1.17
           }
         ]
@@ -20513,8 +20435,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 9,
-        "away": 1.04
+        "home": 11.5,
+        "away": 1.03
       }
     },
     {
@@ -20526,8 +20448,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.13,
-        "away": 5.2
+        "home": 1.28,
+        "away": 3.4
       }
     },
     {
@@ -20539,8 +20461,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.07
+        "home": 7.5,
+        "away": 1.06
       }
     },
     {
@@ -20553,7 +20475,7 @@
       "sport": "tennis",
       "odds": {
         "home": 1.06,
-        "away": 7
+        "away": 7.5
       }
     },
     {
@@ -20565,8 +20487,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8
+        "home": 1.08,
+        "away": 6.5
       }
     },
     {
@@ -20574,7 +20496,7 @@
       "title": "Daniil Glinka - Edward Winter",
       "homeTeam": "Daniil Glinka",
       "awayTeam": "Edward Winter",
-      "startTime": "2026-07-01T23:55:00Z",
+      "startTime": "2026-07-02T00:00:00Z",
       "league": "Cary",
       "sport": "tennis",
       "odds": {
@@ -20587,7 +20509,7 @@
       "title": "Kelly Keller - Elena Goodman",
       "homeTeam": "Kelly Keller",
       "awayTeam": "Elena Goodman",
-      "startTime": "2026-07-02T00:43:00Z",
+      "startTime": "2026-07-02T01:01:00Z",
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
@@ -21605,8 +21527,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.23,
-        "away": 1.57
+        "home": 2,
+        "away": 1.71
       }
     },
     {
@@ -22858,19 +22780,6 @@
       }
     },
     {
-      "eventId": "1028200742",
-      "title": "N. Bartunkova/A. Eala - S. Kenin/J. Ostapenko",
-      "homeTeam": "N. Bartunkova/A. Eala",
-      "awayTeam": "S. Kenin/J. Ostapenko",
-      "startTime": "2026-07-02T13:30:00Z",
-      "league": "Wimbledon Dubbel - Damer",
-      "sport": "tennis",
-      "odds": {
-        "home": 4.3,
-        "away": 1.2
-      }
-    },
-    {
       "eventId": "1028219811",
       "title": "Frances Tiafoe - Jan Choinski",
       "homeTeam": "Frances Tiafoe",
@@ -22923,6 +22832,19 @@
       }
     },
     {
+      "eventId": "1028182263",
+      "title": "P. Carreno Busta/J. Munar - G. Andreozzi/M. Guinard",
+      "homeTeam": "P. Carreno Busta/J. Munar",
+      "awayTeam": "G. Andreozzi/M. Guinard",
+      "startTime": "2026-07-02T13:30:00Z",
+      "league": "Wimbledon Dubbel",
+      "sport": "tennis",
+      "odds": {
+        "home": 3.85,
+        "away": 1.24
+      }
+    },
+    {
       "eventId": "1028182251",
       "title": "Y. Hanfmann/J-L. Struff - V. Kopriva/F. Pieczonka",
       "homeTeam": "Y. Hanfmann/J-L. Struff",
@@ -22946,6 +22868,19 @@
       "odds": {
         "home": 3.2,
         "away": 1.35
+      }
+    },
+    {
+      "eventId": "1028200742",
+      "title": "N. Bartunkova/A. Eala - S. Kenin/J. Ostapenko",
+      "homeTeam": "N. Bartunkova/A. Eala",
+      "awayTeam": "S. Kenin/J. Ostapenko",
+      "startTime": "2026-07-02T13:45:00Z",
+      "league": "Wimbledon Dubbel - Damer",
+      "sport": "tennis",
+      "odds": {
+        "home": 4.3,
+        "away": 1.2
       }
     },
     {
@@ -22985,19 +22920,6 @@
       "odds": {
         "home": 4.7,
         "away": 1.18
-      }
-    },
-    {
-      "eventId": "1028182263",
-      "title": "P. Carreno Busta/J. Munar - G. Andreozzi/M. Guinard",
-      "homeTeam": "P. Carreno Busta/J. Munar",
-      "awayTeam": "G. Andreozzi/M. Guinard",
-      "startTime": "2026-07-02T14:10:00Z",
-      "league": "Wimbledon Dubbel",
-      "sport": "tennis",
-      "odds": {
-        "home": 3.85,
-        "away": 1.24
       }
     },
     {
