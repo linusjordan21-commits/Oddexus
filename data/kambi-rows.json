@@ -1,2345 +1,19 @@
 {
-  "updatedAt": "2026-07-01T23:42:59.849Z",
+  "updatedAt": "2026-07-01T23:58:45.632Z",
   "source": "github-actions",
   "bookmaker": "unibet",
   "displayName": "Unibet",
   "group": "kambi",
   "offering": "ubse",
   "status": "active",
-  "fetchedRegions": 2,
-  "failedRegions": 0,
+  "fetchedRegions": 1,
+  "failedRegions": 2,
   "totalRegions": 8,
-  "uniqueEvents": 430,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 343,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 45348,
+  "durationMs": 39593,
   "events": [
-    {
-      "eventId": "1027976814",
-      "title": "Tranmere - Rochdale",
-      "homeTeam": "Tranmere",
-      "awayTeam": "Rochdale",
-      "startTime": "2026-08-01T14:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.6,
-        "away": 2.8
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 6.1,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.96
-        },
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.34
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.95
-        }
-      ]
-    },
-    {
-      "eventId": "1027976753",
-      "title": "York City - Crawley Town",
-      "homeTeam": "York City",
-      "awayTeam": "Crawley Town",
-      "startTime": "2026-08-03T18:30:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.77,
-        "draw": 3.65,
-        "away": 3.75
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.25,
-          "under": 3.65
-        },
-        {
-          "line": 3.5,
-          "over": 3.3,
-          "under": 1.29
-        },
-        {
-          "line": 2.5,
-          "over": 1.86,
-          "under": 1.86
-        },
-        {
-          "line": 4.5,
-          "over": 6.75,
-          "under": 1.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028147688",
-      "title": "Barnsley - Wigan Athletic",
-      "homeTeam": "Barnsley",
-      "awayTeam": "Wigan Athletic",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.25,
-        "away": 3.05
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.5
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.91,
-          "under": 1.81
-        }
-      ]
-    },
-    {
-      "eventId": "1028147689",
-      "title": "Rotherham United - West Bromwich",
-      "homeTeam": "Rotherham United",
-      "awayTeam": "West Bromwich",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 5.4,
-        "draw": 4.4,
-        "away": 1.43
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.7
-        },
-        {
-          "line": 3.5,
-          "over": 2.6,
-          "under": 1.45
-        },
-        {
-          "line": 4.5,
-          "over": 4.9,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 1.6,
-          "under": 2.23
-        }
-      ]
-    },
-    {
-      "eventId": "1028147690",
-      "title": "Middlesbrough - Wrexham",
-      "homeTeam": "Middlesbrough",
-      "awayTeam": "Wrexham",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.97,
-        "draw": 3.45,
-        "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.21,
-          "under": 4
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.76,
-          "under": 1.97
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.35
-        }
-      ]
-    },
-    {
-      "eventId": "1028147698",
-      "title": "Crewe Alexandra - Accrington Stanley",
-      "homeTeam": "Crewe Alexandra",
-      "awayTeam": "Accrington Stanley",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.78,
-        "draw": 3.55,
-        "away": 3.7
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.21,
-          "under": 4
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.35
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.76,
-          "under": 1.97
-        }
-      ]
-    },
-    {
-      "eventId": "1028147699",
-      "title": "Fleetwood Town - Chesterfield",
-      "homeTeam": "Fleetwood Town",
-      "awayTeam": "Chesterfield",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.6,
-        "draw": 3.35,
-        "away": 2.35
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        }
-      ]
-    },
-    {
-      "eventId": "1028147700",
-      "title": "Stockport County - Doncaster Rovers",
-      "homeTeam": "Stockport County",
-      "awayTeam": "Doncaster Rovers",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.64,
-        "draw": 3.65,
-        "away": 4.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.3
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.4
-        },
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028147701",
-      "title": "Mansfield Town - Sheffield United",
-      "homeTeam": "Mansfield Town",
-      "awayTeam": "Sheffield United",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 4.7,
-        "draw": 3.75,
-        "away": 1.58
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.34
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.96
-        },
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.95
-        },
-        {
-          "line": 4.5,
-          "over": 6.1,
-          "under": 1.1
-        }
-      ]
-    },
-    {
-      "eventId": "1028147702",
-      "title": "Sheffield Wednesday - Bolton",
-      "homeTeam": "Sheffield Wednesday",
-      "awayTeam": "Bolton",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.45,
-        "away": 2.17
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        }
-      ]
-    },
-    {
-      "eventId": "1028147722",
-      "title": "QPR - Millwall",
-      "homeTeam": "QPR",
-      "awayTeam": "Millwall",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.45,
-        "away": 2.17
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        }
-      ]
-    },
-    {
-      "eventId": "1028147723",
-      "title": "Preston - Huddersfield",
-      "homeTeam": "Preston",
-      "awayTeam": "Huddersfield",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.92,
-        "draw": 3.45,
-        "away": 3.35
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.95
-        },
-        {
-          "line": 4.5,
-          "over": 6.1,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.96
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.34
-        }
-      ]
-    },
-    {
-      "eventId": "1028147724",
-      "title": "Grimsby Town - Blackpool",
-      "homeTeam": "Grimsby Town",
-      "awayTeam": "Blackpool",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.7,
-        "draw": 3.45,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        }
-      ]
-    },
-    {
-      "eventId": "1028147727",
-      "title": "Cheltenham - Charlton Athletic",
-      "homeTeam": "Cheltenham",
-      "awayTeam": "Charlton Athletic",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 5.5,
-        "draw": 3.95,
-        "away": 1.49
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.3
-        },
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.08
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.4
-        }
-      ]
-    },
-    {
-      "eventId": "1028147712",
-      "title": "Burton Albion - Blackburn Rovers",
-      "homeTeam": "Burton Albion",
-      "awayTeam": "Blackburn Rovers",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 3.2,
-        "draw": 3.2,
-        "away": 2.06
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.25
-        },
-        {
-          "line": 3.5,
-          "over": 3.7,
-          "under": 1.24
-        },
-        {
-          "line": 4.5,
-          "over": 8,
-          "under": 1.05
-        },
-        {
-          "line": 2.5,
-          "over": 2.02,
-          "under": 1.72
-        }
-      ]
-    },
-    {
-      "eventId": "1028147713",
-      "title": "Stoke - Oldham Athletic",
-      "homeTeam": "Stoke",
-      "awayTeam": "Oldham Athletic",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.4,
-        "draw": 4.7,
-        "away": 5.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.17,
-          "under": 4.6
-        },
-        {
-          "line": 3.5,
-          "over": 2.7,
-          "under": 1.42
-        },
-        {
-          "line": 4.5,
-          "over": 5.1,
-          "under": 1.14
-        },
-        {
-          "line": 2.5,
-          "over": 1.63,
-          "under": 2.17
-        }
-      ]
-    },
-    {
-      "eventId": "1028147714",
-      "title": "Derby County - Lincoln City",
-      "homeTeam": "Derby County",
-      "awayTeam": "Lincoln City",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.6,
-        "draw": 3.95,
-        "away": 4.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4.4
-        },
-        {
-          "line": 4.5,
-          "over": 5.25,
-          "under": 1.13
-        },
-        {
-          "line": 2.5,
-          "over": 1.65,
-          "under": 2.12
-        },
-        {
-          "line": 3.5,
-          "over": 2.75,
-          "under": 1.41
-        }
-      ]
-    },
-    {
-      "eventId": "1028147715",
-      "title": "Burnley - Notts County",
-      "homeTeam": "Burnley",
-      "awayTeam": "Notts County",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.55,
-        "draw": 3.7,
-        "away": 5.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.18,
-          "under": 4.4
-        },
-        {
-          "line": 3.5,
-          "over": 2.7,
-          "under": 1.42
-        },
-        {
-          "line": 4.5,
-          "over": 5.2,
-          "under": 1.13
-        },
-        {
-          "line": 2.5,
-          "over": 1.65,
-          "under": 2.12
-        }
-      ]
-    },
-    {
-      "eventId": "1028147716",
-      "title": "Salford City FC - Shrewsbury",
-      "homeTeam": "Salford City FC",
-      "awayTeam": "Shrewsbury",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.58,
-        "draw": 3.55,
-        "away": 5.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        }
-      ]
-    },
-    {
-      "eventId": "1028147717",
-      "title": "Wolves - Port Vale",
-      "homeTeam": "Wolves",
-      "awayTeam": "Port Vale",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.32,
-        "draw": 5.4,
-        "away": 6.1
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 5
-        },
-        {
-          "line": 3.5,
-          "over": 2.5,
-          "under": 1.48
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.16
-        },
-        {
-          "line": 2.5,
-          "over": 1.55,
-          "under": 2.32
-        }
-      ]
-    },
-    {
-      "eventId": "1028147739",
-      "title": "Bristol Rovers - Peterborough",
-      "homeTeam": "Bristol Rovers",
-      "awayTeam": "Peterborough",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.65,
-        "draw": 3.25,
-        "away": 2.35
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.95
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.96
-        },
-        {
-          "line": 3.5,
-          "over": 3,
-          "under": 1.35
-        }
-      ]
-    },
-    {
-      "eventId": "1028147740",
-      "title": "Colchester United - Southampton",
-      "homeTeam": "Colchester United",
-      "awayTeam": "Southampton",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 6.5,
-        "draw": 4.7,
-        "away": 1.35
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.15,
-          "under": 4.8
-        },
-        {
-          "line": 4.5,
-          "over": 4.75,
-          "under": 1.16
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.47
-        },
-        {
-          "line": 2.5,
-          "over": 1.58,
-          "under": 2.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028147741",
-      "title": "Norwich City - Milton Keynes Dons",
-      "homeTeam": "Norwich City",
-      "awayTeam": "Milton Keynes Dons",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.46,
-        "draw": 4,
-        "away": 5.6
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.9,
-          "under": 1.37
-        },
-        {
-          "line": 1.5,
-          "over": 1.2,
-          "under": 4.1
-        },
-        {
-          "line": 4.5,
-          "over": 5.75,
-          "under": 1.11
-        },
-        {
-          "line": 2.5,
-          "over": 1.72,
-          "under": 2.02
-        }
-      ]
-    },
-    {
-      "eventId": "1028147742",
-      "title": "Cambridge United - Barnet",
-      "homeTeam": "Cambridge United",
-      "awayTeam": "Barnet",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.81,
-        "draw": 3.55,
-        "away": 3.65
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.6,
-          "under": 1.25
-        },
-        {
-          "line": 2.5,
-          "over": 1.96,
-          "under": 1.77
-        },
-        {
-          "line": 1.5,
-          "over": 1.28,
-          "under": 3.4
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.06
-        }
-      ]
-    },
-    {
-      "eventId": "1028147728",
-      "title": "Plymouth Argyle - Exeter",
-      "homeTeam": "Plymouth Argyle",
-      "awayTeam": "Exeter",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.55,
-        "draw": 4,
-        "away": 4.7
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.15,
-          "under": 4.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.47
-        },
-        {
-          "line": 4.5,
-          "over": 4.7,
-          "under": 1.16
-        },
-        {
-          "line": 2.5,
-          "over": 1.58,
-          "under": 2.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028147729",
-      "title": "Bristol City - Walsall",
-      "homeTeam": "Bristol City",
-      "awayTeam": "Walsall",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.27,
-        "draw": 5.4,
-        "away": 7.5
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.14,
-          "under": 5
-        },
-        {
-          "line": 3.5,
-          "over": 2.48,
-          "under": 1.49
-        },
-        {
-          "line": 2.5,
-          "over": 1.55,
-          "under": 2.32
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.17
-        }
-      ]
-    },
-    {
-      "eventId": "1028147730",
-      "title": "Cardiff City - Swindon Town",
-      "homeTeam": "Cardiff City",
-      "awayTeam": "Swindon Town",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.43,
-        "draw": 4.5,
-        "away": 5.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.15,
-          "under": 4.8
-        },
-        {
-          "line": 3.5,
-          "over": 2.55,
-          "under": 1.47
-        },
-        {
-          "line": 4.5,
-          "over": 4.75,
-          "under": 1.16
-        },
-        {
-          "line": 2.5,
-          "over": 1.58,
-          "under": 2.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028147731",
-      "title": "Gillingham - Luton Town",
-      "homeTeam": "Gillingham",
-      "awayTeam": "Luton Town",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 3.7,
-        "draw": 3.45,
-        "away": 1.82
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.86,
-          "under": 1.86
-        },
-        {
-          "line": 1.5,
-          "over": 1.25,
-          "under": 3.65
-        },
-        {
-          "line": 3.5,
-          "over": 3.3,
-          "under": 1.3
-        },
-        {
-          "line": 4.5,
-          "over": 6.75,
-          "under": 1.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028147752",
-      "title": "Leyton Orient - Oxford United",
-      "homeTeam": "Leyton Orient",
-      "awayTeam": "Oxford United",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.7,
-        "draw": 3.45,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.22,
-          "under": 3.95
-        },
-        {
-          "line": 3.5,
-          "over": 3.05,
-          "under": 1.34
-        },
-        {
-          "line": 4.5,
-          "over": 6.1,
-          "under": 1.1
-        },
-        {
-          "line": 2.5,
-          "over": 1.77,
-          "under": 1.96
-        }
-      ]
-    },
-    {
-      "eventId": "1028147753",
-      "title": "West Ham - Portsmouth",
-      "homeTeam": "West Ham",
-      "awayTeam": "Portsmouth ",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.6,
-        "draw": 3.95,
-        "away": 4.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.3
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.38
-        },
-        {
-          "line": 4.5,
-          "over": 5.5,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028147754",
-      "title": "Swansea - Birmingham",
-      "homeTeam": "Swansea",
-      "awayTeam": "Birmingham",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.35,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.5
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.91,
-          "under": 1.81
-        },
-        {
-          "line": 3.5,
-          "over": 3.45,
-          "under": 1.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028147759",
-      "title": "Leicester City - Northampton Town",
-      "homeTeam": "Leicester City",
-      "awayTeam": "Northampton Town",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.38,
-        "draw": 4.4,
-        "away": 6.4
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.6,
-          "under": 1.45
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.7
-        },
-        {
-          "line": 4.5,
-          "over": 4.9,
-          "under": 1.15
-        },
-        {
-          "line": 2.5,
-          "over": 1.6,
-          "under": 2.23
-        }
-      ]
-    },
-    {
-      "eventId": "1028147750",
-      "title": "Bromley FC - Reading",
-      "homeTeam": "Bromley FC",
-      "awayTeam": "Reading",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.2,
-        "away": 2.45
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 6.4,
-          "under": 1.09
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.91
-        }
-      ]
-    },
-    {
-      "eventId": "1028147760",
-      "title": "AFC Wimbledon - Newport County",
-      "homeTeam": "AFC Wimbledon",
-      "awayTeam": "Newport County",
-      "startTime": "2026-08-08T16:00:00Z",
-      "league": "EFL Cup",
-      "odds": {
-        "home": 1.44,
-        "draw": 4.1,
-        "away": 6
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.12
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.4
-        },
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.3
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.08
-        }
-      ]
-    },
-    {
-      "eventId": "1028142681",
-      "title": "Wolves - Blackburn Rovers",
-      "homeTeam": "Wolves",
-      "awayTeam": "Blackburn Rovers",
-      "startTime": "2026-08-14T19:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 1.49,
-        "draw": 3.95,
-        "away": 5.4
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.3
-        },
-        {
-          "line": 4.5,
-          "over": 5.4,
-          "under": 1.12
-        },
-        {
-          "line": 2.5,
-          "over": 1.68,
-          "under": 2.08
-        },
-        {
-          "line": 3.5,
-          "over": 2.75,
-          "under": 1.4
-        }
-      ]
-    },
-    {
-      "eventId": "1028142668",
-      "title": "Bolton - Preston",
-      "homeTeam": "Bolton",
-      "awayTeam": "Preston",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.2,
-        "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.55,
-          "under": 1.26
-        },
-        {
-          "line": 1.5,
-          "over": 1.28,
-          "under": 3.4
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.06
-        },
-        {
-          "line": 2.5,
-          "over": 1.96,
-          "under": 1.77
-        }
-      ]
-    },
-    {
-      "eventId": "1028143578",
-      "title": "Oxford United - Milton Keynes Dons",
-      "homeTeam": "Oxford United",
-      "awayTeam": "Milton Keynes Dons",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.1,
-        "away": 3.2
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.32,
-          "under": 3.15
-        },
-        {
-          "line": 3.5,
-          "over": 3.85,
-          "under": 1.23
-        },
-        {
-          "line": 2.5,
-          "over": 2.06,
-          "under": 1.7
-        }
-      ]
-    },
-    {
-      "eventId": "1028143570",
-      "title": "Notts County - Leicester City",
-      "homeTeam": "Notts County",
-      "awayTeam": "Leicester City",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 3.4,
-        "draw": 3.2,
-        "away": 1.98
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.92,
-          "under": 1.81
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.5
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028143575",
-      "title": "Reading - Luton Town",
-      "homeTeam": "Reading",
-      "awayTeam": "Luton Town",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.4,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.82,
-          "under": 1.9
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.75
-        }
-      ]
-    },
-    {
-      "eventId": "1028143916",
-      "title": "Newport County - Rochdale",
-      "homeTeam": "Newport County",
-      "awayTeam": "Rochdale",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.45,
-        "draw": 3.35,
-        "away": 2.48
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.45,
-          "under": 1.26
-        },
-        {
-          "line": 1.5,
-          "over": 1.28,
-          "under": 3.35
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.06
-        },
-        {
-          "line": 2.5,
-          "over": 1.97,
-          "under": 1.77
-        }
-      ]
-    },
-    {
-      "eventId": "1028143918",
-      "title": "Oldham Athletic - Port Vale",
-      "homeTeam": "Oldham Athletic",
-      "awayTeam": "Port Vale",
-      "startTime": "2026-08-15T11:30:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.2,
-        "away": 2.85
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.8,
-          "under": 1.23
-        },
-        {
-          "line": 4.5,
-          "over": 8,
-          "under": 1.05
-        },
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.2
-        },
-        {
-          "line": 2.5,
-          "over": 2.04,
-          "under": 1.71
-        }
-      ]
-    },
-    {
-      "eventId": "1028143567",
-      "title": "Leyton Orient - Sheffield Wednesday",
-      "homeTeam": "Leyton Orient",
-      "awayTeam": "Sheffield Wednesday",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 3.05,
-        "draw": 3.45,
-        "away": 2.02
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.25,
-          "under": 3.65
-        },
-        {
-          "line": 2.5,
-          "over": 1.85,
-          "under": 1.87
-        },
-        {
-          "line": 3.5,
-          "over": 3.3,
-          "under": 1.3
-        }
-      ]
-    },
-    {
-      "eventId": "1028143576",
-      "title": "Cambridge United - Wigan Athletic",
-      "homeTeam": "Cambridge United",
-      "awayTeam": "Wigan Athletic",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.38,
-        "draw": 3.1,
-        "away": 2.75
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.34,
-          "under": 3.05
-        },
-        {
-          "line": 3.5,
-          "over": 3.9,
-          "under": 1.21
-        },
-        {
-          "line": 2.5,
-          "over": 2.14,
-          "under": 1.64
-        }
-      ]
-    },
-    {
-      "eventId": "1028143579",
-      "title": "Burton Albion - Stevenage FC",
-      "homeTeam": "Burton Albion",
-      "awayTeam": "Stevenage FC",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.18,
-        "draw": 3.1,
-        "away": 3.05
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.41,
-          "under": 2.75
-        },
-        {
-          "line": 2.5,
-          "over": 2.35,
-          "under": 1.54
-        },
-        {
-          "line": 3.5,
-          "over": 4.7,
-          "under": 1.16
-        }
-      ]
-    },
-    {
-      "eventId": "1028143580",
-      "title": "Barnsley - Bromley FC",
-      "homeTeam": "Barnsley",
-      "awayTeam": "Bromley FC",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 1.76,
-        "draw": 3.6,
-        "away": 3.8
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.32
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.75
-        },
-        {
-          "line": 2.5,
-          "over": 1.82,
-          "under": 1.9
-        }
-      ]
-    },
-    {
-      "eventId": "1028143581",
-      "title": "Huddersfield - AFC Wimbledon",
-      "homeTeam": "Huddersfield",
-      "awayTeam": "AFC Wimbledon",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 1.6,
-        "draw": 3.7,
-        "away": 4.75
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.7,
-          "under": 2.06
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.38
-        },
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.25
-        }
-      ]
-    },
-    {
-      "eventId": "1028143569",
-      "title": "Plymouth Argyle - Stockport County",
-      "homeTeam": "Plymouth Argyle",
-      "awayTeam": "Stockport County",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.45,
-        "away": 2.9
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.25
-        },
-        {
-          "line": 2.5,
-          "over": 1.7,
-          "under": 2.06
-        },
-        {
-          "line": 3.5,
-          "over": 2.8,
-          "under": 1.38
-        }
-      ]
-    },
-    {
-      "eventId": "1028143571",
-      "title": "Bradford City - Peterborough",
-      "homeTeam": "Bradford City",
-      "awayTeam": "Peterborough",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 1.76,
-        "draw": 3.45,
-        "away": 3.95
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.86,
-          "under": 1.86
-        },
-        {
-          "line": 3.5,
-          "over": 3.25,
-          "under": 1.3
-        },
-        {
-          "line": 1.5,
-          "over": 1.25,
-          "under": 3.65
-        }
-      ]
-    },
-    {
-      "eventId": "1028142676",
-      "title": "Portsmouth  - QPR",
-      "homeTeam": "Portsmouth ",
-      "awayTeam": "QPR",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.3,
-        "away": 3.15
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 4.5,
-          "over": 6.25,
-          "under": 1.09
-        },
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.33
-        },
-        {
-          "line": 2.5,
-          "over": 1.8,
-          "under": 1.92
-        }
-      ]
-    },
-    {
-      "eventId": "1028143572",
-      "title": "Mansfield Town - Doncaster Rovers",
-      "homeTeam": "Mansfield Town",
-      "awayTeam": "Doncaster Rovers",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.12,
-        "draw": 3.3,
-        "away": 3
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.9,
-          "under": 1.82
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.55
-        }
-      ]
-    },
-    {
-      "eventId": "1028142677",
-      "title": "Stoke - Swansea",
-      "homeTeam": "Stoke",
-      "awayTeam": "Swansea",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.1,
-        "away": 2.85
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.85,
-          "under": 1.23
-        },
-        {
-          "line": 1.5,
-          "over": 1.32,
-          "under": 3.15
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.05
-        },
-        {
-          "line": 2.5,
-          "over": 2.07,
-          "under": 1.68
-        }
-      ]
-    },
-    {
-      "eventId": "1028143573",
-      "title": "Blackpool - Wycombe",
-      "homeTeam": "Blackpool",
-      "awayTeam": "Wycombe",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League One",
-      "odds": {
-        "home": 2.14,
-        "draw": 3.45,
-        "away": 2.85
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.8
-        },
-        {
-          "line": 3.5,
-          "over": 3.15,
-          "under": 1.32
-        },
-        {
-          "line": 2.5,
-          "over": 1.81,
-          "under": 1.92
-        }
-      ]
-    },
-    {
-      "eventId": "1028142696",
-      "title": "Bristol City - Millwall",
-      "homeTeam": "Bristol City",
-      "awayTeam": "Millwall",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.48,
-        "draw": 3.15,
-        "away": 2.6
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.5
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.28
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.92,
-          "under": 1.8
-        }
-      ]
-    },
-    {
-      "eventId": "1028143976",
-      "title": "Grimsby Town - Exeter",
-      "homeTeam": "Grimsby Town",
-      "awayTeam": "Exeter",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 1.75,
-        "draw": 3.65,
-        "away": 3.8
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.1,
-          "under": 1.32
-        },
-        {
-          "line": 2.5,
-          "over": 1.82,
-          "under": 1.9
-        },
-        {
-          "line": 1.5,
-          "over": 1.23,
-          "under": 3.75
-        },
-        {
-          "line": 4.5,
-          "over": 6,
-          "under": 1.09
-        }
-      ]
-    },
-    {
-      "eventId": "1028142698",
-      "title": "Charlton Athletic - Derby County",
-      "homeTeam": "Charlton Athletic",
-      "awayTeam": "Derby County",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.1,
-        "away": 2.7
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.6,
-          "under": 1.25
-        },
-        {
-          "line": 1.5,
-          "over": 1.29,
-          "under": 3.3
-        },
-        {
-          "line": 4.5,
-          "over": 7.5,
-          "under": 1.06
-        },
-        {
-          "line": 2.5,
-          "over": 2,
-          "under": 1.74
-        }
-      ]
-    },
-    {
-      "eventId": "1028142699",
-      "title": "Middlesbrough - Lincoln City",
-      "homeTeam": "Middlesbrough",
-      "awayTeam": "Lincoln City",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 1.27,
-        "draw": 5.1,
-        "away": 8
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 2.63,
-          "under": 1.44
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.7
-        },
-        {
-          "line": 2.5,
-          "over": 1.61,
-          "under": 2.2
-        },
-        {
-          "line": 4.5,
-          "over": 4.6,
-          "under": 1.15
-        }
-      ]
-    },
-    {
-      "eventId": "1028142702",
-      "title": "Norwich City - West Bromwich",
-      "homeTeam": "Norwich City",
-      "awayTeam": "West Bromwich",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 1.94,
-        "draw": 3.3,
-        "away": 3.45
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.55
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 3.5,
-          "over": 3.35,
-          "under": 1.29
-        },
-        {
-          "line": 2.5,
-          "over": 1.89,
-          "under": 1.83
-        }
-      ]
-    },
-    {
-      "eventId": "1028143974",
-      "title": "Northampton Town - Swindon Town",
-      "homeTeam": "Northampton Town",
-      "awayTeam": "Swindon Town",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.05,
-        "draw": 3.35,
-        "away": 3.1
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.26,
-          "under": 3.55
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.9,
-          "under": 1.82
-        },
-        {
-          "line": 3.5,
-          "over": 3.4,
-          "under": 1.28
-        }
-      ]
-    },
-    {
-      "eventId": "1028144015",
-      "title": "Cheltenham - Rotherham United",
-      "homeTeam": "Cheltenham",
-      "awayTeam": "Rotherham United",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.3,
-        "away": 2.23
-      },
-      "totals": [
-        {
-          "line": 3.5,
-          "over": 3.3,
-          "under": 1.28
-        },
-        {
-          "line": 1.5,
-          "over": 1.27,
-          "under": 3.5
-        },
-        {
-          "line": 4.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 2.5,
-          "over": 1.92,
-          "under": 1.81
-        }
-      ]
-    },
-    {
-      "eventId": "1028144005",
-      "title": "Tranmere - Shrewsbury",
-      "homeTeam": "Tranmere",
-      "awayTeam": "Shrewsbury",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 1.91,
-        "draw": 3.35,
-        "away": 3.45
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.3,
-          "under": 3.25
-        },
-        {
-          "line": 3.5,
-          "over": 3.8,
-          "under": 1.23
-        },
-        {
-          "line": 4.5,
-          "over": 8,
-          "under": 1.05
-        },
-        {
-          "line": 2.5,
-          "over": 2.04,
-          "under": 1.71
-        }
-      ]
-    },
-    {
-      "eventId": "1028144007",
-      "title": "York City - Bristol Rovers",
-      "homeTeam": "York City",
-      "awayTeam": "Bristol Rovers",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.23,
-        "draw": 3.15,
-        "away": 2.95
-      }
-    },
-    {
-      "eventId": "1028144024",
-      "title": "Accrington Stanley - Colchester United",
-      "homeTeam": "Accrington Stanley",
-      "awayTeam": "Colchester United",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.55,
-        "draw": 3.15,
-        "away": 2.48
-      }
-    },
-    {
-      "eventId": "1028144041",
-      "title": "Gillingham - Walsall",
-      "homeTeam": "Gillingham",
-      "awayTeam": "Walsall",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 1.98,
-        "draw": 3.35,
-        "away": 3.25
-      }
-    },
-    {
-      "eventId": "1028144032",
-      "title": "Barnet - Salford City FC",
-      "homeTeam": "Barnet",
-      "awayTeam": "Salford City FC",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.02,
-        "draw": 3.2,
-        "away": 3.35
-      }
-    },
-    {
-      "eventId": "1028144058",
-      "title": "Crawley Town - Crewe Alexandra",
-      "homeTeam": "Crawley Town",
-      "awayTeam": "Crewe Alexandra",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 2.17,
-        "draw": 3.2,
-        "away": 3
-      }
-    },
-    {
-      "eventId": "1028144052",
-      "title": "Chesterfield - Fleetwood Town",
-      "homeTeam": "Chesterfield",
-      "awayTeam": "Fleetwood Town",
-      "startTime": "2026-08-15T14:00:00Z",
-      "league": "League Two",
-      "odds": {
-        "home": 1.63,
-        "draw": 3.6,
-        "away": 4.6
-      }
-    },
-    {
-      "eventId": "1028142678",
-      "title": "Sheffield United - Birmingham",
-      "homeTeam": "Sheffield United",
-      "awayTeam": "Birmingham",
-      "startTime": "2026-08-15T16:30:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.05,
-        "away": 2.75
-      }
-    },
-    {
-      "eventId": "1028142680",
-      "title": "Watford - Southampton",
-      "homeTeam": "Watford",
-      "awayTeam": "Southampton",
-      "startTime": "2026-08-16T12:30:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 3.2,
-        "draw": 3.4,
-        "away": 1.98
-      }
-    },
-    {
-      "eventId": "1027816691",
-      "title": "Arsenal - Manchester City",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Manchester City",
-      "startTime": "2026-08-16T14:00:00Z",
-      "league": "FA Community Shield",
-      "odds": {
-        "home": 2.38,
-        "draw": 3.65,
-        "away": 2.65
-      }
-    },
-    {
-      "eventId": "1028142664",
-      "title": "Burnley - West Ham",
-      "homeTeam": "Burnley",
-      "awayTeam": "West Ham",
-      "startTime": "2026-08-16T15:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.3,
-        "away": 2.25
-      }
-    },
-    {
-      "eventId": "1028142684",
-      "title": "Cardiff City - Wrexham",
-      "homeTeam": "Cardiff City",
-      "awayTeam": "Wrexham",
-      "startTime": "2026-08-17T19:00:00Z",
-      "league": "The Championship",
-      "odds": {
-        "home": 2.33,
-        "draw": 3.3,
-        "away": 2.65
-      }
-    },
-    {
-      "eventId": "1028072415",
-      "title": "Arsenal - Coventry City",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Coventry City",
-      "startTime": "2026-08-21T19:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 1.16,
-        "draw": 7.5,
-        "away": 13
-      }
-    },
-    {
-      "eventId": "1028072418",
-      "title": "Hull  - Manchester United",
-      "homeTeam": "Hull ",
-      "awayTeam": "Manchester United",
-      "startTime": "2026-08-22T11:30:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 6.1,
-        "draw": 4.5,
-        "away": 1.45
-      }
-    },
-    {
-      "eventId": "1028072414",
-      "title": "Ipswich Town - Sunderland",
-      "homeTeam": "Ipswich Town",
-      "awayTeam": "Sunderland",
-      "startTime": "2026-08-22T14:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.65,
-        "draw": 3.35,
-        "away": 2.5
-      }
-    },
-    {
-      "eventId": "1028072413",
-      "title": "Nottingham - Leeds",
-      "homeTeam": "Nottingham",
-      "awayTeam": "Leeds",
-      "startTime": "2026-08-22T14:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.2,
-        "draw": 3.4,
-        "away": 3.1
-      }
-    },
-    {
-      "eventId": "1028072417",
-      "title": "Everton - Crystal Palace",
-      "homeTeam": "Everton",
-      "awayTeam": "Crystal Palace",
-      "startTime": "2026-08-22T14:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.02,
-        "draw": 3.45,
-        "away": 3.5
-      }
-    },
-    {
-      "eventId": "1028072416",
-      "title": "Brentford - Tottenham",
-      "homeTeam": "Brentford",
-      "awayTeam": "Tottenham",
-      "startTime": "2026-08-22T16:30:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.5,
-        "away": 2.55
-      }
-    },
-    {
-      "eventId": "1028072412",
-      "title": "Manchester City - Bournemouth",
-      "homeTeam": "Manchester City",
-      "awayTeam": "Bournemouth",
-      "startTime": "2026-08-23T13:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 1.4,
-        "draw": 5,
-        "away": 6.25
-      }
-    },
-    {
-      "eventId": "1028072410",
-      "title": "Brighton - Aston Villa",
-      "homeTeam": "Brighton",
-      "awayTeam": "Aston Villa",
-      "startTime": "2026-08-23T13:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.23,
-        "draw": 3.6,
-        "away": 2.85
-      }
-    },
-    {
-      "eventId": "1028072409",
-      "title": "Newcastle United - Liverpool",
-      "homeTeam": "Newcastle United",
-      "awayTeam": "Liverpool",
-      "startTime": "2026-08-23T15:30:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 2.75,
-        "draw": 3.8,
-        "away": 2.25
-      }
-    },
-    {
-      "eventId": "1028072408",
-      "title": "Fulham - Chelsea",
-      "homeTeam": "Fulham",
-      "awayTeam": "Chelsea",
-      "startTime": "2026-08-24T19:00:00Z",
-      "league": "Premier League",
-      "odds": {
-        "home": 3.25,
-        "draw": 3.6,
-        "away": 2.04
-      }
-    },
-    {
-      "eventId": "1027586493",
-      "title": "Cobresal - La Serena",
-      "homeTeam": "Cobresal",
-      "awayTeam": "La Serena",
-      "startTime": "2026-07-01T21:58:00Z",
-      "league": "Copa Chile",
-      "odds": {
-        "home": 3.7,
-        "draw": 1.34,
-        "away": 11
-      }
-    },
     {
       "eventId": "1027586463",
       "title": "Deportes Limache - Coquimbo Unido",
@@ -2348,9 +22,9 @@
       "startTime": "2026-07-01T22:00:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 26,
-        "draw": 5,
-        "away": 1.17
+        "home": 56,
+        "draw": 1.02,
+        "away": 16
       }
     },
     {
@@ -2361,9 +35,9 @@
       "startTime": "2026-07-01T23:07:00Z",
       "league": "USL League 1",
       "odds": {
-        "home": 1.71,
-        "draw": 3.05,
-        "away": 5.1
+        "home": 1.83,
+        "draw": 2.7,
+        "away": 5.4
       }
     },
     {
@@ -2380,153 +54,6 @@
       }
     },
     {
-      "eventId": "1028211473",
-      "title": "Qatar (Yoru) - Kanada (OP1OT)",
-      "homeTeam": "Qatar (Yoru)",
-      "awayTeam": "Kanada (OP1OT)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 1.76,
-        "draw": 4.9,
-        "away": 2.7
-      }
-    },
-    {
-      "eventId": "1028211621",
-      "title": "Sevilla (Yeti) - Real Sociedad (djamik)",
-      "homeTeam": "Sevilla (Yeti)",
-      "awayTeam": "Real Sociedad (djamik)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 5.1,
-        "draw": 6.75,
-        "away": 1.29
-      }
-    },
-    {
-      "eventId": "1028211622",
-      "title": "Valencia (luxiqq) - Real Madrid (drksd3)",
-      "homeTeam": "Valencia (luxiqq)",
-      "awayTeam": "Real Madrid (drksd3)",
-      "startTime": "2026-07-01T23:40:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 2.6,
-        "draw": 6.5,
-        "away": 1.68
-      }
-    },
-    {
-      "eventId": "1028212369",
-      "title": "River Plate (zaha) - Boca Juniors (Stenido)",
-      "homeTeam": "River Plate (zaha)",
-      "awayTeam": "Boca Juniors (Stenido)",
-      "startTime": "2026-07-01T23:42:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 1.73,
-        "draw": 5.2,
-        "away": 2.7
-      }
-    },
-    {
-      "eventId": "1028212063",
-      "title": "Netherlands (Kray) - England (hotShot)",
-      "homeTeam": "Netherlands (Kray)",
-      "awayTeam": "England (hotShot)",
-      "startTime": "2026-07-01T23:44:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.94,
-        "draw": 4.4,
-        "away": 2.48
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.03,
-          "under": 10
-        },
-        {
-          "line": 3.5,
-          "over": 1.17,
-          "under": 4.4
-        },
-        {
-          "line": 7.5,
-          "over": 4.9,
-          "under": 1.14
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.04
-        },
-        {
-          "line": 6.5,
-          "over": 2.9,
-          "under": 1.36
-        },
-        {
-          "line": 5.5,
-          "over": 1.95,
-          "under": 1.73
-        },
-        {
-          "line": 4.5,
-          "over": 1.44,
-          "under": 2.55
-        }
-      ]
-    },
-    {
-      "eventId": "1028212192",
-      "title": "Argentina (Kodak) - Frankrike (OG)",
-      "homeTeam": "Argentina (Kodak)",
-      "awayTeam": "Frankrike (OG)",
-      "startTime": "2026-07-01T23:44:00Z",
-      "league": "eSports Battle World Cup (2x4 min)",
-      "odds": {
-        "home": 1.98,
-        "draw": 4.25,
-        "away": 2.45
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 3.8,
-          "under": 1.22
-        },
-        {
-          "line": 8.5,
-          "over": 6.75,
-          "under": 1.08
-        },
-        {
-          "line": 3.5,
-          "over": 1.11,
-          "under": 5.6
-        },
-        {
-          "line": 4.5,
-          "over": 1.33,
-          "under": 3.05
-        },
-        {
-          "line": 6.5,
-          "over": 2.43,
-          "under": 1.49
-        },
-        {
-          "line": 5.5,
-          "over": 1.71,
-          "under": 1.98
-        }
-      ]
-    },
-    {
       "eventId": "1028211624",
       "title": "Real Madrid (drksd3) - Real Sociedad (djamik)",
       "homeTeam": "Real Madrid (drksd3)",
@@ -2534,47 +61,10 @@
       "startTime": "2026-07-01T23:54:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3.9,
-        "draw": 3.2,
-        "away": 1.73
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.07,
-          "under": 6.1
-        },
-        {
-          "line": 6.5,
-          "over": 1.48,
-          "under": 2.35
-        },
-        {
-          "line": 10.5,
-          "over": 7,
-          "under": 1.04
-        },
-        {
-          "line": 5.5,
-          "over": 1.19,
-          "under": 3.75
-        },
-        {
-          "line": 9.5,
-          "over": 4.1,
-          "under": 1.16
-        },
-        {
-          "line": 7.5,
-          "over": 1.89,
-          "under": 1.77
-        },
-        {
-          "line": 8.5,
-          "over": 2.75,
-          "under": 1.34
-        }
-      ]
+        "home": 3.7,
+        "draw": 2.85,
+        "away": 1.9
+      }
     },
     {
       "eventId": "1028211623",
@@ -2584,52 +74,10 @@
       "startTime": "2026-07-01T23:54:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.75,
+        "home": 4.1,
         "draw": 6.75,
-        "away": 1.61
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.3,
-          "under": 2.9
-        },
-        {
-          "line": 7.5,
-          "over": 1.71,
-          "under": 1.98
-        },
-        {
-          "line": 11.5,
-          "over": 9,
-          "under": 1.01
-        },
-        {
-          "line": 5.5,
-          "over": 1.13,
-          "under": 4.6
-        },
-        {
-          "line": 10.5,
-          "over": 5.1,
-          "under": 1.1
-        },
-        {
-          "line": 4.5,
-          "over": 1.01,
-          "under": 9
-        },
-        {
-          "line": 8.5,
-          "over": 2.28,
-          "under": 1.52
-        },
-        {
-          "line": 9.5,
-          "over": 3.35,
-          "under": 1.23
-        }
-      ]
+        "away": 1.38
+      }
     },
     {
       "eventId": "1028211636",
@@ -2639,52 +87,10 @@
       "startTime": "2026-07-01T23:54:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 3,
-        "draw": 5.4,
-        "away": 1.62
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.05,
-          "under": 9
-        },
-        {
-          "line": 6.5,
-          "over": 1.37,
-          "under": 2.85
-        },
-        {
-          "line": 7.5,
-          "over": 1.72,
-          "under": 1.98
-        },
-        {
-          "line": 8.5,
-          "over": 2.28,
-          "under": 1.54
-        },
-        {
-          "line": 9.5,
-          "over": 3.3,
-          "under": 1.28
-        },
-        {
-          "line": 10.5,
-          "over": 5.2,
-          "under": 1.13
-        },
-        {
-          "line": 5.5,
-          "over": 1.16,
-          "under": 4.6
-        },
-        {
-          "line": 11.5,
-          "over": 9,
-          "under": 1.04
-        }
-      ]
+        "home": 2.9,
+        "draw": 5,
+        "away": 1.68
+      }
     },
     {
       "eventId": "1028212045",
@@ -2694,47 +100,10 @@
       "startTime": "2026-07-01T23:56:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.86,
-        "draw": 4.25,
-        "away": 2.7
-      },
-      "totals": [
-        {
-          "line": 7.5,
-          "over": 4.75,
-          "under": 1.15
-        },
-        {
-          "line": 3.5,
-          "over": 1.17,
-          "under": 4.5
-        },
-        {
-          "line": 5.5,
-          "over": 1.92,
-          "under": 1.76
-        },
-        {
-          "line": 6.5,
-          "over": 2.85,
-          "under": 1.37
-        },
-        {
-          "line": 4.5,
-          "over": 1.44,
-          "under": 2.6
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.05
-        },
-        {
-          "line": 2.5,
-          "over": 1.03,
-          "under": 10
-        }
-      ]
+        "home": 1.48,
+        "draw": 4.5,
+        "away": 4.25
+      }
     },
     {
       "eventId": "1028212024",
@@ -2744,222 +113,9 @@
       "startTime": "2026-07-01T23:56:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.12,
-        "draw": 3.85,
-        "away": 2.4
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.1,
-          "under": 6
-        },
-        {
-          "line": 4.5,
-          "over": 1.77,
-          "under": 1.91
-        },
-        {
-          "line": 6.5,
-          "over": 4.4,
-          "under": 1.17
-        },
-        {
-          "line": 3.5,
-          "over": 1.33,
-          "under": 3.05
-        },
-        {
-          "line": 5.5,
-          "over": 2.63,
-          "under": 1.42
-        },
-        {
-          "line": 7.5,
-          "over": 8.5,
-          "under": 1.05
-        }
-      ]
-    },
-    {
-      "eventId": "1028151416",
-      "title": "USA - Bosnien-Hercegovina",
-      "homeTeam": "USA",
-      "awayTeam": "Bosnien-Hercegovina",
-      "startTime": "2026-07-02T00:00:00Z",
-      "league": "VM 2026",
-      "odds": {
-        "home": 1.36,
-        "draw": 5.2,
-        "away": 9.5
-      },
-      "totals": [
-        {
-          "line": 1.5,
-          "over": 1.19,
-          "under": 4.9
-        },
-        {
-          "line": 6.5,
-          "over": 19,
-          "under": 1.01
-        },
-        {
-          "line": 2.5,
-          "over": 1.63,
-          "under": 2.32
-        },
-        {
-          "line": 0.5,
-          "over": 1.02,
-          "under": 14
-        },
-        {
-          "line": 5.5,
-          "over": 9.5,
-          "under": 1.06
-        },
-        {
-          "line": 3.5,
-          "over": 2.6,
-          "under": 1.52
-        },
-        {
-          "line": 4.5,
-          "over": 4.75,
-          "under": 1.2
-        }
-      ],
-      "ah": [
-        {
-          "line": -3.5,
-          "home": 6.75,
-          "away": 1.11
-        },
-        {
-          "line": -0.5,
-          "home": 1.33,
-          "away": 3.3
-        },
-        {
-          "line": -1,
-          "home": 1.5,
-          "away": 2.55
-        },
-        {
-          "line": -1.75,
-          "home": 2.23,
-          "away": 1.66
-        },
-        {
-          "line": -2.5,
-          "home": 3.4,
-          "away": 1.3
-        },
-        {
-          "line": 0.5,
-          "home": 1.08,
-          "away": 8
-        },
-        {
-          "line": -1.25,
-          "home": 1.73,
-          "away": 2.1
-        },
-        {
-          "line": -3,
-          "home": 5.8,
-          "away": 1.13
-        },
-        {
-          "line": -0.25,
-          "home": 1.22,
-          "away": 4.3
-        },
-        {
-          "line": -0.75,
-          "home": 1.4,
-          "away": 2.95
-        },
-        {
-          "line": -1.5,
-          "home": 1.95,
-          "away": 1.85
-        },
-        {
-          "line": -2.75,
-          "home": 4.25,
-          "away": 1.22
-        },
-        {
-          "line": 0.25,
-          "home": 1.09,
-          "away": 7.5
-        },
-        {
-          "line": -2,
-          "home": 2.7,
-          "away": 1.46
-        },
-        {
-          "line": -2.25,
-          "home": 3.05,
-          "away": 1.37
-        },
-        {
-          "line": -3.25,
-          "home": 6.25,
-          "away": 1.12
-        }
-      ],
-      "corners": {
-        "totals": [
-          {
-            "line": 12.5,
-            "over": 3.3,
-            "under": 1.3
-          },
-          {
-            "line": 10.5,
-            "over": 2,
-            "under": 1.73
-          },
-          {
-            "line": 11.5,
-            "over": 2.5,
-            "under": 1.47
-          },
-          {
-            "line": 9.5,
-            "over": 1.65,
-            "under": 2.12
-          },
-          {
-            "line": 14.5,
-            "over": 5.6,
-            "under": 1.11
-          },
-          {
-            "line": 7.5,
-            "over": 1.22,
-            "under": 3.85
-          },
-          {
-            "line": 6.5,
-            "over": 1.11,
-            "under": 5.6
-          },
-          {
-            "line": 8.5,
-            "over": 1.4,
-            "under": 2.75
-          },
-          {
-            "line": 13.5,
-            "over": 4.3,
-            "under": 1.18
-          }
-        ]
+        "home": 2.17,
+        "draw": 3.55,
+        "away": 2.43
       }
     },
     {
@@ -3016,6 +172,187 @@
           "under": 1.04
         }
       ]
+    },
+    {
+      "eventId": "1028151416",
+      "title": "USA - Bosnien-Hercegovina",
+      "homeTeam": "USA",
+      "awayTeam": "Bosnien-Hercegovina",
+      "startTime": "2026-07-02T00:05:00Z",
+      "league": "VM 2026",
+      "odds": {
+        "home": 1.36,
+        "draw": 5.2,
+        "away": 9.5
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.19,
+          "under": 4.9
+        },
+        {
+          "line": 6.5,
+          "over": 18,
+          "under": 1.01
+        },
+        {
+          "line": 2.5,
+          "over": 1.63,
+          "under": 2.32
+        },
+        {
+          "line": 0.5,
+          "over": 1.02,
+          "under": 14
+        },
+        {
+          "line": 5.5,
+          "over": 9.5,
+          "under": 1.06
+        },
+        {
+          "line": 3.5,
+          "over": 2.6,
+          "under": 1.5
+        },
+        {
+          "line": 4.5,
+          "over": 4.8,
+          "under": 1.19
+        }
+      ],
+      "ah": [
+        {
+          "line": -3.5,
+          "home": 6.75,
+          "away": 1.1
+        },
+        {
+          "line": -0.5,
+          "home": 1.33,
+          "away": 3.3
+        },
+        {
+          "line": -1,
+          "home": 1.5,
+          "away": 2.55
+        },
+        {
+          "line": -1.75,
+          "home": 2.23,
+          "away": 1.65
+        },
+        {
+          "line": -2.5,
+          "home": 3.4,
+          "away": 1.3
+        },
+        {
+          "line": 0.5,
+          "home": 1.07,
+          "away": 8
+        },
+        {
+          "line": -1.25,
+          "home": 1.73,
+          "away": 2.1
+        },
+        {
+          "line": -3,
+          "home": 5.8,
+          "away": 1.13
+        },
+        {
+          "line": -0.25,
+          "home": 1.21,
+          "away": 4.35
+        },
+        {
+          "line": -0.75,
+          "home": 1.4,
+          "away": 2.95
+        },
+        {
+          "line": -1.5,
+          "home": 1.96,
+          "away": 1.85
+        },
+        {
+          "line": -2.75,
+          "home": 4.25,
+          "away": 1.22
+        },
+        {
+          "line": 0.25,
+          "home": 1.08,
+          "away": 7.5
+        },
+        {
+          "line": -2,
+          "home": 2.75,
+          "away": 1.46
+        },
+        {
+          "line": -2.25,
+          "home": 3.1,
+          "away": 1.37
+        },
+        {
+          "line": -3.25,
+          "home": 6.25,
+          "away": 1.12
+        }
+      ],
+      "corners": {
+        "totals": [
+          {
+            "line": 12.5,
+            "over": 4,
+            "under": 1.21
+          },
+          {
+            "line": 10.5,
+            "over": 2.35,
+            "under": 1.54
+          },
+          {
+            "line": 11.5,
+            "over": 3,
+            "under": 1.34
+          },
+          {
+            "line": 9.5,
+            "over": 1.87,
+            "under": 1.85
+          },
+          {
+            "line": 14.5,
+            "over": 7,
+            "under": 1.07
+          },
+          {
+            "line": 7.5,
+            "over": 1.3,
+            "under": 3.2
+          },
+          {
+            "line": 6.5,
+            "over": 1.16,
+            "under": 4.6
+          },
+          {
+            "line": 8.5,
+            "over": 1.54,
+            "under": 2.35
+          },
+          {
+            "line": 13.5,
+            "over": 5.3,
+            "under": 1.13
+          }
+        ]
+      }
     },
     {
       "eventId": "1028212043",
@@ -3685,50 +1022,50 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 4.1,
-        "draw": 5.75,
+        "home": 3.9,
+        "draw": 6,
         "away": 1.42
       },
       "totals": [
         {
           "line": 7.5,
-          "over": 1.58,
-          "under": 2.18
+          "over": 1.57,
+          "under": 2.23
         },
         {
           "line": 5.5,
-          "over": 1.13,
-          "under": 5.25
+          "over": 1.12,
+          "under": 5.5
         },
         {
           "line": 4.5,
           "over": 1.03,
-          "under": 10
+          "under": 10.5
         },
         {
           "line": 11.5,
-          "over": 7.5,
+          "over": 7,
           "under": 1.07
         },
         {
           "line": 9.5,
-          "over": 2.9,
-          "under": 1.36
+          "over": 2.88,
+          "under": 1.37
         },
         {
           "line": 6.5,
-          "over": 1.3,
-          "under": 3.2
+          "over": 1.29,
+          "under": 3.25
         },
         {
           "line": 8.5,
-          "over": 2.07,
-          "under": 1.65
+          "over": 2.04,
+          "under": 1.68
         },
         {
           "line": 10.5,
-          "over": 4.4,
-          "under": 1.17
+          "over": 4.35,
+          "under": 1.18
         }
       ]
     },
@@ -3740,15 +1077,20 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.46,
-        "draw": 6,
+        "home": 1.45,
+        "draw": 6.25,
         "away": 3.3
       },
       "totals": [
         {
           "line": 7.5,
-          "over": 2.35,
+          "over": 2.33,
           "under": 1.48
+        },
+        {
+          "line": 10.5,
+          "over": 9.5,
+          "under": 1.01
         },
         {
           "line": 5.5,
@@ -3758,7 +1100,7 @@
         {
           "line": 4.5,
           "over": 1.11,
-          "under": 4.8
+          "under": 4.9
         },
         {
           "line": 8.5,
@@ -3772,13 +1114,13 @@
         },
         {
           "line": 6.5,
-          "over": 1.68,
-          "under": 2
+          "over": 1.67,
+          "under": 2.02
         },
         {
           "line": 9.5,
-          "over": 5.75,
-          "under": 1.07
+          "over": 5.6,
+          "under": 1.08
         }
       ]
     },
@@ -3790,29 +1132,29 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.6,
+        "home": 1.67,
         "draw": 7,
-        "away": 2.63
+        "away": 2.55
       },
       "totals": [
         {
           "line": 6.5,
-          "over": 1.23,
-          "under": 3.35
+          "over": 1.24,
+          "under": 3.3
         },
         {
           "line": 8.5,
           "over": 2.02,
-          "under": 1.67
+          "under": 1.68
         },
         {
           "line": 5.5,
-          "over": 1.08,
-          "under": 5.5
+          "over": 1.09,
+          "under": 5.3
         },
         {
           "line": 11.5,
-          "over": 7,
+          "over": 7.5,
           "under": 1.04
         },
         {
@@ -3822,8 +1164,8 @@
         },
         {
           "line": 10.5,
-          "over": 4.35,
-          "under": 1.14
+          "over": 4.25,
+          "under": 1.15
         },
         {
           "line": 7.5,
@@ -5547,25 +2889,25 @@
       "startTime": "2026-07-02T19:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.34,
-        "draw": 5.4,
-        "away": 10.5
+        "home": 1.35,
+        "draw": 5.3,
+        "away": 11
       },
       "totals": [
         {
           "line": 1.5,
           "over": 1.25,
-          "under": 4.1
+          "under": 4
         },
         {
           "line": 4.5,
-          "over": 6,
+          "over": 5.8,
           "under": 1.14
         },
         {
           "line": 0.5,
-          "over": 1.03,
-          "under": 12.5
+          "over": 1.04,
+          "under": 12
         },
         {
           "line": 2.5,
@@ -5579,20 +2921,20 @@
         },
         {
           "line": 3.5,
-          "over": 3.1,
+          "over": 3.05,
           "under": 1.38
         }
       ],
       "ah": [
         {
           "line": -1,
-          "home": 1.48,
-          "away": 2.65
+          "home": 1.49,
+          "away": 2.63
         },
         {
           "line": -0.5,
           "home": 1.3,
-          "away": 3.45
+          "away": 3.4
         },
         {
           "line": -3,
@@ -5602,7 +2944,7 @@
         {
           "line": -1.75,
           "home": 2.25,
-          "away": 1.65
+          "away": 1.64
         },
         {
           "line": -3.5,
@@ -5611,13 +2953,13 @@
         },
         {
           "line": -1.25,
-          "home": 1.72,
-          "away": 2.12
+          "home": 1.73,
+          "away": 2.1
         },
         {
           "line": -2,
           "home": 2.8,
-          "away": 1.44
+          "away": 1.43
         },
         {
           "line": -3.25,
@@ -5632,16 +2974,16 @@
         {
           "line": -0.75,
           "home": 1.38,
-          "away": 3.05
+          "away": 3
         },
         {
           "line": -1.5,
-          "home": 1.95,
-          "away": 1.85
+          "home": 1.97,
+          "away": 1.84
         },
         {
           "line": -2.75,
-          "home": 4.4,
+          "home": 4.5,
           "away": 1.2
         },
         {
@@ -5654,18 +2996,18 @@
         "totals": [
           {
             "line": 7.5,
-            "over": 1.37,
+            "over": 1.36,
             "under": 2.9
           },
           {
             "line": 6.5,
-            "over": 1.2,
-            "under": 4.1
+            "over": 1.19,
+            "under": 4.2
           },
           {
             "line": 11.5,
-            "over": 3.4,
-            "under": 1.28
+            "over": 3.35,
+            "under": 1.29
           },
           {
             "line": 12.5,
@@ -5675,12 +3017,12 @@
           {
             "line": 10.5,
             "over": 2.55,
-            "under": 1.45
+            "under": 1.46
           },
           {
             "line": 9.5,
-            "over": 2,
-            "under": 1.74
+            "over": 1.98,
+            "under": 1.75
           },
           {
             "line": 13.5,
@@ -5690,7 +3032,12 @@
           {
             "line": 8.5,
             "over": 1.62,
-            "under": 2.18
+            "under": 2.2
+          },
+          {
+            "line": 5.5,
+            "over": 1.09,
+            "under": 6.25
           }
         ]
       }
@@ -11344,36 +8691,36 @@
       "league": "Allsvenskan",
       "odds": {
         "home": 3.7,
-        "draw": 3.65,
-        "away": 2.1
+        "draw": 3.7,
+        "away": 2.08
       },
       "totals": [
         {
           "line": 4.5,
-          "over": 5.2,
-          "under": 1.12
+          "over": 5,
+          "under": 1.13
         },
         {
           "line": 1.5,
           "over": 1.23,
-          "under": 3.65
+          "under": 3.7
         },
         {
           "line": 2.5,
-          "over": 1.75,
-          "under": 1.94
+          "over": 1.74,
+          "under": 1.95
         },
         {
           "line": 3.5,
-          "over": 2.85,
+          "over": 2.8,
           "under": 1.36
         }
       ],
       "ah": [
         {
           "line": 0.25,
-          "home": 1.98,
-          "away": 1.71
+          "home": 2,
+          "away": 1.7
         },
         {
           "line": -0.25,
@@ -11382,41 +8729,41 @@
         },
         {
           "line": 1,
-          "home": 1.36,
-          "away": 2.85
+          "home": 1.37,
+          "away": 2.8
         },
         {
           "line": 1.5,
-          "home": 1.24,
-          "away": 3.55
+          "home": 1.25,
+          "away": 3.5
         },
         {
           "line": -0.5,
-          "home": 3.25,
+          "home": 3.2,
           "away": 1.29
         },
         {
           "line": 1.25,
-          "home": 1.29,
-          "away": 3.2
+          "home": 1.3,
+          "away": 3.15
         },
         {
           "line": 0.75,
-          "home": 1.55,
-          "away": 2.25
+          "home": 1.56,
+          "away": 2.23
         },
         {
           "line": 0.5,
-          "home": 1.74,
-          "away": 1.96
+          "home": 1.75,
+          "away": 1.94
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 8.5,
-            "over": 1.3,
-            "under": 3.1
+            "over": 1.29,
+            "under": 3.2
           },
           {
             "line": 9.5,
@@ -11430,13 +8777,13 @@
           },
           {
             "line": 10.5,
-            "over": 1.81,
-            "under": 1.88
+            "over": 1.79,
+            "under": 1.89
           },
           {
             "line": 13.5,
-            "over": 3.65,
-            "under": 1.23
+            "over": 3.7,
+            "under": 1.22
           },
           {
             "line": 11.5,
@@ -11445,8 +8792,8 @@
           },
           {
             "line": 7.5,
-            "over": 1.17,
-            "under": 4.35
+            "over": 1.16,
+            "under": 4.4
           }
         ]
       }
@@ -18092,15 +15439,15 @@
       "startTime": "2026-07-05T12:00:00Z",
       "league": "Allsvenskan",
       "odds": {
-        "home": 2.45,
-        "draw": 3.35,
+        "home": 2.43,
+        "draw": 3.4,
         "away": 3.15
       },
       "totals": [
         {
           "line": 1.5,
-          "over": 1.21,
-          "under": 3.85
+          "over": 1.22,
+          "under": 3.75
         },
         {
           "line": 3.5,
@@ -18127,7 +15474,7 @@
         {
           "line": 0.5,
           "home": 1.36,
-          "away": 2.8
+          "away": 2.85
         },
         {
           "line": -1.25,
@@ -18136,13 +15483,13 @@
         },
         {
           "line": -1,
-          "home": 3.5,
+          "home": 3.45,
           "away": 1.25
         },
         {
           "line": 0.25,
           "home": 1.47,
-          "away": 2.45
+          "away": 2.48
         },
         {
           "line": -0.75,
@@ -18156,21 +15503,21 @@
         },
         {
           "line": -0.25,
-          "home": 1.95,
-          "away": 1.74
+          "home": 1.94,
+          "away": 1.75
         }
       ],
       "corners": {
         "totals": [
           {
             "line": 11.5,
-            "over": 2.04,
-            "under": 1.67
+            "over": 2.02,
+            "under": 1.68
           },
           {
             "line": 8.5,
-            "over": 1.25,
-            "under": 3.5
+            "over": 1.24,
+            "under": 3.55
           },
           {
             "line": 9.5,
@@ -18179,7 +15526,7 @@
           },
           {
             "line": 10.5,
-            "over": 1.68,
+            "over": 1.67,
             "under": 2.04
           },
           {
@@ -18194,7 +15541,7 @@
           },
           {
             "line": 14.5,
-            "over": 4.35,
+            "over": 4.3,
             "under": 1.17
           }
         ]
@@ -23482,19 +20829,6 @@
       }
     },
     {
-      "eventId": "1028212539",
-      "title": "Katherine Hui - Alyssa Ahn",
-      "homeTeam": "Katherine Hui",
-      "awayTeam": "Alyssa Ahn",
-      "startTime": "2026-07-01T21:23:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.15,
-        "away": 4.8
-      }
-    },
-    {
       "eventId": "1028198742",
       "title": "William Kleege - Jacob Brumm",
       "homeTeam": "William Kleege",
@@ -23503,34 +20837,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 7,
-        "away": 1.07
-      }
-    },
-    {
-      "eventId": "1028198743",
-      "title": "Stian Klaassen - Marko Miladinovic",
-      "homeTeam": "Stian Klaassen",
-      "awayTeam": "Marko Miladinovic",
-      "startTime": "2026-07-01T23:00:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.07,
-        "away": 7
-      }
-    },
-    {
-      "eventId": "1028212589",
-      "title": "Lance Amaury Lage Castelan - Benjamin O'Connell",
-      "homeTeam": "Lance Amaury Lage Castelan",
-      "awayTeam": "Benjamin O'Connell",
-      "startTime": "2026-07-01T23:04:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 6.4,
-        "away": 1.09
+        "home": 9.5,
+        "away": 1.04
       }
     },
     {
@@ -23542,8 +20850,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.11,
-        "away": 5.6
+        "home": 1.03,
+        "away": 11.5
       }
     },
     {
@@ -23551,25 +20859,38 @@
       "title": "Alina Shcherbinina - Kayla Chung",
       "homeTeam": "Alina Shcherbinina",
       "awayTeam": "Kayla Chung",
-      "startTime": "2026-07-01T23:50:00Z",
+      "startTime": "2026-07-01T23:45:00Z",
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.05,
-        "away": 8
+        "home": 1.06,
+        "away": 7
       }
     },
     {
-      "eventId": "1028207493",
-      "title": "Daniil Glinka - Edward Winter",
-      "homeTeam": "Daniil Glinka",
-      "awayTeam": "Edward Winter",
-      "startTime": "2026-07-01T23:50:00Z",
-      "league": "Cary",
+      "eventId": "1028212540",
+      "title": "Amy Zhu - Isabel Pascual Montalvo",
+      "homeTeam": "Amy Zhu",
+      "awayTeam": "Isabel Pascual Montalvo",
+      "startTime": "2026-07-01T23:56:00Z",
+      "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 2.7,
-        "away": 1.44
+        "home": 1.2,
+        "away": 4.2
+      }
+    },
+    {
+      "eventId": "1028182204",
+      "title": "Maciej Rajski - Pavel Bushuev",
+      "homeTeam": "Maciej Rajski",
+      "awayTeam": "Pavel Bushuev",
+      "startTime": "2026-07-01T23:58:00Z",
+      "league": "USA - Newport Beach",
+      "sport": "tennis",
+      "odds": {
+        "home": 5.8,
+        "away": 1.09
       }
     },
     {
@@ -23577,7 +20898,7 @@
       "title": "Constantinos Djakouris - Caden Hasler",
       "homeTeam": "Constantinos Djakouris",
       "awayTeam": "Caden Hasler",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:04:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23586,11 +20907,37 @@
       }
     },
     {
+      "eventId": "1028182222",
+      "title": "Emily Deming - Lexie Weir",
+      "homeTeam": "Emily Deming",
+      "awayTeam": "Lexie Weir",
+      "startTime": "2026-07-02T00:04:00Z",
+      "league": "USA - Newport Beach",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.29,
+        "away": 3.25
+      }
+    },
+    {
+      "eventId": "1028207493",
+      "title": "Daniil Glinka - Edward Winter",
+      "homeTeam": "Daniil Glinka",
+      "awayTeam": "Edward Winter",
+      "startTime": "2026-07-02T00:05:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 2.7,
+        "away": 1.44
+      }
+    },
+    {
       "eventId": "1028211821",
       "title": "Emily Meng - Eduarda Piai",
       "homeTeam": "Emily Meng",
       "awayTeam": "Eduarda Piai",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:05:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23603,7 +20950,7 @@
       "title": "Lily Fairclough - Sabritt Dozier",
       "homeTeam": "Lily Fairclough",
       "awayTeam": "Sabritt Dozier",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:05:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23616,7 +20963,7 @@
       "title": "Arnav Bhandari - Ivan Savkin",
       "homeTeam": "Arnav Bhandari",
       "awayTeam": "Ivan Savkin",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:05:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23629,7 +20976,7 @@
       "title": "William Landry - Otto Schreiner",
       "homeTeam": "William Landry",
       "awayTeam": "Otto Schreiner",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:05:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23638,24 +20985,11 @@
       }
     },
     {
-      "eventId": "1028182222",
-      "title": "Emily Deming - Lexie Weir",
-      "homeTeam": "Emily Deming",
-      "awayTeam": "Lexie Weir",
-      "startTime": "2026-07-02T00:00:00Z",
-      "league": "USA - Newport Beach",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.29,
-        "away": 3.25
-      }
-    },
-    {
       "eventId": "1028182223",
       "title": "Esther Vyrlan - Alexandra Wolf",
       "homeTeam": "Esther Vyrlan",
       "awayTeam": "Alexandra Wolf",
-      "startTime": "2026-07-02T00:00:00Z",
+      "startTime": "2026-07-02T00:05:00Z",
       "league": "USA - Newport Beach",
       "sport": "tennis",
       "odds": {
@@ -23664,24 +20998,11 @@
       }
     },
     {
-      "eventId": "1028182204",
-      "title": "Maciej Rajski - Pavel Bushuev",
-      "homeTeam": "Maciej Rajski",
-      "awayTeam": "Pavel Bushuev",
-      "startTime": "2026-07-02T00:00:00Z",
-      "league": "USA - Newport Beach",
-      "sport": "tennis",
-      "odds": {
-        "home": 5.75,
-        "away": 1.09
-      }
-    },
-    {
       "eventId": "1028212628",
       "title": "Kelly Keller - Elena Goodman",
       "homeTeam": "Kelly Keller",
       "awayTeam": "Elena Goodman",
-      "startTime": "2026-07-02T00:43:00Z",
+      "startTime": "2026-07-02T01:01:00Z",
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
@@ -24842,8 +22163,8 @@
       "league": "Amstelveen",
       "sport": "tennis",
       "odds": {
-        "home": 2.23,
-        "away": 1.57
+        "home": 2,
+        "away": 1.71
       }
     },
     {
@@ -24894,8 +22215,8 @@
       "league": "Getxo",
       "sport": "tennis",
       "odds": {
-        "home": 1.75,
-        "away": 1.96
+        "home": 1.6,
+        "away": 2.18
       }
     },
     {
@@ -25258,8 +22579,8 @@
       "league": "Wimbledon",
       "sport": "tennis",
       "odds": {
-        "home": 1.92,
-        "away": 1.88
+        "home": 2.08,
+        "away": 1.75
       }
     },
     {
@@ -26421,6 +23742,6 @@
     }
   ],
   "basketEventsCount": 31,
-  "tennisEventsCount": 231,
-  "lastError": null
+  "tennisEventsCount": 229,
+  "lastError": "2 region(s) failed"
 }
