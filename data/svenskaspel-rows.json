@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T22:45:57.834Z",
+  "updatedAt": "2026-07-01T22:49:57.722Z",
   "source": "github-actions",
   "bookmaker": "svenskaspel",
   "displayName": "Svenska Spel (Oddset)",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 368,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 371,
+  "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 41979,
+  "durationMs": 41372,
   "events": [
     {
       "eventId": "1027976814",
@@ -340,7 +340,29 @@
         "home": 2.75,
         "draw": 3.45,
         "away": 2.17
-      }
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 6.4,
+          "under": 1.09
+        },
+        {
+          "line": 2.5,
+          "over": 1.81,
+          "under": 1.91
+        },
+        {
+          "line": 3.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.8
+        }
+      ]
     },
     {
       "eventId": "1028147722",
@@ -353,7 +375,29 @@
         "home": 2.75,
         "draw": 3.45,
         "away": 2.17
-      }
+      },
+      "totals": [
+        {
+          "line": 1.5,
+          "over": 1.23,
+          "under": 3.8
+        },
+        {
+          "line": 3.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 4.5,
+          "over": 6.4,
+          "under": 1.09
+        },
+        {
+          "line": 2.5,
+          "over": 1.81,
+          "under": 1.91
+        }
+      ]
     },
     {
       "eventId": "1028147723",
@@ -1266,19 +1310,6 @@
       }
     },
     {
-      "eventId": "1028102524",
-      "title": "Charlotte Independence - Corpus Christi FC",
-      "homeTeam": "Charlotte Independence",
-      "awayTeam": "Corpus Christi FC",
-      "startTime": "2026-07-01T21:40:00Z",
-      "league": "USL League 1",
-      "odds": {
-        "home": 1.28,
-        "draw": 4.4,
-        "away": 10
-      }
-    },
-    {
       "eventId": "1027586493",
       "title": "Cobresal - La Serena",
       "homeTeam": "Cobresal",
@@ -1287,8 +1318,8 @@
       "league": "Copa Chile",
       "odds": {
         "home": 1.76,
-        "draw": 2.75,
-        "away": 5.75
+        "draw": 2.7,
+        "away": 5.8
       }
     },
     {
@@ -1299,9 +1330,9 @@
       "startTime": "2026-07-01T22:00:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 3.45,
-        "draw": 2.75,
-        "away": 2.2
+        "home": 8.5,
+        "draw": 4,
+        "away": 1.34
       }
     },
     {
@@ -1312,9 +1343,9 @@
       "startTime": "2026-07-01T22:44:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 2.4,
-        "draw": 4.1,
-        "away": 2.05
+        "home": 1.63,
+        "draw": 3.7,
+        "away": 3.9
       }
     },
     {
@@ -1325,9 +1356,9 @@
       "startTime": "2026-07-01T22:44:00Z",
       "league": "eSports Battle World Cup (2x4 min)",
       "odds": {
-        "home": 1.87,
-        "draw": 4.1,
-        "away": 2.7
+        "home": 1.25,
+        "draw": 5.2,
+        "away": 8
       }
     },
     {
@@ -1338,9 +1369,9 @@
       "startTime": "2026-07-01T22:44:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.65,
+        "home": 1.4,
         "draw": 6.25,
-        "away": 2.7
+        "away": 4.1
       }
     },
     {
@@ -1351,9 +1382,9 @@
       "startTime": "2026-07-01T22:44:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.81,
-        "draw": 3.15,
-        "away": 3.6
+        "home": 1.1,
+        "draw": 7.5,
+        "away": 21
       }
     },
     {
@@ -1364,9 +1395,9 @@
       "startTime": "2026-07-01T22:44:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 2,
-        "draw": 5.3,
-        "away": 2.2
+        "home": 2.45,
+        "draw": 4.4,
+        "away": 1.94
       }
     },
     {
@@ -1377,47 +1408,10 @@
       "startTime": "2026-07-01T22:48:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.95,
-        "draw": 5.1,
-        "away": 1.66
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.08,
-          "under": 5.6
-        },
-        {
-          "line": 8.5,
-          "over": 1.46,
-          "under": 2.4
-        },
-        {
-          "line": 7.5,
-          "over": 1.22,
-          "under": 3.45
-        },
-        {
-          "line": 12.5,
-          "over": 5.75,
-          "under": 1.07
-        },
-        {
-          "line": 11.5,
-          "over": 3.7,
-          "under": 1.19
-        },
-        {
-          "line": 10.5,
-          "over": 2.55,
-          "under": 1.4
-        },
-        {
-          "line": 9.5,
-          "over": 1.9,
-          "under": 1.77
-        }
-      ]
+        "home": 3,
+        "draw": 5,
+        "away": 1.64
+      }
     },
     {
       "eventId": "1028212070",
@@ -3972,6 +3966,171 @@
           "line": 10.5,
           "over": 6.75,
           "under": 1.08
+        }
+      ]
+    },
+    {
+      "eventId": "1028211651",
+      "title": "Bayer 04 (abr4m_5) - Manchester City (djamik)",
+      "homeTeam": "Bayer 04 (abr4m_5)",
+      "awayTeam": "Manchester City (djamik)",
+      "startTime": "2026-07-02T01:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 2.07,
+        "draw": 4.1,
+        "away": 2.35
+      },
+      "totals": [
+        {
+          "line": 11.5,
+          "over": 8,
+          "under": 1.03
+        },
+        {
+          "line": 4.5,
+          "over": 1.01,
+          "under": 9.5
+        },
+        {
+          "line": 5.5,
+          "over": 1.11,
+          "under": 5
+        },
+        {
+          "line": 8.5,
+          "over": 2.18,
+          "under": 1.58
+        },
+        {
+          "line": 7.5,
+          "over": 1.61,
+          "under": 2.1
+        },
+        {
+          "line": 6.5,
+          "over": 1.29,
+          "under": 3
+        },
+        {
+          "line": 10.5,
+          "over": 4.8,
+          "under": 1.11
+        },
+        {
+          "line": 9.5,
+          "over": 3.1,
+          "under": 1.28
+        }
+      ]
+    },
+    {
+      "eventId": "1028211652",
+      "title": "Aston Villa (luxiqq) - Milan (Yeti)",
+      "homeTeam": "Aston Villa (luxiqq)",
+      "awayTeam": "Milan (Yeti)",
+      "startTime": "2026-07-02T01:56:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.15,
+        "draw": 4.9,
+        "away": 1.62
+      },
+      "totals": [
+        {
+          "line": 5.5,
+          "over": 1.11,
+          "under": 4.9
+        },
+        {
+          "line": 7.5,
+          "over": 1.63,
+          "under": 2.07
+        },
+        {
+          "line": 8.5,
+          "over": 2.2,
+          "under": 1.55
+        },
+        {
+          "line": 11.5,
+          "over": 8.5,
+          "under": 1.02
+        },
+        {
+          "line": 10.5,
+          "over": 4.9,
+          "under": 1.11
+        },
+        {
+          "line": 9.5,
+          "over": 3.15,
+          "under": 1.26
+        },
+        {
+          "line": 4.5,
+          "over": 1.01,
+          "under": 9
+        },
+        {
+          "line": 6.5,
+          "over": 1.29,
+          "under": 3
+        }
+      ]
+    },
+    {
+      "eventId": "1028211671",
+      "title": "Polen (Jackson) - Haiti (mara)",
+      "homeTeam": "Polen (Jackson)",
+      "awayTeam": "Haiti (mara)",
+      "startTime": "2026-07-02T01:56:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.6,
+        "draw": 5,
+        "away": 3.2
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.52,
+          "under": 2.35
+        },
+        {
+          "line": 10.5,
+          "over": 7,
+          "under": 1.07
+        },
+        {
+          "line": 11.5,
+          "over": 13,
+          "under": 1.02
+        },
+        {
+          "line": 9.5,
+          "over": 4.25,
+          "under": 1.18
+        },
+        {
+          "line": 5.5,
+          "over": 1.24,
+          "under": 3.65
+        },
+        {
+          "line": 4.5,
+          "over": 1.08,
+          "under": 6.5
+        },
+        {
+          "line": 7.5,
+          "over": 1.96,
+          "under": 1.73
+        },
+        {
+          "line": 8.5,
+          "over": 2.75,
+          "under": 1.4
         }
       ]
     },
