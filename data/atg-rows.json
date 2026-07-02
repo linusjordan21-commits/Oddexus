@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T01:53:12.789Z",
+  "updatedAt": "2026-07-02T01:57:13.224Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 347,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 343,
+  "skippedNoOdds": 1,
   "skippedNotFootball": 0,
-  "durationMs": 34609,
+  "durationMs": 34193,
   "events": [
     {
       "eventId": "1027976814",
@@ -4223,9 +4223,9 @@
       "startTime": "2026-07-02T00:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.02,
-        "draw": 23,
-        "away": 111
+        "home": 1.01,
+        "draw": 26,
+        "away": 161
       }
     },
     {
@@ -4236,22 +4236,9 @@
       "startTime": "2026-07-02T00:30:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 5.3,
+        "home": 5.4,
         "draw": 2.95,
-        "away": 1.72
-      }
-    },
-    {
-      "eventId": "1028212417",
-      "title": "Real Madrid (zaha) - Atleti (Stenido)",
-      "homeTeam": "Real Madrid (zaha)",
-      "awayTeam": "Atleti (Stenido)",
-      "startTime": "2026-07-02T01:44:00Z",
-      "league": "eSports Battle (2x6 min)",
-      "odds": {
-        "home": 14,
-        "draw": 7,
-        "away": 1.12
+        "away": 1.71
       }
     },
     {
@@ -4262,9 +4249,9 @@
       "startTime": "2026-07-02T01:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 3.65,
-        "draw": 4.6,
-        "away": 1.55
+        "home": 1.52,
+        "draw": 3.85,
+        "away": 4.6
       }
     },
     {
@@ -4275,9 +4262,9 @@
       "startTime": "2026-07-02T01:52:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.55,
-        "draw": 2.85,
-        "away": 2.45
+        "home": 1.3,
+        "draw": 3.9,
+        "away": 11.5
       }
     },
     {
@@ -4288,52 +4275,10 @@
       "startTime": "2026-07-02T01:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 2.25,
+        "home": 2.28,
         "draw": 4.4,
-        "away": 2.1
-      },
-      "totals": [
-        {
-          "line": 11.5,
-          "over": 8,
-          "under": 1.03
-        },
-        {
-          "line": 4.5,
-          "over": 1.01,
-          "under": 9.5
-        },
-        {
-          "line": 5.5,
-          "over": 1.1,
-          "under": 5
-        },
-        {
-          "line": 8.5,
-          "over": 2.17,
-          "under": 1.57
-        },
-        {
-          "line": 7.5,
-          "over": 1.63,
-          "under": 2.1
-        },
-        {
-          "line": 6.5,
-          "over": 1.28,
-          "under": 3.05
-        },
-        {
-          "line": 10.5,
-          "over": 4.8,
-          "under": 1.11
-        },
-        {
-          "line": 9.5,
-          "over": 3.1,
-          "under": 1.27
-        }
-      ]
+        "away": 2.08
+      }
     },
     {
       "eventId": "1028211652",
@@ -4343,52 +4288,10 @@
       "startTime": "2026-07-02T01:56:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 3,
-        "draw": 4.9,
-        "away": 1.67
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 1.12,
-          "under": 4.7
-        },
-        {
-          "line": 7.5,
-          "over": 1.65,
-          "under": 2.04
-        },
-        {
-          "line": 8.5,
-          "over": 2.23,
-          "under": 1.53
-        },
-        {
-          "line": 11.5,
-          "over": 8.5,
-          "under": 1.02
-        },
-        {
-          "line": 10.5,
-          "over": 5,
-          "under": 1.1
-        },
-        {
-          "line": 9.5,
-          "over": 3.25,
-          "under": 1.25
-        },
-        {
-          "line": 4.5,
-          "over": 1.02,
-          "under": 8.5
-        },
-        {
-          "line": 6.5,
-          "over": 1.3,
-          "under": 2.9
-        }
-      ]
+        "home": 2.95,
+        "draw": 4.7,
+        "away": 1.7
+      }
     },
     {
       "eventId": "1028211671",
@@ -4398,52 +4301,10 @@
       "startTime": "2026-07-02T01:56:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 1.58,
-        "draw": 5.4,
+        "home": 1.6,
+        "draw": 5.25,
         "away": 3.15
-      },
-      "totals": [
-        {
-          "line": 6.5,
-          "over": 1.5,
-          "under": 2.35
-        },
-        {
-          "line": 10.5,
-          "over": 7,
-          "under": 1.07
-        },
-        {
-          "line": 11.5,
-          "over": 13,
-          "under": 1.02
-        },
-        {
-          "line": 9.5,
-          "over": 4.25,
-          "under": 1.18
-        },
-        {
-          "line": 5.5,
-          "over": 1.24,
-          "under": 3.65
-        },
-        {
-          "line": 4.5,
-          "over": 1.09,
-          "under": 6.4
-        },
-        {
-          "line": 7.5,
-          "over": 1.97,
-          "under": 1.73
-        },
-        {
-          "line": 8.5,
-          "over": 2.75,
-          "under": 1.4
-        }
-      ]
+      }
     },
     {
       "eventId": "1028103980",
@@ -5187,8 +5048,8 @@
       "league": "CLA World Cup (2x5 min)",
       "odds": {
         "home": 2.38,
-        "draw": 5.6,
-        "away": 1.85
+        "draw": 5.5,
+        "away": 1.86
       },
       "totals": [
         {
@@ -5198,38 +5059,38 @@
         },
         {
           "line": 9.5,
-          "over": 4.7,
+          "over": 4.6,
           "under": 1.16
         },
         {
           "line": 3.5,
           "over": 1.02,
-          "under": 12
+          "under": 12.5
         },
         {
           "line": 10.5,
-          "over": 7.5,
+          "over": 8,
           "under": 1.06
         },
         {
           "line": 6.5,
-          "over": 1.54,
-          "under": 2.28
+          "over": 1.55,
+          "under": 2.25
         },
         {
           "line": 7.5,
-          "over": 2.06,
-          "under": 1.66
+          "over": 2.07,
+          "under": 1.65
         },
         {
           "line": 5.5,
-          "over": 1.27,
-          "under": 3.4
+          "over": 1.28,
+          "under": 3.35
         },
         {
           "line": 8.5,
-          "over": 2.9,
-          "under": 1.36
+          "over": 2.95,
+          "under": 1.35
         }
       ]
     },
@@ -5352,8 +5213,8 @@
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
         "home": 1.18,
-        "draw": 6.4,
-        "away": 7
+        "draw": 6.5,
+        "away": 6.75
       },
       "totals": [
         {
@@ -5364,12 +5225,12 @@
         {
           "line": 8.5,
           "over": 3.2,
-          "under": 1.25
+          "under": 1.26
         },
         {
           "line": 6.5,
-          "over": 1.61,
-          "under": 2.1
+          "over": 1.64,
+          "under": 2.08
         },
         {
           "line": 9.5,
@@ -5378,18 +5239,18 @@
         },
         {
           "line": 10.5,
-          "over": 9,
-          "under": 1.01
+          "over": 8.5,
+          "under": 1.02
         },
         {
           "line": 7.5,
-          "over": 2.2,
-          "under": 1.55
+          "over": 2.18,
+          "under": 1.56
         },
         {
           "line": 5.5,
           "over": 1.27,
-          "under": 3.1
+          "under": 3.15
         }
       ]
     },
@@ -23937,8 +23798,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.83,
-        "away": 1.94
+        "home": 1.71,
+        "away": 2.08
       }
     },
     {
@@ -23976,8 +23837,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 2.23,
-        "away": 1.58
+        "home": 2.88,
+        "away": 1.36
       }
     },
     {
@@ -24002,8 +23863,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.98,
-        "away": 1.78
+        "home": 2.6,
+        "away": 1.48
       }
     },
     {
@@ -24015,8 +23876,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.04,
-        "away": 10
+        "home": 1.05,
+        "away": 8.5
       }
     },
     {
@@ -24028,8 +23889,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.1,
-        "away": 6
+        "home": 1.06,
+        "away": 7.5
       }
     },
     {
@@ -24041,8 +23902,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.73,
-        "away": 2
+        "home": 1.63,
+        "away": 2.16
       }
     },
     {
@@ -24054,8 +23915,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.48,
-        "away": 2.5
+        "home": 1.58,
+        "away": 2.23
       }
     },
     {
@@ -24068,7 +23929,7 @@
       "sport": "tennis",
       "odds": {
         "home": 2,
-        "away": 1.75
+        "away": 1.76
       }
     },
     {
