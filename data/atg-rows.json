@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T01:01:14.022Z",
+  "updatedAt": "2026-07-02T01:05:13.974Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 358,
-  "skippedNoOdds": 4,
+  "uniqueEvents": 355,
+  "skippedNoOdds": 0,
   "skippedNotFootball": 0,
-  "durationMs": 35792,
+  "durationMs": 35658,
   "events": [
     {
       "eventId": "1027976814",
@@ -3492,9 +3492,9 @@
       "startTime": "2026-07-02T00:30:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 1.66,
-        "draw": 3.45,
-        "away": 4.5
+        "home": 1.7,
+        "draw": 3.3,
+        "away": 4.6
       }
     },
     {
@@ -3505,9 +3505,9 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "CLA World Cup (2x5 min)",
       "odds": {
-        "home": 4,
-        "draw": 5.75,
-        "away": 1.42
+        "home": 2.4,
+        "draw": 4.25,
+        "away": 2.02
       }
     },
     {
@@ -3518,9 +3518,9 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.28,
-        "draw": 7.5,
-        "away": 5
+        "home": 1.29,
+        "draw": 6.25,
+        "away": 5.4
       }
     },
     {
@@ -3531,9 +3531,9 @@
       "startTime": "2026-07-02T01:00:00Z",
       "league": "Cyber Live Arena (2x5 min)",
       "odds": {
-        "home": 1.68,
-        "draw": 7.5,
-        "away": 2.45
+        "home": 3.6,
+        "draw": 7,
+        "away": 1.42
       }
     },
     {
@@ -3545,46 +3545,9 @@
       "league": "Esports Battle (2x4min)",
       "odds": {
         "home": 2.45,
-        "draw": 4.35,
-        "away": 1.96
-      },
-      "totals": [
-        {
-          "line": 2.5,
-          "over": 1.01,
-          "under": 9.5
-        },
-        {
-          "line": 4.5,
-          "over": 1.41,
-          "under": 2.55
-        },
-        {
-          "line": 5.5,
-          "over": 1.94,
-          "under": 1.73
-        },
-        {
-          "line": 3.5,
-          "over": 1.14,
-          "under": 4.35
-        },
-        {
-          "line": 6.5,
-          "over": 2.88,
-          "under": 1.32
-        },
-        {
-          "line": 7.5,
-          "over": 4.8,
-          "under": 1.11
-        },
-        {
-          "line": 8.5,
-          "over": 9,
-          "under": 1.01
-        }
-      ]
+        "draw": 4.5,
+        "away": 1.93
+      }
     },
     {
       "eventId": "1028212023",
@@ -3594,42 +3557,10 @@
       "startTime": "2026-07-02T01:04:00Z",
       "league": "Esports Battle (2x4min)",
       "odds": {
-        "home": 2.14,
-        "draw": 4.25,
-        "away": 2.25
-      },
-      "totals": [
-        {
-          "line": 4.5,
-          "over": 1.26,
-          "under": 3.2
-        },
-        {
-          "line": 6.5,
-          "over": 2.35,
-          "under": 1.48
-        },
-        {
-          "line": 8.5,
-          "over": 6.5,
-          "under": 1.06
-        },
-        {
-          "line": 5.5,
-          "over": 1.65,
-          "under": 2.04
-        },
-        {
-          "line": 3.5,
-          "over": 1.07,
-          "under": 5.8
-        },
-        {
-          "line": 7.5,
-          "over": 3.65,
-          "under": 1.2
-        }
-      ]
+        "home": 2.12,
+        "draw": 4.35,
+        "away": 2.23
+      }
     },
     {
       "eventId": "1028212446",
@@ -3668,11 +3599,6 @@
           "line": 12.5,
           "over": 4.6,
           "under": 1.12
-        },
-        {
-          "line": 8.5,
-          "over": 1.32,
-          "under": 2.85
         },
         {
           "line": 7.5,
@@ -5608,6 +5534,46 @@
           "line": 5.5,
           "over": 5.25,
           "under": 1.1
+        }
+      ]
+    },
+    {
+      "eventId": "1028166688",
+      "title": "Club Oriental (PAR) - Atletico Colegiales",
+      "homeTeam": "Club Oriental (PAR)",
+      "awayTeam": "Atletico Colegiales",
+      "startTime": "2026-07-02T16:00:00Z",
+      "league": "Copa Paraguay",
+      "odds": {
+        "home": 17,
+        "draw": 12.5,
+        "away": 1.05
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.32,
+          "under": 2.9
+        },
+        {
+          "line": 7.5,
+          "over": 3.4,
+          "under": 1.24
+        },
+        {
+          "line": 3.5,
+          "over": 1.12,
+          "under": 4.8
+        },
+        {
+          "line": 6.5,
+          "over": 2.33,
+          "under": 1.49
+        },
+        {
+          "line": 5.5,
+          "over": 1.68,
+          "under": 1.97
         }
       ]
     },
@@ -7930,30 +7896,30 @@
       "startTime": "2026-07-03T16:15:00Z",
       "league": "Kolmonen",
       "odds": {
-        "home": 1.37,
-        "draw": 4.4,
+        "home": 1.35,
+        "draw": 4.6,
         "away": 6
       },
       "totals": [
         {
           "line": 1.5,
-          "over": 1.09,
-          "under": 4.9
+          "over": 1.07,
+          "under": 5.3
         },
         {
           "line": 4.5,
-          "over": 3.45,
-          "under": 1.22
+          "over": 3.1,
+          "under": 1.27
         },
         {
           "line": 2.5,
-          "over": 1.41,
-          "under": 2.48
+          "over": 1.35,
+          "under": 2.7
         },
         {
           "line": 3.5,
-          "over": 2.1,
-          "under": 1.58
+          "over": 1.94,
+          "under": 1.68
         }
       ]
     },
@@ -20215,8 +20181,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 4.6,
-        "away": 1.18
+        "home": 6.75,
+        "away": 1.09
       }
     },
     {
@@ -20228,8 +20194,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.11,
-        "away": 6.1
+        "home": 1.17,
+        "away": 4.8
       }
     },
     {
@@ -20267,34 +20233,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 2.33,
-        "away": 1.53
-      }
-    },
-    {
-      "eventId": "1028212537",
-      "title": "Alina Shcherbinina - Kayla Chung",
-      "homeTeam": "Alina Shcherbinina",
-      "awayTeam": "Kayla Chung",
-      "startTime": "2026-07-01T23:45:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.02,
-        "away": 16
-      }
-    },
-    {
-      "eventId": "1028211852",
-      "title": "Ayana Akli - Ena Koike",
-      "homeTeam": "Ayana Akli",
-      "awayTeam": "Ena Koike",
-      "startTime": "2026-07-02T00:03:00Z",
-      "league": "Cary",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.43,
-        "away": 2.65
+        "home": 2.88,
+        "away": 1.36
       }
     },
     {
@@ -20306,21 +20246,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.33,
-        "away": 1.57
-      }
-    },
-    {
-      "eventId": "1028212628",
-      "title": "Kelly Keller - Elena Goodman",
-      "homeTeam": "Kelly Keller",
-      "awayTeam": "Elena Goodman",
-      "startTime": "2026-07-02T01:05:00Z",
-      "league": "San Diego",
-      "sport": "tennis",
-      "odds": {
-        "home": 1.06,
-        "away": 7
+        "home": 2.43,
+        "away": 1.53
       }
     },
     {
@@ -22964,6 +22891,6 @@
     }
   ],
   "basketEventsCount": 31,
-  "tennisEventsCount": 212,
+  "tennisEventsCount": 209,
   "lastError": null
 }
