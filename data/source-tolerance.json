@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T00:09:28.909Z",
+  "updatedAt": "2026-07-02T00:10:34.940Z",
   "sources": {
     "altenar": {
       "currentIntervalSec": 30,
@@ -21,20 +21,20 @@
     },
     "paf-brand": {
       "currentIntervalSec": 2400,
-      "toleranceFloorSec": 643,
+      "toleranceFloorSec": 675,
       "hardFloorSec": 240,
       "ceilingSec": 2400,
-      "backoffCount": 673,
-      "lastBackoffAt": "2026-06-30T11:13:47.571Z",
-      "lastStatus": "FRESH"
+      "backoffCount": 674,
+      "lastBackoffAt": "2026-07-02T00:10:33.691Z",
+      "lastStatus": "STALE"
     },
     "coolbet": {
       "currentIntervalSec": 1800,
       "toleranceFloorSec": 1.0728694767199891e+36,
       "hardFloorSec": 180,
       "ceilingSec": 1800,
-      "backoffCount": 930,
-      "lastBackoffAt": "2026-07-02T00:09:28.908Z",
+      "backoffCount": 931,
+      "lastBackoffAt": "2026-07-02T00:10:34.940Z",
       "lastStatus": "FRESH"
     }
   }
