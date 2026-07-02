@@ -12808,6 +12808,8 @@ async function computeFootballEh3ValueBets(
     tryLoad("tipwin", loadTipwinPayloadWithMeta),
     tryLoad("betsson", loadBetssonPayloadWithMeta),
     tryLoad("svenskaspel", loadSvenskaspelPayloadWithMeta),
+    tryLoad("kambi", loadKambiPayloadWithMeta),
+    tryLoad("atg", loadAtgPayloadWithMeta),
   ]);
   if (softBooks.length === 0) return [];
 

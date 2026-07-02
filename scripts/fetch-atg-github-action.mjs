@@ -89,15 +89,17 @@ async function fetchKambiDetail(eventId) {
 }
 
 /**
- * Parsa totals (Total Goals) + Asian Handicap ur Kambis detalj-svar.
- * Odds + line ligger i MILLI (÷1000). Totals: type "Over/Under" crit "Total
- * Goals", outcome OT_OVER/OT_UNDER. AH: crit "Asian Handicap", outcome.label =
- * lagnamn, line tecknad per lag (hemma-perspektiv = hemmalagets line).
+ * Parsa totals (Total Goals) + Asian Handicap + EH3 (3-Way Handicap) ur Kambis
+ * detalj-svar. Odds + line ligger i MILLI (÷1000). Totals: type "Over/Under"
+ * crit "Total Goals", outcome OT_OVER/OT_UNDER. AH: crit "Asian Handicap",
+ * outcome.label = lagnamn, line tecknad per lag (hemma-perspektiv = hemmalagets
+ * line). EH3: type+crit "3-Way Handicap", outcomes 1|X|2.
  */
 function parseKambiTotalsAh(data, homeTeam, awayTeam) {
   const betOffers = Array.isArray(data?.betOffers) ? data.betOffers : [];
   const totals = [];
   const ah = [];
+  const eh3 = [];
   const cornerTotals = [];
   const hN = String(homeTeam ?? "").toLowerCase();
   const aN = String(awayTeam ?? "").toLowerCase();
@@ -131,9 +133,25 @@ function parseKambiTotalsAh(data, homeTeam, awayTeam) {
         else if (aN && (aN.includes(lbl) || lbl.includes(aN))) { away = odd; }
       }
       if (home > 1 && away > 1 && Number.isFinite(homeLine)) ah.push({ line: homeLine, home, away });
+    } else if (type === "3-Way Handicap" && crit === "3-way handicap") {
+      // EH3 (europeiskt 3-vägs-handikapp): outcomes 1|X|2 (OT_ONE/OT_CROSS/OT_TWO),
+      // line i MILLI på outcome, HEMMA-perspektiv (−1000 = hemma −1.0) — samma
+      // teckenkonvention som tipwin + eh3Valuebets.ts (line matchas mot Pinnacles
+      // AH-stege med selection HOME). Exakt crit-match utesluter "Corners 3-Way
+      // Handicap" och "3-Way Handicap - 1st Half". Verifierat live 2026-07-02.
+      let home = null, draw = null, away = null, line = null;
+      for (const x of outs) {
+        if (!ok(x)) continue;
+        const odd = Number(x.odds) / 1000;
+        const t = String(x.type ?? ""), lbl = String(x.label ?? "").trim();
+        if (t === "OT_ONE" || lbl === "1") { home = odd; line = Number(x.line) / 1000; }
+        else if (t === "OT_CROSS" || lbl === "X") { draw = odd; }
+        else if (t === "OT_TWO" || lbl === "2") { away = odd; }
+      }
+      if (home > 1 && draw > 1 && away > 1 && Number.isFinite(line)) eh3.push({ line, home, draw, away });
     }
   }
-  return { totals, ah, cornerTotals };
+  return { totals, ah, cornerTotals, eh3 };
 }
 
 function readPreviousPayload() {
@@ -429,11 +447,12 @@ async function main() {
         const data = await fetchKambiDetail(ev.eventId);
         if (data) {
           detailOk += 1;
-          const { totals, ah, cornerTotals } = parseKambiTotalsAh(data, ev.homeTeam, ev.awayTeam);
+          const { totals, ah, cornerTotals, eh3 } = parseKambiTotalsAh(data, ev.homeTeam, ev.awayTeam);
           if (totals.length) ev.totals = totals;
           if (ah.length) ev.ah = ah;
+          if (eh3.length) ev.eh3 = eh3;
           if (cornerTotals.length) ev.corners = { totals: cornerTotals };
-          if (totals.length || ah.length || cornerTotals.length) detailWithLines += 1;
+          if (totals.length || ah.length || eh3.length || cornerTotals.length) detailWithLines += 1;
         }
         await sleep(120);
       }
