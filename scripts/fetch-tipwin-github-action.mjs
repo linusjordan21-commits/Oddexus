@@ -55,34 +55,46 @@ var H={'Accept-Language':'sv','Caller-Environment':'Web','Agency-Key':'${AGENCY}
 var url=__URL__;
 function asMap(x){if(!x)return {};if(Array.isArray(x)){var m={};x.forEach(function(t){if(t&&t.id)m[t.id]=t});return m;}return x;}
 function nm(map,id){var o=map[id];return o?(o.name||o.shortName||o.displayName||o.abrv||null):null;}
+function ouOf(mk,sels,tips){var line=(mk.key&&mk.key.specifier&&mk.key.specifier.total);if(line==null)sels.forEach(function(s){if(s.specifier&&s.specifier.total!=null)line=s.specifier.total;});if(line==null)return null;var ov=+tips['+'],un=+tips['-'];return (ov>1&&un>1)?{line:+line,over:ov,under:un}:null;}
+function hc3Of(hcp,tips){var hh=String(hcp).split(':');if(hh.length!==2)return null;var ha=+hh[0],hb=+hh[1];if(!isFinite(ha)||!isFinite(hb))return null;var h3=+tips['1'],d3=+tips['X'],a3=+tips['2'];return (h3>1&&d3>1&&a3>1)?{line:ha-hb,home:h3,draw:d3,away:a3}:null;}
 var c=new AbortController();var to=setTimeout(function(){c.abort()},9000);
 fetch(url,{headers:H,credentials:'include',signal:c.signal}).then(function(r){return r.text().then(function(x){clearTimeout(to);
   var o={status:r.status};
   try{
     var j=JSON.parse(x);
     var teams=asMap(j.lookup&&j.lookup.teams),tours=asMap(j.lookup&&j.lookup.tournaments),tgroups=asMap(j.lookup&&j.lookup.tournamentGroups);
-    var rows=[];
+    // KRITISKT (databugg fixad 2026-07-02): klassa marknader på bettingType-abrv, INTE
+    // tips-form. Svaret innehåller även 1st-half-totals/1st-half-handicap-hcp/
+    // who-wins-1st-half — form-klassning blandade 1H-linjer i FT-arrayerna (bevisat:
+    // FT-totals med line 0.5 @1.40 = 1H-totalen; eh3 med dubbla line:1 FT+1H).
+    var bts=asMap(j.lookup&&j.lookup.bettingTypes);
+    var rows=[];o.btMiss=0;
     (j.offer||[]).forEach(function(eo){
       var ev=eo.event||{};if(ev.isUpcoming===false)return;
       var home=nm(teams,ev.teamOneId),away=nm(teams,ev.teamTwoId);
-      var x2=null,totals=[],eh3=[];
+      var x2=null,totals=[],eh3=[],totals1h=[],eh31h=[];
       (eo.offers||[]).forEach(function(mk){
         var sels=mk.offers||[],tips={};
         sels.forEach(function(s){if(s&&s.tip!=null)tips[s.tip]=s.value;});
         // handikapp-specifier "a:b" (hemma:borta startmål) finns på handikapp-marknaden.
         var hcp=(mk.key&&mk.key.specifier&&mk.key.specifier.hcp);
         if(hcp==null)sels.forEach(function(s){if(s&&s.specifier&&s.specifier.hcp!=null)hcp=s.specifier.hcp;});
-        // 1X2: tips 1/X/2, exakt 3 nycklar OCH ingen hcp (annars är det handikapp-marknaden).
-        if(!x2&&hcp==null&&tips['1']!=null&&tips['X']!=null&&tips['2']!=null&&Object.keys(tips).length===3){var h=+tips['1'],d=+tips['X'],a=+tips['2'];if(h>1&&d>1&&a>1)x2={home:h,draw:d,away:a};}
-        if(tips['+']!=null&&tips['-']!=null){var line=(mk.key&&mk.key.specifier&&mk.key.specifier.total);if(line==null)sels.forEach(function(s){if(s.specifier&&s.specifier.total!=null)line=s.specifier.total;});if(line!=null){var ov=+tips['+'],un=+tips['-'];if(ov>1&&un>1)totals.push({line:+line,over:ov,under:un});}}
+        var ab=String(((bts[(mk.key||{}).bettingTypeId]||{}).abrv)||'');if(!ab)o.btMiss++;
+        // 1X2: ENDAST bettingType '3way' (who-wins-1st-half har också tips 1/X/2!).
+        if(ab==='3way'&&!x2&&hcp==null&&tips['1']!=null&&tips['X']!=null&&tips['2']!=null&&Object.keys(tips).length===3){var h=+tips['1'],d=+tips['X'],a=+tips['2'];if(h>1&&d>1&&a>1)x2={home:h,draw:d,away:a};}
+        // Totals: FT ('over-under') vs 1H ('1st-half-totals') hålls ISÄR.
+        else if(ab==='over-under'&&tips['+']!=null&&tips['-']!=null){var t=ouOf(mk,sels,tips);if(t)totals.push(t);}
+        else if(ab==='1st-half-totals'&&tips['+']!=null&&tips['-']!=null){var t1=ouOf(mk,sels,tips);if(t1)totals1h.push(t1);}
         // EUROPEISKT 3-vägs-handikapp: spec.hcp "a:b" + tips 1/X/2. line = a−b (hemma-
         // handikapp, samma teckenkonvention som AH; "1:0"→+1, "0:1"→−1). Prissätts mot
-        // Pinnacles AH-stege (eh3Valuebets.ts) → nu meningsfullt att fånga.
-        if(hcp!=null&&tips['1']!=null&&tips['X']!=null&&tips['2']!=null){var hh=String(hcp).split(':');if(hh.length===2){var ha=+hh[0],hb=+hh[1];if(isFinite(ha)&&isFinite(hb)){var H=ha-hb,h3=+tips['1'],d3=+tips['X'],a3=+tips['2'];if(h3>1&&d3>1&&a3>1)eh3.push({line:H,home:h3,draw:d3,away:a3});}}}
+        // Pinnacles AH-stege (eh3Valuebets.ts). FT/1H hålls ISÄR via abrv.
+        else if(ab==='handicap-hcp'&&hcp!=null&&tips['1']!=null&&tips['X']!=null&&tips['2']!=null){var e3=hc3Of(hcp,tips);if(e3)eh3.push(e3);}
+        else if(ab==='1st-half-handicap-hcp'&&hcp!=null&&tips['1']!=null&&tips['X']!=null&&tips['2']!=null){var e31=hc3Of(hcp,tips);if(e31)eh31h.push(e31);}
       });
       if(!x2)return;var title=home&&away?(home+' - '+away):null;if(!title)return;
       var row={eventId:'tipwin_'+ev.id,title:title,homeTeam:home,awayTeam:away,startTime:ev.startTime||null,league:nm(tours,ev.tournamentId)||nm(tgroups,ev.tournamentGroupId)||null,sport:'football',odds:x2};
-      if(totals.length)row.totals=totals;if(eh3.length)row.eh3=eh3;rows.push(row);
+      // totals1h/eh31h: 1H-marknader i EGNA fält (ingen motor-konsument än — Fas 2).
+      if(totals.length)row.totals=totals;if(eh3.length)row.eh3=eh3;if(totals1h.length)row.totals1h=totals1h;if(eh31h.length)row.eh31h=eh31h;rows.push(row);
     });
     o.rows=rows;
   }catch(e){o.parseErr=String(e&&e.message).slice(0,140);o.raw=x.slice(0,300);}
