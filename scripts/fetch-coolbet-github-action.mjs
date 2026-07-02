@@ -32,12 +32,12 @@ const DIAG_FILE = path.join(DATA_DIR, "_coolbet-scraper-diag.json");
 const KEY = (process.env.SCRAPER_API_KEY || "").trim();
 const SPORT_CATEGORY_ID = 62; // fotboll (verifierat)
 const FOOTBALL_PAGE = "https://www.coolbet.com/sv/odds/fotboll";
-const MARKET_TYPE = { ML_1X2: 81, OVER_UNDER: 818, ASIAN_HANDICAP: 1086 }; // 1086 = "Asian handicap" (2-vägs); 1011 = "Handicap (3-vägs)"
+const MARKET_TYPE = { ML_1X2: 81, OVER_UNDER: 818, ASIAN_HANDICAP: 1086, HANDICAP_3WAY: 1011 }; // 1086 = "Asian handicap" (2-vägs); 1011 = "Handicap (3-vägs)" = EH3
 
 // ---------------------------------------------------------------------------
 // Bygg kanoniska events ur katalog + pris-funktion (oförändrad join-logik).
 // ---------------------------------------------------------------------------
-function buildEvents(matches, priceFor) {
+function buildEvents(matches, priceFor, diag) {
   const events = [];
   for (const m of matches) {
     const homeTeam = m.home_team_name ?? null;
@@ -48,6 +48,7 @@ function buildEvents(matches, priceFor) {
     let one = null;
     const totals = [];
     const ah = [];
+    const eh3 = [];
     const cornerTotals = [];
 
     for (const mk of markets) {
@@ -99,6 +100,26 @@ function buildEvents(matches, priceFor) {
           if (k.includes("home")) home = p.price; else if (k.includes("away")) away = p.price;
         }
         if (home > 1 && away > 1 && Number.isFinite(line)) ah.push({ line, home, away });
+      } else if ((type === MARKET_TYPE.HANDICAP_3WAY || /handicap|handikapp/.test(nm)) && priced.length === 3) {
+        // EH3 (3-vägs handikapp, typ 1011): 3 outcomes home/draw/away + line.
+        // OBS: line-teckenkonventionen är EJ verifierad än → coolbet är MEDVETET
+        // inte inkopplad i eh3-motorn (vite.config.ts) förrän riktnings-sanity
+        // körts mot riktig data (line<0 ⇒ eh3.home ≥ 1X2-home). Diag-sample nedan.
+        const line = Number(mk.raw_line ?? mk.line);
+        if (diag && !diag.eh3RawSample) {
+          diag.eh3RawSample = {
+            title, marketName: mk.name, market_type_id: type, raw_line: mk.raw_line ?? null, line: mk.line ?? null,
+            outcomes: priced.map((p) => ({ result_key: p.o.result_key ?? null, name: p.o.name ?? null, price: p.price })),
+          };
+        }
+        let h3 = null, d3 = null, a3 = null;
+        for (const p of priced) {
+          const k = String(p.o.result_key || "").toLowerCase();
+          if (k.includes("home")) h3 = p.price;
+          else if (k.includes("draw") || k === "x" || k === "[x]") d3 = p.price;
+          else if (k.includes("away")) a3 = p.price;
+        }
+        if (h3 > 1 && d3 > 1 && a3 > 1 && Number.isFinite(line)) eh3.push({ line, home: h3, draw: d3, away: a3 });
       }
     }
 
@@ -114,6 +135,7 @@ function buildEvents(matches, priceFor) {
     };
     if (totals.length) event.totals = totals;
     if (ah.length) event.ah = ah;
+    if (eh3.length) event.eh3 = eh3;
     if (cornerTotals.length) event.corners = { totals: cornerTotals };
     events.push(event);
   }
@@ -215,7 +237,7 @@ var Q='country=SE&isMobile=0&language=sv&layout=EUROPEAN&matchTypeFilter=all';
 var H={headers:{accept:'application/json'}};
 function val(s){return s&&typeof s==='object'&&'state' in s?s.state:s;}
 function collect(node,acc){if(!node||typeof node!=='object')return;if(Array.isArray(node.matches))node.matches.forEach(function(m){acc.push(m)});if(Array.isArray(node.categories))node.categories.forEach(function(c){collect(c,acc)});if(Array.isArray(node))node.forEach(function(c){collect(c,acc)});}
-function keepMk(mk){var t=mk.market_type_id;var n=String(mk.name||'').toLowerCase();return t===81||t===818||t===1086||/1x2|match result|fulltid|full time|total|över|over|under|handicap|handikapp|asian|corner|hörn/.test(n);}
+function keepMk(mk){var t=mk.market_type_id;var n=String(mk.name||'').toLowerCase();return t===81||t===818||t===1086||t===1011||/1x2|match result|fulltid|full time|total|över|over|under|handicap|handikapp|asian|corner|hörn/.test(n);}
 function trim(m,slug,lname){return {id:m.id,name:m.name,home_team_name:m.home_team_name,away_team_name:m.away_team_name,match_start:m.match_start,inplay:m.inplay,category_name:lname||m.category_name,fullSlug:slug,markets:(m.markets||[]).filter(keepMk).map(function(mk){return {id:mk.id,market_type_id:mk.market_type_id,name:mk.name,raw_line:mk.raw_line,line:mk.line,outcomes:(mk.outcomes||[]).map(function(oc){return {id:oc.id,result_key:oc.result_key,name:oc.name}})}})}}
 var o={};
 try{
@@ -365,7 +387,7 @@ async function main() {
   diag.oddsCount = Object.keys(odds).length;
   diag.scrapflyCalls = diag.calls.length;
   diag.leaguesFetched = allSlugs.slice(0, MAX_LEAGUES);
-  const allEvents = buildEvents(matches, (id) => (odds[id] != null ? Number(odds[id]) : null));
+  const allEvents = buildEvents(matches, (id) => (odds[id] != null ? Number(odds[id]) : null), diag);
   // Fokusera på 24h-fönstret (betald Scrapfly-källa → lägg budget på färskhet, ej >24h).
   const win = filterToWindowHours(allEvents, { windowHours: 24 });
   const events = win.kept;
