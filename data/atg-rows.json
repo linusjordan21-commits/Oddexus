@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T02:33:14.935Z",
+  "updatedAt": "2026-07-02T02:37:14.970Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 346,
+  "uniqueEvents": 345,
   "skippedNoOdds": 2,
   "skippedNotFootball": 0,
-  "durationMs": 35475,
+  "durationMs": 35647,
   "events": [
     {
       "eventId": "1027976814",
@@ -4223,61 +4223,9 @@
       "startTime": "2026-07-02T02:07:00Z",
       "league": "USL League 1",
       "odds": {
-        "home": 2,
-        "draw": 2.95,
+        "home": 2.08,
+        "draw": 2.8,
         "away": 3.7
-      }
-    },
-    {
-      "eventId": "1028211656",
-      "title": "Arsenal (drksd3) - Manchester City (djamik)",
-      "homeTeam": "Arsenal (drksd3)",
-      "awayTeam": "Manchester City (djamik)",
-      "startTime": "2026-07-02T02:24:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 20,
-        "draw": 5.5,
-        "away": 1.15
-      }
-    },
-    {
-      "eventId": "1028211676",
-      "title": "Morocco (OP1OT) - Haiti (mara)",
-      "homeTeam": "Morocco (OP1OT)",
-      "awayTeam": "Haiti (mara)",
-      "startTime": "2026-07-02T02:24:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 2.8,
-        "draw": 3.45,
-        "away": 1.98
-      }
-    },
-    {
-      "eventId": "1028212135",
-      "title": "Paris (Kodak) - Atleti (Inquisitor)",
-      "homeTeam": "Paris (Kodak)",
-      "awayTeam": "Atleti (Inquisitor)",
-      "startTime": "2026-07-02T02:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 6.25,
-        "draw": 2.65,
-        "away": 1.67
-      }
-    },
-    {
-      "eventId": "1028212227",
-      "title": "Real Madrid (OG) - Bayern Munchen (hotShot)",
-      "homeTeam": "Real Madrid (OG)",
-      "awayTeam": "Bayern Munchen (hotShot)",
-      "startTime": "2026-07-02T02:28:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 2.85,
-        "draw": 2.7,
-        "away": 2.3
       }
     },
     {
@@ -4285,54 +4233,13 @@
       "title": "Union Omaha - AV Alta FC",
       "homeTeam": "Union Omaha",
       "awayTeam": "AV Alta FC",
-      "startTime": "2026-07-02T02:34:00Z",
+      "startTime": "2026-07-02T02:36:00Z",
       "league": "USL League 1",
       "odds": {
-        "home": 1.61,
+        "home": 1.62,
         "draw": 3.85,
-        "away": 4.4
-      },
-      "totals": [
-        {
-          "line": 5.5,
-          "over": 7,
-          "under": 1.06
-        },
-        {
-          "line": 3.5,
-          "over": 2.33,
-          "under": 1.49
-        },
-        {
-          "line": 2.5,
-          "over": 1.53,
-          "under": 2.23
-        },
-        {
-          "line": 4.5,
-          "over": 3.95,
-          "under": 1.18
-        },
-        {
-          "line": 1.5,
-          "over": 1.16,
-          "under": 4.25
-        }
-      ],
-      "eh3": [
-        {
-          "line": -1,
-          "home": 2.33,
-          "draw": 3.1,
-          "away": 2
-        },
-        {
-          "line": -2,
-          "home": 4.1,
-          "draw": 3.85,
-          "away": 1.35
-        }
-      ]
+        "away": 4.3
+      }
     },
     {
       "eventId": "1028211477",
@@ -5561,6 +5468,166 @@
           "line": 8.5,
           "over": 2.55,
           "under": 1.41
+        }
+      ]
+    },
+    {
+      "eventId": "1028223995",
+      "title": "Austria (aloha) - Algeria (Gammi)",
+      "homeTeam": "Austria (aloha)",
+      "awayTeam": "Algeria (Gammi)",
+      "startTime": "2026-07-02T05:42:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 3.05,
+        "draw": 8,
+        "away": 1.5
+      },
+      "totals": [
+        {
+          "line": 8.5,
+          "over": 3.15,
+          "under": 1.32
+        },
+        {
+          "line": 7.5,
+          "over": 2.2,
+          "under": 1.57
+        },
+        {
+          "line": 5.5,
+          "over": 1.32,
+          "under": 3.1
+        },
+        {
+          "line": 9.5,
+          "over": 5.25,
+          "under": 1.13
+        },
+        {
+          "line": 3.5,
+          "over": 1.03,
+          "under": 10.5
+        },
+        {
+          "line": 4.5,
+          "over": 1.11,
+          "under": 5.6
+        },
+        {
+          "line": 6.5,
+          "over": 1.61,
+          "under": 2.14
+        },
+        {
+          "line": 10.5,
+          "over": 9,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028223996",
+      "title": "Argentina (kozak) - Jordanien (desicom)",
+      "homeTeam": "Argentina (kozak)",
+      "awayTeam": "Jordanien (desicom)",
+      "startTime": "2026-07-02T05:42:00Z",
+      "league": "CLA World Cup (2x5 min)",
+      "odds": {
+        "home": 1.81,
+        "draw": 5.5,
+        "away": 2.48
+      },
+      "totals": [
+        {
+          "line": 4.5,
+          "over": 1.04,
+          "under": 9.5
+        },
+        {
+          "line": 5.5,
+          "over": 1.14,
+          "under": 4.9
+        },
+        {
+          "line": 10.5,
+          "over": 4.9,
+          "under": 1.14
+        },
+        {
+          "line": 8.5,
+          "over": 2.17,
+          "under": 1.6
+        },
+        {
+          "line": 6.5,
+          "over": 1.33,
+          "under": 3.05
+        },
+        {
+          "line": 7.5,
+          "over": 1.65,
+          "under": 2.07
+        },
+        {
+          "line": 9.5,
+          "over": 3.2,
+          "under": 1.3
+        },
+        {
+          "line": 11.5,
+          "over": 8.5,
+          "under": 1.05
+        }
+      ]
+    },
+    {
+      "eventId": "1028223985",
+      "title": "Juventus (BiBiB) - Lazio (femzzi)",
+      "homeTeam": "Juventus (BiBiB)",
+      "awayTeam": "Lazio (femzzi)",
+      "startTime": "2026-07-02T05:42:00Z",
+      "league": "Cyber Live Arena (2x5 min)",
+      "odds": {
+        "home": 3.85,
+        "draw": 6.75,
+        "away": 1.35
+      },
+      "totals": [
+        {
+          "line": 6.5,
+          "over": 1.24,
+          "under": 3.35
+        },
+        {
+          "line": 8.5,
+          "over": 2.02,
+          "under": 1.68
+        },
+        {
+          "line": 10.5,
+          "over": 4.35,
+          "under": 1.14
+        },
+        {
+          "line": 7.5,
+          "over": 1.53,
+          "under": 2.23
+        },
+        {
+          "line": 5.5,
+          "over": 1.09,
+          "under": 5.4
+        },
+        {
+          "line": 11.5,
+          "over": 7.5,
+          "under": 1.04
+        },
+        {
+          "line": 9.5,
+          "over": 2.88,
+          "under": 1.32
         }
       ]
     },
@@ -24156,8 +24223,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 3.4,
-        "away": 1.3
+        "home": 2.43,
+        "away": 1.54
       }
     },
     {
@@ -24169,8 +24236,8 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 1.3,
-        "away": 3.15
+        "home": 1.35,
+        "away": 2.9
       }
     },
     {
@@ -24182,8 +24249,8 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.14,
-        "away": 5
+        "home": 1.11,
+        "away": 5.75
       }
     },
     {
@@ -24195,8 +24262,21 @@
       "league": "Tokyo",
       "sport": "tennis",
       "odds": {
-        "home": 1.65,
-        "away": 2.12
+        "home": 1.62,
+        "away": 2.18
+      }
+    },
+    {
+      "eventId": "1028216212",
+      "title": "Matthew Dellavedova - Yusuke Takahashi",
+      "homeTeam": "Matthew Dellavedova",
+      "awayTeam": "Yusuke Takahashi",
+      "startTime": "2026-07-02T01:34:00Z",
+      "league": "Tokyo",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.12,
+        "away": 5.5
       }
     },
     {
@@ -24208,8 +24288,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.64,
-        "away": 2.17
+        "home": 1.38,
+        "away": 2.88
       }
     },
     {
@@ -24221,8 +24301,8 @@
       "league": "Maanshan",
       "sport": "tennis",
       "odds": {
-        "home": 2.12,
-        "away": 1.66
+        "home": 2.7,
+        "away": 1.42
       }
     },
     {
@@ -26814,6 +26894,6 @@
     }
   ],
   "basketEventsCount": 31,
-  "tennisEventsCount": 207,
+  "tennisEventsCount": 208,
   "lastError": null
 }
