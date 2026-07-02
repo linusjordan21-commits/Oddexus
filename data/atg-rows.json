@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T01:09:14.202Z",
+  "updatedAt": "2026-07-02T01:13:13.697Z",
   "source": "github-actions",
   "bookmaker": "atg",
   "displayName": "ATG",
@@ -9,10 +9,10 @@
   "fetchedRegions": 2,
   "failedRegions": 0,
   "totalRegions": 8,
-  "uniqueEvents": 355,
-  "skippedNoOdds": 1,
+  "uniqueEvents": 353,
+  "skippedNoOdds": 3,
   "skippedNotFootball": 0,
-  "durationMs": 35547,
+  "durationMs": 35366,
   "events": [
     {
       "eventId": "1027976814",
@@ -3481,7 +3481,7 @@
       "odds": {
         "home": 1.11,
         "draw": 8,
-        "away": 26
+        "away": 29
       }
     },
     {
@@ -3492,61 +3492,9 @@
       "startTime": "2026-07-02T00:30:00Z",
       "league": "Copa Chile",
       "odds": {
-        "home": 1.81,
-        "draw": 3.1,
-        "away": 4.25
-      }
-    },
-    {
-      "eventId": "1028211664",
-      "title": "Morocco (OP1OT) - Skottland (Yoru)",
-      "homeTeam": "Morocco (OP1OT)",
-      "awayTeam": "Skottland (Yoru)",
-      "startTime": "2026-07-02T01:00:00Z",
-      "league": "CLA World Cup (2x5 min)",
-      "odds": {
-        "home": 18,
-        "draw": 8,
-        "away": 1.09
-      }
-    },
-    {
-      "eventId": "1028211645",
-      "title": "Arsenal (drksd3) - Aston Villa (luxiqq)",
-      "homeTeam": "Arsenal (drksd3)",
-      "awayTeam": "Aston Villa (luxiqq)",
-      "startTime": "2026-07-02T01:00:00Z",
-      "league": "Cyber Live Arena (2x5 min)",
-      "odds": {
-        "home": 1.86,
-        "draw": 5.2,
-        "away": 2.43
-      }
-    },
-    {
-      "eventId": "1028212062",
-      "title": "Bayern Munchen (hotShot) - Liverpool (Kray)",
-      "homeTeam": "Bayern Munchen (hotShot)",
-      "awayTeam": "Liverpool (Kray)",
-      "startTime": "2026-07-02T01:04:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 11,
-        "draw": 6.5,
-        "away": 1.16
-      }
-    },
-    {
-      "eventId": "1028212023",
-      "title": "Real Madrid (OG) - Paris (Kodak)",
-      "homeTeam": "Real Madrid (OG)",
-      "awayTeam": "Paris (Kodak)",
-      "startTime": "2026-07-02T01:04:00Z",
-      "league": "Esports Battle (2x4min)",
-      "odds": {
-        "home": 3.9,
-        "draw": 3.8,
-        "away": 1.61
+        "home": 1.7,
+        "draw": 3.2,
+        "away": 4.8
       }
     },
     {
@@ -3557,9 +3505,9 @@
       "startTime": "2026-07-02T01:08:00Z",
       "league": "eSports Battle (2x6 min)",
       "odds": {
-        "home": 2.65,
-        "draw": 6.25,
-        "away": 1.68
+        "home": 3.7,
+        "draw": 7,
+        "away": 1.41
       }
     },
     {
@@ -6378,72 +6326,72 @@
       "startTime": "2026-07-02T23:00:00Z",
       "league": "VM 2026",
       "odds": {
-        "home": 1.78,
-        "draw": 3.6,
-        "away": 5.3
+        "home": 1.76,
+        "draw": 3.65,
+        "away": 5.25
       },
       "totals": [
         {
           "line": 0.5,
           "over": 1.05,
-          "under": 10
+          "under": 10.5
         },
         {
           "line": 4.5,
-          "over": 7,
-          "under": 1.1
+          "over": 6.5,
+          "under": 1.12
         },
         {
           "line": 1.5,
-          "over": 1.3,
-          "under": 3.55
+          "over": 1.28,
+          "under": 3.8
         },
         {
           "line": 5.5,
-          "over": 14,
-          "under": 1.02
+          "over": 13,
+          "under": 1.03
         },
         {
           "line": 3.5,
-          "over": 3.5,
-          "under": 1.32
+          "over": 3.3,
+          "under": 1.35
         },
         {
           "line": 2.5,
-          "over": 1.98,
-          "under": 1.85
+          "over": 1.9,
+          "under": 1.92
         }
       ],
       "ah": [
         {
           "line": -1.5,
-          "home": 3.05,
-          "away": 1.38
+          "home": 2.95,
+          "away": 1.4
         },
         {
           "line": -1.25,
-          "home": 2.65,
-          "away": 1.46
+          "home": 2.63,
+          "away": 1.49
         },
         {
           "line": -2.5,
-          "home": 6.25,
-          "away": 1.12
+          "home": 6,
+          "away": 1.13
         },
         {
           "line": -2,
-          "home": 5.3,
-          "away": 1.15
+          "home": 5.1,
+          "away": 1.17
         },
         {
           "line": -2.25,
-          "home": 5.8,
-          "away": 1.14
+          "home": 5.5,
+          "away": 1.15
         },
         {
           "line": -0.5,
-          "home": 1.73,
-          "away": 2.1
+          "home": 1.71,
+          "away": 2.14
         },
         {
           "line": 0.5,
@@ -6452,18 +6400,18 @@
         },
         {
           "line": -1,
-          "home": 2.3,
-          "away": 1.6
+          "home": 2.28,
+          "away": 1.63
         },
         {
           "line": -1.75,
-          "home": 3.75,
-          "away": 1.27
+          "home": 3.65,
+          "away": 1.28
         },
         {
           "line": -0.75,
-          "home": 1.93,
-          "away": 1.86
+          "home": 1.91,
+          "away": 1.89
         },
         {
           "line": 0.25,
@@ -6472,7 +6420,7 @@
         },
         {
           "line": -0.25,
-          "home": 1.5,
+          "home": 1.49,
           "away": 2.6
         }
       ],
@@ -6480,43 +6428,43 @@
         "totals": [
           {
             "line": 9.5,
-            "over": 2.23,
-            "under": 1.6
+            "over": 2.15,
+            "under": 1.64
           },
           {
             "line": 11.5,
-            "over": 3.95,
-            "under": 1.21
+            "over": 3.75,
+            "under": 1.23
           },
           {
             "line": 8.5,
-            "over": 1.75,
-            "under": 1.98
+            "over": 1.71,
+            "under": 2.04
           },
           {
             "line": 7.5,
-            "over": 1.44,
-            "under": 2.6
+            "over": 1.42,
+            "under": 2.7
           },
           {
             "line": 10.5,
-            "over": 2.9,
-            "under": 1.36
+            "over": 2.8,
+            "under": 1.38
           },
           {
             "line": 5.5,
-            "over": 1.12,
-            "under": 5.5
+            "over": 1.11,
+            "under": 5.75
           },
           {
             "line": 12.5,
-            "over": 5.4,
-            "under": 1.12
+            "over": 5.1,
+            "under": 1.13
           },
           {
             "line": 6.5,
-            "over": 1.25,
-            "under": 3.6
+            "over": 1.23,
+            "under": 3.75
           }
         ]
       }
@@ -20131,8 +20079,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.53,
-        "away": 2.43
+        "home": 4.5,
+        "away": 1.19
       }
     },
     {
@@ -20144,8 +20092,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 1.13,
-        "away": 5.6
+        "home": 1.14,
+        "away": 5.3
       }
     },
     {
@@ -20183,8 +20131,21 @@
       "league": "San Diego",
       "sport": "tennis",
       "odds": {
-        "home": 3.65,
-        "away": 1.24
+        "home": 3.05,
+        "away": 1.32
+      }
+    },
+    {
+      "eventId": "1028211852",
+      "title": "Ayana Akli - Ena Koike",
+      "homeTeam": "Ayana Akli",
+      "awayTeam": "Ena Koike",
+      "startTime": "2026-07-02T00:03:00Z",
+      "league": "Cary",
+      "sport": "tennis",
+      "odds": {
+        "home": 1.38,
+        "away": 2.85
       }
     },
     {
@@ -20196,8 +20157,8 @@
       "league": "Cary",
       "sport": "tennis",
       "odds": {
-        "home": 2.1,
-        "away": 1.68
+        "home": 2,
+        "away": 1.76
       }
     },
     {
@@ -21613,8 +21574,8 @@
       "league": "Rabat",
       "sport": "tennis",
       "odds": {
-        "home": 1.6,
-        "away": 2.18
+        "home": 1.56,
+        "away": 2.28
       }
     },
     {
@@ -22841,6 +22802,6 @@
     }
   ],
   "basketEventsCount": 31,
-  "tennisEventsCount": 209,
+  "tennisEventsCount": 210,
   "lastError": null
 }
